@@ -88,6 +88,15 @@ public:
     }
     return "";
   }
+
+  // check if this metadata is compatible with another metadata (number of plural forms, maybe other criteria)
+  // return a nonempty string containing error message if they are not compatible.
+  std::string check_compatibility(const catalog_metadata & other) const {
+    if (num_plural_forms != other.num_plural_forms) {
+      return std::string{"Num plural forms mismatch. this = "} + std::to_string(num_plural_forms) + " other = " + std::to_string(other.num_plural_forms);
+    }
+    return "";
+  }
 };
 
 } // end namespace spirit_po

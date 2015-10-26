@@ -83,12 +83,11 @@ bool test_default_expr_grammar(const std::string & prog, const std::vector<std::
   return true;
 }
 
-bool test_catalog_gettext(const std::string & po, const std::vector<std::pair<std::string, std::string>> & vec) {
-  auto cat = spirit_po::catalog<>::from_range(po);
-
+bool test_catalog_gettext(const spirit_po::catalog<> & cat, const std::vector<std::pair<std::string, std::string>> & vec) {
 #ifdef SPIRIT_PO_NOEXCEPT
   if (!static_cast<bool>(cat)) {
-    std::cerr << "Failed to load catalog:\n***\n" << po << "\n***\nError:\n" << cat.error() << std::endl;
+//    std::cerr << "Failed to load catalog:\n***\n" << po << "\n***\n"; 
+    std::cerr << "Error:\n" << cat.error() << std::endl;
     return false;
   }
 #endif
@@ -97,7 +96,7 @@ bool test_catalog_gettext(const std::string & po, const std::vector<std::pair<st
     auto output = cat.gettext(p.first.c_str());
     if (output != p.second) {
       std::cerr << "  Unexpected result!\n";
-      std::cerr << "  po:\n***\n" << po << "\n***\n";
+//      std::cerr << "  po:\n***\n" << po << "\n***\n";
       std::cerr << "  input:     " << p.first << "\n";
       std::cerr << "  output:    " << output << "\n";
       std::cerr << "  expected:  " << p.second << "\n";
@@ -105,6 +104,10 @@ bool test_catalog_gettext(const std::string & po, const std::vector<std::pair<st
     }
   }
   return true;
+}
+
+bool test_catalog_gettext(const std::string & po, const std::vector<std::pair<std::string, std::string>> & vec) {
+  return test_catalog_gettext(spirit_po::catalog<>::from_range(po), vec); 
 }
 
 struct ngettext_test_case {
@@ -303,8 +306,7 @@ do { \
   CHECK_EQ( _result_string, EXPECTED ); \
 } while(0)
 
-void check_catalog_keys(const std::string & po, const std::set<std::string> & expected, int line) {
-  auto cat = spirit_po::catalog<>::from_range( po );
+void check_catalog_keys(const spirit_po::catalog<> & cat, const std::set<std::string> & expected, int line) {
   CHECK_EQ_L(cat.size(), expected.size(), line);
   auto _result = all_keys(cat.get_hashmap());
   if (_result != expected) {
@@ -314,6 +316,10 @@ void check_catalog_keys(const std::string & po, const std::set<std::string> & ex
     std::cout << _diff << std::endl;
   }
   CHECK_EQ_L(_result, expected, line);
+}
+
+void check_catalog_keys(const std::string & po, const std::set<std::string> & expected, int line) {
+  check_catalog_keys(spirit_po::catalog<>::from_range( po ), expected, line);
 }
 
 void check_not_parse(const std::string & test_string, int line) {
@@ -326,6 +332,43 @@ void check_not_parse(const std::string & test_string, int line) {
 #endif
   } catch(...) {}
 }
+
+// Files 'loaded' via inclusion macros
+namespace file {
+    std::string test1po =
+#include "test1.po"
+;
+    std::string test2po =
+#include "test2.po"
+;
+    std::string test3po =
+#include "test3.po"
+;
+    std::string test4po =
+#include "test4.po"
+;
+    std::string test5po =
+#include "test5.po"
+;
+    std::string test_fail1po =
+#include "test_fail1.po"
+;
+    std::string test_fail2po =
+#include "test_fail2.po"
+;
+    std::string test_fail3po =
+#include "test_fail3.po"
+;
+    std::string test_fail4po =
+#include "test_fail4.po"
+;
+    std::string test_fail5po =
+#include "test_fail5.po"
+;
+    std::string test_fail6po =
+#include "test_fail6.po"
+;
+} // end namespace file
 
 int main() {
   std::cout << "Testing plural forms expression grammar..." << std::endl;
@@ -507,45 +550,35 @@ msgstr "jkl;"
 
   std::cout << "Testing test1.po..." << std::endl;
   {
-    std::string test1po =
-#include "test1.po"
-;
+    using file::test1po;
     check_catalog_keys( test1po, { "", "asdf", "foo", "tmnt", "a man\na plan\na canal" }, __LINE__ );
     TEST(test_catalog_gettext( test1po, {{"asdf", "jkl;"}, { "foo", "bar" }, {"tmnt", "teenagemutantninjaturtles"}, {"a man\na plan\na canal", "panama"}}));
   }
 
   std::cout << "Testing test2.po..." << std::endl;
   {
-    std::string test2po =
-#include "test2.po"
-;
+    using file::test2po;
     check_catalog_keys( test2po, { "", "he said \"she said.\"", "say what?" }, __LINE__ );
     TEST(test_catalog_gettext( test2po, {{"he said \"she said.\"", "by the \"sea shore\"?"}, {"say what?", "come again?"}}));
   }
 
   std::cout << "Testing test3.po..." << std::endl;
   {
-    std::string test3po =
-#include "test3.po"
-;
+    using file::test3po;
     check_catalog_keys( test3po, { "", "veni vidi vici", "the sound of a tree falls" }, __LINE__ );
     TEST(test_catalog_gettext( test3po, {{"veni vidi vici", "i came, i saw, i conquered"}, {"a tree falls", "a tree falls"}, {"the sound of a tree falls", "\t"}}));
   }
 
   std::cout << "Testing test4.po..." << std::endl;
   {
-    std::string test4po =
-#include "test4.po"
-;
+    using file::test4po;
     check_catalog_keys( test4po, { "", "note", "goat" }, __LINE__ );
     TEST(test_catalog_ngettext( test4po, {{"note", "notes", 1, "nota"}, {"note", "notes", 2, "notas"}, {"note", "notes", 0, "notas"}, {"goat", "goats", 1, "cabra"}, {"goat", "goats", 2, "cabras"}, {"photo", "photos", 1, "photo"}, {"photo", "photos", 2, "photos"}}));
   }
 
   std::cout << "Testing test5.po..." << std::endl;
   {
-    std::string test5po =
-#include "test5.po"
-;
+    using file::test5po;
     CHECK_EQ(4u, spirit_po::catalog<>::from_range(test5po).size());
     TEST(test_catalog_gettext( test5po, {{"note", "nota"}, {"goat", "cabro"}}));
     TEST(test_catalog_ngettext( test5po, {{"note", "notes", 1, "nota"}, {"note", "notes", 2, "notas"}, {"goat", "goats", 1, "cabro"}, {"goat", "goats", 2, "cabros"}}));
@@ -556,53 +589,56 @@ msgstr "jkl;"
 
   std::cout << "Testing test_fail1.po..." << std::endl;
   {
-    std::string test_fail1po =
-#include "test_fail1.po"
-;
+    using file::test_fail1po;
     check_not_parse(test_fail1po, __LINE__);
   }
 
   std::cout << "Testing test_fail2.po..." << std::endl;
   {
-    std::string test_fail2po =
-#include "test_fail2.po"
-;
+    using file::test_fail2po;
     check_not_parse(test_fail2po, __LINE__);
   }
 
   std::cout << "Testing test_fail3.po..." << std::endl;
   {
-    std::string test_fail3po =
-#include "test_fail3.po"
-;
+    using file::test_fail3po;
     check_not_parse(test_fail3po, __LINE__);
   }
 
   std::cout << "Testing test_fail4.po..." << std::endl;
   {
-    std::string test_fail4po =
-#include "test_fail4.po"
-;
+    using file::test_fail4po;
     check_not_parse(test_fail4po, __LINE__);
   }
 
   std::cout << "Testing test_fail5.po..." << std::endl;
   {
-    std::string test_fail5po =
-#include "test_fail5.po"
-;
+    using file::test_fail5po;
     check_not_parse(test_fail5po, __LINE__);
   }
 
   std::cout << "Testing test_fail6.po..." << std::endl;
   {
-    std::string test_fail6po =
-#include "test_fail6.po"
-;
+    using file::test_fail6po;
     check_not_parse(test_fail6po, __LINE__);
   }
 
+  std::cout << "Testing po file merging..." << std::endl;
+  {
+    using file::test1po;
+    using file::test2po;
+    auto cat1 = spirit_po::catalog<>::from_range(test1po);
+    auto cat2 = spirit_po::catalog<>::from_range(test2po);
+    TEST(static_cast<bool>(cat1));
+    TEST(static_cast<bool>(cat2));
+    cat1.merge(std::move(cat2));
+    TEST(static_cast<bool>(cat1));
+
+    check_catalog_keys(cat1, { "", "asdf", "foo", "tmnt", "a man\na plan\na canal", "he said \"she said.\"", "say what?" }, __LINE__);
+    TEST(test_catalog_gettext(cat1,  {{"asdf", "jkl;"}, { "foo", "bar" }, {"tmnt", "teenagemutantninjaturtles"}, {"a man\na plan\na canal", "panama"}, {"he said \"she said.\"", "by the \"sea shore\"?"}, {"say what?", "come again?"}, { "bar", "bar" }}));
+  }
+
   if (!any_failed) {
-    std::cout << "All tests passed." << std::endl;
+    std::cout << "All " << test_count << " tests passed." << std::endl;
   }
 }

@@ -317,9 +317,25 @@ public:
   const hashmap_type & get_hashmap() const { return hashmap_; }
 
   /***
-   * Set warning channel
+   * Set warning channel (for msgid overwrites)
    */
   void set_warning_channel(const warning_channel_type & w) { warning_channel_ = w; }
+
+  /***
+   * Merge a different catalog into this one
+   */
+  template <typename H, typename P>
+  void merge(catalog<H, P> && other) {
+    std::string maybe_error = metadata_.check_compatibility(other.metadata_);
+    if (maybe_error.size()) {
+      SPIRIT_PO_CATALOG_FAIL(("Cannot merge catalogs: " + maybe_error));
+    }
+    for (auto & p : other.hashmap_) {
+      if (p.first.size()) { // don't copy over the header, keep our original header
+        insert_message(std::move(p.second));
+      }
+    }
+  }
 };
 
 } // end namespace spirit_po

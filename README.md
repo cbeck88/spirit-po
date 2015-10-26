@@ -14,7 +14,7 @@ using `boost::spirit`. Our po grammar itself is only a few dozen lines.
 This makes it very simple and transparent, and easy to modify if needed.
 
 By contrast, the `libgettext-po` parser and `libintl` implementation
-together span about ten thousand lines of old-style C. Guess which
+together span about ten thousand lines of ansi C. Guess which
 one I would prefer to use. :)
 
 An in-depth explanation of the rationale for this library as compared to
@@ -95,8 +95,20 @@ described by GNU gettext. If you want to have multiple catalogs loaded into the
 program at once, you are recommended to throw together your own book-keeping mechanism for
 this -- it is straightforward to have a `std::unordered_map` of catalogs or similar, and
 then it is transparent to you without cluttering our catalog interface. On the other hand,
-you can also use the `merge` function of catalogs (TODO!) to merge multiple catalogs into one
+you can also use the `merge` function of catalogs to merge multiple catalogs into one
 master catalog.
+
+   - `void merge(spirit_po::catalog && other)`  
+     Check if the metadata of this catalog and given catalog shows they are compatible
+     (number of plural forms are equal). If not then signal an error (exception or error
+     state). If so, then move all the message entries from the other hashmap to this map.
+     May trigger warnings on the warning channel if there are collisions.
+
+   - `void set_warning_channel(const std::function<void(const std::string &)> & w)`
+     Set the warning channel for this catalog. The warning channel is a function which
+     will be called with a warning message whenever a string (with context) is clobbered.
+     The warning channel object may also be passed to the constructor, if one is concerned
+     about duplicated strings within a single po file. By default warnings are ignored.
 
 ## Customization points
 
