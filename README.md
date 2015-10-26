@@ -1,7 +1,7 @@
 # spirit-po
 
 **spirit-po** is a header-only C++11 library that you can use for
-localization within the GNU gettext system, instead of using libintl.
+localization within the GNU gettext system, instead of using `libintl`.
 
 **spirit-po** has the advantage that it does not use mo files, so your
 program can use the simple, portable po files produced directly by
