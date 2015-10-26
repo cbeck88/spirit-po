@@ -1,0 +1,14 @@
+R"===(
+msgid ""
+msgstr "Language: Test"
+
+msgid "note"
+msgid_plural "notes"
+msgstr[0] "nota"
+msgstr[1] "notas"
+
+msgid "goat"
+msgid_plural "goats"
+msgstr[0] "cabra"
+msgstr[1] "cabras"
+)==="

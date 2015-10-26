@@ -1,0 +1,19 @@
+R"===(
+
+		
+msgid ""
+msgstr "Language: Test"
+
+msgid "he said \"she said.\""
+msgstr "by the \"sea shore\"?"
+
+
+#msgid blahlbahlbah
+msgid "say what?"
+# msgstr noooo
+    
+msgstr "come again?"
+
+
+#msgid "ignore me!"
+)==="

@@ -1,3 +1,5 @@
 /build/
 *.o
 *.exe
+a.out
+main

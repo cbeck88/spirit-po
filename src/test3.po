@@ -1,0 +1,10 @@
+R"===(
+msgid ""
+msgstr "Language: Test"
+msgid "veni vidi vici"
+msgstr "i came, i saw, i conquered"
+msgid "a tree falls"
+msgstr ""
+msgid "the sound of a tree falls"
+msgstr "\t"
+)==="

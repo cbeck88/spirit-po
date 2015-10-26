@@ -1,0 +1,10 @@
+R"===(
+msgid ""
+msgstr "Language: Test"
+
+msgid "asdf"
+msgstr "jkl;"
+
+
+msgid "foo""bar"
+msgstr "baz")==="

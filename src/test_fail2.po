@@ -1,0 +1,12 @@
+R"===(
+#foo
+#bar
+#baz
+msgi "asdf"
+msgstr "jkl;"
+
+
+#foo
+msgid "foo"
+msgstr "bar"
+)==="

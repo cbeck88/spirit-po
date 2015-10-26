@@ -1,0 +1,27 @@
+R"==(
+# Test1 po
+
+msgid ""
+msgstr "Language: Test"
+
+#foo
+#bar
+#baz
+msgid "asdf"
+msgstr "jkl;"
+
+
+#foo
+msgid "foo"
+msgstr "bar"
+
+msgid "tmnt"
+msgstr "teenage"
+"mutant"
+"ninja"
+"turtles"
+msgid "a man\n"
+"a plan\n"
+"a canal"
+msgstr "panama"
+)=="
