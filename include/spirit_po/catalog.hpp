@@ -12,6 +12,7 @@
 #include "po_message.hpp"
 
 #include <boost/spirit/include/qi.hpp>
+#include <functional>
 #include <istream>
 #include <string>
 #include <unordered_map>
@@ -26,6 +27,7 @@ namespace spirit_po {
 namespace qi = boost::spirit::qi;
 typedef unsigned int uint;
 
+typedef std::function<void(const std::string &)> warning_channel_type;
 typedef std::unordered_map<std::string, po_message> default_hashmap_type;
 
 template <typename hashmap_type = default_hashmap_type, typename pf_compiler = default_plural_forms::compiler>
@@ -40,6 +42,7 @@ class catalog {
   // if loading failed, error_message_ contains an error
   // (rather than throwing an exception)
 #endif
+  warning_channel_type warning_channel_;
 
   hashmap_type hashmap_;
 
@@ -95,8 +98,15 @@ private:
 
     auto result = hashmap_.emplace(std::move(index), std::move(msg));
 
-    // TODO: Issue a warning if emplace failed, rather than silently overwrite?    
-    if (!result.second) { result.first->second = std::move(msg); }
+    // Issue a warning if emplace failed, rather than silently overwrite.
+    if (!result.second) {
+      if (warning_channel_) {
+        std::string warning = "Overwriting a message: msgid = <<<" + msg.id + ">>>";
+        if (msg.context) { warning += " msgctxt = <<<" + *msg.context + ">>>"; }
+        warning_channel_(warning);
+      }
+      result.first->second = std::move(msg);
+    }
   }
 
 public:
@@ -117,9 +127,10 @@ public:
    * Ctors
    */
   template <typename Iterator>
-  catalog(Iterator & it, Iterator & end, pf_compiler compiler = pf_compiler())
+  catalog(Iterator & it, Iterator & end, warning_channel_type warn_channel = warning_channel_type(), pf_compiler compiler = pf_compiler())
     : metadata_()
     , pf_function_object_()
+    , warning_channel_(warn_channel)
     , hashmap_()
   {
     po_grammar<Iterator> grammar;
@@ -187,16 +198,16 @@ public:
 
   // Construct a catalog from a range using one expression
   template <typename Range>
-  static catalog from_range(const Range & range) {
+  static catalog from_range(const Range & range, warning_channel_type w = warning_channel_type()) {
     auto it = boost::begin(range);
     auto end = boost::end(range);
-    return catalog(it, end);
+    return catalog(it, end, w);
   }
 
-  static catalog from_istream(std::istream & is, pf_compiler compiler = pf_compiler()) {
+  static catalog from_istream(std::istream & is, warning_channel_type w = warning_channel_type()) {
     boost::spirit::istream_iterator it(is);
     boost::spirit::istream_iterator end;
-    return catalog(it, end, compiler);
+    return catalog(it, end, w);
   }
 
   ///////////////
@@ -304,6 +315,11 @@ public:
    * Debugging output
    */
   const hashmap_type & get_hashmap() const { return hashmap_; }
+
+  /***
+   * Set warning channel
+   */
+  void set_warning_channel(const warning_channel_type & w) { warning_channel_ = w; }
 };
 
 } // end namespace spirit_po
