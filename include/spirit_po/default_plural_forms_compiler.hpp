@@ -80,7 +80,7 @@ public:
   function_object(const expr & _e) : e_(_e), parse_error_() {}
   function_object(expr && _e) : e_(std::move(_e)), parse_error_() {}
   function_object(const std::string & s) : e_(n_var()), parse_error_(s) {}
-  function_object() : e_(n_var()), parse_error_("uninitialized") {}
+  function_object() : function_object(std::string{"uninitialized"}) {}
 
   uint operator()(uint n) const {
     return boost::apply_visitor(evaluator{n}, e_);
@@ -103,8 +103,6 @@ struct compiler {
     if (qi::phrase_parse(it, end, grammar, qi::space, e) && it == end) {
       return function_object(std::move(e));
     } else {
-      // Make an error report
-      std::string error_message;
       return function_object("Plural-Forms expression reader: Could not parse expression, stopped parsing at:\n" + string_iterator_context(str, it));
     }
   }
