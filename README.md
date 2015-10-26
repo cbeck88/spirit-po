@@ -67,16 +67,19 @@ specification:
 These implement, basic message lookup, plural-forms lookup, contextual lookup,
 and plural-forms-with-context lookup, respectively. See GNU gettext docs for details.
 
-As in GNU libintl, the string pointers which are returned are generally non-owning pointers.
+As in GNU libintl, the string pointers which are returned are non-owning pointers.
 When a translated form is found the catalog, the returned pointer points to a string owned by
 the catalog. When a translated form is not found, the returned pointer is one of the arguments.
 This is maximally efficient when using gettext with `_` macros and such, where the input parameters
-will be strings with static storage duration. However, in the general case, if the input pointer
+will be string literals with static storage duration. However, in the general case, if the input pointer
 becomes invalid, then the output pointer may become invalid also.
 
 We also give equivalent, alternate versions of these which return `std::string`
 and take `const std::string &` in place of `const char *` as parameters. In
-some scenarios these versions may be more efficient, and their ownership is unambiguous.
+some scenarios (i.e. if you must make a copy of the output anyways, and the input string
+is already held by a `std::string`) these versions may actually be more efficient, and the
+lifetime of the result is unambiguous.
+
 They are otherwise equivalent.
 
    - `std::string gettext_str(const std::string & msgid)`
