@@ -368,6 +368,12 @@ namespace file {
     std::string test_fail6po =
 #include "test_fail6.po"
 ;
+    std::string test_fail7po =
+#include "test_fail7.po"
+;
+    std::string test_fail8po =
+#include "test_fail8.po"
+;
 } // end namespace file
 
 int main() {
@@ -619,6 +625,18 @@ msgstr "jkl;"
   {
     using file::test_fail6po;
     check_not_parse(test_fail6po, __LINE__);
+  }
+
+  std::cout << "Testing test_fail7.po..." << std::endl;
+  {
+    using file::test_fail7po;
+    check_not_parse(test_fail7po, __LINE__);
+  }
+
+  std::cout << "Testing test_fail8.po..." << std::endl;
+  {
+    using file::test_fail8po;
+    check_not_parse(test_fail8po, __LINE__);
   }
 
   std::cout << "Testing po file merging..." << std::endl;
