@@ -6,8 +6,8 @@
 
 #include "catalog_metadata.hpp"
 #include "default_plural_forms.hpp"
+#include "default_plural_forms_compiler.hpp"
 #include "exceptions.hpp"
-#include "plural_forms_compiler.hpp"
 #include "po_grammar.hpp"
 #include "po_message.hpp"
 
