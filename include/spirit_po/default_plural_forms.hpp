@@ -4,14 +4,7 @@
  * The namespace default_plural_forms contains all the details to implement
  * the subset of the C grammar used by standard GNU gettext po headers.
  *
- * Every 'expression' (unary, binary, ternary, 0-ary) must define an operator
- * overload of the form:
- *
- *   uint operator(uint) const;
- *
- * This evaluates the expression when the variable `n` takes the value given.
- *
- * Boolean expressions return uint 0 or 1, as in C.
+ * Boolean expressions return uint 0 or 1.
  *
  * The 'compiler' is a spirit grammar which parses a string into an expression
  * object.
@@ -52,7 +45,7 @@ using rw = boost::recursive_wrapper<T>;
 
 typedef boost::variant<constant, n_var, rw<not_op>, rw<and_op>, rw<or_op>, rw<eq_op>, rw<neq_op>, rw<ge_op>, rw<le_op>, rw<gt_op>, rw<lt_op>, rw<mod_op>, rw<ternary_op>> expr;
 
-struct not_op { expr e; };
+struct not_op { expr e1; };
 
 #define MAKE_BINARY_OP(name, op) \
 struct name { \
@@ -84,7 +77,7 @@ struct evaluator : public boost::static_visitor<uint> {
 
   uint operator()(const constant & c) const { return c.value; }
   uint operator()(n_var) const { return n_value_; }
-  uint operator()(const not_op & op) const { return !boost::apply_visitor(*this, op.e); }
+  uint operator()(const not_op & op) const { return !boost::apply_visitor(*this, op.e1); }
 #define MAKE_BINARY_OP(name, OPERATOR) \
   uint operator()(const name & op) const { return (boost::apply_visitor(*this, op.e1)) OPERATOR (boost::apply_visitor(*this, op.e2)); } \
 
@@ -114,7 +107,7 @@ MAKE_BINARY_OP(mod_op, %)
 BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::constant,
   (uint, value))
 BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::not_op,
-  (spirit_po::default_plural_forms::expr, e))
+  (spirit_po::default_plural_forms::expr, e1))
 BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::and_op,
   (spirit_po::default_plural_forms::expr, e1)
   (spirit_po::default_plural_forms::expr, e2))

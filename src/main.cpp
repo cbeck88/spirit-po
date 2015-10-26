@@ -434,7 +434,7 @@ msgstr "jkl;"
     spirit_po::po_message msg = spirit_po::convert_from_helper_type(std::move(msg_h));
 //    std::cerr << "msg = " << debug_string(msg) << std::endl;
     CHECK_EQ(msg.id, "asdf");
-    CHECK_EQ(msg.strings.size(), 1);
+    CHECK_EQ(msg.strings.size(), 1u);
     CHECK_EQ(msg.strings[0], "jkl;");
   }
 
@@ -456,7 +456,7 @@ msgstr "jkl;"
     spirit_po::po_message msg = spirit_po::convert_from_helper_type(std::move(msg_h));
 //    std::cerr << "msg = " << debug_string(msg) << std::endl;
     CHECK_EQ(msg.id, "asdf");
-    CHECK_EQ(msg.strings.size(), 1);
+    CHECK_EQ(msg.strings.size(), 1u);
     CHECK_EQ(msg.strings[0], "jkl;");
   }
 
@@ -480,7 +480,7 @@ msgstr "jkl;"
       CHECK_EQ(m.language_team, "Test team");
       CHECK_EQ(m.project_id, "Test 0.0");
       CHECK_EQ(m.last_translator, "");
-      CHECK_EQ(m.num_plural_forms, 3);
+      CHECK_EQ(m.num_plural_forms, 3u);
       CHECK_EQ(m.plural_forms_function_string, "n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;");
     }
 
@@ -546,7 +546,7 @@ msgstr "jkl;"
     std::string test5po =
 #include "test5.po"
 ;
-    CHECK_EQ(4, spirit_po::catalog<>::from_range(test5po).size());
+    CHECK_EQ(4u, spirit_po::catalog<>::from_range(test5po).size());
     TEST(test_catalog_gettext( test5po, {{"note", "nota"}, {"goat", "cabro"}}));
     TEST(test_catalog_ngettext( test5po, {{"note", "notes", 1, "nota"}, {"note", "notes", 2, "notas"}, {"goat", "goats", 1, "cabro"}, {"goat", "goats", 2, "cabros"}}));
     TEST(test_catalog_pgettext( test5po, {{"female", "goat", "cabra"}, {"female", "note", "note"}, {"nice", "photo", "photo"}}));
