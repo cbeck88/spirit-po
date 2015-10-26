@@ -66,12 +66,12 @@ private:
    * Helper for interacting with hashmap results
    */
   const std::string & get(const po_message & msg) const {
-    return msg.strings[singular_index_];
+    return msg.strings()[singular_index_];
   }
 
   const std::string & get(const po_message & msg, uint plural) const {
     uint idx = (plural == 1 ? singular_index_ : pf_function_object_(plural));
-    return msg.strings[idx];
+    return msg.strings()[idx];
   }
 
   /***
@@ -82,11 +82,11 @@ private:
     std::cerr << "DEBUG: insert_message( " << debug_string(msg) << " )\n";
 #endif
 
-    if (!msg.strings.size()) { return; }
+    if (!msg.strings().size()) { return; }
     // don't allow messages with ZERO translations into the catalog, this will cause segfaults later.
     // should perhaps throw an exception here
 
-    if (!msg.strings[0].size()) { return; }
+    if (!msg.strings()[0].size()) { return; }
     // if the (first) translated string is "", it is untranslated and message does not enter catalog
 
     std::string index = form_index(msg);
@@ -135,16 +135,14 @@ public:
   {
     po_grammar<Iterator> grammar;
 
-    po_message_helper msg_helper;
+    po_message msg;
 
     // Parse header first
     {
       // must be able to parse first message
-      if (!qi::parse(it, end, grammar, msg_helper)) {
+      if (!qi::parse(it, end, grammar, msg)) {
         SPIRIT_PO_CATALOG_FAIL("Failed to parse po header, stopped at :'" + iterator_context(it, end));
       }
-
-      po_message msg = convert_from_helper_type(std::move(msg_helper));
 
 #ifdef SPIRIT_PO_DEBUG
       std::cerr << "PO HEADER MESSAGE: " << debug_string(msg) << std::endl;
@@ -156,8 +154,8 @@ public:
       }
 
       // Now parse the header string itself
-      if (msg.strings.size()) {
-        std::string maybe_error = metadata_.parse_header(msg.strings[0]);
+      if (msg.strings().size()) {
+        std::string maybe_error = metadata_.parse_header(msg.strings()[0]);
         if (maybe_error.size()) {
           SPIRIT_PO_CATALOG_FAIL("Failed to parse po header: " + maybe_error);
         }
@@ -183,16 +181,16 @@ public:
     }
 
     while (it != end) {
-      msg_helper = po_message_helper{};
-      msg_helper.plural_and_strings.second.reserve(metadata_.num_plural_forms); // try to prevent frequent vector reallocations
-      if (!qi::parse(it, end, grammar, msg_helper)) {
+      msg = po_message{};
+      msg.strings().reserve(metadata_.num_plural_forms); // try to prevent frequent vector reallocations
+      if (!qi::parse(it, end, grammar, msg)) {
         SPIRIT_PO_CATALOG_FAIL(("Failed to parse po file, stopped at: " + iterator_context(it, end)));
       }
       // cannot overwrite header
-      if (!msg_helper.id.size()) {
+      if (!msg.id.size()) {
         SPIRIT_PO_CATALOG_FAIL(("Malformed po file: Cannot overwrite the header entry later in the po file. Stopped at: " + iterator_context(it, end)));
       }
-      insert_message(convert_from_helper_type(std::move(msg_helper)));
+      insert_message(std::move(msg));
     }
   }
 

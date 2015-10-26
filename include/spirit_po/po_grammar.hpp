@@ -8,7 +8,7 @@
 #include <boost/fusion/include/std_pair.hpp>
 #include <boost/fusion/include/define_struct.hpp>
 
-#include "po_message_helper.hpp"
+#include "po_message_adapted.hpp"
 
 #include <boost/optional/optional.hpp>
 #include <string>
@@ -20,7 +20,7 @@ namespace spirit_po {
 namespace qi = boost::spirit::qi;
 
 template <typename Iterator>
-struct po_grammar : qi::grammar<Iterator, po_message_helper()> {
+struct po_grammar : qi::grammar<Iterator, po_message()> {
   qi::rule<Iterator> white_line;
   qi::rule<Iterator> comment_line;
   qi::rule<Iterator> skipped_line;
@@ -42,7 +42,7 @@ struct po_grammar : qi::grammar<Iterator, po_message_helper()> {
   qi::rule<Iterator, plural_and_strings_type()> message_singular;
   qi::rule<Iterator, plural_and_strings_type()> message_plural;
 
-  qi::rule<Iterator, po_message_helper()> message;
+  qi::rule<Iterator, po_message()> message;
 
   po_grammar() : po_grammar::base_type(message) {
     using qi::attr;
@@ -57,6 +57,7 @@ struct po_grammar : qi::grammar<Iterator, po_message_helper()> {
     skipped_line = (comment_line | white_line);
     skipped_block = skipped_line >> (eoi | (lit('\n') >> -skipped_block));
 
+    // TODO: Do we need to handle other escaped characters? Or signal an error for unknown escapes?
     escaped_character = lit('\\') >> (char_("\'\"\\") | (lit('n') >> attr('\n')) | (lit('t') >> attr('\t')));
     single_line_string = lit('"') >> *(escaped_character | (char_ - '"')) >> lit('"') >> white_line >> (eoi | (lit('\n') >> -skipped_block));
     multiline_string = single_line_string >> (multiline_string | attr(""));
@@ -76,7 +77,6 @@ struct po_grammar : qi::grammar<Iterator, po_message_helper()> {
     message_plural = message_id_plural >> message_strs;
     message_singular = attr("") >> message_single_str;
     message = -skipped_block >> -message_context >> message_id  >> (message_plural | message_singular);
-    // TODO: Can this be made more efficient, so that it does not reparse message_ctxt, message_id in 'type one' case?
   }
 };
 

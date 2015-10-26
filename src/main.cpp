@@ -470,15 +470,14 @@ msgstr "jkl;"
     auto it = s1.begin();
     auto end = s1.end();
     spirit_po::po_grammar<decltype(it)> grammar;
-    spirit_po::po_message_helper msg_h;
+    spirit_po::po_message msg;
 
-    msg_h = {};
-    CHECK_EQ(true, qi::parse(it, end, grammar.message, msg_h));
-    spirit_po::po_message msg = spirit_po::convert_from_helper_type(std::move(msg_h));
+    msg = {};
+    CHECK_EQ(true, qi::parse(it, end, grammar.message, msg));
 //    std::cerr << "msg = " << debug_string(msg) << std::endl;
     CHECK_EQ(msg.id, "asdf");
-    CHECK_EQ(msg.strings.size(), 1u);
-    CHECK_EQ(msg.strings[0], "jkl;");
+    CHECK_EQ(msg.strings().size(), 1u);
+    CHECK_EQ(msg.strings()[0], "jkl;");
   }
 
   {
@@ -493,14 +492,13 @@ msgstr "jkl;"
     auto it = s2.begin();
     auto end = s2.end();
     spirit_po::po_grammar<decltype(it)> grammar;
-    spirit_po::po_message_helper msg_h;
+    spirit_po::po_message msg;
 
-    CHECK_EQ(true, qi::parse(it, end, grammar, msg_h));
-    spirit_po::po_message msg = spirit_po::convert_from_helper_type(std::move(msg_h));
+    CHECK_EQ(true, qi::parse(it, end, grammar, msg));
 //    std::cerr << "msg = " << debug_string(msg) << std::endl;
     CHECK_EQ(msg.id, "asdf");
-    CHECK_EQ(msg.strings.size(), 1u);
-    CHECK_EQ(msg.strings[0], "jkl;");
+    CHECK_EQ(msg.strings().size(), 1u);
+    CHECK_EQ(msg.strings()[0], "jkl;");
   }
 
   // Test po header code

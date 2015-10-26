@@ -1,29 +1,27 @@
 #pragma once
 
-#include "po_message_helper.hpp"
-
-#include <boost/fusion/include/define_struct.hpp>
-
 #include <boost/optional/optional.hpp>
 #include <string>
+#include <utility>
 #include <vector>
-
-BOOST_FUSION_DEFINE_STRUCT(
- (spirit_po),
- po_message,
- (boost::optional<std::string>, context)
- (std::string, id)
- (std::string, id_plural)
- (std::vector<std::string>, strings))
 
 namespace spirit_po {
 
-/***
- * Function to convert the grammar's helper type to the desired type
- */
-inline static po_message convert_from_helper_type(po_message_helper && h) {
-  return { std::move(h.context), std::move(h.id), std::move(h.plural_and_strings.first), std::move(h.plural_and_strings.second) };
-}
+typedef std::pair<std::string, std::vector<std::string>> plural_and_strings_type;
+
+struct po_message {
+  boost::optional<std::string> context;
+  std::string id;
+  plural_and_strings_type plural_and_strings;
+
+  // Get the 'id_plural', 'strings' fields from the pair.
+  // It is arranged as a pair here to allow for simpler parsing with spirit attributes.
+  std::string & id_plural() { return plural_and_strings.first; }
+  const std::string & id_plural() const { return plural_and_strings.first; }
+
+  std::vector<std::string> & strings() { return plural_and_strings.second; }
+  const std::vector<std::string> & strings() const { return plural_and_strings.second; }
+};
 
 /***
  * Debug printer
@@ -35,11 +33,11 @@ std::string debug_string(const po_message & msg) {
     result += "  context: \"" + *msg.context + "\"\n";
   }
   result += "  id: \"" + msg.id + "\"\n";
-  result += "  id_plural: \"" + msg.id_plural + "\"\n";
+  result += "  id_plural: \"" + msg.id_plural() + "\"\n";
   result += "  strings: { ";
-  for (uint i = 0; i < msg.strings.size(); ++i) {
+  for (uint i = 0; i < msg.strings().size(); ++i) {
     if (i) { result += ", "; }
-    result += '"' + msg.strings[i] + '"';
+    result += '"' + msg.strings()[i] + '"';
   }
   result += " }\n";
   result += "}";
