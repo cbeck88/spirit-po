@@ -1,0 +1,1114 @@
+# translation of gnome-nettool.HEAD.az.po to Azerbaijani
+# translation of gnome-nettool.HEAD.po to Azerbaijani
+# gnome-network.HEAD.po faylının Azərbaycan Dilinə tərcüməsi
+# gnome-network.HEAD.po faylının Azərbaycan dilinə tərcüməsi
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Mətin Əmirov <metin@karegen.com>, 2003, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-nettool.HEAD.az\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-27 09:22+0000\n"
+"PO-Revision-Date: 2004-09-04 19:38+0300\n"
+"Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
+"Language-Team: Azerbaijani <translation-team-az@lists.sourceforge.net>\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: ../src/callbacks.c:332
+#, fuzzy
+msgid "translator-credits"
+msgstr ""
+"Mətin Əmirov <metin@karegen.com>\n"
+"\n"
+"Tərcümə işləri üzrə yazışma siyahısı ünvanımız:\n"
+"<translation-team-az@lists.sourceforge.net> "
+
+#. Translators: %s is the name of the copyright holder
+#: ../src/callbacks.c:339
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr ""
+
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
+#: ../data/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Şəbəkə Vasitələri"
+
+#: ../src/callbacks.c:346
+msgid "Graphical user interface for common network utilities"
+msgstr "Ümumi şəbəkə vasitələri üçün qrafiki ara üz"
+
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
+msgid "Idle"
+msgstr ""
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:463
+#, fuzzy, c-format
+#| msgid "Network Tools"
+msgid "%s - Network Tools"
+msgstr "Şəbəkə Vasitələri"
+
+#: ../src/callbacks.c:487
+msgid "Unable to open help file"
+msgstr ""
+
+#: ../data/gnome-nettool.desktop.in.in.h:2
+#, fuzzy
+#| msgid "Load information for a network device"
+msgid "View information about your network"
+msgstr "Şəbəkə avadanlığı üçün məlumat yüklə"
+
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "Historically used hostnames"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "Historically used usernames"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:1
+msgid "Host"
+msgstr "Qovşaq"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "İstifadəçi"
+
+#: ../data/gnome-nettool.ui.h:3
+msgid "_Tool"
+msgstr "_Vasitə"
+
+#: ../data/gnome-nettool.ui.h:4
+msgid "Beep on ping"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:6
+msgid "Copy as text _report"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "_Keçmişi Təmizlə"
+
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:10
+#, fuzzy
+msgid "Devices - Network Tools"
+msgstr "Şəbəkə Vasitələri"
+
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "Şə_bəkə avadanlığı:"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "_Quraşdır"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "IP Məlumatı"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "Avadanlıq ünvanı:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "Multicast:"
+
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "MTU:"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "Link sürəti:"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "Vəziyyət:"
+
+#: ../data/gnome-nettool.ui.h:19
+msgid "Not Available"
+msgstr "Mövcud Deyil"
+
+#: ../data/gnome-nettool.ui.h:20
+msgid "Interface Information"
+msgstr "Ara Üz Məlumatı"
+
+#: ../data/gnome-nettool.ui.h:21
+msgid "Transmitted bytes:"
+msgstr "Ötürülən bayt:"
+
+#: ../data/gnome-nettool.ui.h:22
+msgid "Received bytes:"
+msgstr "Alınan bayt:"
+
+#: ../data/gnome-nettool.ui.h:23
+msgid "Transmission errors:"
+msgstr "Ötürmə xətaları:"
+
+#: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "Ötürülən paketlər:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "Alınan paketlər:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "Alım xətaları:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "Yığılmalar:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "Ara Üz Statistikaları"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "Avadanlıqlar"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "Təkcə"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "istək"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "Məhdudiyyətsiz istək"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "Göndər:"
+
+#: ../data/gnome-nettool.ui.h:34
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to ping.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Pinq ediləcək şəbəkə ünvanını bildirin.\n"
+"Məs: www.domen.com ya da 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:35
+#, fuzzy
+#| msgid "_Network address:"
+msgid "Network address"
+msgstr "Şə_bəkə ünvanı:"
+
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "Şə_bəkə ünvanı:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "Ping"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "ms"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "Maksimal:"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "Ortalama:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "Minimal:"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "Yuvarladılmış Vaxt Statistikaları"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "Ötürülən paketlər:"
+
+#: ../data/gnome-nettool.ui.h:46
+#, no-c-format
+msgid "0%"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:48
+#, fuzzy
+#| msgid "Received packets:"
+msgid "Successful packets:"
+msgstr "Alınan paketlər:"
+
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "Alınan paketlər:"
+
+#: ../data/gnome-nettool.ui.h:50
+#, fuzzy
+msgid "Transmission Statistics"
+msgstr "Transmissiya Statistikaları"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "Displey:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "Yol Cədvəli Məlumatı"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "Fəal Şəbəkə Xidmətləri"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "Multicast Məlumatı"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "Netstat"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:58
+#, fuzzy
+#| msgid "Netstat"
+msgid "Netstat output"
+msgstr "Netstat"
+
+#: ../data/gnome-nettool.ui.h:59
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to trace a route to.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"Yolu izlənəcək şəbəkə ünvanını bildirin.\n"
+"Məs: www.domen.com ya da 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "Yol"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:62
+#, fuzzy
+#| msgid "Traceroute"
+msgid "Traceroute output"
+msgstr "Yol İzləmə"
+
+#: ../data/gnome-nettool.ui.h:63
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to trace a route to.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Yolu izlənəcək şəbəkə ünvanını bildirin.\n"
+"Məs: www.domen.com ya da 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:64
+msgid "Traceroute"
+msgstr "Yol İzləmə"
+
+#: ../data/gnome-nettool.ui.h:65
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to scan for open ports.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Açıq portların axtarılacağı şəbəkə ünvanını bildirin.\n"
+"Məs: www.domen.com ya da 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "Axtar"
+
+#: ../data/gnome-nettool.ui.h:67
+msgid "Output for port scan"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:68
+#, fuzzy
+#| msgid "Port Scan"
+msgid "Port scan output"
+msgstr "Port Axtarışı"
+
+#: ../data/gnome-nettool.ui.h:69
+msgid "Port Scan"
+msgstr "Port Axtarışı"
+
+#: ../data/gnome-nettool.ui.h:70
+msgid "_Information type:"
+msgstr "_Məlumat növü:"
+
+#: ../data/gnome-nettool.ui.h:71
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to lookup.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Məlumat alınacaq şəbəkə ünvanını bildirin.\n"
+"Məs: www.domen.com ya da 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "Axtarış"
+
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:74
+#, fuzzy
+#| msgid "Lookup"
+msgid "Lookup output"
+msgstr "Axtarış"
+
+#: ../data/gnome-nettool.ui.h:75
+#, fuzzy
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Bu istifadəçini finger etmək üçün şəbəkə ünvanını bildirin.\n"
+"Məs: www.domen.com ya da 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+#, fuzzy
+#| msgid "Enter the user to finger."
+msgid "Enter the user to finger"
+msgstr "Finger ediləcək istifadəçi adını bildirin."
+
+#: ../data/gnome-nettool.ui.h:77
+#, fuzzy
+#| msgid "_Username:"
+msgid "User name"
+msgstr "_İstifadəçi Adı:"
+
+#: ../data/gnome-nettool.ui.h:78
+msgid "_Username:"
+msgstr "_İstifadəçi Adı:"
+
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
+
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:81
+#, fuzzy
+#| msgid "Finger"
+msgid "Finger output"
+msgstr "Finger"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "_IP ünvanı:"
+
+#: ../data/gnome-nettool.ui.h:83
+#, fuzzy
+#| msgid ""
+#| "Enter a domain address to lookup its whois information.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"whois məlumatı alınacaq domen ünvanını bildirin.\n"
+"Məs: www.domen.com ya da 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+#, fuzzy
+#| msgid "_Domain address:"
+msgid "Domain address"
+msgstr "_IP ünvanı:"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Whois"
+
+#: ../data/gnome-nettool.ui.h:86
+msgid "Output for whois"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:87
+msgid "Whois output"
+msgstr ""
+
+#. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
+#: ../src/info.c:60
+msgid "Other type"
+msgstr "Başqa növ"
+
+#: ../src/info.c:61
+msgid "Ethernet Interface"
+msgstr "Eternet Ara Üzü"
+
+#: ../src/info.c:62
+msgid "Wireless Interface"
+msgstr "Naqilsiz Ara Üz"
+
+#: ../src/info.c:63
+msgid "Modem Interface"
+msgstr "Modem Ara Üzü"
+
+#: ../src/info.c:64
+msgid "Parallel Line Interface"
+msgstr "Paralel Xətd Ara Üzü"
+
+#: ../src/info.c:65
+msgid "Infrared Interface"
+msgstr "Qızıl Ötəsi Ara Üz"
+
+#: ../src/info.c:66
+msgid "Loopback Interface"
+msgstr "Loopback Ara Üzü"
+
+#: ../src/info.c:67
+msgid "Unknown Interface"
+msgstr "Naməlum Ara Üz"
+
+#: ../src/info.c:165
+#, fuzzy
+msgid "Network Devices Not Found"
+msgstr "<i>Şəbəkə Avadanlıqları Tapılmadı</i>"
+
+#: ../src/info.c:396 ../src/info.c:399
+msgid "Unknown"
+msgstr "Naməlum"
+
+#: ../src/info.c:471
+msgid "Active"
+msgstr "Fəal"
+
+#: ../src/info.c:473
+msgid "Inactive"
+msgstr "Qeyri-fəal"
+
+#: ../src/info.c:478
+msgid "Loopback"
+msgstr "Loopback"
+
+#: ../src/info.c:489
+msgid "Enabled"
+msgstr "Fəal"
+
+#: ../src/info.c:491
+msgid "Disabled"
+msgstr "Qeyri-fəal"
+
+#. The info output in a text format (to copy on clipboard)
+#: ../src/info.c:580
+#, c-format
+msgid "Network device:\t%s\n"
+msgstr "Şəbəkə avadanlığı:\t%s\n"
+
+#: ../src/info.c:581
+#, c-format
+msgid "Hardware address:\t%s\n"
+msgstr "Avadanlıq ünvanı: \t%s\n"
+
+#: ../src/info.c:582
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr "Multicast:\t%s\n"
+
+#: ../src/info.c:583
+#, c-format
+msgid "MTU:\t%s\n"
+msgstr "MTU:\t%s\n"
+
+#: ../src/info.c:584
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr "Link sürəti:\t%s\n"
+
+#: ../src/info.c:585
+#, c-format
+msgid "State:\t%s\n"
+msgstr "Vəziyyət: \t%s\n"
+
+#: ../src/info.c:587
+#, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr "Ötürürlən paketlər: \t%s\n"
+
+#: ../src/info.c:588
+#, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Ötürmə xətaları: \t%s\n"
+
+#: ../src/info.c:589
+#, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Alınan paketlər: \t%s\n"
+
+#: ../src/info.c:590
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr "Alış xətaları: \t%s\n"
+
+#: ../src/info.c:591
+#, c-format
+msgid "Collisions:\t%s\n"
+msgstr "Yığılmalar: \t%s\n"
+
+#: ../src/info.h:23
+msgid "not available"
+msgstr "mövcud deyil"
+
+#: ../src/lookup.c:85
+#, c-format
+msgid "Looking up %s"
+msgstr "%s axtarılır"
+
+#: ../src/lookup.c:279
+msgid "Name"
+msgstr "Ad"
+
+#. Time To Live of a hostname in a name server
+#: ../src/lookup.c:288
+msgid "TTL"
+msgstr "TTL"
+
+#: ../src/lookup.c:297
+msgid "Address Type"
+msgstr "Ünvan Növü"
+
+#: ../src/lookup.c:307
+msgid "Record Type"
+msgstr "Qeyd Növü"
+
+#: ../src/lookup.c:316
+msgid "Address"
+msgstr "Ünvan"
+
+#. The lookup output in text format:
+#. Source of query (hostname/ip address),
+#. Time To Live (TTL), Address Type,
+#. Record Type (A, PTR, HINFO, NS, TXT, etc.),
+#. Resolution (results of the query)
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/lookup.c:344
+msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
+msgstr "Mənbə\tTTL\tÜnvan Növü\tQeyd Növü1\tNəticələr\n"
+
+#: ../src/main.c:82
+msgid "Load information for a network device"
+msgstr "Şəbəkə avadanlığı üçün məlumat yüklə"
+
+#: ../src/main.c:83
+msgid "DEVICE"
+msgstr "AVADANLIQ"
+
+#: ../src/main.c:86
+msgid "Send a ping to a network address"
+msgstr "Şəbəkə ünvanına ping yolla"
+
+#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
+msgid "HOST"
+msgstr "QOVŞAQ"
+
+#: ../src/main.c:90
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr "Netstat məlumatını al. Mümkün seçimlər route, active, multicast."
+
+#: ../src/main.c:91
+msgid "COMMAND"
+msgstr "ƏMR"
+
+#: ../src/main.c:94
+msgid "Trace a route to a network address"
+msgstr "Şəbəkə ünvanının yolunu tap"
+
+#: ../src/main.c:98
+msgid "Port scan a network address"
+msgstr "Şəbəkə ünvanının portlarını yoxla"
+
+#: ../src/main.c:102
+msgid "Look up a network address"
+msgstr "Şəbəkə ünvanını tap"
+
+#: ../src/main.c:106
+msgid "Finger command to run"
+msgstr "İcra ediləcək finger əmri"
+
+#: ../src/main.c:107
+msgid "USER"
+msgstr "İSTİFADƏÇİ"
+
+#: ../src/main.c:110
+msgid "Perform a whois lookup for a network domain"
+msgstr "Şəbəkə domeninin whois nəticələrini öyrən"
+
+#: ../src/main.c:111
+msgid "DOMAIN"
+msgstr "DOMEN"
+
+#: ../src/main.c:130
+#, fuzzy, c-format
+msgid ""
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"installed"
+msgstr ""
+"%s faylı mövcud deyil. Xahiş edirik gnome-netinfo-nun düzgün qurulduğunu "
+"yoxlayın"
+
+#: ../src/main.c:478 ../src/netstat.c:464
+msgid "Protocol"
+msgstr "Protokol"
+
+#: ../src/main.c:485
+msgid "IP Address"
+msgstr "IP Ünvanı"
+
+#: ../src/main.c:492
+msgid "Netmask / Prefix"
+msgstr "Şəbəkə Maskası / Prefiks"
+
+#: ../src/main.c:499
+msgid "Broadcast"
+msgstr "Yayım"
+
+#: ../src/main.c:506
+msgid "Scope"
+msgstr "Əhatə"
+
+#: ../src/main.c:665
+#, fuzzy
+#| msgid "Multicast Information"
+msgid "Default Information"
+msgstr "Multicast Məlumatı"
+
+#: ../src/main.c:666
+#, fuzzy
+#| msgid "IP Address"
+msgid "Internet Address"
+msgstr "IP Ünvanı"
+
+#: ../src/main.c:667
+msgid "Canonical Name"
+msgstr ""
+
+#: ../src/main.c:668
+msgid "CPU / OS Type"
+msgstr ""
+
+#. When asking for MX record in DNS context
+#: ../src/main.c:670
+msgid "Mailbox Exchange"
+msgstr ""
+
+#: ../src/main.c:671
+#, fuzzy
+#| msgid "IP Information"
+msgid "Mailbox Information"
+msgstr "IP Məlumatı"
+
+#. When asking for NS record in DNS context
+#: ../src/main.c:673
+msgid "Name Server"
+msgstr ""
+
+#: ../src/main.c:674
+#, fuzzy
+#| msgid "Port scan a network address"
+msgid "Host name for Address"
+msgstr "Şəbəkə ünvanının portlarını yoxla"
+
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
+#: ../src/main.c:678
+msgid "Start of Authority"
+msgstr ""
+
+#: ../src/main.c:679
+#, fuzzy
+#| msgid "IP Information"
+msgid "Text Information"
+msgstr "IP Məlumatı"
+
+#: ../src/main.c:680
+msgid "Well Known Services"
+msgstr ""
+
+#: ../src/main.c:681
+#, fuzzy
+#| msgid "IP Information"
+msgid "Any / All Information"
+msgstr "IP Məlumatı"
+
+#: ../src/netstat.c:134
+msgid "Getting routing table"
+msgstr "Yol cədvəli alınır"
+
+#: ../src/netstat.c:149
+msgid "Getting active Internet connections"
+msgstr "Fəal internet bağlantıları alınır"
+
+#: ../src/netstat.c:158
+msgid "Getting group memberships"
+msgstr "Qrup abunəlikləri alınır"
+
+#: ../src/netstat.c:471
+msgid "IP Source"
+msgstr "IP Mənbəsi"
+
+#: ../src/netstat.c:479
+msgid "Port/Service"
+msgstr "Port/Xidmət"
+
+#: ../src/netstat.c:487 ../src/scan.c:213
+msgid "State"
+msgstr "Vəziyyət"
+
+#: ../src/netstat.c:640
+msgid "Destination/Prefix"
+msgstr "Hədəf/Prefiks"
+
+#: ../src/netstat.c:642
+msgid "Destination"
+msgstr "Hədəf"
+
+#: ../src/netstat.c:649
+msgid "Gateway"
+msgstr "Geçiş Qapısı"
+
+#: ../src/netstat.c:657
+msgid "Netmask"
+msgstr "Şəbəkə Maskası"
+
+#: ../src/netstat.c:665 ../src/netstat.c:771
+msgid "Interface"
+msgstr "Ara üz"
+
+#: ../src/netstat.c:778
+msgid "Member"
+msgstr "Üzv"
+
+#: ../src/netstat.c:786
+msgid "Group"
+msgstr "Qrup"
+
+#. The netstat "Display active network services" output in
+#. text format.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/netstat.c:826
+msgid "Protocol\tIP Source\tPort/Service\tState\n"
+msgstr "Protokol\tIP Mənbəsi\tPort/Xidmət\tVəziyyət\n"
+
+#. The netstat "Display routing" output in text format.
+#. This seems as a route table.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/netstat.c:832
+msgid "Destination\tGateway\tNetmask\tInterface\n"
+msgstr "Hədəf\tGeçiş Qapısı\tŞəbəkə Maskası\tAra Üz\n"
+
+#. The netstat "Multicast information" output in text format.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/netstat.c:837
+msgid "Interface\tMember\tGroup\n"
+msgstr "Ara Üz\tÜzv\tQrup\n"
+
+#: ../src/nettool.c:204
+msgid "A network address was not specified"
+msgstr "Şəbəkə ünvanı bildirilməyib"
+
+#: ../src/nettool.c:205 ../src/nettool.c:214
+msgid "Please enter a valid network address and try again."
+msgstr "Xahiş edirik düzgün şəbəkə ünvanını bildirin və yenidən sınayın."
+
+#: ../src/nettool.c:212
+#, c-format
+msgid "The address '%s' cannot be found"
+msgstr "'%s' ünvanı tapıla bilmir"
+
+#: ../src/nettool.c:241
+msgid "A domain address was not specified"
+msgstr "Domen ünvanı ünvanı bildirilməyib"
+
+#: ../src/nettool.c:242
+msgid "Please enter a valid domain address and try again."
+msgstr "Xahiş edirik düzgün domen ünvanı bildirin və yenidən sınayın."
+
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr ""
+
+#: ../src/nettool.c:464
+msgid "Information not available"
+msgstr "Məlumat mövcud deyil"
+
+#: ../src/nettool.c:589
+msgid "Stop"
+msgstr "Dayan"
+
+#: ../src/nettool.c:595
+msgid "Run"
+msgstr "İcra Et"
+
+#. Created up here so we can get the geometry info.
+#: ../src/ping.c:155
+#, fuzzy
+#| msgid "Time 1"
+msgid "Time (ms):"
+msgstr "Vaxt 1"
+
+#: ../src/ping.c:176
+msgid "Seq. No.:"
+msgstr ""
+
+#: ../src/ping.c:261
+#, c-format
+msgid "Sending ping requests to %s"
+msgstr "%s ünvanına ping istəyi göndərilir"
+
+#: ../src/ping.c:577
+msgid "Bytes"
+msgstr "Bayt"
+
+#: ../src/ping.c:584
+msgid "Source"
+msgstr "Mənbə"
+
+#: ../src/ping.c:592
+msgid "Seq"
+msgstr "Seq"
+
+#: ../src/ping.c:602 ../src/traceroute.c:336
+msgid "Time"
+msgstr "Vaxt"
+
+#: ../src/ping.c:610
+msgid "Units"
+msgstr "Vahid"
+
+#. The ping output in text format:
+#. Bytes received, Address Source, Number of Sequence,
+#. Round Trip Time (Time), Units of Time.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/ping.c:636
+msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
+msgstr "Bayt\tMənbə\tSeq\tVaxt\tVahid\n"
+
+#. The ping output in a text format (to copy on clipboard)
+#: ../src/ping.c:651
+#, c-format
+msgid "Time minimum:\t%s ms\n"
+msgstr "Minimal vaxt:\t%s ms\n"
+
+#: ../src/ping.c:652
+#, c-format
+msgid "Time average:\t%s ms\n"
+msgstr "Ortalama vaxt\t%s ms\n"
+
+#: ../src/ping.c:653
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr "Maksimal vaxt:\t%s ms\n"
+
+#: ../src/ping.c:655
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr "Ötürülən paket:\t%s\n"
+
+#: ../src/ping.c:657
+#, c-format
+msgid "Packets received:\t%s\n"
+msgstr "Alınan paket:\t%s\n"
+
+#: ../src/ping.c:660
+#, fuzzy, c-format
+#| msgid "Received packets:\t%s\n"
+msgid "Successful packets:\t%s\n"
+msgstr "Alınan paketlər: \t%s\n"
+
+#: ../src/scan.c:68
+#, c-format
+msgid "Scanning %s for open ports"
+msgstr "%s ünvanında açıq portlar axtarılır"
+
+#: ../src/scan.c:205
+msgid "Port"
+msgstr "Port"
+
+#: ../src/scan.c:221
+msgid "Service"
+msgstr "Xidmət"
+
+#. The portscan output in text format:
+#. Port, State, Service.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/scan.c:243
+msgid "Port\tState\tService\n"
+msgstr "Port\tVəziyyət\tXidmət\n"
+
+#: ../src/traceroute.c:67
+#, c-format
+msgid "Tracing route to %s"
+msgstr "Yol %s ünvanına istiqamətləndirilir"
+
+#: ../src/traceroute.c:309
+msgid "Hop"
+msgstr "Hop"
+
+#: ../src/traceroute.c:317
+msgid "Hostname"
+msgstr "Qovşaq Adı"
+
+#: ../src/traceroute.c:325
+msgid "IP"
+msgstr "IP"
+
+#. The traceroute output in text format:
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/traceroute.c:360
+#, fuzzy
+#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Hop\tQovşaq adı\tIP\tVaxt 1\tVaxt 2\n"
+
+#: ../src/utils.c:239
+#, c-format
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
+msgstr ""
+
+#: ../src/finger.c:65
+#, c-format
+msgid "Getting information of %s on \"%s\""
+msgstr "\"%2$s\" üstündəki %1$s haqqında məlumat alınır"
+
+#: ../src/finger.c:69
+#, c-format
+msgid "Getting information of all users on \"%s\""
+msgstr "\"%s\" üstündəki bütün istifadəçilər haqqında məlumat alınır"
+
+#: ../src/whois.c:62
+#, c-format
+msgid "Getting the whois information of %s"
+msgstr "%s ünvanının whois məlumatı alınır"
+
+#~ msgid "Broadcast:"
+#~ msgstr "Yayım:"
+
+#~ msgid "IP Address:"
+#~ msgstr "IP Ünvanı:"
+
+#~ msgid "Netmask:"
+#~ msgstr "Şəbəkə maskası:"
+
+#~ msgid "Packets loss:"
+#~ msgstr "İtirilən paketlər:"
+
+#~ msgid "IP address:\t%s\n"
+#~ msgstr "IP ünvanı: \t%s\n"
+
+#~ msgid "Netmask:\t%s\n"
+#~ msgstr "Şəbəkə maskası: \t%s\n"
+
+#~ msgid "Broadcast:\t%s\n"
+#~ msgstr "Yayım:\t%s\n"
+
+#~ msgid "Packet loss:\t%s\n"
+#~ msgstr "İtirilən paket:\t%s\n"
+
+#~ msgid "unknown"
+#~ msgstr "namə'lum"
+
+#~ msgid "Time 2"
+#~ msgstr "Vaxt 2"
+
+#~ msgid "%s: Command not found"
+#~ msgstr "%s: Əmr tapıla bilmədi"
+
+#~ msgid "Network Information Tools"
+#~ msgstr "Şəbəkə Məlumat Vasitələri"
+
+#~ msgid "Network Tools - Devices"
+#~ msgstr "Şəbəkə Vasitələri - Avadanlıqlar"
+
+#~ msgid "Network Information"
+#~ msgstr "Şəbəkə Məlumatı"

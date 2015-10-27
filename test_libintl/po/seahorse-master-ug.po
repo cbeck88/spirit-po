@@ -1,0 +1,2922 @@
+# Uyghur translation for seahorse.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Gheyret Kenji<gheyret@yahoo.com>,2010.
+# Sahran <sahran.ug@gmail.com>, 2010.
+# Zeper <zeper@msn.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: seahorse\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=seahorse&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-27 14:16+0000\n"
+"PO-Revision-Date: 2013-04-06 18:25+0900\n"
+"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/seahorse.appdata.xml.in.h:1
+#, fuzzy
+#| msgid "Show Seahorse help"
+msgid "Seahorse"
+msgstr "Seahorse ياردىمىنى كۆرسىتىدۇ"
+
+#: ../data/seahorse.appdata.xml.in.h:2 ../data/seahorse.desktop.in.in.h:2
+msgid "Manage your passwords and encryption keys"
+msgstr "ئىم ۋە شىفىرلاش ئاچقۇچلىرىنى باشقۇرىدۇ"
+
+#: ../data/seahorse.appdata.xml.in.h:3
+msgid ""
+"Seahorse is a GNOME application for managing encryption keys. It also "
+"integrates with nautilus, gedit and other places for encryption operations."
+msgstr ""
+
+#: ../data/seahorse.appdata.xml.in.h:4
+msgid ""
+"With seahorse you can create and manage PGP keys, create and manage SSH "
+"keys, publish and retrieve keys from key servers, cache your passphrase so "
+"you don't have to keep typing it and backup your keys and keyring."
+msgstr ""
+
+#: ../data/seahorse.desktop.in.in.h:1 ../common/catalog.vala:285
+#: ../src/seahorse-key-manager.c:660
+msgid "Passwords and Keys"
+msgstr "ئىملار ۋە ئاچقۇچلار"
+
+#: ../data/seahorse.desktop.in.in.h:3
+msgid "keyring;encryption;security;sign;ssh;"
+msgstr ""
+"keyring;encryption;security;sign;ssh;ئاچقۇچ ھالقىسى;شىفىرلاش;ئىمزا;"
+"بىخەتەرلىك;"
+
+#: ../common/catalog.vala:257
+msgid "Contributions:"
+msgstr "تۆھپىكارلار:"
+
+#: ../common/catalog.vala:287
+msgid "translator-credits"
+msgstr ""
+"Gheyret Kenji <gheyret@gmail.com>\n"
+"Sahran<sahran@live.com>\n"
+"Muhemmed Erdem <misran_erdem@hotmail.com>"
+
+#: ../common/catalog.vala:290
+msgid "Seahorse Project Homepage"
+msgstr "Seahorse قۇرۇلۇشى تورتۇراسى"
+
+#: ../common/catalog.vala:308
+msgid "Cannot delete"
+msgstr "ئۆچۈرگىلى بولمىدى"
+
+#: ../common/catalog.vala:331 ../libseahorse/seahorse-key-manager-store.c:443
+msgid "Couldn't export keys"
+msgstr "ئاچقۇچنى ئېكسپورت قىلالمىدى"
+
+#: ../common/catalog.vala:342
+msgid "Couldn't export data"
+msgstr "سانلىق-مەلۇماتلارنى ئېكسپورت قىلالمىدى"
+
+#: ../common/catalog.vala:358 ../libseahorse/seahorse-widget.c:460
+#, c-format
+msgid "Could not display help: %s"
+msgstr "ياردەمنى كۆرسىتەلمەيدۇ: %s"
+
+#. Top menu items
+#: ../common/catalog.vala:364
+msgid "_File"
+msgstr "ھۆججەت(_F)"
+
+#: ../common/catalog.vala:365
+msgid "E_xport..."
+msgstr "ئېكسپورت قىل(_X)..."
+
+#: ../common/catalog.vala:366
+msgid "Export to a file"
+msgstr "ھۆججەتكە چىقىرىدۇ"
+
+#: ../common/catalog.vala:367
+msgid "_Edit"
+msgstr "تەھرىر(_E)"
+
+#: ../common/catalog.vala:370
+msgid "Copy to the clipboard"
+msgstr "چاپلاش تاختىسىغا كۆچۈرىدۇ"
+
+#: ../common/catalog.vala:371 ../pkcs11/pkcs11-properties.vala:201
+#: ../src/seahorse-sidebar.c:954
+msgid "_Delete"
+msgstr "ئۆچۈر(_D)"
+
+#: ../common/catalog.vala:372
+msgid "Delete selected items"
+msgstr "تاللانغان تۈرلەرنى ئۆچۈر"
+
+#: ../common/catalog.vala:374
+msgid "Show the properties of this item"
+msgstr "مەزكۇر تۇرنىڭ خاسلىقىنى كۆرسىتىدۇ"
+
+#: ../common/catalog.vala:376
+msgid "Show the properties of this keyring"
+msgstr "مەزكۇر ئاچقۇچ ھالقىسىنىڭ خاسلىقىنى كۆرسىتىدۇ"
+
+#: ../common/catalog.vala:377
+msgid "Prefere_nces"
+msgstr "مايىللىق(_N)"
+
+#: ../common/catalog.vala:378
+msgid "Change preferences for this program"
+msgstr "پروگراممىنىڭ مايىللىقىنى ئۆزگەرتىدۇ"
+
+#: ../common/catalog.vala:379
+msgid "_View"
+msgstr "كۆرۈنۈش(_V)"
+
+#: ../common/catalog.vala:380
+msgid "_Help"
+msgstr "ياردەم(_H)"
+
+#: ../common/catalog.vala:382
+msgid "About this program"
+msgstr "بۇ پروگرامما ھەققىدە"
+
+#: ../common/catalog.vala:383
+msgid "_Contents"
+msgstr "مەزمۇنلار(_C)"
+
+#: ../common/catalog.vala:384
+msgid "Show Seahorse help"
+msgstr "Seahorse ياردىمىنى كۆرسىتىدۇ"
+
+#: ../common/exportable.vala:192
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:46
+msgid "Export"
+msgstr "ئېكسپورت قىلىش"
+
+#: ../gkr/gkr-backend.vala:39
+msgid "Passwords"
+msgstr "ئىم"
+
+#: ../gkr/gkr-backend.vala:43
+msgid "Stored personal passwords, credentials and secrets"
+msgstr "ساقلانغان ئىملار، ئىسپاتنامىلەر ۋە مەخپىيەتلىكلەر"
+
+#: ../gkr/gkr-backend.vala:251
+msgid "New password keyring"
+msgstr "يېڭى ئىم ئاچقۇچ ھالقىسى"
+
+#: ../gkr/gkr-backend.vala:252 ../gkr/gkr-backend.vala:259
+msgid "Used to store application and network passwords"
+msgstr "پروگرامما ۋە تور ئىملىرىنى ساقلاشقا ئىشلىتىلىدۇ"
+
+#: ../gkr/gkr-backend.vala:253
+msgid "New password..."
+msgstr "يېڭى ئىم…"
+
+#: ../gkr/gkr-backend.vala:254 ../gkr/gkr-backend.vala:261
+msgid "Safely store a password or secret."
+msgstr "ئىم ياكى مەخپىيەتلىكنى بىخەتەر ساقلايدۇ."
+
+#: ../gkr/gkr-backend.vala:258
+msgid "Password Keyring"
+msgstr "ئىم ئاچقۇچ ھالقىسى"
+
+#: ../gkr/gkr-backend.vala:260
+msgid "Stored Password"
+msgstr "ساقلانغان ئىملار"
+
+#: ../gkr/gkr-item-add.vala:24
+msgid "Add Password"
+msgstr "ئىم قوش"
+
+#: ../gkr/gkr-item-add.vala:101
+msgid "Couldn't add item"
+msgstr "تۈر قوشقىلى بولمىدى"
+
+#: ../gkr/gkr-item-properties.vala:136
+msgid "Access a network share or resource"
+msgstr "تور ھەمبەھىرى ياكى بايلىقىنى زىيارەت قىلىش"
+
+#: ../gkr/gkr-item-properties.vala:139
+msgid "Access a website"
+msgstr "تورتۇرانى زىيارەت قىلىش"
+
+#: ../gkr/gkr-item-properties.vala:142
+msgid "Unlocks a PGP key"
+msgstr "PGP ئاچقۇچلىرىنى قۇلۇپسىزلايدۇ"
+
+#: ../gkr/gkr-item-properties.vala:145
+msgid "Unlocks a Secure Shell key"
+msgstr "بىخەتەر Shell ئاچقۇچلىرىنى قۇلۇپسىزلايدۇ"
+
+#: ../gkr/gkr-item-properties.vala:148
+msgid "Saved password or login"
+msgstr "ساقلانغان ئىم ياكى كىرىش"
+
+#: ../gkr/gkr-item-properties.vala:161
+msgid "Network Credentials"
+msgstr "تور ئىسپاتنامىسى"
+
+#: ../gkr/gkr-item-properties.vala:166
+msgid "Password"
+msgstr "ئىم"
+
+#: ../gkr/gkr-item-properties.vala:235
+msgid "Couldn't change password."
+msgstr "ئىمنى ئۆزگەرتەلمىدى."
+
+#: ../gkr/gkr-item-properties.vala:273
+msgid "Couldn't set description."
+msgstr "چۈشەندۈرۈشلەرنى بەلگىلىيەلمىدى."
+
+#. Translators: This should be the same as the string in empathy
+#: ../gkr/gkr-item.vala:388
+msgid "IM account password for "
+msgstr "IM ھېسابات ئىمى "
+
+#: ../gkr/gkr-item.vala:444
+msgid "Password or secret"
+msgstr "ئىم ياكى مەخپىيەتلىك"
+
+#: ../gkr/gkr-item.vala:445
+msgid "Network password"
+msgstr "تور ئىمى"
+
+#: ../gkr/gkr-item.vala:446
+msgid "Stored note"
+msgstr "ساقلانغان ئىزاھ"
+
+#: ../gkr/gkr-item.vala:447
+msgid "Keyring password"
+msgstr "ئاچقۇچ ھالقىسى ئىمى"
+
+#: ../gkr/gkr-item.vala:448
+msgid "Encryption key password"
+msgstr "شىفىرلاش ئاچقۇچى ئىمى"
+
+#: ../gkr/gkr-item.vala:449
+msgid "Key storage password"
+msgstr "ئاچقۇچ ساقلىغۇچ ئىمى"
+
+#: ../gkr/gkr-item.vala:450
+msgid "Google Chrome password"
+msgstr "گۇگىل كىروم ئىمى"
+
+#: ../gkr/gkr-item.vala:451
+msgid "Gnome Online Accounts password"
+msgstr "گىنوم تور ھېساباتلىرى ئىمى"
+
+#: ../gkr/gkr-item.vala:452
+msgid "Telepathy password"
+msgstr "Telepathy ئىمى"
+
+#: ../gkr/gkr-item.vala:453
+msgid "Instant messaging password"
+msgstr "مۇڭداشقۇ ئىمى"
+
+#: ../gkr/gkr-item.vala:454
+msgid "Network Manager secret"
+msgstr "تور باشقۇرغۇنىڭ مەخپىيىتى"
+
+#: ../gkr/gkr-item.vala:504
+#, c-format
+msgid "Are you sure you want to delete the password '%s'?"
+msgstr "راستلا «%s» دېگەن ئىمنى  ئۆچۈرەمسىز؟"
+
+#: ../gkr/gkr-item.vala:506
+#, c-format
+msgid "Are you sure you want to delete %d password?"
+msgid_plural "Are you sure you want to delete %d passwords?"
+msgstr[0] "راستلا «%d» ئىمنى  ئۆچۈرەمسىز؟"
+
+#: ../gkr/gkr-keyring-add.vala:25
+msgid "Add Password Keyring"
+msgstr "ئىم ئاچقۇچ ھالقىسى قوش"
+
+#: ../gkr/gkr-keyring-add.vala:55
+msgid "Couldn't add keyring"
+msgstr "ئاچقۇچ ھالقىسىنى قوشالمىدى"
+
+#: ../gkr/gkr-keyring.vala:28
+msgid "A keyring that is automatically unlocked on login"
+msgstr "كىرگەندە ئاپتوماتىك قۇلۇپسىزلىنىدىغان ئاچقۇچ ھالقىسى"
+
+#: ../gkr/gkr-keyring.vala:29
+msgid "A keyring used to store passwords"
+msgstr "ئىملارنى ساقلايدىغان ئاچقۇچ ھالقىسى"
+
+#: ../gkr/gkr-keyring.vala:174
+msgid "Couldn't set default keyring"
+msgstr "كۆڭۈلدىكى ئاچقۇچ ھالقىسىنى بەلگىلىيەلمىدى"
+
+#: ../gkr/gkr-keyring.vala:198 ../gkr/gkr-keyring.vala:203
+msgid "Couldn't change keyring password"
+msgstr "ئاچقۇچ ھالقىسى ئىمىنى ئۆزگەرتەلمىدى"
+
+#: ../gkr/gkr-keyring.vala:209
+msgid "_Set as default"
+msgstr "كۆڭۈلدىكى قىلىپ بەلگىلە(_S)"
+
+#: ../gkr/gkr-keyring.vala:210
+msgid "Applications usually store new passwords in the default keyring."
+msgstr "پروگراممىلار يېڭى ئىملارنى كۆڭۈلدىكى ئاچقۇچ ھالقىسىدا ساقلايدۇ."
+
+#: ../gkr/gkr-keyring.vala:211
+msgid "Change _Password"
+msgstr "ئىم ئۆزگەرت(_P)"
+
+#: ../gkr/gkr-keyring.vala:212
+msgid "Change the unlock password of the password storage keyring"
+msgstr "ئىم ساقلاش ئاچقۇچ ھالقىسىنىڭ قۇلۇپسىزلاش ئىمىنى ئۆزگەرتىدۇ"
+
+#: ../gkr/gkr-keyring.vala:237
+#, c-format
+msgid "Are you sure you want to delete the password keyring '%s'?"
+msgstr "راستلا ئىم ئاچقۇچ ھالقىسى «%s» نى ئۆچۈرەمسىز؟"
+
+#: ../gkr/gkr-keyring.vala:240
+msgid "I understand that all items will be permanently deleted."
+msgstr "بارلىق تۈرلەرنىڭ مەڭگۈ ئۆچۈرۈلىدىغانلىقىنى بىلىمەن."
+
+#: ../gkr/seahorse-add-keyring.xml.h:1
+msgid ""
+"Please choose a name for the new keyring. You will be prompted for an unlock "
+"password."
+msgstr ""
+"يېڭى ئاچقۇچ ھالقىسىنىڭ ئاتىنى كىرگۈزۈڭ. سىزگە قۇلۇپسىزلاش ئۈچۈن ئىم كىرگۈزۈش "
+"ئۇچۇرى چىقىدۇ."
+
+#: ../gkr/seahorse-add-keyring.xml.h:2
+msgid "New Keyring Name:"
+msgstr "يېڭى ئاچقۇچ ھالقىسى ئاتى:"
+
+#: ../gkr/seahorse-gkr-add-item.xml.h:1
+#: ../gkr/seahorse-gkr-item-properties.xml.h:1 ../pgp/seahorse-revoke.xml.h:3
+#: ../ssh/seahorse-ssh-generate.xml.h:5
+msgid "_Description:"
+msgstr "چۈشەندۈرۈش(_D):"
+
+#: ../gkr/seahorse-gkr-add-item.xml.h:2
+msgid "_Password:"
+msgstr "ئىم(_P):"
+
+#: ../gkr/seahorse-gkr-add-item.xml.h:3
+msgid "_Show Password"
+msgstr "ئىمنى كۆرسەت(_S):"
+
+#: ../gkr/seahorse-gkr-add-item.xml.h:4
+msgid "_Keyring:"
+msgstr "ئاچقۇچ ھالقىسى(_K):"
+
+#. To translators: This is the noun not the verb.
+#: ../gkr/seahorse-gkr-item-properties.xml.h:3
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:23
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:13
+#: ../ssh/seahorse-ssh-key-properties.xml.h:9
+msgid "Use:"
+msgstr "ئىشلىتىلىشى:"
+
+#: ../gkr/seahorse-gkr-item-properties.xml.h:4
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:24
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:20
+#: ../ssh/seahorse-ssh-key-properties.xml.h:3
+msgid "Type:"
+msgstr "تىپى:"
+
+#: ../gkr/seahorse-gkr-item-properties.xml.h:5
+msgid "Server:"
+msgstr "مۇلازىمېتىر:"
+
+#: ../gkr/seahorse-gkr-item-properties.xml.h:6
+msgid "Login:"
+msgstr "تىزىمغا كىر:"
+
+#: ../gkr/seahorse-gkr-item-properties.xml.h:7
+msgid "Show pass_word"
+msgstr "ئىم كۆرسەت(_W)"
+
+#: ../gkr/seahorse-gkr-item-properties.xml.h:8
+#: ../libseahorse/seahorse-passphrase.c:179 ../ssh/seahorse-ssh-askpass.c:117
+msgid "Password:"
+msgstr "ئىم:"
+
+#: ../gkr/seahorse-gkr-item-properties.xml.h:9 ../pgp/seahorse-pgp-subkey.c:402
+#: ../ssh/seahorse-ssh-key-properties.xml.h:15
+msgid "Key"
+msgstr "ئاچقۇچ"
+
+#: ../gkr/seahorse-gkr-item-properties.xml.h:10
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:38
+#: ../ssh/seahorse-ssh-key-properties.xml.h:20
+msgid "Technical Details:"
+msgstr "تېخنىكىلىق تەپسىلاتلار:"
+
+#: ../gkr/seahorse-gkr-item-properties.xml.h:11
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:51
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:47
+#: ../ssh/seahorse-ssh-key-properties.xml.h:22
+msgid "Details"
+msgstr "تەپسىلاتلار"
+
+#: ../gkr/seahorse-gkr-keyring.xml.h:1
+msgid "Name:"
+msgstr "ئاتى:"
+
+#. To translators: This is the noun not the verb.
+#: ../gkr/seahorse-gkr-keyring.xml.h:3
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:41
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:42
+msgid "Created:"
+msgstr "قۇرۇلغان:"
+
+#: ../gkr/seahorse-gkr-keyring.xml.h:4
+msgid "Keyring"
+msgstr "ئاچقۇچ ھالقىسى"
+
+#: ../libegg/egg-datetime.c:316
+msgid "Display flags"
+msgstr "بەلگىلەرنى كۆرسەت"
+
+#: ../libegg/egg-datetime.c:317
+msgid "Displayed date and/or time properties"
+msgstr "كۆرسىتىلگەن چېسلا ۋە ياكى ۋاقىت خاسلىقلىرى"
+
+#: ../libegg/egg-datetime.c:322
+msgid "Lazy mode"
+msgstr "ھۇرۇن ھالەت"
+
+#: ../libegg/egg-datetime.c:323
+msgid "Lazy mode doesn't normalize entered date and time values"
+msgstr ""
+"ھۇرۇن ھالەتتە كىرگۈزۈلگەن چېسلا ۋە ۋاقىت قىممەتلىرى نورماللاشتۇرۇلمايدۇ"
+
+#: ../libegg/egg-datetime.c:328
+msgid "Year"
+msgstr "يىل"
+
+#: ../libegg/egg-datetime.c:329
+msgid "Displayed year"
+msgstr "كۆرسىتىلگەن يىل"
+
+#: ../libegg/egg-datetime.c:334
+msgid "Month"
+msgstr "ئاي"
+
+#: ../libegg/egg-datetime.c:335
+msgid "Displayed month"
+msgstr "كۆرسىتىلگەن ئاي"
+
+#: ../libegg/egg-datetime.c:340
+msgid "Day"
+msgstr "كۈن"
+
+#: ../libegg/egg-datetime.c:341
+msgid "Displayed day of month"
+msgstr "كۆرسىتىلگەن كۈن"
+
+#: ../libegg/egg-datetime.c:346
+msgid "Hour"
+msgstr "سائەت"
+
+#: ../libegg/egg-datetime.c:347
+msgid "Displayed hour"
+msgstr "كۆرسىتىلگەن سائەت"
+
+#: ../libegg/egg-datetime.c:352
+msgid "Minute"
+msgstr "مىنۇت"
+
+#: ../libegg/egg-datetime.c:353
+msgid "Displayed minute"
+msgstr "كۆرسىتىلگەن ۋاقىت"
+
+#: ../libegg/egg-datetime.c:358
+msgid "Second"
+msgstr "سېكۇنت"
+
+#: ../libegg/egg-datetime.c:359
+msgid "Displayed second"
+msgstr "كۆرسىتىلگەن سېكۇنت"
+
+#: ../libegg/egg-datetime.c:364
+msgid "Lower limit year"
+msgstr "توۋەن يىل چېكى"
+
+#: ../libegg/egg-datetime.c:365
+msgid "Year part of the lower date limit"
+msgstr "چېسلانىڭ توۋەن چېكىنىڭ يىل بۆلىكى"
+
+#: ../libegg/egg-datetime.c:370
+msgid "Upper limit year"
+msgstr "يۇقىرى يىل چېكى"
+
+#: ../libegg/egg-datetime.c:371
+msgid "Year part of the upper date limit"
+msgstr "چېسلانىڭ يۇقىرى چېكىنىڭ يىل بۆلىكى"
+
+#: ../libegg/egg-datetime.c:376
+msgid "Lower limit month"
+msgstr "توۋەن ئاي چېكى"
+
+#: ../libegg/egg-datetime.c:377
+msgid "Month part of the lower date limit"
+msgstr "چېسلانىڭ توۋەن چېكىنىڭ ئاي بۆلىكى"
+
+#: ../libegg/egg-datetime.c:382
+msgid "Upper limit month"
+msgstr "يۇقىرى ئاي چېكى"
+
+#: ../libegg/egg-datetime.c:383
+msgid "Month part of the upper date limit"
+msgstr "چېسلانىڭ يۇقىرى چېكىنىڭ ئاي بۆلىكى"
+
+#: ../libegg/egg-datetime.c:388
+msgid "Lower limit day"
+msgstr "توۋەن كۈن چېكى"
+
+#: ../libegg/egg-datetime.c:389
+msgid "Day of month part of the lower date limit"
+msgstr "چېسلانىڭ توۋەن چېكىنىڭ كۈن بۆلىكى"
+
+#: ../libegg/egg-datetime.c:394
+msgid "Upper limit day"
+msgstr "يۇقىرى كۈن چېكى"
+
+#: ../libegg/egg-datetime.c:395
+msgid "Day of month part of the upper date limit"
+msgstr "چېسلانىڭ يۇقىرى چېكىنىڭ كۈن بۆلىكى"
+
+#: ../libegg/egg-datetime.c:400
+msgid "Lower limit hour"
+msgstr "توۋەن سائەت چېكى"
+
+#: ../libegg/egg-datetime.c:401
+msgid "Hour part of the lower time limit"
+msgstr "ۋاقىتنىڭ توۋەن چېكىنىڭ سائەت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:406
+msgid "Upper limit hour"
+msgstr "يۇقىرى سائەت چېكى"
+
+#: ../libegg/egg-datetime.c:407
+msgid "Hour part of the upper time limit"
+msgstr "ۋاقىتنىڭ يۇقىرى چېكىنىڭ سائەت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:412
+msgid "Lower limit minute"
+msgstr "توۋەن مىنۇت چېكى"
+
+#: ../libegg/egg-datetime.c:413
+msgid "Minute part of the lower time limit"
+msgstr "ۋاقىتنىڭ توۋەن چېكىنىڭ مىنۇت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:418
+msgid "Upper limit minute"
+msgstr "يۇقىرى مىنۇت چېكى"
+
+#: ../libegg/egg-datetime.c:419
+msgid "Minute part of the upper time limit"
+msgstr "ۋاقىتنىڭ يۇقىرى چېكىنىڭ مىنۇت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:424
+msgid "Lower limit second"
+msgstr "توۋەن سېكۇنت چېكى"
+
+#: ../libegg/egg-datetime.c:425
+msgid "Second part of the lower time limit"
+msgstr "ۋاقىتنىڭ توۋەن چېكىنىڭ سېكۇنت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:430
+msgid "Upper limit second"
+msgstr "يۇقىرى سېكۇنت چېكى"
+
+#: ../libegg/egg-datetime.c:431
+msgid "Second part of the upper time limit"
+msgstr "ۋاقىتنىڭ يۇقىرى چېكىنىڭ سېكۇنت بۆلىكى"
+
+#. Translate to calendar:week_start:1 if you want Monday to be the
+#. * first day of the week; otherwise translate to calendar:week_start:0.
+#. * Do *not* translate it to anything else, if it isn't calendar:week_start:1
+#. * or calendar:week_start:0 it will not work.
+#.
+#: ../libegg/egg-datetime.c:473
+msgid "calendar:week_start:0"
+msgstr "يىلنامە:week_start:0"
+
+#: ../libegg/egg-datetime.c:495
+msgid "Date"
+msgstr "چېسلا"
+
+#: ../libegg/egg-datetime.c:495
+msgid "Enter the date directly"
+msgstr "چېسلانى بىۋاسىتە كىرگۈزۈڭ"
+
+#: ../libegg/egg-datetime.c:502
+msgid "Select Date"
+msgstr "چېسلا تاللا"
+
+#: ../libegg/egg-datetime.c:502
+msgid "Select the date from a calendar"
+msgstr "يىلنامىدىن چېسلا تاللا"
+
+#: ../libegg/egg-datetime.c:520 ../libegg/egg-datetime.c:2198
+msgid "Time"
+msgstr "ۋاقىت"
+
+#: ../libegg/egg-datetime.c:520
+msgid "Enter the time directly"
+msgstr "ۋاقىتنى بىۋاسىتە كىرگۈزىدۇ"
+
+#: ../libegg/egg-datetime.c:527
+msgid "Select Time"
+msgstr "ۋاقىت تاللا"
+
+#: ../libegg/egg-datetime.c:527
+msgid "Select the time from a list"
+msgstr "تىزىملىكتىن ۋاقىت تاللا"
+
+#. Translators: set this to anything else if you want to use a
+#. * 24 hour clock.
+#.
+#: ../libegg/egg-datetime.c:792
+msgid "24hr: no"
+msgstr "24 سائەت: ياق"
+
+#: ../libegg/egg-datetime.c:796 ../libegg/egg-datetime.c:1259
+#: ../libegg/egg-datetime.c:1263
+msgid "AM"
+msgstr "چ ب"
+
+#: ../libegg/egg-datetime.c:798 ../libegg/egg-datetime.c:1260
+#: ../libegg/egg-datetime.c:1267
+msgid "PM"
+msgstr "چ ك"
+
+#. Translators: This is hh:mm:ss AM/PM.
+#: ../libegg/egg-datetime.c:806
+#, c-format
+msgid "%02d:%02d:%02d %s"
+msgstr "%02d:%02d:%02d %s"
+
+#. Translators: This is hh:mm AM/PM.
+#: ../libegg/egg-datetime.c:809
+#, c-format
+msgid "%02d:%02d %s"
+msgstr "%02d:%02d %s"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:813
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#. Translators: This is hh:mm.
+#: ../libegg/egg-datetime.c:816
+#, c-format
+msgid "%02d:%02d"
+msgstr "%02d:%02d"
+
+#. TODO: should handle other display modes as well...
+#. Translators: This is YYYY-MM-DD
+#: ../libegg/egg-datetime.c:1175
+#, c-format
+msgid "%04d-%02d-%02d"
+msgstr "%04d-%02d-%02d"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:1240
+#, c-format
+msgid "%u:%u:%u"
+msgstr "%u:%u:%u"
+
+#: ../libseahorse/seahorse-add-keyserver.xml.h:1
+msgid "initial temporary item"
+msgstr "دەسلەپكى ۋاقىتلىق تۈر"
+
+#: ../libseahorse/seahorse-add-keyserver.xml.h:2
+msgid "Add Key Server"
+msgstr "ئاچقۇچ مۇلازىمېتىرى قوش"
+
+#: ../libseahorse/seahorse-add-keyserver.xml.h:3
+msgid "Key Server Type:"
+msgstr "ئاچقۇچ مۇلازىمېتىرى تىپى:"
+
+#: ../libseahorse/seahorse-add-keyserver.xml.h:4
+msgid "Host:"
+msgstr "كومپيۇتېر:"
+
+#: ../libseahorse/seahorse-add-keyserver.xml.h:5
+#: ../ssh/seahorse-ssh-upload.xml.h:3
+msgid "The host name or address of the server."
+msgstr "مۇلازىمېتىرنىڭ ئاتى ياكى ئادرېسى."
+
+#: ../libseahorse/seahorse-add-keyserver.xml.h:6
+msgid ":"
+msgstr ":"
+
+#: ../libseahorse/seahorse-add-keyserver.xml.h:7
+msgid "The port to access the server on."
+msgstr "مۇلازىمېتىردىكى زىيارەت ئېغىزى."
+
+#: ../libseahorse/seahorse-application.c:108
+msgid "Version of this application"
+msgstr "بۇ پروگراممىنىڭ نەشرى"
+
+#: ../libseahorse/seahorse-application.c:114
+#: ../libseahorse/seahorse-application.c:158
+msgid "- System Settings"
+msgstr "- سىستېما تەڭشەكلىرى"
+
+#: ../libseahorse/seahorse-application.c:154
+msgid "Don't display a window"
+msgstr ""
+
+#: ../libseahorse/seahorse-interaction.c:98
+#, c-format
+msgid "Enter PIN or password for: %s"
+msgstr "PIN ياكى ئىمنى كىرگۈزۈڭ : %s"
+
+#. The second and main entry
+#: ../libseahorse/seahorse-passphrase.c:241
+msgid "Confirm:"
+msgstr "جەزملەش:"
+
+#: ../libseahorse/seahorse-prefs.c:65
+msgid "Not a valid Key Server address."
+msgstr "ئىناۋەتلىك ئاچقۇچ مۇلازىمېتىرى ئادرېسى ئەمەس."
+
+#: ../libseahorse/seahorse-prefs.c:66
+#, fuzzy
+#| msgid ""
+#| "For help contact your system adminstrator or the administrator of the key "
+#| "server."
+msgid ""
+"For help contact your system administrator or the administrator of the key "
+"server."
+msgstr ""
+"ياردەم ئۈچۈن سىستېما باشقۇرغۇچىسى ياكى ئاچقۇچ مۇلازىمېتىرىنىڭ باشقۇرغۇچىسى "
+"بىلەن ئالاقە قىلىڭ."
+
+#: ../libseahorse/seahorse-prefs.c:179
+msgid "URL"
+msgstr "URL"
+
+#: ../libseahorse/seahorse-prefs.c:349
+msgid "Custom"
+msgstr "ئىختىيارى"
+
+#: ../libseahorse/seahorse-prefs.c:402
+msgid "None: Don't publish keys"
+msgstr "يوق: ئاچقۇچلارنى ئېلان قىلمايدۇ"
+
+#: ../libseahorse/seahorse-prefs.xml.h:1
+msgid "Preferences"
+msgstr "مايىللىق"
+
+#: ../libseahorse/seahorse-prefs.xml.h:2
+msgid "_Find keys via:"
+msgstr "ئاچقۇچلارنى تۆۋەندىكى ئارقىلىق ئىزدە(_F):"
+
+#: ../libseahorse/seahorse-prefs.xml.h:3
+msgid "_Publish keys to:"
+msgstr "ئاچقۇچلارنى تۆۋەندىكىلەرگە ئېلان قىل(_P):"
+
+#: ../libseahorse/seahorse-prefs.xml.h:4
+msgid "Automatically retrieve keys from _key servers"
+msgstr "ئاچقۇچلارنى ئاچقۇچ مۇلازىمېتىرلىرىدىن ئاپتوماتىك ئال(_K)"
+
+#: ../libseahorse/seahorse-prefs.xml.h:5
+msgid "Automatically synchronize _modified keys with key servers"
+msgstr "ئۆزگەرتىلگەن ئاچقۇچلارنى ئاچقۇچ مۇلازىمېتىرلىرى بىلەن قەدەمداشلا(_M)"
+
+#: ../libseahorse/seahorse-prefs.xml.h:6
+msgid "Key Servers"
+msgstr "ئاچقۇچ مۇلازىمېتىرلىرى"
+
+#: ../libseahorse/seahorse-search-provider.c:186
+msgid "The search provider is not loaded yet"
+msgstr ""
+
+#: ../libseahorse/seahorse-validity.c:38
+#: ../pgp/seahorse-pgp-key-properties.c:1251
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:1
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:1
+msgctxt "Validity"
+msgid "Unknown"
+msgstr "نامەلۇم"
+
+#: ../libseahorse/seahorse-validity.c:40
+#: ../pgp/seahorse-pgp-key-properties.c:1257
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:2
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:2
+msgctxt "Validity"
+msgid "Never"
+msgstr "ھەرگىز"
+
+#: ../libseahorse/seahorse-validity.c:42
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:3
+msgctxt "Validity"
+msgid "Marginal"
+msgstr "قىسمەن"
+
+#: ../libseahorse/seahorse-validity.c:44
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:4
+msgctxt "Validity"
+msgid "Full"
+msgstr "تامامەن"
+
+#: ../libseahorse/seahorse-validity.c:46
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:5
+msgctxt "Validity"
+msgid "Ultimate"
+msgstr "مۇتلەق"
+
+#: ../libseahorse/seahorse-validity.c:48
+msgctxt "Validity"
+msgid "Disabled"
+msgstr "ئىناۋەتسىز قىلىنغان"
+
+#: ../libseahorse/seahorse-validity.c:50
+msgctxt "Validity"
+msgid "Revoked"
+msgstr "بىكار قىلىنغان"
+
+#: ../pgp/seahorse-add-subkey.xml.h:1
+msgid "Never E_xpires"
+msgstr "زادىلا ۋاقتى ئۆتمەيدۇ(_X)"
+
+#: ../pgp/seahorse-add-subkey.xml.h:2
+msgid "If key never expires"
+msgstr "ئاچقۇچنىڭ ۋاقتى زادىلا ئۆتۈپ كەتمىسە"
+
+#: ../pgp/seahorse-add-subkey.xml.h:3
+#: ../pkcs11/seahorse-pkcs11-generate.xml.h:4
+msgid "Key _Type:"
+msgstr "ئاچقۇچ تىپى(_T):"
+
+#: ../pgp/seahorse-add-subkey.xml.h:4
+msgid "Key _Length:"
+msgstr "ئاچقۇچ ئۇزۇنلۇقى"
+
+#: ../pgp/seahorse-add-subkey.xml.h:5
+msgid "Expiration Date:"
+msgstr "ئىناۋەتلىك چېسلاسى:"
+
+#: ../pgp/seahorse-add-subkey.xml.h:6
+msgid "Length of Key"
+msgstr "ئاچقۇچ ئۇزۇنلۇقى"
+
+#: ../pgp/seahorse-add-subkey.xml.h:7
+msgid "Generate a new subkey"
+msgstr "يېڭى تارماق ئاچقۇچ قۇرىدۇ"
+
+#: ../pgp/seahorse-add-uid.xml.h:1
+msgid "Add User ID"
+msgstr "ئىشلەتكۈچى ID قوشۇش"
+
+#: ../pgp/seahorse-add-uid.xml.h:2
+msgid "Must be at least 5 characters long"
+msgstr "ئەڭ ئاز دېگەندە 5 ھەرپ بولۇشى كېرەك"
+
+#: ../pgp/seahorse-add-uid.xml.h:3
+msgid "Optional email address"
+msgstr "ئېلخەت ئادرېسى(ئىختىيارىي)"
+
+#: ../pgp/seahorse-add-uid.xml.h:4
+msgid "Optional comment describing key"
+msgstr "ئاچقۇچنىڭ ئىزاھاتى(ئىختىيار)"
+
+#. Full name of the key, usually the name of the user.
+#: ../pgp/seahorse-add-uid.xml.h:6 ../pgp/seahorse-pgp-generate.xml.h:5
+msgid "Full _Name:"
+msgstr "تولۇق ئاتى(_N):"
+
+#: ../pgp/seahorse-add-uid.xml.h:7 ../pgp/seahorse-pgp-generate.xml.h:6
+msgid "_Email Address:"
+msgstr "ئېلخەت ئادرېسى(_E):"
+
+#: ../pgp/seahorse-add-uid.xml.h:8
+msgid "Key Co_mment:"
+msgstr "ئاچقۇچ ئىزاھاتى(_M):"
+
+#: ../pgp/seahorse-add-uid.xml.h:9
+msgid "Create the new user ID"
+msgstr "يېڭى ئىشلەتكۈچى ID سىنى قۇرىدۇ"
+
+#: ../pgp/seahorse-expires.xml.h:1
+msgid "_Never expires"
+msgstr "زادىلا ۋاقتى ئۆتمەيدۇ(_N)"
+
+#: ../pgp/seahorse-expires.xml.h:2 ../pgp/seahorse-revoke.xml.h:5
+msgid "Revoke key"
+msgstr "ئاچقۇچنى بىكار قىل"
+
+#: ../pgp/seahorse-expires.xml.h:3
+msgid "C_hange"
+msgstr "ئۆزگەرت(_H)"
+
+#: ../pgp/seahorse-gpgme-add-subkey.c:161
+msgid "Couldn't add subkey"
+msgstr "تارماق ئاچقۇچنى قوشالمىدى"
+
+#: ../pgp/seahorse-gpgme-add-subkey.c:180
+#, c-format
+msgid "Add subkey to %s"
+msgstr "تارماق ئاچقۇچنى %s غا قوشۇش"
+
+#: ../pgp/seahorse-gpgme-add-subkey.c:196 ../pgp/seahorse-gpgme-generate.c:132
+msgid "DSA (sign only)"
+msgstr "DSA (ئىمزالا)"
+
+#: ../pgp/seahorse-gpgme-add-subkey.c:204
+msgid "ElGamal (encrypt only)"
+msgstr "ElGamal (شىفىرلاشلا)"
+
+#: ../pgp/seahorse-gpgme-add-subkey.c:210 ../pgp/seahorse-gpgme-generate.c:133
+msgid "RSA (sign only)"
+msgstr "RSA (ئىمزالا)"
+
+#: ../pgp/seahorse-gpgme-add-subkey.c:216
+msgid "RSA (encrypt only)"
+msgstr "RSA(شىفىرلاشلا)"
+
+#: ../pgp/seahorse-gpgme-add-uid.c:99
+msgid "Couldn't add user id"
+msgstr "ئىشلەتكۈچى id  سىنى قوشالمىدى"
+
+#: ../pgp/seahorse-gpgme-add-uid.c:121
+#, c-format
+msgid "Add user ID to %s"
+msgstr "ئىشلەتكۈچى ID نى %s غا قوشىدۇ"
+
+#: ../pgp/seahorse-gpgme.c:71
+msgid "Decryption failed. You probably do not have the decryption key."
+msgstr "شىفىرنى يېشىش مەغلۇپ بولدى (قارىغاندا يېشىش ئاچقۇچى يوقمۇ قانداق)"
+
+#: ../pgp/seahorse-gpgme.c:75 ../pgp/seahorse-hkp-source.c:548
+#: ../ssh/seahorse-ssh-operation.c:199
+msgid "The operation was cancelled"
+msgstr "مەشغۇلاتتىن ۋاز كەچتى"
+
+#: ../pgp/seahorse-gpgme-expires.c:63
+msgid "Invalid expiry date"
+msgstr "ئىناۋەتسىز بولۇش چېسلاسى"
+
+#: ../pgp/seahorse-gpgme-expires.c:64
+msgid "The expiry date must be in the future"
+msgstr "ئىناۋەتسىز بولۇش چېسلاسى چوقۇم ھازىردىن كېيىن بولۇشى كېرەك"
+
+#: ../pgp/seahorse-gpgme-expires.c:77
+msgid "Couldn't change expiry date"
+msgstr "ئىناۋەتسىز بولۇش چېسلاسىنى ئۆزگەرتكىلى بولمىدى"
+
+#: ../pgp/seahorse-gpgme-expires.c:138
+#, c-format
+msgid "Expiry: %s"
+msgstr "ئىناۋەتسىز بولۇش چېسلاسى: %s"
+
+#: ../pgp/seahorse-gpgme-exporter.c:84
+msgid "Multiple Keys"
+msgstr "بىرنەچچە كۇنۇپكىلار"
+
+#: ../pgp/seahorse-gpgme-exporter.c:88
+msgid "Key Data"
+msgstr "ئاچقۇچ سانلىق-مەلۇماتى"
+
+#: ../pgp/seahorse-gpgme-exporter.c:116
+msgid "Armored PGP keys"
+msgstr "Armored PGP ئاچقۇچلىرى"
+
+#: ../pgp/seahorse-gpgme-exporter.c:120
+msgid "PGP keys"
+msgstr "PGP ئاچقۇچلىرى"
+
+#: ../pgp/seahorse-gpgme-generate.c:93
+msgid "PGP Key"
+msgstr "PGP ئاچقۇچ"
+
+#: ../pgp/seahorse-gpgme-generate.c:94
+msgid "Used to encrypt email and files"
+msgstr "ئېلخەت ۋە ھۆججەتلەرنى شىفىرلاش ئۈچۈن ئىشلىتىلىدۇ"
+
+#: ../pgp/seahorse-gpgme-generate.c:130 ../pkcs11/seahorse-pkcs11-generate.c:90
+#: ../ssh/seahorse-ssh-generate.xml.h:9
+msgid "RSA"
+msgstr "RSA"
+
+#: ../pgp/seahorse-gpgme-generate.c:131
+msgid "DSA ElGamal"
+msgstr "DSA Elgamal"
+
+#: ../pgp/seahorse-gpgme-generate.c:180
+msgid "Couldn't generate PGP key"
+msgstr "PGP ئاچقۇچىنى ھاسىل قىلالمىدى"
+
+#: ../pgp/seahorse-gpgme-generate.c:213
+msgid "Passphrase for New PGP Key"
+msgstr "يېڭى PGP ئاچقۇچىنىڭ ئىمى"
+
+#: ../pgp/seahorse-gpgme-generate.c:214
+msgid "Enter the passphrase for your new key twice."
+msgstr "يېڭى ئاچقۇچنىڭ ئىمىنى ئىككى قېتىم كىرگۈزۈڭ."
+
+#. Has line breaks because GtkLabel is completely broken WRT wrapping
+#: ../pgp/seahorse-gpgme-generate.c:226
+msgid ""
+"When creating a key we need to generate a lot of\n"
+"random data and we need you to help. It's a good\n"
+"idea to perform some other action like typing on\n"
+"the keyboard, moving the mouse, using applications.\n"
+"This gives the system the random data that it needs."
+msgstr ""
+"يېڭى ئاچقۇچ ياسايدىغان ۋاقىتتا بىز نۇرغۇنلىغان قالايمىقان سانلىق-"
+"مەلۇماتلارنى\n"
+"ھاسىللىشىمىز كېرەك ۋە بۇنىڭ ئۈچۈن سىزنىڭ ياردىمىڭىزگە موھتاجمىز. بۇنىڭ "
+"ئۈچۈن\n"
+"ھەرپتاختىسىنى توختىماي قالايمىقان بېسىش، چاشقىنەكنى ئۈزلۈكسىز يۆتكەش،\n"
+"پروگراممىلارنى ئىشلىتىش ئىشلىرىنى قىلسىڭىز بولىدۇ. شۇنىڭ بىلەن سىستېما\n"
+"زۆرۈر بولغان قالايمىقان سانلىق-مەلۇماتلارنى ھاسىل قىلىپ بېرىدۇ."
+
+#: ../pgp/seahorse-gpgme-generate.c:231
+#: ../pkcs11/seahorse-pkcs11-generate.c:458
+msgid "Generating key"
+msgstr "ئاچقۇچىنى ھاسىل قىلىۋاتىدۇ"
+
+#: ../pgp/seahorse-gpgme-key-deleter.c:77
+#: ../pgp/seahorse-gpgme-secret-deleter.c:76 ../pkcs11/pkcs11-deleter.vala:35
+#: ../pkcs11/pkcs11-key-deleter.vala:33
+#, c-format
+msgid "Are you sure you want to permanently delete %s?"
+msgstr "%s نى راستلا مەڭگۈلۈككە ئۆچۈرەمسىز؟"
+
+#: ../pgp/seahorse-gpgme-key-deleter.c:80
+#, c-format
+msgid "Are you sure you want to permanently delete %d keys?"
+msgid_plural "Are you sure you want to permanently delete %d keys?"
+msgstr[0] "راستلا %d ئاچقۇچنى  مەڭگۈلۈككە ئۆچۈرەمسىز؟"
+
+#: ../pgp/seahorse-gpgme-key-op.c:377
+msgid "Wrong password"
+msgstr "ئىم خاتا"
+
+#: ../pgp/seahorse-gpgme-key-op.c:377
+msgid "This was the third time you entered a wrong password. Please try again."
+msgstr "بۇ سىزنىڭ ئىمنى ئۈچىنچى قېتىم خاتا كىرگۈزۈشىڭىز. قايتا كىرگۈزۈڭ."
+
+#: ../pgp/seahorse-gpgme-keyring.c:89
+#, c-format
+msgid "Wrong passphrase."
+msgstr "خاتا ئىم."
+
+#: ../pgp/seahorse-gpgme-keyring.c:93
+#, c-format
+msgid "Enter new passphrase for '%s'"
+msgstr "‹%s› نىڭ يېڭى ئىمنى كىرگۈزۈڭ"
+
+#: ../pgp/seahorse-gpgme-keyring.c:95
+#, c-format
+msgid "Enter passphrase for '%s'"
+msgstr "‹%s› نىڭ ئىمنى كىرگۈزۈڭ"
+
+#: ../pgp/seahorse-gpgme-keyring.c:98 ../src/seahorse-change-passphrase.xml.h:2
+msgid "Enter new passphrase"
+msgstr "يېڭى ئىم كىرگۈزۈڭ"
+
+#: ../pgp/seahorse-gpgme-keyring.c:100
+msgid "Enter passphrase"
+msgstr "ئىم كىرگۈزۈڭ"
+
+#: ../pgp/seahorse-gpgme-keyring.c:105
+msgid "Passphrase"
+msgstr "ئىم جۈملىسى"
+
+#: ../pgp/seahorse-gpgme-keyring.c:306
+#, c-format
+msgid "Loaded %d key"
+msgid_plural "Loaded %d keys"
+msgstr[0] "%d ئاچقۇچ ئوقۇلدى"
+
+#: ../pgp/seahorse-gpgme-keyring.c:653
+msgid ""
+"Invalid key data (missing UIDs). This may be due to a computer with a date "
+"set in the future or a missing self-signature."
+msgstr ""
+"ئاچقۇچ سانلىق-مەلۇماتلىرى ئىناۋەتسىز(كىملىك يوق). بۇ كومپيۇتېرنىڭ چېسلاسى "
+"خاتا(كەلگۈسىگە) تەڭشەلگەن ياكى ئوز ئىمزاسىنىڭ يوق بولۇشى سەۋەبىدىن بولىدۇ."
+
+#: ../pgp/seahorse-gpgme-keyring.c:806
+msgid "GnuPG keys"
+msgstr "GnuPG ئاچقۇچلىرى"
+
+#: ../pgp/seahorse-gpgme-keyring.c:812
+msgid "GnuPG: default keyring directory"
+msgstr "GnuPG: كۆڭۈلدىكى ئاچقۇچ مۇندەرىجىسى"
+
+#: ../pgp/seahorse-gpgme-photos.c:72
+#, c-format
+msgid ""
+"<big><b>The photo is too large</b></big>\n"
+"The recommended size for a photo on your key is %d x %d pixels."
+msgstr ""
+"<big><b>سۈرەت بەك چوڭ</b></big>\n"
+"سىزنىڭ ئاچقۇچىڭىزغا ماس كېلىدىغان سۈرەتنىڭ چوڭلۇقى %d x %d پىكسېل."
+
+#: ../pgp/seahorse-gpgme-photos.c:77
+msgid "_Don't Resize"
+msgstr "چوڭلۇقىنى ئۆزگەرتمە(_D)"
+
+#: ../pgp/seahorse-gpgme-photos.c:78
+msgid "_Resize"
+msgstr "چوڭلۇقىنى ئۆزگەرت(_R)"
+
+#: ../pgp/seahorse-gpgme-photos.c:127
+#, c-format
+msgid ""
+"This is not a image file, or an unrecognized kind of image file. Try to use "
+"a JPEG image."
+msgstr ""
+"بۇ سۈرەت ھۆججىتى ئەمەس، ياكى چۈشىنىكسىز سۈرەت ھۆججىتى ئىكەن. JPEG سۈرەت "
+"ھۆججىتىنى ئىشلىتىڭ."
+
+#: ../pgp/seahorse-gpgme-photos.c:223
+msgid "All image files"
+msgstr "بارلىق رەسىم ھۆججەتلىرى"
+
+#: ../pgp/seahorse-gpgme-photos.c:236
+msgid "All JPEG files"
+msgstr "بارلىق JPEG ھۆججەتلىرى"
+
+#: ../pgp/seahorse-gpgme-photos.c:241 ../src/seahorse-key-manager.c:288
+msgid "All files"
+msgstr "ھەممە ھۆججەتلەر"
+
+#: ../pgp/seahorse-gpgme-photos.c:262
+msgid "Choose Photo to Add to Key"
+msgstr "ئاچقۇچقا قوشىدىغان سۈرەتنى تاللاش"
+
+#: ../pgp/seahorse-gpgme-photos.c:284
+msgid "Couldn't prepare photo"
+msgstr "سۈرەتنى تەييار قىلغىلى بولمىدى"
+
+#: ../pgp/seahorse-gpgme-photos.c:294 ../pgp/seahorse-gpgme-photos.c:297
+msgid "Couldn't add photo"
+msgstr "سۈرەتنى قوشالمىدى"
+
+#: ../pgp/seahorse-gpgme-photos.c:295
+msgid "The file could not be loaded. It may be in an invalid format"
+msgstr "ھۆججەتنى ئوقۇغىلى بولمىدى. ئۇنىڭ پىچىمى ئىناۋەتسىزدەك قىلىدۇ"
+
+#: ../pgp/seahorse-gpgme-photos.c:321
+msgid "Are you sure you want to remove the current photo from your key?"
+msgstr "ئاچقۇچتىن نۆۋەتتىكى سۈرەتنى راستلا چىقىرىۋېتەمسىز؟"
+
+#: ../pgp/seahorse-gpgme-photos.c:334
+msgid "Couldn't delete photo"
+msgstr "سۈرەتنى ئۆچۈرەلمىدى"
+
+#: ../pgp/seahorse-gpgme-revoke.c:73
+msgid "Couldn't revoke subkey"
+msgstr "تارماق ئاچقۇچنى بىكار قىلالمىدى"
+
+#: ../pgp/seahorse-gpgme-revoke.c:94
+#, c-format
+msgid "Revoke: %s"
+msgstr "بىكار قىلىش: %s"
+
+#: ../pgp/seahorse-gpgme-revoke.c:105
+msgid "No reason"
+msgstr "سەۋەبسىز"
+
+#: ../pgp/seahorse-gpgme-revoke.c:106
+msgid "No reason for revoking key"
+msgstr "ئاچقۇچنى بىكار قىلىشنىڭ سەۋەبى يوق."
+
+#: ../pgp/seahorse-gpgme-revoke.c:112
+msgid "Compromised"
+msgstr "مۇرەسسە قىلىنغان"
+
+#: ../pgp/seahorse-gpgme-revoke.c:113
+msgid "Key has been compromised"
+msgstr "ئاچقۇچ مۇرەسسە قىلىنغان"
+
+#: ../pgp/seahorse-gpgme-revoke.c:119
+msgid "Superseded"
+msgstr "بىكار قىلىندى"
+
+#: ../pgp/seahorse-gpgme-revoke.c:120
+msgid "Key has been superseded"
+msgstr "ئاچقۇچ بىكار قىلىنغان"
+
+#: ../pgp/seahorse-gpgme-revoke.c:126
+msgid "Not Used"
+msgstr "ئىشلىتىلمىگەن"
+
+#: ../pgp/seahorse-gpgme-revoke.c:127
+msgid "Key is no longer used"
+msgstr "ئاچقۇچ ئەمدى ئىشلىتىلمەيدۇ"
+
+#: ../pgp/seahorse-gpgme-revoke.c:164
+#, c-format
+msgid ""
+"You are about to add %s as a revoker for %s. This operation cannot be "
+"undone! Are you sure you want to continue?"
+msgstr ""
+"سىز %s نى %s نىڭ revoker ئى سۈپىتىدە قوشماقچى بولۇۋاتىسىز. بۇ مەشغۇلاتتىن "
+"يېنىۋالغىلى بولمايدۇ. راستلا داۋاملاشتۇرامسىز؟"
+
+#: ../pgp/seahorse-gpgme-revoke.c:176
+msgid "Couldn't add revoker"
+msgstr "revoker نى قوشالمىدى"
+
+#: ../pgp/seahorse-gpgme-secret-deleter.c:81 ../ssh/seahorse-ssh-deleter.c:82
+msgid "I understand that this secret key will be permanently deleted."
+msgstr "بارلىق مەخپىي ئاچقۇچلارنىڭ مەڭگۈ ئۆچۈرۈلىدىغانلىقىنى بىلىمەن."
+
+#: ../pgp/seahorse-gpgme-sign.c:99
+#, c-format
+msgid ""
+"This key was already signed by\n"
+"\"%s\""
+msgstr ""
+"بۇ ئاچقۇچقا «%s»\n"
+"ئىمزا قويۇپ بولغان"
+
+#: ../pgp/seahorse-gpgme-sign.c:104
+msgid "Couldn't sign key"
+msgstr "ئاچقۇچقا ئىمزا قويغىلى بولمىدى"
+
+#. TODO: We should be giving an error message that allows them to
+#. generate or import a key
+#: ../pgp/seahorse-gpgme-sign.c:163 ../pgp/seahorse-signer.c:61
+msgid "No keys usable for signing"
+msgstr "ئىم قويىدىغان ئاچقۇچلار يوق"
+
+#: ../pgp/seahorse-gpgme-sign.c:164
+msgid ""
+"You have no personal PGP keys that can be used to indicate your trust of "
+"this key."
+msgstr ""
+"سىزنىڭ بۇ ئاچقۇچقا بولغان ئىشەنچىڭىزنى كۆرسىتىپ بېرىدىغان خۇسۇسىي PGP "
+"ئاچقۇچلىرى يوق."
+
+#: ../pgp/seahorse-gpgme-subkey.c:195
+msgctxt "Algorithm"
+msgid "Unknown"
+msgstr "نامەلۇم"
+
+#: ../pgp/seahorse-gpgme-subkey.c:197
+msgid "ElGamal"
+msgstr "ElGamal"
+
+#: ../pgp/seahorse-hkp-source.c:566
+#, c-format
+msgid "Search was not specific enough. Server '%s' found too many keys."
+msgstr ""
+"مۇلازىمېتىر ‹%s› نىڭدا نۇرغۇن ئاچ بار بولغاچقا، ماس كېلىدىغان ئاچقۇچنى ئېنىق "
+"بەلگىلىيەلمىدى."
+
+#: ../pgp/seahorse-hkp-source.c:569
+#, c-format
+msgid "Couldn't communicate with server '%s': %s"
+msgstr "مۇلازىمېتىر «%s» بىلەن ئالاقىلىشەلمىدى: %s"
+
+#: ../pgp/seahorse-hkp-source.c:1079
+msgid "HTTP Key Server"
+msgstr "HTTP ئاچقۇچ مۇلازىمېتىرى"
+
+#: ../pgp/seahorse-keyserver-results.c:168
+msgid "Couldn't import keys"
+msgstr "ئاچقۇچلارنى ئىمپورت قىلغىلى بولمىدى"
+
+#: ../pgp/seahorse-keyserver-results.c:211
+msgid "Importing keys from key servers"
+msgstr "ئاچقۇچ مۇلازىمېتىرىدىن ئاچقۇچلارنى ئىمپورت قىلىۋاتىدۇ"
+
+#. TRANSLATORS: The "Remote" menu contains key operations on remote systems.
+#: ../pgp/seahorse-keyserver-results.c:237 ../src/seahorse-key-manager.c:501
+msgid "_Remote"
+msgstr "يىراق(_R)"
+
+#: ../pgp/seahorse-keyserver-results.c:239
+msgid "Close this window"
+msgstr "بۇ كۆزنەكنى ياپىدۇ"
+
+#: ../pgp/seahorse-keyserver-results.c:243 ../pgp/seahorse-pgp-actions.c:113
+msgid "_Find Remote Keys..."
+msgstr "يىراقتىكى ئاچقۇچلارنى ئىزدە(_F)…"
+
+#: ../pgp/seahorse-keyserver-results.c:244 ../pgp/seahorse-pgp-actions.c:114
+msgid "Search for keys on a key server"
+msgstr "ئاچقۇچ مۇلازىمېتىرىدىن ئاچقۇچلارنى ئىزدەيدۇ"
+
+#: ../pgp/seahorse-keyserver-results.c:248 ../src/seahorse-key-manager.xml.h:3
+msgid "_Import"
+msgstr "ئىمپورت قىل(_I)"
+
+#: ../pgp/seahorse-keyserver-results.c:249
+msgid "Import selected keys to local key ring"
+msgstr "تاللانغان ئاچقۇچلارنى يەرلىك ئاچقۇچ ھالقىسىغا ئىمپورت قىلىدۇ"
+
+#: ../pgp/seahorse-keyserver-results.c:280
+msgid "Remote Keys"
+msgstr "يىراقتىكى ئاچقۇچلار"
+
+#: ../pgp/seahorse-keyserver-results.c:282
+#, c-format
+msgid "Remote Keys Containing '%s'"
+msgstr "يىراقتىكى ئاچقۇچلار ‹%s› نى ئوز ئىچىگە ئالغان"
+
+#: ../pgp/seahorse-keyserver-results.c:485
+msgid "The search for keys failed."
+msgstr "ئاچقۇچلارنى ئىزدەش مەغلۇپ بولدى."
+
+#: ../pgp/seahorse-keyserver-search.xml.h:1
+msgid "Find Remote Keys"
+msgstr "يىراقتىكى ئاچقۇچنى ئىزدە"
+
+#: ../pgp/seahorse-keyserver-search.xml.h:2
+msgid ""
+"This will find keys for others on the Internet. These keys can then be "
+"imported into your local key ring."
+msgstr ""
+"ئىنتېرنېتتىكى باشقا ئاچقۇچلارنى ئىزدەپ تاپقىلى ۋە ئۇنى يەرلىك كومپيۇتېردىكى "
+"ئاچقۇچ ھالقىسىغا ئۆتكۈزۈۋالغىلى بولىدۇ."
+
+#: ../pgp/seahorse-keyserver-search.xml.h:3
+msgid "_Search for keys containing: "
+msgstr "تۆۋەندىكىلەرنى ئوز ئىچىگە ئالغان ئاچقۇچلارنى ئىزدە(_S): "
+
+#: ../pgp/seahorse-keyserver-search.xml.h:4
+msgid "Key Servers:"
+msgstr "ئاچقۇچ مۇلازىمېتىرلىرى:"
+
+#: ../pgp/seahorse-keyserver-search.xml.h:5
+msgid "Shared Keys Near Me:"
+msgstr "ئەتراپىمدىكى ھەمبەھىرلەنگەن ئاچقۇچلار:"
+
+#: ../pgp/seahorse-keyserver-search.xml.h:6
+msgid "Where to search:"
+msgstr "ئىزدەيدىغان ئورۇن:"
+
+#: ../pgp/seahorse-keyserver-search.xml.h:7
+msgid "_Search"
+msgstr "ئىزدە(_S)"
+
+#: ../pgp/seahorse-keyserver-sync.c:56
+msgid "Couldn't publish keys to server"
+msgstr "ئاچقۇچىنى مۇلازىمېتىرغا ئېلان قىلالمىدى"
+
+#: ../pgp/seahorse-keyserver-sync.c:75
+#, c-format
+msgid "Couldn't retrieve keys from server: %s"
+msgstr "مۇلازىمېتىردىن ئاچقۇچلارنى ئالغىلى بولمىدى: %s"
+
+#: ../pgp/seahorse-keyserver-sync.c:159
+#, c-format
+msgid "<b>%d key is selected for synchronizing</b>"
+msgid_plural "<b>%d keys are selected for synchronizing</b>"
+msgstr[0] "<b>قەدەمداشلاش ئۈچۈن %d ئاچقۇچ تاللاندى</b>"
+
+#: ../pgp/seahorse-keyserver-sync.c:239
+msgid "Synchronizing keys..."
+msgstr "ئاچقۇچلارنى قەدەمداشلاۋاتىدۇ…"
+
+#: ../pgp/seahorse-keyserver-sync.xml.h:1
+msgid "Sync Keys"
+msgstr "ئاچقۇچلارنى قەدەمداشلاش"
+
+#: ../pgp/seahorse-keyserver-sync.xml.h:2
+msgid ""
+"This will publish the keys in your key ring so they're available for others "
+"to use. You'll also get any changes others have made since you received "
+"their keys."
+msgstr ""
+"ئاچقۇچ ھالقىسىدىكى ئاچقۇچلارنى تارقىتىپ باشقىلار ئىشلىتەلەيدىغان قىلىدۇ."
+"شۇنداقلا، باشقىلار تارقاتقان ئاچقۇچتا ئۆزگىرىش بولسا، ئۇنىمۇ يەنە ئالغىلى "
+"بولىدۇ."
+
+#: ../pgp/seahorse-keyserver-sync.xml.h:3
+msgid ""
+"This will retrieve any changes others have made since you received their "
+"keys. No key server has been chosen for publishing, so your keys will not be "
+"made available to others."
+msgstr ""
+"ئاچقۇچتىكى ئۆزگىرىشلەرنى ئالىدۇ. ئاچقۇچنى تارقىتىدىغان مۇلازىمېتىر "
+"تاللانمىغان بولغاچقا، باشقىلار ئاچقۇچلارنى ئىشلىتەلمەيدۇ."
+
+#: ../pgp/seahorse-keyserver-sync.xml.h:4
+msgid "_Key Servers"
+msgstr "ئاچقۇچ مۇلازىمېتىرلىرى(_K)"
+
+#: ../pgp/seahorse-keyserver-sync.xml.h:5
+msgid "_Sync"
+msgstr "قەدەمداشلا(_S)"
+
+#: ../pgp/seahorse-ldap-source.c:436
+#, c-format
+msgid "Couldn't communicate with '%s': %s"
+msgstr "«%s» بىلەن ئالاقىلىشەلمىدى: %s"
+
+#: ../pgp/seahorse-ldap-source.c:646
+#, c-format
+msgid "Connecting to: %s"
+msgstr "باغلانغان ئورۇن: %s"
+
+#: ../pgp/seahorse-ldap-source.c:652
+#, c-format
+msgid "Couldn't resolve address: %s"
+msgstr "ئادرېسلارنى ھەل قىلالمىدى: %s"
+
+#: ../pgp/seahorse-ldap-source.c:696
+#, c-format
+msgid "Resolving server address: %s"
+msgstr "مۇلازىمېتىرنىڭ ئادرېسىنى ھەل قىلىۋاتىدۇ: %s"
+
+#: ../pgp/seahorse-ldap-source.c:1431
+msgid "LDAP Key Server"
+msgstr "LDAP ئاچقۇچ مۇلازىمېتىرى"
+
+#: ../pgp/seahorse-pgp-actions.c:118
+msgid "_Sync and Publish Keys..."
+msgstr "ئاچقۇچلارنى قەدەمداشلاش ۋە ئېلان قىلىش(_S)…"
+
+#: ../pgp/seahorse-pgp-actions.c:119
+msgid "Publish and/or synchronize your keys with those online."
+msgstr "بۇ ئاچقۇچلارنى ئېلان قىلىپ توردىكى ئاچقۇچلار بىلەن قەدەمداشلايدۇ."
+
+#: ../pgp/seahorse-pgp-backend.c:193
+msgid "PGP Keys"
+msgstr "PGP ئاچقۇچلىرى"
+
+#: ../pgp/seahorse-pgp-backend.c:199
+msgid "PGP keys are for encrypting email or files"
+msgstr "ئېلخەت ۋە ھۆججەتلەرنى شىفىرلاشتا PGP ئاچقۇچلىرى ئىشلىتىلىدۇ"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:1
+msgid "C_reate"
+msgstr "قۇر(_R)"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:2
+msgid "Generate a new key"
+msgstr "يېڭى ئاچقۇچلارنى ھاسىل قىلىدۇ"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:3
+msgid "A PGP key allows you to encrypt email or files to other people."
+msgstr ""
+"PGP ئاچقۇچى ئىشلىتىلسە باشقىلارغا ئەۋەتىدىغان ھۆججەت ياكى ئېلخەتلەرنى "
+"شىفىرلاشقا بولىدۇ"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:7
+msgid "Ne_ver Expires"
+msgstr "زادىلا ئىناۋەتسىز بولمايدۇ(_V)"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:8
+msgid "_Comment:"
+msgstr "ئىزاھات(_C):"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:9 ../ssh/seahorse-ssh-generate.xml.h:7
+msgid "Encryption _Type:"
+msgstr "شىفىرلاش تىپى(_T):"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:10
+#: ../pkcs11/seahorse-pkcs11-generate.xml.h:5
+#: ../ssh/seahorse-ssh-generate.xml.h:8
+msgid "Key _Strength (bits):"
+msgstr "ئاچقۇچنىڭ كۈچلۈكلۈكى(بىت سانى)(_S):"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:11
+msgid "E_xpiration Date:"
+msgstr "ئىناۋەتلىك چېسلاسى(_X):"
+
+#: ../pgp/seahorse-pgp-generate.xml.h:12
+#: ../pkcs11/seahorse-pkcs11-generate.xml.h:6
+#: ../ssh/seahorse-ssh-generate.xml.h:11
+msgid "_Advanced key options"
+msgstr "ئالىي ئاچقۇچ تاللانمىلىرى(_A)"
+
+#: ../pgp/seahorse-pgp-key.c:351
+msgid "Personal PGP key"
+msgstr "شەخسىي PGP ئاچقۇچى"
+
+#: ../pgp/seahorse-pgp-key.c:353
+msgid "PGP key"
+msgstr "PGP ئاچقۇچى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:317
+msgid "Couldn't change primary user ID"
+msgstr "ئاساسىي ئىشلەتكۈچى كىملىكىنى ئۆزگەرتكىلى بولمىدى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:336
+#, c-format
+msgid "Are you sure you want to permanently delete the '%s' user ID?"
+msgstr "‹%s› دېگەن ئىشلەتكۈچى ID نى راستلا مەڭگۈلۈككە ئۆچۈرەمسىز؟"
+
+#: ../pgp/seahorse-pgp-key-properties.c:346
+msgid "Couldn't delete user ID"
+msgstr "ئىشلەتكۈچى ID سىنى ئۆچۈرەلمىدى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:421
+#: ../pgp/seahorse-pgp-key-properties.c:1576
+msgid "[Unknown]"
+msgstr "[نامەلۇم]"
+
+#: ../pgp/seahorse-pgp-key-properties.c:530
+#: ../pgp/seahorse-pgp-key-properties.c:1859
+msgid "Name/Email"
+msgstr "ئات/ئېلخەت"
+
+#: ../pgp/seahorse-pgp-key-properties.c:537
+msgid "Signature ID"
+msgstr "ئىمزا كىملىكى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:670
+msgid "Couldn't change primary photo"
+msgstr "ئاساسىي سۈرەتنى ئۆزگەرتكىلى بولمىدى"
+
+#. TRANSLATORS: (unknown) expiry date
+#: ../pgp/seahorse-pgp-key-properties.c:904
+msgid "(unknown)"
+msgstr "(نامەلۇم)"
+
+#: ../pgp/seahorse-pgp-key-properties.c:907
+#, c-format
+msgid "This key expired on: %s"
+msgstr "ئاچقۇچنىڭ ئىناۋەتسىز بولۇش ۋاقتى: %s"
+
+#: ../pgp/seahorse-pgp-key-properties.c:970
+msgid "Name"
+msgstr "ئاتى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1085
+#, c-format
+msgid "Are you sure you want to permanently delete subkey %d of %s?"
+msgstr "راستلا تارماق ئاچقۇچ %d (%s) مەڭگۈلۈككە ئۆچۈرەمسىز؟"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1094
+msgid "Couldn't delete subkey"
+msgstr "تارماق ئاچقۇچنى ئۆچۈرەلمىدى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1134
+#: ../pgp/seahorse-pgp-key-properties.c:1550
+msgid "Unable to change trust"
+msgstr "ئىشەنچنى ئۆزگەرتكىلى بولمىدى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1148
+#: ../ssh/seahorse-ssh-key-properties.c:205
+msgid "Couldn't export key"
+msgstr "ئاچقۇچنى ئېكسپورت قىلغىلى بولمىدى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1264
+msgid "Marginal"
+msgstr "قىسمەن"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1270
+msgid "Full"
+msgstr "تامامەن"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1276
+msgid "Ultimate"
+msgstr "مۇتلەق"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1382
+#: ../pgp/seahorse-pgp-key-properties.c:1475
+msgctxt "Expires"
+msgid "Never"
+msgstr "ھەرگىز"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1429
+msgid "ID"
+msgstr "كىملىكى(ID)"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1432
+msgid "Type"
+msgstr "تىپى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1435
+msgid "Usage"
+msgstr ""
+
+#: ../pgp/seahorse-pgp-key-properties.c:1438
+msgid "Created"
+msgstr "قۇرغان ۋاقتى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1441
+msgid "Expires"
+msgstr "ۋاقتى ئۆتتى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1444
+msgid "Status"
+msgstr "ھالىتى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1447
+msgid "Strength"
+msgstr "كۈچلۈكلۈك"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1466
+msgid "Revoked"
+msgstr "بىكار قىلىنغان"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1468
+msgid "Expired"
+msgstr "ۋاقتى ئوتكەن"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1470
+msgid "Disabled"
+msgstr "ئىناۋەتسىز قىلىنغان"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1472
+msgid "Good"
+msgstr "ياخشى"
+
+#: ../pgp/seahorse-pgp-key-properties.c:1862
+msgid "Key ID"
+msgstr "ئاچقۇچ كىملىكى"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:6
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:6
+#: ../ssh/seahorse-ssh-key-properties.xml.h:1
+msgid "Key Properties"
+msgstr "ئاچقۇچ خاسلىقى"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:7
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:7
+msgid "This key has been revoked"
+msgstr "مەزكۇر ئاچقۇچ بىكار قىلىنغان"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:8
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:8
+msgid "The owner of the key revoked the key. It can no longer be used."
+msgstr ""
+"ئاچقۇچنىڭ ئىگىسى ئاچقۇچنى بىكار قىلىۋەتتى. ئۇنى ئەمدى ئىشلەتكىلى بولمايدۇ."
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:9
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:9
+msgid "This key has expired"
+msgstr "مەزكۇر ئاچقۇچنىڭ ۋاقتى ئوتكەن"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:10
+msgid "Add a photo to this key"
+msgstr "بۇ ئاچقۇچقا سۈرەت قوشىدۇ"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:11
+msgid "Remove this photo from this key"
+msgstr "بۇ ئاچقۇچتىن بۇ سۈرەتنى چىقىرىۋەت"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:12
+msgid "Make this photo the primary photo"
+msgstr "بۇ سۈرەتنى ئاساسىي سۈرەت قىلىپ ئىشلىتىدۇ"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:13
+msgid "Go to previous photo"
+msgstr "ئالدىنقى سۈرەتكە يۆتكىلىدۇ"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:14
+msgid "Go to next photo"
+msgstr "كېيىنكى سۈرەتكە يۆتكىلىدۇ"
+
+#. A photograph
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:16
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:11
+msgid "Photo "
+msgstr "سۈرەت "
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:17
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:15
+msgid "Key ID:"
+msgstr "ئاچقۇچ كىملىكى(ID):"
+
+#. Name of key, usually a persons name
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:19
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:17
+msgctxt "name-of-key"
+msgid "Name:"
+msgstr "ئاتى:"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:20
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:18
+msgid "Email:"
+msgstr "ئېلخەت:"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:21
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:19
+msgid "Comment:"
+msgstr "ئىزاھات:"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:25
+msgid "Decrypt files and email sent to you."
+msgstr "شىفىرسىزلاپ سىزگە يوللايدۇ."
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:26
+msgid "Private PGP Key"
+msgstr "خۇسۇسىي PGP ئاچقۇچى"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:27
+#: ../ssh/seahorse-ssh-key-properties.xml.h:10
+msgid "Change _Passphrase"
+msgstr "Passphrase نى ئۆزگەرت(_P)"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:28
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:24
+msgid "Owner"
+msgstr "ئىگىسى"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:29
+msgid "Key Names and Signatures"
+msgstr "ئاچقۇچ ئاتلىرى ۋە ئىمزالار"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:30
+msgid "Primary"
+msgstr "ئاساسىي"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:31
+#: ../pgp/seahorse-pgp-subkey.c:292
+msgid "Sign"
+msgstr "ئىمزا"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:32
+msgid "Delete"
+msgstr "ئۆچۈر"
+
+#. Add another name to the PGP key.
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:34
+msgid "_Add Name"
+msgstr "ئات قوش(_A)"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:35
+msgid "Revoke"
+msgstr "بىكار قىلىش"
+
+#. List of names and signatures on the PGP key.
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:37
+msgid "Names and Signatures"
+msgstr "ئات ۋە ئىمزالار"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:38
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:39
+#: ../ssh/seahorse-ssh-key-properties.xml.h:17
+msgid "Strength:"
+msgstr "كۈچلۈكلۈكى:"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:39
+msgid "Technical Details"
+msgstr "تېخنىكىلىق تەپسىلات"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:40
+msgid "Fingerprint"
+msgstr "بارماق ئىزى"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:42
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:43
+msgid "Expires:"
+msgstr "ئىناۋەتلىك ۋاقتى:"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:43
+msgid "Dates"
+msgstr "چېسلا"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:44
+msgid "Override Owner _Trust:"
+msgstr "ئىگىسىنىڭ ئىشەنچىنى قاپلاش(_T):"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:45
+#, fuzzy
+#| msgid "_Export Complete Key:"
+msgid "_Export Secret Key:"
+msgstr "ئاچقۇچنى ئېكسپورت قىل(_E):"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:47
+msgid "Actions"
+msgstr "مەشغۇلاتلار"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:48
+msgid "Add"
+msgstr "قوش"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:49
+msgid "Expire"
+msgstr "ئىناۋەتلىك ۋاقتى"
+
+#: ../pgp/seahorse-pgp-private-key-properties.xml.h:50
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:46
+msgid "_Subkeys"
+msgstr "تارماق ئاچقۇچلار(_S)"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:3
+msgctxt "Validity"
+msgid "Marginally"
+msgstr "بىرئاز"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:4
+msgctxt "Validity"
+msgid "Fully"
+msgstr "تولۇق"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:5
+msgctxt "Validity"
+msgid "Ultimately"
+msgstr "تەلتۆكۈس"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:14
+msgid "Encrypt files and email to the key's owner"
+msgstr "ھۆججەتنى شىفىرلاپ ئۇنى ئاچقۇچ ئىگىسىگە يوللايدۇ"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:21
+msgid "Public PGP Key"
+msgstr "ئاممىۋى PGP ئاچقۇچى"
+
+#. Names set on the PGP key.
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:23
+msgid "_Other Names:"
+msgstr "باشقا ئاتلار(_O):"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:25
+msgid "Your trust of this key"
+msgstr "بۇ ئاچقۇچنىڭ ئىشەنچلىكلىكى"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:26
+msgid "Your trust is manually specified on the <i>Details</i> tab."
+msgstr "‹<i>تەپسىلات</i>› بەتكۈچىدە ئىشەنچنى تەپسىلىي كۆرسەتكىلى بولىدۇ."
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:28
+#, no-c-format
+msgid "I trust signatures from '%s' on other keys"
+msgstr "باشقا ئاچقۇچتىكى ‹%s› ئىمزاغا ئىشىنىمەن"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:30
+#, no-c-format
+msgid ""
+"If you believe that the person that owns this key is '%s', <i>sign</i> this "
+"key:"
+msgstr "ئاچقۇچ ‹%s› نىڭ ئىگىسىگە ئىشەنسىڭىز، بۇ ئاچقۇچقا <i>ئىمزا</i> قويۇڭ:"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:31
+msgid "_Sign this Key"
+msgstr "ئىمزا قويۇش(_S)"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:33
+#, no-c-format
+msgid ""
+"If you no longer trust that '%s' owns this key, <i>revoke</i> your signature:"
+msgstr ""
+"ئاچقۇچ ‹%s› نىڭ ئىگىسىگە ئەمدى ئىشەنمىسىڭىز، ئىمزايىڭىزنى <i>ئەمەلدىن "
+"قالدۇرۇڭ</i>:"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:34
+msgid "_Revoke Signature"
+msgstr "ئىمزانى بىكار قىلىش(_R)"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:35
+msgid "_People who have signed this key:"
+msgstr "بۇ ئاچقۇچقا ئىمزا قويغان كىشىلەر(_P):"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:36
+msgid "_Only display the signatures of people I trust"
+msgstr "مەن ئىشەنگەن كىشىلەرنىڭ ئىمزاسىنىلا كۆرسەت(_O)"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:37
+#: ../ssh/seahorse-ssh-key-properties.xml.h:11
+msgid "Trust"
+msgstr "ئىشەنچ"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:40
+#: ../ssh/seahorse-ssh-key-properties.xml.h:19
+msgid "Fingerprint:"
+msgstr "بارماق ئىزى:"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:41
+msgid "Dates:"
+msgstr "چېسلا:"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:44
+msgid "Indicate Trust:"
+msgstr "ئىشەنچىنى كۆرسىتىش:"
+
+#: ../pgp/seahorse-pgp-public-key-properties.xml.h:45
+msgid "You _Trust the Owner:"
+msgstr "ئىگىسىنىڭ ئىشەنچلىكلىكى(_T):"
+
+#: ../pgp/seahorse-pgp-subkey.c:291
+msgid "Encrypt"
+msgstr ""
+
+#: ../pgp/seahorse-pgp-subkey.c:293
+#, fuzzy
+#| msgid "Certificate"
+msgid "Certify"
+msgstr "گۇۋاھنامە"
+
+#: ../pgp/seahorse-pgp-subkey.c:294
+#, fuzzy
+#| msgid "Certificate"
+msgid "Authenticate"
+msgstr "گۇۋاھنامە"
+
+#: ../pgp/seahorse-pgp-subkey.c:407
+#, c-format
+msgid "Subkey %d of %s"
+msgstr "تارماق ئاچقۇچ %d / %s"
+
+#: ../pgp/seahorse-revoke.xml.h:1
+msgid "Reason for revoking the key"
+msgstr "بۇ ئاچقۇچنى بىكار قىلىشنىڭ سەۋەبى"
+
+#: ../pgp/seahorse-revoke.xml.h:2
+msgid "_Reason:"
+msgstr "سەۋەب(_S):"
+
+#: ../pgp/seahorse-revoke.xml.h:4
+msgid "Optional description of revocation"
+msgstr "بىكار قىلىشنىڭ چۈشەندۈرۈلۈشى(ئىختىيارى)"
+
+#: ../pgp/seahorse-revoke.xml.h:6
+msgid "Re_voke"
+msgstr "بىكار قىل(_V)"
+
+#: ../pgp/seahorse-signer.c:62
+msgid ""
+"You have no personal PGP keys that can be used to sign a document or message."
+msgstr ""
+"پۈتۈك ياكى ئۇچۇرغا ئىمزا قويۇش ئۈچۈن ئىشلىتىدىغان خۇسۇسىي PGP ئاچقۇچلىرىنىڭ "
+"يوق"
+
+#: ../pgp/seahorse-signer.xml.h:1
+msgid "_Sign message with key:"
+msgstr "تۆۋەندىكى ئاچقۇچنى ئىشلىتىپ ئۇچۇرغا ئىمزا قوي(_S):"
+
+#: ../pgp/seahorse-sign.xml.h:1
+msgid "Sign Key"
+msgstr "ئىمزا"
+
+#: ../pgp/seahorse-sign.xml.h:2
+msgid "By signing you indicate your trust that this key belongs to:"
+msgstr "ئىمزا قويسىڭىز، تۆۋەندىكى ئاچقۇچقا ئىشەنگەن بولىسىز:"
+
+#: ../pgp/seahorse-sign.xml.h:3
+msgid "Key Name"
+msgstr "ئاچقۇچ ئاتى:"
+
+#: ../pgp/seahorse-sign.xml.h:4
+msgid "How carefully have you checked this key?"
+msgstr "بۇ ئاچقۇچنى قانچىلىك تەپسىلىي تەكشۈردىڭىز؟"
+
+#: ../pgp/seahorse-sign.xml.h:5
+msgid "_Not at all"
+msgstr "زادىلا تەكشۈرمىگەن(_N)"
+
+#: ../pgp/seahorse-sign.xml.h:6
+msgid "_Casually"
+msgstr "مۇنداقلا تەكشۈرگەن(_C)"
+
+#: ../pgp/seahorse-sign.xml.h:7
+msgid "_Very Carefully"
+msgstr "تەپسىلىي تەكشۈرگەن(_V)"
+
+#: ../pgp/seahorse-sign.xml.h:8
+msgid ""
+"<i>Not at all:</i> means you believe the key is owned by the person who "
+"claims to own it, but you could not or did not verify this to be a fact."
+msgstr ""
+"<i>يوق:</i>سىز بۇ شىفىرلىق ئاچقۇچنىڭ ئۇنىڭ ئىگىسىنىڭ ئىكەنلىكىگە "
+"ئىشىنىدىغانلىقىڭىزنى بىلدۈرىدۇ، ئەمما سىز ئۇنىڭ راستلىقىنى دەلىللىيەلمەيسىز "
+"ياكى دەلىللىمىدىڭىز."
+
+#: ../pgp/seahorse-sign.xml.h:9
+msgid ""
+"<i>Casually:</i> means you have done a casual verification that the key is "
+"owned by the person who claims to own it. For example, you could read the "
+"key fingerprint to the owner over the phone."
+msgstr ""
+"<i>ۋاقىتلىق:</i>مەنىسى بىر تۈرلۈك ۋاقىتلىق دەلىللەشنى تاماملىغانلىقىنى "
+"بىلدۈرىدۇ، بۇ شىفىرلىق ئاچقۇچنىڭ ئۇنىڭغا ئېنىقلىما بەرگەن كىشىگە تەۋە "
+"ئىكەنلىكىنى ئىسپاتلايدۇ. مەسىلەن، سىز تېلېفون ئارقىلىق شىفىرلىق ئاچقۇچ "
+"بارماق ئىزىنى ئىگىسىگە ئوقۇپ جەزملىيەلەيسىز."
+
+#: ../pgp/seahorse-sign.xml.h:10
+msgid ""
+"<i>Very Carefully:</i> Select this only if you are absolutely sure that this "
+"key is genuine."
+msgstr ""
+"<i>ناھايىتى تەپسىلىي:</i>بۇ تاللانما تاللانسا مەزكۇر شىفىرلىق ئاچقۇچنىڭ "
+"ھەقىقىيلىقىغا مۇتلەق ئىشىنىدىغانلىقىڭىزنى بىلدۈرىدۇ."
+
+#: ../pgp/seahorse-sign.xml.h:11
+msgid ""
+"You could use a hard to forge photo identification (such as a passport) to "
+"personally check that the name on the key is correct. You should have also "
+"used email to check that the email address belongs to the owner."
+msgstr ""
+"ئاچقۇچ ئاتىنىڭ توغرا خاتالىقىنى ئۆزىڭىز تەكشۈرمەكچى بولسىڭىز، يەنى پاسپورتقا "
+"چاپلانغان رەسىمنى ئىشلىتىپ، كىملىك تەكشۈرۈپ، ساختىلىقتىن ساقلانغاندەك "
+"قىلىشقا بولىدۇ. يەنە ئېلخەت ئادرېسىنى ئىشلىتىپ ئۇنىڭ ئىگىسىگە تەۋەمۇ ئەمەسمۇ "
+"تەكشۈرۈشكە بولىدۇ."
+
+#: ../pgp/seahorse-sign.xml.h:12
+msgid "How others will see this signature:"
+msgstr "ئىمزانى باشقىلارغا قانچىلىك ئاشكارا ئېلان قىلىسىز:"
+
+#: ../pgp/seahorse-sign.xml.h:13
+msgid "_Others may not see this signature"
+msgstr "بۇ ئىمزانى باشقىلارغا ئېلان قىلما(_O)"
+
+#: ../pgp/seahorse-sign.xml.h:14
+msgid "I can _revoke this signature at a later date."
+msgstr "مەن بۇ ئىمزانى كېيىنرەك بىكار قىلىمەن(_R)."
+
+#: ../pgp/seahorse-sign.xml.h:15
+msgid "Sign key as:"
+msgstr "ئاچقۇچقا تۆۋەندىكىدەك ئىمزا قوي:"
+
+#: ../pgp/seahorse-sign.xml.h:16
+msgid "_Signer:"
+msgstr "ئىمزاچى(_S):"
+
+#: ../pgp/seahorse-sign.xml.h:17
+msgid "_Sign"
+msgstr "ئىمزا(_S)"
+
+#: ../pgp/seahorse-transfer.c:238 ../pgp/seahorse-transfer.c:285
+msgid "Exporting data"
+msgstr "سانلىق-مەلۇماتلارنى ئېكسپورت قىلىۋاتىدۇ"
+
+#: ../pgp/seahorse-transfer.c:238 ../pgp/seahorse-transfer.c:285
+msgid "Retrieving data"
+msgstr "سانلىق-مەلۇماتلارنى ئېلىۋاتىدۇ"
+
+#: ../pgp/seahorse-transfer.c:241 ../pgp/seahorse-transfer.c:288
+msgid "Importing data"
+msgstr "سانلىق-مەلۇماتلارنى ئىمپورت قىلىۋاتىدۇ"
+
+#: ../pgp/seahorse-transfer.c:241 ../pgp/seahorse-transfer.c:288
+msgid "Sending data"
+msgstr "ئۇچۇر يوللاۋاتىدۇ"
+
+#: ../pgp/seahorse-unknown.c:59
+msgid "Unavailable"
+msgstr "ئىشلەتكىلى بولمايدۇ"
+
+#: ../pkcs11/certificate-der-exporter.vala:43
+#: ../pkcs11/pkcs11-certificate.vala:98
+msgid "Certificate"
+msgstr "گۇۋاھنامە"
+
+#: ../pkcs11/certificate-der-exporter.vala:57
+msgid "Certificates (DER encoded)"
+msgstr "گۇۋاھنامىلەر(DER دا كودلانغان)"
+
+#: ../pkcs11/pkcs11-certificate.vala:94
+msgid "Personal certificate and key"
+msgstr "شەخسىي گۇۋاھنامە ۋە ئاچقۇچ"
+
+#: ../pkcs11/pkcs11-certificate.vala:96
+msgid "Personal certificate"
+msgstr "شەخسىي گۇۋاھنامە"
+
+#: ../pkcs11/seahorse-pkcs11-backend.c:189
+msgid "Certificates"
+msgstr "گۇۋاھنامە"
+
+#: ../pkcs11/seahorse-pkcs11-backend.c:195
+msgid "X.509 certificates and related keys"
+msgstr "X.509  گۇۋاھنامىلەر ۋە مۇناسىۋەتلىك ئاچقۇچلار"
+
+#: ../pkcs11/pkcs11-deleter.vala:37
+#, c-format
+msgid "Are you sure you want to permanently delete %d certificate?"
+msgid_plural "Are you sure you want to permanently delete %d certificates?"
+msgstr[0] "راستلا %d دانە گۇۋاھنامىنى ئۆچۈرەمسىز؟"
+
+#: ../pkcs11/seahorse-pkcs11-generate.c:113
+msgid "Couldn't generate private key"
+msgstr "شەخسىي ئاچقۇچنى ھاسىللىغىلى بولمىدى"
+
+#: ../pkcs11/seahorse-pkcs11-generate.c:412 ../pkcs11/pkcs11-request.vala:56
+msgid "Create"
+msgstr "ياسا"
+
+#: ../pkcs11/seahorse-pkcs11-generate.c:505
+#: ../pkcs11/pkcs11-private-key.vala:70
+msgid "Private key"
+msgstr "خاس ئاچقۇچ"
+
+#: ../pkcs11/seahorse-pkcs11-generate.c:506
+msgid "Used to request a certificate"
+msgstr "گۇۋاھنامە ئىلتىماسى ئۈچۈن ئىشلىتىلىدۇ"
+
+#: ../pkcs11/seahorse-pkcs11-generate.xml.h:1
+msgid "Create a new private key"
+msgstr "يېڭى شەخسىي ئاچقۇچ ياسايدۇ"
+
+#: ../pkcs11/seahorse-pkcs11-generate.xml.h:2
+msgid "Label:"
+msgstr "ئەن:"
+
+#: ../pkcs11/seahorse-pkcs11-generate.xml.h:3
+msgid "Stored at:"
+msgstr "ساقلانغان ئورنى:"
+
+#: ../pkcs11/pkcs11-key-deleter.vala:34
+msgid "I understand that this key will be permanently deleted."
+msgstr "مۇشۇ ئاچقۇچنىڭ مەڭگۈ ئۆچۈرۈلىدىغانلىقىنى بىلىمەن."
+
+#: ../pkcs11/pkcs11-properties.vala:134
+msgid "Unnamed"
+msgstr "ئاتسىز"
+
+#: ../pkcs11/pkcs11-properties.vala:165
+msgid "Failed to export certificate"
+msgstr "گۇۋاھنامىنى ئېكسپورت قىلىش مەغلۇپ بولدى"
+
+#: ../pkcs11/pkcs11-properties.vala:188 ../src/seahorse-sidebar.c:873
+msgid "Couldn't delete"
+msgstr "ئۆچۈرگىلى بولمىدى."
+
+#: ../pkcs11/pkcs11-properties.vala:199
+msgid "_Export"
+msgstr "چىقار(_E)"
+
+#: ../pkcs11/pkcs11-properties.vala:200
+msgid "Export the certificate"
+msgstr "گۇۋاھنامىنى ئېكسپورت قىلىدۇ"
+
+#: ../pkcs11/pkcs11-properties.vala:202
+msgid "Delete this certificate or key"
+msgstr "مەزكۇر گۇۋاھنامىنى ياكى ئاچقۇچنى ئۆچۈرىدۇ"
+
+#: ../pkcs11/pkcs11-properties.vala:203
+msgid "Request _Certificate"
+msgstr "گۇۋاھنامە ئىلتىماس قىل(_C)"
+
+#: ../pkcs11/pkcs11-properties.vala:204
+msgid "Create a certificate request file for this key"
+msgstr "مەزكۇر ئاچقۇچ ئۈچۈن گۇۋاھنامە ئىلتىماس ھۆججىتى قۇرىدۇ"
+
+#: ../pkcs11/pkcs11-request.vala:87
+msgid "Couldn't create certificate request"
+msgstr "گۇۋاھنامە ئىلتىماسىنى قۇرغىلى بولمىدى"
+
+#: ../pkcs11/pkcs11-request.vala:104
+msgid "Save certificate request"
+msgstr "گۇۋاھنامە ئىلتىماسى ساقلا"
+
+#: ../pkcs11/pkcs11-request.vala:113
+msgid "Certificate request"
+msgstr "گۇۋاھنامە ئىلتىماسى"
+
+#: ../pkcs11/pkcs11-request.vala:121
+msgid "PEM encoded request"
+msgstr "PEM كودلاش ئىلتىماسى"
+
+#: ../pkcs11/pkcs11-request.vala:149
+msgid "Couldn't save certificate request"
+msgstr "گۇۋاھنامە ئىلتىماسىنى ساقلىغىلى بولمىدى"
+
+#: ../pkcs11/seahorse-pkcs11-request.xml.h:1
+msgid "Create a certificate request file."
+msgstr "گۇۋاھنامە ئىلتىماس ھۆججىتى قۇرىدۇ."
+
+#: ../pkcs11/seahorse-pkcs11-request.xml.h:2
+msgid "The common name (CN) placed in the certificate request."
+msgstr "گۇۋاھنامە ئىلتىماسىدىكى ئورتاق ئات(CN)."
+
+#: ../pkcs11/seahorse-pkcs11-request.xml.h:3
+msgid "Name (CN):"
+msgstr "ئاتى(CN):"
+
+#: ../pkcs11/pkcs11-private-key.vala:61
+msgid "Unnamed private key"
+msgstr "ئاتسىز شەخسىي ئاچقۇچ"
+
+#: ../pkcs11/pkcs11-token.vala:74
+msgctxt "Label"
+msgid "Unknown"
+msgstr "نامەلۇم"
+
+#: ../src/seahorse-change-passphrase.xml.h:1
+msgid "Change Passphrase"
+msgstr "ئىمنى ئۆزگەرتىش"
+
+#: ../src/seahorse-change-passphrase.xml.h:3
+msgid "New _Passphrase:"
+msgstr "يېڭى ئىم(_P):"
+
+#: ../src/seahorse-change-passphrase.xml.h:4
+msgid "Confirm new passphrase"
+msgstr "يېڭى ئىمنى جەزملەيدۇ"
+
+#: ../src/seahorse-change-passphrase.xml.h:5
+msgid "Con_firm Passphrase:"
+msgstr "ئىمنى جەزملەش(_F):"
+
+#: ../src/seahorse-generate-select.c:228
+msgid "Continue"
+msgstr "داۋاملاشتۇر"
+
+#: ../src/seahorse-generate-select.xml.h:1
+msgid "_Select the type of item to create:"
+msgstr "قۇرىدىغان تۇرنىڭ تىپىنى تاللاڭ(_S):"
+
+#: ../src/seahorse-import-dialog.c:95
+msgid "Import failed"
+msgstr "ئىمپورت قىلىش مەغلۇپ بولدى"
+
+#: ../src/seahorse-import-dialog.c:113
+msgid "Import"
+msgstr "ئىمپورت قىل"
+
+#: ../src/seahorse-import-dialog.c:126
+msgid "<b>Data to be imported:</b>"
+msgstr "<b>ئىمپورت قىلىنىدىغان سانلىق-مەلۇمات:</b>"
+
+#: ../src/seahorse-key-manager.c:242 ../ssh/seahorse-ssh-operation.c:870
+msgid "Import Key"
+msgstr "ئاچقۇچ ئىمپورت قىلىش"
+
+#: ../src/seahorse-key-manager.c:254
+msgid "All key files"
+msgstr "بارلىق ئاچقۇچ ھۆججەتلىرى"
+
+#: ../src/seahorse-key-manager.c:355
+msgid "Dropped text"
+msgstr "تاشلانغان تېكىست"
+
+#: ../src/seahorse-key-manager.c:391
+msgid "Clipboard text"
+msgstr "چاپلاش تاختىسى تېكىستى"
+
+#: ../src/seahorse-key-manager.c:502
+msgid "_New"
+msgstr "يېڭىدىن قۇر(_N)"
+
+#: ../src/seahorse-key-manager.c:504
+msgid "Close this program"
+msgstr "بۇ پروگراممىنى ياپىدۇ"
+
+#: ../src/seahorse-key-manager.c:505 ../src/seahorse-key-manager.c:507
+msgid "_New..."
+msgstr "يېڭى(_N)..."
+
+#: ../src/seahorse-key-manager.c:506
+msgid "Create a new key or item"
+msgstr "يېڭى ئاچقۇچ ياكى تۈر قۇرىدۇ"
+
+#: ../src/seahorse-key-manager.c:508
+msgid "Add a new key or item"
+msgstr "يېڭى ئاچقۇچ ياكى تۈر قوشىدۇ"
+
+#: ../src/seahorse-key-manager.c:509
+msgid "_Import..."
+msgstr "ئىمپورت قىل(_I)…"
+
+#: ../src/seahorse-key-manager.c:510
+msgid "Import from a file"
+msgstr "ھۆججەتتىن ئەكىرىدۇ"
+
+#: ../src/seahorse-key-manager.c:512
+msgid "Import from the clipboard"
+msgstr "چاپلاش تاختىسىدىن ئىمپورت قىلىدۇ"
+
+#: ../src/seahorse-key-manager.c:516
+#, fuzzy
+#| msgid "By _keyring"
+msgid "By _Keyring"
+msgstr "ئاچقۇچ ھالقىسى بويىچە(_K)"
+
+#: ../src/seahorse-key-manager.c:517
+msgid "Show sidebar listing keyrings"
+msgstr "ئاچقۇچلارنى كۆرسىتىدىغان يان بالداقنى كۆرسەت"
+
+#: ../src/seahorse-key-manager.c:521
+#, fuzzy
+#| msgid "Show _personal"
+msgid "Show _Personal"
+msgstr "ئۆزۈمنىڭكىنى كۆرسەت(_P)"
+
+#: ../src/seahorse-key-manager.c:522
+msgid "Only show personal keys, certificates and passwords"
+msgstr "شەخسىي ئاچقۇچلارنى، گۇۋاھنامىلەرنى ۋە ئىملارنى كۆرسىتىدۇ"
+
+#: ../src/seahorse-key-manager.c:523
+#, fuzzy
+#| msgid "Show _trusted"
+msgid "Show _Trusted"
+msgstr "ئىشەنچلىكلىرىنى كۆرسەت(_T)"
+
+#: ../src/seahorse-key-manager.c:524
+msgid "Only show trusted keys, certificates and passwords"
+msgstr "پەقەتلا ئىشەنچلىك ئاچقۇچلارنى، گۇۋاھنامىلەرنى ۋە ئىملارنى كۆرسىتىدۇ"
+
+#: ../src/seahorse-key-manager.c:525
+#, fuzzy
+#| msgid "Show _any"
+msgid "Show _Any"
+msgstr "ھەممىنى كۆرسەت(_A)"
+
+#: ../src/seahorse-key-manager.c:526
+msgid "Show all keys, certificates and passwords"
+msgstr "بارلىق ئاچقۇچلارنى، گۇۋاھنامىلەرنى ۋە ئىملارنى كۆرسىتىدۇ"
+
+#: ../src/seahorse-key-manager.c:745
+msgid "Filter"
+msgstr "سۈزگۈچ"
+
+#: ../src/seahorse-key-manager.xml.h:1
+msgid "First time options:"
+msgstr "تۇنجى قېتىمقى تاللانمىلار:"
+
+#: ../src/seahorse-key-manager.xml.h:2
+msgid "Generate a new key of your own: "
+msgstr "ئۆزى يېڭى ئاچقۇچ قۇرىدۇ: "
+
+#: ../src/seahorse-key-manager.xml.h:4
+msgid "Import existing keys from a file:"
+msgstr "ھۆججەتتىن بار بولغان ئاچقۇچنى ئىمپورت قىلىش:"
+
+#: ../src/seahorse-key-manager.xml.h:5
+msgid "To get started with encryption you will need keys."
+msgstr "شىفىرلاشنى باشلاش ئۈچۈن ئاچقۇچلار زۆرۈر بولىدۇ."
+
+#: ../src/seahorse-sidebar.c:797
+msgid "Couldn't lock"
+msgstr "قۇلۇپلىغىلى بولمىدى"
+
+#: ../src/seahorse-sidebar.c:834
+msgid "Couldn't unlock"
+msgstr "قۇلۇپسىزلىغىلى بولمىدى"
+
+#: ../src/seahorse-sidebar.c:941
+msgid "_Lock"
+msgstr "قۇلۇپلا(_L)"
+
+#: ../src/seahorse-sidebar.c:946
+msgid "_Unlock"
+msgstr "قۇلۇپسىزلا(_U)"
+
+#: ../src/seahorse-sidebar.c:965
+msgid "_Properties"
+msgstr "خاسلىق(_P)"
+
+#: ../ssh/seahorse-ssh-actions.c:97
+msgid "Configure Key for _Secure Shell..."
+msgstr "بىخەتەر Shell نىڭ ئاچقۇچىنى سەپلەڭ…"
+
+#: ../ssh/seahorse-ssh-actions.c:98
+msgid ""
+"Send public Secure Shell key to another machine, and enable logins using "
+"that key."
+msgstr ""
+"بىخەتەر Shell نىڭ ئاممىۋى ئاچقۇچىنى باشقا ماشىنىغا ئەۋەتىدۇ، شۇ ئارقىلىق بۇ "
+"ئاچقۇچنى ئىشلىتىپ كىرىشكە ئىمكانىيەت يارىتىدۇ."
+
+#: ../ssh/seahorse-ssh-askpass.c:78 ../ssh/seahorse-ssh-askpass.c:86
+msgid "Enter your Secure Shell passphrase:"
+msgstr "بىخەتەر Shell نىڭ ئىمىنى كىرگۈزۈڭ:"
+
+#: ../ssh/seahorse-ssh-askpass.c:100
+msgid "Old Key Passphrase"
+msgstr "كونا ئاچقۇچ ئىمى"
+
+#: ../ssh/seahorse-ssh-askpass.c:101
+#, c-format
+msgid "Enter the old passphrase for: %s"
+msgstr "%s نىڭ كونا ئىمىنى كىرگۈزۈڭ:"
+
+#: ../ssh/seahorse-ssh-askpass.c:105 ../ssh/seahorse-ssh-askpass.c:110
+msgid "New Key Passphrase"
+msgstr "يېڭى ئاچقۇچ ئىمى"
+
+#: ../ssh/seahorse-ssh-askpass.c:106
+#, c-format
+msgid "Enter the new passphrase for: %s"
+msgstr "%s نىڭ يېڭى ئىمىنى كىرگۈزۈڭ:"
+
+#: ../ssh/seahorse-ssh-askpass.c:111
+#, c-format
+msgid "Enter the new passphrase again: %s"
+msgstr "يېڭى ئىمنى قايتا كىرگۈزۈڭ: %s"
+
+#: ../ssh/seahorse-ssh-backend.c:115
+msgid "Secure Shell"
+msgstr "بىخەتەر Shell"
+
+#: ../ssh/seahorse-ssh-backend.c:121
+msgid "Keys used to connect securely to other computers"
+msgstr "باشقا كومپيۇتېرلارغا بىخەتەر باغلىنىشتا ئىشلىتىدىغان ئاچقۇچلار"
+
+#: ../ssh/seahorse-ssh-deleter.c:80 ../ssh/seahorse-ssh-deleter.c:85
+#, c-format
+msgid "Are you sure you want to delete the secure shell key '%s'?"
+msgstr "بىخەتەر shell ئاچقۇچى «%s» نى راستلا ئۆچۈرەمسىز؟"
+
+#: ../ssh/seahorse-ssh-deleter.c:90
+#, c-format
+msgid "Are you sure you want to delete %d secure shell key?"
+msgid_plural "Are you sure you want to delete %d secure shell keys?"
+msgstr[0] "%d بىخەتەر shell ئاچقۇچلىرىنى راستلا ئۆچۈرەمسىز؟"
+
+#: ../ssh/seahorse-ssh-exporter.c:92
+#, fuzzy
+#| msgid "SSH key"
+msgid "SSH Key"
+msgstr "SSH ئاچقۇچى"
+
+#: ../ssh/seahorse-ssh-exporter.c:124
+msgid "Secret SSH keys"
+msgstr "بىخەتەر SSH ئاچقۇچلىرى"
+
+#: ../ssh/seahorse-ssh-exporter.c:128
+msgid "Public SSH keys"
+msgstr "ئاممىۋى SSH ئاچقۇچلىرى"
+
+#: ../ssh/seahorse-ssh-exporter.c:297
+msgid "No public key file is available for this key."
+msgstr "مەزكۇر ئاچقۇچنىڭ ئاممىۋى ئاچقۇچ ھۆججىتى يوق."
+
+#: ../ssh/seahorse-ssh-generate.c:52 ../ssh/seahorse-ssh-key.c:109
+#: ../ssh/seahorse-ssh-key.c:113 ../ssh/seahorse-ssh-key-properties.xml.h:4
+msgid "Secure Shell Key"
+msgstr "بىخەتەر shell ئاچقۇچى"
+
+#: ../ssh/seahorse-ssh-generate.c:53
+msgid "Used to access other computers (eg: via a terminal)"
+msgstr ""
+"باشقا كومپيۇتېرلارنى زىيارەت قىلىش ئۈچۈن ئىشلىتىلىدۇ(مەسىلەن: تېرمىنالنى "
+"ئىشلىتىپ)"
+
+#: ../ssh/seahorse-ssh-generate.c:107 ../ssh/seahorse-ssh-generate.c:123
+msgid "Couldn't generate Secure Shell key"
+msgstr "بىخەتەر Shell ئاچقۇچىنى ھاسىل قىلالمىدى"
+
+#: ../ssh/seahorse-ssh-generate.c:190
+msgid "Creating Secure Shell Key"
+msgstr "بىخەتەر Shell ئاچقۇچىنى قۇرۇۋاتىدۇ"
+
+#: ../ssh/seahorse-ssh-generate.xml.h:1
+msgid "New Secure Shell Key"
+msgstr "يېڭى بىخەتەر Shell ئاچقۇچى"
+
+#: ../ssh/seahorse-ssh-generate.xml.h:2
+msgid "_Just Create Key"
+msgstr "ئاچقۇچلا قۇر(_J)"
+
+#: ../ssh/seahorse-ssh-generate.xml.h:3
+msgid "_Create and Set Up"
+msgstr "قۇر ۋە تەڭشە(_C)"
+
+#: ../ssh/seahorse-ssh-generate.xml.h:4
+msgid "A Secure Shell (SSH) key lets you connect securely to other computers."
+msgstr ""
+"بىخەتەر Shell (SSH) ئاچقۇچى ئارقىلىق باشقا كومپيۇتېرلارغا بىخەتەر باغلىنىشقا "
+"بولىدۇ."
+
+#: ../ssh/seahorse-ssh-generate.xml.h:6
+msgid "Your email address, or a reminder of what this key is for."
+msgstr ""
+">مەزكۇر ئاچقۇچنىڭ قانداق ئاچقۇچ ئىكەنلىكىنى بىلىشتە كېرەك بولغان، ئېلخەت "
+"يالى ئەسلەتمە ئۇچۇرلار."
+
+#: ../ssh/seahorse-ssh-generate.xml.h:10
+msgid "DSA"
+msgstr "DSA"
+
+#: ../ssh/seahorse-ssh-generate.xml.h:12
+msgid ""
+"If there is a computer you want to use this key with, you can set up that "
+"computer to recognize your new key."
+msgstr ""
+"بۇ ئاچقۇچنى كومپيۇتېردا ئىشلەتمەكچى بولسىڭىز، كومپيۇتېرنى بۇ ئاچقۇچنى "
+"تونۇيدىغان قىلىپ تەڭشىشىڭىز كېرەك."
+
+#: ../ssh/seahorse-ssh-key.c:105
+msgid "(Unreadable Secure Shell Key)"
+msgstr "(ئوقۇغىلى بولمايدىغان بىخەتەر Shell ئاچقۇچى)"
+
+#: ../ssh/seahorse-ssh-key.c:213
+msgid "Personal SSH key"
+msgstr "شەخسىي SSH ئاچقۇچى"
+
+#: ../ssh/seahorse-ssh-key.c:215
+msgid "SSH key"
+msgstr "SSH ئاچقۇچى"
+
+#: ../ssh/seahorse-ssh-key-properties.c:79
+msgid "Couldn't rename key."
+msgstr "ئاچقۇچ ئاتىنى ئۆزگەرتەلمىدى."
+
+#: ../ssh/seahorse-ssh-key-properties.c:134
+msgid "Couldn't change authorization for key."
+msgstr "ئاچقۇچنىڭ كىملىك دەلىللىشىنى ئۆزگەرتكىلى بولمىدى."
+
+#: ../ssh/seahorse-ssh-key-properties.c:171
+msgid "Couldn't change passphrase for key."
+msgstr "ئاچقۇچنىڭ ئىمىنى ئۆزگەرتكىلى بولمىدى."
+
+#: ../ssh/seahorse-ssh-key-properties.xml.h:2
+msgid "Identifier:"
+msgstr "بەلگە:"
+
+#. Name of key, often a persons name
+#: ../ssh/seahorse-ssh-key-properties.xml.h:6
+msgctxt "name-of-ssh-key"
+msgid "Name:"
+msgstr "ئاتى:"
+
+#: ../ssh/seahorse-ssh-key-properties.xml.h:7
+msgid "Used to connect to other computers."
+msgstr "باشقا كومپيۇتېرلار بىلەن ئالاقە قىلىشقا ئىشلىتىلىدۇ."
+
+#: ../ssh/seahorse-ssh-key-properties.xml.h:12
+msgid "The owner of this key is _authorized to connect to this computer"
+msgstr "بۇ ئاچقۇچنىڭ ئىگىسىنىڭ بۇ كومپيۇتېرغا باغلىنىش سالاھىيىتى بار(_A)"
+
+#: ../ssh/seahorse-ssh-key-properties.xml.h:14
+#, no-c-format
+msgid "This only applies to the <i>%s</i> account."
+msgstr "بۇنى پەقەت <i>%s</i> ھېساباتىغىلا ئىشلىتىشكە بولىدۇ."
+
+#: ../ssh/seahorse-ssh-key-properties.xml.h:16
+msgid "Algorithm:"
+msgstr "ئالگورىزىم:"
+
+#: ../ssh/seahorse-ssh-key-properties.xml.h:18
+msgid "Location:"
+msgstr "ئورنى:"
+
+#: ../ssh/seahorse-ssh-key-properties.xml.h:21
+msgid "E_xport Complete Key"
+msgstr "تولۇق ئاچقۇچنى ئېكسپورت قىل(_X)"
+
+#: ../ssh/seahorse-ssh-operation.c:204
+msgid "The SSH command was terminated unexpectedly."
+msgstr "SSH بۇيرۇقى ئويمىغان يەردىن توختاپ قالدى."
+
+#: ../ssh/seahorse-ssh-operation.c:214
+msgid "The SSH command failed."
+msgstr "SSH بۇيرۇقى مەغلۇپ بولدى."
+
+#: ../ssh/seahorse-ssh-operation.c:523
+msgid "Remote Host Password"
+msgstr "يىراقتىكى ماشىنا ئىمى"
+
+#: ../ssh/seahorse-ssh-operation.c:610
+msgid "Enter Key Passphrase"
+msgstr "ئاچقۇچنىڭ ئىمىنى كىرگۈزۈڭ"
+
+#: ../ssh/seahorse-ssh-operation.c:701
+msgid "Passphrase for New Secure Shell Key"
+msgstr "يېڭى بىخەتەر Shell ئاچقۇچىنىڭ ئىمى"
+
+#: ../ssh/seahorse-ssh-operation.c:887
+#, c-format
+msgid "Importing key: %s"
+msgstr "ئاچقۇچ ئىمپورت قىلىۋاتىدۇ: %s"
+
+#: ../ssh/seahorse-ssh-operation.c:889
+msgid "Importing key. Enter passphrase"
+msgstr "ئاچقۇچلارنى ئىمپورت قىلىۋاتىدۇ. passphrase كىرگۈزۈڭ"
+
+#: ../ssh/seahorse-ssh-source.c:219
+msgid "OpenSSH keys"
+msgstr "OpenSSH ئاچقۇچلىرى"
+
+#: ../ssh/seahorse-ssh-source.c:226
+#, c-format
+msgid "OpenSSH: %s"
+msgstr "OpenSSH: %s"
+
+#: ../ssh/seahorse-ssh-source.c:974
+msgid "No private key file is available for this key."
+msgstr "مەزكۇر ئاچقۇچقا ماس كېلىدىغان خۇسۇسىي ئاچقۇچ يوق."
+
+#: ../ssh/seahorse-ssh-upload.c:48
+msgid "Couldn't configure Secure Shell keys on remote computer."
+msgstr "يىراقتىكى كومپيۇتېردىكى بىخەتەر Shell ئاچقۇچىنى سەپلىيەلمىدى."
+
+#: ../ssh/seahorse-ssh-upload.c:131
+msgid "Configuring Secure Shell Keys..."
+msgstr "بىخەتەر Shell ئاچقۇچلىرىنى سەپلەۋاتىدۇ…"
+
+#: ../ssh/seahorse-ssh-upload.xml.h:1
+msgid "Set Up Computer for SSH Connection"
+msgstr "كومپيۇتېرنى SSH بىلەن باغلىنىدىغان قىلىپ تەڭشە"
+
+#: ../ssh/seahorse-ssh-upload.xml.h:2
+msgid ""
+"To use your Secure Shell key with another computer that uses SSH, you must "
+"already have a login account on that computer."
+msgstr ""
+"SSH ئىشلەتكەن باشقا بىر كومپيۇتېر بىلەن بىخەتەر(Secure Shell) Shell نى "
+"ئىشلىتىش ئۈچۈن، ئۇ كومپيۇتېردا ھېساباتىڭىز بولۇشى كېرەك."
+
+#: ../ssh/seahorse-ssh-upload.xml.h:4
+msgid "eg: fileserver.example.com:port"
+msgstr "eg: fileserver.example.com:port"
+
+#: ../ssh/seahorse-ssh-upload.xml.h:5
+#, fuzzy
+#| msgid "Resolving server address: %s"
+msgid "_Server address:"
+msgstr "مۇلازىمېتىرنىڭ ئادرېسىنى ھەل قىلىۋاتىدۇ: %s"
+
+#: ../ssh/seahorse-ssh-upload.xml.h:6
+#, fuzzy
+#| msgid "_Login Name:"
+msgid "_Login name:"
+msgstr "كىرىش ئاتى(_L):"
+
+#: ../ssh/seahorse-ssh-upload.xml.h:7
+msgid "_Set Up"
+msgstr "تەڭشە(_S)"
+
+#~ msgid "Updating password"
+#~ msgstr "ئىملارنى يېڭىلاۋاتىدۇ"
+
+#~ msgid "Keyring Properties"
+#~ msgstr "ئاچقۇچ ھالقىسى خاسلىقى"
+
+#~ msgid "%Y-%m-%d"
+#~ msgstr "%Y-%m-%d"
+
+#~ msgid "Ssh Key"
+#~ msgstr "Ssh ئاچقۇچ"
+
+#~ msgid "_Computer Name:"
+#~ msgstr "كومپيۇتېر ئاتى(_C):"
+
+#~ msgid "<b>Password:</b>"
+#~ msgstr "<b>ئىم:</b>"
+
+#~ msgid "Access to the key ring was denied"
+#~ msgstr "ئاچقۇچ ھالقىسىنى زىيارەت قىلىش رەت قىلىندى"
+
+#~ msgid "The gnome-keyring daemon is not running"
+#~ msgstr "ئاچقۇچ ھالقىسى daemon نى ئىجرا قىلىنمىغان"
+
+#~ msgid "The key ring has already been unlocked"
+#~ msgstr "ئاچقۇچ ھالقىسى ئاللىقاچان قۇلۇپسىزلانغان"
+
+#~ msgid "No such key ring exists"
+#~ msgstr "بۇنداق ئاچقۇچ ھالقىسى يوق"
+
+#~ msgid "Couldn't communicate with key ring daemon"
+#~ msgstr "key ring daemon بىلەن ئالاقىلىشەلمىدى"
+
+#~ msgid "The item already exists"
+#~ msgstr "بۇ تۈر مەۋجۇت"
+
+#~ msgid "Internal error accessing gnome-keyring"
+#~ msgstr "ئاچقۇچ ھالقىسىنى زىيارەت قىلىشتا ئىچكى خاتالىق كۆرۈلدى"
+
+#~ msgid "<b>Key Servers:</b>"
+#~ msgstr "<b>ئاچقۇچ مۇلازىمېتىرلىرى:</b>"
+
+#~ msgid "Algorithms here"
+#~ msgstr "ئالگورىزىملار بۇ يەردە"
+
+#~ msgid "Never"
+#~ msgstr "ھەرگىز"
+
+#~ msgid "<b>Key ID:</b>"
+#~ msgstr "<b>ئاچقۇچ كىملىكى(ID):</b>"
+
+#~ msgctxt "name-of-key"
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>ئاتى:</b>"
+
+#~ msgid "<b>Comment:</b>"
+#~ msgstr "<b>ئىزاھات:</b>"
+
+#~ msgid "<b>Use:</b>"
+#~ msgstr "<b>ئىشلىتىلىشى:</b>"
+
+#~ msgid "<b>Type:</b>"
+#~ msgstr "<b>تۈرى:</b>"
+
+#~ msgid "<b>Key Names and Signatures</b>"
+#~ msgstr "<b>ئاچقۇچ ئاتلىرى ۋە ئىمزالار</b>"
+
+#~ msgid "<b>Dates</b>"
+#~ msgstr "<b>چېسلا</b>"
+
+#~ msgid "<b>Actions</b>"
+#~ msgstr "<b>مەشغۇلات</b>"
+
+#~ msgid "<b>Dates:</b>"
+#~ msgstr "<b>چېسلا:</b>"
+
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>ئاتى:</b>"
+
+#~ msgid "<b>Trust</b>"
+#~ msgstr "<b>ئىشەنچلىك</b>"
+
+#~ msgid "<b>Strength:</b>"
+#~ msgstr "<b>كۈچلۈكلۈكى:</b>"
+
+#~ msgid "Do not run seahorse-daemon as a daemon"
+#~ msgstr "seahorse-daemon نى daemon سۈپىتىدە ئىجرا قىلغىلى بولمىدى"
+
+#~ msgid "Signed by <i><key id='%s'/> <b>expired</b></i> on %s."
+#~ msgstr ""
+#~ "%2$s دىكى<b>ۋاقتى ئوتكەن </b>の<i><key id='%1$s'/></i>بىلەن ئىمزا قويۇلغان"
+
+#~ msgid "Invalid Signature"
+#~ msgstr "ئىناۋەتسىز ئىمزا"
+
+#~ msgid "Signed by <i><key id='%s'/></i> on %s <b>Expired</b>."
+#~ msgstr ""
+#~ "%2$s دىكى<b>ۋاقتى ئوتكەن </b>の<i><key id='%1$s'/></i>بىلەن ئىمزا قويۇلغان"
+
+#~ msgid "Expired Signature"
+#~ msgstr "ۋاقتى ئوتكەن ئىمزا"
+
+#~ msgid "Signed by <i><key id='%s'/> <b>Revoked</b></i> on %s."
+#~ msgstr ""
+#~ "%2$s دىكى<b>مەغلۇپ بولغان</b><i><key id='%1$s'/> بىلەن ئىمزا قويۇلغان"
+
+#~ msgid "Signed by <i><key id='%s'/></i> on %s."
+#~ msgstr "%2$s دىكى <i><key id='%1$s'/></i>بىلەن ئىمزا قويۇلغان"
+
+#~ msgid "Good Signature"
+#~ msgstr "ئېسىل ئىمزا"
+
+#~ msgid "Unknown Signature"
+#~ msgstr "نامەلۇم ئىمزا"
+
+#~ msgid "Bad or forged signature. The signed data was modified."
+#~ msgstr ""
+#~ "توغرا بولمىغان ياكى ساختا ئىمزا (ئىمزا سانلىق-مەلۇماتى ئۆزگەرتىلىپتۇ)"
+
+#~ msgid "Bad Signature"
+#~ msgstr "توغرا بولمىغان ئىمزا"
+
+#~ msgid "No recipients specified"
+#~ msgstr "تاپشۇرۇۋالغۇچى كۆرسىتىلمىدى"
+
+#~ msgid "Invalid key id: %s"
+#~ msgstr "ئاچقۇچ id سى ئىناۋەتسىز: %s"
+
+#~ msgid "Enable DNS-SD sharing"
+#~ msgstr "DNS-SD ھەمبەھىرىنى قوزغات"
+
+#~ msgid "ID of the default key"
+#~ msgstr "كۆڭۈلدىكى كۇنۇپكىنىڭ ID سى"
+
+#~ msgid "Last key used to sign a message."
+#~ msgstr "ئۇچۇرغا ئىمزا قويغاندا ئىشلەتكەن ئەڭ ئاخىرقى ئاچقۇچ."
+
+#~ msgid "PGP Key servers"
+#~ msgstr "PGP ئاچقۇچ مۇلازىمېتىرى"
+
+#~ msgid "The ID of the last secret key used to sign a message."
+#~ msgstr ""
+#~ "ئۇچۇرغا ئىمزا قويغاندا ئىشلەتكەن ئەڭ ئاخىرقى مەخپىي ئاچقۇچنىڭ ID سى."
+
+#~ msgid "Whether to use ASCII Armor"
+#~ msgstr "ASCII"
+
+#~ msgid "<b>Path:</b>"
+#~ msgstr "<b>يول:</b>"
+
+#~ msgid "<b>Permissions:</b>"
+#~ msgstr "<b>ھوقۇقلار:</b>"
+
+#~ msgid "_Read"
+#~ msgstr "ئوقۇ(_R)"
+
+#~ msgid "_Write"
+#~ msgstr "ياز(_W)"
+
+#~ msgid "<b>Passwords:</b> %s"
+#~ msgstr "<b>ئىملار:</b>%s"
+
+#~ msgid "Deleting item..."
+#~ msgstr "تۈرلەرنى ئۆچۈرۈۋاتىدۇ..."
+
+#~ msgid "Search Results"
+#~ msgstr "ئىزدەش نەتىجىسى"
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "ھۆججەت ئىناۋەتلىك .desktop ھۆججىتى ئەمەس."
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "تونۇيالمىغان ئۈستەلئۈستى ھۆججەت نەشرى '%s'"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s قوزغىلىۋاتىدۇ"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "پروگرامما بۇيرۇق قۇرىدا پۈتۈكنى قوبۇل قىلالمايدۇ"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "تونۇمايدىغان ئىجرا تاللانمىسى: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr "URI پۈتۈكنى 'Type=Link' ئۈستەلئۈستى تۈرىگە يوللىيالمىدى."
+
+#~ msgid "Not a launchable item"
+#~ msgstr "ئىجراچان تۈر ئەمەس"
+
+#~ msgid "Disable connection to session manager"
+#~ msgstr "ئەڭگىمە باشقۇرغۇچقا باغلىنىشنى چەكلە"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "سەپلىمە ساقلانغان ھۆججەتنى بەلگىلە"
+
+#~ msgid "FILE"
+#~ msgstr "FILE"
+
+#~ msgid "Specify session management ID"
+#~ msgstr "ئەڭگىمە باشقۇرغۇ ID سېنى بەلگىلە"
+
+#~ msgid "Session management options:"
+#~ msgstr "ئەڭگىمە باشقۇرغۇ تاللانمىلىرى:"
+
+#~ msgid "Show session management options"
+#~ msgstr "ئەڭگىمە باشقۇرغۇ تاللانمىلىرى كۆرسەت"
+
+#~ msgid "Key Imported"
+#~ msgid_plural "Keys Imported"
+#~ msgstr[0] "ئاچقۇچ(لار) ئىمپورت قىلىندى"
+
+#~ msgid "Imported %i key"
+#~ msgid_plural "Imported %i keys"
+#~ msgstr[0] "%i دانە ئاچقۇچ ئىمپورت قىلىندى"
+
+#~ msgid "Imported a key for"
+#~ msgid_plural "Imported keys for"
+#~ msgstr[0] "تۆۋەندىكى ئاچقۇچ(لار) ئىمپورت قىلىندى:"
+
+#~ msgid "Notification Messages"
+#~ msgstr "ئۇقتۇرۇش ئۇچۇرلىرى"
+
+#~ msgid "Identity"
+#~ msgstr "سالاھىيەت"
+
+#~ msgid "Couldn't run file-roller"
+#~ msgstr "'file-roller' نى ئىجرا قىلغىلى بولمىدى"
+
+#~ msgid "Couldn't package files"
+#~ msgstr "ھۆججەتلەرنى بوغچىلىغىلى بولمىدى"
+
+#~ msgid "The file-roller process did not complete successfully"
+#~ msgstr "'file-roller' مۇۋەپپەقىيەتلىك قوزغىلالمىدى"
+
+#~ msgid "Archive files"
+#~ msgstr "ئارخىپ ھۆججەتلەر"
+
+#~ msgid ""
+#~ "<b>A file already exists with this name.</b>\n"
+#~ "\n"
+#~ "Do you want to replace it with a new file?"
+#~ msgstr ""
+#~ "<b>ئوخشاش ئاتتىكى ھۆججەت مەۋجۇت.</b>\n"
+#~ "\n"
+#~ "ئۇنى يېڭى ھۆججەتتە قاپلىۋېتەمسىز؟"
+
+#~ msgid "_Replace"
+#~ msgstr "ئالماشتۇر(_R)"
+
+#~ msgid "Couldn't export key to \"%s\""
+#~ msgstr "ئاچقۇچنى «%s» غا ئېكسپورت قىلالمىدى"
+
+#~ msgid "Create New ..."
+#~ msgstr "يېڭىدىن قۇرۇش..."
+
+#~ msgid "Importing keys"
+#~ msgstr "ئاچقۇچلارنى ئىمپورت قىلىۋاتىدۇ"
+
+#~ msgid "Validity"
+#~ msgstr "ئۈنۈملۈكلۈكى"
+
+#~ msgid "_Expand All"
+#~ msgstr "ھەممىنى ياي(_E)"
+
+#~ msgid "Expand all listings"
+#~ msgstr "ھەممىنى ياي"
+
+#~ msgid "_Collapse All"
+#~ msgstr "ھەممىنى قاتلا(_C)"
+
+#~ msgid "Export public key"
+#~ msgstr "ئاممىۋى ئاچقۇچنى ئېكسپورت قىل"
+
+#~ msgid "Deleting..."
+#~ msgstr "ئۆچۈرۈۋاتىدۇ…"
+
+#~ msgid "%s is a private key. Are you sure you want to proceed?"
+#~ msgstr "%s خۇسۇسىي ئاچقۇچ. راستلا بىر تەرەپ قىلىۋېرەمسىز؟"
+
+#~ msgctxt ""
+#~ "This text refers to deleting an item from its type's backing store."
+#~ msgid "_Delete"
+#~ msgstr "ئۆچۈر(_D)"
+
+#~ msgid "Invalid"
+#~ msgstr "ئىناۋەتسىز"
+
+#~ msgid "Passphrase:"
+#~ msgstr "ئىم جۈملىسى:"

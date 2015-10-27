@@ -1,0 +1,4780 @@
+# Zulu translation for empathy
+# This file is distributed under the same license as the empathy package.
+# Abel Motha, Translate.org.za <sedric@translate.org.za>, 2010, 2011.
+# Priscilla Mahlangu <priny@translate.org.za>, 2011.
+# F Wolff <friedel@translate.org.za>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: empathy\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=empathy&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2015-10-27 16:36+0000\n"
+"PO-Revision-Date: 2011-07-29 22:35+0200\n"
+"Last-Translator: Priscilla Mahlangu <priny@translate.org.za>\n"
+"Language-Team: translate-discuss-af@lists.sourceforge.net\n"
+"Language: zu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/empathy.desktop.in.in.h:1
+msgid "Empathy"
+msgstr "I-Empathy"
+
+#: ../data/empathy.desktop.in.in.h:2
+msgid "IM Client"
+msgstr "Iklayenti le-IM"
+
+#: ../data/empathy.desktop.in.in.h:3
+msgid "Empathy Internet Messaging"
+msgstr "Ukuthunyelwa komlayezo we-Empathy"
+
+#: ../data/empathy.desktop.in.in.h:4
+msgid "Chat on Google Talk, Facebook, MSN and many other chat services"
+msgstr "Xoxa ku-Google Talk, Facebook, MSN kanye nezinye izinsiza zokuxoxa"
+
+#: ../data/empathy.desktop.in.in.h:5
+msgid "chat;talk;im;message;irc;voip;gtalk;facebook;jabber;"
+msgstr ""
+
+#: ../data/empathy.appdata.xml.in.h:1
+msgid ""
+"Empathy is the official instant messaging application of the GNOME desktop "
+"environment.  Empathy can connect to AIM, MSN, Jabber (including Facebook "
+"and Google Talk), IRC, and many other messaging networks. You can chat with "
+"text, make audio and video calls, or even transfer files, depending on what "
+"your contact’s chat application allows."
+msgstr ""
+
+#: ../data/empathy.appdata.xml.in.h:2
+msgid ""
+"Empathy provides integrated messaging for the GNOME desktop, so you’ll never "
+"miss a message.  You can respond to your contacts without even having to "
+"open Empathy!"
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:1
+msgid "Connection managers should be used"
+msgstr "Amamanenja ezokuxhumana kumele asetshenziswe"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:2
+msgid ""
+"Whether connectivity managers should be used to automatically disconnect/"
+"reconnect."
+msgstr ""
+"Uma ngabe amamenenja wezokuxhumana kumele asetshenziselwe ukuziphumela/"
+"nokuzingenela."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:3
+msgid "Empathy should auto-connect on startup"
+msgstr "I-Empathy kumele ivele izixhume uma iqala"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:4
+msgid "Whether Empathy should automatically log into your accounts on startup."
+msgstr "Uma ngabe i-Empathy ingazingenela kwi akhawunti yakho uma uqala."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:5
+msgid "Empathy should auto-away when idle"
+msgstr "I-Empathy kumele ikwenze ungabikho uma ingasebenzi"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:6
+msgid ""
+"Whether Empathy should go into away mode automatically if the user is idle."
+msgstr ""
+"Uma ngabe i-Empathy kumele iziyele kwindlela yokungabikho uma ngabe "
+"umsebenzisi angenzi lutho."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:7
+msgid "Empathy default download folder"
+msgstr "Isikhwama sokulayisha sakhona se-Empathy"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:8
+msgid "The default folder to save file transfers in."
+msgstr "Isikhwama sakhona sokonga amafayela athunyelwe."
+
+#. translators: Automatic tasks which are run once to port/update account settings. Ideally, this shouldn't be exposed to users at all, we just use a gsettings key here as an optimization to only run it only once.
+#: ../data/org.gnome.Empathy.gschema.xml.h:10
+msgid "Magic number used to check if sanity cleaning tasks should be run"
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:11
+msgid ""
+"empathy-sanity-cleaning.c uses this number to check if the cleaning tasks "
+"should be executed or not. Users should not change this key manually."
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:12 ../src/empathy-preferences.ui.h:1
+msgid "Show offline contacts"
+msgstr "Bonisa ongabathinta abangaphandle kolayini"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:13
+msgid "Whether to show contacts that are offline in the contact list."
+msgstr ""
+"Uma ngabe kungaboniswa abangathintwa abangaphandle kolayini kuhlu "
+"lokuxhumana."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:14
+msgid "Show Balance in contact list"
+msgstr "Bonisa ukulingana kuhlu longabathinta"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:15
+msgid "Whether to show account balances in the contact list."
+msgstr "Uma ngabe kungaboniswa imali esele kuhlu lwabangathintwa."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:16
+msgid "Hide main window"
+msgstr "Fihla ifasitela elikhulu"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:17
+msgid "Hide the main window."
+msgstr "Fihla ifasitela elikhulu."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:18
+msgid "Default directory to select an avatar image from"
+msgstr "Umkhombandlela wezimiso ongakhetha kuwo isithombe esiyisifaniso muntu"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:19
+msgid "The last directory that an avatar image was chosen from."
+msgstr ""
+"Umkhombandlela wokugcina lapho kukhethwe khona isithombe isingumfaniso muntu."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:20
+msgid "Open new chats in separate windows"
+msgstr "Vula izingxoxo ezintsha kumafasitela ahlukile"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:21
+msgid "Always open a separate chat window for new chats."
+msgstr "Uhlale njalo uvula ifasitela elehlukile lokuxoxa uma uxoxa kabusha."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:22
+msgid "Display incoming events in the status area"
+msgstr "Bonisa izehlakalo ezingenayo kwindawo yesimo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:23
+msgid ""
+"Display incoming events in the status area. If false, present them to the "
+"user immediately."
+msgstr ""
+"Bonisa izehlakalo ezingenayo kwindawo yesimo. Uma lokhu kungamanga, bonisa "
+"kumsebenzi ngokushesha."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:24
+msgid "The position for the chat window side pane"
+msgstr "Isimo sehlangothi le-pane lefasitela lengxoxo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:25
+msgid "The stored position (in pixels) of the chat window side pane."
+msgstr ""
+"Uhlangothi olugciniwe (kuma phikseli) wohlangothi lwefasitela lengxoxo."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:26
+#, fuzzy
+#| msgid "Show contact list in rooms"
+msgid "Show contact groups"
+msgstr "Bonisa uhlu lwabangathintwa emagunjini"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:27
+#, fuzzy
+#| msgid "Whether to show account balances in the contact list."
+msgid "Whether to show groups in the contact list."
+msgstr "Uma ngabe kungaboniswa imali esele kuhlu lwabangathintwa."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:28
+msgid "Use notification sounds"
+msgstr "Sebenzisa imisindo yezimemezelo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:29
+msgid "Whether to play a sound to notify of events."
+msgstr "Uma ngabe kungadlalwa umsindo wokwazisa ngezehlakalo."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:30
+msgid "Disable sounds when away"
+msgstr "Yekisa imisindo uma ungekho"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:31
+msgid "Whether to play sound notifications when away or busy."
+msgstr "Uma ngabe kungadlalwa umsindo uma kungekho muntu noma kumatataswa."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:32
+msgid "Play a sound for incoming messages"
+msgstr "Dlalela imilayezo engenayo umsindo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:33
+msgid "Whether to play a sound to notify of incoming messages."
+msgstr "Uma ngabe kungadlalwa umsindo wokwazisa ngemilayezo engenayo."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:34
+msgid "Play a sound for outgoing messages"
+msgstr "Dlalela imilayezo ephumayo umsindo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:35
+msgid "Whether to play a sound to notify of outgoing messages."
+msgstr "Uma ngabe kungadlalwa umsindo wokwazisa ngemilayezo ephumayo."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:36
+msgid "Play a sound for new conversations"
+msgstr "Dlalela izingxoxo ezintsha umsindo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:37
+msgid "Whether to play a sound to notify of new conversations."
+msgstr "Uma ngabe kungadlalwa umsindo wokwazisa ngezinxoxo ezintsha."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:38
+msgid "Play a sound when a contact logs in"
+msgstr "Dlala umsindo uma kungena othintwayo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:39
+msgid "Whether to play a sound to notify of contacts logging into the network."
+msgstr ""
+"Uma ngabe kungadlalwa umsindo wokwazisa abangathintwa uma bangena "
+"kwinethiwekhi."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:40
+msgid "Play a sound when a contact logs out"
+msgstr "Dlala umsindo uma kuphuma othintwayo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:41
+msgid ""
+"Whether to play a sound to notify of contacts logging out of the network."
+msgstr ""
+"Uma ngabe kungadlalwa umsindo wokwazisa abangathintwa uma bephuma "
+"kwinethiwekhi."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:42
+msgid "Play a sound when we log in"
+msgstr "Dlala umsindo uma singena"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:43
+msgid "Whether to play a sound when logging into a network."
+msgstr "Uma ngabe kungadlalwa umsindo uma kungenwa kwinethiwekhi."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:44
+msgid "Play a sound when we log out"
+msgstr "Dlala umsindo uma siphuma"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:45
+msgid "Whether to play a sound when logging out of a network."
+msgstr "Uma ngabe kungadlalwa umsindo uma kuphunywa kwinethiwekhi."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:46
+msgid "Enable popup notifications for new messages"
+msgstr "Vumela ukuzivelela kwezaziso zemilayezo emisha"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:47
+msgid "Whether to show a popup notification when receiving a new message."
+msgstr ""
+"Uma ngabe kungaboniswa isaziso esizivelelayo uma kwamukelwa umlayezo omusha."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:48
+msgid "Disable popup notifications when away"
+msgstr "Yekisa izaziso ezizivelelayo uma ungekho"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:49
+msgid "Whether to show popup notifications when away or busy."
+msgstr "Uma ngabe kungaboniswa izaziso uma kungekho muntu noma kumatataswa."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:50
+msgid "Pop up notifications if the chat isn't focused"
+msgstr "Zivezele izaziso uma ingxoxo ingaqondile"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:51
+msgid ""
+"Whether to show a popup notification when receiving a new message even if "
+"the chat is already opened, but not focused."
+msgstr ""
+"Uma ngabe kungaboniswa isaziso esizivelelayo uma ngabe kwamukelwa umlayezo "
+"omusha noma ngabe ingxoxo isivuliwe, kepha ingagxilanga."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:52
+msgid "Pop up notifications when a contact logs in"
+msgstr "Zivezele izaziso uma othintwayo engena"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:53
+msgid "Whether to show a popup notification when a contact goes online."
+msgstr "Uma ngabe kungaboniswa isaziso uma othintwayo eya kulayini."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:54
+msgid "Pop up notifications when a contact logs out"
+msgstr "Zivezele izaziso uma othintwayo ephuma"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:55
+msgid "Whether to show a popup notification when a contact goes offline."
+msgstr ""
+"Uma ngabe kungaboniswa isaziso esizivelelayo uma ngabe othintwayo eya "
+"ngaphandle kolayini."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:56
+msgid "Use graphical smileys"
+msgstr "Sebenzisa izimamatheki ezibonisa umqondo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:57
+msgid "Whether to convert smileys into graphical images in conversations."
+msgstr "Uma ngabe kumele iguqule izimamatheki zibe izithombembono kwizingxoxo."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:58
+msgid "Show contact list in rooms"
+msgstr "Bonisa uhlu lwabangathintwa emagunjini"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:59
+msgid "Whether to show the contact list in chat rooms."
+msgstr "Uma ngabe kungaboniswa uhlu lwabangathintwa kumagumbi okuxoxa."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:60
+msgid "Chat window theme"
+msgstr "Umfaniso wewindi lokuxoxa"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:61
+msgid "The theme that is used to display the conversation in chat windows."
+msgstr "Indikimba esetshenziselwa ukubonisa ingxoxo kumafasitela wengxoxo."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:62
+msgid "Chat window theme variant"
+msgstr "Ukuhluka lomfaniso wewindi lokuxoxa"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:63
+msgid ""
+"The theme variant that is used to display the conversation in chat windows."
+msgstr ""
+"Ukuhluka kwendikimba esetshenziselwa ukubonisa ingxoxo kumafasitela wengxoxo."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:64
+msgid "Path of the Adium theme to use"
+msgstr "Indlela engasetshenziswa indikimba ye-Adium"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:65
+#, fuzzy
+#| msgid "Path of the Adium theme to use if the theme used for chat is Adium."
+msgid ""
+"Path of the Adium theme to use if the theme used for chat is Adium. "
+"Deprecated."
+msgstr ""
+"Indlela engasetshenziswa indikimba uma ngabe indikimba yengxoxo yi-Adium."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:66
+msgid "Enable WebKit Developer Tools"
+msgstr "Vumela amathuluzi wabathuthukisi be-WebKit"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:67
+msgid ""
+"Whether WebKit developer tools, such as the Web Inspector, should be enabled."
+msgstr ""
+"Uma ngabe amathuluzi okuthuthukisa we WebKit, njengenhloli yeWeb kumele "
+"ivunyelwe."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:68
+msgid "Inform other users when you are typing to them"
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:69
+msgid ""
+"Whether to send the 'composing' or 'paused' chat states. Does not currently "
+"affect the 'gone' state."
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:70
+msgid "Use theme for chat rooms"
+msgstr "Sebenzisa indikimba kumagumbi okuxoxa"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:71
+msgid "Whether to use the theme for chat rooms."
+msgstr "Uma ngabe kungasetshenziswa indikimba kumagumbi okuxoxa."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:72
+msgid "Spell checking languages"
+msgstr "Izilimi zokuhlola ukupeletwa"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:73
+msgid ""
+"Comma-separated list of spell checker languages to use (e.g. \"en, fr, nl\")."
+msgstr ""
+"Uhlu lokuhlola isipelingi oluhlukaniswe ukhefana lezilimi "
+"olungasetshenziswa(isib. \"zu, en, fr\")."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:74
+msgid "Enable spell checker"
+msgstr "Vumela isihloli sokupeleta"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:75
+msgid ""
+"Whether to check words typed against the languages you want to check with."
+msgstr ""
+"Uma ngabe kumele uhlole amagama athayiphiwe uwaqhathanisa nezilimi ofuna "
+"ukuzihlola."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:76
+msgid "Nick completed character"
+msgstr "Uhlamvu olupheleliswe isiteketiso"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:77
+msgid ""
+"Character to add after nickname when using nick completion (tab) in group "
+"chat."
+msgstr ""
+"Uhlamvusimo ongalungeza emva kwesiteketiso uma usebenzisa isiteketiso "
+"esiphelele (tab) kwiqoqo lokuxoxa."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:78
+msgid "Empathy should use the avatar of the contact as the chat window icon"
+msgstr ""
+"I-Empathy kumele isebenzise isithombe esingumfaniso muntu wothintwayo "
+"njengesithonjana sewindi lokuxoxa"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:79
+msgid ""
+"Whether Empathy should use the avatar of the contact as the chat window icon."
+msgstr ""
+"Uma ngabe i-Empathy kumele isebenzise isithombe esingumfaniso muntu "
+"wothintwayo njengesithombe sefasitela lokuxoxa."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:80
+msgid "Last account selected in Join Room dialog"
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:81
+msgid "D-Bus object path of the last account selected to join a room."
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:82
+#, fuzzy
+#| msgid "Camera On"
+msgid "Camera device"
+msgstr "Ikhamera ivuliwe"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:83
+msgid "Default camera device to use in video calls, e.g. /dev/video0."
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:84
+#, fuzzy
+#| msgid "Camera On"
+msgid "Camera position"
+msgstr "Ikhamera ivuliwe"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:85
+msgid "Position the camera preview should be during a call."
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:86
+msgid "Echo cancellation support"
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:87
+msgid "Whether to enable Pulseaudio's echo cancellation filter."
+msgstr ""
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:88
+msgid "Show hint about closing the main window"
+msgstr "Bonisa okokuhlawumbisela ngokuvala ifasitela elikhulu"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:89
+msgid ""
+"Whether to show the message dialog about closing the main window with the "
+"'x' button in the title bar."
+msgstr ""
+"Uma ngabe kungaboniswa idayalogi yomlayezo mayelana nokuvalwa kwewindi "
+"elikhulu ngenkinobho u 'x' kwibha yesihloko."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:90
+msgid "Empathy can publish the user's location"
+msgstr "I-Empathy ingashicilela indawo yomsebenzisi"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:91
+msgid "Whether Empathy can publish the user's location to their contacts."
+msgstr ""
+"Uma ngabe i-Empathy ingashicilela indawo yomsebenzisi kwabathintana naye."
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:92
+msgid "Empathy should reduce the location's accuracy"
+msgstr "I-Empathy kumele yehlise ukuqondisa ngokwendawo"
+
+#: ../data/org.gnome.Empathy.gschema.xml.h:93
+msgid ""
+"Whether Empathy should reduce the location's accuracy for privacy reasons."
+msgstr ""
+"Uma ngabe i-Empathy ingehlisa ukuqonda kwendawo ngezizathu eziyimfihlo."
+
+#: ../libempathy/empathy-ft-handler.c:730
+msgid "No reason was specified"
+msgstr "Asikho isizathu esicacisiwe"
+
+#: ../libempathy/empathy-ft-handler.c:733
+msgid "The change in state was requested"
+msgstr "Ushintsho kwisimo luceliwe"
+
+#: ../libempathy/empathy-ft-handler.c:736
+msgid "You canceled the file transfer"
+msgstr "Usule ukudluliswa kwamafayela"
+
+#: ../libempathy/empathy-ft-handler.c:739
+msgid "The other participant canceled the file transfer"
+msgstr "Omunye umbambi qhaza usule ukudluliswa kwefayela"
+
+#: ../libempathy/empathy-ft-handler.c:742
+msgid "Error while trying to transfer the file"
+msgstr "Iphutha ngenkathi kuzanywa ukudlulisa ifayela"
+
+#: ../libempathy/empathy-ft-handler.c:745
+msgid "The other participant is unable to transfer the file"
+msgstr "Omunye umbambi qhaza akakwazi ukudlulisa ifayela"
+
+#: ../libempathy/empathy-ft-handler.c:748 ../libempathy/empathy-utils.c:260
+msgid "Unknown reason"
+msgstr "Isizathu asaziwa"
+
+#: ../libempathy/empathy-ft-handler.c:895
+msgid "File transfer completed, but the file was corrupted"
+msgstr "Ukuthunyelwa kwefayela kuqediwe, kepha ifayela limoshekile"
+
+#: ../libempathy/empathy-ft-handler.c:1176
+msgid "File transfer not supported by remote contact"
+msgstr "Ukudlulisa ifayela akuxhaswa ongathintwa ekude"
+
+#: ../libempathy/empathy-ft-handler.c:1232
+msgid "The selected file is not a regular file"
+msgstr "Ifayela elikhethiwe akusilo ifayela elivamile"
+
+#: ../libempathy/empathy-ft-handler.c:1241
+msgid "The selected file is empty"
+msgstr "Ifayela elikhethiwe alinalutho"
+
+#: ../libempathy/empathy-message.c:385 ../src/empathy-call-observer.c:108
+#, c-format
+msgid "Missed call from %s"
+msgstr "Ucingo olungabanjwanga olusuka ku-%s"
+
+#. Translators: this is an outgoing call, e.g. 'Called Alice'
+#: ../libempathy/empathy-message.c:389
+#, c-format
+msgid "Called %s"
+msgstr "Kuthintwe u-%s"
+
+#: ../libempathy/empathy-message.c:392
+#, c-format
+msgid "Call from %s"
+msgstr "Ucingo oluvela ku-%s"
+
+#: ../libempathy/empathy-utils.c:180
+msgid "Available"
+msgstr "Ukhona"
+
+#: ../libempathy/empathy-utils.c:182
+msgid "Busy"
+msgstr "Matasatasa"
+
+#: ../libempathy/empathy-utils.c:185
+msgid "Away"
+msgstr "Kude"
+
+#: ../libempathy/empathy-utils.c:187
+msgid "Invisible"
+msgstr "Ukungabonakali"
+
+#: ../libempathy/empathy-utils.c:189
+msgid "Offline"
+msgstr "Ngaphandle kolayini"
+
+#. translators: presence type is unknown
+#: ../libempathy/empathy-utils.c:192
+msgctxt "presence"
+msgid "Unknown"
+msgstr "Akwaziwa"
+
+#: ../libempathy/empathy-utils.c:232
+msgid "No reason specified"
+msgstr "Asikho isizathu esicacisiwe"
+
+#: ../libempathy/empathy-utils.c:234 ../libempathy/empathy-utils.c:290
+msgid "Status is set to offline"
+msgstr "Isimo sibekwe ukuba sibe ngaphandle kolayini"
+
+#: ../libempathy/empathy-utils.c:236 ../libempathy/empathy-utils.c:270
+#: ../libempathy-gtk/empathy-call-utils.c:42
+#: ../libempathy-gtk/empathy-new-message-dialog.c:70
+msgid "Network error"
+msgstr "Iphutha lenethiwekhi"
+
+#: ../libempathy/empathy-utils.c:238 ../libempathy/empathy-utils.c:272
+msgid "Authentication failed"
+msgstr "Ukuqinisekiswa kuhlulekile"
+
+#: ../libempathy/empathy-utils.c:240 ../libempathy/empathy-utils.c:274
+msgid "Encryption error"
+msgstr "Inkinga yokubhala ngamakhowudi"
+
+#: ../libempathy/empathy-utils.c:242
+msgid "Name in use"
+msgstr "Igama elisetshenziswayo"
+
+#: ../libempathy/empathy-utils.c:244 ../libempathy/empathy-utils.c:276
+msgid "Certificate not provided"
+msgstr "Isitifiketi asinikeziwe"
+
+#: ../libempathy/empathy-utils.c:246 ../libempathy/empathy-utils.c:278
+msgid "Certificate untrusted"
+msgstr "Isitifiketi asithenjwa"
+
+#: ../libempathy/empathy-utils.c:248 ../libempathy/empathy-utils.c:280
+msgid "Certificate expired"
+msgstr "Isitifiketi siphelelwe isikhathi"
+
+#: ../libempathy/empathy-utils.c:250 ../libempathy/empathy-utils.c:282
+msgid "Certificate not activated"
+msgstr "Isitifiketi asisebenzi"
+
+#: ../libempathy/empathy-utils.c:252 ../libempathy/empathy-utils.c:284
+msgid "Certificate hostname mismatch"
+msgstr "Isitifiketi segama lomnini asifani"
+
+#: ../libempathy/empathy-utils.c:254 ../libempathy/empathy-utils.c:286
+msgid "Certificate fingerprint mismatch"
+msgstr "Isitifiketi somnyatheliso weminwe asifani"
+
+#: ../libempathy/empathy-utils.c:256 ../libempathy/empathy-utils.c:288
+msgid "Certificate self-signed"
+msgstr "Isitifiketi esisayinda ngqo"
+
+#: ../libempathy/empathy-utils.c:258
+msgid "Certificate error"
+msgstr "Iphutha lesitifiketi"
+
+#: ../libempathy/empathy-utils.c:292
+msgid "Encryption is not available"
+msgstr "Ukubhala okuyimfihlo akukho"
+
+#: ../libempathy/empathy-utils.c:294
+msgid "Certificate is invalid"
+msgstr "Isitifiketi asilungile"
+
+#: ../libempathy/empathy-utils.c:296
+msgid "Connection has been refused"
+msgstr "Ukuxhumeka kwaliwe"
+
+#: ../libempathy/empathy-utils.c:298
+msgid "Connection can't be established"
+msgstr "Ukuxhumeka akusunguleki"
+
+#: ../libempathy/empathy-utils.c:300
+msgid "Connection has been lost"
+msgstr "Ukuxhumeka kulahlekile"
+
+#: ../libempathy/empathy-utils.c:302
+#, fuzzy
+#| msgid "This resource is already connected to the server"
+msgid "This account is already connected to the server"
+msgstr "Le nsizakusebenza isixhunyiwe kwisiphakeli"
+
+#: ../libempathy/empathy-utils.c:304
+msgid ""
+"Connection has been replaced by a new connection using the same resource"
+msgstr ""
+"Ukuxhumeka kushintshaniswe nokuxhumana okusha kusetshenziswa insiza efanayo"
+
+#: ../libempathy/empathy-utils.c:307
+msgid "The account already exists on the server"
+msgstr "I-akhawunti seyivele ikhona kwisiphakeli"
+
+#: ../libempathy/empathy-utils.c:309
+msgid "Server is currently too busy to handle the connection"
+msgstr "Isiphakeli simatasatasa kakhulu ukuphatha ukuxhumeka"
+
+#: ../libempathy/empathy-utils.c:311
+msgid "Certificate has been revoked"
+msgstr "Isitifiketi sichithiwe"
+
+#: ../libempathy/empathy-utils.c:313
+msgid ""
+"Certificate uses an insecure cipher algorithm or is cryptographically weak"
+msgstr ""
+"Isitifiketi sisebenzisa indlela yokuloba engaphephile eyimfihlo yokuxazulula "
+"noma kucashiswe ngokungenamandla"
+
+#: ../libempathy/empathy-utils.c:316
+msgid ""
+"The length of the server certificate, or the depth of the server certificate "
+"chain, exceed the limits imposed by the cryptography library"
+msgstr ""
+"Ubude besitifiketi sesiphakeli, noma ububanzi beketango lwesitikiketi "
+"sesiphakeli, budlula umkhawulo obekwe umtapo we-cyptography"
+
+#: ../libempathy/empathy-utils.c:320
+msgid "Your software is too old"
+msgstr ""
+
+#: ../libempathy/empathy-utils.c:322
+#, fuzzy
+#| msgid "Interval (seconds)"
+msgid "Internal error"
+msgstr "Isikhawu (imizuzwana)"
+
+#: ../libempathy-gtk/empathy-account-chooser.c:687
+msgid "All accounts"
+msgstr "Wonke ama-akhawunti"
+
+#: ../libempathy-gtk/empathy-avatar-image.c:353
+msgid "Click to enlarge"
+msgstr "Qhofoza ukuze ukhulise"
+
+#: ../libempathy-gtk/empathy-bad-password-dialog.c:128
+#, fuzzy, c-format
+#| msgid "Authentication failed"
+msgid "Authentication failed for account <b>%s</b>"
+msgstr "Ukuqinisekiswa kuhlulekile"
+
+#: ../libempathy-gtk/empathy-bad-password-dialog.c:140
+#: ../libempathy-gtk/empathy-chat.c:3828
+msgid "Retry"
+msgstr "Zama futhi"
+
+#: ../libempathy-gtk/empathy-base-password-dialog.c:225
+#: ../libempathy-gtk/empathy-password-dialog.c:134
+#, c-format
+msgid ""
+"Enter your password for account\n"
+"<b>%s</b>"
+msgstr ""
+"Faka igama lokungena le-akhawunti\n"
+"<b>%s</b>"
+
+#. remember password ticky box
+#: ../libempathy-gtk/empathy-base-password-dialog.c:262
+msgid "Remember password"
+msgstr "Khumbula igama lokungena"
+
+#: ../libempathy-gtk/empathy-call-utils.c:37
+#: ../libempathy-gtk/empathy-call-utils.c:55
+msgid "There was an error starting the call"
+msgstr "Kube nephutha ngenkathi kuqalwa ucingo"
+
+#: ../libempathy-gtk/empathy-call-utils.c:44
+msgid "The specified contact doesn't support calls"
+msgstr "Lo ongathintwa ocacisiwe akasekeli izingcingo"
+
+#: ../libempathy-gtk/empathy-call-utils.c:46
+msgid "The specified contact is offline"
+msgstr "Ongathintwa okhethiwe ungaphandle kolayini"
+
+#: ../libempathy-gtk/empathy-call-utils.c:48
+msgid "The specified contact is not valid"
+msgstr "Ongathintwa okhethiwe akavumelekile"
+
+#: ../libempathy-gtk/empathy-call-utils.c:50
+msgid "Emergency calls are not supported on this protocol"
+msgstr "Izingcingo eziphuthumayo azisekelwe kulo mthetho olandelwayo"
+
+#: ../libempathy-gtk/empathy-call-utils.c:52
+msgid "You don't have enough credit in order to place this call"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-chat.c:729
+msgid "Failed to open private chat"
+msgstr "Ihlulekile ukuvula ingxoxo yangasese"
+
+#: ../libempathy-gtk/empathy-chat.c:787
+msgid "Topic not supported on this conversation"
+msgstr "Isihloko asisekelwa kule ngxoxo"
+
+#: ../libempathy-gtk/empathy-chat.c:793
+msgid "You are not allowed to change the topic"
+msgstr "Awuvunyelwe ukuguqula isihloko"
+
+#: ../libempathy-gtk/empathy-chat.c:964
+#, fuzzy
+#| msgid "invalid contact"
+msgid "Invalid contact ID"
+msgstr "ongathintwa ongaqondile"
+
+#: ../libempathy-gtk/empathy-chat.c:1051
+msgid "/clear: clear all messages from the current conversation"
+msgstr "/clear: susa yonke imilayezo kwingxoxo yamanje"
+
+#: ../libempathy-gtk/empathy-chat.c:1054
+msgid "/topic <topic>: set the topic of the current conversation"
+msgstr "/topic <topic>: misa isihloko sengxoxo yamanje"
+
+#: ../libempathy-gtk/empathy-chat.c:1057
+msgid "/join <chat room ID>: join a new chat room"
+msgstr "/join <chat room ID>: xhumanisa igumbi lokuxoxa elisha"
+
+#: ../libempathy-gtk/empathy-chat.c:1060
+msgid "/j <chat room ID>: join a new chat room"
+msgstr "/j <chat room ID>: xhumanisa igumbi lokuxoxa elisha"
+
+#: ../libempathy-gtk/empathy-chat.c:1064
+msgid ""
+"/part [<chat room ID>] [<reason>]: leave the chat room, by default the "
+"current one"
+msgstr ""
+"/part [<chat room ID>] [<reason>]: phuma kugumbi lokuxoxa, ngokwakhona "
+"ngokwamanje"
+
+#: ../libempathy-gtk/empathy-chat.c:1068
+msgid "/query <contact ID> [<message>]: open a private chat"
+msgstr "/query <contact ID> [<message>]: vula ingxoxo engasese"
+
+#: ../libempathy-gtk/empathy-chat.c:1071
+msgid "/msg <contact ID> <message>: open a private chat"
+msgstr "/msg <contact ID> <message>: vula ingxoxo engasese"
+
+#: ../libempathy-gtk/empathy-chat.c:1074
+msgid "/nick <nickname>: change your nickname on the current server"
+msgstr "/nick <nickname>: guqula isiteketiso sakho kwisiphakeli samanje"
+
+#: ../libempathy-gtk/empathy-chat.c:1077
+msgid "/me <message>: send an ACTION message to the current conversation"
+msgstr "/me <message>: thumela umlayezo we- ACTION kwingxoxo yamanje"
+
+#: ../libempathy-gtk/empathy-chat.c:1080
+msgid ""
+"/say <message>: send <message> to the current conversation. This is used to "
+"send a message starting with a '/'. For example: \"/say /join is used to "
+"join a new chat room\""
+msgstr ""
+"/say <message>: thumela <message> kwingxoxo yamanje. Lokhu kusetshenziselwa "
+"ukuthumela umlayezo kuqalwe nge '/'. Isibonelo: \"/say /join usetshenziselwa "
+"ukuxhuma kwigumbi lokuxoxa elisha\""
+
+#: ../libempathy-gtk/empathy-chat.c:1085
+msgid "/whois <contact ID>: display information about a contact"
+msgstr "/whois <contact ID>: bonisa imininigwane mayelana nongathintwa"
+
+#: ../libempathy-gtk/empathy-chat.c:1088
+msgid ""
+"/help [<command>]: show all supported commands. If <command> is defined, "
+"show its usage."
+msgstr ""
+"/help [<command>]: bonisa konke ukuphoqa okuxhaswiwe. Uma ngabe i-<command> "
+"ichaziwe, bonisa ukusetshenziswa kwayo."
+
+#: ../libempathy-gtk/empathy-chat.c:1107
+#, c-format
+msgid "Usage: %s"
+msgstr "Ukusetshenziswa: %s"
+
+#: ../libempathy-gtk/empathy-chat.c:1152
+msgid "Unknown command"
+msgstr "Umyalo awaziwa"
+
+#: ../libempathy-gtk/empathy-chat.c:1278
+msgid "Unknown command; see /help for the available commands"
+msgstr "Umyalo awaziwa; bona /help ngemiyalo ekhona"
+
+#: ../libempathy-gtk/empathy-chat.c:1533
+msgid "insufficient balance to send message"
+msgstr "imali enganele yokwazi ukuthumela umlayezo"
+
+#: ../libempathy-gtk/empathy-chat.c:1537 ../libempathy-gtk/empathy-chat.c:1551
+#: ../libempathy-gtk/empathy-chat.c:1614
+#, c-format
+msgid "Error sending message '%s': %s"
+msgstr "Iphutha ekuthumeleni umlayezo '%s': %s"
+
+#: ../libempathy-gtk/empathy-chat.c:1539 ../libempathy-gtk/empathy-chat.c:1556
+#: ../libempathy-gtk/empathy-chat.c:1618
+#, c-format
+msgid "Error sending message: %s"
+msgstr "Iphutha ekuthumeleni umlayezo: %s"
+
+#. translators: error used when user doesn't have enough credit on his
+#. * account to send the message.
+#: ../libempathy-gtk/empathy-chat.c:1545
+#, fuzzy, c-format
+#| msgid "insufficient balance to send message"
+msgid "insufficient balance to send message. <a href='%s'>Top up</a>."
+msgstr "imali enganele yokwazi ukuthumela umlayezo"
+
+#: ../libempathy-gtk/empathy-chat.c:1585
+msgid "not capable"
+msgstr "ayikwazi"
+
+#: ../libempathy-gtk/empathy-chat.c:1592
+msgid "offline"
+msgstr "ngaphandle kolayini"
+
+#: ../libempathy-gtk/empathy-chat.c:1595
+msgid "invalid contact"
+msgstr "ongathintwa ongaqondile"
+
+#: ../libempathy-gtk/empathy-chat.c:1598
+msgid "permission denied"
+msgstr "imvume inqatshiwe"
+
+#: ../libempathy-gtk/empathy-chat.c:1601
+msgid "too long message"
+msgstr "umlayezo mude kakhulu"
+
+#: ../libempathy-gtk/empathy-chat.c:1604
+msgid "not implemented"
+msgstr "ayenziwe"
+
+#: ../libempathy-gtk/empathy-chat.c:1608
+msgid "unknown"
+msgstr "ayaziwa"
+
+#: ../libempathy-gtk/empathy-chat.c:1675 ../src/empathy-chat-window.c:973
+msgid "Topic:"
+msgstr "Isihloko:"
+
+#: ../libempathy-gtk/empathy-chat.c:1690
+#, c-format
+msgid "Topic set to: %s"
+msgstr "Isihloko simiselwe ku: %s"
+
+#: ../libempathy-gtk/empathy-chat.c:1692
+#, fuzzy, c-format
+#| msgid "Topic set to: %s"
+msgid "Topic set by %s to: %s"
+msgstr "Isihloko simiselwe ku: %s"
+
+#. No need to display this 'event' is no topic can be defined anyway
+#: ../libempathy-gtk/empathy-chat.c:1697
+msgid "No topic defined"
+msgstr "Asikho isihloko esichaziwe"
+
+#: ../libempathy-gtk/empathy-chat.c:2215
+msgid "(No Suggestions)"
+msgstr "(Azikho iziphakamiso)"
+
+#. translators: %s is the selected word
+#: ../libempathy-gtk/empathy-chat.c:2283
+#, c-format
+msgid "Add '%s' to Dictionary"
+msgstr "Ngeza '%s' kusichazamazwi"
+
+#. translators: first %s is the selected word,
+#. * second %s is the language name of the target dictionary
+#: ../libempathy-gtk/empathy-chat.c:2320
+#, c-format
+msgid "Add '%s' to %s Dictionary"
+msgstr "Ngeza '%s' ku-%s isichazamazwi"
+
+#: ../libempathy-gtk/empathy-chat.c:2390
+msgid "Insert Smiley"
+msgstr "Faka izimamatheki"
+
+#. send button
+#: ../libempathy-gtk/empathy-chat.c:2408
+#: ../libempathy-gtk/empathy-ui-utils.c:809
+msgid "_Send"
+msgstr "_Thumela"
+
+#. Spelling suggestions
+#: ../libempathy-gtk/empathy-chat.c:2465
+msgid "_Spelling Suggestions"
+msgstr "Iziphakamiso _zokupeletwa"
+
+#: ../libempathy-gtk/empathy-chat.c:2570
+msgid "Failed to retrieve recent logs"
+msgstr "Kuhlulekile ukuthola amalogi wamanje"
+
+#: ../libempathy-gtk/empathy-chat.c:2808
+#, c-format
+msgid "%s has disconnected"
+msgstr "%s akaxhunyiwe"
+
+#. translators: reverse the order of these arguments
+#. * if the kicked should come before the kicker in your locale.
+#.
+#: ../libempathy-gtk/empathy-chat.c:2815
+#, c-format
+msgid "%1$s was kicked by %2$s"
+msgstr "%1$s ukhahlelwe ngu %2$s"
+
+#: ../libempathy-gtk/empathy-chat.c:2818
+#, c-format
+msgid "%s was kicked"
+msgstr "%s ukhahleliwe"
+
+#. translators: reverse the order of these arguments
+#. * if the banned should come before the banner in your locale.
+#.
+#: ../libempathy-gtk/empathy-chat.c:2826
+#, c-format
+msgid "%1$s was banned by %2$s"
+msgstr "%1$s unqatshelwe ngu %2$s"
+
+#: ../libempathy-gtk/empathy-chat.c:2829
+#, c-format
+msgid "%s was banned"
+msgstr "%s unqatshelwe"
+
+#: ../libempathy-gtk/empathy-chat.c:2833
+#, c-format
+msgid "%s has left the room"
+msgstr "%s uphumile egunjini"
+
+#. Note to translators: this string is appended to
+#. * notifications like "foo has left the room", with the message
+#. * given by the user living the room. If this poses a problem,
+#. * please let us know. :-)
+#.
+#: ../libempathy-gtk/empathy-chat.c:2842
+#, c-format
+msgid " (%s)"
+msgstr " (%s)"
+
+#: ../libempathy-gtk/empathy-chat.c:2867
+#, c-format
+msgid "%s has joined the room"
+msgstr "%s uxhumeke egunjini"
+
+#: ../libempathy-gtk/empathy-chat.c:2892
+#, c-format
+msgid "%s is now known as %s"
+msgstr "%s seyaziwa njenge %s"
+
+#. We don't know if the incoming call has been accepted or not, so we
+#. * assume it hasn't and if it has, we'll set the proper status when
+#. * we get the new handler.
+#: ../libempathy-gtk/empathy-chat.c:3079 ../src/empathy-call-window.c:1526
+#: ../src/empathy-call-window.c:1576 ../src/empathy-call-window.c:2655
+#: ../src/empathy-call-window.c:2954 ../src/empathy-event-manager.c:1141
+msgid "Disconnected"
+msgstr "Akuxhunyiwe"
+
+#. Add message
+#: ../libempathy-gtk/empathy-chat.c:3768
+msgid "Would you like to store this password?"
+msgstr "Ungathanda ukonga leli gama lokungena?"
+
+#: ../libempathy-gtk/empathy-chat.c:3774
+msgid "Remember"
+msgstr "Khumbula"
+
+#: ../libempathy-gtk/empathy-chat.c:3784
+msgid "Not now"
+msgstr "Hhayi manje"
+
+#: ../libempathy-gtk/empathy-chat.c:3832
+msgid "Wrong password; please try again:"
+msgstr "Igama lokungena okungesilo; uyacelwa uzame futhi:"
+
+#. Add message
+#: ../libempathy-gtk/empathy-chat.c:3956
+msgid "This room is protected by a password:"
+msgstr "Leli gumbi livikelwe igama lokungena:"
+
+#: ../libempathy-gtk/empathy-chat.c:3983
+#: ../src/empathy-new-chatroom-dialog.c:787
+msgid "Join"
+msgstr "Xhumana"
+
+#: ../libempathy-gtk/empathy-chat.c:4175 ../src/empathy-event-manager.c:1162
+msgid "Connected"
+msgstr "Ixhunyiwe"
+
+#: ../libempathy-gtk/empathy-chat.c:4227
+msgid "Conversation"
+msgstr "Ingxoxo"
+
+#. Translators: this string is a something like
+#. * "Escher Cat (SMS)"
+#: ../libempathy-gtk/empathy-chat.c:4232
+#, c-format
+msgid "%s (SMS)"
+msgstr "%s (SMS)"
+
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.c:263
+msgid "Unknown or invalid identifier"
+msgstr "Isikhombi esingaziwa noma esingavumelekile"
+
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.c:265
+msgid "Contact blocking temporarily unavailable"
+msgstr "Ukuvimbela ongathintwa kwesikhashana akukho"
+
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.c:267
+msgid "Contact blocking unavailable"
+msgstr "Ukuvimbela ongathintwa akukho"
+
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.c:269
+msgid "Permission Denied"
+msgstr "Imvume inqatshelwe"
+
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.c:273
+msgid "Could not block contact"
+msgstr "Ayikwazanga ukuvimbela ongathintwa"
+
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.c:612
+msgid "Edit Blocked Contacts"
+msgstr "Hlela abangathintwa abavinjiwe"
+
+#. Account and Identifier
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:1
+#: ../libempathy-gtk/empathy-contact-search-dialog.c:559
+#: ../libempathy-gtk/empathy-individual-widget.c:1540
+#: ../src/empathy-chatrooms-window.ui.h:2
+#: ../src/empathy-new-chatroom-dialog.ui.h:6
+msgid "Account:"
+msgstr "I-akhawunti:"
+
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:2
+msgid "Blocked Contacts"
+msgstr "Abangathintwa abavinjiwe"
+
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:3
+#: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
+#: ../src/empathy-accounts-dialog.ui.h:2 ../src/empathy-chatrooms-window.ui.h:3
+msgid "Remove"
+msgstr "Khipha"
+
+#. Title
+#: ../libempathy-gtk/empathy-contact-search-dialog.c:552
+msgid "Search contacts"
+msgstr "Sesha abangathintwa"
+
+#: ../libempathy-gtk/empathy-contact-search-dialog.c:582
+msgid "Search: "
+msgstr "Sesha: "
+
+#: ../libempathy-gtk/empathy-contact-search-dialog.c:640
+msgid "_Add Contact"
+msgstr "_Ngeza ongathintwa"
+
+#: ../libempathy-gtk/empathy-contact-search-dialog.c:659
+msgid "No contacts found"
+msgstr "Abekho abangathintwa abatholakele"
+
+#: ../libempathy-gtk/empathy-contact-search-dialog.c:660
+#, fuzzy
+#| msgid "Topic not supported on this conversation"
+msgid "Contact search is not supported on this account"
+msgstr "Isihloko asisekelwa kule ngxoxo"
+
+#: ../libempathy-gtk/empathy-contact-search-dialog.c:666
+msgid "Your message introducing yourself:"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-contact-search-dialog.c:674
+msgid "Please let me see when you're online. Thanks!"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-contact-widget.c:158
+#: ../libempathy-gtk/empathy-individual-widget.c:955
+msgid "Save Avatar"
+msgstr "Yonga umbonisomuntu"
+
+#: ../libempathy-gtk/empathy-contact-widget.c:214
+#: ../libempathy-gtk/empathy-individual-widget.c:1013
+msgid "Unable to save avatar"
+msgstr "Akukhonakali ukonga umbonisomuntu"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:1
+#: ../src/empathy-import-widget.c:319
+msgid "Account"
+msgstr "I-akhawunti"
+
+#. Identifier to connect to Instant Messaging network
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:3
+#, fuzzy
+#| msgid "Identifier:"
+msgid "Identifier"
+msgstr "Isihlonzi:"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:4
+#, fuzzy
+#| msgid "Alias:"
+msgid "Alias"
+msgstr "Isibizo:"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:5
+#: ../libempathy-gtk/empathy-individual-widget.ui.h:3
+msgid "Contact Details"
+msgstr "Imininingwane yezokuxhumana"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:6
+#: ../libempathy-gtk/empathy-individual-widget.ui.h:4
+msgid "Information requested…"
+msgstr "Ulwazi luyacelwa…"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:7
+msgid "<b>Location</b> at (date)\t"
+msgstr "<b>Indawo</b> ngomhlaka"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:8
+msgid "Client Information"
+msgstr "Ulwazi lweklayenti"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:9
+#, fuzzy
+#| msgid "OS:"
+msgid "OS"
+msgstr "OS:"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:10
+#, fuzzy
+#| msgid "Version:"
+msgid "Version"
+msgstr "Isibuyekezo:"
+
+#: ../libempathy-gtk/empathy-contact-widget.ui.h:11
+#, fuzzy
+#| msgid "Client:"
+msgid "Client"
+msgstr "Iklayenti:"
+
+#: ../libempathy-gtk/empathy-groups-widget.c:318
+msgid "Groups"
+msgstr "Amaqembu"
+
+#: ../libempathy-gtk/empathy-groups-widget.c:330
+msgid ""
+"Select the groups you want this contact to appear in.  Note that you can "
+"select more than one group or no groups."
+msgstr ""
+"Khetha amaqembu ofuna lo ongathintwa ukuba avele kuwo.  Yazi ukuba "
+"ungakhetha ngaphezu kweqembu elilodwa noma ungakhethi qembu nhlobo."
+
+#: ../libempathy-gtk/empathy-groups-widget.c:349
+msgid "_Add Group"
+msgstr "_Yongeza iqembu"
+
+#: ../libempathy-gtk/empathy-groups-widget.c:384
+msgctxt "verb in a column header displaying group names"
+msgid "Select"
+msgstr "Khetha"
+
+#: ../libempathy-gtk/empathy-groups-widget.c:394
+msgid "Group"
+msgstr "Iqembu"
+
+#: ../libempathy-gtk/empathy-individual-dialogs.c:109
+msgid "New Contact"
+msgstr "Ongathintwa omusha"
+
+#: ../libempathy-gtk/empathy-individual-dialogs.c:184
+#: ../libempathy-gtk/empathy-subscription-dialog.c:121
+#, c-format
+msgid "Block %s?"
+msgstr "Vimba u-%s?"
+
+#: ../libempathy-gtk/empathy-individual-dialogs.c:239
+#: ../libempathy-gtk/empathy-subscription-dialog.c:125
+#, c-format
+msgid "Are you sure you want to block '%s' from contacting you again?"
+msgstr ""
+"Ingabe uqinisekile ukuthi ufuna ukuvimba u-'%s' ukuba axhumane nawe futhi?"
+
+#: ../libempathy-gtk/empathy-individual-dialogs.c:244
+msgid "The following identity will be blocked:"
+msgid_plural "The following identities will be blocked:"
+msgstr[0] "Ubunikazi obulandelayo buzovinjelwa:"
+msgstr[1] "Ubunikazi obulandelayo buzovinjelwa:"
+
+#: ../libempathy-gtk/empathy-individual-dialogs.c:251
+msgid "The following identity can not be blocked:"
+msgid_plural "The following identities can not be blocked:"
+msgstr[0] "Ubunikazi obulandelayo abukwazi ukuvinjelwa:"
+msgstr[1] "Ubunikazi obulandelayo abukwazi ukuvinjelwa:"
+
+#: ../libempathy-gtk/empathy-individual-dialogs.c:261
+#: ../libempathy-gtk/empathy-subscription-dialog.c:130
+#: ../libempathy-gtk/empathy-subscription-dialog.c:275
+msgid "_Block"
+msgstr "_Vimba"
+
+#: ../libempathy-gtk/empathy-individual-dialogs.c:270
+#: ../libempathy-gtk/empathy-subscription-dialog.c:150
+msgid "_Report this contact as abusive"
+msgid_plural "_Report these contacts as abusive"
+msgstr[0] "_Bika lo ongathintwa njengo nokuhlukumeza"
+msgstr[1] "_Bika laba abangathintwa njengabanokuhlukumeza"
+
+#: ../libempathy-gtk/empathy-individual-edit-dialog.c:237
+msgid "Edit Contact Information"
+msgstr "Hlela ulwazi lokuxhumana"
+
+#. Translators: the heading at the top of the Information dialogue
+#: ../libempathy-gtk/empathy-individual-information-dialog.c:283
+msgid "Linked Contacts"
+msgstr "Abangathintwa abaxhunyiwe"
+
+#: ../libempathy-gtk/empathy-individual-information-dialog.c:322
+#, fuzzy
+#| msgid "telepathy-salut not installed"
+msgid "gnome-contacts not installed"
+msgstr "i-thelephathi-salut ayifakwanga"
+
+#: ../libempathy-gtk/empathy-individual-information-dialog.c:325
+msgid "Please install gnome-contacts to access contacts details."
+msgstr ""
+
+#. Translators: this is used in the context menu for a contact. The first
+#. * parameter is a contact ID (e.g. foo@jabber.org) and the second is one
+#. * of the user's account IDs (e.g. me@hotmail.com).
+#: ../libempathy-gtk/empathy-individual-menu.c:181
+#, c-format
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:342
+msgid "Select account to use to place the call"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-individual-menu.c:346
+#: ../libempathy-gtk/empathy-log-window.ui.h:6
+#: ../src/empathy-call-window.ui.h:20
+msgid "Call"
+msgstr "Thinta"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:412
+msgid "Mobile"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-individual-menu.c:414
+msgid "Work"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-individual-menu.c:416
+msgid "HOME"
+msgstr ""
+
+#. translators: first argument is a phone number like +32123456 and
+#. * the second one is something like 'home' or 'work'.
+#: ../libempathy-gtk/empathy-individual-menu.c:457
+#, fuzzy, c-format
+#| msgid "%s (%s)"
+msgid "Call %s (%s)"
+msgstr "%s (%s)"
+
+#. translators: argument is a phone number like +32123456
+#: ../libempathy-gtk/empathy-individual-menu.c:462
+#, fuzzy, c-format
+#| msgid "Called %s"
+msgid "Call %s"
+msgstr "Kuthintwe u-%s"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:674
+msgid "_Block Contact"
+msgstr "_Vimba ongathintwa"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:729
+#, c-format
+msgid "Remove from _Group '%s'"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-individual-menu.c:750
+msgid "Delete and _Block"
+msgstr "Susa futhi _uvimbe"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:838
+#, c-format
+msgid "Do you really want to remove the contact '%s'?"
+msgstr "Ufuna ngempela ukususa ongathintwa u-'%s'?"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:847
+#, c-format
+msgid ""
+"Do you really want to remove the linked contact '%s'? Note that this will "
+"remove all the contacts which make up this linked contact."
+msgstr ""
+"Ingabe ufuna ukususa ngempela ongathintwa oxhunyiwe u-'%s'? Yazi ukuthi "
+"lokhu kuzosusa bonke abangathintwa abenza lokhu okungathintwa okuxhunyiwe."
+
+#: ../libempathy-gtk/empathy-individual-menu.c:858
+msgid "Removing contact"
+msgstr "Isusa ongathintwa"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:934
+#: ../libempathy-gtk/empathy-individual-view.c:2444
+msgid "_Remove"
+msgstr "_Susa"
+
+#. add chat button
+#: ../libempathy-gtk/empathy-individual-menu.c:1351
+#: ../libempathy-gtk/empathy-new-message-dialog.c:308
+msgid "_Chat"
+msgstr "_Xoxa"
+
+#. add SMS button
+#: ../libempathy-gtk/empathy-individual-menu.c:1418
+#: ../libempathy-gtk/empathy-new-message-dialog.c:302
+msgid "_SMS"
+msgstr "_i-SMS"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:1484
+msgctxt "menu item"
+msgid "_Audio Call"
+msgstr "_Ucingo lwemisindo"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:1550
+msgctxt "menu item"
+msgid "_Video Call"
+msgstr "Ucingo lwe_vidiyo"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:1632
+#: ../src/empathy-roster-window-menubar.ui.h:11
+msgid "_Previous Conversations"
+msgstr "Izingxoxo _ezedlule"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:1689
+msgid "Send File"
+msgstr "Thumela ifayela"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:1751
+msgid "Share My Desktop"
+msgstr "Yabelana ngedeskithophu yami"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:1809
+#: ../libempathy-gtk/empathy-individual-widget.c:1423
+msgid "Favorite"
+msgstr "Intandokazi"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:1838
+msgid "Infor_mation"
+msgstr "Ulw_azi"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:1887
+msgctxt "Edit individual (contextual menu)"
+msgid "_Edit"
+msgstr "_Hlela"
+
+#. send invitation
+#: ../libempathy-gtk/empathy-individual-menu.c:2003
+#: ../src/empathy-chat-window.c:1274
+msgid "Inviting you to this room"
+msgstr "Umenyelwa kulegumbi"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:2049
+msgid "_Invite to Chat Room"
+msgstr "_Memela kwigumbi lokuxoxa"
+
+#: ../libempathy-gtk/empathy-individual-menu.c:2245
+#: ../src/empathy-roster-window.ui.h:4
+msgid "_Add Contact…"
+msgstr "_Ngeza ongathintwa…"
+
+#: ../libempathy-gtk/empathy-individual-view.c:2364
+#, c-format
+msgid "Do you really want to remove the group '%s'?"
+msgstr "Ufuna ngempela ukususa iqembu '%s'?"
+
+#: ../libempathy-gtk/empathy-individual-view.c:2367
+msgid "Removing group"
+msgstr "Isusa iqembu"
+
+#: ../libempathy-gtk/empathy-individual-view.c:2435
+#, fuzzy
+#| msgid "Real name:"
+msgid "Re_name"
+msgstr "Igama langempela:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:361
+msgid "Channels:"
+msgstr "Iziteshi:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:512
+msgid "Country ISO Code:"
+msgstr "Ikhodi le-ISO lezwe:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:514
+msgid "Country:"
+msgstr "Izwe:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:516
+msgid "State:"
+msgstr "Isifunda:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:518
+msgid "City:"
+msgstr "Idolobhakazi:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:520
+msgid "Area:"
+msgstr "Indawo:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:522
+msgid "Postal Code:"
+msgstr "Ikhodi yeposi:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:524
+msgid "Street:"
+msgstr "Umgwaqo:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:526
+msgid "Building:"
+msgstr "Isakhiwo:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:528
+msgid "Floor:"
+msgstr "Isitezi:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:530
+msgid "Room:"
+msgstr "Igumbi:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:532
+msgid "Text:"
+msgstr "Umbhalo:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:534
+msgid "Description:"
+msgstr "Incazelo:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:536
+msgid "URI:"
+msgstr "URI:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:538
+msgid "Accuracy Level:"
+msgstr "Iqophelo lokuqonda:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:540
+msgid "Error:"
+msgstr "Iphutha:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:542
+msgid "Vertical Error (meters):"
+msgstr "Iphutha elithe thwi (amamitha):"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:544
+msgid "Horizontal Error (meters):"
+msgstr "Iphutha elivundlile (amamitha):"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:546
+msgid "Speed:"
+msgstr "Ijubane:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:548
+msgid "Bearing:"
+msgstr "Ibombo:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:550
+msgid "Climb Speed:"
+msgstr "Ijubane lokukhuphuka:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:552
+msgid "Last Updated on:"
+msgstr "Igcine ivuselelwe ku:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:554
+msgid "Longitude:"
+msgstr "Ilongithudi:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:556
+msgid "Latitude:"
+msgstr "Ilathithudi:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:558
+msgid "Altitude:"
+msgstr "Ukuphakama:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:650
+#: ../libempathy-gtk/empathy-individual-widget.c:665
+#: ../src/empathy-preferences.ui.h:35
+msgid "Location"
+msgstr "Indawo"
+
+#. translators: format is "Location, $date"
+#: ../libempathy-gtk/empathy-individual-widget.c:667
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:716
+msgid "%B %e, %Y at %R UTC"
+msgstr "%e ku-%B %Y ngo-%R UTC"
+
+#. Alias
+#: ../libempathy-gtk/empathy-individual-widget.c:1359
+msgid "Alias:"
+msgstr "Isibizo:"
+
+#. Translators: Identifier to connect to Instant Messaging network
+#: ../libempathy-gtk/empathy-individual-widget.c:1568
+msgid "Identifier:"
+msgstr "Isihlonzi:"
+
+#: ../libempathy-gtk/empathy-individual-widget.c:1707
+#, c-format
+msgid "Linked contact containing %u contact"
+msgid_plural "Linked contacts containing %u contacts"
+msgstr[0] "Ongathintwa oxhunyiwe oqukethe u-%u ongathintwa"
+msgstr[1] "Abangathintwa abaxhunyiwe abaqukethe u-%u wabangathintwa"
+
+#: ../libempathy-gtk/empathy-individual-widget.ui.h:1
+msgid "<b>Location</b> at (date)"
+msgstr "<b>Indawo</b> ngezi(usuku)"
+
+#: ../libempathy-gtk/empathy-individual-widget.ui.h:2
+msgid "Online from a phone or mobile device"
+msgstr "Okungaphakathi kolayini ngocingo noma ngeselula"
+
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:82
+#, fuzzy
+#| msgid ""
+#| "Empathy can automatically discover and chat with the people connected on "
+#| "the same network as you. If you want to use this feature, please check "
+#| "that the details below are correct. You can easily change these details "
+#| "later or disable this feature by using the 'Accounts' dialog"
+msgid ""
+"Empathy can automatically discover and chat with the people connected on the "
+"same network as you. If you want to use this feature, please check that the "
+"details below are correct."
+msgstr ""
+"I-Empathy ingazitholela futhi ixoxe nabantu abaxhunywe kwinethiwekhi efana "
+"neyakho. Uma ufuna ukusebenzisa lesici, uyacelwa ukuba uhlole ukuthi "
+"imininingwane engenhla ilungile. Ungaguqula kalula lemininingwane kamuva "
+"noma unqabele lesici ngokusebenzisa ingxoxo yama-'akhawunti'"
+
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:103
+msgid "People nearby"
+msgstr "Abantu abaseduze"
+
+#: ../libempathy-gtk/empathy-local-xmpp-assistant-widget.c:118
+msgid ""
+"You can change these details later or disable this feature by choosing <span "
+"style=\"italic\">Edit → Accounts</span> in the Contact List."
+msgstr ""
+
+#: ../libempathy-gtk/empathy-log-window.c:631
+msgid "History"
+msgstr "Umlando"
+
+#: ../libempathy-gtk/empathy-log-window.c:686
+msgid "Show"
+msgstr "Bonisa"
+
+#: ../libempathy-gtk/empathy-log-window.c:708
+msgid "Search"
+msgstr "Cinga"
+
+#: ../libempathy-gtk/empathy-log-window.c:1152
+#, c-format
+msgid "Chat in %s"
+msgstr "Ingxoxo ku-%s"
+
+#: ../libempathy-gtk/empathy-log-window.c:1154
+#, c-format
+msgid "Chat with %s"
+msgstr "Ingxoxo no-%s"
+
+#: ../libempathy-gtk/empathy-log-window.c:1204
+#: ../libempathy-gtk/empathy-log-window.c:1348
+msgctxt "A date with the time"
+msgid "%A, %e %B %Y %X"
+msgstr "%A, %e %B %Y %X"
+
+#. Translators: this is an emote: '* Danielle waves'
+#: ../libempathy-gtk/empathy-log-window.c:1291
+#, c-format
+msgid "<i>* %s %s</i>"
+msgstr "<i>* %s %s</i>"
+
+#. Translators: this is a message: 'Danielle: hello'
+#. * The string in bold is the sender's name
+#: ../libempathy-gtk/empathy-log-window.c:1297
+#, c-format
+msgid "<b>%s:</b> %s"
+msgstr "<b>%s:</b> %s"
+
+#: ../libempathy-gtk/empathy-log-window.c:1372
+#, fuzzy, c-format
+#| msgid "%d second ago"
+#| msgid_plural "%d seconds ago"
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "umzuzwana ongu %d odlule"
+msgstr[1] "imizuzwana engu %d edlule"
+
+#: ../libempathy-gtk/empathy-log-window.c:1379
+#, fuzzy, c-format
+#| msgid "%d minute ago"
+#| msgid_plural "%d minutes ago"
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "umzuzu ongu %d odlule"
+msgstr[1] "imizuzu engu %d edlule"
+
+#: ../libempathy-gtk/empathy-log-window.c:1387
+#, c-format
+msgid "Call took %s, ended at %s"
+msgstr "Ucingo luthathe i-%s, luphele ngo-%s"
+
+#: ../libempathy-gtk/empathy-log-window.c:1718
+msgid "Today"
+msgstr "Namhlanje"
+
+#: ../libempathy-gtk/empathy-log-window.c:1722
+msgid "Yesterday"
+msgstr "Izolo"
+
+#. Translators: A date such as '23 May 2010' (strftime format)
+#: ../libempathy-gtk/empathy-log-window.c:1737
+#, fuzzy
+#| msgctxt ""
+#| "A date such as '23 May 2010', %e is the day, %B the month and %Y the year"
+#| msgid "%e %B %Y"
+msgid "%e %B %Y"
+msgstr "%e %B %Y"
+
+#: ../libempathy-gtk/empathy-log-window.c:1841
+#: ../libempathy-gtk/empathy-log-window.c:3464
+msgid "Anytime"
+msgstr "Nganoma isiphi isikhathi"
+
+#: ../libempathy-gtk/empathy-log-window.c:1940
+#: ../libempathy-gtk/empathy-log-window.c:2399
+msgid "Anyone"
+msgstr "Lutho"
+
+#: ../libempathy-gtk/empathy-log-window.c:2712
+msgid "Who"
+msgstr "Ubani"
+
+#: ../libempathy-gtk/empathy-log-window.c:2921
+msgid "When"
+msgstr "Nini"
+
+#: ../libempathy-gtk/empathy-log-window.c:3039
+msgid "Anything"
+msgstr "Noma yini"
+
+#: ../libempathy-gtk/empathy-log-window.c:3041
+msgid "Text chats"
+msgstr "Izinxoxo zombhalo"
+
+#: ../libempathy-gtk/empathy-log-window.c:3042
+#: ../src/empathy-preferences.ui.h:29
+msgid "Calls"
+msgstr "Izingcingo"
+
+#: ../libempathy-gtk/empathy-log-window.c:3046
+msgid "Incoming calls"
+msgstr "Izingcingo ezingenayo"
+
+#: ../libempathy-gtk/empathy-log-window.c:3047
+msgid "Outgoing calls"
+msgstr "Izingcingo eziphumayo"
+
+#: ../libempathy-gtk/empathy-log-window.c:3048
+msgid "Missed calls"
+msgstr "Izingcingo ezingaphendulwanga"
+
+#: ../libempathy-gtk/empathy-log-window.c:3068
+msgid "What"
+msgstr "Ini"
+
+#: ../libempathy-gtk/empathy-log-window.c:3757
+msgid "Are you sure you want to delete all logs of previous conversations?"
+msgstr ""
+"Ingabe unesiqiniseko sokuthi ufuna ukususa wonke ama-logi wezingxoxo "
+"ezedlule?"
+
+#: ../libempathy-gtk/empathy-log-window.c:3761
+msgid "Clear All"
+msgstr "Sula konke"
+
+#: ../libempathy-gtk/empathy-log-window.c:3768
+msgid "Delete from:"
+msgstr "Susa kusukela:"
+
+#: ../libempathy-gtk/empathy-log-window.ui.h:1
+msgid "_File"
+msgstr "_Ifayela"
+
+#: ../libempathy-gtk/empathy-log-window.ui.h:2
+#: ../src/empathy-call-window.ui.h:2 ../src/empathy-chat-window.ui.h:11
+msgid "_Edit"
+msgstr "_Hlela"
+
+#: ../libempathy-gtk/empathy-log-window.ui.h:3
+#, fuzzy
+#| msgid "Delete All History..."
+msgid "Delete All History…"
+msgstr "Susa wonke umlando..."
+
+#: ../libempathy-gtk/empathy-log-window.ui.h:4
+msgid "Profile"
+msgstr "Iprofayela"
+
+#: ../libempathy-gtk/empathy-log-window.ui.h:5
+#: ../src/empathy-chat-window.c:1490 ../src/empathy-preferences.ui.h:11
+msgid "Chat"
+msgstr "Xoxa"
+
+#: ../libempathy-gtk/empathy-log-window.ui.h:7
+#: ../src/empathy-call-window.ui.h:26
+msgid "Video"
+msgstr "Ividiyo"
+
+#: ../libempathy-gtk/empathy-log-window.ui.h:8
+msgid "page 2"
+msgstr "ikhasi 2"
+
+#: ../libempathy-gtk/empathy-log-window.ui.h:9
+#, fuzzy
+#| msgid "<span size=\"x-large\">Loading...</span>"
+msgid "<span size=\"x-large\">Loading…</span>"
+msgstr "<span size=\"x-large\">Iyalayisha...</span>"
+
+#: ../libempathy-gtk/empathy-new-account-dialog.c:130
+msgid "What kind of chat account do you have?"
+msgstr "Unaluphi uhlobo lwe-akhawunti yokuxoxa?"
+
+#: ../libempathy-gtk/empathy-new-account-dialog.c:152
+#, fuzzy
+#| msgid "New account"
+msgid "Add new account"
+msgstr "I-akhawunti entsha"
+
+#: ../libempathy-gtk/empathy-new-call-dialog.c:189
+#: ../libempathy-gtk/empathy-new-message-dialog.c:279
+msgid "Enter a contact identifier or phone number:"
+msgstr ""
+
+#. add video button
+#: ../libempathy-gtk/empathy-new-call-dialog.c:212
+#, fuzzy
+#| msgctxt "menu item"
+#| msgid "_Video Call"
+msgid "_Video Call"
+msgstr "Ucingo lwe_vidiyo"
+
+#. add audio button
+#: ../libempathy-gtk/empathy-new-call-dialog.c:222
+#, fuzzy
+#| msgctxt "menu item"
+#| msgid "_Audio Call"
+msgid "_Audio Call"
+msgstr "_Ucingo lwemisindo"
+
+#. Tweak the dialog
+#: ../libempathy-gtk/empathy-new-call-dialog.c:232
+msgid "New Call"
+msgstr "Ucingo olusha"
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:72
+#, fuzzy
+#| msgid "The specified contact is offline"
+msgid "The contact is offline"
+msgstr "Ongathintwa okhethiwe ungaphandle kolayini"
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:74
+#, fuzzy
+#| msgid "The specified contact is not valid"
+msgid "The specified contact is either invalid or unknown"
+msgstr "Ongathintwa okhethiwe akavumelekile"
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:76
+#, fuzzy
+#| msgid "Topic not supported on this conversation"
+msgid "The contact does not support this kind of conversation"
+msgstr "Isihloko asisekelwa kule ngxoxo"
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:78
+msgid "The requested functionality is not implemented for this protocol"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:84
+msgid "Could not start a conversation with the given contact"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:86
+msgid "You are banned from this channel"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:88
+msgid "This channel is full"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:90
+#, fuzzy
+#| msgid "You have been invited to join %s"
+msgid "You must be invited to join this channel"
+msgstr "Umenyelwe ukuba uxhumeke ku-%s"
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:92
+#, fuzzy
+#| msgid "Contact disconnected"
+msgid "Can't proceed while disconnected"
+msgstr "Ongathintwa akaxhunyiwe"
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:94
+#, fuzzy
+#| msgid "permission denied"
+msgid "Permission denied"
+msgstr "imvume inqatshiwe"
+
+#: ../libempathy-gtk/empathy-new-message-dialog.c:100
+#, fuzzy
+#| msgid "There was an error starting the call"
+msgid "There was an error starting the conversation"
+msgstr "Kube nephutha ngenkathi kuqalwa ucingo"
+
+#. Tweak the dialog
+#: ../libempathy-gtk/empathy-new-message-dialog.c:322
+msgid "New Conversation"
+msgstr "Ingxoxo entsha"
+
+#: ../libempathy-gtk/empathy-password-dialog.c:132
+#, fuzzy
+#| msgid "Password required"
+msgid "Password Required"
+msgstr "Kudingeka igama lokungena"
+
+#. COL_STATUS_TEXT
+#. COL_STATE_ICON_NAME
+#. COL_STATE
+#. COL_DISPLAY_MARKUP
+#. COL_STATUS_CUSTOMISABLE
+#. COL_TYPE
+#: ../libempathy-gtk/empathy-presence-chooser.c:158
+#: ../libempathy-gtk/empathy-presence-chooser.c:194
+msgid "Custom Message…"
+msgstr "Umlayezo wokuzenzela…"
+
+#: ../libempathy-gtk/empathy-presence-chooser.c:211
+#: ../libempathy-gtk/empathy-presence-chooser.c:213
+msgid "Edit Custom Messages…"
+msgstr "Hlela umlayezo oqokiwe…"
+
+#: ../libempathy-gtk/empathy-presence-chooser.c:335
+msgid "Click to remove this status as a favorite"
+msgstr "Chofoza ukuze ususe lesi simo njengentandokazi"
+
+#: ../libempathy-gtk/empathy-presence-chooser.c:344
+msgid "Click to make this status a favorite"
+msgstr "Chofoza ukuze wenze lesi simo sibe intandokazi"
+
+#. Translators: %s is a status message like 'At the pub' for example
+#: ../libempathy-gtk/empathy-presence-chooser.c:378
+#, c-format
+msgid ""
+"<b>Current message: %s</b>\n"
+"<small><i>Press Enter to set the new message or Esc to cancel.</i></small>"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-presence-chooser.c:387
+msgid "Set status"
+msgstr "Misa isimo"
+
+#. Custom messages
+#: ../libempathy-gtk/empathy-presence-chooser.c:1098
+msgid "Custom messages…"
+msgstr "Umlayezo oqokiwe…"
+
+#: ../libempathy-gtk/empathy-search-bar.c:239
+msgid "_Match case"
+msgstr "_Qhathanisa osonhlamvu"
+
+#: ../libempathy-gtk/empathy-search-bar.ui.h:1
+msgid "Find:"
+msgstr "Thola:"
+
+#: ../libempathy-gtk/empathy-search-bar.ui.h:2
+#, fuzzy
+#| msgid "_Previous Tab"
+msgid "_Previous"
+msgstr "_I-Tab edlule"
+
+#: ../libempathy-gtk/empathy-search-bar.ui.h:3
+#, fuzzy
+#| msgid "_Next Tab"
+msgid "_Next"
+msgstr "_I-Tab elandelayo"
+
+#: ../libempathy-gtk/empathy-search-bar.ui.h:4
+#, fuzzy
+#| msgid "Match case"
+msgid "Mat_ch case"
+msgstr "Qhathanisa osonhlamvu"
+
+#: ../libempathy-gtk/empathy-search-bar.ui.h:5
+msgid "Phrase not found"
+msgstr "Ibinzana alitholakali"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:50
+msgid "Received an instant message"
+msgstr "Utholakele umlayezo osheshayo"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:52
+msgid "Sent an instant message"
+msgstr "Uthunyelwe umlayezo osheshayo"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:54
+msgid "Incoming chat request"
+msgstr "Siyangena isicelo sengxoxo"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:56
+msgid "Contact connected"
+msgstr "Ongathintwa uxhunyiwe"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:58
+msgid "Contact disconnected"
+msgstr "Ongathintwa akaxhunyiwe"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:60
+msgid "Connected to server"
+msgstr "Ixhunyiwe kwisiphakeli"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:62
+msgid "Disconnected from server"
+msgstr "Ayixhunyiwe kwisiphakeli"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:64
+msgid "Incoming voice call"
+msgstr "Kungena ucingo lwephimbo"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:66
+msgid "Outgoing voice call"
+msgstr "Kuphuma ucingo lwephimbo"
+
+#: ../libempathy-gtk/empathy-sound-manager.c:68
+msgid "Voice call ended"
+msgstr "Ucingo lwephimbo lunqanyuliwe"
+
+#: ../libempathy-gtk/empathy-status-preset-dialog.c:295
+msgid "Edit Custom Messages"
+msgstr "Hlela umlayezo oqokiwe"
+
+#: ../libempathy-gtk/empathy-subscription-dialog.c:234
+msgid "Subscription Request"
+msgstr "Isicelo sokubhalisa"
+
+#: ../libempathy-gtk/empathy-subscription-dialog.c:240
+#: ../src/empathy-event-manager.c:1079
+#, c-format
+msgid "%s would like permission to see when you are online"
+msgstr "u-%s angathanda ukuba nemvume yokukubona uma ungaphakathi kolayini"
+
+#: ../libempathy-gtk/empathy-subscription-dialog.c:281
+#: ../src/empathy-event-manager.c:694
+msgid "_Decline"
+msgstr "_Enqaba"
+
+#: ../libempathy-gtk/empathy-subscription-dialog.c:282
+#, fuzzy
+#| msgid "Accept"
+msgid "_Accept"
+msgstr "Yamukela"
+
+#: ../libempathy-gtk/empathy-theme-adium.c:1218
+#, c-format
+msgid "Message edited at %s"
+msgstr "Umlayezo uhlelwe e-%s"
+
+#: ../libempathy-gtk/empathy-theme-adium.c:1920
+msgid "Normal"
+msgstr "Okujwayelekile"
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:147
+msgid "The identity provided by the chat server cannot be verified."
+msgstr "Isazisi esinikwe kwisiphakeli sengxoxo asikwazi ukuqinisekiswa."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:154
+msgid "The certificate is not signed by a Certification Authority."
+msgstr "Isitifiketi asisayindiwe ngabanikigunya bezitifiketi."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:158
+msgid "The certificate has expired."
+msgstr "Isitifiketi seqelwe isikhathi."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:161
+msgid "The certificate hasn't yet been activated."
+msgstr "Isitifiketi asikenziwa ukuba sisebenze."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:164
+msgid "The certificate does not have the expected fingerprint."
+msgstr "Isitifiketi asinawo umnyatheliso womunwe olindelwe."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:167
+msgid "The hostname verified by the certificate doesn't match the server name."
+msgstr ""
+"Igama lozokwengamela eliqinisekiswe isitifiketi alifani negama lesiphakeli."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:171
+msgid "The certificate is self-signed."
+msgstr "Isitifiketi sisayinda ngqo."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:174
+msgid ""
+"The certificate has been revoked by the issuing Certification Authority."
+msgstr "Isitifiketi sichithwe ngumguyazi wokukhishwa kwesitifiketi."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:178
+msgid "The certificate is cryptographically weak."
+msgstr "Isitifiketi sifihlwe ngokuqegayo."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:181
+msgid "The certificate length exceeds verifiable limits."
+msgstr "Ubude besitifiketi budlula imikhawulo yokuqinisekiswa."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:185
+msgid "The certificate is malformed."
+msgstr "Isitifiketi asilungile."
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:203
+#, c-format
+msgid "Expected hostname: %s"
+msgstr "Igama lozokwengamela elilindelwe: %s"
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:206
+#, c-format
+msgid "Certificate hostname: %s"
+msgstr "Isitifiketi segama lozokwengamela: %s"
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:278
+#, fuzzy
+#| msgid "Continue"
+msgid "C_ontinue"
+msgstr "Qhubeka"
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:284
+msgid "Untrusted connection"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:285
+msgid "This connection is untrusted. Would you like to continue anyway?"
+msgstr "Lokuxhumana akuthembekile. Ungathanda ukuqhubeka nakuba kunjalo?"
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:295
+msgid "Remember this choice for future connections"
+msgstr "Khumbula lokukhetha mayelana nokuxhumana okuzayo"
+
+#: ../libempathy-gtk/empathy-tls-dialog.c:301
+msgid "Certificate Details"
+msgstr "Imininingwane yesitifiketi"
+
+#: ../libempathy-gtk/empathy-ui-utils.c:679
+msgid "Unable to open URI"
+msgstr "Akukhonakali ukuvula i-URI"
+
+#: ../libempathy-gtk/empathy-ui-utils.c:803
+msgid "Select a file"
+msgstr "Khetha ifayela"
+
+#: ../libempathy-gtk/empathy-ui-utils.c:877
+msgid "Insufficient free space to save file"
+msgstr "Isikhala esivulekile esinganele sokugcina ifayela"
+
+#: ../libempathy-gtk/empathy-ui-utils.c:885
+#, c-format
+msgid ""
+"%s of free space are required to save this file, but only %s is available. "
+"Please choose another location."
+msgstr ""
+"u-%s wesikhala esivulekile uyadingeka ukuze kugcinwe leli fayela, kepha "
+"kukhona kuphela u-%s. Sicela ukhethe enye indawo."
+
+#: ../libempathy-gtk/empathy-ui-utils.c:931
+#, c-format
+msgid "Incoming file from %s"
+msgstr "Ifayela elingenayo elisuka ku-%s"
+
+#. Copy Link Address menu item
+#: ../libempathy-gtk/empathy-webkit-utils.c:285
+msgid "_Copy Link Address"
+msgstr "_Kopisha ikheli lelinki"
+
+#. Open Link menu item
+#: ../libempathy-gtk/empathy-webkit-utils.c:292
+msgid "_Open Link"
+msgstr "_Vula ilinki"
+
+#. Inspector
+#: ../libempathy-gtk/empathy-webkit-utils.c:306
+msgid "Inspect HTML"
+msgstr ""
+
+#: ../libempathy-gtk/empathy-roster-model.h:27
+#, fuzzy
+#| msgid "Contact"
+msgid "Top Contacts"
+msgstr "Thinta"
+
+#: ../libempathy-gtk/empathy-roster-model.h:28
+msgid "People Nearby"
+msgstr "Abantu abaseduze"
+
+#: ../libempathy-gtk/empathy-roster-model.h:29
+msgid "Ungrouped"
+msgstr "Akuqoqiwe"
+
+#. Add a prefix explaining that something goes wrong when trying to
+#. * fetch contact's presence.
+#: ../libempathy-gtk/empathy-roster-contact.c:202
+#, fuzzy, c-format
+#| msgid "Select a contact"
+msgid "Server cannot find contact: %s"
+msgstr "Khetha ongathintwa"
+
+#: ../src/empathy-about-dialog.c:82
+msgid "An Instant Messaging client for GNOME"
+msgstr "Ikhasimende yomlayezo ophuthumayo ye-GNOME"
+
+#: ../src/empathy-about-dialog.c:88
+msgid "translator-credits"
+msgstr "Sedric Motha"
+
+#: ../src/empathy-accounts.c:171
+msgid "Don't display any dialogs; do any work (eg, importing) and exit"
+msgstr ""
+"Ungakhombisi izingxoxo; yenza noma yimuphi umsebenzi (isib.ukulanda) "
+"nokuphuma"
+
+#: ../src/empathy-accounts.c:175
+msgid ""
+"Don't display any dialogs unless there are only \"People Nearby\" accounts"
+msgstr ""
+"Ungakhombisa izingxoxo uma ngabe kukhona ama-akhawunti \"wabantu abaseduze\""
+
+#: ../src/empathy-accounts.c:179
+msgid "Initially select given account (eg, gabble/jabber/foo_40example_2eorg0)"
+msgstr ""
+"Khetha kuqala i-akhawunti enikiwe (isib. gabble/jabber/"
+"foo_40isibonelo_2eorg0)"
+
+#: ../src/empathy-accounts.c:181
+msgid "<account-id>"
+msgstr "<i-akhawunti-id>"
+
+#: ../src/empathy-accounts.c:186
+msgid "- Empathy Accounts"
+msgstr "- Ama-akhawunti we-Empathy"
+
+#: ../src/empathy-accounts.c:240
+msgid "Empathy Accounts"
+msgstr "Ama-akhawunti we-Empathy"
+
+#. The primary text of the dialog shown to the user when he is about to lose
+#. * unsaved changes
+#: ../src/empathy-accounts-dialog.c:55
+#, fuzzy, c-format
+#| msgid "There are unsaved modifications to your %s account."
+msgid "There are unsaved modifications to your %.50s account."
+msgstr "Kukhona izinguquko ezingagciniwe kwi %s akhawunti yakho."
+
+#. The primary text of the dialog shown to the user when he is about to lose
+#. * an unsaved new account
+#: ../src/empathy-accounts-dialog.c:59
+msgid "Your new account has not been saved yet."
+msgstr "I-akhawunti yakho entsha ayikakagcinwa kuze kube manje."
+
+#: ../src/empathy-accounts-dialog.c:387 ../src/empathy-call-window.c:1267
+msgid "Connecting…"
+msgstr "Iyaxhuma…"
+
+#: ../src/empathy-accounts-dialog.c:428
+#, c-format
+msgid "Offline — %s"
+msgstr "Ngaphandle kolayini — %s"
+
+#: ../src/empathy-accounts-dialog.c:440
+#, c-format
+msgid "Disconnected — %s"
+msgstr "Ayixhunyiwe — %s"
+
+#: ../src/empathy-accounts-dialog.c:451
+msgid "Offline — No Network Connection"
+msgstr "Ngaphandle kolayini — Akukho ukuxhumana kwenethiwekhi"
+
+#: ../src/empathy-accounts-dialog.c:458
+msgid "Unknown Status"
+msgstr "Isimo asaziwa"
+
+#: ../src/empathy-accounts-dialog.c:475
+msgid ""
+"This account has been disabled because it relies on an old, unsupported "
+"backend. Please install telepathy-haze and restart your session to migrate "
+"the account."
+msgstr ""
+
+#: ../src/empathy-accounts-dialog.c:485
+msgid "Offline — Account Disabled"
+msgstr "Ngaphandle kolayini — i-akhawunti inqatshelwe"
+
+#: ../src/empathy-accounts-dialog.c:591
+#, fuzzy
+#| msgid "Connection has been refused"
+msgid "Edit Connection Parameters"
+msgstr "Ukuxhumeka kwaliwe"
+
+#: ../src/empathy-accounts-dialog.c:718
+msgid "_Edit Connection Parameters…"
+msgstr ""
+
+#: ../src/empathy-accounts-dialog.c:1248
+#, fuzzy, c-format
+#| msgid "Do you want to remove %s from your computer?"
+msgid "Do you want to remove %.50s from your computer?"
+msgstr "Ingabe ufuna ukususa u-%s kwikhompyutha yakho?"
+
+#: ../src/empathy-accounts-dialog.c:1252
+msgid "This will not remove your account on the server."
+msgstr "Lokhu angeke kususe i-akhawunti yakho kwisiphakeli."
+
+#: ../src/empathy-accounts-dialog.c:1457
+msgid ""
+"You are about to select another account, which will discard\n"
+"your changes. Are you sure you want to proceed?"
+msgstr ""
+"Usuzokhetha enye i-akhawunti, ezolahla\n"
+"izinguquko zakho. Uqinisekile ukuba uyafuna ukuqhubeka?"
+
+#. Menu item: to enabled/disable the account
+#: ../src/empathy-accounts-dialog.c:1648
+msgid "_Enabled"
+msgstr "_Vunyelwe"
+
+#. Menu item: Rename
+#: ../src/empathy-accounts-dialog.c:1671
+#, fuzzy
+#| msgid "Real name:"
+msgid "Rename"
+msgstr "Igama langempela:"
+
+#: ../src/empathy-accounts-dialog.c:2073
+msgid "_Skip"
+msgstr ""
+
+#: ../src/empathy-accounts-dialog.c:2077
+#, fuzzy
+#| msgid "Connected"
+msgid "_Connect"
+msgstr "Ixhunyiwe"
+
+#: ../src/empathy-accounts-dialog.c:2256
+msgid ""
+"You are about to close the window, which will discard\n"
+"your changes. Are you sure you want to proceed?"
+msgstr ""
+"Usuzovala ifasitela, elizolahla\n"
+"izinguquko zakho. Uqinisekile ukuba uyafuna ukuqhubeka?"
+
+#. Tweak the dialog
+#: ../src/empathy-accounts-dialog.c:2400
+msgid "Messaging and VoIP Accounts"
+msgstr "Ukulayeza nama VoIP akhawunti"
+
+#: ../src/empathy-accounts-dialog.ui.h:1
+msgid "Add…"
+msgstr "Engeza…"
+
+#: ../src/empathy-accounts-dialog.ui.h:3
+msgid "_Import…"
+msgstr "_Ngenisa…"
+
+#: ../src/empathy-accounts-dialog.ui.h:4
+msgid "Loading account information"
+msgstr "Ilayisha ulwazi lwe-akhawunti"
+
+#: ../src/empathy-accounts-dialog.ui.h:5
+msgid ""
+"To add a new account, you first have to install a backend for each protocol "
+"you want to use."
+msgstr ""
+"Ukungeza i-akhawunti entsha, kumele kuqala ufake isibuyelimuva kuyo yonke "
+"imithetho elandelwayo ofuna ukuyisebenzisa."
+
+#: ../src/empathy-accounts-dialog.ui.h:6
+#, fuzzy
+#| msgid "No protocol installed"
+msgid "No protocol backends installed"
+msgstr "Awukho umthetho olandelwayo ofakiwe"
+
+#: ../src/empathy-auth-client.c:285
+msgid " - Empathy authentication client"
+msgstr " - Ikhasimende le-Empathy eliqinisekisayo"
+
+#: ../src/empathy-auth-client.c:301
+msgid "Empathy authentication client"
+msgstr "Ukuqinisekiswa kwekhasimende le-Empathy"
+
+#: ../src/empathy.c:411
+msgid "Don't connect on startup"
+msgstr "Ungaxhumi ngenkathi kuqalwa"
+
+#: ../src/empathy.c:415
+msgid "Don't display the contact list or any other dialogs on startup"
+msgstr ""
+"Ungakhombisi uhlu lwabangathintwa noma iziphi ezinye izingxoxo uma kuqalwa"
+
+#: ../src/empathy.c:444
+msgid "- Empathy IM Client"
+msgstr "- i-Empathy IM klayenti"
+
+#: ../src/empathy.c:630
+msgid "Error contacting the Account Manager"
+msgstr "Iphutha ekuthinteni imanenja ye-akhawunti"
+
+#: ../src/empathy.c:632
+#, c-format
+msgid ""
+"There was an error while trying to connect to the Telepathy Account Manager. "
+"The error was:\n"
+"\n"
+"%s"
+msgstr ""
+"Kube nephutha ngenkathi kuzanywa ukuxhunywa kwi-Telephathi akhawunti "
+"menenja. Inkinga bekungu:\n"
+"\n"
+"%s"
+
+#: ../src/empathy-call.c:115
+#, fuzzy
+#| msgid "Incoming call"
+msgid "In a call"
+msgstr "Ucingo olungenayo"
+
+#: ../src/empathy-call.c:223
+msgid "- Empathy Audio/Video Client"
+msgstr "- Ikhasimende lomsindo/ividiyo ye-Empathy"
+
+#: ../src/empathy-call.c:247
+msgid "Empathy Audio/Video Client"
+msgstr "Ikhasimende lomsindo/ividiyo ye-Empathy"
+
+#: ../src/empathy-call-observer.c:111
+#, c-format
+msgid "%s just tried to call you, but you were in another call."
+msgstr "u-%s uceda ukuzama ukukushayela ucingo, kepha bowukolunye ucingo."
+
+#: ../src/empathy-call-window.c:1543 ../src/empathy-event-manager.c:474
+msgid "Incoming call"
+msgstr "Ucingo olungenayo"
+
+#: ../src/empathy-call-window.c:1549 ../src/empathy-event-manager.c:877
+#, c-format
+msgid "Incoming video call from %s"
+msgstr "Ucingo olungenayo lwevidiyo lusuka ku %s"
+
+#: ../src/empathy-call-window.c:1549 ../src/empathy-event-manager.c:482
+#: ../src/empathy-event-manager.c:877
+#, c-format
+msgid "Incoming call from %s"
+msgstr "Ucingo olungenayo lusuka ku %s"
+
+#: ../src/empathy-call-window.c:1553
+#: ../src/empathy-notifications-approver.c:191
+msgid "Reject"
+msgstr "Yenqabela"
+
+#: ../src/empathy-call-window.c:1554
+#: ../src/empathy-notifications-approver.c:196
+#: ../src/empathy-notifications-approver.c:201
+msgid "Answer"
+msgstr "Phendula"
+
+#. translators: Call is a noun and %s is the contact name. This string
+#. * is used in the window title
+#: ../src/empathy-call-window.c:1924
+#, c-format
+msgid "Call with %s"
+msgstr "Thinta ngo %s"
+
+#: ../src/empathy-call-window.c:2176
+msgid "The IP address as seen by the machine"
+msgstr "Ikheli le-IP libonwe umshini"
+
+#: ../src/empathy-call-window.c:2178
+msgid "The IP address as seen by a server on the Internet"
+msgstr "Ikheli le-IP njengoba libonwe isiphakeli kwi-inthanethi"
+
+#: ../src/empathy-call-window.c:2180
+msgid "The IP address of the peer as seen by the other side"
+msgstr "Ikheli le-IP kantanga njengoba libonwa ngolunye uhlangothi"
+
+#: ../src/empathy-call-window.c:2182
+msgid "The IP address of a relay server"
+msgstr "Ikheli lesiphakeli se-IP sokudlulisa"
+
+#: ../src/empathy-call-window.c:2184
+msgid "The IP address of the multicast group"
+msgstr "Ikheli le-IP lokulandelelana leqembu"
+
+#: ../src/empathy-call-window.c:2598 ../src/empathy-call-window.c:2599
+#: ../src/empathy-call-window.c:2600 ../src/empathy-call-window.c:2601
+#: ../src/empathy-call-window.ui.h:28
+msgid "Unknown"
+msgstr "Akwaziwa"
+
+#: ../src/empathy-call-window.c:2952
+msgid "On hold"
+msgstr "Kubanjiwe"
+
+#: ../src/empathy-call-window.c:2956
+msgid "Mute"
+msgstr ""
+
+#: ../src/empathy-call-window.c:2958
+#, fuzzy
+#| msgid "Location"
+msgid "Duration"
+msgstr "Indawo"
+
+#. Translators: 'status - minutes:seconds' the caller has been connected
+#: ../src/empathy-call-window.c:2961
+#, c-format
+msgid "%s — %d:%02dm"
+msgstr "%s — %d:%02dm"
+
+#: ../src/empathy-call-window.c:3057
+msgid "Technical Details"
+msgstr "Imininingwane yezobuchwepheshe"
+
+#: ../src/empathy-call-window.c:3096
+#, c-format
+msgid ""
+"%s's software does not understand any of the audio formats supported by your "
+"computer"
+msgstr ""
+"I-software ka-%s ayiqondi wonke amafomethi emisindo axhaswe yikhompyutha "
+"yakho"
+
+#: ../src/empathy-call-window.c:3101
+#, c-format
+msgid ""
+"%s's software does not understand any of the video formats supported by your "
+"computer"
+msgstr ""
+"I-software ka-%s ayiqondi wonke amafomethi wevidiyo axhaswe yikhompyutha "
+"yakho"
+
+#: ../src/empathy-call-window.c:3107
+#, c-format
+msgid ""
+"Can't establish a connection to %s. One of you might be on a network that "
+"does not allow direct connections."
+msgstr ""
+"Akukhonakali ukusungula ukuxhumeka ku %s. Njengoba omunye wenu angaba "
+"kwinethiwekhi engavumeli ukuxhumeka ngqo."
+
+#: ../src/empathy-call-window.c:3113
+msgid "There was a failure on the network"
+msgstr "Kube nokuhluleka kwinethiwekhi"
+
+#: ../src/empathy-call-window.c:3117
+msgid ""
+"The audio formats necessary for this call are not installed on your computer"
+msgstr ""
+"Amafomethi emisindo adingeka kulolu cingo awafakiwe kwi-khompyutha yakho"
+
+#: ../src/empathy-call-window.c:3120
+msgid ""
+"The video formats necessary for this call are not installed on your computer"
+msgstr ""
+"Amafomethi wevidiyo adingeka kulolu cingo awafakiwe kwi-khompyutha yakho"
+
+#: ../src/empathy-call-window.c:3132
+#, c-format
+msgid ""
+"Something unexpected happened in a Telepathy component. Please <a href=\"%s"
+"\">report this bug</a> and attach logs gathered from the 'Debug' window in "
+"the Help menu."
+msgstr ""
+"Kwenzeke obekungalindelwe kwingxenye ye-Telephathi. Uyacelwa <a href=\"%s\"> "
+"bika le bhagi</a>bese unamathisela amalogi athathwe kwifasitela le-'Debhagi' "
+"kwimenyu yosizo."
+
+#: ../src/empathy-call-window.c:3141
+msgid "There was a failure in the call engine"
+msgstr "Kube nokuhluleka kwinjini yocingo"
+
+#: ../src/empathy-call-window.c:3144
+msgid "The end of the stream was reached"
+msgstr "Kufinyelelwe ekugcineni komchachazo"
+
+#: ../src/empathy-call-window.c:3184
+msgid "Can't establish audio stream"
+msgstr "Akukhonakali ukusungula umchachazo wemisindo"
+
+#: ../src/empathy-call-window.c:3194
+msgid "Can't establish video stream"
+msgstr "Akukhonakali ukusungula umchachazo wevidiyo"
+
+#: ../src/empathy-call-window.c:3231
+#, c-format
+msgid "Your current balance is %s."
+msgstr ""
+
+#: ../src/empathy-call-window.c:3235
+msgid "Sorry, you don’t have enough credit for that call."
+msgstr ""
+
+#: ../src/empathy-call-window.c:3237
+#, fuzzy
+#| msgid "Top Up..."
+msgid "Top Up"
+msgstr "Gcwalisa..."
+
+#: ../src/empathy-call-window.ui.h:1
+msgid "_Call"
+msgstr "_Thinta"
+
+#: ../src/empathy-call-window.ui.h:3
+msgid "_Microphone"
+msgstr ""
+
+#: ../src/empathy-call-window.ui.h:4
+#, fuzzy
+#| msgid "Camera On"
+msgid "_Camera"
+msgstr "Ikhamera ivuliwe"
+
+#: ../src/empathy-call-window.ui.h:5
+msgid "_Settings"
+msgstr ""
+
+#: ../src/empathy-call-window.ui.h:6
+msgid "_View"
+msgstr "_Buka"
+
+#: ../src/empathy-call-window.ui.h:7 ../src/empathy-chat-window.ui.h:19
+msgid "_Help"
+msgstr "_Usizo"
+
+#: ../src/empathy-call-window.ui.h:8 ../src/empathy-chat-window.ui.h:20
+msgid "_Contents"
+msgstr "_Okuqukethwe"
+
+#: ../src/empathy-call-window.ui.h:9
+msgid "_Debug"
+msgstr "_Lungisa"
+
+#: ../src/empathy-call-window.ui.h:10
+msgid "_GStreamer"
+msgstr ""
+
+#: ../src/empathy-call-window.ui.h:11
+msgid "_Telepathy"
+msgstr ""
+
+#: ../src/empathy-call-window.ui.h:12
+#, fuzzy
+#| msgid "Disable camera"
+msgid "Swap camera"
+msgstr "Khubaza ikhamera"
+
+#: ../src/empathy-call-window.ui.h:13
+msgid "Minimise me"
+msgstr "Nginciphise"
+
+#: ../src/empathy-call-window.ui.h:14
+msgid "Maximise me"
+msgstr "Ngikhulise"
+
+#: ../src/empathy-call-window.ui.h:15
+msgid "Disable camera"
+msgstr "Khubaza ikhamera"
+
+#: ../src/empathy-call-window.ui.h:16
+msgid "Hang up"
+msgstr "Lengisa"
+
+#: ../src/empathy-call-window.ui.h:17
+msgid "Hang up current call"
+msgstr "Beka phansi ucingo lwamanje"
+
+#: ../src/empathy-call-window.ui.h:18
+#, fuzzy
+#| msgctxt "menu item"
+#| msgid "_Video Call"
+msgid "Video call"
+msgstr "Ucingo lwe_vidiyo"
+
+#: ../src/empathy-call-window.ui.h:19
+msgid "Start a video call"
+msgstr ""
+
+#: ../src/empathy-call-window.ui.h:21
+msgid "Start an audio call"
+msgstr ""
+
+#: ../src/empathy-call-window.ui.h:22
+msgid "Show dialpad"
+msgstr "Bonisa iphedi lokudayela"
+
+#: ../src/empathy-call-window.ui.h:23
+msgid "Display the dialpad"
+msgstr "Bonisa okokudayela"
+
+#: ../src/empathy-call-window.ui.h:24
+msgid "Toggle video transmission"
+msgstr "Guquguqula ukuthunyelwa kwevidiyo"
+
+#: ../src/empathy-call-window.ui.h:25
+msgid "Toggle audio transmission"
+msgstr "Guquguqula ukuthunyelwa kwemisindo"
+
+#: ../src/empathy-call-window.ui.h:27
+msgid "Encoding Codec:"
+msgstr "Ibhala ngokufihla i-codec:"
+
+#: ../src/empathy-call-window.ui.h:29
+msgid "Decoding Codec:"
+msgstr "Kuhunyushwa i-codec:"
+
+#: ../src/empathy-call-window.ui.h:30
+msgid "Remote Candidate:"
+msgstr "Ikhandidethi elikude:"
+
+#: ../src/empathy-call-window.ui.h:31
+msgid "Local Candidate:"
+msgstr "Ikhandidethi lendawo:"
+
+#: ../src/empathy-call-window.ui.h:32 ../src/empathy-preferences.ui.h:28
+msgid "Audio"
+msgstr "Okwemisindo"
+
+#: ../src/empathy-chat.c:100
+msgid "- Empathy Chat Client"
+msgstr "- Ikhasimende lengxoxo ye-Empathy"
+
+#: ../src/empathy-chatrooms-window.c:244
+msgid "Name"
+msgstr "Igama"
+
+#: ../src/empathy-chatrooms-window.c:262
+msgid "Room"
+msgstr "Igumbi"
+
+#: ../src/empathy-chatrooms-window.c:270
+msgid "Auto-Connect"
+msgstr "Zixhumekele"
+
+#: ../src/empathy-chatrooms-window.ui.h:1
+msgid "Manage Favorite Rooms"
+msgstr "Manenja amagumbi ayizintandokazi"
+
+#: ../src/empathy-chat-window.c:278
+#, fuzzy
+#| msgid "Hide the main window."
+msgid "Close this window?"
+msgstr "Fihla ifasitela elikhulu."
+
+#: ../src/empathy-chat-window.c:284
+#, c-format
+msgid ""
+"Closing this window will leave %s. You will not receive any further messages "
+"until you rejoin it."
+msgstr ""
+
+#: ../src/empathy-chat-window.c:297
+#, c-format
+msgid ""
+"Closing this window will leave a chat room. You will not receive any further "
+"messages until you rejoin it."
+msgid_plural ""
+"Closing this window will leave %u chat rooms. You will not receive any "
+"further messages until you rejoin them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/empathy-chat-window.c:308
+#, c-format
+msgid "Leave %s?"
+msgstr ""
+
+#: ../src/empathy-chat-window.c:310
+msgid ""
+"You will not receive any further messages from this chat room until you "
+"rejoin it."
+msgstr ""
+
+#: ../src/empathy-chat-window.c:329
+msgid "Close window"
+msgstr ""
+
+#: ../src/empathy-chat-window.c:329
+msgid "Leave room"
+msgstr ""
+
+#: ../src/empathy-chat-window.c:671 ../src/empathy-chat-window.c:694
+#, c-format
+msgid "%s (%d unread)"
+msgid_plural "%s (%d unread)"
+msgstr[0] "%s (%d akufundiwe)"
+msgstr[1] "%s(%d akufundiwe)"
+
+#: ../src/empathy-chat-window.c:686
+#, c-format
+msgid "%s (and %u other)"
+msgid_plural "%s (and %u others)"
+msgstr[0] "%s (no %u omunye)"
+msgstr[1] "%s (nabo %u abanye)"
+
+#: ../src/empathy-chat-window.c:702
+#, c-format
+msgid "%s (%d unread from others)"
+msgid_plural "%s (%d unread from others)"
+msgstr[0] "%s (%d akufundiwe kuvela kwabanye)"
+msgstr[1] "%s (%d akufundiwe kuvela kwabanye)"
+
+#: ../src/empathy-chat-window.c:711
+#, c-format
+msgid "%s (%d unread from all)"
+msgid_plural "%s (%d unread from all)"
+msgstr[0] "%s (%d akufundiwe kuvela kubo bonke)"
+msgstr[1] "%s (%d akufundiwe kuvela kubo bonke)"
+
+#: ../src/empathy-chat-window.c:948
+msgid "SMS:"
+msgstr "i-SMS:"
+
+#: ../src/empathy-chat-window.c:956
+#, c-format
+msgid "Sending %d message"
+msgid_plural "Sending %d messages"
+msgstr[0] "Thumela %d umyalezo"
+msgstr[1] "Thumela %d imiyalezo"
+
+#: ../src/empathy-chat-window.c:976
+msgid "Typing a message."
+msgstr "Kuthayphiwa umlayezo."
+
+#: ../src/empathy-chat-window.ui.h:1
+msgid "_Conversation"
+msgstr "_Ingxoxo"
+
+#: ../src/empathy-chat-window.ui.h:2
+msgid "C_lear"
+msgstr "S_usa"
+
+#: ../src/empathy-chat-window.ui.h:3
+msgid "Insert _Smiley"
+msgstr "Faka _isimamatheki"
+
+#: ../src/empathy-chat-window.ui.h:4
+msgid "_Favorite Chat Room"
+msgstr "_Igumbi lokuxoxa eliyintandokazi"
+
+#: ../src/empathy-chat-window.ui.h:5
+msgid "Notify for All Messages"
+msgstr "Yazisa ngayo yonke imilayezo"
+
+#: ../src/empathy-chat-window.ui.h:6 ../src/empathy-status-icon.ui.h:1
+msgid "_Show Contact List"
+msgstr "_Bonisa uhlu lwabangathintwa"
+
+#: ../src/empathy-chat-window.ui.h:7
+msgid "Invite _Participant…"
+msgstr "Mema _umbambiqhaza…"
+
+#: ../src/empathy-chat-window.ui.h:8
+#, fuzzy
+#| msgid "_Join"
+msgid "_Join Chat"
+msgstr "_Xhuma"
+
+#: ../src/empathy-chat-window.ui.h:9
+#, fuzzy
+#| msgid "_Chat"
+msgid "Le_ave Chat"
+msgstr "_Xoxa"
+
+#: ../src/empathy-chat-window.ui.h:10
+msgid "C_ontact"
+msgstr "T_hinta"
+
+#: ../src/empathy-chat-window.ui.h:12
+msgid "_Tabs"
+msgstr "_Amathebhu"
+
+#: ../src/empathy-chat-window.ui.h:13
+msgid "_Previous Tab"
+msgstr "_I-Tab edlule"
+
+#: ../src/empathy-chat-window.ui.h:14
+msgid "_Next Tab"
+msgstr "_I-Tab elandelayo"
+
+#: ../src/empathy-chat-window.ui.h:15
+msgid "_Undo Close Tab"
+msgstr "_Yekisa ukuvala i-Tab"
+
+#: ../src/empathy-chat-window.ui.h:16
+msgid "Move Tab _Left"
+msgstr "Hambisa i-Tab _kwesobunxele"
+
+#: ../src/empathy-chat-window.ui.h:17
+msgid "Move Tab _Right"
+msgstr "Hambisa i-Tab _kwesokudla"
+
+#: ../src/empathy-chat-window.ui.h:18
+msgid "_Detach Tab"
+msgstr "_Susa i-Tab"
+
+#: ../src/empathy-debugger.c:76
+msgid "Show a particular service"
+msgstr ""
+
+#: ../src/empathy-debugger.c:81
+#, fuzzy
+#| msgid "Empathy Debugger"
+msgid "- Empathy Debugger"
+msgstr "Isilungiso se-Empathy"
+
+#: ../src/empathy-debugger.c:141
+msgid "Empathy Debugger"
+msgstr "Isilungiso se-Empathy"
+
+#: ../src/empathy-debug-window.c:1564
+msgid "Save"
+msgstr "Yonga"
+
+#: ../src/empathy-debug-window.c:1624
+msgid "Pastebin link"
+msgstr ""
+
+#: ../src/empathy-debug-window.c:1633
+msgid "Pastebin response"
+msgstr ""
+
+#: ../src/empathy-debug-window.c:1640
+msgid "Data too large for a single paste. Please save logs to file."
+msgstr ""
+
+#: ../src/empathy-debug-window.c:1822
+msgid "Debug Window"
+msgstr "Lungisa ifasitela"
+
+#: ../src/empathy-debug-window.c:1882
+msgid "Send to pastebin"
+msgstr ""
+
+#: ../src/empathy-debug-window.c:1926
+msgid "Pause"
+msgstr "Phumuza"
+
+#: ../src/empathy-debug-window.c:1938
+msgid "Level "
+msgstr "Izinga "
+
+#: ../src/empathy-debug-window.c:1957
+msgid "Debug"
+msgstr "Lungisa"
+
+#: ../src/empathy-debug-window.c:1962
+msgid "Info"
+msgstr "Ulwazi"
+
+#: ../src/empathy-debug-window.c:1967 ../src/empathy-debug-window.c:2047
+msgid "Message"
+msgstr "Umlayezo"
+
+#: ../src/empathy-debug-window.c:1972
+msgid "Warning"
+msgstr "Isexwayiso"
+
+#: ../src/empathy-debug-window.c:1977
+msgid "Critical"
+msgstr "Okumqoka"
+
+#: ../src/empathy-debug-window.c:1982
+msgid "Error"
+msgstr "Iphutha"
+
+#: ../src/empathy-debug-window.c:1995
+msgid ""
+"Even if they don't display passwords, logs can contain sensitive information "
+"such as your list of contacts or the messages you recently sent or "
+"received.\n"
+"If you don't want to see such information available in a public bug report, "
+"you can choose to limit the visibility of your bug to Empathy developers "
+"when reporting it by displaying the advanced fields in the <a href=\"https://"
+"bugzilla.gnome.org/enter_bug.cgi?product=empathy\">bug report</a>."
+msgstr ""
+
+#: ../src/empathy-debug-window.c:2027
+msgid "Time"
+msgstr "Isikhathi"
+
+#: ../src/empathy-debug-window.c:2030
+msgid "Domain"
+msgstr "Umkhakha"
+
+#: ../src/empathy-debug-window.c:2033
+msgid "Category"
+msgstr "Isigaba"
+
+#: ../src/empathy-debug-window.c:2036
+msgid "Level"
+msgstr "Izinga"
+
+#: ../src/empathy-debug-window.c:2070
+msgid ""
+"The selected connection manager does not support the remote debugging "
+"extension."
+msgstr ""
+"Imenenja yezokuxhumana ekhethiwe ayisekeli iselulo sokulungisa esikude."
+
+#: ../src/empathy-event-manager.c:474
+msgid "Incoming video call"
+msgstr "Ucingo lwevidiyo olungenayo"
+
+#: ../src/empathy-event-manager.c:478
+#, c-format
+msgid "%s is video calling you. Do you want to answer?"
+msgstr "%s ukuthinta ngocingo lwevidiyo. Ingabe uyafuna ukumphendula?"
+
+#: ../src/empathy-event-manager.c:479
+#, c-format
+msgid "%s is calling you. Do you want to answer?"
+msgstr "%s uyakuthinta. Ingabe uyafuna ukumphendula?"
+
+#: ../src/empathy-event-manager.c:507
+msgid "_Reject"
+msgstr "_Yenqabela"
+
+#: ../src/empathy-event-manager.c:515 ../src/empathy-event-manager.c:523
+msgid "_Answer"
+msgstr "_Phendula"
+
+#: ../src/empathy-event-manager.c:523
+msgid "_Answer with video"
+msgstr "_Phendula ngevidiyo"
+
+#: ../src/empathy-event-manager.c:677
+msgid "Room invitation"
+msgstr "Isimemo segumbi"
+
+#: ../src/empathy-event-manager.c:679
+#, c-format
+msgid "Invitation to join %s"
+msgstr "Isimemo sokuxhumana no%s"
+
+#: ../src/empathy-event-manager.c:686
+#, c-format
+msgid "%s is inviting you to join %s"
+msgstr "%s ukumemela ukuba uxhumane no %s"
+
+#: ../src/empathy-event-manager.c:699
+msgid "_Join"
+msgstr "_Xhuma"
+
+#: ../src/empathy-event-manager.c:725
+#, c-format
+msgid "%s invited you to join %s"
+msgstr "%s ukumemele ukuba uxhumeke ku-%s"
+
+#: ../src/empathy-event-manager.c:731
+#, c-format
+msgid "You have been invited to join %s"
+msgstr "Umenyelwe ukuba uxhumeke ku-%s"
+
+#: ../src/empathy-event-manager.c:920
+#, c-format
+msgid "Incoming file transfer from %s"
+msgstr "Ifayela elidluliswayo elingenayo elibuya ku-%s"
+
+#: ../src/empathy-event-manager.c:948 ../src/empathy-roster-window.c:214
+msgid "Password required"
+msgstr "Kudingeka igama lokungena"
+
+#: ../src/empathy-event-manager.c:1085
+#, c-format
+msgid ""
+"\n"
+"Message: %s"
+msgstr ""
+"\n"
+"Umlayezo: %s"
+
+#. Translators: time left, when it is more than one hour
+#: ../src/empathy-ft-manager.c:94
+#, c-format
+msgid "%u:%02u.%02u"
+msgstr "%u:%02u.%02u"
+
+#. Translators: time left, when is is less than one hour
+#: ../src/empathy-ft-manager.c:97
+#, c-format
+msgid "%02u.%02u"
+msgstr "%02u.%02u"
+
+#: ../src/empathy-ft-manager.c:173
+msgctxt "file transfer percent"
+msgid "Unknown"
+msgstr "Akwaziwa"
+
+#: ../src/empathy-ft-manager.c:268
+#, c-format
+msgid "%s of %s at %s/s"
+msgstr "%s ka %s ngo%s/s"
+
+#: ../src/empathy-ft-manager.c:269
+#, c-format
+msgid "%s of %s"
+msgstr "%s ka %s"
+
+#. translators: first %s is filename, second %s is the contact name
+#: ../src/empathy-ft-manager.c:300
+#, c-format
+msgid "Receiving \"%s\" from %s"
+msgstr "Iyamukela \"%s\" ku-%s"
+
+#. translators: first %s is filename, second %s is the contact name
+#: ../src/empathy-ft-manager.c:303
+#, c-format
+msgid "Sending \"%s\" to %s"
+msgstr "Ithumela i-\"%s\" ku %s"
+
+#. translators: first %s is filename, second %s
+#. * is the contact name
+#: ../src/empathy-ft-manager.c:333
+#, c-format
+msgid "Error receiving \"%s\" from %s"
+msgstr "Iphutha ngenkathi kwamukelwa u-\"%s\" esuka ku-%s"
+
+#: ../src/empathy-ft-manager.c:336
+msgid "Error receiving a file"
+msgstr "Iphutha ngenkathi kwamukelwa ifayela"
+
+#: ../src/empathy-ft-manager.c:341
+#, c-format
+msgid "Error sending \"%s\" to %s"
+msgstr "Iphutha ngokuthumela u-\"%s\" ku-%s"
+
+#: ../src/empathy-ft-manager.c:344
+msgid "Error sending a file"
+msgstr "Iphutha ekuthumeleni ifayela"
+
+#. translators: first %s is filename, second %s
+#. * is the contact name
+#: ../src/empathy-ft-manager.c:483
+#, c-format
+msgid "\"%s\" received from %s"
+msgstr "\"%s\" yamukelwe ku-%s"
+
+#. translators: first %s is filename, second %s
+#. * is the contact name
+#: ../src/empathy-ft-manager.c:488
+#, c-format
+msgid "\"%s\" sent to %s"
+msgstr "\"%s\" ithunyelwe ku-%s"
+
+#: ../src/empathy-ft-manager.c:491
+msgid "File transfer completed"
+msgstr "Ukudlulisa ifayela kuqediwe"
+
+#: ../src/empathy-ft-manager.c:610 ../src/empathy-ft-manager.c:774
+msgid "Waiting for the other participant's response"
+msgstr "Kulindwe impendulo komunye umbambi qhaza"
+
+#: ../src/empathy-ft-manager.c:636 ../src/empathy-ft-manager.c:674
+#, c-format
+msgid "Checking integrity of \"%s\""
+msgstr "Kuhlolwa ubuqotho buka -\"%s\""
+
+#: ../src/empathy-ft-manager.c:639 ../src/empathy-ft-manager.c:677
+#, c-format
+msgid "Hashing \"%s\""
+msgstr "Ukusayinwa \"%s\""
+
+#: ../src/empathy-ft-manager.c:1020
+msgid "%"
+msgstr "%"
+
+#: ../src/empathy-ft-manager.c:1032
+msgid "File"
+msgstr "Ifayela"
+
+#: ../src/empathy-ft-manager.c:1054
+msgid "Remaining"
+msgstr "Okusele"
+
+#: ../src/empathy-ft-manager.ui.h:1
+msgid "File Transfers"
+msgstr "Ukudluliswa kwamafayela"
+
+#: ../src/empathy-ft-manager.ui.h:2
+msgid "Remove completed, canceled and failed file transfers from the list"
+msgstr ""
+"Ukukhishwa kuqediwe, ukudluliswa kwamafayela okuchithiwe nokuhlulekile "
+"okuvela kuhlu"
+
+#: ../src/empathy-import-dialog.c:70
+#, fuzzy
+#| msgid "Import"
+msgid "_Import"
+msgstr "Ngenisa"
+
+#: ../src/empathy-import-dialog.c:82
+msgid ""
+"No accounts to import could be found. Empathy currently only supports "
+"importing accounts from Pidgin."
+msgstr ""
+"Awekho ama-akhawunti angangeniswa atholakele. I-Empathy okwamanje ixhasa "
+"kuphela ukudlulisa kwama-akhawunti avela ku-Pidgin."
+
+#: ../src/empathy-import-dialog.c:203
+msgid "Import Accounts"
+msgstr "Ngenisa ama-akhawunti"
+
+#. Translators: this is the header of a treeview column
+#: ../src/empathy-import-widget.c:299
+msgid "Import"
+msgstr "Ngenisa"
+
+#: ../src/empathy-import-widget.c:308
+msgid "Protocol"
+msgstr "Umthetho olandelwayo"
+
+#: ../src/empathy-import-widget.c:332
+msgid "Source"
+msgstr "Umthombo"
+
+#: ../src/empathy-invite-participant-dialog.c:197
+#: ../src/empathy-invite-participant-dialog.c:225
+msgid "Invite Participant"
+msgstr "Mema umbambi qhaza"
+
+#: ../src/empathy-invite-participant-dialog.c:198
+msgid "Choose a contact to invite into the conversation:"
+msgstr "Khetha ongathintwa ukuze umumemele kwingxoxo:"
+
+#: ../src/empathy-invite-participant-dialog.c:221
+msgid "Invite"
+msgstr "Mema"
+
+#: ../src/empathy-new-chatroom-dialog.c:186
+msgid "Chat Room"
+msgstr "Igumbi lokuxoxa"
+
+#: ../src/empathy-new-chatroom-dialog.c:201
+msgid "Members"
+msgstr "Amalunga"
+
+#: ../src/empathy-new-chatroom-dialog.c:402
+#, fuzzy
+#| msgid "Failed to retrieve recent logs"
+msgid "Failed to list rooms"
+msgstr "Kuhlulekile ukuthola amalogi wamanje"
+
+#: ../src/empathy-new-chatroom-dialog.c:437
+#, c-format
+msgid ""
+"%s\n"
+"Invite required: %s\n"
+"Password required: %s\n"
+"Members: %s"
+msgstr ""
+"%s\n"
+"Kudingeka ukumenywa:%s\n"
+"Kudingeka igama lokungena%s\n"
+"Amalunga:%s"
+
+#: ../src/empathy-new-chatroom-dialog.c:439
+#: ../src/empathy-new-chatroom-dialog.c:440
+msgid "Yes"
+msgstr "Yebo"
+
+#: ../src/empathy-new-chatroom-dialog.c:439
+#: ../src/empathy-new-chatroom-dialog.c:440
+msgid "No"
+msgstr "Cha"
+
+#: ../src/empathy-new-chatroom-dialog.c:791
+msgid "Join Room"
+msgstr "Xhumeka kwigumbi"
+
+#: ../src/empathy-new-chatroom-dialog.ui.h:1
+msgid ""
+"Enter the room name to join here or click on one or more rooms in the list."
+msgstr ""
+"Faka igama legumbi ukuze uxhumeke noma qhofoza kwelilodwa noma kwamanengi "
+"amagumbi ohlwini."
+
+#: ../src/empathy-new-chatroom-dialog.ui.h:2
+msgid "_Room:"
+msgstr "_Igumbi:"
+
+#: ../src/empathy-new-chatroom-dialog.ui.h:3
+#, fuzzy
+#| msgid ""
+#| "Enter the server which hosts the room, or leave it empty if the room is "
+#| "on the current account's server"
+msgid ""
+"Enter the server which hosts the room, or leave it empty if the room is on "
+"the current account&apos;s server"
+msgstr ""
+"Faka isiphakeli esiphethe igumbi, noma siyekele singenalutho uma ngabe leli "
+"gumbi likusiphakeli se-akhawunti yamanje"
+
+#: ../src/empathy-new-chatroom-dialog.ui.h:4
+msgid ""
+"Enter the server which hosts the room, or leave it empty if the room is on "
+"the current account's server"
+msgstr ""
+"Faka isiphakeli esiphethe igumbi, noma siyekele singenalutho uma ngabe leli "
+"gumbi likusiphakeli se-akhawunti yamanje"
+
+#: ../src/empathy-new-chatroom-dialog.ui.h:5
+msgid "_Server:"
+msgstr "_Isiphakeli:"
+
+#: ../src/empathy-new-chatroom-dialog.ui.h:7
+msgid "Couldn't load room list"
+msgstr "Akuphumelelanga ukulayishwa kohlu lwegumbi"
+
+#: ../src/empathy-new-chatroom-dialog.ui.h:8
+msgid "Room List"
+msgstr "Uhlu lwegumbi"
+
+#: ../src/empathy-notifications-approver.c:182
+msgid "Respond"
+msgstr "Phendula"
+
+#: ../src/empathy-notifications-approver.c:201
+msgid "Answer with video"
+msgstr "Phendula ngevidiyo"
+
+#: ../src/empathy-notifications-approver.c:209
+#: ../src/empathy-notifications-approver.c:219
+msgid "Decline"
+msgstr "Enqaba"
+
+#: ../src/empathy-notifications-approver.c:213
+#: ../src/empathy-notifications-approver.c:224
+msgid "Accept"
+msgstr "Yamukela"
+
+#. translators: the 'Provide' button is displayed in a notification
+#. * bubble when Empathy is asking for an account password; clicking on it
+#. * brings the password popup.
+#: ../src/empathy-notifications-approver.c:234
+msgid "Provide"
+msgstr "Nikeza"
+
+#: ../src/empathy-preferences.c:138
+msgid "Message received"
+msgstr "Umlayezo wamukeliwe"
+
+#: ../src/empathy-preferences.c:139
+msgid "Message sent"
+msgstr "Umlayezo uthunyelwe"
+
+#: ../src/empathy-preferences.c:140
+msgid "New conversation"
+msgstr "Ingxoxo entsha"
+
+#: ../src/empathy-preferences.c:141
+#, fuzzy
+#| msgid "Contact goes online"
+msgid "Contact comes online"
+msgstr "Ongathintwa uya kulayini"
+
+#: ../src/empathy-preferences.c:142
+msgid "Contact goes offline"
+msgstr "Ongathintwa uya ngaphandle kolayini"
+
+#: ../src/empathy-preferences.c:143
+msgid "Account connected"
+msgstr "I-akhawunti ixhunyiwe"
+
+#: ../src/empathy-preferences.c:144
+msgid "Account disconnected"
+msgstr "I-akhawunti ayixhunyiwe"
+
+#: ../src/empathy-preferences.c:369
+msgid "Language"
+msgstr "Ulimi"
+
+#. translators: Contact name for the chat theme preview
+#: ../src/empathy-preferences.c:620
+msgid "Juliet"
+msgstr "Juliet"
+
+#. translators: Contact name for the chat theme preview
+#: ../src/empathy-preferences.c:627
+msgid "Romeo"
+msgstr "Romeo"
+
+#. translators: Quote from Romeo & Julier, for chat theme preview
+#: ../src/empathy-preferences.c:633
+msgid "O Romeo, Romeo, wherefore art thou Romeo?"
+msgstr "We Romeo, Romeo ukuphi?"
+
+#. translators: Quote from Romeo & Julier, for chat theme preview
+#: ../src/empathy-preferences.c:637
+msgid "Deny thy father and refuse thy name;"
+msgstr "Phika ubabakho futhi wale igama lakho;"
+
+#. translators: Quote from Romeo & Julier, for chat theme preview
+#: ../src/empathy-preferences.c:640
+msgid "Or if thou wilt not, be but sworn my love"
+msgstr "Noma mhlwawumbe angeke wenze njalo, kepha qinisekisa uthando lwami"
+
+#. translators: Quote from Romeo & Julier, for chat theme preview
+#: ../src/empathy-preferences.c:643
+msgid "And I'll no longer be a Capulet."
+msgstr "Futhi angeke ngisaba i-Capulet."
+
+#. translators: Quote from Romeo & Julier, for chat theme preview
+#: ../src/empathy-preferences.c:646
+msgid "Shall I hear more, or shall I speak at this?"
+msgstr "Ingabe ngizozwa okungaphezulu, noma kumele ngikhulume kulokhu?"
+
+#. translators: Quote from Romeo & Julier, for chat theme preview
+#: ../src/empathy-preferences.c:649
+msgid "Juliet has disconnected"
+msgstr "u-Juliet akaxhunyiwe"
+
+#: ../src/empathy-preferences.c:1015
+msgid "Preferences"
+msgstr "Okuthandwayo"
+
+#: ../src/empathy-preferences.ui.h:2
+#, fuzzy
+#| msgid "Show protocols"
+msgid "Show groups"
+msgstr "Bonisa imithetho elandelwayo"
+
+#: ../src/empathy-preferences.ui.h:3
+#, fuzzy
+#| msgid "Show and edit accounts"
+msgid "Show account balances"
+msgstr "Bona bese uhlela ama-akhawunti"
+
+#: ../src/empathy-preferences.ui.h:4 ../src/empathy-roster-window.c:2301
+msgid "Contact List"
+msgstr "Uhlu lwabangathintwa"
+
+#: ../src/empathy-preferences.ui.h:5
+msgid "Start chats in:"
+msgstr ""
+
+#: ../src/empathy-preferences.ui.h:6
+msgid "new ta_bs"
+msgstr ""
+
+#: ../src/empathy-preferences.ui.h:7
+msgid "new _windows"
+msgstr ""
+
+#: ../src/empathy-preferences.ui.h:8
+msgid "Show _smileys as images"
+msgstr "Bonisa _izimamatheki njengezithombe"
+
+#: ../src/empathy-preferences.ui.h:9
+msgid "Show contact _list in rooms"
+msgstr "Bonisa _uhlu lwabangathintwa emagunjini"
+
+#: ../src/empathy-preferences.ui.h:10
+msgid "Log conversations"
+msgstr "Ilogi yezingxoxo"
+
+#: ../src/empathy-preferences.ui.h:12
+msgid "Display incoming events in the notification area"
+msgstr "Khombisa izehlakalo ezingenayo kwindawo yezaziso"
+
+#: ../src/empathy-preferences.ui.h:13
+msgid "_Automatically connect on startup"
+msgstr "_Zixhumekele uma kuqalwa"
+
+#: ../src/empathy-preferences.ui.h:14
+msgid "Behavior"
+msgstr "Ukuziphatha"
+
+#: ../src/empathy-preferences.ui.h:15
+msgid "General"
+msgstr "Okuvamile"
+
+#: ../src/empathy-preferences.ui.h:16
+msgid "_Enable bubble notifications"
+msgstr "Vum_ela izaziso zamabhamuza"
+
+#: ../src/empathy-preferences.ui.h:17
+msgid "Disable notifications when _away or busy"
+msgstr "Nqabela izaziso uma _ukude noma umatasatasa"
+
+#: ../src/empathy-preferences.ui.h:18
+msgid "Enable notifications when the _chat is not focused"
+msgstr "Vumela izaziso uma _ingxoxo ingagxilile"
+
+#: ../src/empathy-preferences.ui.h:19
+msgid "Enable notifications when a contact comes online"
+msgstr "Vumela izaziso uma ongathintwa engena kulayini"
+
+#: ../src/empathy-preferences.ui.h:20
+msgid "Enable notifications when a contact goes offline"
+msgstr "Vumela izaziso uma ongathintwa ephuma kulayini"
+
+#: ../src/empathy-preferences.ui.h:21
+msgid "Notifications"
+msgstr "Izaziso"
+
+#: ../src/empathy-preferences.ui.h:22
+msgid "_Enable sound notifications"
+msgstr "Vum_ela izaziso zomsindo"
+
+#: ../src/empathy-preferences.ui.h:23
+msgid "Disable sounds when _away or busy"
+msgstr "Nqabela imisindo uma _ukude noma umatasatasa"
+
+#: ../src/empathy-preferences.ui.h:24
+msgid "Play sound for events"
+msgstr "Dlala umsindo uma kunezehlakalo"
+
+#: ../src/empathy-preferences.ui.h:25
+msgid "Sounds"
+msgstr "Imisindo"
+
+#: ../src/empathy-preferences.ui.h:26
+msgid "Use _echo cancellation to improve call quality"
+msgstr ""
+
+#: ../src/empathy-preferences.ui.h:27
+msgid ""
+"Echo cancellation helps to make your voice sound clearer to the other "
+"person, but may cause problems on some computers. If you or the other person "
+"hear strange noises or glitches during calls, try turning echo cancellation "
+"off and restarting the call."
+msgstr ""
+
+#: ../src/empathy-preferences.ui.h:30
+msgid "_Publish location to my contacts"
+msgstr "_Shicilela indawo kwabangathintwa bami"
+
+#: ../src/empathy-preferences.ui.h:31
+msgid ""
+"Reduced location accuracy means that nothing more precise than your city, "
+"state and country will be published.  GPS coordinates will be accurate to 1 "
+"decimal place."
+msgstr ""
+"Ukwehliswa kokuqonda kwendawo kusho ukuthi akukho okunye okuqonde "
+"njengedolobhakazi lakho, isifundazwe nezwe okuzoshicilelwa.  Ukuxhumanisa "
+"kwe-GPS kuzolunga kufike kwindawo engu-1 desimali."
+
+#. To translators: The longitude and latitude are rounded to closest 0,1 degrees, so for example 146,2345° is rounded to round(146,2345*10)/10 = 146,2 degrees.
+#: ../src/empathy-preferences.ui.h:33
+msgid "_Reduce location accuracy"
+msgstr "_Yehlisa ukuqonda kwendawo"
+
+#: ../src/empathy-preferences.ui.h:34
+msgid "Privacy"
+msgstr "Ubumfihlo"
+
+#: ../src/empathy-preferences.ui.h:36
+msgid ""
+"The list of languages reflects only the languages for which you have a "
+"dictionary installed."
+msgstr "Uhlu lwezilimi lubonisa kuphela izilimi ozifakele isichazamazwi."
+
+#: ../src/empathy-preferences.ui.h:37
+msgid "Enable spell checking for languages:"
+msgstr "Vumela ukuhlolwa kokupeletwa kwezilimi:"
+
+#: ../src/empathy-preferences.ui.h:38
+msgid "Spell Checking"
+msgstr "Ukuhlolwa kokupeletwa"
+
+#: ../src/empathy-preferences.ui.h:39
+msgid "Chat Th_eme:"
+msgstr "In_dikimba yengxoxo:"
+
+#: ../src/empathy-preferences.ui.h:40
+msgid "Variant:"
+msgstr "Ukwahluka:"
+
+#: ../src/empathy-preferences.ui.h:41
+msgid "Themes"
+msgstr "Izindikimba"
+
+#: ../src/empathy-roster-window.c:231
+msgid "Provide Password"
+msgstr "Nikeza igama lokungena"
+
+#: ../src/empathy-roster-window.c:237
+msgid "Disconnect"
+msgstr "Khipha"
+
+#: ../src/empathy-roster-window.c:494
+msgid "You need to set up an account to see contacts here."
+msgstr ""
+
+#: ../src/empathy-roster-window.c:570
+#, c-format
+msgid "Sorry, %s accounts can’t be used until your %s software is updated."
+msgstr ""
+
+#: ../src/empathy-roster-window.c:671
+msgid "Windows Live"
+msgstr ""
+
+#: ../src/empathy-roster-window.c:673
+msgid "Google Talk"
+msgstr "Inkulumo ye-Google"
+
+#: ../src/empathy-roster-window.c:675
+#, fuzzy
+#| msgid "Facebook Chat"
+msgid "Facebook"
+msgstr "Ingxoxo ye-Facebook"
+
+#. translators: %s is an account name like 'Facebook' or 'Google Talk'
+#: ../src/empathy-roster-window.c:690
+#, c-format
+msgid "%s account requires authorisation"
+msgstr ""
+
+#: ../src/empathy-roster-window.c:701
+#, fuzzy
+#| msgid "Edit Account"
+msgid "Online Accounts"
+msgstr "Hlela i-akhawunti"
+
+#: ../src/empathy-roster-window.c:748
+msgid "Update software…"
+msgstr ""
+
+#: ../src/empathy-roster-window.c:754
+msgid "Reconnect"
+msgstr "Xhuma futhi"
+
+#: ../src/empathy-roster-window.c:758
+msgid "Edit Account"
+msgstr "Hlela i-akhawunti"
+
+#: ../src/empathy-roster-window.c:763
+msgid "Close"
+msgstr "Vala"
+
+#: ../src/empathy-roster-window.c:905
+#, fuzzy
+#| msgid "Top up account credit"
+msgid "Top up account"
+msgstr "Gcwalisa isikweletu se-akhawunti"
+
+#: ../src/empathy-roster-window.c:1626
+msgid "You need to enable one of your accounts to see contacts here."
+msgstr ""
+
+#. translators: argument is an account name
+#: ../src/empathy-roster-window.c:1634
+#, c-format
+msgid "You need to enable %s to see contacts here."
+msgstr ""
+
+#: ../src/empathy-roster-window.c:1712
+msgid "Change your presence to see contacts here"
+msgstr ""
+
+#: ../src/empathy-roster-window.c:1721
+msgid "No match found"
+msgstr "Akukho okufanayo okutholakele"
+
+#: ../src/empathy-roster-window.c:1728
+msgid "You haven't added any contacts yet"
+msgstr ""
+
+#: ../src/empathy-roster-window.c:1731
+#, fuzzy
+#| msgid "Show offline contacts"
+msgid "No online contacts"
+msgstr "Bonisa ongabathinta abangaphandle kolayini"
+
+#: ../src/empathy-roster-window-menubar.ui.h:1
+#: ../src/empathy-status-icon.ui.h:2
+msgid "_New Conversation…"
+msgstr "_Ingxoxo entsha…"
+
+#: ../src/empathy-roster-window-menubar.ui.h:2
+#: ../src/empathy-status-icon.ui.h:3
+msgid "New _Call…"
+msgstr "_Ucingo olusha…"
+
+#: ../src/empathy-roster-window-menubar.ui.h:3
+#, fuzzy
+#| msgid "Contact"
+msgid "Contacts"
+msgstr "Thinta"
+
+#: ../src/empathy-roster-window-menubar.ui.h:4
+#, fuzzy
+#| msgid "_Add Contact…"
+msgid "_Add Contacts…"
+msgstr "_Ngeza ongathintwa…"
+
+#: ../src/empathy-roster-window-menubar.ui.h:5
+msgid "_Search for Contacts…"
+msgstr "_Sesha ongabathinta…"
+
+#: ../src/empathy-roster-window-menubar.ui.h:6
+msgid "_Blocked Contacts"
+msgstr "_Abangathintwa abavinjiwe"
+
+#: ../src/empathy-roster-window-menubar.ui.h:7
+#, fuzzy
+#| msgid "_Room"
+msgid "_Rooms"
+msgstr "_Igumbi"
+
+#: ../src/empathy-roster-window-menubar.ui.h:8
+msgid "_Join…"
+msgstr "_Xhumeka…"
+
+#: ../src/empathy-roster-window-menubar.ui.h:9
+msgid "Join _Favorites"
+msgstr "Xhumeka _kuzintandokazi"
+
+#: ../src/empathy-roster-window-menubar.ui.h:10
+#, fuzzy
+#| msgid "Manage Favorites"
+msgid "_Manage Favorites"
+msgstr "Manenja izintandokazi"
+
+#: ../src/empathy-roster-window-menubar.ui.h:12
+msgid "_File Transfers"
+msgstr "_Ukudluliswa kwamafayela"
+
+#: ../src/empathy-roster-window-menubar.ui.h:13
+msgid "_Accounts"
+msgstr "_Ama-akhawunti"
+
+#: ../src/empathy-roster-window-menubar.ui.h:14
+msgid "P_references"
+msgstr "O_kuthandwayo"
+
+#: ../src/empathy-roster-window-menubar.ui.h:15
+#, fuzzy
+#| msgid "_Help"
+msgid "Help"
+msgstr "_Usizo"
+
+#: ../src/empathy-roster-window-menubar.ui.h:16
+msgid "About"
+msgstr ""
+
+#: ../src/empathy-roster-window-menubar.ui.h:17
+#: ../src/empathy-status-icon.ui.h:5
+msgid "_Quit"
+msgstr "_Phuma"
+
+#: ../src/empathy-roster-window.ui.h:1
+#, fuzzy
+#| msgid "_Accounts"
+msgid "Account settings"
+msgstr "_Ama-akhawunti"
+
+#: ../src/empathy-roster-window.ui.h:2
+msgid "Go _Online"
+msgstr ""
+
+#: ../src/empathy-roster-window.ui.h:3
+#, fuzzy
+#| msgid "Show offline contacts"
+msgid "Show _Offline Contacts"
+msgstr "Bonisa ongabathinta abangaphandle kolayini"
+
+#: ../src/empathy-status-icon.ui.h:4
+msgid "Status"
+msgstr "Isimo"
+
+#: ../ubuntu-online-accounts/cc-plugins/account-plugins/empathy-accounts-plugin-widget.c:183
+#: ../ubuntu-online-accounts/cc-plugins/app-plugin/empathy-app-plugin-widget.c:126
+msgid "Done"
+msgstr ""
+
+#: ../ubuntu-online-accounts/cc-plugins/account-plugins/empathy-accounts-plugin-widget.c:214
+#, fuzzy
+#| msgid "Enter your account details"
+msgid "Please enter your account details"
+msgstr "Faka imininingwane yakho ye-akhawunti"
+
+#: ../ubuntu-online-accounts/cc-plugins/app-plugin/empathy-app-plugin-widget.c:160
+#, fuzzy, c-format
+#| msgid "Loading account information"
+msgid "Edit %s account options"
+msgstr "Ilayisha ulwazi lwe-akhawunti"
+
+#: ../ubuntu-online-accounts/empathy.application.in.h:1
+#, fuzzy
+#| msgid "Enter your account details"
+msgid "Integrate your IM accounts"
+msgstr "Faka imininingwane yakho ye-akhawunti"
+
+#~ msgid "Compact contact list"
+#~ msgstr "Uhlu lokuxhumana oluqoqelene ndawonye"
+
+#~ msgid "Contact list sort criterion"
+#~ msgstr "Uhlu lokuxhumana luhlungwe ngemibandela"
+
+#~ msgid "Empathy can use the GPS to guess the location"
+#~ msgstr "I-Empathy ingasebenzisa i-GPS ukuqagela indawo"
+
+#~ msgid "Empathy can use the cellular network to guess the location"
+#~ msgstr ""
+#~ "I-Empathy ingasebenzisa inethiwekhi yomakhalekhukhwini ukuqagela indawo"
+
+#~ msgid "Empathy can use the network to guess the location"
+#~ msgstr "I-Empathy ingasebenzisa inethiwekhi ukuqagela indawo"
+
+#~ msgid "Empathy has migrated butterfly logs"
+#~ msgstr "I-Empathy igudluze amalogi wevevane"
+
+#~ msgid "Show avatars"
+#~ msgstr "Bonisa isithombe esiyisifaniso muntu"
+
+#~ msgid "Whether Empathy can use the GPS to guess the location."
+#~ msgstr "Uma ngabe i-Emmathy ingasebenzisa iGPS ukuqagela indawo."
+
+#~ msgid "Whether Empathy can use the cellular network to guess the location."
+#~ msgstr ""
+#~ "Uma ngabe i-Empathy ingasebenzisa inethiwekhi kamakhalekhukhwini "
+#~ "ukuqagela indawo."
+
+#~ msgid "Whether Empathy can use the network to guess the location."
+#~ msgstr "Uma ngabe i-Empathy ingasebenzisa inethiwekhi ukuqagela indawo."
+
+#~ msgid "Whether Empathy has migrated butterfly logs."
+#~ msgstr "Uma ngabe I-Empathy ingagudluza amalogi wevevane."
+
+#~ msgid ""
+#~ "Whether to show avatars for contacts in the contact list and chat windows."
+#~ msgstr ""
+#~ "Uma ngabe kungaboniswa isithombe esingumfanekiso muntu kubantu "
+#~ "abangathintwa kuhlu lwabangathintwa nakufasitela lwengxoxo."
+
+#~ msgid "Whether to show protocols for contacts in the contact list."
+#~ msgstr ""
+#~ "Uma ngabe kungaboniswa imithetho elandelwayo kwabathintwayo kuhlu "
+#~ "lokuxhumana."
+
+#~ msgid "Whether to show the contact list in compact mode."
+#~ msgstr "Uma ngabe kungaboniswa uhlu lokuxhumana kwimodi efinqiwe."
+
+#~ msgid ""
+#~ "Which criterion to use when sorting the contact list. Default is to sort "
+#~ "by the contact's name with the value \"name\". A value of \"state\" will "
+#~ "sort the contact list by state."
+#~ msgstr ""
+#~ "Iluphi uhlu olungasetshenziswa uma kuhlelwa uhlu lokuxhumana. Okwakhona "
+#~ "ukuhlela ngegama longathintwa \"ngegama\" lenani. Inani \"lesimo\" "
+#~ "lizohlela uhlu lokuxhumana ngesifundazwe."
+
+#~ msgid "Manage Messaging and VoIP accounts"
+#~ msgstr "Manenja ukulayeza nama VoIP akhawunti"
+
+#~ msgid "Socket type not supported"
+#~ msgstr "Uhlobo lwe-socket aluxhasiwe"
+
+#~ msgid "Yahoo! Japan"
+#~ msgstr "I-Yahoo! Japane"
+
+#~ msgid "%d hour ago"
+#~ msgid_plural "%d hours ago"
+#~ msgstr[0] "ihora elingu %d eledlule"
+#~ msgstr[1] "amahora angu %d adlule"
+
+#~ msgid "%d day ago"
+#~ msgid_plural "%d days ago"
+#~ msgstr[0] "usuku eli- %d eledlule"
+#~ msgstr[1] "izinsuku ezingu %d ezedlule"
+
+#~ msgid "%d week ago"
+#~ msgid_plural "%d weeks ago"
+#~ msgstr[0] "evikini elingu- %d eledlule"
+#~ msgstr[1] "amaviki angu- %d adlule"
+
+#~ msgid "%d month ago"
+#~ msgid_plural "%d months ago"
+#~ msgstr[0] "inyanga engu- %d edlule"
+#~ msgstr[1] "izinyanga ezingu- %d ezedlule"
+
+#~ msgid "in the future"
+#~ msgstr "ngokuzayo"
+
+#~ msgid "Password"
+#~ msgstr "Igama lokungena"
+
+#~ msgid "Server"
+#~ msgstr "Isiphakeli"
+
+#~ msgid "Port"
+#~ msgstr "Imbobo yokuxhumana"
+
+#~ msgid "%s:"
+#~ msgstr "%s:"
+
+#~ msgid "The account %s is edited via My Web Accounts."
+#~ msgstr "I-akhawunti %s ihlelwe ngama-akhawunti we My Web."
+
+#~ msgid "The account %s cannot be edited in Empathy."
+#~ msgstr "I-akhawunti %s ayikwazi ukuhlelwa kwi Empathy."
+
+#~ msgid "Launch My Web Accounts"
+#~ msgstr "Qalisa ama-akhawunti we My Web"
+
+#~ msgid "Username:"
+#~ msgstr "Igama lomsebenzisi:"
+
+#~ msgid "A_pply"
+#~ msgstr "F_aka"
+
+#~ msgid "L_og in"
+#~ msgstr "N_gena"
+
+#~ msgid "This account already exists on the server"
+#~ msgstr "I-akhawunti seyivele ikhona kwisiphakeli"
+
+#~ msgid "Create a new account on the server"
+#~ msgstr "Dala i-akhawunti entsha kwisiphakeli"
+
+#~ msgid "Ca_ncel"
+#~ msgstr "Ch_itha"
+
+#~ msgid "%1$s on %2$s"
+#~ msgstr "%1$s ku-%2$s"
+
+#~ msgid "%s Account"
+#~ msgstr "%s Akhawunti"
+
+#~ msgid "<b>Example:</b> MyScreenName"
+#~ msgstr "<b>Isibonelo:</b> MyScreenName"
+
+#~ msgid "Advanced"
+#~ msgstr "Okuseqophelweni"
+
+#~ msgid "Pass_word:"
+#~ msgstr "Igama_lokungena:"
+
+#~ msgid "Remember Password"
+#~ msgstr "Khumbula igama lokungena"
+
+#~ msgid "Screen _Name:"
+#~ msgstr "Igama _lesihenqo:"
+
+#~ msgid "What is your AIM password?"
+#~ msgstr "Yini igama lakho lokungena le-AIM?"
+
+#~ msgid "What is your AIM screen name?"
+#~ msgstr "Yini igama lesihenqo sakho se-AIM?"
+
+#~ msgid "_Port:"
+#~ msgstr "_Imbobo yokuxhumana:"
+
+#~ msgid "<b>Example:</b> username"
+#~ msgstr "<b>Isibonelo:</b> igama lomsebenzisi"
+
+#~ msgid "Login I_D:"
+#~ msgstr "Ngena I_D:"
+
+#~ msgid "What is your GroupWise User ID?"
+#~ msgstr "Yini i-ID yakho yomsebenzisi ye-GroupWise?"
+
+#~ msgid "What is your GroupWise password?"
+#~ msgstr "Yini igama lakho lokungena le-GroupWise?"
+
+#~ msgid "<b>Example:</b> 123456789"
+#~ msgstr "<b>Isibonelo:</b> 123456789"
+
+#~ msgid "Ch_aracter set:"
+#~ msgstr "Uh_lamvusimo lumisime:"
+
+#~ msgid "ICQ _UIN:"
+#~ msgstr "ICQ _UIN:"
+
+#~ msgid "What is your ICQ UIN?"
+#~ msgstr "Yini i-ICQ UIN yakho?"
+
+#~ msgid "What is your ICQ password?"
+#~ msgstr "Yini igama lakho lokungena le ICQ?"
+
+#~ msgid "Auto"
+#~ msgstr "Ukuzenzakalela"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "TLS"
+#~ msgstr "TLS"
+
+#~ msgid "Register"
+#~ msgstr "Bhalisa"
+
+#~ msgid "Options"
+#~ msgstr "Izinketho"
+
+#~ msgid "None"
+#~ msgstr "Lutho"
+
+#~ msgid "Character set:"
+#~ msgstr "Uhlamvusimo lumisiwe:"
+
+#~ msgid "Network"
+#~ msgstr "Inethiwekhi"
+
+#~ msgid "Network:"
+#~ msgstr "Inethiwekhi:"
+
+#~ msgid "Nickname:"
+#~ msgstr "Isiteketiso:"
+
+#~ msgid "Password:"
+#~ msgstr "Igama lokungena:"
+
+#~ msgid "Quit message:"
+#~ msgstr "Umlayezo wokuphuma:"
+
+#~ msgid "Servers"
+#~ msgstr "Iziphakeli"
+
+#~ msgid "What is your IRC nickname?"
+#~ msgstr "Yini isiteketiso sakho seIRC?"
+
+#~ msgid "Which IRC network?"
+#~ msgstr "Iyiphi inethiwekhi ye-IRC?"
+
+#~ msgid "<b>Example:</b> user@gmail.com"
+#~ msgstr "<b>Isibonelo:</b> user@gmail.com"
+
+#~ msgid "<b>Example:</b> user@jabber.org"
+#~ msgstr "<b>Isibonelo:</b> user@jabber.org"
+
+#~ msgid "Encr_yption required (TLS/SSL)"
+#~ msgstr "Ukub_hala okuyimfihlo kuyadingeka (TLS/SSL)"
+
+#~ msgid "I_gnore SSL certificate errors"
+#~ msgstr "Shaya i_ndiva amaphutha wesitifiketi se SSL"
+
+#~ msgid "Override server settings"
+#~ msgstr "Dlova izimiso zesiphakeli"
+
+#~ msgid "Priori_ty:"
+#~ msgstr "Okusem_qoka:"
+
+#~ msgid "Reso_urce:"
+#~ msgstr "Insi_za:"
+
+#~ msgid ""
+#~ "This is your username, not your normal Facebook login.\n"
+#~ "If you are facebook.com/<b>badger</b>, enter <b>badger</b>.\n"
+#~ "Use <a href=\"http://www.facebook.com/username/\">this page</a> to choose "
+#~ "a Facebook username if you don't have one."
+#~ msgstr ""
+#~ "Leli igama lakho lomsebenzisi, hhayi igama lokungena elijwayelekile lakho "
+#~ "le-Facebook.\n"
+#~ "Uma ngabe ungu-facebook.com/<b>i-badger</b>, faka <b>i-badger</b>.\n"
+#~ "Sebenzisa <a href=\"http://www.facebook.com/username/\">leli khasi</a> "
+#~ "ukukhetha igama lomsebenzisi le Facebook uma ngabe ungenalo."
+
+#~ msgid "Use old SS_L"
+#~ msgstr "Sebenzisa endala i-SS_L"
+
+#~ msgid "What is your Facebook password?"
+#~ msgstr "Yini igama lakho lokungena le Facebook?"
+
+#~ msgid "What is your Facebook username?"
+#~ msgstr "Yini igama lakho lomsebenzisi le Facebook?"
+
+#~ msgid "What is your Google ID?"
+#~ msgstr "Yini i-ID yakho ye-Google?"
+
+#~ msgid "What is your Google password?"
+#~ msgstr "Yini igama lakho lokungena le-Google?"
+
+#~ msgid "What is your Jabber ID?"
+#~ msgstr "Yini i-ID yakho ye-Jabber?"
+
+#~ msgid "What is your Jabber password?"
+#~ msgstr "Yini igama lakho lokungena le-Jabber?"
+
+#~ msgid "What is your desired Jabber ID?"
+#~ msgstr "Yini i-ID yakho ye-Jabber oyifisayo?"
+
+#~ msgid "What is your desired Jabber password?"
+#~ msgstr "Yini igama lokungena le-Jabber olifisayo?"
+
+#~ msgid "<b>Example:</b> user@hotmail.com"
+#~ msgstr "<b>Isibonelo</b> user@hotmail.com"
+
+#~ msgid "What is your Windows Live ID?"
+#~ msgstr "Yini i-ID yakho ye-Windows Live?"
+
+#~ msgid "What is your Windows Live password?"
+#~ msgstr "Yini igama lokungena lakho le-Windows Live?"
+
+#~ msgid "E-_mail address:"
+#~ msgstr "I_kheli le-imeyli:"
+
+#~ msgid "Nic_kname:"
+#~ msgstr "Isi_teketiso:"
+
+#~ msgid "_First Name:"
+#~ msgstr "_Igama lokuqala:"
+
+#~ msgid "_Jabber ID:"
+#~ msgstr "I-ID ye-_Jabber:"
+
+#~ msgid "_Last Name:"
+#~ msgstr "_Isibongo:"
+
+#~ msgid "_Published Name:"
+#~ msgstr "Igama _elishicilelwe:"
+
+#~ msgid "<b>Example:</b> user@my.sip.server"
+#~ msgstr "<b>Isibonelo:</b> user@my.sip.server"
+
+#~ msgid "Authentication username:"
+#~ msgstr "Kuqinisekiswa igama lomsebenzisi:"
+
+#~ msgid "Discover Binding"
+#~ msgstr "Thola ukubophezela"
+
+#~ msgid "Discover the STUN server automatically"
+#~ msgstr "Thola isiphakeli se-STUN ngokuzenzakalela"
+
+#~ msgid "Ignore TLS Errors"
+#~ msgstr "Unganaki amaphutha we-TLS"
+
+#~ msgid "Keep-Alive Options"
+#~ msgstr "Gcina izinkethi ziphila"
+
+#~ msgid "Loose Routing"
+#~ msgstr "Ukuthutha okuxegayo"
+
+#~ msgid "Mechanism:"
+#~ msgstr "Umshini:"
+
+#~ msgid "Miscellaneous Options"
+#~ msgstr "Izinketho eziyingxubevange"
+
+#~ msgid "NAT Traversal Options"
+#~ msgstr "Izinkethi ze-NAT Traversal"
+
+#~ msgid "Port:"
+#~ msgstr "Imbobo yokuxhumana:"
+
+#~ msgid "Proxy Options"
+#~ msgstr "Izinkethi zomnikezeli"
+
+#~ msgid "STUN Server:"
+#~ msgstr "Isiphakeli ye-STUN:"
+
+#~ msgid "Server:"
+#~ msgstr "Isiphakeli:"
+
+#~ msgid "Transport:"
+#~ msgstr "Thutha:"
+
+#~ msgid "What is your SIP account password?"
+#~ msgstr "Yini igama lakho lokungena kwi-akhawunti ye-SIP?"
+
+#~ msgid "What is your SIP login ID?"
+#~ msgstr "Yini i-ID ykho yokungena ye-SIP?"
+
+#~ msgid "_Username:"
+#~ msgstr "_Igama lomsebenzisi:"
+
+#~ msgid "I_gnore conference and chat room invitations"
+#~ msgstr "Shaya i_ndiva izimemo zenkomfa kanye nezegumbi lokuxoxa"
+
+#~ msgid "What is your Yahoo! ID?"
+#~ msgstr "Yini i-Yahoo! ID yakho?"
+
+#~ msgid "What is your Yahoo! password?"
+#~ msgstr "Yini igama lokungena lakho le Yahoo?"
+
+#~ msgid "Yahoo! I_D:"
+#~ msgstr "I-Yahoo! I_D:"
+
+#~ msgid "_Room List locale:"
+#~ msgstr "_Uhlu lwegumbi lendawo:"
+
+#~ msgid "Couldn't convert image"
+#~ msgstr "Akuphumelelanga ukuguqula isithombe"
+
+#~ msgid "None of the accepted image formats are supported on your system"
+#~ msgstr "Ayikho ifomethi kwizithombe ezamukelwe esekelwe kwizimiso zakho"
+
+#~ msgid "Couldn't save pixbuf to png"
+#~ msgstr "Ayikwazi ukugcina i-pixbuf ku-png"
+
+#~ msgid "Select Your Avatar Image"
+#~ msgstr "Khetha isithombe esingumboniso muntu"
+
+#~ msgid "Take a picture..."
+#~ msgstr "Thatha isithombe..."
+
+#~ msgid "No Image"
+#~ msgstr "Asikho isithombe"
+
+#~ msgid "Images"
+#~ msgstr "Izithombe"
+
+#~ msgid "All Files"
+#~ msgstr "Wonke amafayela"
+
+#~ msgid "“%s” is not a valid contact ID"
+#~ msgstr "u-“%s” akusibo ubunikazi bongathintwa obuvumelekile"
+
+#~ msgid "%A %B %d %Y"
+#~ msgstr "%A %d %B %Y"
+
+#~ msgid "Personal Information"
+#~ msgstr "Ulwazi lomuntu"
+
+#~ msgid "Decide _Later"
+#~ msgstr "Nquma _ekuhambeni kwesikhathi"
+
+#~ msgid "_Block User"
+#~ msgstr "_Vimba umsebenzisi"
+
+#~ msgid "Favorite People"
+#~ msgstr "Abantu abayizintandokazi"
+
+#~ msgctxt "Edit contact (contextual menu)"
+#~ msgid "_Edit"
+#~ msgstr "_Hlela"
+
+#~ msgid "Full name:"
+#~ msgstr "Igama eliphelele:"
+
+#~ msgid "Phone number:"
+#~ msgstr "Inombolo yocingo:"
+
+#~ msgid "E-mail address:"
+#~ msgstr "Ikheli le-imeyli:"
+
+#~ msgid "Website:"
+#~ msgstr "I-webhusaythi:"
+
+#~ msgid "Birthday:"
+#~ msgstr "Usuku lokuzalwa:"
+
+#~ msgid "Last seen:"
+#~ msgstr "Ugcine ukubonwa:"
+
+#~ msgid "Connected from:"
+#~ msgstr "Ixhunywe kusuka ku:"
+
+#~ msgid "Away message:"
+#~ msgstr "Umlayezo wokuba kude:"
+
+#~ msgid "Select contacts to link"
+#~ msgstr "Khetha abangathintwa ongabaxhuma"
+
+#~ msgid "New contact preview"
+#~ msgstr "Isibonisikuqala songathintwa omusha"
+
+#~ msgid "Contacts selected in the list on the left will be linked together."
+#~ msgstr ""
+#~ "Abangathintwa abakhethwe kuhlu olusesandleni sobunxele bazoxhunywa bonke."
+
+#~ msgctxt "Link individual (contextual menu)"
+#~ msgid "_Link Contacts…"
+#~ msgstr "_Xhumanisa abangathintwa…"
+
+#~ msgid "New Network"
+#~ msgstr "Inethiwekhi entsha"
+
+#~ msgid "Choose an IRC network"
+#~ msgstr "Khetha inethiwekhi ye IRC"
+
+#~ msgid "Reset _Networks List"
+#~ msgstr "Setha kabusha uhlu lwama_nethiwekhi"
+
+#~ msgctxt "verb displayed on a button to select an IRC network"
+#~ msgid "Select"
+#~ msgstr "Khetha"
+
+#~ msgid "new server"
+#~ msgstr "isiphakeli esisha"
+
+#~ msgid "SSL"
+#~ msgstr "I-SSL"
+
+#~ msgid "Link Contacts"
+#~ msgstr "Xhumanisa abangathintwa"
+
+#~ msgctxt "Unlink individual (button)"
+#~ msgid "_Unlink…"
+#~ msgstr "_Hlukanisa…"
+
+#~ msgid ""
+#~ "Completely split the displayed linked contacts into the separate contacts."
+#~ msgstr ""
+#~ "Hlukanisa ngokugcwele abangathintwa abaxhunyiwe ubafake kwabangathintwa "
+#~ "abahlukanisiwe."
+
+#~ msgid "_Link"
+#~ msgstr "_Xhumanisa"
+
+#~ msgid "Unlink linked contacts '%s'?"
+#~ msgstr "Hlukanisa abangathintwa '%s' abaxhunyiwe?"
+
+#~ msgid ""
+#~ "Are you sure you want to unlink these linked contacts? This will "
+#~ "completely split the linked contacts into separate contacts."
+#~ msgstr ""
+#~ "Unesiqiniseko sokuthi ufuna ukuhlukanisa laba abangathintwa abaxhunyiwe? "
+#~ "Lokhu kuzohlukanisa ngokuphelele abangathintwa abaxhunyiwe bafakwe "
+#~ "kwabangathintwa abahlukanisiwe."
+
+#~ msgctxt "Unlink individual (button)"
+#~ msgid "_Unlink"
+#~ msgstr "_Hlukanisa"
+
+#~ msgid "Contact ID:"
+#~ msgstr "I-ID yezokuxhumana:"
+
+#~ msgid "C_hat"
+#~ msgstr "X_oxa"
+
+#~ msgid "Send _Video"
+#~ msgstr "Thumela _ividiyo"
+
+#~ msgid "C_all"
+#~ msgstr "T_hinta"
+
+#~ msgid "Set your presence and current status"
+#~ msgstr "Misa ubukhona bakho nesimo sakho samanje"
+
+#~ msgid "New %s account"
+#~ msgstr "I-akhawunti %s entsha"
+
+#~ msgid "Find Next"
+#~ msgstr "Thola okulandelayo"
+
+#~ msgid "Find Previous"
+#~ msgstr "Thola okudlule"
+
+#~ msgid "Classic"
+#~ msgstr "Okungasoze kwabuna"
+
+#~ msgid "Simple"
+#~ msgstr "Okulula"
+
+#~ msgid "Clean"
+#~ msgstr "Okuhlanzekile"
+
+#~ msgid "Blue"
+#~ msgstr "Uluhlaza okwesibhakabhaka"
+
+#~ msgid "Current Locale"
+#~ msgstr "Indawo yamanje"
+
+#~ msgid "Arabic"
+#~ msgstr "isi-Arabhu"
+
+#~ msgid "Armenian"
+#~ msgstr "isi-Ameniyani"
+
+#~ msgid "Baltic"
+#~ msgstr "isi-Bhalthikhi"
+
+#~ msgid "Celtic"
+#~ msgstr "isi-Selthikhi"
+
+#~ msgid "Central European"
+#~ msgstr "Maphakathi neYurophu"
+
+#~ msgid "Chinese Simplified"
+#~ msgstr "isi-Shayina esenziwe lula"
+
+#~ msgid "Chinese Traditional"
+#~ msgstr "isi-Shayina sendabuko"
+
+#~ msgid "Croatian"
+#~ msgstr "isi-Khroweshiyeni"
+
+#~ msgid "Cyrillic"
+#~ msgstr "isi-Sayrillikhi"
+
+#~ msgid "Cyrillic/Russian"
+#~ msgstr "isi-Sayrillikhi/Rashiyeni"
+
+#~ msgid "Cyrillic/Ukrainian"
+#~ msgstr "isi-Sayrillikhi/Yukhreniyeni"
+
+#~ msgid "Georgian"
+#~ msgstr "isi-Jiyojiyeni"
+
+#~ msgid "Greek"
+#~ msgstr "isi-Grigi"
+
+#~ msgid "Gujarati"
+#~ msgstr "isi-Gujarati"
+
+#~ msgid "Gurmukhi"
+#~ msgstr "isi-Gumukhi"
+
+#~ msgid "Hebrew"
+#~ msgstr "isi-Hebheru"
+
+#~ msgid "Hebrew Visual"
+#~ msgstr "isi-Hebheru (visual)"
+
+#~ msgid "Hindi"
+#~ msgstr "isi-Hindi"
+
+#~ msgid "Icelandic"
+#~ msgstr "isi-Icelandic"
+
+#~ msgid "Japanese"
+#~ msgstr "isi-Japani"
+
+#~ msgid "Korean"
+#~ msgstr "isi-Khoriyeni"
+
+#~ msgid "Nordic"
+#~ msgstr "isi-Nodikhi"
+
+#~ msgid "Persian"
+#~ msgstr "isi-Pheshiyeni"
+
+#~ msgid "Romanian"
+#~ msgstr "isi-Romeni"
+
+#~ msgid "South European"
+#~ msgstr "isi-Niningizimu Yurophu"
+
+#~ msgid "Thai"
+#~ msgstr "isi-Thayi"
+
+#~ msgid "Turkish"
+#~ msgstr "isi-Thekishi"
+
+#~ msgid "Unicode"
+#~ msgstr "i-Yunikhodi"
+
+#~ msgid "Western"
+#~ msgstr "Intshonalanga"
+
+#~ msgid "Vietnamese"
+#~ msgstr "isi-Vietnamese"
+
+#~ msgid "The selected contact cannot receive files."
+#~ msgstr "Ongathintwa okhethiwe akakwazi ukwamukela amafayela."
+
+#~ msgid "The selected contact is offline."
+#~ msgstr "Ongathintwa okhethiwe ungaphandle kolayini."
+
+#~ msgid "No error message"
+#~ msgstr "Awukho umlayezo wephutha"
+
+#~ msgid "Instant Message (Empathy)"
+#~ msgstr "Umlayezo osheshayo (i-Empathy)"
+
+#~ msgid ""
+#~ "Empathy is free software; you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation; either version 2 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "I-Empathy i-software ekhululekile; ungabelana ngayo noma futhi "
+#~ "uyiguquguqule ngaphansi kwamatemu we-GNU ilayisensi yomphakathi "
+#~ "Ejwayelekile eshicilelwe i-Free Software Foundation; kungaba isibuyekezo "
+#~ "sesi-2 selayisensi, noma (kuzinketho zakho) ukhethe noma isiphi "
+#~ "isibuyekezo."
+
+#~ msgid ""
+#~ "Empathy is distributed in the hope that it will be useful, but WITHOUT "
+#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+#~ "more details."
+#~ msgstr ""
+#~ "I-Empathy yabelwa ethembeni lokuthi izoba usizo, kepha ngaphandle "
+#~ "kwesiqiniseko; nangaphandle kwesiqiniseko esiqondiwe sokuthengisekayo "
+#~ "noma ukulungela injongo ethile.  Bheka i-GNU layisensi yomphakathi "
+#~ "ejwayelekile ukuze uthole eminye imininingwane."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Empathy; if not, write to the Free Software Foundation, Inc., 51 "
+#~ "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+#~ msgstr ""
+#~ "Kumele kube usuyitholile ikophi yelayisensi ejwayelekile yomphakathi ye-"
+#~ "GNU ehamba ne-Empathy; uma ungayitholanga, bhalela ku-Free Software "
+#~ "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA "
+#~ "02110-130159 USA"
+
+#~ msgid "There was an error while importing the accounts."
+#~ msgstr "Kube nephutha ngenkathi kungeniswa ama-akhawunti."
+
+#~ msgid "There was an error while parsing the account details."
+#~ msgstr "Kube nephutha ngenkathi kudluliswa imininingwane ye-akhawunti."
+
+#~ msgid "There was an error while creating the account."
+#~ msgstr "Kube nephutha ngenkathi kudalwa i-akhawunti."
+
+#~ msgid "There was an error."
+#~ msgstr "Kube nephutha."
+
+#~ msgid "The error message was: %s"
+#~ msgstr "Umlayezo wephutha bekungu: %s"
+
+#~ msgid ""
+#~ "You can either go back and try to enter your accounts' details again or "
+#~ "quit this assistant and add accounts later from the Edit menu."
+#~ msgstr ""
+#~ "Ungabuyela emuva bese uzama ukufaka imininingwane yama-akhawunti akho "
+#~ "futhi noma uphume kulo msizi bese ungeza ama-akhawunti kamuva kusukela "
+#~ "kumenyu yokuhlela."
+
+#~ msgid "An error occurred"
+#~ msgstr "Kwenzeke iphutha"
+
+#~ msgid "Do you have any other chat accounts you want to set up?"
+#~ msgstr ""
+#~ "Ingabe unawo amanye ama-akhawunti wokuxoxa ofuna ukuwamisa kahle na?"
+
+#~ msgid "What kind of chat account do you want to create?"
+#~ msgstr "Ufuna ukudala luphi uhlobo lwe-akhawunti yokuxoxa na?"
+
+#~ msgid "Do you want to create other chat accounts?"
+#~ msgstr "Ingabe ufuna ukudala amanye ama-akhawunti wokuxoxa na?"
+
+#~ msgid "Enter the details for the new account"
+#~ msgstr "Faka imininingwane ye-akhawunti entsha"
+
+#~ msgid ""
+#~ "With Empathy you can chat with people online nearby and with friends and "
+#~ "colleagues who use Google Talk, AIM, Windows Live and many other chat "
+#~ "programs. With a microphone or a webcam you can also have audio or video "
+#~ "calls."
+#~ msgstr ""
+#~ "Nge-Empathy ungakwazi ukuxoxa nabantu abakulayini abaseduze futhi "
+#~ "nabangani nosebenza nabo abasebenzisa i-Google Talk, i-AIM, i-Windows "
+#~ "Live nezinye izinhlelo eziningi zokuxoxa. Ngombhobho noma ngekhamera "
+#~ "yewebhu ungaba nezincingo zemisindo nezeviidiyo."
+
+#~ msgid "Do you have an account you've been using with another chat program?"
+#~ msgstr "Ingabe unayo i-akhawunti obuyisebenzisa nolunye uhlelo lokuxoxa?"
+
+#~ msgid "Yes, import my account details from "
+#~ msgstr "Yebo, ngenisa imininingwane ye-akhawunti yami isuka ku "
+
+#~ msgid "Yes, I'll enter my account details now"
+#~ msgstr "Yebo, ngizofaka imininingwane ye-akhawunti yami manje"
+
+#~ msgid "No, I want a new account"
+#~ msgstr "Cha, ngifuna i-akhawunti entsha"
+
+#~ msgid "No, I just want to see people online nearby for now"
+#~ msgstr "Cha, ngifuna ukubona abantu abakulayini abaseduze nje manje"
+
+#~ msgid "Select the accounts you want to import:"
+#~ msgstr "Khetha i-akhawunti ofuna ukuyingenisa:"
+
+#~ msgid "No, that's all for now"
+#~ msgstr "Cha, yikho konke lokho okwamanje"
+
+#~ msgid "Edit->Accounts"
+#~ msgstr "Hlela->Ama-akhawunti"
+
+#~ msgid "I do _not want to enable this feature for now"
+#~ msgstr "Angifuni _ukuvumela lesici manje"
+
+#~ msgid ""
+#~ "You won't be able to chat with people connected to your local network, as "
+#~ "telepathy-salut is not installed. If you want to enable this feature, "
+#~ "please install the telepathy-salut package and create a People Nearby "
+#~ "account from the Accounts dialog"
+#~ msgstr ""
+#~ "Angeke ukwazi ukuxoxa nabantu abaxhunywe kwinethiwekhi yasekhaya, "
+#~ "njengoba ithelephathi-salut ingafakwanga. Uma ngabe ufuna ukuvumela "
+#~ "lesici, uyacelwa ukuba ufake iphakethe le-thelephathi-salut bese udala i-"
+#~ "akhawunti yabantu abaseduze esuka kuma-akhawunti wezingxoxo"
+
+#~ msgid "Messaging and VoIP Accounts Assistant"
+#~ msgstr "Usizo lokulayeza nama VoIP akhawunti"
+
+#~ msgid "Welcome to Empathy"
+#~ msgstr "Wamukelekile kwi-Empathy"
+
+#~ msgid "Import your existing accounts"
+#~ msgstr "Ngenisa ama-akhawunti wakho akhona"
+
+#~ msgid "Please enter personal details"
+#~ msgstr "Uyacelwa ukuba ufake imininingwane yakho"
+
+#~ msgid ""
+#~ "You are about to create a new account, which will discard\n"
+#~ "your changes. Are you sure you want to proceed?"
+#~ msgstr ""
+#~ "Usuzodala i-akhawunti entsha, ezolahla\n"
+#~ "izinguquko zakho. Uqinisekile ukuba uyafuna ukuqhubeka?"
+
+#~ msgid "_Enable"
+#~ msgstr "_Nikeza amandla"
+
+#~ msgid "_Disable"
+#~ msgstr "_Khubaza"
+
+#~ msgid "Protocol:"
+#~ msgstr "Umthetho olandelwayo:"
+
+#~ msgid "Contrast"
+#~ msgstr "Ugqamu-cishi"
+
+#~ msgid "Brightness"
+#~ msgstr "Ukukhanya"
+
+#~ msgid "Gamma"
+#~ msgstr "i-Gamma"
+
+#~ msgid "Volume"
+#~ msgstr "Ingakomsindo"
+
+#~ msgid "_Sidebar"
+#~ msgstr "_Ibha eseceleni"
+
+#~ msgid "Audio input"
+#~ msgstr "Okokufakwa okwemisindo"
+
+#~ msgid "Video input"
+#~ msgstr "Okokufakwa okwevidiyo"
+
+#~ msgid "Dialpad"
+#~ msgstr "Iphedi lokudayela"
+
+#~ msgid "Details"
+#~ msgstr "Imininingwane"
+
+#~ msgctxt "encoding video codec"
+#~ msgid "Unknown"
+#~ msgstr "Akwaziwa"
+
+#~ msgctxt "encoding audio codec"
+#~ msgid "Unknown"
+#~ msgstr "Akwaziwa"
+
+#~ msgctxt "decoding video codec"
+#~ msgid "Unknown"
+#~ msgstr "Akwaziwa"
+
+#~ msgctxt "decoding audio codec"
+#~ msgid "Unknown"
+#~ msgstr "Akwaziwa"
+
+#~ msgid "Connected — %d:%02dm"
+#~ msgstr "Ixhunyiwe — %d:%02dm"
+
+#~ msgid "Call the contact again"
+#~ msgstr "Shayela ucingo ongathintwa futhi"
+
+#~ msgid "Redial"
+#~ msgstr "Phinda udayele"
+
+#~ msgid "Send Audio"
+#~ msgstr "Thumela okwemisindo"
+
+#~ msgid "Send Video"
+#~ msgstr "Thumela ividiyo"
+
+#~ msgid "Top up %s (%s)..."
+#~ msgstr "Gcwalisa %s (%s)..."
+
+#~ msgid "Contacts on a _Map"
+#~ msgstr "Abangathintwa kwim_ephu"
+
+#~ msgid "Credit Balance"
+#~ msgstr "Inani lemali ekhona"
+
+#~ msgid "Find in Contact _List"
+#~ msgstr "Thola _kuhlu lwabangathintwa"
+
+#~ msgid "N_ormal Size"
+#~ msgstr "U_sayizi ojwayelekile"
+
+#~ msgid "Normal Size With _Avatars"
+#~ msgstr "Usayizi ojwayelekile _nemibonisomuntu"
+
+#~ msgid "Show P_rotocols"
+#~ msgstr "Bonisa i_mithetho elandelwayo"
+
+#~ msgid "Sort by _Name"
+#~ msgstr "Hlunga _ngokwamagama"
+
+#~ msgid "Sort by _Status"
+#~ msgstr "Hlunga _ngokwesimo"
+
+#~ msgid "_Compact Size"
+#~ msgstr "_Usayizi ocinene"
+
+#~ msgid "_Offline Contacts"
+#~ msgstr "_Abangathintwa abangaphandle kolayini"
+
+#~ msgid "_Personal Information"
+#~ msgstr "_Ulwazi lomuntu"
+
+#~ msgid "Could not start room listing"
+#~ msgstr "Akuphumelelanga ukuqalwa kokuhlelwa kwegumbi"
+
+#~ msgid "Could not stop room listing"
+#~ msgstr "Akuphumelelanga ukumiswa kokuhlelwa kwegumbi"
+
+#~ msgid "Appearance"
+#~ msgstr "Ukubonakala"
+
+#~ msgid "Location sources:"
+#~ msgstr "Imithombo yendawo:"
+
+#~ msgid "_Cellphone"
+#~ msgstr "_Umakhalekhukhwini"
+
+#~ msgid "_GPS"
+#~ msgstr "i-_GPS"
+
+#~ msgid "_Network (IP, Wi-Fi)"
+#~ msgstr "I_nethiwekhi (IP, Wi-Fi)"
+
+#~ msgid "_Open new chats in separate windows"
+#~ msgstr "_Vula izingxoxo ezintsha kumafasitela ahlukile"
+
+#~ msgid "Camera Off"
+#~ msgstr "Ikhamera icinyiwe"
+
+#~ msgid "Disable camera and stop sending video"
+#~ msgstr "Nqabela ikhamera bese uvimba ukuthunyelwa kwevidiyo"
+
+#~ msgid "Enable camera and send video"
+#~ msgstr "Vumela ikhamera bese uthumela ividiyo"
+
+#~ msgid "Enable camera but don't send video"
+#~ msgstr "Vumela ikhamera kepha ungathumeli ividiyo"
+
+#~ msgid "Preview"
+#~ msgstr "Bonakuqala"
+
+#~ msgid "V_ideo"
+#~ msgstr "Iv_idiyo"
+
+#~ msgid "Video Off"
+#~ msgstr "Ividiyo icishiwe"
+
+#~ msgid "Video On"
+#~ msgstr "Ividiyo ivuliwe"
+
+#~ msgid "Video Preview"
+#~ msgstr "Bonakuqala ividiyo"
+
+#~ msgid "Contact Map View"
+#~ msgstr "Ukubonakala kwemephu yabangathintwa"
+
+#~ msgid "i"
+#~ msgstr "i"
+
+#~ msgid "Call with %d participants"
+#~ msgstr "Thinta ngo %d wababambi qhaza"
+
+#~ msgid "All"
+#~ msgstr "Bonke"
+
+#~ msgid "Date"
+#~ msgstr "Usuku"
+
+#~ msgid "Conversations"
+#~ msgstr "Izingxoxo"
+
+#~ msgid "Previous Conversations"
+#~ msgstr "Izingxoxo ezedlule"
+
+#~ msgid "_For:"
+#~ msgstr "_Funa okuthile:"
+
+#~ msgid "Enter Custom Message"
+#~ msgstr "Faka umlayezo oqokiwe"
+
+#~ msgid "Save _New Status Message"
+#~ msgstr "Gcina umlayezo _omusha wesimo"
+
+#~ msgid "Saved Status Messages"
+#~ msgstr "Imilayezo yesimo egciniwe"

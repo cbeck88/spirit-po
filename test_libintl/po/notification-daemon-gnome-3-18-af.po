@@ -1,0 +1,72 @@
+# Afrikaans translation for notification-daemon.
+# Copyright (C) 2011
+# This file is distributed under the same license as the notification-daemon package.
+# F Wolff <friedel@translate.org.za>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: notification-daemon master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=notification-daemon&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-12 19:10+0000\n"
+"PO-Revision-Date: 2011-03-25 22:05+0200\n"
+"Last-Translator: F Wolff <friedel@translate.org.za>\n"
+"Language-Team: translate-discuss-af@lists.sourceforge.net\n"
+"Language: af\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0-beta4\n"
+
+#: data/notification-daemon.desktop.in.in:3
+#: data/notification-daemon-autostart.desktop.in.in:3
+msgid "Notification Daemon"
+msgstr ""
+
+#: data/notification-daemon.desktop.in.in:4
+#: data/notification-daemon-autostart.desktop.in.in:4
+msgid "Display notifications"
+msgstr "Wys kennisgewings"
+
+#: src/nd-bubble.c:522 src/nd-bubble.c:524 src/nd-notification-box.c:328
+#: src/nd-notification-box.c:330
+#, fuzzy
+#| msgid "Clear all notifications"
+msgid "Closes the notification."
+msgstr "Verwyder alle kennisgewings"
+
+#: src/nd-bubble.c:540 src/nd-bubble.c:564 src/nd-notification-box.c:346
+#, fuzzy
+#| msgid "Notifications"
+msgid "Notification summary text."
+msgstr "Kennisgewings"
+
+#: src/nd-daemon.c:113
+msgid "Invalid notification identifier"
+msgstr "Ongeldige kennisgewingidentifiseerder"
+
+#: src/nd-daemon.c:193
+msgid "Exceeded maximum number of notifications"
+msgstr "Maksimum aantal kennisgewings is oorskry"
+
+#: src/nd-main.c:34
+msgid "Enable debugging code"
+msgstr ""
+
+#: src/nd-main.c:40
+msgid "Replace a currently running application"
+msgstr ""
+
+#: src/nd-notification-box.c:366
+#, fuzzy
+#| msgid "Notification"
+msgid "Notification body text."
+msgstr "Kennisgewing"
+
+#: src/nd-queue.c:459
+msgid "Clear all notifications"
+msgstr "Verwyder alle kennisgewings"
+
+#: src/nd-queue.c:939
+msgid "Notifications"
+msgstr "Kennisgewings"
