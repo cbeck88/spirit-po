@@ -71,12 +71,12 @@ struct po_grammar : qi::grammar<Iterator, po_message()> {
     message_str = lit("msgstr ") >> multiline_string;
     message_id_plural = lit("msgid_plural ") >> multiline_string;
     message_str_plural = lit("msgstr[") >> omit[ uint_(qi::_r1) ] >> lit("] ") >> multiline_string;
-    //                                             ^ the index in the po file must match what we expect
+    //                                           ^ the index in the po file must match what we expect
 
     // qi::repeat converts it from a std::string, to a singleton vector, as required
     message_single_str = qi::repeat(1)[message_str];
     message_strs = message_str_plural(qi::_r1) >> -message_strs(qi::_r1 + 1);
-    //                                                           ^ enforces that indices must count up
+    //                                                          ^ enforces that indices must count up
 
     // Detect whether we should read multiple messages or a single message by presence of `msgid_plural`
     message_plural = message_id_plural >> message_strs(0); // first line should be msgstr[0]
