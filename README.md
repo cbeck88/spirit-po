@@ -9,8 +9,9 @@ translators rather than require a non-portable binary format which
 requires special tools to create.
 
 **spirit-po** is very easy to use in your C++11 projects.
-It is only a few hundred lines of code in total, and is implemented
-using `boost::spirit`. Our po grammar itself is only a few dozen lines.
+According to `sloccount`, it is only 733 lines of code in total (at time of writing),
+and is implemented using `boost::spirit`.
+Our po grammar itself is only a few dozen lines.
 This makes it very simple and transparent, and easy to modify if needed.
 
 By contrast, the `libgettext-po` parser and `libintl` implementation
@@ -36,8 +37,8 @@ in your C++ source files.
     #include <spirit_po.hpp>
 
 (The `test/` folder contains the unit tests, built with a Makefile.
-The `test_libintl/` folder contains the validation tests against libintl, built
-using cmake. To add new test cases, just drop new `.po` files in the folder
+The `test_libintl/` folder contains the validation tests against `libintl`, built
+using cmake. To add new validation test cases, just drop new `.po` files in the folder
 `test_libintl/po/`.)
 
 To make a catalog object in your C++ program, first obtain some po content.
