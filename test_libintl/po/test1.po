@@ -1,17 +1,28 @@
-R"===(
+# Test1 po
+
 msgid ""
 msgstr "Language: Test\n"
 "Project-Id-Version: spirit-po\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
+
 #foo
 #bar
 #baz
 msgid "asdf"
-msgstr "jkl;
+msgstr "jkl;"
 
 
 #foo
 msgid "foo"
 msgstr "bar"
-)==="
+
+msgid "tmnt"
+msgstr "teenage"
+"mutant"
+"ninja"
+"turtles"
+msgid "a man\n"
+"a plan\n"
+"a canal"
+msgstr "panama"

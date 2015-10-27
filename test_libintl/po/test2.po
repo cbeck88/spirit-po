@@ -1,4 +1,3 @@
-R"===(
 
 		
 msgid ""
@@ -7,16 +6,17 @@ msgstr "Language: Test\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
+
 msgid "he said \"she said.\""
 msgstr "by the \"sea shore\"?"
 
 
 #msgid blahlbahlbah
 msgid "say what?"
+msgstr "come again?"
 # msgstr noooo
     
-msgstr "come again?"
 
 
 #msgid "ignore me!"
-)==="
+

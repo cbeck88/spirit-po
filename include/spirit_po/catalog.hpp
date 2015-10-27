@@ -66,7 +66,7 @@ private:
    * Helper for interacting with hashmap results
    */
   const std::string & get(const po_message & msg) const {
-    return msg.strings()[singular_index_];
+    return msg.strings().at(singular_index_);
   }
 
   const std::string & get(const po_message & msg, uint plural) const {
@@ -105,7 +105,7 @@ private:
         if (msg.context) { warning += " msgctxt = <<<" + *msg.context + ">>>"; }
         warning_channel_(warning);
       }
-      result.first->second = std::move(msg);
+      //result.first->second = std::move(msg);
     }
   }
 
@@ -177,6 +177,8 @@ public:
         SPIRIT_PO_CATALOG_FAIL(("Invalid plural forms function. On input n = 1, returned plural = " + std::to_string(singular_index_) + ", while num_plurals = " + std::to_string(metadata_.num_plural_forms)));
       }
 
+      if (singular_index_ != 0) { SPIRIT_PO_CATALOG_FAIL(("Singluar form should be at index 0... right???")); }
+
       insert_message(std::move(msg)); // for compatibility, need to insert the header message at msgid ""
     }
 
@@ -191,6 +193,11 @@ public:
         SPIRIT_PO_CATALOG_FAIL(("Malformed po file: Cannot overwrite the header entry later in the po file. Stopped at: " + iterator_context(it, end)));
       }
       insert_message(std::move(msg));
+    }
+
+    // validate resulting hashmap
+    for (const auto & p : hashmap_) {
+      if (!p.second.strings().size()) { SPIRIT_PO_CATALOG_FAIL(("Internal catalog error: found a message id with no strings, msgid='" + p.first + "'")); }
     }
   }
 
@@ -263,7 +270,7 @@ public:
    *
    * When, for whatever reason, it is more comfortable to use idiomatic C++.
    */
-  std::string gettext(const std::string & msgid) const {
+  std::string gettext_str(const std::string & msgid) const {
     auto it = hashmap_.find(msgid);
     if (it != hashmap_.end()) {
       return get(it->second);
@@ -272,7 +279,7 @@ public:
     }
   }
 
-  std::string ngettext(const std::string & msgid, const std::string & msgid_plural, uint plural) const {
+  std::string ngettext_str(const std::string & msgid, const std::string & msgid_plural, uint plural) const {
     auto it = hashmap_.find(msgid);
     if (it != hashmap_.end()) {
       return get(it->second, plural);
@@ -281,7 +288,7 @@ public:
     }
   }
 
-  std::string pgettext(const std::string & context, const std::string & msgid) const {
+  std::string pgettext_str(const std::string & context, const std::string & msgid) const {
     auto it = hashmap_.find(form_context_index(context, msgid));
     if (it != hashmap_.end()) {
       return get(it->second);
@@ -290,7 +297,7 @@ public:
     }
   }
 
-  std::string npgettext(const std::string & context, const std::string & msgid, const std::string & msgid_plural, uint plural) const {
+  std::string npgettext_str(const std::string & context, const std::string & msgid, const std::string & msgid_plural, uint plural) const {
     auto it = hashmap_.find(form_context_index(context, msgid));
     if (it != hashmap_.end()) {
       return get(it->second, plural);

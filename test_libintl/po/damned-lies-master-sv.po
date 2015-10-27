@@ -1,0 +1,3836 @@
+# Swedish translation of damned-lies.
+# Copyright © 2007-2015 Free Software Foundation, Inc.
+# This file is distributed under the same license as the damned-lies package.
+# Daniel Nylander <po@danielnylander.se>, 2007, 2008, 2009, 2010, 2011. 2012.
+# Sebastian Rasmussen <sebras@gmail.com>, 2014, 2015.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: damned-lies\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-25 10:50+0000\n"
+"PO-Revision-Date: 2015-10-25 11:49+0100\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.5\n"
+
+# Går att se på https://l10n.gnome.org/about/
+# Tolkas på ett annat sätt än de flesta andra translator-credits, \n ersätts med kommatecken i utskriften på webbplatsen.
+#: common/views.py:45
+msgid "translator-credits"
+msgstr ""
+"Daniel Nylander <po@danielnylander.se>\n"
+"Sebastian Rasmussen <sebras@gmail.com>\n"
+"Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"skicka synpunkter på översättningen till <tp-sv@listor.tp-sv.se>."
+
+#: common/views.py:63
+msgid "You have been logged out."
+msgstr "Du har loggats ut."
+
+#: common/views.py:71
+msgid "You have been successfully logged in."
+msgstr "Du är nu inloggad."
+
+#: common/views.py:73
+#, python-format
+msgid ""
+"You have not joined any translation team yet. You can do it from <a href="
+"\"%(url)s\">your profile</a>."
+msgstr ""
+"Du har inte gått med i någon översättningsgrupp än. Du kan göra det från <a "
+"href=\"%(url)s\">din profil</a>."
+
+#: common/views.py:82
+msgid "We're sorry, but your account has been disabled."
+msgstr "Vi är ledsna men ditt konto har inaktiverats."
+
+#: common/views.py:84
+msgid "Login unsuccessful. Please verify your username and password."
+msgstr "Inloggningen misslyckades. Verifiera ditt användarnamn och lösenord."
+
+#: common/views.py:122
+msgid "Sorry, the key you provided is not valid."
+msgstr "Tyvärr, nyckeln som du angav är inte giltig."
+
+#: common/views.py:124
+msgid "Your account has been activated."
+msgstr "Ditt konto har aktiverats."
+
+#: damnedlies/settings.py:52 database-content.py:1 database-content.py:138
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: damnedlies/settings.py:53 database-content.py:13 database-content.py:150
+msgid "Belarusian"
+msgstr "Vitryska"
+
+#: damnedlies/settings.py:54 database-content.py:71 database-content.py:211
+msgid "Kurdish"
+msgstr "Kurdiska"
+
+#: damnedlies/settings.py:84
+msgid ""
+"This module is not part of the GNOME Git repository. Please check the "
+"module's web page to see where to send translations."
+msgstr ""
+"Den här modulen är inte en del av GNOME:s Git-förråd. Kontrollera modulens "
+"webbsida för information om var översättningarna ska skickas."
+
+#: database-content.py:2 database-content.py:139
+msgid "Albanian"
+msgstr "Albanska"
+
+#: database-content.py:3 database-content.py:140
+msgid "Amharic"
+msgstr "Amhariska"
+
+#: database-content.py:4 database-content.py:141
+msgid "Arabic"
+msgstr "Arabiska"
+
+#: database-content.py:5 database-content.py:142
+msgid "Aragonese"
+msgstr "Aragonska"
+
+#: database-content.py:6 database-content.py:143
+msgid "Armenian"
+msgstr "Armeniska"
+
+#: database-content.py:7 database-content.py:144
+msgid "Assamese"
+msgstr "Assamesiska"
+
+#: database-content.py:8 database-content.py:145
+msgid "Asturian"
+msgstr "Asturiska"
+
+#: database-content.py:9 database-content.py:146
+msgid "Australian English"
+msgstr "Australisk engelska"
+
+#: database-content.py:10 database-content.py:147
+msgid "Azerbaijani"
+msgstr "Azerbajdzjanska"
+
+#: database-content.py:11 database-content.py:148
+msgid "Balochi"
+msgstr "Baluchi"
+
+#: database-content.py:12 database-content.py:149
+msgid "Basque"
+msgstr "Baskiska"
+
+#: database-content.py:14 database-content.py:152
+msgid "Bemba"
+msgstr "Bemba"
+
+#: database-content.py:15 database-content.py:153
+msgid "Bengali"
+msgstr "Bengali"
+
+#: database-content.py:16 database-content.py:154
+msgid "Bengali (India)"
+msgstr "Bengali (Indien)"
+
+#: database-content.py:17 database-content.py:155
+msgid "Bodo"
+msgstr "Bodo"
+
+#: database-content.py:18 database-content.py:156
+msgid "Bosnian"
+msgstr "Bosniska"
+
+#: database-content.py:19 database-content.py:157
+msgid "Brazilian Portuguese"
+msgstr "Brasiliansk portugisiska"
+
+#: database-content.py:20 database-content.py:158
+msgid "Breton"
+msgstr "Bretonska"
+
+#: database-content.py:21 database-content.py:159
+msgid "British English"
+msgstr "Brittisk engelska"
+
+#: database-content.py:22 database-content.py:160
+msgid "Bulgarian"
+msgstr "Bulgariska"
+
+#: database-content.py:23 database-content.py:161
+msgid "Burmese"
+msgstr "Burmesiska"
+
+#: database-content.py:24 database-content.py:162
+msgid "Canadian English"
+msgstr "Kanadensisk engelska"
+
+#: database-content.py:25 database-content.py:163
+msgid "Catalan"
+msgstr "Katalanska"
+
+#: database-content.py:26 database-content.py:165
+msgid "Central Nahuatl"
+msgstr "Central-nahuatl"
+
+#: database-content.py:27 database-content.py:166
+msgid "Chinese (China)"
+msgstr "Kinesiska (Kina)"
+
+#: database-content.py:28
+msgid "Chinese Traditional"
+msgstr "Kinesiska (traditionell)"
+
+#: database-content.py:29 database-content.py:169
+msgid "Crimean Tatar"
+msgstr "Krimtatariska"
+
+#: database-content.py:30 database-content.py:170
+msgid "Croatian"
+msgstr "Kroatiska"
+
+#: database-content.py:31 database-content.py:171
+msgid "Czech"
+msgstr "Tjeckiska"
+
+#: database-content.py:32 database-content.py:172
+msgid "Danish"
+msgstr "Danska"
+
+#: database-content.py:33 database-content.py:173
+msgid "Divehi"
+msgstr "Divehi"
+
+#: database-content.py:34 database-content.py:174
+msgid "Dutch"
+msgstr "Nederländska"
+
+#: database-content.py:35 database-content.py:175
+msgid "Dzongkha"
+msgstr "Dzongkha"
+
+#: database-content.py:36 database-content.py:176
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: database-content.py:37 database-content.py:177
+msgid "Estonian"
+msgstr "Estniska"
+
+#: database-content.py:38
+msgid "Faroese"
+msgstr "Färöiska"
+
+#: database-content.py:39 database-content.py:178
+msgid "Finnish"
+msgstr "Finska"
+
+#: database-content.py:40 database-content.py:179
+msgid "French"
+msgstr "Franska"
+
+#: database-content.py:41 database-content.py:180
+msgid "Frisian"
+msgstr "Frisiska"
+
+#: database-content.py:42 database-content.py:181
+msgid "Friulian"
+msgstr "Friuliska"
+
+#: database-content.py:43 database-content.py:182
+msgid "Fula"
+msgstr "Fula"
+
+#: database-content.py:44 database-content.py:183
+msgid "Galician"
+msgstr "Galiciska"
+
+#: database-content.py:45 database-content.py:184
+msgid "Georgian"
+msgstr "Georgiska"
+
+#: database-content.py:46 database-content.py:185
+msgid "German"
+msgstr "Tyska"
+
+#: database-content.py:47 database-content.py:186
+msgid "Greek"
+msgstr "Grekiska"
+
+#: database-content.py:48 database-content.py:187
+msgid "Guarani"
+msgstr "Guarani"
+
+#: database-content.py:49 database-content.py:188
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: database-content.py:50 database-content.py:189
+msgid "Hausa"
+msgstr "Hausa"
+
+#: database-content.py:51 database-content.py:190
+msgid "Hebrew"
+msgstr "Hebreiska"
+
+#: database-content.py:52 database-content.py:191
+msgid "Hindi"
+msgstr "Hindi"
+
+#: database-content.py:53 database-content.py:192
+msgid "Hungarian"
+msgstr "Ungerska"
+
+#: database-content.py:54 database-content.py:193
+msgid "Icelandic"
+msgstr "Isländska"
+
+#: database-content.py:55 database-content.py:194
+msgid "Ido"
+msgstr "Ido"
+
+#: database-content.py:56 database-content.py:196
+msgid "Indonesian"
+msgstr "Indonesiska"
+
+#: database-content.py:57 database-content.py:197
+msgid "Interlingua"
+msgstr "Interlingua"
+
+#: database-content.py:58 database-content.py:198
+msgid "Iranian Azerbaijani"
+msgstr "Iransk azerbajdzjanska"
+
+#: database-content.py:59 database-content.py:199
+msgid "Irish"
+msgstr "Iriska"
+
+#: database-content.py:60 database-content.py:200
+msgid "Italian"
+msgstr "Italienska"
+
+#: database-content.py:61 database-content.py:201
+msgid "Japanese"
+msgstr "Japanska"
+
+#: database-content.py:62 database-content.py:202
+msgid "Kabyle"
+msgstr "Kabyliska"
+
+#: database-content.py:63 database-content.py:203
+msgid "Kannada"
+msgstr "Kannada"
+
+#: database-content.py:64 database-content.py:204
+msgid "Kashmiri"
+msgstr "Kashmiri"
+
+#: database-content.py:65 database-content.py:205
+msgid "Kazakh"
+msgstr "Kazakiska"
+
+#: database-content.py:66 database-content.py:206
+msgid "Khmer"
+msgstr "Khmer"
+
+#: database-content.py:67 database-content.py:207
+msgid "Kikongo"
+msgstr "Kikongo"
+
+#: database-content.py:68 database-content.py:208
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: database-content.py:69 database-content.py:209
+msgid "Kirghiz"
+msgstr "Kirgiziska"
+
+#: database-content.py:70 database-content.py:210
+msgid "Korean"
+msgstr "Koreanska"
+
+#: database-content.py:72 database-content.py:212
+msgid "Lao"
+msgstr "Lao"
+
+#: database-content.py:73 database-content.py:213
+msgid "Latin"
+msgstr "Latin"
+
+#: database-content.py:74 database-content.py:214
+msgid "Latvian"
+msgstr "Lettiska"
+
+#: database-content.py:75 database-content.py:215
+msgid "Limburgian"
+msgstr "Limburgiska"
+
+#: database-content.py:76 database-content.py:216
+msgid "Lithuanian"
+msgstr "Litauiska"
+
+#: database-content.py:77 database-content.py:217
+msgid "Low German"
+msgstr "Lågtyska"
+
+#: database-content.py:78 database-content.py:218
+msgid "Luganda"
+msgstr "Luganda"
+
+#: database-content.py:79 database-content.py:220
+msgid "Macedonian"
+msgstr "Makedonska"
+
+#: database-content.py:80 database-content.py:221
+msgid "Maithili"
+msgstr "Maithili"
+
+#: database-content.py:81 database-content.py:222
+msgid "Malagasy"
+msgstr "Malagasy"
+
+#: database-content.py:82 database-content.py:223
+msgid "Malay"
+msgstr "Malajiska"
+
+#: database-content.py:83 database-content.py:224
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: database-content.py:84 database-content.py:226
+msgid "Manx"
+msgstr "Manx"
+
+#: database-content.py:85 database-content.py:227
+msgid "Maori"
+msgstr "Maori"
+
+#: database-content.py:86 database-content.py:228
+msgid "Marathi"
+msgstr "Marathi"
+
+#: database-content.py:87 database-content.py:229
+msgid "Mexican Spanish"
+msgstr "Spanska (Mexiko)"
+
+#: database-content.py:88 database-content.py:230
+msgid "Mongolian"
+msgstr "Mongoliska"
+
+#: database-content.py:89
+msgid "Neapolitan"
+msgstr "Neapolitanska"
+
+#: database-content.py:90 database-content.py:231
+msgid "Nepali"
+msgstr "Nepali"
+
+#: database-content.py:91 database-content.py:232
+msgid "Northern Sotho"
+msgstr "Nord-Sotho"
+
+#: database-content.py:92
+msgid "Norwegian (Bokmål and Nynorsk)"
+msgstr "Norska (bokmål och nynorsk)"
+
+#: database-content.py:93 database-content.py:235
+msgid "Occitan"
+msgstr "Occitanska"
+
+#: database-content.py:94 database-content.py:236
+msgid "Old English"
+msgstr "Fornengelska"
+
+#: database-content.py:95 database-content.py:237
+msgid "Oriya"
+msgstr "Oriya"
+
+#: database-content.py:96 database-content.py:238
+msgid "Ossetian"
+msgstr "Ossetiska"
+
+#: database-content.py:97 database-content.py:239
+msgid "Pashto"
+msgstr "Pashto"
+
+#: database-content.py:98 database-content.py:240
+msgid "Persian"
+msgstr "Persiska"
+
+#: database-content.py:99 database-content.py:241
+msgid "Polish"
+msgstr "Polska"
+
+#: database-content.py:100 database-content.py:242
+msgid "Portuguese"
+msgstr "Portugisiska"
+
+#: database-content.py:101 database-content.py:243
+msgid "Punjabi"
+msgstr "Punjabi"
+
+#: database-content.py:102
+msgid "Quechua"
+msgstr "Quechua"
+
+#: database-content.py:103 database-content.py:245
+msgid "Romanian"
+msgstr "Rumänska"
+
+#: database-content.py:104 database-content.py:246
+msgid "Russian"
+msgstr "Ryska"
+
+#: database-content.py:105 database-content.py:247
+msgid "Scottish Gaelic"
+msgstr "Skotsk gäliska"
+
+#: database-content.py:106 database-content.py:248
+msgid "Serbian"
+msgstr "Serbiska"
+
+#: database-content.py:107 database-content.py:251
+msgid "Shavian"
+msgstr "Shavian"
+
+#: database-content.py:108 database-content.py:252
+msgid "Silesian"
+msgstr "Schlesiska"
+
+#: database-content.py:109 database-content.py:253
+msgid "Sinhala"
+msgstr "Sinhala"
+
+#: database-content.py:110 database-content.py:254
+msgid "Slovak"
+msgstr "Slovakiska"
+
+#: database-content.py:111 database-content.py:255
+msgid "Slovenian"
+msgstr "Slovenska"
+
+#: database-content.py:112 database-content.py:256
+msgid "Somali"
+msgstr "Somaliska"
+
+#: database-content.py:113 database-content.py:259
+msgid "Spanish"
+msgstr "Spanska"
+
+#: database-content.py:114 database-content.py:260
+msgid "Swahili"
+msgstr "Swahili"
+
+#: database-content.py:115 database-content.py:261
+msgid "Swedish"
+msgstr "Svenska"
+
+#: database-content.py:116 database-content.py:262
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: database-content.py:117 database-content.py:263
+msgid "Tajik"
+msgstr "Tadzjikiska"
+
+#: database-content.py:118 database-content.py:264
+msgid "Tamil"
+msgstr "Tamil"
+
+#: database-content.py:119 database-content.py:265
+msgid "Tatar"
+msgstr "Tatariska"
+
+#: database-content.py:120 database-content.py:266
+msgid "Telugu"
+msgstr "Telugu"
+
+#: database-content.py:121 database-content.py:267
+msgid "Thai"
+msgstr "Thai"
+
+#: database-content.py:122 database-content.py:268
+msgid "Tibetan"
+msgstr "Tibetanska"
+
+#: database-content.py:123 database-content.py:269
+msgid "Tsonga"
+msgstr "Tsonga"
+
+#: database-content.py:124 database-content.py:270
+msgid "Turkish"
+msgstr "Turkiska"
+
+#: database-content.py:125 database-content.py:271
+msgid "Turkmen"
+msgstr "Turkmeniska"
+
+#: database-content.py:126 database-content.py:272
+msgid "Uighur"
+msgstr "Uiguriska"
+
+#: database-content.py:127 database-content.py:273
+msgid "Ukrainian"
+msgstr "Ukrainska"
+
+#: database-content.py:128 database-content.py:274
+msgid "Urdu"
+msgstr "Urdu"
+
+#: database-content.py:129
+msgid "Uzbek"
+msgstr "Uzbekiska"
+
+#: database-content.py:130 database-content.py:277
+msgid "Vietnamese"
+msgstr "Vietnamesiska"
+
+#: database-content.py:131 database-content.py:278
+msgid "Walloon"
+msgstr "Vallonska"
+
+#: database-content.py:132 database-content.py:279
+msgid "Wayuu"
+msgstr "Wayuu"
+
+#: database-content.py:133 database-content.py:280
+msgid "Welsh"
+msgstr "Walesiska"
+
+#: database-content.py:134 database-content.py:281
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: database-content.py:135 database-content.py:282
+msgid "Yiddish"
+msgstr "Jiddisch"
+
+#: database-content.py:136 database-content.py:283
+msgid "Yoruba"
+msgstr "Yoruba"
+
+#: database-content.py:137 database-content.py:284
+msgid "Zulu"
+msgstr "Zulu"
+
+#: database-content.py:151
+msgid "Belarusian Latin"
+msgstr "Vitryska (latin)"
+
+#: database-content.py:164
+msgid "Catalan (Valencian)"
+msgstr "Katalanska (Valencianska)"
+
+#: database-content.py:167
+msgid "Chinese (Hong Kong)"
+msgstr "Kinesiska (Hong Kong)"
+
+#: database-content.py:168
+msgid "Chinese (Taiwan)"
+msgstr "Kinesiska (Taiwan)"
+
+#: database-content.py:195
+msgid "Igbo"
+msgstr "Igbo"
+
+#: database-content.py:219
+msgid "Luxembourgish"
+msgstr "Luxemburgiska"
+
+#: database-content.py:225
+msgid "Maltese"
+msgstr "Maltesiska"
+
+#: database-content.py:233
+msgid "Norwegian Bokmål"
+msgstr "Norska bokmål"
+
+#: database-content.py:234
+msgid "Norwegian Nynorsk"
+msgstr "Norska nynorsk"
+
+#: database-content.py:244
+msgid "Quechua (Cuzco-Collao)"
+msgstr "Quechua (qusqu-qullaw)"
+
+#: database-content.py:249
+msgid "Serbian Jekavian"
+msgstr "Serbiska (jekaviska)"
+
+#: database-content.py:250
+msgid "Serbian Latin"
+msgstr "Serbiska (latin)"
+
+#: database-content.py:257
+msgid "South Ndebele"
+msgstr "Sydndebele"
+
+#: database-content.py:258
+msgid "Southern Sotho"
+msgstr "Sydsotho"
+
+#: database-content.py:275
+msgid "Uzbek (Cyrillic)"
+msgstr "Uzbekiska (Kyrillisk)"
+
+#: database-content.py:276
+msgid "Uzbek (Latin)"
+msgstr "Uzbekiska (Latin)"
+
+#: database-content.py:285
+msgid "Documentation Video"
+msgstr "Dokumentationsvideo"
+
+#: database-content.py:286
+msgid "Dynamic content"
+msgstr "Dynamiskt innehåll"
+
+#: database-content.py:287
+msgid "Example App: Film manager"
+msgstr "Exempelprogram: Filmhanterare"
+
+#: database-content.py:288
+msgid "Example App: Lesson planner"
+msgstr "Exempelprogram: Lektionsplanering"
+
+#: database-content.py:289
+msgid "Example App: Music collection"
+msgstr "Exempelprogram: Musiksamling"
+
+#: database-content.py:290
+msgid "Example App: Project manager"
+msgstr "Exempelprogram: Projekthantering"
+
+#: database-content.py:291
+msgid "Example App: Small business"
+msgstr "Exempelprogram: Mindre företag"
+
+#: database-content.py:292
+msgid "GNOME 3.14 Release Video"
+msgstr "Publiceringsvideo för GNOME 3.14"
+
+#: database-content.py:293
+msgid "GNOME 3.16 Release Video"
+msgstr "Publiceringsvideo för GNOME 3.16"
+
+#: database-content.py:294
+msgid "GNOME 3.18 Release Video"
+msgstr "Publiceringsvideo för GNOME 3.18"
+
+#: database-content.py:295
+msgid "Weather Applet Locations"
+msgstr "Platser för miniprogrammet Väderrapport"
+
+#: database-content.py:296
+msgid "Layout Descriptions"
+msgstr "Layoutbeskrivningar"
+
+#: database-content.py:297
+msgid "UI translation"
+msgstr "Gränssnittsöversättning"
+
+#: database-content.py:298 database-content.py:322
+msgid "UI translations"
+msgstr "Gränssnittsöversättningar"
+
+#: database-content.py:299
+msgid "User Directories"
+msgstr "Användarkataloger"
+
+#: database-content.py:300
+msgid "Engine"
+msgstr "Motor"
+
+#: database-content.py:301
+msgid "Engine-Campfire"
+msgstr "Campfire-motor"
+
+#: database-content.py:302
+msgid "Engine-IRC"
+msgstr "IRC-motor"
+
+#: database-content.py:303
+msgid "Engine-JabbR"
+msgstr "JabbR-motor"
+
+#: database-content.py:304
+msgid "Engine-MessageBuffer"
+msgstr "MessageBuffer-motor"
+
+#: database-content.py:305
+msgid "Engine-Twitter"
+msgstr "Twitter-motor"
+
+#: database-content.py:306
+msgid "Engine-XMPP"
+msgstr "XMPP-motor"
+
+#: database-content.py:307
+msgid "Frontend"
+msgstr "Framände"
+
+#: database-content.py:308
+msgid "Frontend-GNOME"
+msgstr "GNOME-framände"
+
+#: database-content.py:309
+msgid "Frontend-GNOME-IRC"
+msgstr "GNOME-IRC-framände"
+
+#: database-content.py:310
+msgid "Frontend-GNOME-Twitter"
+msgstr "GNOME-Twitter-framände"
+
+#: database-content.py:311
+msgid "Frontend-GNOME-XMPP"
+msgstr "GNOME-XMPP-framände"
+
+#: database-content.py:312
+msgid "Functions"
+msgstr "Funktioner"
+
+#: database-content.py:313
+msgid "libgimp"
+msgstr "libgimp"
+
+#: database-content.py:314
+msgid "plug-ins"
+msgstr "plug-ins"
+
+#: database-content.py:315
+msgid "Property Nicks"
+msgstr "Egenskapsnamn"
+
+#: database-content.py:316
+msgid "python"
+msgstr "python"
+
+#: database-content.py:317
+msgid "script-fu"
+msgstr "script-fu"
+
+#: database-content.py:318
+msgid "Server"
+msgstr "Server"
+
+#: database-content.py:319
+msgid "tags"
+msgstr "taggar"
+
+#: database-content.py:320
+msgid "tips"
+msgstr "tips"
+
+#: database-content.py:321
+msgid "Static content"
+msgstr "Statiskt innehåll"
+
+#: database-content.py:323
+msgid "Accessibility Developers Guide"
+msgstr "Utvecklarguide för hjälpmedelsteknik"
+
+#: database-content.py:324
+msgid "Accessibility Guide"
+msgstr "Hjälpmedelsguide"
+
+#: database-content.py:325
+msgid "Keyboard Accessibility Monitor Manual"
+msgstr "Handbok för Övervakare av tangentbordshjälpmedel"
+
+#: database-content.py:326
+msgid "AisleRiot Manual"
+msgstr "Handbok för AisleRiot-patiens"
+
+#: database-content.py:327
+msgid "appendix"
+msgstr "tillägg"
+
+#: database-content.py:328
+msgid "Audio Profiles Manual"
+msgstr "Handbok för Ljudprofiler"
+
+#: database-content.py:329
+msgid "Disk Usage Analyzer Manual"
+msgstr "Handbok för Diskanvändningsanalysator"
+
+#: database-content.py:330
+msgid "Battery Charge Monitor Manual"
+msgstr "Handbok för Batteriövervakare"
+
+#: database-content.py:331
+msgid "Blackjack Manual"
+msgstr "Handbok för Tjugoett"
+
+#: database-content.py:332
+msgid "Browser Help"
+msgstr "Webbläsarhjälp"
+
+#: database-content.py:333
+msgid "Character Palette Manual"
+msgstr "Handbok för panelprogrammet Teckenpalett"
+
+#: database-content.py:334
+msgid "Clock Applet Manual"
+msgstr "Handbok för miniprogrammet Klocka"
+
+#: database-content.py:335
+msgid "Command Line Manual"
+msgstr "Handbok för Kommandorad"
+
+#: database-content.py:336
+msgid "concepts"
+msgstr "koncept"
+
+#: database-content.py:337
+msgid "CPU Frequency Scaling Monitor Manual"
+msgstr "Handbok för Övervakare av processorfrekvensskalning"
+
+#: database-content.py:338
+msgid "FDL License"
+msgstr "Licensen FDL"
+
+#: database-content.py:339
+msgid "GPL License"
+msgstr "Licensen GPL"
+
+#: database-content.py:340
+msgid "LGPL License"
+msgstr "Licensen LGPL"
+
+#: database-content.py:341
+msgid "dialogs"
+msgstr "dialogrutor"
+
+#: database-content.py:342
+msgid "Dictionary Manual"
+msgstr "Handbok för Ordbok"
+
+#: database-content.py:343
+msgid "Disk Mounter Manual"
+msgstr "Handbok för Diskmonterare"
+
+#: database-content.py:344
+msgid "filters"
+msgstr "filter"
+
+#: database-content.py:345
+msgid "alpha-to-logo filter"
+msgstr "alfa-till-logotyp-filter"
+
+#: database-content.py:346
+msgid "animation filter"
+msgstr "animationsfilter"
+
+#: database-content.py:347
+msgid "artistic filter"
+msgstr "artistiskt filter"
+
+#: database-content.py:348
+msgid "blur filter"
+msgstr "oskärpefilter"
+
+#: database-content.py:349
+msgid "combine filter"
+msgstr "kombinationsfilter"
+
+#: database-content.py:350
+msgid "decor filter"
+msgstr "dekorfilter"
+
+#: database-content.py:351
+msgid "distort filter"
+msgstr "distorsionsfilter"
+
+#: database-content.py:352
+msgid "edge-detect filter"
+msgstr "kantdetekteringsfilter"
+
+#: database-content.py:353
+msgid "enhance filter"
+msgstr "förbättringsfilter"
+
+#: database-content.py:354
+msgid "generic filter"
+msgstr "allmänna filter"
+
+#: database-content.py:355
+msgid "light-and-shadow filter"
+msgstr "ljus-och-skuggeffekter-filter"
+
+#: database-content.py:356
+msgid "map filter"
+msgstr "mappfilter"
+
+#: database-content.py:357
+msgid "noise filter"
+msgstr "brusfilter"
+
+#: database-content.py:358
+msgid "render filter"
+msgstr "renderingsfilter"
+
+#: database-content.py:359
+msgid "web filter"
+msgstr "webbfilter"
+
+#: database-content.py:360
+msgid "Fish Applet Manual"
+msgstr "Handbok för miniprogrammet Fisk"
+
+#: database-content.py:361
+msgid "Getting Started"
+msgstr "Kom igång"
+
+#: database-content.py:362
+msgid "Geyes Manual"
+msgstr "Handbok för Geyes"
+
+#: database-content.py:363
+msgid "gimp"
+msgstr "gimp"
+
+#: database-content.py:364
+msgid "Quick Reference"
+msgstr "Snabbreferens"
+
+#: database-content.py:365
+msgid "glChess Manual"
+msgstr "Handbok för glChess"
+
+#: database-content.py:366 database-content.py:396
+msgid "Five or More Manual"
+msgstr "Handbok för Fem eller mer"
+
+#: database-content.py:367
+msgid "glossary"
+msgstr "ordlista"
+
+#: database-content.py:368 database-content.py:397
+msgid "Four-in-a-row Manual"
+msgstr "Handbok för Fyra-i-rad"
+
+#: database-content.py:369 database-content.py:411
+msgid "Nibbles Manual"
+msgstr "Handbok för Nibbles"
+
+#: database-content.py:370 database-content.py:404
+msgid "GNOME Robots Manual"
+msgstr "Handbok för GNOME Robotar"
+
+#: database-content.py:371
+msgid "CD Player Manual"
+msgstr "Handbok för Cd-spelare"
+
+#: database-content.py:372 database-content.py:416 database-content.py:459
+#: database-content.py:460
+msgid "User Guide"
+msgstr "Användarguide"
+
+#: database-content.py:373 database-content.py:403 database-content.py:424
+msgid "GNOME Mahjongg Manual"
+msgstr "Handbok för GNOME Mahjong"
+
+#: database-content.py:374 database-content.py:405
+msgid "GNOME Sudoku Manual"
+msgstr "Handbok för GNOME Sudoku"
+
+#: database-content.py:375
+msgid "Gnometris Manual"
+msgstr "Handbok för Gnometris"
+
+#: database-content.py:376 database-content.py:410
+msgid "Mines Manual"
+msgstr "Handbok för Minor"
+
+#: database-content.py:377 database-content.py:407
+msgid "GNOME Tetravex Manual"
+msgstr "Handbok för GNOME Tetravex"
+
+#: database-content.py:378 database-content.py:401
+msgid "GNOME Klotski Manual"
+msgstr "Handbok för GNOME Klotski"
+
+#: database-content.py:379
+msgid "Sound Recorder Manual"
+msgstr "Handbok för Ljudinspelare"
+
+#: database-content.py:380
+msgid "Search Tool Manual"
+msgstr "Handbok för Sökverktyg"
+
+#: database-content.py:381
+msgid "GNOME Volume Control Manual"
+msgstr "Handbok för GNOME-volymkontroll"
+
+#: database-content.py:382
+msgid "GST Network Setup Manual"
+msgstr "Handbok för GST nätverkadministrationsverktyg"
+
+#: database-content.py:383
+msgid "GST Service Management Manual"
+msgstr "Handbok för GST tjänsteadministrationsverktyg"
+
+#: database-content.py:384
+msgid "GST Shared Folders Manual"
+msgstr "Handbok för GST administrationsverktyg för delade mappar"
+
+#: database-content.py:385
+msgid "GST Time Setup Manual"
+msgstr "Handbok för GST tidsadministrationsverktyg"
+
+#: database-content.py:386
+msgid "GST User Management Manual"
+msgstr "Handbok för GST användaradministrationsverktyg"
+
+#: database-content.py:387
+msgid "GStreamer Properties Manual"
+msgstr "Handbok för GStreamer Properties"
+
+#: database-content.py:388
+msgid "Keyboard Indicator Manual"
+msgstr "Handbok för Tangentbordsindikator"
+
+#: database-content.py:389 database-content.py:406
+msgid "GNOME Tali Manual"
+msgstr "Handbok för GNOME Tali"
+
+#: database-content.py:390
+msgid "Weather Report Manual"
+msgstr "Handbok för Väderrapport"
+
+#: database-content.py:391
+msgid "Anjuta Manual"
+msgstr "Handbok för Anjuta"
+
+#: database-content.py:392
+msgid "Dasher Manual"
+msgstr "Handbok för Dasher"
+
+#: database-content.py:393 languages/views.py:51 languages/views.py:84
+#: templates/base.html:109 templates/branch_detail.html:22
+#: templates/languages/language_release_summary.html:16
+#: templates/release_detail.html:26 templates/release_detail.html.py:84
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: database-content.py:394
+msgid "Encryption Applet Manual"
+msgstr "Handbok för miniprogrammet Kryptering"
+
+#: database-content.py:395
+msgid "Eye of GNOME Manual"
+msgstr "Handbok för Eye of GNOME"
+
+#: database-content.py:398
+msgid "GConf Editor Manual"
+msgstr "Handbok för GConf-redigerare"
+
+#: database-content.py:399
+msgid "GDM Manual"
+msgstr "Handbok för GDM"
+
+#: database-content.py:400
+msgid "Gnome Chess Manual"
+msgstr "Handbok för Gnome-schack"
+
+#: database-content.py:402
+msgid "GNOME Library help"
+msgstr "Hjälp för GNOME-biblioteket"
+
+#: database-content.py:408 database-content.py:418
+msgid "Iagno Manual"
+msgstr "Handbok för Iagno"
+
+#: database-content.py:409 database-content.py:422
+msgid "Lights Off Manual"
+msgstr "Handbok för Släck lyset"
+
+#: database-content.py:412 database-content.py:446
+msgid "Quadrapassel Manual"
+msgstr "Handbok för Quadrapassel"
+
+#: database-content.py:413
+msgid "Release Notes"
+msgstr "Kommentarer till utgåva"
+
+#: database-content.py:414
+msgid "Sound Juicer Manual"
+msgstr "Handbok för Sound Juicer"
+
+#: database-content.py:415 database-content.py:450
+msgid "Swell-Foop Manual"
+msgstr "Handbok för Swell-Foop"
+
+#: database-content.py:417
+msgid "Human Interface Guidelines"
+msgstr "Riktlinjer för mänskliga gränssnitt"
+
+#: database-content.py:419
+msgid "Integration Guide"
+msgstr "Integrationsguide"
+
+#: database-content.py:420
+msgid "introduction"
+msgstr "introduktion"
+
+#: database-content.py:421
+msgid "Invest Applet Manual"
+msgstr "Handbok för miniprogrammet Investera"
+
+#: database-content.py:423
+msgid "Log Viewer Manual"
+msgstr "Handbok för Loggvisare"
+
+#: database-content.py:425
+msgid "Mallard Documentation Guide"
+msgstr "Dokumentationsguide för Mallard"
+
+#: database-content.py:426
+msgid "menus"
+msgstr "menyer"
+
+#: database-content.py:427
+msgid "colors menus"
+msgstr "färgmenyer"
+
+#: database-content.py:428
+msgid "colors auto menu"
+msgstr "automeny för färger"
+
+#: database-content.py:429
+msgid "colors component menu"
+msgstr "komponentmeny för färger"
+
+#: database-content.py:430
+msgid "colors info menu"
+msgstr "informationsmeny för färger"
+
+#: database-content.py:431
+msgid "colors map menu"
+msgstr "mappmeny för färger"
+
+#: database-content.py:432
+msgid "edit menu"
+msgstr "redigeringsmeny"
+
+#: database-content.py:433
+msgid "file menu"
+msgstr "arkivmeny"
+
+#: database-content.py:434
+msgid "filters menu"
+msgstr "filtermeny"
+
+#: database-content.py:435
+msgid "help menu"
+msgstr "hjälpmeny"
+
+#: database-content.py:436
+msgid "image menu"
+msgstr "bildmeny"
+
+#: database-content.py:437
+msgid "layer menu"
+msgstr "lagermeny"
+
+#: database-content.py:438
+msgid "select menu"
+msgstr "markeringsmeny"
+
+#: database-content.py:439
+msgid "view menu"
+msgstr "visningsmeny"
+
+#: database-content.py:440
+msgid "Volume Control Manual"
+msgstr "Handbok för Volymkontroll"
+
+#: database-content.py:441
+msgid "System Monitor Manual"
+msgstr "Handbok för Systemövervakare"
+
+#: database-content.py:442
+msgid "Optimization Guide"
+msgstr "Optimeringsguide"
+
+#: database-content.py:443
+msgid "Tutorial demos"
+msgstr "Demonstrationer"
+
+#: database-content.py:444
+msgid "Platform Overview"
+msgstr "Plattformsöversikt"
+
+#: database-content.py:445
+msgid "preface"
+msgstr "förord"
+
+#: database-content.py:447
+msgid "Same GNOME Manual"
+msgstr "Handbok för Same GNOME"
+
+#: database-content.py:448
+msgid "Website"
+msgstr "Webbplats"
+
+#: database-content.py:449
+msgid "Sticky Notes Manual"
+msgstr "Handbok för Klisterlappar"
+
+#: database-content.py:451
+msgid "System Administration Guide"
+msgstr "Systemadministrationsguide"
+
+#: database-content.py:452
+msgid "toolbox"
+msgstr "verktygslåda"
+
+#: database-content.py:453
+msgid "toolbox (color)"
+msgstr "verktygslåda (färg)"
+
+#: database-content.py:454
+msgid "toolbox (paint)"
+msgstr "verktygslåda (måla)"
+
+#: database-content.py:455
+msgid "toolbox (selection)"
+msgstr "verktygslåda (markering)"
+
+#: database-content.py:456
+msgid "toolbox (transform)"
+msgstr "verktygslåda (transformera)"
+
+#: database-content.py:457
+msgid "Panel Trash Manual"
+msgstr "Handbok för panelprogrammet Papperskorg"
+
+#: database-content.py:458
+msgid "tutorial"
+msgstr "handledning"
+
+#: database-content.py:461
+msgid "using gimp"
+msgstr "använda gimp"
+
+#: database-content.py:462
+msgid "preferences"
+msgstr "inställningar"
+
+#: database-content.py:463
+msgid "Beagle Desktop Search"
+msgstr "Beagle skrivbordssökare"
+
+#: database-content.py:464 templates/admin/base_site.html:7
+#: templates/base.html:57
+msgid "Damned Lies"
+msgstr "Förbannade lögner"
+
+#: database-content.py:465
+msgid "Eye of GNOME"
+msgstr "Eye of GNOME"
+
+#: database-content.py:466
+msgid "GIMP User Manual"
+msgstr "Användarhandbok för GIMP"
+
+#: database-content.py:467
+msgid "GNOME Development Documentation"
+msgstr "Utvecklardokumentation för GNOME"
+
+#: database-content.py:468
+msgid "Getting Started with GNOME"
+msgstr "Kom igång med GNOME"
+
+#: database-content.py:469
+msgid "GNOME User Documentation"
+msgstr "Användardokumentation för GNOME"
+
+#: database-content.py:470
+msgid "GNOME Web Photo"
+msgstr "GNOME-webbfoto"
+
+#: database-content.py:471
+msgid "GNOME Web site"
+msgstr "GNOME:s webbplats"
+
+#: database-content.py:472
+msgid "GNOME Library Web site"
+msgstr "GNOME:s webbplats för bibliotek"
+
+#: database-content.py:473
+msgid "GNOME Release Notes"
+msgstr "Kommentarer till GNOME-utgåva"
+
+#: database-content.py:474
+msgid "Shared MIME Info"
+msgstr "Delad MIME-information"
+
+#: database-content.py:475
+msgid "Video Subtitles for GNOME's videos"
+msgstr "Videoundertexter för GNOME-videor"
+
+#: database-content.py:476
+msgid "WebKitGTK+"
+msgstr "WebKitGTK+"
+
+#: database-content.py:477
+msgid "D-Bus interface for user account query and manipulation."
+msgstr "D-Bus-gränssnitt för sökning och ändring av användarkonton."
+
+#: database-content.py:478
+msgid ""
+"Utilities to generate, maintain and access the AppStream Xapian database and "
+"work with AppStream metadata."
+msgstr ""
+"Verktyg för att generera, underhålla och komma åt AppStream Xapian-databasen "
+"och arbeta med AppStream-metadata."
+
+#: database-content.py:479
+msgid ""
+"This library provides objects and helper methods to help reading and writing "
+"AppStream metadata."
+msgstr ""
+"Detta bibliotek tillhandahåller objekt och hjälpmetoder för att underlätta "
+"läsning och skrivning av AppStream-metadata."
+
+#: database-content.py:480
+msgid ""
+"Avahi is a system which facilitates service discovery on a local network via "
+"the mDNS/DNS-SD protocol suite."
+msgstr ""
+"Avahi är ett system som erbjuder tjänstedetektering på ett lokalt nätverk "
+"via protokollsviten mDNS/DNS-SD."
+
+#: database-content.py:481
+msgid ""
+"There is a glossary that will help translators in Chronojump localization: "
+"<a href=\"http://git.gnome.org/browse/chronojump/plain/glossary/"
+"chronojump_glossary_for_translators.html\">http://git.gnome.org/browse/"
+"chronojump/plain/glossary/chronojump_glossary_for_translators.html</a>.\n"
+msgstr ""
+"Det finns en ordlista som hjälper översättare i lokalanpassning av "
+"Chronojump: <a href=\"http://git.gnome.org/browse/chronojump/plain/glossary/"
+"chronojump_glossary_for_translators.html\">http://git.gnome.org/browse/"
+"chronojump/plain/glossary/chronojump_glossary_for_translators.html</a>.\n"
+
+#: database-content.py:483
+msgid ""
+"colord is a system service that makes it easy to manage, install and "
+"generate color profiles to accurately color manage input and output devices."
+msgstr ""
+"colord är en systemtjänst som gör det enkelt att hantera, installera och "
+"skapa färgprofiler för att korrekt färghantera indata- och utdataenheter."
+
+#: database-content.py:484
+msgid "PolicyKit helper to configure CUPS with fine-grained privileges."
+msgstr ""
+"PolicyKit-hjälpare för att konfigurera CUPS med finkorniga privilegier."
+
+#: database-content.py:485
+msgid ""
+"Committed translations are updated manually on l10n.gnome.org from time to "
+"time. Be patient :-)"
+msgstr ""
+"Verkställda översättningar uppdateras manuellt på l10n.gnome.org med jämna "
+"mellanrum. Stressa inte :-)"
+
+#: database-content.py:486
+msgid "Evince is a document viewer for multiple document formats."
+msgstr "Evince är en dokumentvisare för flera typer av dokumentformat."
+
+#: database-content.py:487
+msgid "D-Bus service to access fingerprint readers."
+msgstr "D-Bus-tjänst för att använda fingeravtrycksläsare."
+
+#: database-content.py:488
+msgid "A simple daemon to allow session software to update UEFI firmware."
+msgstr ""
+"En enkel demon för att tillåta sessionprogramvara att uppdatera fast "
+"programvara för UEFI."
+
+#: database-content.py:489
+msgid ""
+"For other localisation needs of GCompris, see  <a href=\"http://gcompris.net/"
+"wiki/Translation_addons\">http://gcompris.net/wiki/Translation_addons</a>."
+msgstr ""
+"För andra lokalanpassningsbehov för GCompris, se  <a href=\"http://gcompris."
+"net/wiki/Translation_addons\">http://gcompris.net/wiki/Translation_addons</"
+"a>."
+
+#: database-content.py:490
+msgid "Graphical frontend for the git directory tracker"
+msgstr "Grafisk framände för git-katalogbevakaren"
+
+#: database-content.py:491
+msgid ""
+"glom is a user-friendly database application.<br>\n"
+"Apart from the UI messages and the documentation, there are additional "
+"example files that can be translated."
+msgstr ""
+"glom är ett användarvänligt databasprogram.<br>\n"
+"I tillägg till gränssnittsmeddelanden och dokumentationen så finns det även "
+"ytterligare exempelfiler som kan översättas."
+
+#: database-content.py:493
+msgid "A multimedia converter for the GNOME Desktop"
+msgstr "En multimediakonverterare för GNOME-skrivbordet"
+
+#: database-content.py:494
+msgid "Builder - Develop software for GNOME"
+msgstr "Builder - Utveckla programvara för GNOME"
+
+#: database-content.py:495
+msgid "Clocks applications for GNOME"
+msgstr "Klock-program för GNOME"
+
+#: database-content.py:496
+msgid ""
+"gnome-disk-utility provides libraries and applications for dealing with "
+"storage devices."
+msgstr ""
+"gnome-disk-utility tillhandahåller bibliotek och program för att hantera "
+"lagringsenheter."
+
+#: database-content.py:497
+msgid ""
+"Refer to the <a href=\"https://git.gnome.org/browse/gnome-getting-started-"
+"docs/plain/README\">README</a> file for additional information on how to "
+"translate this package."
+msgstr ""
+"Referera till filen <a href=\"https://git.gnome.org/browse/gnome-getting-"
+"started-docs/plain/README\">README</a> för ytterligare information om hur "
+"detta paket ska översättas."
+
+#: database-content.py:498
+msgid ""
+"Note that many strings visible in the gnome-tweak-tool interface are coming "
+"from the <a href=\"/module/gsettings-desktop-schemas/\">gsettings-desktop-"
+"schemas</a> module."
+msgstr ""
+"Observera att många synliga strängar i gränssnittet för gnome-tweak-tool "
+"kommer från modulen <a href=\"/module/gsettings-desktop-schemas/\">gsettings-"
+"desktop-schemas</a>."
+
+#: database-content.py:499
+msgid ""
+"gnome-utils has been split into new modules after GNOME 3.2: baobab, gnome-"
+"font-viewer, gnome-dictionary, gnome-screenshot, gnome-search-tool and gnome-"
+"system-log"
+msgstr ""
+"gnome-utils har delats upp i nya moduler efter GNOME 3.2: baobab, gnome-font-"
+"viewer, gnome-dictionary, gnome-screenshot, gnome-search-tool och gnome-"
+"system-log"
+
+#: database-content.py:500
+msgid ""
+"GNOME Video Arcade is a MAME (Multiple Arcade Machine Emulator) front-end "
+"for GNOME."
+msgstr ""
+"GNOME Video Arcade är en grafisk klient för MAME (Multiple Arcade Machine "
+"Emulator) för GNOME."
+
+#: database-content.py:501
+msgid ""
+"To ease localization, gallery of GNOME Video Effects has been set up here: "
+"<a href=\"http://live.gnome.org/GnomeVideoEffects/Effects\">http://live."
+"gnome.org/GnomeVideoEffects/Effects</a>."
+msgstr ""
+"Ett galleri av GNOME-videoeffekter finns här för att förenkla "
+"lokalanpassningen: <a href=\"http://live.gnome.org/GnomeVideoEffects/Effects"
+"\">http://live.gnome.org/GnomeVideoEffects/Effects</a>."
+
+#: database-content.py:502
+msgid "A note taking application"
+msgstr "Ett anteckningsblock"
+
+#: database-content.py:503
+msgid ""
+"Useful information on localization of the gnumeric analysis tools can be "
+"found in the <a href =\"http://git.gnome.org/browse/gnumeric/plain/po/README."
+"analysis\">po/README.analysis</a> file."
+msgstr ""
+"Användbar information om lokalanpassning av analysverktyget Gnumeric kan "
+"hittas i filen <a href =\"http://git.gnome.org/browse/gnumeric/plain/po/"
+"README.analysis\">po/README.analysis</a>."
+
+#: database-content.py:504
+msgid ""
+"This a low-priority module to translate, as there are currently no user "
+"interface that show those strings."
+msgstr ""
+"Detta är en lågprioriterad modul att översätta eftersom det för närvarande "
+"inte finns något användargränssnitt som visar dessa strängar."
+
+#: database-content.py:505
+msgid "\"Bad\" GStreamer plugins and helper libraries."
+msgstr "”Dåliga” GStreamer-insticksmoduler."
+
+#: database-content.py:506
+msgid "\"Base\" GStreamer plugins and helper libraries."
+msgstr "”Basala” GStreamer-insticksmoduler samt hjälpbibliotek."
+
+#: database-content.py:507
+msgid "\"Good\" GStreamer plugins."
+msgstr "”Bra” GStreamer-insticksmoduler."
+
+#: database-content.py:508
+msgid "\"Ugly\" GStreamer plugins."
+msgstr "”Fula” GStreamer-insticksmoduler."
+
+#: database-content.py:509
+msgid "GStreamer open-source multimedia framework core library."
+msgstr "Kärnbibliotek för det öppna källkodsmultimediaramverket GStreamer."
+
+#: database-content.py:510
+msgid ""
+"Please note that gtk+ has both po and po-properties UI domains.  If you add "
+"a new language in either domain, you have to commit both files in Git even "
+"if one of them contains 0 translations, unless GTK+ build will break in /po-"
+"properties."
+msgstr ""
+"Observera att gtk+ innehåller både domänerna po och po-properties.  Om du "
+"lägger till ett nytt språk i någon av domänerna så måste du skicka in båda "
+"filerna i Git även om en av dem bara innehåller 0 översättningar, annars "
+"kommer GTK+-byggnationen inte att fungera i /po-properties."
+
+#: database-content.py:511
+msgid "A plugin manager library for other GNOME modules"
+msgstr "Ett bibliotek för instickshantering för andra GNOME-moduler"
+
+#: database-content.py:512
+msgid "Desktop entries for MESS ROMs"
+msgstr "Skrivbordsposter för MESS ROMs"
+
+#: database-content.py:513
+msgid ""
+"moserial is a clean, friendly gtk-based serial terminal for the GNOME "
+"desktop. It is written in Vala for extra goodness."
+msgstr ""
+"moserial är en ren, vänlig gtk-baserad serieterminal för GNOME-skrivbordet. "
+"Det har skrivits i Vala för extra brahet."
+
+#: database-content.py:514
+msgid ""
+"Network connection manager and user applications. To submit your "
+"translation, <a href=\"https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=NetworkManager&component=Translations\">create a bug report for "
+"NetworkManager on the GNOME Bugzilla</a>. Then, attach your translation file."
+msgstr ""
+"Nätverksanslutningshanterare och användarprogram. <a href=\"https://bugzilla."
+"gnome.org/enter_bug.cgi?product=NetworkManager&component=Translations"
+"\">Skapa en felrapport för Nätverkshanterare på GNOME Bugzilla</a> för att "
+"skicka in din översättning. Bifoga sedan din översättningsfil."
+
+#: database-content.py:515
+msgid "PKCS#11 cryptography framework for multiple consumers."
+msgstr "PKCS#11-kryptografiramverk för flera konsumenter."
+
+#: database-content.py:516
+msgid ""
+"System designed to make installing and updating software on your computer "
+"easier."
+msgstr ""
+"System som är byggt för att förenkla installation och uppdatering av "
+"programvara på din dator."
+
+#: database-content.py:517
+msgid ""
+"Toolkit for defining and handling authorizations. To submit your "
+"translation, <a href=\"https://bugs.freedesktop.org/enter_bug.cgi?"
+"product=PolicyKit&component=libpolkit\">create a bug report for polkit on "
+"the freedesktop.org Bugzilla</a>. Then, attach your translation as a git-"
+"formatted patch."
+msgstr ""
+"Verktygslåda för att definiera och hantera autentiseringar. <a href="
+"\"https://bugs.freedesktop.org/enter_bug.cgi?"
+"product=PolicyKit&component=libpolkit\">Skapa en felrapport för polkit på "
+"freedesktop.orgs Bugzilla</a> för att skicka in din översättning. Bifoga "
+"sedan din översättningsfil till rapporten som en git-formaterad förändring."
+
+#: database-content.py:518
+msgid ""
+"PulseAudio is a sound system for POSIX OSes, meaning that it is a proxy for "
+"your sound applications. To submit your translation, <a href=\"https://bugs."
+"freedesktop.org/enter_bug.cgi?product=PulseAudio&component=misc\">create a "
+"bug report for PulseAudio on the freedesktop.org Bugzilla</a>. Then, attach "
+"your translation as a git-formatted patch."
+msgstr ""
+"PulseAudio är ett ljudsystem för POSIX-operativsystem, vilket betyder att "
+"det är en proxy för dina ljudprogram. <a href=\"https://bugs.freedesktop.org/"
+"enter_bug.cgi?product=PulseAudio&component=misc\">Skapa en felrapport för "
+"PulseAudio på freedesktop.orgs Bugzilla</a> för att skicka in din "
+"översättning. Bifoga sedan din översättningsfil till rapporten som en git-"
+"formaterad förändring."
+
+#: database-content.py:519
+msgid ""
+"D-Bus system service that manages discovery and enrollment in realms/domains "
+"like Active Directory or IPA."
+msgstr ""
+"D-Bus-systemtjänst som hanterar upptäckt och registrering i sfärer/domäner "
+"som Active Directory eller IPA."
+
+#: database-content.py:520
+msgid "Shared MIME information specification."
+msgstr "Specifikation för delad MIME-information."
+
+#: database-content.py:521
+msgid "A photo manager for GNOME"
+msgstr "En fotohanterare för GNOME"
+
+#: database-content.py:522
+msgid ""
+"System and session manager. To submit your translation, <a href=\"https://"
+"github.com/systemd/systemd/pulls\">create a pull request</a>."
+msgstr ""
+"System- och sessionshanterare. <a href=\"https://github.com/systemd/systemd/"
+"pulls\">Skapa en ”pull”-förfrågan</a> för att skicka in din översättning."
+
+#: database-content.py:523
+msgid "GNOME Teletext viewer"
+msgstr "GNOME-texttv-visare"
+
+#: database-content.py:524
+msgid ""
+"Daemon, tools and libraries to access and manipulate disks and storage "
+"devices."
+msgstr ""
+"Demon, verktyg och bibliotek för att komma åt och manipulera diskar och "
+"lagringsenheter."
+
+#: database-content.py:525
+msgid "A VNC client for GNOME"
+msgstr "En VNC-klient för GNOME"
+
+#: database-content.py:526
+msgid "Translations should be submitted as bug reports (see link below)."
+msgstr "Översättningar ska skickas in som felrapporter (se länk nedan)."
+
+#: database-content.py:527
+msgid ""
+"Tool to help manage \"well known\" user directories like the desktop folder "
+"and the music folder."
+msgstr ""
+"Verktyg för att hantera ”välkända” användarkataloger som skrivbordsmappen "
+"och musikmappen."
+
+#: database-content.py:528
+msgid "Database of keyboard configuration data."
+msgstr "Databas över inställningsdata för tangentbord."
+
+#: database-content.py:529
+msgid "GNOME 3.8 (old stable)"
+msgstr "GNOME 3.8 (gammal stabil)"
+
+#: database-content.py:530
+msgid "GNOME 3.6 (old stable)"
+msgstr "GNOME 3.6 (gammal stabil)"
+
+#: database-content.py:531
+msgid "GNOME 3.4 (old stable)"
+msgstr "GNOME 3.4 (gammal stabil)"
+
+#: database-content.py:532
+msgid "GNOME 3.20 (development)"
+msgstr "GNOME 3.20 (utveckling)"
+
+#: database-content.py:533
+msgid "GNOME 3.2 (old stable)"
+msgstr "GNOME 3.2 (gammal stabil)"
+
+#: database-content.py:534
+msgid "GNOME 3.18 (stable)"
+msgstr "GNOME 3.18 (stabil)"
+
+#: database-content.py:535
+msgid "GNOME 3.16 (old stable)"
+msgstr "GNOME 3.16 (gammal stabil)"
+
+#: database-content.py:536
+msgid "GNOME 3.14 (old stable)"
+msgstr "GNOME 3.14 (gammal stabil)"
+
+#: database-content.py:537
+msgid "GNOME 3.12 (old stable)"
+msgstr "GNOME 3.12 (gammal stabil)"
+
+#: database-content.py:538
+msgid "GNOME 3.10 (old stable)"
+msgstr "GNOME 3.10 (gammal stabil)"
+
+#: database-content.py:539
+msgid "GNOME 3.0 (old stable)"
+msgstr "GNOME 3.0 (gammal stabil)"
+
+#: database-content.py:540
+msgid "GNOME 2.32 (old stable)"
+msgstr "GNOME 2.32 (gammal stabil)"
+
+#: database-content.py:541
+msgid "Obsolete GNOME Applications"
+msgstr "Föråldrade GNOME-program"
+
+#: database-content.py:542
+msgid "GNOME Infrastructure"
+msgstr "GNOME-infrastruktur"
+
+#: database-content.py:543
+msgid "GIMP and Friends"
+msgstr "GIMP med vänner"
+
+#: database-content.py:544
+msgid "Extra GNOME Applications (stable)"
+msgstr "Extra GNOME-program (stabil)"
+
+#: database-content.py:545
+msgid "Extra GNOME Applications"
+msgstr "Extra GNOME-program"
+
+#: database-content.py:546
+msgid "freedesktop.org (non-GNOME)"
+msgstr "freedesktop.org (icke-GNOME)"
+
+#: database-content.py:547
+msgid "Accessibility"
+msgstr "Hjälpmedel"
+
+#: database-content.py:548
+msgid "Administration Tools"
+msgstr "Administrationsverktyg"
+
+#: database-content.py:549
+msgid "Apps"
+msgstr "Program"
+
+#: database-content.py:550
+msgid "Backends"
+msgstr "Bakändar"
+
+#: database-content.py:551
+msgid "Core"
+msgstr "Kärna"
+
+#: database-content.py:552
+msgid "Core Libraries"
+msgstr "Kärnbibliotek"
+
+#: database-content.py:553
+msgid "Default"
+msgstr "Standard"
+
+#: database-content.py:554
+msgid "Development Branches"
+msgstr "Utvecklingsgrenar"
+
+#: database-content.py:555
+msgid "Development Tools"
+msgstr "Utvecklingsverktyg"
+
+#: database-content.py:556
+msgid "Extra Libraries"
+msgstr "Extra bibliotek"
+
+#: database-content.py:557
+msgid "Games"
+msgstr "Spel"
+
+#: database-content.py:558
+msgid "GNOME Desktop"
+msgstr "GNOME-skrivbordet"
+
+#: database-content.py:559
+msgid "GNOME Developer Platform"
+msgstr "GNOME-utvecklingsplattform"
+
+#: database-content.py:560
+msgid "Legacy Desktop"
+msgstr "Äldre skrivbord"
+
+#: database-content.py:561
+msgid "New Module Proposals"
+msgstr "Nya modulförslag"
+
+#: database-content.py:562
+msgid "Office Apps"
+msgstr "Kontorsprogram"
+
+#: database-content.py:563
+msgid "Stable Branches"
+msgstr "Stabila grenar"
+
+#: database-content.py:564
+msgid "Utils"
+msgstr "Verktyg"
+
+#: django_openid/templates/django_openid/admin_login.html:17
+#: templates/login.html:16
+msgid "Log in with your username and password:"
+msgstr "Logga in med ditt användarnamn och lösenord:"
+
+#: django_openid/templates/django_openid/admin_login.html:20
+#: templates/login.html:20
+msgid "Username:"
+msgstr "Användarnamn:"
+
+#: django_openid/templates/django_openid/admin_login.html:23 people/forms.py:23
+#: templates/login.html:23
+msgid "Password:"
+msgstr "Lösenord:"
+
+#: django_openid/templates/django_openid/admin_login.html:28
+#: templates/base.html:47 templates/login.html:31
+#: templates/registration/password_reset_complete.html:12
+msgid "Log in"
+msgstr "Logga in"
+
+#: django_openid/templates/django_openid/admin_login.html:31
+#: templates/login.html:36
+msgid "Or use your OpenID:"
+msgstr "Eller använd ditt OpenID:"
+
+#: django_openid/templates/django_openid/admin_login.html:34 people/forms.py:20
+#: templates/login.html:40
+msgid "OpenID:"
+msgstr "OpenID:"
+
+#: django_openid/templates/django_openid/admin_login.html:37
+#: templates/login.html:43
+msgid "Log in with OpenID"
+msgstr "Logga in med OpenID"
+
+#. Translators: this concerns an unknown plural form
+#: languages/models.py:58
+msgid "Unknown"
+msgstr "Okänt"
+
+#: languages/views.py:49 languages/views.py:82
+msgid "UI Translations"
+msgstr "Gränssnittsöversättningar"
+
+#: languages/views.py:50 languages/views.py:83
+msgid "UI Translations (reduced)"
+msgstr "Gränssnittsöversättningar (minskade)"
+
+#: languages/views.py:79 templates/release_detail.html:82
+msgid "Original strings"
+msgstr "Ursprungliga strängar"
+
+#: people/forms.py:17
+msgid "Choose a username:"
+msgstr "Välj ett användarnamn:"
+
+#: people/forms.py:18
+msgid "May contain only letters, numbers, underscores or hyphens"
+msgstr "Får endast innehålla bokstäver, siffror, understreck eller bindestreck"
+
+#: people/forms.py:19
+msgid "Email:"
+msgstr "E-post:"
+
+#: people/forms.py:24
+msgid "At least 7 characters"
+msgstr "Minst 7 tecken"
+
+#: people/forms.py:26 templates/people/person_password_change_form.html:28
+#: templates/registration/password_reset_confirm.html:19
+msgid "Confirm password:"
+msgstr "Bekräfta lösenord:"
+
+#: people/forms.py:34
+msgid "This username is already taken. Please choose another."
+msgstr "Detta användarnamn används redan. Välj ett annat."
+
+#: people/forms.py:44
+msgid "This OpenID URL is already taken by a registered user"
+msgstr "Denna OpenID-URL används redan av en registrerad användare"
+
+#: people/forms.py:54
+msgid "You must either provide an OpenID or a password"
+msgstr "Du måste antingen tillhandahålla ett OpenID eller ett lösenord"
+
+#: people/forms.py:57
+msgid "The passwords do not match"
+msgstr "Lösenorden stämmer inte överens"
+
+#: people/forms.py:81
+msgid "Account activation"
+msgstr "Kontoaktivering"
+
+#: people/forms.py:82
+#, python-format
+msgid ""
+"This is a confirmation that your registration on %s succeeded. To activate "
+"your account, please click on the link below or copy and paste it in a "
+"browser."
+msgstr ""
+"Detta är en bekräftelse på att din registrering på %s har lyckats. Klicka på "
+"länken nedan eller kopiera in den i en webbläsare för att aktivera ditt "
+"konto."
+
+#: people/forms.py:84
+#, python-format
+msgid "Administrators of %s"
+msgstr "Administratörerna för %s"
+
+#: people/forms.py:103
+#, python-format
+msgid ""
+"Image too high or too wide (%(width)dx%(height)d, maximum is 100x100 pixels)"
+msgstr ""
+"Bilden är för hög eller för bred (%(width)dx%(height)d, maximalt är 100x100 "
+"bildpunkter)"
+
+#: people/forms.py:123
+msgid "The URL you provided is not valid"
+msgstr "URL:en som du angav är inte giltig"
+
+#: people/forms.py:139
+msgid "The URL you provided seems not to correspond to a valid image"
+msgstr "URL:en som du angav verkar inte vara en giltig bild"
+
+#: people/models.py:42
+msgid "Image"
+msgstr "Bild"
+
+#: people/models.py:43
+msgid ""
+"URL to an image file (.jpg, .png, ...) of an hackergotchi (max. 100x100 "
+"pixels)"
+msgstr ""
+"URL till en bildfil (.jpg, .png, …) för en hackergotchi (max. 100x100 "
+"bildpunkter)"
+
+#: people/models.py:45
+msgid "Display the image of your gravatar.com account"
+msgstr "Visa bilden från ditt gravatar.com-konto"
+
+#: people/models.py:46 teams/models.py:92
+msgid "Web page"
+msgstr "Webbsida"
+
+#: people/models.py:47
+msgid "IRC nickname"
+msgstr "Smeknamn på IRC"
+
+#: people/models.py:48
+msgid "Bugzilla account"
+msgstr "Bugzilla-konto"
+
+#: people/models.py:49
+msgid ""
+"This should be an email address, useful if not equal to 'E-mail address' "
+"field"
+msgstr ""
+"Detta bör vara en e-postadress, användbar om den inte är samma som ”E-"
+"postadress”-fältet"
+
+#: people/templatetags/people.py:21
+msgid ", "
+msgstr ", "
+
+#: people/views.py:85
+msgid "Sorry, the form is not valid."
+msgstr "Tyvärr, formuläret är inte giltigt."
+
+#: people/views.py:100
+#, python-format
+msgid "You have successfully joined the team '%s'."
+msgstr "Du har gått med i gruppen ”%s”."
+
+#: people/views.py:101
+msgid "A new person joined your team"
+msgstr "En ny person har gått med i din grupp"
+
+#: people/views.py:102
+#, python-format
+msgid "%(name)s has just joined your translation team on %(site)s"
+msgstr "%(name)s har precis gått med i din översättningsgrupp på %(site)s"
+
+#: people/views.py:105
+msgid "You are already member of this team."
+msgstr "Du är redan medlem i denna grupp."
+
+#: people/views.py:124
+#, python-format
+msgid "You have been removed from the team '%s'."
+msgstr "Du har tagits bort från gruppen ”%s”."
+
+#: people/views.py:127
+msgid "You are not a member of this team."
+msgstr "Du är inte medlem av denna grupp."
+
+#: people/views.py:140
+msgid "Your password has been changed."
+msgstr "Ditt lösenord har ändrats."
+
+#: stats/forms.py:64
+msgid "You have to provide a category when a version is specified."
+msgstr "Du måste tillhandahålla en kategori när en version anges."
+
+#: stats/models.py:117
+#, python-format
+msgid ""
+"Translations for this module are externally hosted. Please go to the <a href="
+"\"%(link)s\">external platform</a> to see how you can submit your "
+"translation."
+msgstr ""
+"Översättningar för denna modul hanteras externt. Gå till <a href=\"%(link)s"
+"\">externa plattformen</a> för att se hur du kan skicka in din översättning."
+
+#: stats/models.py:286
+msgid "This branch is not linked from any release"
+msgstr "Denna gren är inte länkad från någon utgåva"
+
+#: stats/models.py:493
+msgid "Can't generate POT file, using old one."
+msgstr "Kan inte generera POT-fil, använder en gammal."
+
+#: stats/models.py:495
+msgid "Can't generate POT file, statistics aborted."
+msgstr "Kan inte generera POT-fil, statistiken avbruten."
+
+#: stats/models.py:513
+msgid "Can't copy new POT file to public location."
+msgstr "Kan inte kopiera ny POT-fil till publik plats."
+
+#: stats/models.py:849
+msgid "Error retrieving pot file from URL."
+msgstr "Fel vid hämtning av pot-fil från URL."
+
+#: stats/models.py:878
+#, python-format
+msgid ""
+"Error regenerating POT file for %(file)s:\n"
+"<pre>%(cmd)s\n"
+"%(output)s</pre>"
+msgstr ""
+"Fel vid återgenerering av POT-fil för %(file)s:\n"
+"<pre>%(cmd)s\n"
+"%(output)s</pre>"
+
+#: stats/models.py:902
+#, python-format
+msgid ""
+"Entry for this language is not present in %(var)s variable in %(file)s file."
+msgstr ""
+"Post för det här språket finns inte i variabeln %(var)s i filen %(file)s."
+
+#: stats/models.py:1388 stats/models.py:1757
+#, python-format
+msgid "%(lang_name)s (%(lang_locale)s)"
+msgstr "%(lang_name)s (%(lang_locale)s)"
+
+#: stats/models.py:1414
+msgid "POT file unavailable"
+msgstr "POT-filen är inte tillgänglig"
+
+#: stats/models.py:1419
+#, python-format
+msgid "%(count)s message"
+msgid_plural "%(count)s messages"
+msgstr[0] "%(count)s meddelande"
+msgstr[1] "%(count)s meddelanden"
+
+#: stats/models.py:1420
+#, python-format
+msgid "updated on %(date)s"
+msgstr "uppdaterad den %(date)s"
+
+#: stats/models.py:1422 templates/vertimus/vertimus_detail.html:59
+#: templates/vertimus/vertimus_detail.html:180
+msgid "Y-m-d g:i a O"
+msgstr "Y-m-d H.i O"
+
+#: stats/models.py:1424
+#, python-format
+msgid "%(count)s word"
+msgid_plural "%(count)s words"
+msgstr[0] "%(count)s ord"
+msgstr[1] "%(count)s ord"
+
+#: stats/models.py:1426
+#, python-format
+msgid "%(count)s figure"
+msgid_plural "%(count)s figures"
+msgstr[0] "%(count)s bild"
+msgstr[1] "%(count)s bilder"
+
+#: stats/models.py:1427
+#, python-format
+msgid "POT file (%(messages)s — %(words)s, %(figures)s) — %(updated)s"
+msgstr "POT-fil (%(messages)s — %(words)s, %(figures)s) — %(updated)s"
+
+#: stats/models.py:1430
+#, python-format
+msgid "POT file (%(messages)s — %(words)s) — %(updated)s"
+msgstr "POT-fil (%(messages)s — %(words)s) — %(updated)s"
+
+#: stats/models.py:1583
+msgid ""
+"This POT file has not been generated through the standard intltool method."
+msgstr "Denna POT-fil har inte genererats med standardmetoden intltool."
+
+#: stats/models.py:1584
+msgid ""
+"This POT file has not been generated through the standard gnome-doc-utils "
+"method."
+msgstr "Denna POT-fil har inte genererats med standardmetoden gnome-doc-utils."
+
+#: stats/utils.py:192
+msgid "Errors while running 'intltool-update -m' check."
+msgstr "Fel vid körning av ”intltool-update -m”."
+
+#: stats/utils.py:198
+#, python-format
+msgid "There are some missing files from POTFILES.in: %s"
+msgstr "Det saknas filer i POTFILES.in: %s"
+
+#: stats/utils.py:207
+#, python-format
+msgid ""
+"Following files are referenced in either POTFILES.in or POTFILES.skip, yet "
+"they don't exist: %s"
+msgstr ""
+"Följande filer refereras till i antingen POTFILES.in eller POTFILES.skip, "
+"men de finns ännu inte: %s"
+
+#: stats/utils.py:227
+#, python-format
+msgid "Module %s doesn't look like gnome-doc-utils module."
+msgstr "Modulen %s ser inte ut som en modul som använder gnome-doc-utils."
+
+#: stats/utils.py:238
+#, python-format
+msgid "%s doesn't point to a real file, probably a macro."
+msgstr "%s pekar inte till en verklig fil, antagligen ett makro."
+
+#: stats/utils.py:254
+#, python-format
+msgid ""
+"Error regenerating POT file for document %(file)s:\n"
+"<pre>%(cmd)s\n"
+"%(output)s</pre>"
+msgstr ""
+"Fel vid återgenerering av POT-fil för dokumentet %(file)s:\n"
+"<pre>%(cmd)s\n"
+"%(output)s</pre>"
+
+#: stats/utils.py:341
+#, python-format
+msgid "PO file '%s' does not exist or cannot be read."
+msgstr "PO-filen ”%s” finns inte eller kan inte läsas."
+
+#: stats/utils.py:369
+#, python-format
+msgid "PO file '%s' doesn't pass msgfmt check: not updating."
+msgstr "PO-filen ”%s” klarade inte msgfmt-kontrollen: uppdaterar inte."
+
+#: stats/utils.py:371
+#, python-format
+msgid "Can't get statistics for POT file '%s'."
+msgstr "Kan inte få tag på statistik för POT-filen ”%s”."
+
+#: stats/utils.py:374
+msgid "This PO file has an executable bit set."
+msgstr "Den här PO-filen har fått den körbara biten inställd."
+
+#: stats/utils.py:402
+#, python-format
+msgid "PO file '%s' is not UTF-8 encoded."
+msgstr "PO-filen ”%s” är inte UTF-8-kodad."
+
+#: stats/utils.py:412
+msgid "Entry for this language is not present in LINGUAS file."
+msgstr "Post för det här språket finns inte i filen LINGUAS."
+
+#: stats/utils.py:443
+msgid "No need to edit LINGUAS file or variable for this module"
+msgstr "Filen eller variabeln LINGUAS behöver inte redigeras för denna modul"
+
+#: stats/utils.py:449
+msgid ""
+"Entry for this language is not present in ALL_LINGUAS in configure file."
+msgstr ""
+"Post för det här språket finns inte i ALL_LINGUAS i konfigurationsfilen."
+
+#: stats/utils.py:451
+msgid ""
+"Don't know where to look for the LINGUAS variable, ask the module maintainer."
+msgstr ""
+"Vet inte var jag ska leta efter variabeln LINGUAS, fråga modulansvarig."
+
+#: stats/utils.py:458
+msgid ""
+"Don't know where to look for the DOC_LINGUAS variable, ask the module "
+"maintainer."
+msgstr ""
+"Vet inte var jag ska leta efter variabeln DOC_LINGUAS, fråga modulansvarig."
+
+#: stats/utils.py:460
+msgid "DOC_LINGUAS list doesn't include this language."
+msgstr "Listan DOC_LINGUAS inkluderar inte det här språket."
+
+#: teams/forms.py:31 teams/models.py:242 templates/teams/team_base.html:46
+msgid "Coordinator"
+msgstr "Koordinator"
+
+#: teams/forms.py:58
+msgid "Mark as Inactive"
+msgstr "Markera som inaktiv"
+
+#: teams/forms.py:59
+msgid "Remove From Team"
+msgstr "Ta bort från grupp"
+
+#: teams/models.py:90
+msgid "Presentation"
+msgstr "Presentation"
+
+#: teams/models.py:93
+msgid "Mailing list"
+msgstr "Sändlista"
+
+#: teams/models.py:94
+msgid "URL to subscribe"
+msgstr "URL för prenumeration"
+
+#: teams/models.py:202 vertimus/models.py:546
+#, python-format
+msgid "This is an automated message sent from %s."
+msgstr "Detta är ett automatiskt skickat meddelande från %s."
+
+#: teams/models.py:220
+#, python-format
+msgid "No team for locale %s"
+msgstr "Ingen grupp för lokalen %s"
+
+#: teams/models.py:239
+msgid "Translator"
+msgstr "Översättare"
+
+#: teams/models.py:240
+msgid "Reviewer"
+msgstr "Granskare"
+
+#: teams/models.py:241
+msgid "Committer"
+msgstr "Insändare"
+
+#: teams/tests.py:175 templates/about.html:9 templates/base.html:136
+msgid "About Damned Lies"
+msgstr "Om Förbannade lögner"
+
+#: teams/views.py:50
+msgid "Committers"
+msgstr "Insändare"
+
+#: teams/views.py:53
+msgid "No committers"
+msgstr "Inga insändare"
+
+#: teams/views.py:56
+msgid "Reviewers"
+msgstr "Granskare"
+
+#: teams/views.py:59
+msgid "No reviewers"
+msgstr "Inga granskare"
+
+#: teams/views.py:62
+msgid "Translators"
+msgstr "Översättare"
+
+#: teams/views.py:65
+msgid "No translators"
+msgstr "Inga översättare"
+
+#: teams/views.py:68
+msgid "Inactive members"
+msgstr "Inaktiva medlemmar"
+
+#: teams/views.py:71
+msgid "No inactive members"
+msgstr "Inga inaktiva medlemmar"
+
+#: templates/404.html:4 templates/404.html.py:9
+msgid "Error: page not found"
+msgstr "Fel: sidan hittades inte"
+
+#: templates/404.html:11
+msgid "The page you requested has not been found on this server."
+msgstr "Sidan som du begärde hittades inte på denna server."
+
+#: templates/500.html:4
+msgid "Error: server error (500)"
+msgstr "Fel: serverfel (500)"
+
+#: templates/500.html:9
+msgid "Server Error"
+msgstr "Serverfel"
+
+#: templates/500.html:11
+msgid "We're sorry but a server error has occurred."
+msgstr "Vi är ledsna men ett serverfel har inträffat."
+
+#: templates/about.html:4
+msgid "About"
+msgstr "Om"
+
+#: templates/about.html:11 templates/index.html:11
+msgid ""
+"Damned Lies is the Web application used to manage the localisation (l10n) of "
+"the GNOME project."
+msgstr ""
+"Förbannade lögner är webbapplikationen som används för att hantera "
+"lokalanpassningen (l10n) av GNOME-projektet."
+
+#: templates/about.html:12
+#, python-format
+msgid ""
+"It allows you to browse live statistics. Damned Lies also manages the "
+"translation <a href=\"%(link)s\">workflow</a>."
+msgstr ""
+"Det låter dig att titta på realtidsstatistik. Förbannade lögner hanterar "
+"även <a href=\"%(link)s\">arbetsflödet</a> för översättningar."
+
+#: templates/about.html:14
+#, python-format
+msgid ""
+"Damned Lies is Free Software, its source code is available under the <a href="
+"\"%(gpl)s\">GNU GPL license</a>. You are welcome to participate to its "
+"improvement, especially by <a href=\"%(bug)s\">reporting bugs and "
+"enhancement proposals</a>."
+msgstr ""
+"Förbannade lögner är fri programvara, dess källkod finns tillgänglig under "
+"licensen <a href=\"%(gpl)s\">GNU GPL</a>. Du får gärna delta med att "
+"förbättra det, speciellt <a href=\"%(bug)s\">rapportera fel och föreslå "
+"förbättringar</a>."
+
+#: templates/about.html:16
+#, python-format
+msgid ""
+"If you wonder about the name of this application, see <a href=\"%(link)s"
+"\">this article on Wikipedia</a>."
+msgstr ""
+"Se <a href=\"%(link)s\">denna artikel på Wikipedia</a> om du undrar om "
+"namnet på denna applikation."
+
+#: templates/about.html:18
+#, python-format
+msgid ""
+"Many thanks to <a href=\"%(link)s\">GetSentry.com</a> for freely providing "
+"us an account on their online logging platform."
+msgstr ""
+"Ett stort tack till <a href=\"%(link)s\">GetSentry.com</a> för att de gratis "
+"tillhandahåller oss ett konto på deras nätverksbaserade loggningsplatform."
+
+#: templates/about.html:22
+msgid "This Web site has been translated in your language by:"
+msgstr "Denna webbplats har översatts till ditt språk av:"
+
+#: templates/about.html:27
+msgid "Quick links"
+msgstr "Snabblänkar"
+
+#: templates/about.html:29
+msgid "Project wiki"
+msgstr "Projektets wikisida"
+
+#: templates/about.html:32
+msgid "Bug tracking page"
+msgstr "Sida för felhantering"
+
+#: templates/about.html:35
+msgid "Source code"
+msgstr "Källkod"
+
+#: templates/about.html:38
+msgid "Workflow"
+msgstr "Arbetsflöde"
+
+#: templates/admin/base_site.html:4
+msgid "Damned Lies site admin"
+msgstr "Admin för Förbannade lögner"
+
+#: templates/admin/delete_release_confirmation.html:6 templates/base.html:60
+msgid "Home"
+msgstr "Hem"
+
+#: templates/base.html:44
+msgid "Log out"
+msgstr "Logga ut"
+
+#: templates/base.html:57 templates/base.html.py:60
+msgid "Back to Damned Lies home page"
+msgstr "Tillbaka till Förbannade lögner"
+
+#: templates/base.html:61 templates/base.html.py:100 templates/index.html:18
+msgid "Teams"
+msgstr "Grupper"
+
+#: templates/base.html:62 templates/index.html:33
+#: templates/release_compare.html:25
+msgid "Languages"
+msgstr "Språk"
+
+#: templates/base.html:63
+msgid "Release sets"
+msgstr "Utgåvesamlingar"
+
+#: templates/base.html:64 templates/index.html:50
+msgid "Modules"
+msgstr "Moduler"
+
+#: templates/base.html:96 templates/base.html.py:134
+msgid "The GNOME Project"
+msgstr "GNOME-projektet"
+
+#: templates/base.html:98
+msgid "About Us"
+msgstr "Om oss"
+
+#: templates/base.html:99
+msgid "Get Involved"
+msgstr "Engagera dig"
+
+#: templates/base.html:101
+msgid "Support GNOME"
+msgstr "Stöd GNOME"
+
+#: templates/base.html:102
+msgid "Contact Us"
+msgstr "Kontakta oss"
+
+#: templates/base.html:103
+msgid "The GNOME Foundation"
+msgstr "GNOME-stiftelsen"
+
+#: templates/base.html:106
+msgid "Resources"
+msgstr "Resurser"
+
+#: templates/base.html:108
+msgid "Developer Center"
+msgstr "Utvecklingscenter"
+
+#: templates/base.html:110
+msgid "Wiki"
+msgstr "Wiki"
+
+#: templates/base.html:111
+msgid "Mailing Lists"
+msgstr "Sändlistor"
+
+#: templates/base.html:112
+msgid "IRC Channels"
+msgstr "IRC-kanaler"
+
+#: templates/base.html:113
+msgid "Bug Tracker"
+msgstr "Bugg-uppföljningssystem"
+
+#: templates/base.html:114
+msgid "Development Code"
+msgstr "Utvecklingskod"
+
+#: templates/base.html:115
+msgid "Build Tool"
+msgstr "Byggverktyg"
+
+#: templates/base.html:118
+msgid "News"
+msgstr "Nyheter"
+
+#: templates/base.html:120
+msgid "Press Releases"
+msgstr "Äldre utgåvor"
+
+#: templates/base.html:121
+msgid "Latest Release"
+msgstr "Senaste utgåva"
+
+#: templates/base.html:122
+msgid "Planet GNOME"
+msgstr "Planet GNOME"
+
+#: templates/base.html:123
+msgid "GNOME Journal"
+msgstr "GNOME-journalen"
+
+#: templates/base.html:124
+msgid "Development News"
+msgstr "Utvecklingsnyheter"
+
+#: templates/base.html:125
+msgid "Identi.ca"
+msgstr "Identi.ca"
+
+#: templates/base.html:126
+msgid "Twitter"
+msgstr "Twitter"
+
+#: templates/base.html:134
+msgid "Copyright &copy; 2006-2012"
+msgstr "Copyright &copy; 2006-2012"
+
+#: templates/base.html:137
+msgid "Optimized for standards."
+msgstr "Optimerad för standarder."
+
+#: templates/base.html:138
+#, python-format
+msgid "Hosted by %(link)s."
+msgstr "Driftas av %(link)s."
+
+#: templates/base.html:139
+#, python-format
+msgid "Powered by %(link)s."
+msgstr "Driftas av %(link)s."
+
+#: templates/branch_detail.html:4
+msgid "This branch is currently string-frozen."
+msgstr "Den här grenen är för närvarande strängfrusen."
+
+#: templates/branch_detail.html:12
+msgid "Translation"
+msgstr "Översättning"
+
+#: templates/error.html:4 templates/index.html:4 templates/login.html:4
+#: templates/registration/register.html:4
+#: templates/registration/register_success.html:4
+msgid "Damned Lies about GNOME"
+msgstr "Förbannade lögner om GNOME"
+
+#: templates/error.html:9
+msgid "Error:"
+msgstr "Fel:"
+
+#: templates/feeds/actions_description.html:6
+#: templates/vertimus/vertimus_detail.html:208
+msgid "No comment"
+msgstr "Ingen kommentar"
+
+#: templates/help/reduced_po.html:4 templates/help/vertimus_workflow.html:4
+msgid "Help"
+msgstr "Hjälp"
+
+#: templates/help/reduced_po.html:8
+msgid "Reduced po files"
+msgstr "Reducerade po-filer"
+
+#: templates/help/reduced_po.html:10
+msgid ""
+"Damned Lies is able to filter strings which are seldom visible in user "
+"interfaces, so as translation teams can concentrate on most visible strings."
+msgstr ""
+"Förbannade lögner kan filtrera strängar som sällan är synliga i "
+"användargränssnitt, så att översättningsgrupper kan koncentrera sig på de "
+"mest synliga strängarna."
+
+#: templates/help/reduced_po.html:12
+#, python-format
+msgid ""
+"The most typical case is the strings from schema files, hence the default "
+"filter is filtering out strings which come from files having \"gschema.xml.in"
+"\" in their name. Technically speaking, the filter is using the <a href="
+"\"%(pogrep_url)s\">pogrep command from the Translate Toolkit</a>."
+msgstr ""
+"Det mest vanliga är att strängarna från schemafiler, därav standardfiltret "
+"är bortfiltrering av strängar som kommer från filer som har \"gschema.xml.in"
+"\" i sina namn. Tekniskt sett använder filtret kommandot <a href="
+"\"%(pogrep_url)s\">pogrep från Translate Toolkit</a>."
+
+#: templates/help/reduced_po.html:14
+msgid ""
+"When you see a po file or a table header containing \"(red.)\" or "
+"\"(reduced)\", it means that the target files have been filtered as stated "
+"above."
+msgstr ""
+"När du ser en po-fil eller ett tabellhuvud som innehåller ”(red.)” eller "
+"”(reducerad)” så betyder det att målfilerna har filtrerats enligt "
+"ovanstående tillstånd."
+
+#: templates/help/reduced_po.html:16
+#, python-format
+msgid ""
+"If you think you found a better filter for a specific module, please <a href="
+"\"%(bug_url)s\">submit a bug report</a> with your proposal."
+msgstr ""
+"<a href=\"%(bug_url)s\">Skicka in en felrapport</a> med ditt förslag om du "
+"tror dig ha hittat ett bättre filter för en specifik modul."
+
+#: templates/help/vertimus_workflow.html:9
+msgid ""
+"The figure below describes the various states and actions available during "
+"the translation process of a module."
+msgstr ""
+"Figuren nedan beskriver de olika tillstånd och åtgärder som finns "
+"tillgängliga under översättningsarbetet för en modul."
+
+#: templates/index.html:12
+msgid "More…"
+msgstr "Mer…"
+
+#: templates/index.html:19
+msgid ""
+"List of all GNOME Translation Teams, with full information such as primary "
+"contact (coordinator), web pages and mailing list information."
+msgstr ""
+"Lista över alla GNOME-översättningsgrupper inklusive fullständig information "
+"som primär kontakt (koordinator), information om webbsidor och sändlista."
+
+#: templates/index.html:20
+msgid ""
+"If there is no team for your language, you can easily <a href='https://live."
+"gnome.org/TranslationProject/StartingATeam/'>start your own team</a>."
+msgstr ""
+"Om det inte finns någon grupp för ditt språk kan du enkelt <a href='https://"
+"live.gnome.org/TranslationProject/StartingATeam/'>starta din egna grupp</a>."
+
+#: templates/index.html:25
+#, python-format
+msgid ""
+"Go to the <a href='%(team_url)s'>%(language_name)s team page</a> and help us "
+"to translate GNOME!"
+msgstr ""
+"Gå till <a href='%(team_url)s'>%(language_name)s-gruppens sida</a> och hjälp "
+"oss att översätta GNOME!"
+
+#: templates/index.html:35
+#, python-format
+msgid ""
+"List of all languages there are <a href='%(teams_url)s'>Translation Teams</"
+"a> for."
+msgstr ""
+"Lista över alla språk som det finns <a "
+"href='%(teams_url)s'>översättningsgrupper</a> för."
+
+#: templates/index.html:36
+msgid ""
+"Some teams manage more than one language (usually just simple variants), and "
+"here you can see all the languages GNOME is being translated to."
+msgstr ""
+"Några grupper hanterar fler än ett språk (vanligtvis bara enklare varianter) "
+"och här kan du se alla de språk som GNOME blir översatt till."
+
+#: templates/index.html:40
+msgid "Release Sets"
+msgstr "Utgåvesamlingar"
+
+#: templates/index.html:41
+msgid "List of all GNOME release sets and releases we gather stats for."
+msgstr ""
+"Lista över alla GNOME-utgåvesamlingar och utgåvor som vi samlar statistik om."
+
+#: templates/index.html:43
+msgid ""
+"Examples of release sets are &quot;GNOME Infrastructure&quot; or &quot;GNOME "
+"2.26&quot;."
+msgstr ""
+"Exempel på utgåvesamlingar är &quot;GNOME-infrastruktur&quot; eller &quot;"
+"GNOME 2.26&quot;."
+
+#: templates/index.html:44
+msgid ""
+"Official GNOME release sets are further divided into categories such as "
+"&quot;Desktop Applications&quot; and &quot;Developer Platform&quot;."
+msgstr ""
+"Officiella GNOME-utgåvesamlingar delas sedan upp i kategorier som &quot;"
+"Skrivbordsprogram&quot; och &quot;Utvecklingsplattform&quot;."
+
+#: templates/index.html:46
+msgid ""
+"Look here if you want to compare language support in any of these release "
+"sets."
+msgstr ""
+"Se här om du vill jämföra språkstödet i någon av dessa utgåvesamlingar."
+
+#: templates/index.html:51
+msgid "List of all modules with statistics in here."
+msgstr "Lista över alla moduler som har statistik här."
+
+#: templates/index.html:53
+msgid ""
+"Modules are separate libraries or applications, with one or more branches of "
+"development included."
+msgstr ""
+"Moduler är separata bibliotek eller program, med en eller flera "
+"utvecklingsgrenar inkluderade."
+
+#: templates/index.html:54
+msgid ""
+"They are usually taken from the Git repository, and we keep all relevant "
+"information on them (Bugzilla details, web page, maintainer information,...)."
+msgstr ""
+"De hämtas oftast från Git-förrådet och vi har all relevant information om "
+"dem (Bugzilla-detaljer, webbsida, information om ansvariga, …)."
+
+#: templates/languages/language_all_modules.html:4
+#: templates/languages/language_all_modules.html:23
+#: templates/languages/language_release_summary.html:52
+#: templates/languages/language_release_summary.html:53
+#: templates/languages/language_release_summary.html:54
+msgid "All modules"
+msgstr "Alla moduler"
+
+#: templates/languages/language_list.html:4
+#: templates/languages/language_list.html:9
+msgid "GNOME Languages"
+msgstr "GNOME-språk"
+
+#: templates/languages/language_list.html:11
+#, python-format
+msgid "GNOME is being translated to following %(numb)s language.\n"
+msgid_plural "GNOME is being translated to following %(numb)s languages.\n"
+msgstr[0] "GNOME översätts till följande %(numb)s språk.\n"
+msgstr[1] "GNOME översätts till följande %(numb)s språk.\n"
+
+#: templates/languages/language_list.html:26
+#, python-format
+msgid "RSS feed for %(lang.get_name)s"
+msgstr "RSS-flöde för %(lang.get_name)s"
+
+#: templates/languages/language_list.html:37 templates/module_list.html:28
+#: templates/release_list.html:42 templates/teams/team_list.html:38
+#, python-format
+msgid ""
+"If anything should be changed on this page, please <a href=\"%(bug_url)s"
+"\">submit a bug report</a>."
+msgstr ""
+"<a href=\"%(bug_url)s\">Skicka in en felrapport</a> om någonting ska ändras "
+"på denna sida."
+
+#: templates/languages/language_release.html:25
+#: templates/release_detail.html:13
+msgid ""
+"The modules of this release are not part of the GNOME Git repository. Please "
+"check each module's web page to see where to send translations."
+msgstr ""
+"Modulerna i den här utgåvan är inte en del av GNOME:s Git-förråd. "
+"Kontrollera webbsidan för varje modul för att se var översättningarna ska "
+"skickas."
+
+#: templates/languages/language_release.html:35
+msgid "Download all po files"
+msgstr "Hämta alla po-filer"
+
+#: templates/languages/language_release_stats.html:6
+#: templates/people/person_detail.html:53
+msgid "Hide completed modules"
+msgstr "Dölj färdiga moduler"
+
+#: templates/languages/language_release_stats.html:7
+#: templates/people/person_detail.html:54
+msgid "Show completed modules"
+msgstr "Visa färdiga moduler"
+
+#: templates/languages/language_release_stats.html:12
+#: templates/languages/language_release_stats.html:70
+#: templates/languages/language_release_summary.html:27
+#: templates/languages/language_release_summary.html:33
+#: templates/languages/language_release_summary.html:38
+#: templates/vertimus/vertimus_detail.html:80
+#: templates/vertimus/vertimus_detail.html:112
+msgid "Translated/Fuzzy/Untranslated"
+msgstr "Översatta/Luddiga/Ej översatta"
+
+#: templates/languages/language_release_stats.html:26
+#: templates/people/person_detail.html:61
+#: templates/vertimus/activity_summary.html:31
+msgid "Module"
+msgstr "Modul"
+
+#: templates/languages/language_release_stats.html:26
+#: templates/module_edit_branches.html:18
+msgid "Branch"
+msgstr "Gren"
+
+#: templates/languages/language_release_stats.html:28
+#: templates/people/person_detail.html:61
+msgid "Statistics"
+msgstr "Statistik"
+
+#: templates/languages/language_release_stats.html:28
+#: templates/languages/language_release_summary.html:12
+#: templates/languages/language_release_summary.html:17
+#: templates/people/person_detail.html:61 templates/release_detail.html:22
+#: templates/release_detail.html.py:27 templates/stats_show.html:57
+msgid "Graph"
+msgstr "Diagram"
+
+#: templates/languages/language_release_stats.html:29
+msgid "Status"
+msgstr "Status"
+
+#: templates/languages/language_release_stats.html:29
+#: templates/people/person_detail.html:61
+#: templates/vertimus/activity_summary.html:31
+msgid "Date"
+msgstr "Datum"
+
+#: templates/languages/language_release_stats.html:39
+#, python-format
+msgid "%(categname)s (%(percentage)s%% translated)"
+msgstr "%(categname)s (%(percentage)s%% översatt)"
+
+#: templates/languages/language_release_stats.html:66
+#: templates/stats_show.html:11
+msgid "This document is written in Mallard documentation format"
+msgstr "Detta dokument skrivs i dokumentationsformatet Mallard"
+
+#: templates/languages/language_release_stats.html:100
+msgid "Error summary"
+msgstr "Sammandrag av fel"
+
+#: templates/languages/language_release_summary.html:10
+#: templates/module_edit_branches.html:18
+msgid "Release"
+msgstr "Utgåva"
+
+#: templates/languages/language_release_summary.html:11
+#: templates/release_detail.html:21 templates/release_detail.html.py:83
+msgid "User Interface"
+msgstr "Användargränssnitt"
+
+#: templates/languages/language_release_summary.html:13
+#: templates/release_detail.html:23
+msgid "User Interface (red.)"
+msgstr "Användargränssnitt (minskade)"
+
+#: templates/login.html:9
+msgid "User Login"
+msgstr "Användarinloggning"
+
+#: templates/login.html:11 templates/registration/register.html:11
+#, python-format
+msgid "You are already logged in as %(username)s."
+msgstr "Du är redan inloggad som %(username)s."
+
+#: templates/login.html:14
+#, python-format
+msgid ""
+"If you do not own an account on this site, you can <a "
+"href='%(link)s'>register</a> for a new account."
+msgstr ""
+"Om du inte har ett konto för denna plats så kan du <a "
+"href='%(link)s'>registrera</a> ett nytt konto."
+
+#: templates/login.html:24
+msgid "Have you forgotten your password?"
+msgstr "Har du glömt ditt lösenord?"
+
+#: templates/module_detail.html:5
+#, python-format
+msgid "Module Statistics: %(name)s"
+msgstr "Modulstatistik: %(name)s"
+
+#: templates/module_detail.html:43 templates/vertimus/vertimus_detail.html:228
+msgid ""
+"This module has been archived. It is only kept for statistical purposes. "
+"Please don't translate it any more."
+msgstr ""
+"Denna modul har arkiverats. Den behålls enbart för att föra statistik. "
+"Översätt den inte längre."
+
+#: templates/module_detail.html:61
+msgid "Maintainers"
+msgstr "Ansvariga"
+
+#: templates/module_detail.html:70
+msgid "Bug reporting"
+msgstr "Felrapportering"
+
+#: templates/module_detail.html:73
+msgid "Show existing i18n and l10n bugs"
+msgstr "Visa befintliga felrapporter (i18n och l10n)"
+
+#: templates/module_detail.html:75
+msgid "Report a bug"
+msgstr "Rapportera ett fel"
+
+#: templates/module_detail.html:84
+msgid "Branches:"
+msgstr "Grenar:"
+
+#: templates/module_detail.html:108
+msgid "Browse Repository"
+msgstr "Bläddra i förråd"
+
+#: templates/module_detail.html:111
+msgid "Refresh branch statistics"
+msgstr "Uppdatera grenstatistik"
+
+#: templates/module_edit_branches.html:18
+msgid "Category"
+msgstr "Kategori"
+
+#: templates/module_edit_branches.html:28
+#: templates/people/person_detail_change_form.html:14
+#: templates/teams/team_edit.html:37
+msgid "Save"
+msgstr "Spara"
+
+#: templates/module_images.html:4
+#, python-format
+msgid "Module Doc Figure Status: %(name)s"
+msgstr "Bildstatus för moduldokumentation: %(name)s"
+
+#: templates/module_images.html:11
+msgid "Figures translation status"
+msgstr "Status för lokalanpassade bilder"
+
+#: templates/module_images.html:15
+msgid "Original"
+msgstr "Original"
+
+#: templates/module_images.html:31
+msgid ""
+"Translated, but uses original one (maybe the figure doesn't contain any "
+"string to translate)"
+msgstr ""
+"Översatt, men använder originalet (kanske figuren inte innehåller någon "
+"sträng att översätta)"
+
+#: templates/module_images.html:35
+msgid "Fuzzy"
+msgstr "Luddiga"
+
+#: templates/module_images.html:42
+msgid "No existing file (&quot;Technical&quot; fuzzy)"
+msgstr "Ingen befintlig fil (&quot;Technical&quot; luddig)"
+
+#: templates/module_images.html:45
+msgid "Not translated"
+msgstr "Inte översatt"
+
+#: templates/module_list.html:4 templates/module_list.html.py:9
+msgid "GNOME Modules"
+msgstr "GNOME-moduler"
+
+#: templates/module_list.html:11
+msgid "Select a module below to see some of the damned lies about it:"
+msgstr "Välj en modul nedan för att se några förbannade lögner om den:"
+
+#: templates/people/person_base.html:4
+msgid "GNOME Contributor"
+msgstr "GNOME-bidragsgivare"
+
+#: templates/people/person_base.html:11
+#: templates/people/person_detail_change_form.html:7
+msgid "Change your details"
+msgstr "Ändra dina uppgifter"
+
+#: templates/people/person_base.html:12
+msgid "Change your password"
+msgstr "Ändra ditt lösenord"
+
+#: templates/people/person_base.html:13
+msgid "Join a team"
+msgstr "Gå med i en grupp"
+
+#: templates/people/person_detail.html:28
+msgid "Site Language"
+msgstr "Språk för webbplats"
+
+#: templates/people/person_detail.html:34
+msgid "Choose"
+msgstr "Välj"
+
+#: templates/people/person_detail.html:40
+msgid "Module maintenance"
+msgstr "Modulunderhåll"
+
+#: templates/people/person_detail.html:57
+msgid "Current activity"
+msgstr "Nuvarande aktivitet"
+
+#: templates/people/person_detail.html:61
+#: templates/vertimus/activity_summary.html:31
+msgid "State"
+msgstr "Tillstånd"
+
+#: templates/people/person_list.html:4 templates/people/person_list.html:8
+msgid "GNOME Contributors"
+msgstr "GNOME-bidragsgivare"
+
+#: templates/people/person_list.html:10
+msgid "GNOME is being developed by following people:"
+msgstr "GNOME utvecklas av följande personer:"
+
+#: templates/people/person_overview.html:14
+msgid "Web:"
+msgstr "Webb:"
+
+#: templates/people/person_overview.html:20
+msgid "Email address:"
+msgstr "E-postadress:"
+
+#: templates/people/person_overview.html:26
+msgid "IRC account:"
+msgstr "IRC-konto:"
+
+#: templates/people/person_overview.html:32
+msgid "Bugzilla account:"
+msgstr "Bugzilla-konto:"
+
+#: templates/people/person_password_change_form.html:6
+msgid "Password change"
+msgstr "Lösenordsbyte"
+
+#: templates/people/person_password_change_form.html:8
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"Ange ditt gamla lösenord, för säkerhets skull, och ange sedan ditt nya "
+"lösenord två gånger så att vi kan verifiera att du matade in det korrekt."
+
+#: templates/people/person_password_change_form.html:16
+msgid "Old password:"
+msgstr "Gammalt lösenord:"
+
+#: templates/people/person_password_change_form.html:22
+#: templates/registration/password_reset_confirm.html:17
+msgid "New password:"
+msgstr "Nytt lösenord:"
+
+#: templates/people/person_password_change_form.html:31
+#: templates/registration/password_reset_confirm.html:20
+msgid "Change my password"
+msgstr "Ändra mitt lösenord"
+
+#: templates/people/person_team_join_form.html:8
+msgid "Join a new team"
+msgstr "Gå med i en ny grupp"
+
+#: templates/people/person_team_join_form.html:12
+msgid "I would like to join the following team as 'translator':"
+msgstr "Jag vill gå med i följande grupp som ”översättare”:"
+
+#: templates/people/person_team_join_form.html:14
+msgid "Join"
+msgstr "Gå med"
+
+#: templates/people/person_team_membership.html:5
+#: templates/teams/team_detail.html:82
+msgid "Team membership"
+msgstr "Gruppmedlemskap"
+
+#: templates/people/person_team_membership.html:9
+#, python-format
+msgid "Member of %(team_name)s team (%(role_name)s)"
+msgstr "Medlem av gruppen %(team_name)s (%(role_name)s)"
+
+#: templates/people/person_team_membership.html:13
+msgid "Leave"
+msgstr "Lämna"
+
+#: templates/people/person_team_membership.html:14
+msgid "Are you sure you want to leave the team?"
+msgstr "Är du säker på att du vill lämna gruppen?"
+
+#: templates/registration/password_reset_complete.html:4
+#: templates/registration/password_reset_complete.html:8
+msgid "Password reset complete"
+msgstr "Nollställning av lösenord har genomförts"
+
+#: templates/registration/password_reset_complete.html:10
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr "Ditt lösenord har ställts in. Du kan nu gå vidare och logga in."
+
+#: templates/registration/password_reset_confirm.html:4
+#: templates/registration/password_reset_form.html:4
+#: templates/registration/password_reset_form.html:9
+msgid "Password reset"
+msgstr "Nollställ lösenord"
+
+#: templates/registration/password_reset_confirm.html:10
+msgid "Enter new password"
+msgstr "Ange nytt lösenord"
+
+#: templates/registration/password_reset_confirm.html:12
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Ange ditt nya lösenord två gånger så att vi kan verifiera att du matade in "
+"det korrekt."
+
+#: templates/registration/password_reset_confirm.html:25
+msgid "Password reset unsuccessful"
+msgstr "Lösenordet har inte nollställts"
+
+#: templates/registration/password_reset_confirm.html:27
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"Länken för nollställning av lösenord av ogiltig. Möjligen har den redan "
+"använts.  Begär en ny nollställning av lösenordet."
+
+#: templates/registration/password_reset_done.html:4
+#: templates/registration/password_reset_done.html:9
+msgid "Password reset successful"
+msgstr "Lösenordet har nollställts"
+
+#: templates/registration/password_reset_done.html:11
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly."
+msgstr ""
+"Vi har nu skickat instruktioner till dig för hur man ställer in ett nytt "
+"lösenord. Du bör få detta meddelande inom kort."
+
+#: templates/registration/password_reset_form.html:11
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll e-mail "
+"instructions for setting a new one."
+msgstr ""
+"Glömt ditt lösenord? Ange din e-postadress nedan så kommer vi att skicka "
+"instruktioner för hur man anger ett nytt lösenord."
+
+#: templates/registration/password_reset_form.html:15
+msgid "E-mail address:"
+msgstr "E-postadress:"
+
+#: templates/registration/password_reset_form.html:15
+msgid "Reset my password"
+msgstr "Nollställ mitt lösenord"
+
+#: templates/registration/register.html:9
+msgid "Account Registration"
+msgstr "Kontoregistrering"
+
+#: templates/registration/register.html:13
+msgid ""
+"You can register here for an account on this site. This is only useful if "
+"you plan to contribute to GNOME translations."
+msgstr ""
+"Du kan registrera ett konto för denna plats. Detta är endast användbart om "
+"du tänker bidra med översättningar till GNOME."
+
+#: templates/registration/register.html:14
+msgid ""
+"After registration and connection, you will be able to join an existing team "
+"from your profile page."
+msgstr ""
+"Du kommer efter registrering och anslutning att kunna gå med i en befintlig "
+"grupp från din profilsida."
+
+#: templates/registration/register.html:27
+msgid "Authenticate via OpenID <strong>or</strong> password:"
+msgstr "Autentisera via OpenID <strong>eller</strong> lösenord:"
+
+#: templates/registration/register.html:40
+msgid "Register with password"
+msgstr "Registrera med lösenord"
+
+#: templates/registration/register.html:51
+msgid "Register with OpenID"
+msgstr "Registrera med OpenID"
+
+#: templates/registration/register_success.html:8
+msgid "Registration Success"
+msgstr "Registrering lyckades"
+
+#: templates/registration/register_success.html:10
+msgid ""
+"The registration succeeded. You will now receive an email containing a link "
+"to activate your account."
+msgstr ""
+"Registreringen lyckades. Du kommer nu att få ett e-postmeddelande som "
+"innehåller en länk för att aktivera ditt konto."
+
+#: templates/release_compare.html:5 templates/release_compare.html.py:20
+msgid "Releases Comparison"
+msgstr "Jämförelse av utgåvor"
+
+#: templates/release_compare.html:29
+msgid "Progress"
+msgstr "Förlopp"
+
+#: templates/release_detail.html:10
+#, python-format
+msgid "%(name)s Release"
+msgstr "Utgåvan %(name)s"
+
+#: templates/release_detail.html:20 templates/stats_show.html:53
+msgid "Language"
+msgstr "Språk"
+
+#: templates/release_list.html:4 templates/release_list.html.py:9
+msgid "GNOME Releases"
+msgstr "GNOME-utgåvor"
+
+#: templates/release_list.html:11
+msgid "Select a release or a release set below to see more details about it:"
+msgstr ""
+"Välj en utgåva eller en utgåvesamling nedan för att se mer detaljer om den:"
+
+#: templates/release_list.html:27
+msgid "Older Releases"
+msgstr "Äldre utgåvor"
+
+#: templates/stats_show.html:15 templates/vertimus/vertimus_detail.html:72
+#: templates/vertimus/vertimus_detail.html:73
+msgid "Download POT file"
+msgstr "Hämta POT-fil"
+
+#: templates/stats_show.html:29 templates/vertimus/vertimus_detail.html:128
+msgid "Notices"
+msgstr "Anteckningar"
+
+#: templates/stats_show.html:38
+msgid "Search for similar bugs before reporting it"
+msgstr "Sök efter liknande fel innan rapportering"
+
+#: templates/stats_show.html:41
+msgid "Report this bug"
+msgstr "Rapportera detta fel"
+
+#: templates/stats_show.html:53 vertimus/models.py:179
+msgid "Translated"
+msgstr "Översatt"
+
+#: templates/stats_show.html:80
+msgid "Display document figures"
+msgstr "Visa dokumentationsbilder"
+
+#: templates/teams/team_base.html:8
+msgid "Details"
+msgstr "Detaljer"
+
+#: templates/teams/team_base.html:18
+#, python-format
+msgid "%(lang)s Translation Team Page:"
+msgstr "Sida för %(lang)s översättningsgruppen:"
+
+#: templates/teams/team_base.html:22
+msgid "Bugzilla:"
+msgstr "Bugzilla:"
+
+#: templates/teams/team_base.html:25
+msgid "Report Bug in Translation"
+msgstr "Rapportera fel i översättning"
+
+#: templates/teams/team_base.html:26
+msgid "Show Existing Bugs"
+msgstr "Visa befintliga felrapporter"
+
+#: templates/teams/team_base.html:31
+msgid "Mailing List:"
+msgstr "Sändlista:"
+
+#: templates/teams/team_base.html:34
+msgid "Send e-mail to the list"
+msgstr "Skicka e-post till listan"
+
+#: templates/teams/team_base.html:36
+msgid "Subscribe"
+msgstr "Prenumerera"
+
+#: templates/teams/team_base.html:50
+msgid "This team has currently no coordinator."
+msgstr "Denna grupp har för närvarande ingen koordinator."
+
+#: templates/teams/team_base.html:51
+#, python-format
+msgid ""
+"See <a href=\"%(link)s\">the GTP Wiki</a> for more information about "
+"coordinatorship."
+msgstr ""
+"Se <a href=\"%(link)s\">GTP-wikin</a> för mer information om koordinationen."
+
+#: templates/teams/team_detail.html:6
+#, python-format
+msgid "Last actions made by the %(lang)s team of the GNOME Translation Project"
+msgstr ""
+"Senaste åtgärder gjorda av gruppen %(lang)s i GNOME-översättningsprojektet"
+
+#: templates/teams/team_detail.html:42 templates/teams/team_edit.html:16
+#, python-format
+msgid "%(lang)s Translation Team"
+msgstr "%(lang)s översättningsgruppen"
+
+#: templates/teams/team_detail.html:55
+msgid ""
+"There is currently no established team for this language. See <a href="
+"\"https://live.gnome.org/TranslationProject/StartingATeam\">the GTP Wiki</a> "
+"to get more information about the process of building a new translation team."
+msgstr ""
+"Det finns för närvarande inte någon etablerad grupp för detta språk. Se <a "
+"href=\"https://live.gnome.org/TranslationProject/StartingATeam\">GTP:s "
+"wikisida</a> för att få mer information om processen för att bygga upp en ny "
+"översättningsgrupp."
+
+#: templates/teams/team_detail.html:70
+msgid "Current activities"
+msgstr "Aktuella aktiviteter"
+
+#: templates/teams/team_detail.html:73
+msgid "Plural forms:"
+msgstr "Pluralformer:"
+
+#: templates/teams/team_detail.html:75
+msgid "Show/hide archived translations"
+msgstr "Visa/göm arkiverade översättningar"
+
+#: templates/teams/team_detail.html:75
+msgid "Archives"
+msgstr "Arkiv"
+
+#: templates/teams/team_detail.html:85
+msgid "Show/hide inactive translations"
+msgstr "Visa/göm inaktiva översättningar"
+
+#: templates/teams/team_detail.html:97
+msgid "Apply modifications"
+msgstr "Verkställ ändringar"
+
+#: templates/teams/team_detail.html:107
+#, python-format
+msgid "Last login on %(last_login)s"
+msgstr "Senast inloggad %(last_login)s"
+
+#: templates/teams/team_edit.html:32
+msgid "This team is using the translation workflow"
+msgstr "Denna grupp använder arbetsflödet för översättningar"
+
+#: templates/teams/team_edit.html:35
+msgid ""
+"This content may use <a href='http://en.wikipedia.org/wiki/"
+"Markdown'>Markdown</a> syntax"
+msgstr ""
+"Detta innehåll kan använda <a href='http://en.wikipedia.org/wiki/"
+"Markdown'>Markdown</a>-syntax"
+
+#: templates/teams/team_list.html:4 templates/teams/team_list.html.py:9
+msgid "GNOME Translation Teams"
+msgstr "GNOME-översättningsgrupper"
+
+#: templates/teams/team_list.html:12
+msgid "Select a team below to see more information about it:"
+msgstr "Välj en grupp nedan för att se mer information om den:"
+
+#: templates/teams/team_list.html:26
+#, python-format
+msgid "Coordinated by %(plist)s"
+msgstr "Koordineras av %(plist)s"
+
+#: templates/teams/team_list.html:28
+msgid "No coordinator"
+msgstr "Ingen koordinator"
+
+#: templates/teams/team_list.html:41
+msgid "There are currently no translation teams in GNOME. :("
+msgstr "Det finns för närvarande inga översättningsgrupper i GNOME. :("
+
+#: templates/vertimus/activity_summary.html:21
+#, python-format
+msgid "Activity summary for '%(lang)s'"
+msgstr "Sammandrag av aktiviteter för ”%(lang)s”"
+
+#: templates/vertimus/activity_summary.html:27
+#, python-format
+msgid "Activity summary for <a href=\"%(url)s\">%(lang)s</a>"
+msgstr "Sammandrag av aktiviteter för <a href=\"%(url)s\">%(lang)s</a>"
+
+#: templates/vertimus/vertimus_detail.html:5
+#, python-format
+msgid "Module Translation: %(name)s"
+msgstr "Modulöversättning: %(name)s"
+
+#: templates/vertimus/vertimus_detail.html:39
+msgid "Used in release(s):"
+msgstr "Används i utgåvor:"
+
+#: templates/vertimus/vertimus_detail.html:57
+msgid "State:"
+msgstr "Tillstånd:"
+
+#: templates/vertimus/vertimus_detail.html:77
+#: templates/vertimus/vertimus_detail.html:103
+msgid "Download PO file"
+msgstr "Hämta PO-fil"
+
+#: templates/vertimus/vertimus_detail.html:78
+msgid "PO file statistics:"
+msgstr "Statistik för PO-fil:"
+
+#: templates/vertimus/vertimus_detail.html:81
+#: templates/vertimus/vertimus_detail.html:113
+msgid "Strings:"
+msgstr "Strängar:"
+
+#: templates/vertimus/vertimus_detail.html:85
+#: templates/vertimus/vertimus_detail.html:117
+msgid "Words:"
+msgstr "Ord:"
+
+#: templates/vertimus/vertimus_detail.html:92
+#, python-format
+msgid " including <a href=\"%(img_url)s\">%(stats)s image</a>"
+msgid_plural " including <a href=\"%(img_url)s\">%(stats)s images</a>"
+msgstr[0] " inklusive <a href=\"%(img_url)s\">%(stats)s bild</a>"
+msgstr[1] " inklusive <a href=\"%(img_url)s\">%(stats)s bilder</a>"
+
+#: templates/vertimus/vertimus_detail.html:104
+msgid "PO file statistics (reduced):"
+msgstr "Statistik för PO-fil (reducerad):"
+
+#: templates/vertimus/vertimus_detail.html:142
+msgid "On-going activities in same module:"
+msgstr "Pågående aktiviteter i samma modul:"
+
+#: templates/vertimus/vertimus_detail.html:153
+msgid "Actions"
+msgstr "Åtgärder"
+
+# Ser ut som exempelvis "(1:a arkiverade serien)"
+#. Translators: human_level is an ordinal expression ('1st',' 2nd',...)
+#. which should be localized in Django itself
+#.
+#: templates/vertimus/vertimus_detail.html:158
+#, python-format
+msgid "Archived Actions (%(human_level)s archived series)"
+msgstr "Arkiverade åtgärder (%(human_level)s arkiverade serien)"
+
+#: templates/vertimus/vertimus_detail.html:160
+msgid "(Return to current actions)"
+msgstr "(Återgå till aktuella åtgärder)"
+
+#: templates/vertimus/vertimus_detail.html:165
+msgid "(Previous action history)"
+msgstr "(Åtgärdshistorik)"
+
+#: templates/vertimus/vertimus_detail.html:178
+msgid "Link to this comment"
+msgstr "Länk till denna kommentar"
+
+#: templates/vertimus/vertimus_detail.html:197
+msgid "diff with:"
+msgstr "diff med:"
+
+#: templates/vertimus/vertimus_detail.html:216
+msgid "No current actions."
+msgstr "Inga aktuella åtgärder."
+
+#: templates/vertimus/vertimus_detail.html:220
+msgid "New Action"
+msgstr "Ny åtgärd"
+
+#: templates/vertimus/vertimus_detail.html:224
+#, python-format
+msgid ""
+"You need <a href=\"%(login_url)s\">to be authenticated</a> and member of the "
+"%(team_name)s team."
+msgstr ""
+"Du måste <a href=\"%(login_url)s\">vara autentiserad</a> och vara medlem av "
+"gruppen %(team_name)s."
+
+#: templates/vertimus/vertimus_detail.html:256
+msgid "Submit"
+msgstr "Skicka"
+
+#: templates/vertimus/vertimus_detail.html:263
+msgid "This team is not using the translation workflow."
+msgstr "Denna grupp använder inte arbetsflödet för översättningar."
+
+#: templates/vertimus/vertimus_diff.html:5
+msgid "Diff between po files"
+msgstr "Diff mellan po-filer"
+
+#: templates/vertimus/vertimus_diff.html:16
+msgid "&lt;- Back to actions"
+msgstr "&lt;- Tillbaka till åtgärder"
+
+#: templates/vertimus/vertimus_diff.html:20
+msgid "Note: both files are merged with latest POT file."
+msgstr "Observera: båda filerna är sammanfogade med senaste POT-fil."
+
+#: vertimus/feeds.py:39
+#, python-format
+msgid "%(site)s - Workflow actions for the %(lang)s language"
+msgstr "%(site)s - Arbetsflödes-åtgärder för språket %(lang)s"
+
+#: vertimus/feeds.py:48
+#, python-format
+msgid "Latest actions of the GNOME Translation Project for the %s language"
+msgstr "Senaste åtgärder för GNOME-översättningsprojektet för språket %s"
+
+#: vertimus/feeds.py:83
+#, python-format
+msgid "%(site)s - Workflow actions of the %(lang)s team"
+msgstr "%(site)s - Arbetsflödes-åtgärder för gruppen %(lang)s"
+
+#: vertimus/feeds.py:92
+#, python-format
+msgid "Latest actions made by the %s team of the GNOME Translation Project"
+msgstr "Senaste åtgärder gjorda av gruppen %s för GNOME-översättningsprojektet"
+
+#: vertimus/forms.py:54
+msgid " (full name missing)"
+msgstr " (fullständigt namn saknas)"
+
+#: vertimus/forms.py:63
+msgid "Action"
+msgstr "Åtgärd"
+
+#: vertimus/forms.py:67
+msgid "Comment"
+msgstr "Kommentera"
+
+#: vertimus/forms.py:72
+msgid "Commit author"
+msgstr "Incheckare"
+
+#: vertimus/forms.py:75
+msgid "Sync with master"
+msgstr "Synkronisera med master"
+
+#: vertimus/forms.py:76
+msgid "Try to cherry-pick the commit to the master branch"
+msgstr "Försök att föra incheckningen till grenen master med ”cherry-pick”"
+
+#: vertimus/forms.py:78
+msgid "File"
+msgstr "Fil"
+
+#: vertimus/forms.py:79
+msgid "Upload a .po, .gz, .bz2 or .png file"
+msgstr "Skicka upp en fil av typen .po, .gz, .bz2 eller .png"
+
+#: vertimus/forms.py:80
+msgid "Send message to the team mailing list"
+msgstr "Skicka meddelande till gruppens sändlista"
+
+#: vertimus/forms.py:102
+msgid "Only files with extension .po, .gz, .bz2 or .png are admitted."
+msgstr "Endast filer med filändelsen .po, .gz, .bz2 eller .png tillåts."
+
+#: vertimus/forms.py:107
+msgid ""
+".po file does not pass 'msgfmt -vc'. Please correct the file and try again."
+msgstr ".po-filen klarade inte ”msgfmt -vc”. Korrigera filen och försök igen."
+
+#: vertimus/forms.py:114
+msgid "Invalid action. Someone probably posted another action just before you."
+msgstr ""
+"Ogiltig åtgärd. Antagligen så postade någon en annan åtgärd precis före dig."
+
+#: vertimus/forms.py:120
+msgid "A comment is needed for this action."
+msgstr "En kommentar behövs för denna åtgärd."
+
+#: vertimus/forms.py:123
+msgid "A comment or a file is needed for this action."
+msgstr "En kommentar eller en fil behövs för denna åtgärd."
+
+#: vertimus/forms.py:126
+msgid "A file is needed for this action."
+msgstr "En fil behövs för denna åtgärd."
+
+#: vertimus/forms.py:129
+msgid "Please, don't send a file with a 'Reserve' action."
+msgstr "Skicka inte en fil med en ”Reservera”-åtgärd."
+
+#: vertimus/models.py:146
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: vertimus/models.py:163
+msgid "Translating"
+msgstr "Översätter"
+
+#: vertimus/models.py:202
+msgid "Proofreading"
+msgstr "Korrekturläsning"
+
+#. Translators: This is a status, not a verb
+#: vertimus/models.py:220
+msgid "Proofread"
+msgstr "Korrekturläst"
+
+#: vertimus/models.py:241
+msgid "To Review"
+msgstr "För granskning"
+
+#: vertimus/models.py:256
+msgid "To Commit"
+msgstr "För insändning"
+
+#: vertimus/models.py:274
+msgid "Committing"
+msgstr "Insändning"
+
+#: vertimus/models.py:293
+msgid "Committed"
+msgstr "Insänd"
+
+#: vertimus/models.py:312
+msgid "Write a comment"
+msgstr "Skriv en kommentar"
+
+#: vertimus/models.py:313
+msgid "Reserve for translation"
+msgstr "Reservera för översättning"
+
+#: vertimus/models.py:314
+msgid "Upload the new translation"
+msgstr "Skicka upp ny översättning"
+
+#: vertimus/models.py:315
+msgid "Reserve for proofreading"
+msgstr "Reservera för korrekturläsning"
+
+#: vertimus/models.py:316
+msgid "Upload the proofread translation"
+msgstr "Skicka upp granskad översättning"
+
+#. Translators: this means the file is ready to be committed in repository
+#: vertimus/models.py:318
+msgid "Ready for submission"
+msgstr "Färdig för insändning"
+
+#: vertimus/models.py:319
+msgid "Submit to repository"
+msgstr "Skicka in till förrådet"
+
+#. Translators: this indicates a committer is going to commit the file in the repository
+#: vertimus/models.py:321
+msgid "Reserve to submit"
+msgstr "Reservera för insändning"
+
+#. Translators: this is used to indicate the file has been committed in the repository
+#: vertimus/models.py:323
+msgid "Inform of submission"
+msgstr "Informera om insändning"
+
+#. Translators: regardless of the translation completion, this file need to be reviewed
+#: vertimus/models.py:325
+msgid "Rework needed"
+msgstr "Omarbete behövs"
+
+#: vertimus/models.py:326
+msgid "Archive the actions"
+msgstr "Arkivera åtgärderna"
+
+#: vertimus/models.py:327
+msgid "Undo the last state change"
+msgstr "Ångra senaste tillståndsändring"
+
+# File är ett substantiv
+#: vertimus/models.py:404
+msgid "File in repository"
+msgstr "Fil i förråd"
+
+#: vertimus/models.py:415
+#, python-format
+msgid "Uploaded file by %(name)s on %(date)s"
+msgstr "Uppskickad fil av %(name)s den %(date)s"
+
+#: vertimus/models.py:424
+#, python-format
+msgid ""
+"The new state of %(module)s - %(branch)s - %(domain)s (%(language)s) is now "
+"'%(new_state)s'."
+msgstr ""
+"Det nya tillståndet för %(module)s - %(branch)s - %(domain)s (%(language)s) "
+"är nu '%(new_state)s'."
+
+#: vertimus/models.py:535
+msgid "Hello,"
+msgstr "Hej,"
+
+#: vertimus/models.py:544
+msgid "Without comment"
+msgstr "Utan kommentar"
+
+#: vertimus/models.py:580
+#, python-format
+msgid ""
+"A new comment has been posted on %(module)s - %(branch)s - %(domain)s "
+"(%(language)s)."
+msgstr ""
+"En ny kommentar har postats för %(module)s - %(branch)s - %(domain)s "
+"(%(language)s)."
+
+#: vertimus/models.py:650
+#, python-format
+msgid "The commit failed. The error was: '%s'"
+msgstr "Verkställningen misslyckades. Felet var: ”%s”"
+
+#: vertimus/models.py:652
+msgid "The file has been successfully committed to the repository."
+msgstr "Filen har checkats in i arkivet."
+
+#: vertimus/models.py:657
+msgid " Additionally, the synchronization with the master branch succeeded."
+msgstr " Utöver detta lyckades synkroniseringen mot grenen master."
+
+#: vertimus/models.py:659
+msgid " However, the synchronization with the master branch failed."
+msgstr " Synkroniseringen mot grenen master misslyckades dock."
+
+#: vertimus/views.py:125
+msgid "A problem occurred while sending mail, no mail have been sent"
+msgstr "Ett problem uppstod när post skulle skickas, ingen post har skickats"
+
+#: vertimus/views.py:128
+#, python-format
+msgid "An error occurred during applying your action: %s"
+msgstr "Ett fel uppstod medan åtgärden verkställdes: %s"
+
+#: vertimus/views.py:178 vertimus/views.py:188 vertimus/views.py:201
+#, python-format
+msgid "<a href=\"%(url)s\">Uploaded file</a> by %(name)s on %(date)s"
+msgstr "<a href=\"%(url)s\">Uppskickad fil</a> av %(name)s den %(date)s"
+
+#: vertimus/views.py:210
+#, python-format
+msgid "<a href=\"%(url)s\">Latest committed file</a> for %(lang)s"
+msgstr "<a href=\"%(url)s\">Senaste insända fil</a> för %(lang)s"
+
+#: vertimus/views.py:218
+msgid "Latest POT file"
+msgstr "Senaste POT-fil"
+
+#~ msgid "OLPC"
+#~ msgstr "OLPC"
+
+#~ msgid "External Dependencies (GNOME)"
+#~ msgstr "Externa beroenden (GNOME)"
+
+#~ msgid "GNOME-Office Productivity Applications"
+#~ msgstr "GNOME-Office produktivitetsprogram"
+
+#~ msgid "Banshee Music Player"
+#~ msgstr "Banshee musikspelare"
+
+#~ msgid "Epiphany Web Browser"
+#~ msgstr "Epiphany webbläsare"
+
+#~ msgid "Evince Document Viewer"
+#~ msgstr "Evince dokumentvisare"
+
+#~ msgid "GNOME Applets"
+#~ msgstr "GNOME-miniprogram"
+
+#~ msgid "Pan Newsreader"
+#~ msgstr "Pan nyhetsläsare"
+
+#~ msgid "Rhythmbox Music Player"
+#~ msgstr "Rhythmbox musikspelare"
+
+#~ msgid "GNOME 2.30 (old stable)"
+#~ msgstr "GNOME 2.30 (gammal stabil)"
+
+#~ msgid "Error: The file %s contains invalid characters."
+#~ msgstr "Fel: Filen %s innehåller ogiltiga tecken."

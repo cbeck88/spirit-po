@@ -1,5 +1,6 @@
-/build/
+build/
 *.o
+*.mo
 *.exe
 a.out
 main

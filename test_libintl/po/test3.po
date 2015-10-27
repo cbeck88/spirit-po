@@ -1,17 +1,13 @@
-R"===(
 msgid ""
 msgstr "Language: Test\n"
 "Project-Id-Version: spirit-po\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
-#foo
-#bar
-#baz
-msgid "asdf"
-msgstr "jkl;
 
+msgid "veni vidi vici"
+msgstr "i came, i saw, i conquered"
+msgid "a tree falls"
+msgstr ""
+msgid "the sound of a tree falls"
+msgstr "\t"
 
-#foo
-msgid "foo"
-msgstr "bar"
-)==="
