@@ -1,5 +1,5 @@
 #define SPIRIT_PO_NOEXCEPT
-//#define SPIRIT_PO_DEBUG
+#define SPIRIT_PO_DEBUG
 #include "spirit_po.hpp"
 
 #include <algorithm>
@@ -613,7 +613,9 @@ msgstr "jkl;"
     using file::test6po;
     TEST(test_catalog_gettext( test6po, {} ));
     auto cat = spirit_po::catalog<>::from_range(test6po);
+#ifdef SPIRIT_PO_NOEXCEPT
     TEST(static_cast<bool>(cat));
+#endif
     const auto & meta = cat.get_metadata();
     CHECK_EQ("UTF-8", meta.charset);
   }
@@ -690,11 +692,14 @@ msgstr "jkl;"
     using file::test2po;
     auto cat1 = spirit_po::catalog<>::from_range(test1po);
     auto cat2 = spirit_po::catalog<>::from_range(test2po);
+#ifdef SPIRIT_PO_NOEXCEPT
     TEST(static_cast<bool>(cat1));
     TEST(static_cast<bool>(cat2));
+#endif
     cat1.merge(std::move(cat2));
+#ifdef SPIRIT_PO_NOEXCEPT
     TEST(static_cast<bool>(cat1));
-
+#endif
     check_catalog_keys(cat1, { "", "asdf", "foo", "tmnt", "a man\na plan\na canal", "he said \"she said.\"", "say what?" }, __LINE__);
     TEST(test_catalog_gettext(cat1,  {{"asdf", "jkl;"}, { "foo", "bar" }, {"tmnt", "teenagemutantninjaturtles"}, {"a man\na plan\na canal", "panama"}, {"he said \"she said.\"", "by the \"sea shore\"?"}, {"say what?", "come again?"}, { "bar", "bar" }}));
   }
