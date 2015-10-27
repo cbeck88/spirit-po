@@ -93,6 +93,13 @@ private:
     if (!msg.strings()[0].size()) { return; }
     // if the (first) translated string is "", it is untranslated and message does not enter catalog
 
+    if (msg.strings().size() > 1 && msg.strings().size() != metadata_.num_plural_forms) {
+      if (warning_channel_) {
+        warning_channel_("Ignoring a message with an incorrect number of plural forms: plural = " + std::to_string(msg.strings().size()) + " msgid = '" + msg.id + "'");
+      }
+      return;
+    }
+
     std::string index = form_index(msg);
     // adjust the id based on context if necessary
 
@@ -105,7 +112,7 @@ private:
         if (msg.context) { warning += " msgctxt = <<<" + *msg.context + ">>>"; }
         warning_channel_(warning);
       }
-      //result.first->second = std::move(msg);
+      result.first->second = std::move(msg);
     }
   }
 

@@ -16,6 +16,10 @@
 /***
  * Utility functions
  */
+void warning_message(const std::string & str) {
+  std::cerr << "spirit_po: " << str << std::endl;
+}
+
 std::string escape_string(const std::string & str) {
   std::string result;
   for (char c : str) {
@@ -150,7 +154,7 @@ RESULT do_test(const std::string & po_stem) {
   // Read po file
   //auto cat = spirit_po::catalog<>::from_istream(po_stream);
   auto temp = std::string{std::istreambuf_iterator<char>(po_stream), {}};
-  auto cat = spirit_po::catalog<>::from_range(temp);
+  auto cat = spirit_po::catalog<>::from_range(temp, std::function<void(const std::string &)>{&warning_message});
   if (!cat) {
     std::cerr << "When reading po:\n***\n" << temp << "\n***\n";
     std::cerr << "Could not read po file: '" << po_stem << ".po', error:\n" << cat.error() << std::endl;

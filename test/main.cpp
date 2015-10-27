@@ -12,6 +12,12 @@
 /***
  * Utility functions
  */
+void warning_message(const std::string & str) {
+  std::cerr << "spirit_po: " << str << std::endl;
+}
+
+#define WARNING_CHANNEL std::function<void(const std::string &)>{&warning_message}
+
 std::string escape_string(const std::string & str) {
   std::string result;
   for (char c : str) {
@@ -118,7 +124,7 @@ struct ngettext_test_case {
 };
 
 bool test_catalog_ngettext(const std::string & po, const std::vector<ngettext_test_case> & vec) {
-  auto cat = spirit_po::catalog<>::from_range(po);
+  auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
 
 #ifdef SPIRIT_PO_NOEXCEPT
   if (!cat) {
@@ -150,7 +156,7 @@ struct pgettext_test_case {
 };
 
 bool test_catalog_pgettext(const std::string & po, const std::vector<pgettext_test_case> & vec) {
-  auto cat = spirit_po::catalog<>::from_range(po);
+  auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
 
 #ifdef SPIRIT_PO_NOEXCEPT
   if (!cat) {
@@ -183,7 +189,7 @@ struct npgettext_test_case {
 };
 
 bool test_catalog_npgettext(const std::string & po, const std::vector<npgettext_test_case> & vec) {
-  auto cat = spirit_po::catalog<>::from_range(po);
+  auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
 
 #ifdef SPIRIT_PO_NOEXCEPT
   if (!cat) {
@@ -324,7 +330,7 @@ void check_catalog_keys(const std::string & po, const std::set<std::string> & ex
 
 void check_not_parse(const std::string & test_string, int line) {
   try {
-    auto cat = spirit_po::catalog<>::from_range(test_string);
+    auto cat = spirit_po::catalog<>::from_range(test_string, WARNING_CHANNEL);
 #ifdef SPIRIT_PO_NOEXCEPT
     test_condition(!cat, line);
 #else
