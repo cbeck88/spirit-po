@@ -380,6 +380,12 @@ namespace file {
     std::string test_fail9po =
 #include "test_fail9.po"
 ;
+    std::string test_fail10po =
+#include "test_fail10.po"
+;
+    std::string test_fail11po =
+#include "test_fail11.po"
+;
 } // end namespace file
 
 int main() {
@@ -600,6 +606,11 @@ msgstr "jkl;"
   {
     using file::test6po;
     TEST(test_catalog_gettext( test6po, {} ));
+    auto cat = spirit_po::catalog<>::from_range(test6po);
+    TEST(static_cast<bool>(cat));
+    const auto & meta = cat.get_metadata();
+    CHECK_EQ("text/plain", meta.mimetype);
+    CHECK_EQ("UTF-8", meta.charset);
   }
 
   std::cout << "Testing test_fail1.po..." << std::endl;
@@ -654,6 +665,18 @@ msgstr "jkl;"
   {
     using file::test_fail9po;
     check_not_parse(test_fail9po, __LINE__);
+  }
+
+  std::cout << "Testing test_fail10.po..." << std::endl;
+  {
+    using file::test_fail10po;
+    check_not_parse(test_fail10po, __LINE__);
+  }
+
+  std::cout << "Testing test_fail11.po..." << std::endl;
+  {
+    using file::test_fail11po;
+    check_not_parse(test_fail11po, __LINE__);
   }
 
   std::cout << "Testing po file merging..." << std::endl;
