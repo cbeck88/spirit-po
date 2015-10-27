@@ -104,7 +104,7 @@ master catalog.
      state). If so, then move all the message entries from the other hashmap to this map.
      May trigger warnings on the warning channel if there are collisions.
 
-   - `void set_warning_channel(const std::function<void(const std::string &)> & w)`
+   - `void set_warning_channel(const std::function<void(const std::string &)> & w)`  
      Set the warning channel for this catalog. The warning channel is a function which
      will be called with a warning message whenever a string (with context) is clobbered.
      The warning channel object may also be passed to the constructor, if one is concerned
