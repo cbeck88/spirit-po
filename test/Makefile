@@ -1,7 +1,7 @@
 CXXFLAGS := -std=c++11
-INCLUDES := -Iinclude/ -I/usr/include
+INCLUDES := -I../include/ -I/usr/include
 
-main: src/main.cpp
+main: main.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) $< -o $@
 
 clean:

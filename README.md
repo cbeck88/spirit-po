@@ -35,13 +35,17 @@ in your C++ source files.
 
     #include <spirit_po.hpp>
 
-The `src/` folder, and the `Makefile`, are only for building the tests.
+(The `test/` folder contains the unit tests, built with a Makefile.
+The `test_libintl/` folder contains the validation tests against libintl, built
+using cmake. To add new test cases, just drop new `.po` files in the folder
+`test_libintl/po/`.)
 
-To make a catalog, first obtain some po content. Then you can build a catalog
-using one of three methods:
-  - `spirit_po::catalog` ctor, templated to work with any pair of iterators
+To make a catalog object in your C++ program, first obtain some po content.
+Then you can build a catalog using one of three methods:
+  - `spirit_po::catalog` ctor, templated to work with any pair of iterators which
+    spirit can use.
   - factory function `spirit_po::catalog<>::from_range` which can take any
-    forward range of characters of any type
+    forward range of characters of any type (such as a `std::string`).
   - factory function `spirit_po::catalog<>::from_istream` which takes any
     given `istream` and builds a po catalog from it. Spirit reads incrementally,
     so this does not require reading the entire istream into a string first.
