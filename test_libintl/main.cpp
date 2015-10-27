@@ -1,5 +1,6 @@
 #include <libintl.h>
 #define SPIRIT_PO_NOEXCEPT
+#define SPIRIT_PO_DEBUG
 #include <spirit_po.hpp>
 
 #include <cstdlib>

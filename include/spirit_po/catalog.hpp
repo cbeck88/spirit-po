@@ -18,9 +18,9 @@
 #include <unordered_map>
 #include <vector>
 
-#ifdef SPIRIT_PO_DEBUG
-#include <iostream>
-#endif
+//#ifdef SPIRIT_PO_DEBUG
+//#include <iostream>
+//#endif
 
 namespace spirit_po {
 
@@ -64,9 +64,12 @@ public:
 private:
   /***
    * Helper for interacting with hashmap results
+   * get(msg) gets the *singular* string from the message. if it's a plural message, look in singular_index_.
+   * if it's not a plural message, then there is only one string. also, the po header is never a plural message
    */
   const std::string & get(const po_message & msg) const {
-    return msg.strings().at(singular_index_);
+    if (msg.strings().size() == 1) { return msg.strings()[0]; }
+    return msg.strings()[singular_index_];
   }
 
   const std::string & get(const po_message & msg, uint plural) const {
@@ -78,10 +81,6 @@ private:
    * Emplace a message into the hashmap
    */
   void insert_message(po_message && msg) {
-#ifdef SPIRIT_PO_DEBUG
-    std::cerr << "DEBUG: insert_message( " << debug_string(msg) << " )\n";
-#endif
-
     if (!msg.strings().size()) { return; }
     // don't allow messages with ZERO translations into the catalog, this will cause segfaults later.
     // should perhaps throw an exception here
@@ -91,10 +90,6 @@ private:
 
     std::string index = form_index(msg);
     // adjust the id based on context if necessary
-
-#ifdef SPIRIT_PO_DEBUG
-    std::cerr << "DEBUG: inserting message at index: \"" << index << "\"\n";
-#endif
 
     auto result = hashmap_.emplace(std::move(index), std::move(msg));
 
@@ -144,9 +139,9 @@ public:
         SPIRIT_PO_CATALOG_FAIL("Failed to parse po header, stopped at :'" + iterator_context(it, end));
       }
 
-#ifdef SPIRIT_PO_DEBUG
-      std::cerr << "PO HEADER MESSAGE: " << debug_string(msg) << std::endl;
-#endif
+//#ifdef SPIRIT_PO_DEBUG
+//      std::cerr << "PO HEADER MESSAGE: " << debug_string(msg) << std::endl;
+//#endif
 
       // first message must have empty MSGID (po format says so)
       if (msg.id.size()) {
@@ -177,8 +172,6 @@ public:
         SPIRIT_PO_CATALOG_FAIL(("Invalid plural forms function. On input n = 1, returned plural = " + std::to_string(singular_index_) + ", while num_plurals = " + std::to_string(metadata_.num_plural_forms)));
       }
 
-      if (singular_index_ != 0) { SPIRIT_PO_CATALOG_FAIL(("Singluar form should be at index 0... right???")); }
-
       insert_message(std::move(msg)); // for compatibility, need to insert the header message at msgid ""
     }
 
@@ -195,10 +188,15 @@ public:
       insert_message(std::move(msg));
     }
 
+#ifdef SPIRIT_PO_DEBUG
     // validate resulting hashmap
     for (const auto & p : hashmap_) {
       if (!p.second.strings().size()) { SPIRIT_PO_CATALOG_FAIL(("Internal catalog error: found a message id with no strings, msgid='" + p.first + "'")); }
+      if (p.second.strings().size() != 1 && p.second.strings().size() != metadata_.num_plural_forms) {
+        SPIRIT_PO_CATALOG_FAIL(("Internal catalog error: found a message id with wrong number of strings, msgid='" + p.first + "' num msgstr = " + std::to_string(p.second.strings().size()) + ", catalog num_plural_forms = " + std::to_string(metadata_.num_plural_forms) + "\nWhole message: " + debug_string(p.second) ));
+      }
     }
+#endif
   }
 
   // Construct a catalog from a range using one expression
