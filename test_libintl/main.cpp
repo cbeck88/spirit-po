@@ -129,14 +129,22 @@ RESULT do_test(const std::string & po_stem) {
     return RESULT::NA;
   }
   // Find mo file
-  bindtextdomain (po_stem.c_str(), mo_path.c_str());
-  const char * result = textdomain (po_stem.c_str());
-  if (result != po_stem) {
-    std::cerr << "Could not find mo file: expected '" << po_stem << "', found '" << result << "'\n";
-    return RESULT::NA;
-  }
-  bind_textdomain_codeset(po_stem.c_str(), "UTF-8");
+  {
+    bindtextdomain (po_stem.c_str(), mo_path.c_str());
+    const char * result = textdomain (po_stem.c_str());
+    if (result != po_stem) {
+      std::cerr << "Could not find mo file: expected '" << po_stem << "', found '" << result << "'\n";
+      return RESULT::NA;
+    }
+    bind_textdomain_codeset(po_stem.c_str(), "UTF-8");
 
+    // Check if we can read the po header, if not it means we couldn't find the mo file
+    const char * header = gettext("");
+    if (!strlen(header)) {
+      std::cerr << "Could not find the mo file, (empty po header): '" << po_stem << ".mo'\n";
+      return RESULT::NA;
+    }
+  }
 
   // Read po file
   //auto cat = spirit_po::catalog<>::from_istream(po_stream);
@@ -171,7 +179,10 @@ int main() {
   find_mo_path();
   find_po_path();
 
-  setlocale (LC_ALL, ""); // select 'C' locale for tests
+  setlocale (LC_ALL, "");
+  // Use system locale
+  // The system locale must match the locale selected in CMakeLists.txt, or
+  // this program won't be able to find the mo files, and all tests will fail.
 
   std::cout << "Validating spirit_po vs libintl:\n" << std::endl;
 

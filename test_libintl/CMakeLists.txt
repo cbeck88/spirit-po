@@ -42,6 +42,10 @@ file(GLOB ALL_PO ${PO_DIR}/*.po)
 ### Make a directory for mo files
 
 set(LOCALE "en")
+# So that the test harness can find all the mo files, we put them all under
+# the system locale folder, and arrange them as different text domains with
+# names matching the po-file that generates them.
+# My system locale is "en", if yours is different you must change it above.
 
 file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/mo/${LOCALE}/LC_MESSAGES)
 
