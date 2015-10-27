@@ -350,6 +350,9 @@ namespace file {
     std::string test5po =
 #include "test5.po"
 ;
+    std::string test6po =
+#include "test6.po"
+;
     std::string test_fail1po =
 #include "test_fail1.po"
 ;
@@ -373,6 +376,9 @@ namespace file {
 ;
     std::string test_fail8po =
 #include "test_fail8.po"
+;
+    std::string test_fail9po =
+#include "test_fail9.po"
 ;
 } // end namespace file
 
@@ -590,6 +596,11 @@ msgstr "jkl;"
     TEST(test_catalog_npgettext( test5po, {{"female", "note", "notes", 1, "note"}, {"female", "note", "notes", 2, "notes"}, {"female", "goat", "goats", 0, "cabras"}, {"female", "goat", "goats", 1, "cabra"}, {"female", "goat", "goats", 2, "cabras"}, {"male", "goat", "goats", 1, "goat"}, {"male", "goat", "goats", 2, "goats"}}));
   }
 
+  std::cout << "Testing test6.po..." << std::endl;
+  {
+    using file::test6po;
+    TEST(test_catalog_gettext( test6po, {} ));
+  }
 
   std::cout << "Testing test_fail1.po..." << std::endl;
   {
@@ -637,6 +648,12 @@ msgstr "jkl;"
   {
     using file::test_fail8po;
     check_not_parse(test_fail8po, __LINE__);
+  }
+
+  std::cout << "Testing test_fail9.po..." << std::endl;
+  {
+    using file::test_fail9po;
+    check_not_parse(test_fail9po, __LINE__);
   }
 
   std::cout << "Testing po file merging..." << std::endl;

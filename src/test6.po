@@ -1,0 +1,15 @@
+R"===(
+msgid ""
+msgstr "Language: Test\n"
+"Project-Id-Version: spirit-po\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "asdf"
+msgid_plural "asdfs"
+msgstr[0] "jkls"
+msgstr[1] "jkl"
+
+
+msgid "foo"
+msgstr "baz")==="

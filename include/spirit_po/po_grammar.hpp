@@ -61,9 +61,9 @@ struct po_grammar : qi::grammar<Iterator, po_message()> {
     skipped_line = (comment_line | white_line);
     skipped_block = skipped_line >> (eoi | (lit('\n') >> -skipped_block));
 
-    // TODO: Do we need to handle other escaped characters? Or signal an error for unknown escapes?
+    // TODO: Do we need to handle other escaped characters?
     escaped_character = lit('\\') >> (char_("\'\"\\") | (lit('n') >> attr('\n')) | (lit('t') >> attr('\t')));
-    single_line_string = lit('"') >> *(escaped_character | (char_ - '"')) >> lit('"') >> white_line >> (eoi | (lit('\n') >> -skipped_block));
+    single_line_string = lit('"') >> *(escaped_character | (char_ - '\\' - '"')) >> lit('"') >> white_line >> (eoi | (lit('\n') >> -skipped_block));
     multiline_string = single_line_string >> (multiline_string | attr(""));
 
     message_context = lit("msgctxt ") >> multiline_string;
