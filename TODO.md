@@ -1,7 +1,6 @@
 TODO
 ====
 
-- Line numbers in error messages?
 - Add support for parsing po content with no header? Just 
   'pasting in' the po content? Allow an empty `catalog` to be
   constructed from a `catalog_metadata` object?

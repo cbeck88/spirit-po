@@ -42,13 +42,16 @@ using cmake. To add new test cases, just drop new `.po` files in the folder
 
 To make a catalog object in your C++ program, first obtain some po content.
 Then you can build a catalog using one of three methods:
-  - `spirit_po::catalog` ctor, templated to work with any pair of iterators which
-    spirit can use.
+  - factory function `spirit_po::catalog<>::from_iterators` which can take
+    any pair of iterators which spirit can use.
   - factory function `spirit_po::catalog<>::from_range` which can take any
-    forward range of characters of any type (such as a `std::string`).
+    forward range of characters which spirit can use (such as a `std::string`).
   - factory function `spirit_po::catalog<>::from_istream` which takes any
     given `istream` and builds a po catalog from it. Spirit reads incrementally,
-    so this does not require reading the entire istream into a string first.
+    so this does not require reading the entire `istream` into a string first.
+  - `spirit_po::catalog` ctor, but you must construct `spirit::line_pos_iterators`
+    from your pair of iterators for this. (Usually you should use `from_iterators`
+    instead using of the ctor directly.)
 
 If the po content is malformed, one of two things will happen (configurable):
   - A `spirit_po::catalog_exception` will be thrown. (This is the default.)

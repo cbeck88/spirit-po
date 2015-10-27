@@ -29,7 +29,8 @@
 
 namespace spirit_po {
 
-namespace qi = boost::spirit::qi;
+namespace spirit = boost::spirit;
+namespace qi = spirit::qi;
 typedef unsigned int uint;
 
 typedef std::function<void(const std::string &)> warning_channel_type;
@@ -134,21 +135,23 @@ public:
    * Ctors
    */
   template <typename Iterator>
-  catalog(Iterator & it, Iterator & end, warning_channel_type warn_channel = warning_channel_type(), pf_compiler compiler = pf_compiler())
+  catalog(spirit::line_pos_iterator<Iterator> & it, spirit::line_pos_iterator<Iterator> & end, warning_channel_type warn_channel = warning_channel_type(), pf_compiler compiler = pf_compiler())
     : metadata_()
     , pf_function_object_()
     , warning_channel_(warn_channel)
     , hashmap_()
   {
-    po_grammar<Iterator> grammar;
+    typedef spirit::line_pos_iterator<Iterator> iterator_type;
+    po_grammar<iterator_type> grammar;
 
     po_message msg;
+    std::size_t line_no = 0;
 
     // Parse header first
     {
       // must be able to parse first message
       if (!qi::parse(it, end, grammar, msg)) {
-        SPIRIT_PO_CATALOG_FAIL("Failed to parse po header, stopped at :'" + iterator_context(it, end));
+        SPIRIT_PO_CATALOG_FAIL("Failed to parse po header, stopped at " + iterator_context(it, end));
       }
 
 //#ifdef SPIRIT_PO_DEBUG
@@ -184,19 +187,22 @@ public:
         SPIRIT_PO_CATALOG_FAIL(("Invalid plural forms function. On input n = 1, returned plural = " + std::to_string(singular_index_) + ", while num_plurals = " + std::to_string(metadata_.num_plural_forms)));
       }
 
+      msg.line_no = line_no;
       insert_message(std::move(msg)); // for compatibility, need to insert the header message at msgid ""
     }
 
     while (it != end) {
       msg = po_message{};
       msg.strings().reserve(metadata_.num_plural_forms); // try to prevent frequent vector reallocations
+      line_no = it.position();
       if (!qi::parse(it, end, grammar, msg)) {
-        SPIRIT_PO_CATALOG_FAIL(("Failed to parse po file, stopped at: " + iterator_context(it, end)));
+        SPIRIT_PO_CATALOG_FAIL(("Failed to parse po file, stopped at " + iterator_context(it, end)));
       }
       // cannot overwrite header
       if (!msg.id.size()) {
-        SPIRIT_PO_CATALOG_FAIL(("Malformed po file: Cannot overwrite the header entry later in the po file. Stopped at: " + iterator_context(it, end)));
+        SPIRIT_PO_CATALOG_FAIL(("Malformed po file: Cannot overwrite the header entry later in the po file. Stopped at " + iterator_context(it, end)));
       }
+      msg.line_no = line_no;
       insert_message(std::move(msg));
     }
 
@@ -211,18 +217,33 @@ public:
 #endif
   }
 
+  // Upgrade an iterator pair to spirit::line_pos_iterators
+  template <typename Iterator>
+  static catalog from_iterators(Iterator & b, Iterator & e, warning_channel_type w = warning_channel_type()) {
+    spirit::line_pos_iterator<Iterator> it{b};
+    spirit::line_pos_iterator<Iterator> end{e};
+    return catalog(it, end, w);
+  }
+
+  template <typename Iterator>
+  static catalog from_iterators(spirit::line_pos_iterator<Iterator> & b, spirit::line_pos_iterator<Iterator> & e, warning_channel_type w = warning_channel_type()) {
+    return catalog(b, e, w);
+  }
+
   // Construct a catalog from a range using one expression
   template <typename Range>
   static catalog from_range(const Range & range, warning_channel_type w = warning_channel_type()) {
     auto it = boost::begin(range);
     auto end = boost::end(range);
-    return catalog(it, end, w);
+    return from_iterators(it, end, w);
   }
 
   static catalog from_istream(std::istream & is, warning_channel_type w = warning_channel_type()) {
-    boost::spirit::istream_iterator it(is);
-    boost::spirit::istream_iterator end;
-    return catalog(it, end, w);
+    // no white space skipping in the stream!
+    is.unsetf(std::ios::skipws);
+    spirit::istream_iterator it(is);
+    spirit::istream_iterator end;
+    return from_iterators(it, end, w);
   }
 
   ///////////////

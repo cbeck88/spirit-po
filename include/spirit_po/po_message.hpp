@@ -19,6 +19,8 @@ struct po_message {
   std::string id;
   plural_and_strings_type plural_and_strings;
 
+  std::size_t line_no;
+
   // Get the 'id_plural', 'strings' fields from the pair.
   // It is arranged as a pair here to allow for simpler parsing with spirit attributes.
   std::string & id_plural() { return plural_and_strings.first; }
