@@ -609,7 +609,6 @@ msgstr "jkl;"
     auto cat = spirit_po::catalog<>::from_range(test6po);
     TEST(static_cast<bool>(cat));
     const auto & meta = cat.get_metadata();
-    CHECK_EQ("text/plain", meta.mimetype);
     CHECK_EQ("UTF-8", meta.charset);
   }
 

@@ -3,8 +3,8 @@
 msgid ""
 msgstr "Language: Test\n"
 "Project-Id-Version: spirit-po\n"
-#"Content-Type: text/plain; charset=UTF-8\n"
-#"Content-Transfer-Encoding: 8bit"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
 
 #foo
 #bar

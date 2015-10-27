@@ -31,7 +31,6 @@ struct catalog_metadata {
   uint num_plural_forms;
   std::string plural_forms_function_string;
 
-  std::string mimetype;
   std::string charset;
 
   catalog_metadata()
@@ -69,18 +68,19 @@ private:
 #define DEFAULT_CHARSET "UTF-8"
 
   template <typename Iterator>
-  struct content_type_grammar : qi::grammar<Iterator, std::pair<std::string, std::string>()> {
-    qi::rule<Iterator, std::pair<std::string, std::string>()> main;
+  struct content_type_grammar : qi::grammar<Iterator, std::string()> {
+    qi::rule<Iterator, std::string()> main;
     content_type_grammar() : content_type_grammar::base_type(main) {
       using qi::lit;
-      main = qi::skip(' ') [ *(qi::char_ - ';') >> lit(";") >> ((lit("charset=") >> *(qi::char_)) | qi::attr(DEFAULT_CHARSET)) ];
+      using qi::omit;
+      using qi::skip;
+      main = skip(' ')[ omit[ *(qi::char_ - ';') >> lit(';') ] >> ((lit("charset=") >> *(qi::char_)) | qi::attr(DEFAULT_CHARSET)) ];
     }
   };
 
 public:
   // nonempty return is an error mesage
   std::string parse_header(const std::string & header) {
-    constexpr const char * default_mimetype = "text/plain";
     constexpr const char * default_charset = DEFAULT_CHARSET;
 #undef DEFAULT_CHARSET
 
@@ -94,17 +94,15 @@ public:
       auto it = content_type_line.begin();
       auto end = content_type_line.end();
       content_type_grammar<decltype(it)> gram;
-      std::pair<std::string, std::string> ct;
+      std::string ct;
       if (qi::parse(it, end, gram, ct)) {
-        mimetype = ct.first;
-        charset = ct.second;
+        charset = ct;
         if (charset != "ASCII" && charset != "UTF-8") {
           return "PO file declared charset of '" + charset + "', but spirit_po only supports UTF-8 and ASCII for this.";
         }
       }
     } else {
-      // Assume defaults for mimetype, charset
-      mimetype = default_mimetype;
+      // Assume defaults for charset
       charset = default_charset;
     }
 
