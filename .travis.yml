@@ -5,7 +5,7 @@ compiler:
   - clang
 install:
 - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
-- if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.6"; fi #export CXXFLAGS="-stdlib=libc++"; fi
+- if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.6"; fi
 addons:
   apt:
     sources:
@@ -13,30 +13,22 @@ addons:
     - boost-latest
     - llvm-toolchain-precise-3.6
     - george-edison55-precise-backports
-    # - kubuntu-backports
     # ^ for cmake
     packages:
     - gcc-4.9
     - g++-4.9
-#    - clang
     - clang-3.6
     - gettext
     - libintl-dev
-#    - libboost-all-dev
     - libboost1.55-dev
     - gdb
     - cmake-data
     - cmake
 script:
   - $CXX --version
-  - echo "$CXXFLAGS"
-# unit tests
+
   - echo "Unit Tests"
-  - cd test
-  - make clean
-  - make CXXFLAGS="-O3 -Wall -Werror -std=c++11 $CXXFLAGS"
-  - ./main
-# libintl validation tests
+  - cd test && ./test.sh #make clean && make CXXFLAGS="-O3 -Wall -Werror -std=c++11 $CXXFLAGS" && ./main
+
   - echo "Libintl Validation Tests"
-  - cd ../test_libintl
-  - ./test.sh
+  - cd ../test_libintl && ./test.sh
