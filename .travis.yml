@@ -16,7 +16,9 @@ addons:
     - clang
     - gettext
     - libintl-dev
-    - libboost-all-dev
+#    - libboost-all-dev
+    - libboost1.55-all-dev
+    - gdb
 script:
   - cd test && ./test.sh
   - cd ..
