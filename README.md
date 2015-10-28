@@ -14,9 +14,9 @@ and is implemented using `boost::spirit`.
 Our po grammar itself is only a few dozen lines.
 This makes it very simple and transparent, and easy to modify if needed.
 
-By contrast, the `libgettext-po` parser and `libintl` implementation
-together span about ten thousand lines of ansi C. Guess which
-one I would prefer to use. :)
+By contrast, the `libgettext-po` po-manipulation library,
+depending on how you count, span about ten thousand lines of ANSI C.
+Guess which parser implementation I would prefer to read. :)
 
 An in-depth explanation of the rationale for this library as compared to
 `libintl` and `boost::locale::gettext`, and specifically, the advantages
