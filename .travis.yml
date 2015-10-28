@@ -10,15 +10,19 @@ addons:
     sources:
     - ubuntu-toolchain-r-test
     - boost-latest
+    - kubuntu-backports
+    # ^ for cmake
     packages:
     - gcc-4.9
     - g++-4.9
     - clang
+    - clang++
     - gettext
     - libintl-dev
 #    - libboost-all-dev
     - libboost1.55-all-dev
     - gdb
+    - cmake
 script:
   - cd test && ./test.sh
   - cd ..

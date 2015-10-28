@@ -32,6 +32,8 @@ of parsing po files rather than mo files at run-time, is provided
 ## Using it
 
 N.B.: **spirit-po** is only intended to work with UTF-8 encoded po files.
+N.B.: **spirit-po** is only known to work with boost spirit >= 1.53.
+I had issues with travis when using boost 1.46. Not sure what the minimum is.
 
 To use the library, you only need to include the `include` directory
 in your C++ source files.
