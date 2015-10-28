@@ -1,0 +1,296 @@
+# Atomix'i eesti keele tõlge.
+# Estonian translation of atomix.
+#
+# Copyright (C) 2002, 2005, 2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the atomix package.
+#
+# Tõivo Leedjärv <toivo@linux.ee>, 2002.
+# Ivar Smolin <okul@linux.ee>, 2005, 2006.
+# Jüri Ruut, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: atomix HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=atomix&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-09-27 13:19+0000\n"
+"PO-Revision-Date: 2006-01-15 15:24+0200\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/atomix.appdata.xml.in.h:1 ../data/atomix.desktop.in.h:1
+#: ../data/ui/interface.ui.h:1 ../src/main.c:127 ../src/main.c:684
+msgid "Atomix"
+msgstr "Atomix"
+
+#: ../data/atomix.appdata.xml.in.h:2
+msgid "Build molecules out of single atoms"
+msgstr ""
+
+#: ../data/atomix.appdata.xml.in.h:3
+msgid ""
+"Atomix is a puzzle game where your goal is to assemble molecules from "
+"compound atoms by moving them on the playfield. However, atoms don't just "
+"move wherever you want to move them to, they slide until they hit either a "
+"wall or another atom."
+msgstr ""
+
+#: ../data/atomix.appdata.xml.in.h:4
+msgid ""
+"Try to build the molecules as fast as you can on each level to earn a higher "
+"score."
+msgstr ""
+
+#: ../data/atomix.desktop.in.h:2
+msgid "Molecule puzzle game"
+msgstr "Mõttemäng molekulidest"
+
+#: ../data/level/aceticacid.atomix.xml.h:1
+msgid "Acetic Acid"
+msgstr "Etaanhape"
+
+#: ../data/level/acetone.atomix.xml.h:1
+msgid "Acetone"
+msgstr "Atsetoon"
+
+#: ../data/level/butanol.atomix.xml.h:1
+msgid "Butanol"
+msgstr "Butanool"
+
+#: ../data/level/cyclobutane.atomix.xml.h:1
+msgid "Cyclobutane"
+msgstr "Tsüklobutaan"
+
+#: ../data/level/dimethylether.atomix.xml.h:1
+msgid "Dimethyl Ether"
+msgstr "Dimetüüleeter"
+
+#: ../data/level/ethanal.atomix.xml.h:1
+msgid "Ethanal"
+msgstr "Etanaal"
+
+#: ../data/level/ethane.atomix.xml.h:1
+msgid "Ethane"
+msgstr "Etaan"
+
+#: ../data/level/ethanol.atomix.xml.h:1
+msgid "Ethanol"
+msgstr "Etanool"
+
+#: ../data/level/ethylene.atomix.xml.h:1
+msgid "Ethylene"
+msgstr "Eteen"
+
+#: ../data/level/glycerin.atomix.xml.h:1
+msgid "Glycerin"
+msgstr "Glütseriin"
+
+#: ../data/level/lactic-acid.atomix.xml.h:1
+msgid "Lactic Acid"
+msgstr "Piimhape"
+
+#: ../data/level/methanal.atomix.xml.h:1
+msgid "Methanal"
+msgstr "Metanaal"
+
+#: ../data/level/methane.atomix.xml.h:1
+msgid "Methane"
+msgstr "Metaan"
+
+#: ../data/level/methanol.atomix.xml.h:1
+msgid "Methanol"
+msgstr "Metanool"
+
+#: ../data/level/propanal.atomix.xml.h:1
+msgid "Propanal"
+msgstr "Propanaal"
+
+#: ../data/level/propylene.atomix.xml.h:1
+msgid "Propylene"
+msgstr "Propeen"
+
+#: ../data/level/pyran.atomix.xml.h:1
+msgid "Pyran"
+msgstr "Püraan"
+
+#: ../data/level/transbutylen.atomix.xml.h:1
+msgid "Trans Butylen"
+msgstr "Trans-buteen"
+
+#: ../data/level/water.atomix.xml.h:1
+msgid "Water"
+msgstr "Vesi"
+
+#: ../data/ui/interface.ui.h:2
+msgid "_File"
+msgstr ""
+
+#: ../data/ui/interface.ui.h:3
+msgid "_New Game"
+msgstr "_Uus mäng"
+
+#: ../data/ui/interface.ui.h:4
+msgid "_End Game"
+msgstr "_Lõpeta mäng"
+
+#: ../data/ui/interface.ui.h:5
+#, fuzzy
+#| msgid "Skip _level"
+msgid "_Skip Level"
+msgstr "_Hüppa järgmisele tasemele"
+
+#: ../data/ui/interface.ui.h:6
+#, fuzzy
+#| msgid "Reset level"
+msgid "_Reset Level"
+msgstr "Algväärtusta tase"
+
+#: ../data/ui/interface.ui.h:7
+#, fuzzy
+#| msgid "_Undo move"
+msgid "_Undo Move"
+msgstr "U_nusta liigutus"
+
+#: ../data/ui/interface.ui.h:8
+#, fuzzy
+#| msgid "_Pause game"
+msgid "_Pause Game"
+msgstr "P_aus"
+
+#: ../data/ui/interface.ui.h:9
+#, fuzzy
+#| msgid "_Continue game"
+msgid "_Continue Game"
+msgstr "_Jätka mängu"
+
+#: ../data/ui/interface.ui.h:10
+msgid "_Quit"
+msgstr ""
+
+#: ../data/ui/interface.ui.h:11
+msgid "_Help"
+msgstr "_Abi"
+
+#: ../data/ui/interface.ui.h:12
+msgid "_About"
+msgstr ""
+
+#: ../data/ui/interface.ui.h:13
+msgid "Level:"
+msgstr "Tase:"
+
+#: ../data/ui/interface.ui.h:14
+msgid "Molecule:"
+msgstr "Molekul:"
+
+#: ../data/ui/interface.ui.h:15
+msgid "Formula:"
+msgstr "Valem:"
+
+#: ../data/ui/interface.ui.h:16
+msgid "Score:"
+msgstr "Punkte:"
+
+#: ../data/ui/interface.ui.h:17
+msgid "Time:"
+msgstr "Aeg:"
+
+#: ../data/ui/interface.ui.h:18
+msgid "empty"
+msgstr ""
+
+#: ../data/ui/interface.ui.h:19
+msgid "Statistics"
+msgstr "Statistika"
+
+#: ../src/level-manager.c:200
+msgid "Couldn't find level sequence description."
+msgstr "Ei leia taseme kirjeldust."
+
+#: ../src/level-manager.c:214
+msgid "No level found."
+msgstr "Ei leia ühtegi taset."
+
+#: ../src/level-manager.c:283
+#, c-format
+msgid "Found level '%s' in: %s"
+msgstr "Tase '%s' leitud failist: %s"
+
+#: ../src/main.c:129
+msgid "A puzzle game about atoms and molecules"
+msgstr "Mõistatus aatomitest ja molekulidest."
+
+#: ../src/main.c:133
+msgid "translator-credits"
+msgstr ""
+"Tõivo Leedjärv <toivo@linux.ee>, 2002.\n"
+"Ivar Smolin <okul@linux.ee>, 2005, 2006.\n"
+"Jüri Ruut, 2005."
+
+#: ../src/main.c:440
+msgid "Congratulations! You have finished all Atomix levels."
+msgstr "Õnnitlused! Sa lõpetasid kõis Atomix tasemed."
+
+#: ../src/theme-manager.c:225
+msgid "No themes found."
+msgstr "Ei leia ühtegi teemat."
+
+#: ../src/theme-manager.c:283
+#, c-format
+msgid "Found theme '%s' in: %s"
+msgstr "Teema '%s' leitud failist: %s"
+
+#~ msgid "Continue paused game"
+#~ msgstr "Jätka peatatud mängu"
+
+#~ msgid "End a game"
+#~ msgstr "Lõpeta mäng"
+
+#~ msgid "Pause the running game"
+#~ msgstr "Peata aktiivne mäng"
+
+#~ msgid "Restores start situation"
+#~ msgstr "Taastab taseme algoleku"
+
+#~ msgid "Set preferences"
+#~ msgstr "Määra eelistused"
+
+#~ msgid "Skip the current level"
+#~ msgstr "Jäta praegune tase vahele"
+
+#~ msgid "Start a new game"
+#~ msgstr "Alusta uut mängu"
+
+#~ msgid "Undo the last move"
+#~ msgstr "Unusta viimane liigutus"
+
+#~ msgid "View highscores"
+#~ msgstr "Vaata parimaid tulemusi"
+
+#~ msgid "_Game"
+#~ msgstr "_Mäng"
+
+#~ msgid "_Preferences ..."
+#~ msgstr "_Eelistused..."
+
+#~ msgid "_Scores ..."
+#~ msgstr "_Punktid ..."
+
+#~ msgid ""
+#~ "You have not achieved any scores yet. Play a little before coming back!"
+#~ msgstr ""
+#~ "Sa pole senimaani ühtegi tulemust saavutanud. Enne tulemuste saavutamist "
+#~ "peaks natukene mängima!"
+
+#~ msgid "Couldn't find at least one level."
+#~ msgstr "Ei leia vähemalt ühte taset."
+
+#~ msgid "Do you want to finish the game?"
+#~ msgstr "Kas sa tahad mängu lõpetada?"
+
+#~ msgid "Couldn't find file: %s"
+#~ msgstr "Ei leia faili: %s"

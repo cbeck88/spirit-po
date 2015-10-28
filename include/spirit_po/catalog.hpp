@@ -338,6 +338,27 @@ public:
   }
 
   /***
+   * Get line numbers of messages
+   */
+  std::size_t gettext_line_no(const std::string & msgid) const {
+    auto it = hashmap_.find(msgid);
+    if (it != hashmap_.end()) {
+      return it->second.line_no;
+    } else {
+      return 0;
+    }
+  }
+
+  std::size_t pgettext_line_no(const std::string & context, const std::string & msgid) const {
+    auto it = hashmap_.find(form_context_index(context, msgid));
+    if (it != hashmap_.end()) {
+      return it->second.line_no;
+    } else {
+      return 0;
+    }
+  }
+
+  /***
    * Access metadata
    */
   const catalog_metadata & get_metadata() const { return metadata_; }

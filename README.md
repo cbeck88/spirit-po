@@ -127,6 +127,16 @@ master catalog.
      The warning channel object may also be passed to the constructor, if one is concerned
      about duplicated strings within a single po file. By default warnings are ignored.
 
+Some less commonly useful accessors
+
+   - `const spirit_po::catalog_metadata & get_metadata() const`  
+     Return the metadata structure that was parsed from the po header.
+   - `std::size_t gettext_line_no(const std::string & msgid) const`
+     Return the line number at which a given catalog message was read. 0 if it is not found.
+   - `std::size_t pgettext_line_no(const std::string & msgctxt, const std::string & msgid) const`
+     Return the line number at which a given catalog message (with context) was read. 0 if it is not found.
+
+
 ## Customization points
 
 `spirit_po::catalog` is a template, and you may customize it in two ways.

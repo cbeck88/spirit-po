@@ -3,8 +3,13 @@
 //  Distributed under the Boost Software License, Version 1.0. (See accompanying
 //  file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 
-#include <libintl.h>
+#define ENABLE_NLS
+
 #include <spirit_po.hpp>
+
+extern "C" {
+#include "gettext.h"
+}
 
 #include <cstdlib>
 #include <fstream>
@@ -36,11 +41,28 @@ std::string escape_string(const std::string & str) {
   return result;
 }
 
+typedef std::pair<std::string, boost::optional<std::string>> msg_id_pair;
+
 template <typename hashmap_type>
-std::set<std::string> all_keys(const hashmap_type & hashmap ) {
-  std::set<std::string> result;
+std::set<msg_id_pair> all_singular_keys(const hashmap_type & hashmap ) {
+  std::set<msg_id_pair> result;
   for (const auto & p : hashmap) {
-    result.insert(p.first);
+    if (!p.second.is_plural()) {
+      result.insert(std::make_pair(p.second.id, p.second.context));
+    }
+  }
+  return result;
+}
+
+typedef std::tuple<std::string, std::string, boost::optional<std::string>> msg_id_plural_info;
+
+template <typename hashmap_type>
+std::set<msg_id_plural_info> all_plural_keys(const hashmap_type & hashmap ) {
+  std::set<msg_id_plural_info> result;
+  for (const auto & p : hashmap) {
+    if (p.second.is_plural()) {
+      result.insert(msg_id_plural_info { p.second.id, p.second.id_plural(), p.second.context});
+    }
   }
   return result;
 }
@@ -100,13 +122,26 @@ std::vector<std::string> list_po_files() {
 /***
  * Test routines
  */
-
-bool check_libintl_gettext(const spirit_po::catalog<> & cat, const std::string & msgid) {
-  std::string cat_result = cat.gettext_str(msgid);
-  const char * libintl_result = gettext(msgid.c_str());
+bool check_result(const std::string & cat_result, const char * libintl_result, const spirit_po::catalog<> & cat, const std::string & msgid, const boost::optional<std::string> & msgctxt = boost::none) {
   bool check = libintl_result && (cat_result == libintl_result);
   if (!check) {
-    std::cerr << "Error, mismatch on msgid = \"" << msgid << "\" (libintl):\n";
+    std::cerr << "Error, mismatch on msgid = \"" << msgid << "\" line = ";
+
+    if (msgctxt) {
+      if (auto line = cat.gettext_line_no(msgid)) {
+        std::cerr << line;
+      } else {
+        std::cerr << "<<<unknown>>>";
+      }
+    } else {
+      if (auto line = cat.pgettext_line_no(*msgctxt, msgid)) {
+        std::cerr << line;
+      } else {
+        std::cerr << "<<<unknown>>>";
+      }
+    }
+
+    std::cerr << "\n(libintl):\n";
     if (libintl_result) {
       if (libintl_result == msgid.c_str()) {
         std::cerr << "<<<untranslated>>>\n";
@@ -124,6 +159,18 @@ bool check_libintl_gettext(const spirit_po::catalog<> & cat, const std::string &
     }
   }
   return check;
+}
+
+bool check_libintl_gettext(const spirit_po::catalog<> & cat, const std::string & msgid, const boost::optional<std::string> & msgctxt = boost::none) {
+  std::string cat_result = msgctxt ? cat.pgettext_str(*msgctxt, msgid) : cat.gettext_str(msgid);
+  const char * libintl_result = msgctxt ? (pgettext_expr(msgctxt->c_str(), msgid.c_str())) : (gettext(msgid.c_str()));
+  return check_result(cat_result, libintl_result, cat, msgid, msgctxt);
+}
+
+bool check_libintl_ngettext(const spirit_po::catalog<> & cat, const std::string & msgid, const std::string & msgid_plural, uint plural, const boost::optional<std::string> & msgctxt = boost::none) {
+  std::string cat_result = msgctxt ? cat.npgettext_str(*msgctxt, msgid, msgid_plural, plural) : cat.ngettext_str(msgid, msgid_plural, plural);
+  const char * libintl_result = msgctxt ? (npgettext_expr(msgctxt->c_str(), msgid.c_str(), msgid_plural.c_str(), plural)) : (ngettext(msgid.c_str(), msgid_plural.c_str(), plural));
+  return check_result(cat_result, libintl_result, cat, msgid, msgctxt);
 }
 
 enum class RESULT { PASS, FAIL, NA };
@@ -170,10 +217,19 @@ RESULT do_test(const std::string & po_stem) {
   all_pass = all_pass && check_libintl_gettext(cat, "bar");
   all_pass = all_pass && check_libintl_gettext(cat, "baz");
 
-  for (const auto & id : all_keys(cat.get_hashmap())) {
-    if (id.size()) {
-      bool b = check_libintl_gettext(cat, id);
+  for (const auto & id : all_singular_keys(cat.get_hashmap())) {
+    if (id.first.size()) {
+      bool b = check_libintl_gettext(cat, id.first, id.second);
       all_pass = all_pass && b;
+    }
+  }
+
+  for (const auto & tag : all_plural_keys(cat.get_hashmap())) {
+    if (std::get<0>(tag).size()) {
+      for (uint n = 0; n < 9; ++n) {
+        bool b = check_libintl_ngettext(cat, std::get<0>(tag), std::get<1>(tag), n, std::get<2>(tag));
+        all_pass = all_pass && b;
+      }
     }
   }
 

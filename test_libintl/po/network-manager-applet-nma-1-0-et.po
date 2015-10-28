@@ -1,0 +1,4264 @@
+# VõrguHalduri eesti keele tõlge.
+# Estonian translation of NetworkManager.
+#
+# Copyright (C) 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007–2011 The GNOME Project
+# This file is distributed under the same license as the Networkmanager package.
+#
+# Priit Laes <amd store20 com>, 2006.
+# Ivar Smolin <okul at linux.ee>, 2006–2007, 2010, 2011.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2008, 2009, 2010, 2011, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Network Manager MASTER\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=NetworkManager&keywords=I18N+L10N&component=nm-applet\n"
+"POT-Creation-Date: 2015-10-28 13:47+0000\n"
+"PO-Revision-Date: 2013-03-13 02:52+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Poedit-Language: Estonia\n"
+"X-Poedit-Country: ESTONIAN\n"
+
+#: ../nm-applet.desktop.in.h:1
+msgid "Network"
+msgstr "Võrk"
+
+#: ../nm-applet.desktop.in.h:2
+msgid "Manage your network connections"
+msgstr "Võrguühenduste haldamine"
+
+#: ../nm-connection-editor.desktop.in.h:1
+#: ../src/connection-editor/nm-connection-editor.ui.h:1
+msgid "Network Connections"
+msgstr "Võrguühendused"
+
+#: ../nm-connection-editor.desktop.in.h:2
+msgid "Manage and change your network connection settings"
+msgstr "Võrguühenduse sätete haldus"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:1
+msgid "Disable connected notifications"
+msgstr "Ühendumise saavutamisest ei teatata"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:2
+msgid "Set this to true to disable notifications when connecting to a network."
+msgstr "Kui tõene, siis on võrguga ühendumise teated keelatud."
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:3
+msgid "Disable disconnected notifications"
+msgstr "Ühenduse katkemisest ei teatata"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:4
+msgid ""
+"Set this to true to disable notifications when disconnecting from a network."
+msgstr "Kui tõene, siis on võrguühenduse katkemise teated keelatud."
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:5
+msgid "Disable VPN notifications"
+msgstr "VPN teadete keelamine"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:6
+msgid ""
+"Set this to true to disable notifications when connecting to or "
+"disconnecting from a VPN."
+msgstr "Kui tõene, siis on VPN ühenduse loomise ja katkemise teated keelatud."
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:7
+msgid "Suppress networks available notifications"
+msgstr "Saadaolevatest võrkudest ei teatata"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:8
+msgid ""
+"Set this to true to disable notifications when Wi-Fi networks are available."
+msgstr "Kui tõene, siis on saadaolevatest Wi-Fi võrkudest teatamine keelatud."
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:9
+msgid "Stamp"
+msgstr "Tempel"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:10
+msgid "Used to determine whether settings should be migrated to a new version."
+msgstr ""
+"Kasutatakse, et kindlaks teha, millal tuleb sätteid uuendada järgmisele "
+"versioonile."
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:11
+msgid "Disable WiFi Create"
+msgstr "WiFi loomine keelatud"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:12
+msgid ""
+"Set to true to disable creation of adhoc networks when using the applet."
+msgstr "Kui tõene, siis on adhoc võrgu loomine rakendi abil keelatud."
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:13
+msgid "Show the applet in notification area"
+msgstr "Rakendit näidatakse teatealas"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:14
+msgid "Set to FALSE to disable displaying the applet in the notification area."
+msgstr "Määra väärtuseks FALSE, et keelata rakendi näitamine teatealas."
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:15
+msgid "Ignore CA certificate"
+msgstr "Sertifitseerimiskeskuse sertifikaadi eiramine"
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:16
+msgid ""
+"Set this to true to disable warnings about CA certificates in EAP "
+"authentication."
+msgstr ""
+"Märgi see, et keelata hoiatused sertifitseerimiskeskuse (CA) sertide kohta "
+"EAP autentimisel."
+
+#: ../org.gnome.nm-applet.gschema.xml.in.h:17
+msgid ""
+"Set this to true to disable warnings about CA certificates in phase 2 of EAP "
+"authentication."
+msgstr ""
+"Märgi see, et keelata hoiatused sertifitseerimiskeskuse (CA) sertide kohta "
+"EAP autentimise teises faasis."
+
+#: ../org.gnome.nm-connection-editor.appdata.xml.in.h:1
+#, fuzzy
+#| msgid "NetworkManager Applet"
+msgid "NetworkManager"
+msgstr "Võrguhalduri rakend"
+
+#: ../org.gnome.nm-connection-editor.appdata.xml.in.h:2
+#, fuzzy
+#| msgid "NetworkManager Applet"
+msgid "NetworkManager for GNOME"
+msgstr "Võrguhalduri rakend"
+
+#: ../org.gnome.nm-connection-editor.appdata.xml.in.h:3
+msgid ""
+"NetworkManager is a system service for managing and configuring your network "
+"connections and devices."
+msgstr ""
+
+#: ../org.gnome.nm-connection-editor.appdata.xml.in.h:4
+msgid ""
+"The nm-connection-editor program works with NetworkManager to create and "
+"edit existing connection profiles for NetworkManager."
+msgstr ""
+
+#: ../src/8021x.ui.h:1 ../src/ethernet-dialog.c:105
+msgid "802.1X authentication"
+msgstr "802.1X autentimine"
+
+#: ../src/8021x.ui.h:2 ../src/connection-editor/ce-page-wimax.ui.h:2
+#: ../src/libnm-gtk/wifi.ui.h:3
+msgid "_Network name:"
+msgstr "_Võrgu nimi:"
+
+#: ../src/applet.c:574
+msgid "Failed to add/activate connection"
+msgstr "Ühenduse lisamine/aktiveerimine nurjus"
+
+#: ../src/applet.c:576 ../src/applet.c:620 ../src/applet.c:646
+#: ../src/applet-device-wifi.c:1326 ../src/applet-device-wifi.c:1345
+msgid "Unknown error"
+msgstr "Tundmatu viga"
+
+#: ../src/applet.c:579 ../src/applet.c:649 ../src/applet-device-wifi.c:1329
+#: ../src/applet-device-wifi.c:1348
+msgid "Connection failure"
+msgstr "Ühendus nurjus"
+
+#: ../src/applet.c:618
+msgid "Device disconnect failed"
+msgstr "Seadmega ühenduse katkestamine nurjus"
+
+#: ../src/applet.c:623
+msgid "Disconnect failure"
+msgstr "Ühenduse katkestamine nurjus"
+
+#: ../src/applet.c:644
+msgid "Connection activation failed"
+msgstr "Ühenduse aktiveerimine nurjus"
+
+#: ../src/applet.c:953 ../src/applet-device-wifi.c:1048
+msgid "Don't show this message again"
+msgstr "Ära seda uuesti näita"
+
+#: ../src/applet.c:1042
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because the network connection was "
+"interrupted."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus, kuna võrguühendus katkestati."
+
+#: ../src/applet.c:1045
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because the VPN service stopped unexpectedly."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus, kuna VPN-teenus peatus ootamatult."
+
+#: ../src/applet.c:1048
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because the VPN service returned invalid "
+"configuration."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus, kuna VPN-teenus tagastas vigase seadistuse."
+
+#: ../src/applet.c:1051
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because the connection attempt timed out."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus, kuna ühendumise katse aegus."
+
+#: ../src/applet.c:1054
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because the VPN service did not start in time."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus, kuna VPN-teenus ei käivitunud õigeaegselt."
+
+#: ../src/applet.c:1057
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because the VPN service failed to start."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus, kuna VPN-teenuse käivitamine nurjus."
+
+#: ../src/applet.c:1060
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because there were no valid VPN secrets."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus, kuna ei leitud sobivat VPN'i parooli."
+
+#: ../src/applet.c:1063
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because of invalid VPN secrets."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus sobimatu VPN'i parooli tõttu."
+
+#: ../src/applet.c:1070
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus."
+
+#: ../src/applet.c:1088
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' disconnected because the network connection was "
+"interrupted."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' katkes, kuna võrguühendus katkestati."
+
+#: ../src/applet.c:1091
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' disconnected because the VPN service stopped."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' katkestati, kuna VPN-teenus peatus."
+
+#: ../src/applet.c:1097
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' disconnected."
+msgstr ""
+"\n"
+"VPN-ühendus '%s' katkes."
+
+#: ../src/applet.c:1127
+#, c-format
+msgid ""
+"VPN connection has been successfully established.\n"
+"\n"
+"%s\n"
+msgstr ""
+"VPN ühenduse loomine edukas.\n"
+"\n"
+"%s\n"
+
+#: ../src/applet.c:1129
+msgid "VPN connection has been successfully established.\n"
+msgstr "VPN ühenduse loomine edukas.\n"
+
+#: ../src/applet.c:1131
+msgid "VPN Login Message"
+msgstr "VPN'i sisselogimise teade"
+
+#: ../src/applet.c:1137 ../src/applet.c:1145 ../src/applet.c:1195
+msgid "VPN Connection Failed"
+msgstr "VPN-ühendus nurjus"
+
+#: ../src/applet.c:1202
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed because the VPN service failed to start.\n"
+"\n"
+"%s"
+msgstr ""
+"\n"
+"VPN-ühendus '%s' nurjus, kuna VPN-teenuse käivitamine nurjus.\n"
+"\n"
+"%s"
+
+#: ../src/applet.c:1205
+#, c-format
+msgid ""
+"\n"
+"The VPN connection '%s' failed to start.\n"
+"\n"
+"%s"
+msgstr ""
+"\n"
+"VPN-ühenduse '%s' käivitamine nurjus.\n"
+"\n"
+"%s"
+
+#: ../src/applet.c:1533
+msgid "device not ready (firmware missing)"
+msgstr "seade pole valmis (puudub püsivara)"
+
+#: ../src/applet.c:1535
+msgid "device not ready"
+msgstr "seade pole valmis"
+
+#. Notify user of unmanaged or unavailable device
+#: ../src/applet.c:1545 ../src/applet-device-ethernet.c:123
+#: ../src/applet-device-infiniband.c:119 ../src/applet-device-vlan.c:181
+msgid "disconnected"
+msgstr "ühendamata"
+
+#: ../src/applet.c:1561
+msgid "Disconnect"
+msgstr "Katkesta ühendus"
+
+#: ../src/applet.c:1575
+msgid "device not managed"
+msgstr "seade pole hallatud"
+
+#: ../src/applet.c:1735
+msgid "No network devices available"
+msgstr "Võrguseadmeid ei leitud"
+
+#: ../src/applet.c:1788
+msgid "_VPN Connections"
+msgstr "_VPN-ühendused"
+
+#: ../src/applet.c:1845
+msgid "_Configure VPN..."
+msgstr "_Seadista VPN..."
+
+#: ../src/applet.c:1849
+msgid "_Disconnect VPN"
+msgstr "_Katkesta VPN-ühendus"
+
+#: ../src/applet.c:1965
+msgid "NetworkManager is not running..."
+msgstr "Võrguhaldur ei tööta..."
+
+#: ../src/applet.c:1970 ../src/applet.c:2946
+msgid "Networking disabled"
+msgstr "Võrguühendused keelatud"
+
+#. 'Enable Networking' item
+#: ../src/applet.c:2190
+msgid "Enable _Networking"
+msgstr "_Võrguühendused lubatud"
+
+#. 'Enable Wi-Fi' item
+#: ../src/applet.c:2199
+msgid "Enable _Wi-Fi"
+msgstr "_Wi-Fi ühendused lubatud"
+
+#. 'Enable Mobile Broadband' item
+#: ../src/applet.c:2208
+msgid "Enable _Mobile Broadband"
+msgstr "_Mobiiliühendus lubatud"
+
+#. 'Enable WiMAX Mobile Broadband' item
+#: ../src/applet.c:2217
+msgid "Enable WiMA_X Mobile Broadband"
+msgstr "WiMA_X-ühendus lubatud"
+
+#. Toggle notifications item
+#: ../src/applet.c:2228
+msgid "Enable N_otifications"
+msgstr "_Teated lubatud"
+
+#. 'Connection Information' item
+#: ../src/applet.c:2239
+msgid "Connection _Information"
+msgstr "Ü_henduse andmed"
+
+#. 'Edit Connections...' item
+#: ../src/applet.c:2249
+msgid "Edit Connections..."
+msgstr "Ühenduste muutmine..."
+
+#. Help item
+#: ../src/applet.c:2263
+msgid "_Help"
+msgstr "A_bi"
+
+#. About item
+#: ../src/applet.c:2272
+msgid "_About"
+msgstr "_Programmist lähemalt"
+
+#: ../src/applet.c:2520
+#, c-format
+msgid "You are now connected to '%s'."
+msgstr "Oled nüüd ühendatud võrku '%s'."
+
+#: ../src/applet.c:2561
+msgid "Disconnected"
+msgstr "Ühendus katkestatud"
+
+#: ../src/applet.c:2562
+msgid "The network connection has been disconnected."
+msgstr "Võrguühendus katkes."
+
+#: ../src/applet.c:2801
+#, c-format
+msgid "Preparing network connection '%s'..."
+msgstr "Võrguühenduse '%s' ettevalmistamine..."
+
+#: ../src/applet.c:2804
+#, c-format
+msgid "User authentication required for network connection '%s'..."
+msgstr "Võrguühenduse '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet.c:2807 ../src/applet-device-bt.c:137
+#: ../src/applet-device-wimax.c:446 ../src/mobile-helpers.c:601
+#, c-format
+msgid "Requesting a network address for '%s'..."
+msgstr "Võrguaadressi pärimine võrgu '%s' jaoks..."
+
+#: ../src/applet.c:2810
+#, c-format
+msgid "Network connection '%s' active"
+msgstr "Võrguühendus '%s' on aktiivne"
+
+#: ../src/applet.c:2900
+#, c-format
+msgid "Starting VPN connection '%s'..."
+msgstr "VPN-ühenduse '%s' alustamine..."
+
+#: ../src/applet.c:2903
+#, c-format
+msgid "User authentication required for VPN connection '%s'..."
+msgstr "VPN-ühenduse '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet.c:2906
+#, c-format
+msgid "Requesting a VPN address for '%s'..."
+msgstr "VPN'i aadressi pärimine võrgu '%s' jaoks..."
+
+#: ../src/applet.c:2909
+#, c-format
+msgid "VPN connection '%s' active"
+msgstr "VPN-ühendus '%s' on aktiivne"
+
+#: ../src/applet.c:2951
+msgid "No network connection"
+msgstr "Võrguühendus puudub"
+
+#: ../src/applet.c:3557
+msgid "NetworkManager Applet"
+msgstr "Võrguhalduri rakend"
+
+#: ../src/applet-device-bond.c:76 ../src/applet-device-bridge.c:76
+#: ../src/applet-device-broadband.c:791 ../src/applet-device-bt.c:90
+#: ../src/applet-device-cdma.c:301 ../src/applet-device-ethernet.c:131
+#: ../src/applet-device-gsm.c:357 ../src/applet-device-infiniband.c:127
+#: ../src/applet-device-team.c:72 ../src/applet-device-vlan.c:190
+#: ../src/applet-device-wifi.c:839 ../src/applet-device-wimax.c:276
+msgid "Available"
+msgstr "Saadaval"
+
+#: ../src/applet-device-bond.c:89 ../src/applet-device-bridge.c:89
+#: ../src/applet-device-broadband.c:818 ../src/applet-device-bt.c:102
+#: ../src/applet-device-cdma.c:340 ../src/applet-device-ethernet.c:146
+#: ../src/applet-device-gsm.c:396 ../src/applet-device-infiniband.c:142
+#: ../src/applet-device-team.c:85 ../src/applet-device-vlan.c:203
+#: ../src/applet-device-wifi.c:1245 ../src/applet-device-wimax.c:401
+msgid "Connection Established"
+msgstr "Ühendus loodud"
+
+#: ../src/applet-device-bond.c:90
+#, fuzzy
+#| msgid "You are now connected to the GSM network."
+msgid "You are now connected to the bonded network."
+msgstr "Oled nüüd ühendatud GSM-võrku."
+
+#: ../src/applet-device-bond.c:115
+#, fuzzy, c-format
+#| msgid "Preparing network connection '%s'..."
+msgid "Preparing bond connection '%s'..."
+msgstr "Võrguühenduse '%s' ettevalmistamine..."
+
+#: ../src/applet-device-bond.c:118
+#, fuzzy, c-format
+#| msgid "Configuring mobile broadband connection '%s'..."
+msgid "Configuring bond connection '%s'..."
+msgstr "Mobiiliühenduse '%s' häälestamine..."
+
+#: ../src/applet-device-bond.c:121
+#, fuzzy, c-format
+#| msgid "User authentication required for VPN connection '%s'..."
+msgid "User authentication required for bond connection '%s'..."
+msgstr "VPN-ühenduse '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet-device-bond.c:124 ../src/applet-device-bridge.c:124
+#: ../src/applet-device-infiniband.c:177 ../src/applet-device-team.c:120
+#: ../src/applet-device-vlan.c:238
+#, fuzzy, c-format
+#| msgid "Requesting a VPN address for '%s'..."
+msgid "Requesting address for '%s'..."
+msgstr "VPN'i aadressi pärimine võrgu '%s' jaoks..."
+
+#: ../src/applet-device-bond.c:128
+#, fuzzy, c-format
+#| msgid "VPN connection '%s' active"
+msgid "Bond connection '%s' active"
+msgstr "VPN-ühendus '%s' on aktiivne"
+
+#: ../src/applet-device-bridge.c:90
+#, fuzzy
+#| msgid "You are now connected to the WiMAX network."
+msgid "You are now connected to the bridged network."
+msgstr "Oled nüüd ühendatud WiMAX-võrku."
+
+#: ../src/applet-device-bridge.c:115
+#, fuzzy, c-format
+#| msgid "Preparing network connection '%s'..."
+msgid "Preparing bridge connection '%s'..."
+msgstr "Võrguühenduse '%s' ettevalmistamine..."
+
+#: ../src/applet-device-bridge.c:118
+#, fuzzy, c-format
+#| msgid "Configuring Wi-Fi network connection '%s'..."
+msgid "Configuring bridge connection '%s'..."
+msgstr "Wi-Fi võrgu '%s' ühenduse häälestamine..."
+
+#: ../src/applet-device-bridge.c:121
+#, fuzzy, c-format
+#| msgid "User authentication required for VPN connection '%s'..."
+msgid "User authentication required for bridge connection '%s'..."
+msgstr "VPN-ühenduse '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet-device-bridge.c:128
+#, fuzzy, c-format
+#| msgid "VPN connection '%s' active"
+msgid "Bridge connection '%s' active"
+msgstr "VPN-ühendus '%s' on aktiivne"
+
+#: ../src/applet-device-broadband.c:164 ../src/applet-device-gsm.c:509
+msgid "Wrong PUK code; please contact your provider."
+msgstr "Vale PUK-kood; võta ühendust oma teenusepakkujaga."
+
+#: ../src/applet-device-broadband.c:206 ../src/applet-device-gsm.c:486
+msgid "Wrong PIN code; please contact your provider."
+msgstr "Vale PIN-kood; võta ühendust oma teenusepakkujaga."
+
+#. Start the spinner to show the progress of the unlock
+#: ../src/applet-device-broadband.c:257 ../src/applet-device-gsm.c:536
+msgid "Sending unlock code..."
+msgstr "Luku avamise koodi saatmine..."
+
+#: ../src/applet-device-broadband.c:737 ../src/applet-device-cdma.c:247
+#: ../src/applet-device-gsm.c:303 ../src/applet-dialogs.c:601
+#, c-format
+msgid "Mobile Broadband (%s)"
+msgstr "Mobiiliühendus (%s)"
+
+#: ../src/applet-device-broadband.c:739 ../src/applet-device-cdma.c:249
+#: ../src/applet-device-gsm.c:305
+#: ../src/connection-editor/connection-helpers.c:126
+#: ../src/connection-editor/page-mobile.c:320
+#: ../src/libnm-gtk/nm-ui-utils.c:334
+msgid "Mobile Broadband"
+msgstr "Mobiiliühendus"
+
+#. Default connection item
+#: ../src/applet-device-broadband.c:804
+msgid "New Mobile Broadband connection..."
+msgstr "Uus mobiiliühendus..."
+
+#: ../src/applet-device-broadband.c:819
+msgid "You are now connected to the Mobile Broadband network."
+msgstr "Oled nüüd ühendatud mobiiliinternetti."
+
+#: ../src/applet-device-broadband.c:954 ../src/applet-device-broadband.c:960
+msgid "Mobile Broadband network."
+msgstr "Mobiiliühenduse võrk."
+
+#: ../src/applet-device-broadband.c:955 ../src/applet-device-cdma.c:407
+#: ../src/applet-device-gsm.c:666
+msgid "You are now registered on the home network."
+msgstr "Oled nüüd ühendatud koduvõrku."
+
+#: ../src/applet-device-broadband.c:961 ../src/applet-device-cdma.c:413
+#: ../src/applet-device-gsm.c:672
+msgid "You are now registered on a roaming network."
+msgstr "Oled nüüd ühendatud rändlusvõrku (roaming)."
+
+#: ../src/applet-device-bt.c:103
+msgid "You are now connected to the mobile broadband network."
+msgstr "Oled nüüd ühendatud mobiiliinternetti."
+
+#: ../src/applet-device-bt.c:128 ../src/applet-device-wimax.c:437
+#: ../src/mobile-helpers.c:592
+#, c-format
+msgid "Preparing mobile broadband connection '%s'..."
+msgstr "Mobiiliühenduse '%s' ettevalmistamine..."
+
+#: ../src/applet-device-bt.c:131 ../src/applet-device-wimax.c:440
+#: ../src/mobile-helpers.c:595
+#, c-format
+msgid "Configuring mobile broadband connection '%s'..."
+msgstr "Mobiiliühenduse '%s' häälestamine..."
+
+#: ../src/applet-device-bt.c:134 ../src/applet-device-wimax.c:443
+#: ../src/mobile-helpers.c:598
+#, c-format
+msgid "User authentication required for mobile broadband connection '%s'..."
+msgstr "Kasutaja autentimine on vajalik mobiiliühenduse '%s' jaoks..."
+
+#: ../src/applet-device-bt.c:141 ../src/mobile-helpers.c:617
+#, c-format
+msgid "Mobile broadband connection '%s' active"
+msgstr "Mobiiliühendus '%s' on aktiivne"
+
+#. Default connection item
+#: ../src/applet-device-cdma.c:314
+msgid "New Mobile Broadband (CDMA) connection..."
+msgstr "Uus mobiiliühendus (CDMA)..."
+
+#: ../src/applet-device-cdma.c:341
+msgid "You are now connected to the CDMA network."
+msgstr "Oled nüüd ühendatud CDMA-võrku."
+
+#: ../src/applet-device-cdma.c:406 ../src/applet-device-cdma.c:412
+msgid "CDMA network."
+msgstr "CDMA võrk."
+
+#: ../src/applet-device-ethernet.c:44
+msgid "Auto Ethernet"
+msgstr "Automaatne juhtmega ühendus"
+
+#: ../src/applet-device-ethernet.c:96
+#, c-format
+msgid "Ethernet Networks (%s)"
+msgstr "Ethernet võrgud (%s)"
+
+#: ../src/applet-device-ethernet.c:98
+#, c-format
+msgid "Ethernet Network (%s)"
+msgstr "Ethernet võrk (%s)"
+
+#: ../src/applet-device-ethernet.c:101
+msgid "Ethernet Networks"
+msgstr "Ethernet võrgud"
+
+#: ../src/applet-device-ethernet.c:103
+msgid "Ethernet Network"
+msgstr "Ethernet võrk"
+
+#: ../src/applet-device-ethernet.c:147
+msgid "You are now connected to the ethernet network."
+msgstr "Oled nüüd ühendatud ethernet võrku."
+
+#: ../src/applet-device-ethernet.c:172
+#, c-format
+msgid "Preparing ethernet network connection '%s'..."
+msgstr "Ethernet võrgu ühenduse '%s' ettevalmistamine..."
+
+#: ../src/applet-device-ethernet.c:175
+#, c-format
+msgid "Configuring ethernet network connection '%s'..."
+msgstr "Ethernet võrgu ühenduse '%s' häälestamine..."
+
+#: ../src/applet-device-ethernet.c:178
+#, c-format
+msgid "User authentication required for ethernet network connection '%s'..."
+msgstr "Ethernet võrguühenduse '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet-device-ethernet.c:181
+#, c-format
+msgid "Requesting an ethernet network address for '%s'..."
+msgstr "Võrguaadressi pärimine ethernet võrgu '%s' jaoks..."
+
+#: ../src/applet-device-ethernet.c:185
+#, c-format
+msgid "Ethernet network connection '%s' active"
+msgstr "Ethernet võrguühendus '%s' on aktiivne"
+
+#: ../src/applet-device-ethernet.c:364
+msgid "DSL authentication"
+msgstr "DSL autentimine"
+
+#. Default connection item
+#: ../src/applet-device-gsm.c:370
+msgid "New Mobile Broadband (GSM) connection..."
+msgstr "Uus mobiiliühendus (GSM)..."
+
+#: ../src/applet-device-gsm.c:397
+msgid "You are now connected to the GSM network."
+msgstr "Oled nüüd ühendatud GSM-võrku."
+
+#: ../src/applet-device-gsm.c:665 ../src/applet-device-gsm.c:671
+msgid "GSM network."
+msgstr "GSM võrk."
+
+#: ../src/applet-device-infiniband.c:40
+#, fuzzy
+#| msgid "InfiniBand"
+msgid "Auto InfiniBand"
+msgstr "InfiniBand"
+
+#: ../src/applet-device-infiniband.c:92
+#, fuzzy, c-format
+#| msgid "Wi-Fi Networks (%s)"
+msgid "InfiniBand Networks (%s)"
+msgstr "Wi-Fi võrgud (%s)"
+
+#: ../src/applet-device-infiniband.c:94
+#, fuzzy, c-format
+#| msgid "Wi-Fi Network (%s)"
+msgid "InfiniBand Network (%s)"
+msgstr "Wi-Fi võrk (%s)"
+
+#: ../src/applet-device-infiniband.c:97
+#, fuzzy
+#| msgid "InfiniBand"
+msgid "InfiniBand Networks"
+msgstr "InfiniBand"
+
+#: ../src/applet-device-infiniband.c:99
+#, fuzzy
+#| msgid "InfiniBand"
+msgid "InfiniBand Network"
+msgstr "InfiniBand"
+
+#: ../src/applet-device-infiniband.c:143
+#, fuzzy
+#| msgid "You are now connected to the WiMAX network."
+msgid "You are now connected to the InfiniBand network."
+msgstr "Oled nüüd ühendatud WiMAX-võrku."
+
+#: ../src/applet-device-infiniband.c:168
+#, fuzzy, c-format
+#| msgid "Preparing network connection '%s'..."
+msgid "Preparing InfiniBand connection '%s'..."
+msgstr "Võrguühenduse '%s' ettevalmistamine..."
+
+#: ../src/applet-device-infiniband.c:171
+#, fuzzy, c-format
+#| msgid "Configuring Wi-Fi network connection '%s'..."
+msgid "Configuring InfiniBand connection '%s'..."
+msgstr "Wi-Fi võrgu '%s' ühenduse häälestamine..."
+
+#: ../src/applet-device-infiniband.c:174
+#, fuzzy, c-format
+#| msgid "User authentication required for VPN connection '%s'..."
+msgid "User authentication required for InfiniBand connection '%s'..."
+msgstr "VPN-ühenduse '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet-device-infiniband.c:181
+#, fuzzy, c-format
+#| msgid "InfiniBand connection %d"
+msgid "InfiniBand connection '%s' active"
+msgstr "InfiniBand võrgu ühendus %d"
+
+#: ../src/applet-device-team.c:86
+#, fuzzy
+#| msgid "You are now connected to the ethernet network."
+msgid "You are now connected to the teamed network."
+msgstr "Oled nüüd ühendatud ethernet võrku."
+
+#: ../src/applet-device-team.c:111
+#, fuzzy, c-format
+#| msgid "Preparing network connection '%s'..."
+msgid "Preparing team connection '%s'..."
+msgstr "Võrguühenduse '%s' ettevalmistamine..."
+
+#: ../src/applet-device-team.c:114
+#, fuzzy, c-format
+#| msgid "Configuring Wi-Fi network connection '%s'..."
+msgid "Configuring team connection '%s'..."
+msgstr "Wi-Fi võrgu '%s' ühenduse häälestamine..."
+
+#: ../src/applet-device-team.c:117
+#, fuzzy, c-format
+#| msgid "User authentication required for VPN connection '%s'..."
+msgid "User authentication required for team connection '%s'..."
+msgstr "VPN-ühenduse '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet-device-team.c:124
+#, fuzzy, c-format
+#| msgid "VPN connection '%s' active"
+msgid "Team connection '%s' active"
+msgstr "VPN-ühendus '%s' on aktiivne"
+
+#: ../src/applet-device-vlan.c:204
+#, fuzzy
+#| msgid "You are now connected to the CDMA network."
+msgid "You are now connected to the VLAN."
+msgstr "Oled nüüd ühendatud CDMA-võrku."
+
+#: ../src/applet-device-vlan.c:229
+#, fuzzy, c-format
+#| msgid "Starting VPN connection '%s'..."
+msgid "Preparing VLAN connection '%s'..."
+msgstr "VPN-ühenduse '%s' alustamine..."
+
+#: ../src/applet-device-vlan.c:232
+#, fuzzy, c-format
+#| msgid "Starting VPN connection '%s'..."
+msgid "Configuring VLAN connection '%s'..."
+msgstr "VPN-ühenduse '%s' alustamine..."
+
+#: ../src/applet-device-vlan.c:235
+#, fuzzy, c-format
+#| msgid "User authentication required for VPN connection '%s'..."
+msgid "User authentication required for VLAN connection '%s'..."
+msgstr "VPN-ühenduse '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet-device-vlan.c:242
+#, fuzzy, c-format
+#| msgid "VPN connection '%s' active"
+msgid "VLAN connection '%s' active"
+msgstr "VPN-ühendus '%s' on aktiivne"
+
+#: ../src/applet-device-wifi.c:96
+msgid "_Connect to Hidden Wi-Fi Network..."
+msgstr "_Ühendu varjatud Wi-Fi võrku..."
+
+#: ../src/applet-device-wifi.c:147
+msgid "Create _New Wi-Fi Network..."
+msgstr "Loo _uus Wi-Fi võrk..."
+
+#: ../src/applet-device-wifi.c:291
+msgid "(none)"
+msgstr "(puudub)"
+
+#: ../src/applet-device-wifi.c:771
+#, c-format
+msgid "Wi-Fi Networks (%s)"
+msgstr "Wi-Fi võrgud (%s)"
+
+#: ../src/applet-device-wifi.c:773
+#, c-format
+msgid "Wi-Fi Network (%s)"
+msgstr "Wi-Fi võrk (%s)"
+
+#: ../src/applet-device-wifi.c:775
+msgid "Wi-Fi Network"
+msgid_plural "Wi-Fi Networks"
+msgstr[0] "Wi-Fi võrk"
+msgstr[1] "Wi-Fi võrgud"
+
+#: ../src/applet-device-wifi.c:804
+msgid "Wi-Fi is disabled"
+msgstr "Wi-Fi on keelatud"
+
+#: ../src/applet-device-wifi.c:805
+msgid "Wi-Fi is disabled by hardware switch"
+msgstr "Wi-Fi on keelatud riistvaralisest lülitist"
+
+#: ../src/applet-device-wifi.c:866
+msgid "More networks"
+msgstr "Veel võrke"
+
+#: ../src/applet-device-wifi.c:1044
+msgid "Wi-Fi Networks Available"
+msgstr "Wi-Fi võrgud on saadaval"
+
+#: ../src/applet-device-wifi.c:1045
+msgid "Use the network menu to connect to a Wi-Fi network"
+msgstr "Wi-Fi võrku ühendumiseks kasuta võrgumenüüd"
+
+#: ../src/applet-device-wifi.c:1244
+#, c-format
+msgid "You are now connected to the Wi-Fi network '%s'."
+msgstr "Oled nüüd ühendatud Wi-Fi võrku '%s'."
+
+#: ../src/applet-device-wifi.c:1276
+#, c-format
+msgid "Preparing Wi-Fi network connection '%s'..."
+msgstr "Wi-Fi võrgu '%s' ühenduse ettevalmistamine..."
+
+#: ../src/applet-device-wifi.c:1279
+#, c-format
+msgid "Configuring Wi-Fi network connection '%s'..."
+msgstr "Wi-Fi võrgu '%s' ühenduse häälestamine..."
+
+#: ../src/applet-device-wifi.c:1282
+#, c-format
+msgid "User authentication required for Wi-Fi network '%s'..."
+msgstr "Wi-Fi võrgu '%s' jaoks on vajalik kasutaja autentimine..."
+
+#: ../src/applet-device-wifi.c:1285
+#, c-format
+msgid "Requesting a Wi-Fi network address for '%s'..."
+msgstr "Võrguaadressi pärimine Wi-Fi võrgu '%s' jaoks..."
+
+#: ../src/applet-device-wifi.c:1305
+#, c-format
+msgid "Wi-Fi network connection '%s' active: %s (%d%%)"
+msgstr "Wi-Fi ühendus võrku '%s' on aktiivne: %s (%d%%)"
+
+#: ../src/applet-device-wifi.c:1309
+#, c-format
+msgid "Wi-Fi network connection '%s' active"
+msgstr "Wi-Fi võrguühendus '%s' on aktiivne"
+
+#: ../src/applet-device-wifi.c:1324
+msgid "Failed to activate connection"
+msgstr "Ühenduse aktiveerimine nurjus"
+
+#: ../src/applet-device-wifi.c:1343
+msgid "Failed to add new connection"
+msgstr "Uut ühendust pole võimalik lisada"
+
+#: ../src/applet-device-wimax.c:228
+#, c-format
+msgid "WiMAX Mobile Broadband (%s)"
+msgstr "WiMAX mobiiliühendus (%s)"
+
+#: ../src/applet-device-wimax.c:230
+msgid "WiMAX Mobile Broadband"
+msgstr "WiMAX mobiiliühendus"
+
+#: ../src/applet-device-wimax.c:256
+msgid "WiMAX is disabled"
+msgstr "WiMAX on keelatud"
+
+#: ../src/applet-device-wimax.c:257
+msgid "WiMAX is disabled by hardware switch"
+msgstr "WiMAX on keelatud riistvaralisest lülitist"
+
+#: ../src/applet-device-wimax.c:402
+msgid "You are now connected to the WiMAX network."
+msgstr "Oled nüüd ühendatud WiMAX-võrku."
+
+#: ../src/applet-device-wimax.c:455 ../src/mobile-helpers.c:612
+#, c-format
+msgid "Mobile broadband connection '%s' active: (%d%%%s%s)"
+msgstr "Mobiiliühendus '%s' on aktiivne: (%d%%%s%s)"
+
+#: ../src/applet-device-wimax.c:458 ../src/mobile-helpers.c:615
+msgid "roaming"
+msgstr "rändlus (roaming)"
+
+#: ../src/applet-dialogs.c:57
+msgid "Error displaying connection information:"
+msgstr "Viga ühenduse andmete kuvamisel:"
+
+#: ../src/applet-dialogs.c:109
+#: ../src/connection-editor/page-wifi-security.c:342
+#: ../src/libnm-gtk/nm-wifi-dialog.c:951
+#: ../src/wireless-security/wireless-security.c:458
+msgid "LEAP"
+msgstr "LEAP"
+
+#: ../src/applet-dialogs.c:111
+msgid "Dynamic WEP"
+msgstr "Dünaamiline WEP"
+
+#: ../src/applet-dialogs.c:113 ../src/applet-dialogs.c:242
+#: ../src/applet-dialogs.c:244
+msgid "WPA/WPA2"
+msgstr "WPA/WPA2"
+
+#: ../src/applet-dialogs.c:240
+msgid "WEP"
+msgstr "WEP"
+
+#: ../src/applet-dialogs.c:248 ../src/applet-dialogs.c:257
+#: ../src/connection-editor/page-wifi-security.c:293
+msgctxt "Wi-Fi/Ethernet security"
+msgid "None"
+msgstr "Puudub"
+
+#: ../src/applet-dialogs.c:274
+#, c-format
+msgid "%s (default)"
+msgstr "%s (vaikimisi)"
+
+#: ../src/applet-dialogs.c:343 ../src/applet-dialogs.c:679
+#, c-format
+msgid "%u Mb/s"
+msgstr "%u Mb/s"
+
+#: ../src/applet-dialogs.c:345 ../src/applet-dialogs.c:681
+msgctxt "Speed"
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#: ../src/applet-dialogs.c:358
+#, c-format
+msgid "%d dB"
+msgstr "%d dB"
+
+#: ../src/applet-dialogs.c:360
+msgctxt "WiMAX CINR"
+msgid "unknown"
+msgstr "tundmatu"
+
+#: ../src/applet-dialogs.c:372
+msgctxt "WiMAX Base Station ID"
+msgid "unknown"
+msgstr "tundmatu"
+
+#. Address
+#: ../src/applet-dialogs.c:386 ../src/applet-dialogs.c:408
+msgctxt "Address"
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#: ../src/applet-dialogs.c:387 ../src/applet-dialogs.c:473
+msgid "IP Address:"
+msgstr "IP-aadress:"
+
+#: ../src/applet-dialogs.c:409
+msgid "Broadcast Address:"
+msgstr "Eetri aadress:"
+
+#. Prefix
+#: ../src/applet-dialogs.c:423
+msgctxt "Subnet Mask"
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#: ../src/applet-dialogs.c:424
+msgid "Subnet Mask:"
+msgstr "Alamvõrgu mask:"
+
+#: ../src/applet-dialogs.c:440 ../src/applet-dialogs.c:489
+msgid "Default Route:"
+msgstr "Vaikimisi marsruut:"
+
+#: ../src/applet-dialogs.c:587
+#, c-format
+msgid "Ethernet (%s)"
+msgstr "Ethernet (%s)"
+
+#: ../src/applet-dialogs.c:590
+#, c-format
+msgid "802.11 WiFi (%s)"
+msgstr "802.11 WiFi (%s)"
+
+#: ../src/applet-dialogs.c:597
+#, c-format
+msgid "GSM (%s)"
+msgstr "GSM (%s)"
+
+#: ../src/applet-dialogs.c:599
+#, c-format
+msgid "CDMA (%s)"
+msgstr "CDMA (%s)"
+
+#: ../src/applet-dialogs.c:603
+#, c-format
+msgid "WiMAX (%s)"
+msgstr "WiMAX (%s)"
+
+#. --- General ---
+#: ../src/applet-dialogs.c:609 ../src/applet-dialogs.c:909
+#: ../src/connection-editor/page-general.c:324
+msgid "General"
+msgstr "Üldine"
+
+#: ../src/applet-dialogs.c:613
+msgid "Interface:"
+msgstr "Liides:"
+
+#: ../src/applet-dialogs.c:635
+msgid "Hardware Address:"
+msgstr "Riistvara aadress:"
+
+#. Driver
+#: ../src/applet-dialogs.c:649
+msgid "Driver:"
+msgstr "Draiver:"
+
+#: ../src/applet-dialogs.c:684
+msgid "Speed:"
+msgstr "Kiirus:"
+
+#: ../src/applet-dialogs.c:699
+msgid "Security:"
+msgstr "Turvalisus:"
+
+#: ../src/applet-dialogs.c:717
+msgid "CINR:"
+msgstr "CINR:"
+
+#: ../src/applet-dialogs.c:735
+msgid "BSID:"
+msgstr "BSID:"
+
+#. --- IPv4 ---
+#: ../src/applet-dialogs.c:757 ../src/applet-dialogs.c:950
+msgid "IPv4"
+msgstr "IPv4"
+
+#. --- IPv6 ---
+#: ../src/applet-dialogs.c:777 ../src/applet-dialogs.c:972
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/applet-dialogs.c:786 ../src/applet-dialogs.c:981
+msgid "Ignored"
+msgstr "Eiratakse"
+
+#: ../src/applet-dialogs.c:914
+msgid "VPN Type:"
+msgstr "VPNi liik:"
+
+#: ../src/applet-dialogs.c:921
+msgid "VPN Gateway:"
+msgstr "VPNi lüüs:"
+
+#: ../src/applet-dialogs.c:927
+msgid "VPN Username:"
+msgstr "VPNi kasutajanimi:"
+
+#: ../src/applet-dialogs.c:933
+msgid "VPN Banner:"
+msgstr "VPN-i pealkiri (banner):"
+
+#: ../src/applet-dialogs.c:939
+msgid "Base Connection:"
+msgstr "Baasühendus:"
+
+#: ../src/applet-dialogs.c:941 ../src/libnm-gtk/nm-ui-utils.c:348
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#. Shouldn't really happen but ...
+#: ../src/applet-dialogs.c:1056
+msgid "No valid active connections found!"
+msgstr "Sobivaid aktiivseid ühendusi pole!"
+
+#: ../src/applet-dialogs.c:1084
+msgid ""
+"Copyright © 2004-2011 Red Hat, Inc.\n"
+"Copyright © 2005-2008 Novell, Inc.\n"
+"and many other community contributors and translators"
+msgstr ""
+"Autoriõigused © 2004–2011 Red Hat, Inc.\n"
+"Autoriõigused © 2005-2008 Novell, Inc.\n"
+"ja paljud teised kaasosalised ja tõlkijad kogukonnast"
+
+#: ../src/applet-dialogs.c:1087
+msgid ""
+"Notification area applet for managing your network devices and connections."
+msgstr "Teateala rakend võrguühenduste ja seadmete haldamiseks."
+
+#: ../src/applet-dialogs.c:1089
+msgid "NetworkManager Website"
+msgstr "Võrguhalduri veebileht"
+
+#: ../src/applet-dialogs.c:1104
+msgid "Missing resources"
+msgstr "Puuduvad allikad"
+
+#: ../src/applet-dialogs.c:1129
+msgid "Mobile broadband network password"
+msgstr "Mobiiliühenduse võrguparool"
+
+#: ../src/applet-dialogs.c:1138
+#, c-format
+msgid "A password is required to connect to '%s'."
+msgstr "Võrku '%s' ühendumiseks on vaja parooli."
+
+#: ../src/applet-dialogs.c:1153
+msgid "Password:"
+msgstr "Parool:"
+
+#: ../src/applet-dialogs.c:1434
+msgid "SIM PIN unlock required"
+msgstr "Vajalik on SIM-kaardi PIN-kood"
+
+#: ../src/applet-dialogs.c:1435
+msgid "SIM PIN Unlock Required"
+msgstr "Vajalik on SIM-kaardi PIN-kood"
+
+#. FIXME: some warning about # of times you can enter incorrect PIN
+#: ../src/applet-dialogs.c:1437
+#, c-format
+msgid ""
+"The mobile broadband device '%s' requires a SIM PIN code before it can be "
+"used."
+msgstr ""
+"Mobiiliühenduse seadme '%s' kasutamiseks on vajalik SIM-kaardi PIN-kood."
+
+#. Translators: PIN code entry label
+#: ../src/applet-dialogs.c:1439
+msgid "PIN code:"
+msgstr "PIN-kood:"
+
+#. Translators: Show/obscure PIN checkbox label
+#: ../src/applet-dialogs.c:1443
+msgid "Show PIN code"
+msgstr "Näita PIN-koodi"
+
+#: ../src/applet-dialogs.c:1445
+msgid "SIM PUK unlock required"
+msgstr "Vajalik on SIM-kaardi PUK-kood"
+
+#: ../src/applet-dialogs.c:1446
+msgid "SIM PUK Unlock Required"
+msgstr "Vajalik on SIM-kaardi PUK-kood"
+
+#. FIXME: some warning about # of times you can enter incorrect PUK
+#: ../src/applet-dialogs.c:1448
+#, c-format
+msgid ""
+"The mobile broadband device '%s' requires a SIM PUK code before it can be "
+"used."
+msgstr ""
+"Mobiiliühenduse seadme '%s' kasutamiseks on vajalik SIM-kaardi PUK-kood."
+
+#. Translators: PUK code entry label
+#: ../src/applet-dialogs.c:1450
+msgid "PUK code:"
+msgstr "PUK-kood:"
+
+#. Translators: New PIN entry label
+#: ../src/applet-dialogs.c:1453
+msgid "New PIN code:"
+msgstr "Uus PIN-kood:"
+
+#. Translators: New PIN verification entry label
+#: ../src/applet-dialogs.c:1455
+msgid "Re-enter new PIN code:"
+msgstr "Uus PIN-kood uuesti:"
+
+#. Translators: Show/obscure PIN/PUK checkbox label
+#: ../src/applet-dialogs.c:1460
+msgid "Show PIN/PUK codes"
+msgstr "Näita PIN/PUK-koodi"
+
+#: ../src/connection-editor/ce-ip4-routes.ui.h:1
+#: ../src/connection-editor/ce-ip6-routes.ui.h:1
+#: ../src/connection-editor/ce-page-ip4.ui.h:8
+#: ../src/connection-editor/ce-page-ip6.ui.h:11
+msgid ""
+"IP addresses identify your computer on the network.  Click the \"Add\" "
+"button to add an IP address."
+msgstr ""
+"IP-aadress on arvuti nimi võrgus. Klõpsa \"Lisa\", et lisada IP-aadress."
+
+#: ../src/connection-editor/ce-ip4-routes.ui.h:2
+#: ../src/connection-editor/ce-ip6-routes.ui.h:2
+msgid "Ig_nore automatically obtained routes"
+msgstr "Automaatselt saadud marsruute _eiratakse"
+
+#: ../src/connection-editor/ce-ip4-routes.ui.h:3
+#: ../src/connection-editor/ce-ip6-routes.ui.h:3
+msgid "_Use this connection only for resources on its network"
+msgstr "Ü_hendust kasutatakse ainult selle kohtvõrgu jaoks"
+
+#: ../src/connection-editor/ce-ip4-routes.ui.h:4
+#: ../src/connection-editor/ce-ip6-routes.ui.h:4
+msgid ""
+"If enabled, this connection will never be used as the default network "
+"connection."
+msgstr ""
+"Kui märgitud, ei kasutata seda ühendust mitte kunagi vaikimisi "
+"võrguühendusena."
+
+#: ../src/connection-editor/ce-new-connection.ui.h:1
+#: ../src/libnm-gtk/wifi.ui.h:1 ../src/wireless-security/eap-method-fast.ui.h:1
+#: ../src/wireless-security/eap-method-peap.ui.h:1
+#: ../src/wireless-security/eap-method-ttls.ui.h:1
+#: ../src/wireless-security/ws-dynamic-wep.ui.h:1
+#: ../src/wireless-security/ws-wpa-eap.ui.h:1
+msgid " "
+msgstr " "
+
+#: ../src/connection-editor/ce-new-connection.ui.h:2
+msgid "Create…"
+msgstr "Loo…"
+
+#: ../src/connection-editor/ce-new-connection.ui.h:3
+msgid "Choose a Connection Type"
+msgstr "Ühenduse liigi valimine"
+
+#: ../src/connection-editor/ce-new-connection.ui.h:4
+msgid ""
+"Select the type of connection you wish to create.\n"
+"\n"
+"If you are creating a VPN, and the VPN connection you wish to create does "
+"not appear in the list, you may not have the correct VPN plugin installed."
+msgstr ""
+"Vali, mis liiki ühenduse tahad luua.\n"
+"\n"
+"Kui soovid luua VPN ühendust ning soovitud VPN ühenduse liiki nimekirjas ei "
+"leidu, võib vajalik VPN plugin olla paigaldamata."
+
+#: ../src/connection-editor/ce-page-bond.ui.h:1
+msgid "Round-robin"
+msgstr "Round-robin"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:2
+msgid "Active backup"
+msgstr "Aktiivne varundus"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:3
+msgid "XOR"
+msgstr "XOR"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:4
+msgid "Broadcast"
+msgstr "Eetriaadress"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:5
+msgid "802.3ad"
+msgstr "802.3ad"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:6
+msgid "Adaptive transmit load balancing"
+msgstr "Kohanev ülekande koormuse jaotus"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:7
+msgid "Adaptive load balancing"
+msgstr "Kohanev koormusjaotus"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:8
+msgid "MII (recommended)"
+msgstr "MII (soovitatud)"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:9
+msgid "ARP"
+msgstr "ARP"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:10
+msgid "Bonded _connections:"
+msgstr "Liitühendused (bonded):"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:11
+#: ../src/connection-editor/ce-page-wifi.ui.h:19
+msgid "M_ode:"
+msgstr "_Režiim:"
+
+#. Edit
+#: ../src/connection-editor/ce-page-bond.ui.h:12
+#: ../src/connection-editor/ce-page-bridge.ui.h:2
+#: ../src/connection-editor/ce-page-team.ui.h:4
+#: ../src/connection-editor/nm-connection-list.c:699
+msgid "_Edit"
+msgstr "_Muuda"
+
+#. Delete
+#: ../src/connection-editor/ce-page-bond.ui.h:13
+#: ../src/connection-editor/ce-page-bridge.ui.h:3
+#: ../src/connection-editor/ce-page-team.ui.h:5
+#: ../src/connection-editor/nm-connection-list.c:715
+msgid "_Delete"
+msgstr "_Kustuta"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:14
+msgid "Monitoring _frequency:"
+msgstr "Monitoorimise _sagedus:"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:15
+msgid "ms"
+msgstr "ms"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:16
+#: ../src/connection-editor/ce-page-bridge.ui.h:5
+#: ../src/connection-editor/ce-page-team.ui.h:6
+msgid "_Interface name:"
+msgstr "_Liidese nimi:"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:17
+msgid "_Link Monitoring:"
+msgstr "Ü_henduse monitooring:"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:18
+msgid "ARP _targets:"
+msgstr "ARP _sihtkohad:"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:19
+msgid ""
+"An IP address, or a comma-separated list of IP addresses, to look for when "
+"checking the link status."
+msgstr ""
+"IP-aadress või komadega eraldatud IP-aadresside loetelu, millega "
+"kontrollitakse ühenduse toimimist."
+
+#: ../src/connection-editor/ce-page-bond.ui.h:20
+msgid "Link _up delay:"
+msgstr "Link _maas viivitus:"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:21
+msgid "Link _down delay:"
+msgstr "Link _püsti viivitus:"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:22
+#, fuzzy
+#| msgid "Primary DNS:"
+msgid "_Primary:"
+msgstr "Esmane DNS:"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:23
+msgid ""
+"The interface name of the primary device. If set, this device will always be "
+"the active slave when it is available."
+msgstr ""
+
+#: ../src/connection-editor/ce-page-bond.ui.h:24
+#: ../src/connection-editor/ce-page-ethernet.ui.h:17
+#: ../src/connection-editor/ce-page-infiniband.ui.h:4
+#: ../src/connection-editor/ce-page-team.ui.h:7
+#: ../src/connection-editor/ce-page-vlan.ui.h:4
+#: ../src/connection-editor/ce-page-wifi.ui.h:8
+msgid "_MTU:"
+msgstr "Ülekandeühiku piirsuurus (_MTU):"
+
+#: ../src/connection-editor/ce-page-bond.ui.h:25
+#: ../src/connection-editor/ce-page-ethernet.ui.h:18
+#: ../src/connection-editor/ce-page-infiniband.ui.h:3
+#: ../src/connection-editor/ce-page-team.ui.h:8
+#: ../src/connection-editor/ce-page-vlan.ui.h:5
+#: ../src/connection-editor/ce-page-wifi.ui.h:7
+msgid "bytes"
+msgstr "baiti"
+
+#: ../src/connection-editor/ce-page-bridge-port.ui.h:1
+msgid "Path _cost:"
+msgstr "Marsruudi _hind:"
+
+#: ../src/connection-editor/ce-page-bridge-port.ui.h:2
+#: ../src/connection-editor/ce-page-bridge.ui.h:4
+msgid "_Priority:"
+msgstr "_Prioriteet:"
+
+#: ../src/connection-editor/ce-page-bridge-port.ui.h:3
+msgid "_Hairpin mode:"
+msgstr "_Hairpin režiim:"
+
+#: ../src/connection-editor/ce-page-bridge.ui.h:1
+msgid "Bridged _connections:"
+msgstr "_Sildühendused:"
+
+#: ../src/connection-editor/ce-page-bridge.ui.h:6
+msgid "_Forward delay:"
+msgstr "_Edastamise viivitus:"
+
+#: ../src/connection-editor/ce-page-bridge.ui.h:7
+msgid "_Hello time:"
+msgstr "_Tervitusaeg:"
+
+#: ../src/connection-editor/ce-page-bridge.ui.h:8
+msgid "s"
+msgstr "s"
+
+#: ../src/connection-editor/ce-page-bridge.ui.h:9
+msgid "Enable _STP (Spanning Tree Protocol)"
+msgstr "_STP lubamine (Spanning Tree Protocol)"
+
+#: ../src/connection-editor/ce-page-bridge.ui.h:10
+msgid "_Max age:"
+msgstr "_Suurim vanus:"
+
+#: ../src/connection-editor/ce-page-bridge.ui.h:11
+msgid "_Aging time:"
+msgstr "_Vananemise aeg:"
+
+#: ../src/connection-editor/ce-page.c:84
+msgid "automatic"
+msgstr "automaatne"
+
+#: ../src/connection-editor/ce-page.c:92
+#: ../src/connection-editor/ce-page-dcb.ui.h:13
+#: ../src/connection-editor/page-wifi.c:174
+#: ../src/connection-editor/page-wifi.c:178
+#: ../src/connection-editor/page-wifi.c:199
+#, c-format
+msgid "default"
+msgstr "vaikimisi"
+
+#: ../src/connection-editor/ce-page.c:138
+msgid "unspecified error"
+msgstr ""
+
+#: ../src/connection-editor/ce-page.c:328
+#, fuzzy
+#| msgid "Address"
+msgid "MAC address"
+msgstr "Aadress"
+
+#: ../src/connection-editor/ce-page.c:328
+#, fuzzy
+#| msgid "Address"
+msgid "HW address"
+msgstr "Aadress"
+
+#: ../src/connection-editor/ce-page.c:331
+#, c-format
+msgid "invalid %s for %s (%s)"
+msgstr ""
+
+#: ../src/connection-editor/ce-page.c:335
+#: ../src/connection-editor/ce-page.c:604
+#, c-format
+msgid "invalid %s (%s)"
+msgstr ""
+
+#: ../src/connection-editor/ce-page.c:387
+#, c-format
+msgid "invalid interface-name for %s (%s)"
+msgstr ""
+
+#: ../src/connection-editor/ce-page.c:391
+#, c-format
+msgid "invalid interface-name (%s)"
+msgstr ""
+
+#: ../src/connection-editor/ce-page.c:605
+#, fuzzy
+#| msgid "Any device"
+msgid "device"
+msgstr "Iga seade"
+
+#: ../src/connection-editor/ce-page.c:703
+msgid "Failed to update connection secrets due to an unknown error."
+msgstr "Tundmatu vea tõttu nurjus ühenduse paroolide uuendamine."
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:1
+#, fuzzy
+#| msgid "Use 802.1_X security for this connection"
+msgid "Use Data Center Bridging (DCB) for this connection"
+msgstr "Sellel ühendusel 802.1_X turvalisuse kasutamine"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:2
+msgid "FCoE"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:3
+msgid "iSCSI"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:4
+msgid "FIP"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:5
+msgid "Flow Control"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:6
+msgid "Feature"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:7
+#, fuzzy
+#| msgid "Enable _Wi-Fi"
+msgid "Enable"
+msgstr "_Wi-Fi ühendused lubatud"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:8
+msgid "Advertise"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:9
+msgid "Willing"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:10
+#, fuzzy
+#| msgid "_Priority:"
+msgid "Priority"
+msgstr "_Prioriteet:"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:11
+msgid "Options..."
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:12
+#, fuzzy
+#| msgid "_Priority:"
+msgid "Priority Groups"
+msgstr "_Prioriteet:"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:14
+msgid "0"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:15
+msgid "1"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:16
+#: ../src/wireless-security/ws-wep-key.ui.h:2
+msgid "2"
+msgstr "2"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:17
+#: ../src/wireless-security/ws-wep-key.ui.h:3
+msgid "3"
+msgstr "3"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:18
+#: ../src/wireless-security/ws-wep-key.ui.h:4
+msgid "4"
+msgstr "4"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:19
+msgid "5"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:20
+msgid "6"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:21
+msgid "7"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:22
+msgid "Fabric"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:23
+msgid "VN2VN"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:24
+msgid "Priority Flow Control"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:25
+msgid "Enable or disable priority pause transmission for each User Priority."
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:26
+#, fuzzy
+#| msgid "_Priority:"
+msgid "Priority:"
+msgstr "_Prioriteet:"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:27
+msgid "0:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:28
+msgid "1:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:29
+#, fuzzy
+#| msgid "2"
+msgid "2:"
+msgstr "2"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:30
+#, fuzzy
+#| msgid "3"
+msgid "3:"
+msgstr "3"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:31
+#, fuzzy
+#| msgid "4"
+msgid "4:"
+msgstr "4"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:32
+msgid "5:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:33
+msgid "6:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:34
+msgid "7:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:35
+msgid "Traffic Class:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:36
+msgid "Strict Bandwidth:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:37
+#, fuzzy
+#| msgid "_Priority:"
+msgid "Priority Bandwidth:"
+msgstr "_Prioriteet:"
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:38
+msgid "Group Bandwidth:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:39
+msgid "Group ID:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:40
+msgid "15"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:41
+msgid "Enter the priority group ID for each User Priority."
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:43
+#, no-c-format
+msgid ""
+"Enter the allowed link bandwidth percent each Priority Group may use.  The "
+"sum of all groups must total 100%."
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:44
+msgid ""
+"Enter the percentage of priority group bandwidth each user priority may use."
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:45
+msgid "Enable or disable strict bandwidth for each user priority."
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dcb.ui.h:46
+msgid "Enter the traffic class for each user priority."
+msgstr ""
+
+#: ../src/connection-editor/ce-page-dsl.ui.h:1
+#: ../src/connection-editor/ce-page-mobile.ui.h:3
+#: ../src/wireless-security/eap-method-leap.ui.h:1
+#: ../src/wireless-security/eap-method-simple.ui.h:1
+#: ../src/wireless-security/ws-leap.ui.h:1
+msgid "_Username:"
+msgstr "_Kasutajanimi:"
+
+#: ../src/connection-editor/ce-page-dsl.ui.h:2
+msgid "_Service:"
+msgstr "_Teenus:"
+
+#: ../src/connection-editor/ce-page-dsl.ui.h:3
+#: ../src/wireless-security/eap-method-leap.ui.h:3
+#: ../src/wireless-security/eap-method-simple.ui.h:3
+#: ../src/wireless-security/eap-method-tls.ui.h:7
+#: ../src/wireless-security/ws-leap.ui.h:3
+#: ../src/wireless-security/ws-wpa-psk.ui.h:3
+msgid "Sho_w password"
+msgstr "_Näita parooli"
+
+#: ../src/connection-editor/ce-page-dsl.ui.h:4
+#: ../src/connection-editor/ce-page-mobile.ui.h:4
+#: ../src/libnm-gtk/nm-vpn-password-dialog.c:100
+#: ../src/wireless-security/eap-method-leap.ui.h:2
+#: ../src/wireless-security/eap-method-simple.ui.h:2
+#: ../src/wireless-security/ws-leap.ui.h:2
+#: ../src/wireless-security/ws-wpa-psk.ui.h:1
+msgid "_Password:"
+msgstr "_Parool:"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:1
+#: ../src/connection-editor/ce-page-ip4.ui.h:1
+#: ../src/connection-editor/ce-page-ip6.ui.h:1
+#: ../src/connection-editor/ce-page-wifi.ui.h:1
+#: ../src/connection-editor/page-ip4.c:143
+#: ../src/connection-editor/page-ip6.c:149
+#: ../src/wireless-security/eap-method-peap.ui.h:2
+msgid "Automatic"
+msgstr "Automaatne"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:2
+msgid "Twisted Pair (TP)"
+msgstr "Pöördpaar (TP, twisted pair)"
+
+# see on ajaloo tunnist välja astunud: http://en.wikipedia.org/wiki/Attachment_Unit_Interface
+# seda vist elusuuruses ei näe
+# muidu lisaseadme liides kõlaks küll
+#: ../src/connection-editor/ce-page-ethernet.ui.h:3
+msgid "Attachment Unit Interface (AUI)"
+msgstr "Attachment Unit Interface (AUI)"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:4
+msgid "BNC"
+msgstr "BNC"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:5
+msgid "Media Independent Interface (MII)"
+msgstr "Meediumist sõltumatu liides (MII)"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:6
+msgid "10 Mb/s"
+msgstr "10 Mb/s"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:7
+msgid "100 Mb/s"
+msgstr "100 Mb/s"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:8
+msgid "1 Gb/s"
+msgstr "1 Gb/s"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:9
+msgid "10 Gb/s"
+msgstr "10 Gb/s"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:10
+msgid "_Port:"
+msgstr "_Port:"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:11
+msgid "_Speed:"
+msgstr "_Kiirus:"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:12
+msgid "Full duple_x"
+msgstr "_Täisdupleks"
+
+# Automaatne kokkulepe?
+#: ../src/connection-editor/ce-page-ethernet.ui.h:13
+msgid "Aut_onegotiate"
+msgstr "Aut_onegotiate"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:14
+#: ../src/connection-editor/ce-page-infiniband.ui.h:2
+#: ../src/connection-editor/ce-page-wifi.ui.h:9
+#: ../src/connection-editor/ce-page-wimax.ui.h:1
+#, fuzzy
+#| msgid "_Service:"
+msgid "_Device:"
+msgstr "_Teenus:"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:15
+#: ../src/connection-editor/ce-page-wifi.ui.h:11
+msgid "C_loned MAC address:"
+msgstr "_Kloonitud MAC-aadress:"
+
+#: ../src/connection-editor/ce-page-ethernet.ui.h:16
+#: ../src/connection-editor/ce-page-wifi.ui.h:10
+msgid ""
+"The MAC address entered here will be used as hardware address for the "
+"network device this connection is activated on.  This feature is known as "
+"MAC cloning or spoofing.  Example: 00:11:22:33:44:55"
+msgstr ""
+"Siia sisestatud MAC-aadressi kasutatakse selle ühendusega kasutatava seadme "
+"riistvaralise aadressina. Seda võimalust tuntakse ka MAC-i kloonimise või "
+"petmisena. Näiteks: 00:11:22:33:44:55"
+
+#: ../src/connection-editor/ce-page-general.ui.h:1
+msgid "Automatically connect to _VPN when using this connection"
+msgstr "Selle ühendusega koos ühendutakse automaatselt _VPN võrku"
+
+#: ../src/connection-editor/ce-page-general.ui.h:2
+msgid "All _users may connect to this network"
+msgstr "_Kõik kasutajad võivad selle võrguga ühenduda"
+
+#: ../src/connection-editor/ce-page-general.ui.h:3
+msgid "_Automatically connect to this network when it is available"
+msgstr "_Automaatne ühendumine selle võrguga, kui saadaval"
+
+#: ../src/connection-editor/ce-page-general.ui.h:4
+msgid "Firewall _zone:"
+msgstr "Tulemüüri _tsoon:"
+
+#: ../src/connection-editor/ce-page-infiniband.ui.h:1
+msgid "_Transport mode:"
+msgstr "_Transportrežiim:"
+
+#. IP-over-InfiniBand "datagram mode"
+#: ../src/connection-editor/ce-page-infiniband.ui.h:6
+msgid "Datagram"
+msgstr "Datagram"
+
+#. IP-over-InfiniBand "connected mode"
+#: ../src/connection-editor/ce-page-infiniband.ui.h:8
+msgid "Connected"
+msgstr "Ühendatud"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:2
+#: ../src/connection-editor/ce-page-ip6.ui.h:2
+msgid "Automatic with manual DNS settings"
+msgstr "Automaatne käsitsi DNS sätetega"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:3
+#: ../src/connection-editor/ce-page-ip6.ui.h:3
+#: ../src/connection-editor/page-ip4.c:180
+#: ../src/connection-editor/page-ip6.c:198
+msgid "Manual"
+msgstr "Käsitsi"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:4
+#: ../src/connection-editor/ce-page-ip6.ui.h:4
+msgid "Link-Local"
+msgstr "Link-Local"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:5
+#: ../src/connection-editor/ce-page-ip6.ui.h:5
+#: ../src/connection-editor/page-ip4.c:200
+#: ../src/connection-editor/page-ip6.c:218
+msgid "Shared to other computers"
+msgstr "Jagab teistele arvutitele"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:6
+#: ../src/connection-editor/ce-page-ip6.ui.h:9
+msgid "_Method:"
+msgstr "_Meetod:"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:7
+#: ../src/connection-editor/ce-page-ip6.ui.h:10
+msgid "Addresses"
+msgstr "Aadressid"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:9
+msgid ""
+"The DHCP client identifier allows the network administrator to customize "
+"your computer's configuration.  If you wish to use a DHCP client identifier, "
+"enter it here."
+msgstr ""
+"DHCP kliendi identifikaator võimaldab võrguhalduril sinu arvuti jaoks "
+"määrata eriseadistuse. Kui soovid kasutada DHCP kliendi identifikaatorit, "
+"sisesta see siia."
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:10
+#: ../src/connection-editor/ce-page-ip6.ui.h:12
+msgid ""
+"Domains used when resolving host names. Use commas to separate multiple "
+"domains."
+msgstr ""
+"Domeenid, mida kasutatakse hostinimede lahendamisel. Mitu domeeni eralda "
+"komaga."
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:11
+msgid "D_HCP client ID:"
+msgstr "D_HCP kliendi ID:"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:12
+#: ../src/connection-editor/ce-page-ip6.ui.h:13
+#: ../src/connection-editor/page-ip4.c:322
+#: ../src/connection-editor/page-ip6.c:320
+msgid "S_earch domains:"
+msgstr "_Otsidomeenid:"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:13
+#: ../src/connection-editor/ce-page-ip6.ui.h:14
+#: ../src/connection-editor/page-ip4.c:313
+#: ../src/connection-editor/page-ip6.c:311
+msgid "DNS ser_vers:"
+msgstr "_DNS-serverid:"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:14
+msgid ""
+"IP addresses of domain name servers used to resolve host names. Use commas "
+"to separate multiple domain name server addresses."
+msgstr ""
+"Domeeninimeserverite IP-aadresse kasutatakse hostinimede lahendamiseks. "
+"Mitme domeeninimeserveri kasutamiseks eralda need komadega."
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:15
+msgid "Require IPv_4 addressing for this connection to complete"
+msgstr "Selle ühenduse loomiseks tuleb nõuda IPv_4 aadressi"
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:16
+msgid ""
+"When connecting to IPv6-capable networks, allows the connection to complete "
+"if IPv4 configuration fails but IPv6 configuration succeeds."
+msgstr ""
+"Ühendumisel IPv6 võrkudega lõpetatakse ühendumine edukalt ka siis, kui IPv4 "
+"seadistamine nurjub ja IPv6 seadistamine õnnestub."
+
+#: ../src/connection-editor/ce-page-ip4.ui.h:17
+#: ../src/connection-editor/ce-page-ip6.ui.h:19
+msgid "_Routes…"
+msgstr "_Marsruudid…"
+
+#: ../src/connection-editor/ce-page-ip6.ui.h:6
+#: ../src/connection-editor/page-ip4.c:210
+msgid "Disabled"
+msgstr "Keelatud"
+
+#: ../src/connection-editor/ce-page-ip6.ui.h:7
+msgid "Enabled (prefer public address)"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-ip6.ui.h:8
+msgid "Enabled (prefer temporary address)"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-ip6.ui.h:15
+#, fuzzy
+#| msgid ""
+#| "IP addresses of domain name servers used to resolve host names. Use "
+#| "commas to separate multiple domain name server addresses."
+msgid ""
+"IP addresses of domain name servers used to resolve host names. Use commas "
+"to separate multiple domain name server addresses. Link-local addresses will "
+"be automatically scoped to the connecting interface."
+msgstr ""
+"Domeeninimeserverite IP-aadresse kasutatakse hostinimede lahendamiseks. "
+"Mitme domeeninimeserveri kasutamiseks eralda need komadega."
+
+#: ../src/connection-editor/ce-page-ip6.ui.h:16
+msgid "IPv6 _privacy extensions:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-ip6.ui.h:17
+msgid "Require IPv_6 addressing for this connection to complete"
+msgstr "Selle ühenduse loomiseks tuleb nõuda IPv_6 aadressi"
+
+#: ../src/connection-editor/ce-page-ip6.ui.h:18
+msgid ""
+"When connecting to IPv4-capable networks, allows the connection to complete "
+"if IPv6 configuration fails but IPv4 configuration succeeds."
+msgstr ""
+"Ühendumisel IPv4 võrkudega lõpetatakse ühendumine edukalt ka siis, kui IPv6 "
+"seadistamine nurjub ja IPv4 seadistamine õnnestub."
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:1
+msgid "Basic"
+msgstr "Põhiline"
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:2
+msgid "Nu_mber:"
+msgstr "_Number:"
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:5
+msgid "Advanced"
+msgstr "Täpsemalt"
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:6
+msgid "_APN:"
+msgstr "_APN:"
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:7
+msgid "N_etwork ID:"
+msgstr "_Võrgu ID:"
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:8
+msgid "Change..."
+msgstr "_Muuda..."
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:9
+msgid "P_IN:"
+msgstr "P_IN:"
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:10
+msgid "Allow _roaming if home network is not available"
+msgstr "_Roaming on lubatud, kui koduvõrk pole saadaval"
+
+#: ../src/connection-editor/ce-page-mobile.ui.h:11
+msgid "Sho_w passwords"
+msgstr "_Näita paroole"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:1
+msgid "Authentication"
+msgstr "Autentimine"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:2
+msgid "Allowed methods:"
+msgstr "Lubatud viisid:"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:3
+msgid "Configure _Methods…"
+msgstr "_Meetodite seadistamine…"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:4
+msgid "Compression"
+msgstr "Tihendus"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:5
+msgid "_Use point-to-point encryption (MPPE)"
+msgstr "_Point-to-Point krüpteeringu kasutamine (MPPE)"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:6
+msgid "_Require 128-bit encryption"
+msgstr "_128-bitine krüpteerimine nõutud"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:7
+msgid "Use _stateful MPPE"
+msgstr "_Stateful-MPPE kasutamine"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:8
+msgid "Allow _BSD data compression"
+msgstr "_BSD-tihendamine lubatud"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:9
+msgid "Allow _Deflate data compression"
+msgstr "_Deflate-tihendamine lubatud"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:10
+msgid "Use TCP _header compression"
+msgstr "TCP _päiste tihendamine lubatud"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:11
+msgid "Echo"
+msgstr "Kaja"
+
+#: ../src/connection-editor/ce-page-ppp.ui.h:12
+msgid "Send PPP _echo packets"
+msgstr "Saadetakse PPP _echo pakette"
+
+#: ../src/connection-editor/ce-page-team-port.ui.h:1
+#: ../src/connection-editor/ce-page-team.ui.h:2
+msgid "_JSON config:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-team-port.ui.h:2
+#, fuzzy
+#| msgid "Import a saved VPN configuration..."
+msgid "_Import team configuration from a file..."
+msgstr "VPN-ühenduse seadistuse importimine..."
+
+#: ../src/connection-editor/ce-page-team.ui.h:1
+#, fuzzy
+#| msgid "Bonded _connections:"
+msgid "_Teamed connections:"
+msgstr "Liitühendused (bonded):"
+
+#: ../src/connection-editor/ce-page-team.ui.h:3
+#, fuzzy
+#| msgid "Import a saved VPN configuration..."
+msgid "Im_port team configuration from a file..."
+msgstr "VPN-ühenduse seadistuse importimine..."
+
+#: ../src/connection-editor/ce-page-vlan.ui.h:1
+msgid "_Parent interface:"
+msgstr "_Vanemliides:"
+
+#: ../src/connection-editor/ce-page-vlan.ui.h:2
+msgid "VLAN interface _name:"
+msgstr "VLAN liidese _nimi:"
+
+#: ../src/connection-editor/ce-page-vlan.ui.h:3
+msgid "_Cloned MAC address:"
+msgstr "_Kloonitud MAC-aadress:"
+
+#: ../src/connection-editor/ce-page-vlan.ui.h:6
+msgid "VLAN _id:"
+msgstr "VLANi _ID:"
+
+#: ../src/connection-editor/ce-page-vlan.ui.h:7
+msgid "Flags:"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-vlan.ui.h:8
+msgid "_Reorder headers"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-vlan.ui.h:9
+msgid "_GVRP"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-vlan.ui.h:10
+msgid "_Loose binding"
+msgstr ""
+
+#. In context, this means "concatenate the device name and the VLAN ID number together"
+#: ../src/connection-editor/ce-page-vlan.ui.h:12
+msgid "Device name + number"
+msgstr "Seadme nimi + number"
+
+#. LEAVE "vlan" UNTRANSLATED. In context, this means "concatenate the string
+#: ../src/connection-editor/ce-page-vlan.ui.h:14
+msgid "\"vlan\" + number"
+msgstr "\"vlan\" + number"
+
+#: ../src/connection-editor/ce-page-wifi-security.ui.h:1
+msgid "S_ecurity:"
+msgstr "_Turvalisus:"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:2
+msgid "A (5 GHz)"
+msgstr "A (5 GHz)"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:3
+msgid "B/G (2.4 GHz)"
+msgstr "B/G (2.4 GHz)"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:4
+msgid "Client"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:5
+msgid "Hotspot"
+msgstr ""
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:6
+msgid "Ad-hoc"
+msgstr "Ad-hoc"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:12
+msgid "mW"
+msgstr "mW"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:13
+msgid "Transmission po_wer:"
+msgstr "Saatja _võimsus:"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:14
+msgid "Mb/s"
+msgstr "Mb/s"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:15
+msgid "_Rate:"
+msgstr "_Kiirus:"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:16
+msgid "_BSSID:"
+msgstr "_BSSID:"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:17
+msgid "C_hannel:"
+msgstr "_Kanal:"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:18
+msgid "Ban_d:"
+msgstr "_Sagedus:"
+
+#: ../src/connection-editor/ce-page-wifi.ui.h:20
+msgid "SS_ID:"
+msgstr "SS_ID:"
+
+#: ../src/connection-editor/ce-polkit-button.c:75
+msgid "No polkit authorization to perform the action"
+msgstr ""
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:1
+msgid "Allowed Authentication Methods"
+msgstr "Lubatud autentimismeetodid"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:2
+msgid "_EAP"
+msgstr "_EAP"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:3
+msgid "Extensible Authentication Protocol"
+msgstr "Laiendatav autentimisprotokoll"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:4
+msgid "_PAP"
+msgstr "_PAP"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:5
+msgid "Password Authentication Protocol"
+msgstr "Parooliga autentimisprotokoll"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:6
+msgid "C_HAP"
+msgstr "C_HAP"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:7
+msgid "Challenge Handshake Authentication Protocol"
+msgstr "Challenge Handshake autentimisprotokoll (CHAP)"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:8
+msgid "_MSCHAP"
+msgstr "_MSCHAP"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:9
+msgid "Microsoft Challenge Handshake Authentication Protocol"
+msgstr "Microsofti Challenge Handshake autentimisprotokoll (MCHAP)"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:10
+msgid "MSCHAP v_2"
+msgstr "MSCHAP v_2"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:11
+msgid "Microsoft Challenge Handshake Authentication Protocol version 2"
+msgstr ""
+"Microsofti Challenge Handshake autentimisprotokolli versioon 2 (MCHAP v2)"
+
+#: ../src/connection-editor/ce-ppp-auth-methods.ui.h:12
+msgid ""
+"In most cases, the provider's PPP servers will support all authentication "
+"methods.  If connections fail, try disabling support for some methods."
+msgstr ""
+"Tavaliselt toetab PPP teenusepakkuja server kõiki autentimisviise. Kui "
+"ühendus siiski nurjub, proovi mõne viisi keelamist."
+
+#: ../src/connection-editor/connection-helpers.c:123
+#: ../src/connection-editor/page-ethernet.c:240
+#: ../src/libnm-gtk/nm-ui-utils.c:324
+msgid "Ethernet"
+msgstr "Ethernet"
+
+#: ../src/connection-editor/connection-helpers.c:124
+#: ../src/connection-editor/page-wifi.c:460 ../src/libnm-gtk/nm-ui-utils.c:326
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: ../src/connection-editor/connection-helpers.c:132
+#: ../src/connection-editor/page-bluetooth.c:111
+#: ../src/libnm-gtk/nm-ui-utils.c:328
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../src/connection-editor/connection-helpers.c:133
+#: ../src/connection-editor/page-wimax.c:123 ../src/libnm-gtk/nm-ui-utils.c:332
+#: ../src/mb-menu-item.c:74
+msgid "WiMAX"
+msgstr "WiMAX"
+
+#: ../src/connection-editor/connection-helpers.c:134
+#: ../src/connection-editor/page-dsl.c:137
+msgid "DSL"
+msgstr "DSL"
+
+#: ../src/connection-editor/connection-helpers.c:135
+#: ../src/connection-editor/page-infiniband.c:160
+#: ../src/libnm-gtk/nm-ui-utils.c:336
+msgid "InfiniBand"
+msgstr "InfiniBand"
+
+#: ../src/connection-editor/connection-helpers.c:136
+#: ../src/connection-editor/page-bond.c:452 ../src/libnm-gtk/nm-ui-utils.c:338
+#: ../src/libnm-gtk/nm-ui-utils.c:582
+msgid "Bond"
+msgstr "Liitühendus (bond)"
+
+#: ../src/connection-editor/connection-helpers.c:137
+#: ../src/connection-editor/page-team.c:272 ../src/libnm-gtk/nm-ui-utils.c:340
+#: ../src/libnm-gtk/nm-ui-utils.c:584
+msgid "Team"
+msgstr ""
+
+#: ../src/connection-editor/connection-helpers.c:138
+#: ../src/connection-editor/page-bridge.c:211
+#: ../src/libnm-gtk/nm-ui-utils.c:342 ../src/libnm-gtk/nm-ui-utils.c:586
+msgid "Bridge"
+msgstr "Sild"
+
+#: ../src/connection-editor/connection-helpers.c:139
+#: ../src/connection-editor/page-vlan.c:503 ../src/libnm-gtk/nm-ui-utils.c:344
+#: ../src/libnm-gtk/nm-ui-utils.c:588
+msgid "VLAN"
+msgstr "VLAN"
+
+#: ../src/connection-editor/connection-helpers.c:148
+#: ../src/connection-editor/connection-helpers.c:288
+#: ../src/connection-editor/page-vpn.c:114
+msgid "VPN"
+msgstr "VPN"
+
+#: ../src/connection-editor/connection-helpers.c:234
+msgid "Hardware"
+msgstr "Riistvara"
+
+#: ../src/connection-editor/connection-helpers.c:258
+msgid "Virtual"
+msgstr "Virtuaalne"
+
+#: ../src/connection-editor/connection-helpers.c:326
+#: ../src/connection-editor/connection-helpers.c:328
+msgid "Import a saved VPN configuration..."
+msgstr "VPN-ühenduse seadistuse importimine..."
+
+#: ../src/connection-editor/connection-helpers.c:357
+msgid ""
+"The connection editor dialog could not be initialized due to an unknown "
+"error."
+msgstr ""
+"Ühenduse redaktori dialoogi pole tundmatu vea tõttu võimalik lähtestada."
+
+#: ../src/connection-editor/connection-helpers.c:366
+msgid "Could not create new connection"
+msgstr "Uut ühendust pole võimalik luua"
+
+#: ../src/connection-editor/connection-helpers.c:501
+msgid "Connection delete failed"
+msgstr "Ühenduse kustutamine nurjus"
+
+#: ../src/connection-editor/connection-helpers.c:548
+#, c-format
+msgid "Are you sure you wish to delete the connection %s?"
+msgstr "Kas sa oled kindel, et tahad kustutada ühenduse %s?"
+
+#: ../src/connection-editor/ip4-routes-dialog.c:724
+#: ../src/connection-editor/ip6-routes-dialog.c:666
+#: ../src/connection-editor/page-ip4.c:938
+#: ../src/connection-editor/page-ip6.c:923
+msgid "Address"
+msgstr "Aadress"
+
+#: ../src/connection-editor/ip4-routes-dialog.c:741
+#: ../src/connection-editor/page-ip4.c:955
+msgid "Netmask"
+msgstr "Võrgumask"
+
+#: ../src/connection-editor/ip4-routes-dialog.c:758
+#: ../src/connection-editor/ip6-routes-dialog.c:700
+#: ../src/connection-editor/page-ip4.c:972
+#: ../src/connection-editor/page-ip6.c:957
+msgid "Gateway"
+msgstr "Lüüs (gateway)"
+
+#: ../src/connection-editor/ip4-routes-dialog.c:775
+#: ../src/connection-editor/ip6-routes-dialog.c:717
+msgid "Metric"
+msgstr "Meetrika"
+
+#: ../src/connection-editor/ip6-routes-dialog.c:683
+#: ../src/connection-editor/page-ip6.c:940
+msgid "Prefix"
+msgstr "Prefiks"
+
+#: ../src/connection-editor/nm-connection-editor.c:126
+#, c-format
+msgid "Editing %s"
+msgstr "Ühenduse %s muutmine"
+
+#: ../src/connection-editor/nm-connection-editor.c:130
+msgid "Editing un-named connection"
+msgstr "Nimetu ühenduse muutmine"
+
+#: ../src/connection-editor/nm-connection-editor.c:150
+#, fuzzy
+#| msgid "Connection _name:"
+msgid "Missing connection name"
+msgstr "Ühenduse _nimi:"
+
+#: ../src/connection-editor/nm-connection-editor.c:213
+#, fuzzy
+#| msgid "Error initializing editor"
+msgid "Editor initializing..."
+msgstr "Viga redaktori lähtestamisel"
+
+#: ../src/connection-editor/nm-connection-editor.c:220
+#: ../src/connection-editor/nm-connection-list.c:412
+#, fuzzy
+#| msgid "Connection add failed"
+msgid "Connection cannot be modified"
+msgstr "Ühenduse lisamine nurjus"
+
+#: ../src/connection-editor/nm-connection-editor.c:233
+#, c-format
+msgid "Invalid setting %s: %s"
+msgstr ""
+
+#: ../src/connection-editor/nm-connection-editor.c:309
+msgid ""
+"The connection editor could not find some required resources (the .ui file "
+"was not found)."
+msgstr ""
+"Ühenduste redigeerija ei suutnud leida vajalikke allikaid (.ui faili ei "
+"leitud)."
+
+#: ../src/connection-editor/nm-connection-editor.c:449
+msgid "_Save"
+msgstr "_Salvesta"
+
+#: ../src/connection-editor/nm-connection-editor.c:450
+msgid "Save any changes made to this connection."
+msgstr "Salvesta kõik sellele ühendusele tehtud muudatused."
+
+#: ../src/connection-editor/nm-connection-editor.c:451
+msgid "Authenticate to save this connection for all users of this machine."
+msgstr ""
+"Selle ühenduse salvestamiseks selle arvuti kõigi kasutajate jaoks pead end "
+"autentima."
+
+#: ../src/connection-editor/nm-connection-editor.c:467
+msgid "Could not create connection"
+msgstr "Ühendust pole võimalik luua"
+
+#: ../src/connection-editor/nm-connection-editor.c:467
+msgid "Could not edit connection"
+msgstr "Ühendust pole võimalik muuta"
+
+#: ../src/connection-editor/nm-connection-editor.c:469
+msgid "Unknown error creating connection editor dialog."
+msgstr "Tundmatu viga ühenduse muutmise dialoogi loomisel."
+
+#: ../src/connection-editor/nm-connection-editor.c:611
+msgid "Error initializing editor"
+msgstr "Viga redaktori lähtestamisel"
+
+#: ../src/connection-editor/nm-connection-editor.c:951
+msgid "Connection add failed"
+msgstr "Ühenduse lisamine nurjus"
+
+#: ../src/connection-editor/nm-connection-editor.c:991
+msgid "Error saving connection"
+msgstr "Viga ühenduse salvestamisel"
+
+#: ../src/connection-editor/nm-connection-editor.c:992
+#, c-format
+msgid "The property '%s' / '%s' is invalid: %d"
+msgstr "Omadus '%s' / '%s' pole sobiv: %d"
+
+#: ../src/connection-editor/nm-connection-editor.ui.h:2
+msgid "Connection _name:"
+msgstr "Ühenduse _nimi:"
+
+#: ../src/connection-editor/nm-connection-editor.ui.h:3
+msgid "_Export..."
+msgstr "_Eksportimine..."
+
+#: ../src/connection-editor/nm-connection-list.c:147
+msgid "never"
+msgstr "mitte kunagi"
+
+#: ../src/connection-editor/nm-connection-list.c:158
+#: ../src/connection-editor/nm-connection-list.c:169
+msgid "now"
+msgstr "nüüd"
+
+#. less than an hour ago
+#: ../src/connection-editor/nm-connection-list.c:176
+#, c-format
+msgid "%d minute ago"
+msgid_plural "%d minutes ago"
+msgstr[0] "%d minut tagasi"
+msgstr[1] "%d minutit tagasi"
+
+#: ../src/connection-editor/nm-connection-list.c:180
+#, c-format
+msgid "%d hour ago"
+msgid_plural "%d hours ago"
+msgstr[0] "%d tund tagasi"
+msgstr[1] "%d tundi tagasi"
+
+#: ../src/connection-editor/nm-connection-list.c:192
+#, c-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d päev tagasi"
+msgstr[1] "%d päeva tagasi"
+
+#: ../src/connection-editor/nm-connection-list.c:198
+#, c-format
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d kuu tagasi"
+msgstr[1] "%d kuud tagasi"
+
+#: ../src/connection-editor/nm-connection-list.c:202
+#, c-format
+msgid "%d year ago"
+msgid_plural "%d years ago"
+msgstr[0] "%d aasta tagasi"
+msgstr[1] "%d aastat tagasi"
+
+#: ../src/connection-editor/nm-connection-list.c:643
+msgid "Name"
+msgstr "Nimi"
+
+#: ../src/connection-editor/nm-connection-list.c:656
+msgid "Last Used"
+msgstr "Viimati kasutatud"
+
+#: ../src/connection-editor/nm-connection-list.c:700
+msgid "Edit the selected connection"
+msgstr "Valitud ühenduse muutmine"
+
+#: ../src/connection-editor/nm-connection-list.c:701
+msgid "Authenticate to edit the selected connection"
+msgstr "Valitud ühenduse muutmiseks pead end autentima"
+
+#: ../src/connection-editor/nm-connection-list.c:716
+msgid "Delete the selected connection"
+msgstr "Valitud ühenduse kustutamine"
+
+#: ../src/connection-editor/nm-connection-list.c:717
+msgid "Authenticate to delete the selected connection"
+msgstr "Valitud ühenduse kustutamiseks pead end autentima"
+
+#: ../src/connection-editor/nm-connection-list.c:982
+msgid "No VPN plugins are installed."
+msgstr ""
+
+#: ../src/connection-editor/nm-connection-list.c:984
+#, c-format
+msgid "Don't know how to create '%s' connections"
+msgstr "Ei tea, kuidas '%s' ühendust luua"
+
+#: ../src/connection-editor/nm-connection-list.c:986
+msgid "Error creating connection"
+msgstr "Viga ühenduse loomisel"
+
+#: ../src/connection-editor/nm-connection-list.c:1047
+msgid "Error editing connection"
+msgstr "Viga ühenduse muutmisel"
+
+#: ../src/connection-editor/nm-connection-list.c:1048
+#, c-format
+msgid "Did not find a connection with UUID '%s'"
+msgstr "Ei leitud ühendust UUID-ga '%s'"
+
+#: ../src/connection-editor/page-8021x-security.c:121
+msgid "802.1x Security"
+msgstr "802.1x turvalisus"
+
+#: ../src/connection-editor/page-8021x-security.c:123
+msgid "Could not load 802.1x Security user interface."
+msgstr "802.1x turvalisuse kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-8021x-security.c:137
+msgid "Use 802.1_X security for this connection"
+msgstr "Sellel ühendusel 802.1_X turvalisuse kasutamine"
+
+#: ../src/connection-editor/page-bluetooth.c:113
+#, fuzzy
+#| msgid "Could not load ethernet user interface."
+msgid "Could not load Bluetooth user interface."
+msgstr "Ethernet võrgu kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-bluetooth.c:153
+msgid "bdaddr"
+msgstr ""
+
+#: ../src/connection-editor/page-bluetooth.c:231
+#, fuzzy, c-format
+#| msgid "Bond connection %d"
+msgid "Bluetooth connection %d"
+msgstr "Liitühendus %d (bond)"
+
+#: ../src/connection-editor/page-bluetooth.c:275
+#, fuzzy
+#| msgid "Bluetooth"
+msgid "Bluetooth Type"
+msgstr "Bluetooth"
+
+#: ../src/connection-editor/page-bluetooth.c:293
+msgid "Select the type of the Bluetooth connection profile."
+msgstr ""
+
+#: ../src/connection-editor/page-bluetooth.c:298
+#, fuzzy
+#| msgid "Ethernet Network"
+msgid "_Personal Area Network"
+msgstr "Ethernet võrk"
+
+#: ../src/connection-editor/page-bluetooth.c:303
+#, fuzzy
+#| msgid "Wi-Fi Network"
+#| msgid_plural "Wi-Fi Networks"
+msgid "_Dial-Up Network"
+msgstr "Wi-Fi võrk"
+
+#: ../src/connection-editor/page-bond.c:455
+msgid "Could not load bond user interface."
+msgstr "Liitühenduse (bond) kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-bond.c:574
+#, fuzzy
+#| msgid "Primary DNS:"
+msgid "primary"
+msgstr "Esmane DNS:"
+
+#: ../src/connection-editor/page-bond.c:624
+#, c-format
+msgid "Bond connection %d"
+msgstr "Liitühendus %d (bond)"
+
+#: ../src/connection-editor/page-bridge.c:214
+msgid "Could not load bridge user interface."
+msgstr "Sildühenduse kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-bridge.c:309
+#, c-format
+msgid "Bridge connection %d"
+msgstr "Sildühendus %d"
+
+#. Translators: a "Bridge Port" is a network
+#. * device that is part of a bridge.
+#.
+#: ../src/connection-editor/page-bridge-port.c:117
+msgid "Bridge Port"
+msgstr "Silla port"
+
+#: ../src/connection-editor/page-bridge-port.c:119
+msgid "Could not load bridge port user interface."
+msgstr "Sildpordi kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-dcb.c:607
+msgid "DCB"
+msgstr ""
+
+#: ../src/connection-editor/page-dcb.c:609
+#, fuzzy
+#| msgid "Could not load DSL user interface."
+msgid "Could not load DCB user interface."
+msgstr "DSL kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-dsl.c:139
+msgid "Could not load DSL user interface."
+msgstr "DSL kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-dsl.c:231
+#, c-format
+msgid "DSL connection %d"
+msgstr "DSL-ühendus %d"
+
+#: ../src/connection-editor/page-ethernet.c:79
+#: ../src/connection-editor/page-wimax.c:59
+#, fuzzy
+#| msgid ""
+#| "This option locks this connection to the network device specified by its "
+#| "permanent MAC address entered here.  Example: 00:11:22:33:44:55"
+msgid ""
+"This option locks this connection to the network device specified either by "
+"its interface name or permanent MAC or both. Examples: \"em1\", "
+"\"3C:97:0E:42:1A:19\", \"em1 (3C:97:0E:42:1A:19)\""
+msgstr ""
+"See valik lubab ühendumise ainult seadmel, mille riistvaraline MAC-aadress "
+"on siia sisestatud. Näiteks: 00:11:22:33:44:55"
+
+#: ../src/connection-editor/page-ethernet.c:242
+msgid "Could not load ethernet user interface."
+msgstr "Ethernet võrgu kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-ethernet.c:348
+#, fuzzy
+#| msgid "Ethernet"
+msgid "Ethernet device"
+msgstr "Ethernet"
+
+#: ../src/connection-editor/page-ethernet.c:352
+#: ../src/connection-editor/page-vlan.c:649
+#: ../src/connection-editor/page-wifi.c:599
+#, fuzzy
+#| msgid "C_loned MAC address:"
+msgid "cloned MAC"
+msgstr "_Kloonitud MAC-aadress:"
+
+#: ../src/connection-editor/page-ethernet.c:386
+#, c-format
+msgid "Ethernet connection %d"
+msgstr "Ethernet võrgu ühendus %d"
+
+#. TRANSLATORS: Default zone set for firewall, when no zone is selected
+#: ../src/connection-editor/page-general.c:56
+#: ../src/libnm-gtk/nm-mobile-providers.c:808
+msgid "Default"
+msgstr "Vaikimisi"
+
+#: ../src/connection-editor/page-general.c:57
+msgid ""
+"The zone defines the trust level of the connection. Default is not a regular "
+"zone, selecting it results in the use of the default zone set in the "
+"firewall. Only usable if firewalld is active."
+msgstr ""
+"Tsoon määrab ühenduse usaldustaseme. Vaikimisi ei ole tavaline tsoon, selle "
+"valimisel kasutatakse tulemüüri vaikimisi tsooni. Kasutatav ainult siis, kui "
+"firewalld on aktiivne."
+
+#: ../src/connection-editor/page-general.c:58
+msgid "FirewallD is not running."
+msgstr "FirewallD ei tööta."
+
+#: ../src/connection-editor/page-general.c:327
+msgid "Could not load General user interface."
+msgstr "Üldist kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-infiniband.c:65
+msgid ""
+"This option locks this connection to the network device specified either by "
+"its interface name or permanent MAC or both. Examples: \"ib0\", "
+"\"80:00:00:48:fe:80:00:00:00:00:00:00:00:02:c9:03:00:00:0f:65\", \"ib0 "
+"(80:00:00:48:fe:80:00:00:00:00:00:00:00:02:c9:03:00:00:0f:65)\""
+msgstr ""
+
+#: ../src/connection-editor/page-infiniband.c:163
+msgid "Could not load InfiniBand user interface."
+msgstr "InfiniBand-võrgu kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-infiniband.c:227
+msgid "infiniband device"
+msgstr ""
+
+#: ../src/connection-editor/page-infiniband.c:262
+#, c-format
+msgid "InfiniBand connection %d"
+msgstr "InfiniBand võrgu ühendus %d"
+
+#: ../src/connection-editor/page-ip4.c:139
+#: ../src/connection-editor/page-ip6.c:143
+msgid "Automatic (VPN)"
+msgstr "Automaatne (VPN)"
+
+#: ../src/connection-editor/page-ip4.c:140
+#: ../src/connection-editor/page-ip6.c:144
+msgid "Automatic (VPN) addresses only"
+msgstr "Automaatselt (VPN) ainult aadressid"
+
+#: ../src/connection-editor/page-ip4.c:144
+#: ../src/connection-editor/page-ip6.c:150
+msgid "Automatic, addresses only"
+msgstr "Automaatne, ainult aadressid"
+
+#: ../src/connection-editor/page-ip4.c:146
+#: ../src/connection-editor/page-ip6.c:146
+msgid "Automatic (PPPoE)"
+msgstr "Automaatne (PPPoE)"
+
+#: ../src/connection-editor/page-ip4.c:147
+#: ../src/connection-editor/page-ip6.c:147
+msgid "Automatic (PPPoE) addresses only"
+msgstr "Automaatselt (PPPoE) ainult aadressid"
+
+#: ../src/connection-editor/page-ip4.c:149
+msgid "Automatic (DHCP)"
+msgstr "Automaatne (DHCP)"
+
+#: ../src/connection-editor/page-ip4.c:150
+msgid "Automatic (DHCP) addresses only"
+msgstr "Automaatselt (DHCP) ainult aadressid"
+
+#: ../src/connection-editor/page-ip4.c:193
+#: ../src/connection-editor/page-ip6.c:211
+msgid "Link-Local Only"
+msgstr "Ainult Link-Local"
+
+#: ../src/connection-editor/page-ip4.c:311
+#: ../src/connection-editor/page-ip6.c:309
+msgid "Additional DNS ser_vers:"
+msgstr "_DNS lisaserverid:"
+
+#: ../src/connection-editor/page-ip4.c:320
+#: ../src/connection-editor/page-ip6.c:318
+msgid "Additional s_earch domains:"
+msgstr "_Lisaotsidomeenid:"
+
+#: ../src/connection-editor/page-ip4.c:870
+#, c-format
+msgid "Editing IPv4 routes for %s"
+msgstr "Seadme %s IPv4-marsruutide muutmine"
+
+#: ../src/connection-editor/page-ip4.c:1024
+msgid "IPv4 Settings"
+msgstr "IPv4 sätted"
+
+#: ../src/connection-editor/page-ip4.c:1026
+msgid "Could not load IPv4 user interface."
+msgstr "IPv4 kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-ip4.c:1114
+#, c-format
+msgid "IPv4 address \"%s\" invalid"
+msgstr ""
+
+#: ../src/connection-editor/page-ip4.c:1122
+msgid "IPv4 address netmask missing"
+msgstr ""
+
+#: ../src/connection-editor/page-ip4.c:1127
+#, c-format
+msgid "IPv4 address netmask \"%s\" invalid"
+msgstr ""
+
+#: ../src/connection-editor/page-ip4.c:1136
+#, c-format
+msgid "IPv4 gateway \"%s\" invalid"
+msgstr ""
+
+#: ../src/connection-editor/page-ip4.c:1176
+#, c-format
+msgid "IPv4 DNS server \"%s\" invalid"
+msgstr ""
+
+#: ../src/connection-editor/page-ip6.c:162
+msgid "Ignore"
+msgstr "Eira"
+
+#: ../src/connection-editor/page-ip6.c:186
+msgid "Automatic, DHCP only"
+msgstr "Automaatne, ainult DHCP"
+
+#: ../src/connection-editor/page-ip6.c:855
+#, c-format
+msgid "Editing IPv6 routes for %s"
+msgstr "Seadme %s IPv6-marsruutide muutmine"
+
+#: ../src/connection-editor/page-ip6.c:1008
+msgid "IPv6 Settings"
+msgstr "IPv6 sätted"
+
+#: ../src/connection-editor/page-ip6.c:1010
+msgid "Could not load IPv6 user interface."
+msgstr "IPv6 kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-ip6.c:1099
+#, c-format
+msgid "IPv6 address \"%s\" invalid"
+msgstr ""
+
+#: ../src/connection-editor/page-ip6.c:1108
+#, c-format
+msgid "IPv6 prefix \"%s\" missing"
+msgstr ""
+
+#: ../src/connection-editor/page-ip6.c:1114
+#, c-format
+msgid "IPv6 prefix \"%s\" invalid"
+msgstr ""
+
+#: ../src/connection-editor/page-ip6.c:1124
+#, c-format
+msgid "IPv6 gateway \"%s\" invalid"
+msgstr ""
+
+#: ../src/connection-editor/page-ip6.c:1159
+#, c-format
+msgid "IPv6 DNS server \"%s\" invalid"
+msgstr ""
+
+#: ../src/connection-editor/page-master.c:249
+#: ../src/connection-editor/page-master.c:260
+msgid "Duplicate slaves"
+msgstr ""
+
+#: ../src/connection-editor/page-master.c:250
+#, c-format
+msgid "Slaves '%s' and '%s' both apply to device '%s'"
+msgstr ""
+
+#: ../src/connection-editor/page-master.c:261
+#, c-format
+msgid ""
+"Slaves '%s' and '%s' apply to different virtual ports ('%s' and '%s') of the "
+"same physical device."
+msgstr ""
+
+#: ../src/connection-editor/page-master.c:386
+#, c-format
+msgid "%s slave %d"
+msgstr "%s alluv %d"
+
+#: ../src/connection-editor/page-mobile.c:322
+msgid "Could not load mobile broadband user interface."
+msgstr "Mobiiliühenduse kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-mobile.c:339
+msgid "Unsupported mobile broadband connection type."
+msgstr "Mobiiliühenduse liik pole toetatud."
+
+#. Fall back to just asking for GSM vs. CDMA
+#: ../src/connection-editor/page-mobile.c:541
+msgid "Select Mobile Broadband Provider Type"
+msgstr "Mobiiliühenduse teenusepakkuja liigi valimine"
+
+#: ../src/connection-editor/page-mobile.c:568
+msgid ""
+"Select the technology your mobile broadband provider uses.  If you are "
+"unsure, ask your provider."
+msgstr ""
+"Vali mobiiliühenduse pakkuja kasutatav tehnoloogia.  Kui sa pole kindel, "
+"küsi oma teenusepakkujalt."
+
+#: ../src/connection-editor/page-mobile.c:573
+msgid "My provider uses _GSM-based technology (i.e. GPRS, EDGE, UMTS, HSDPA)"
+msgstr ""
+"Minu teenusepakkuja kasutab _GSM-il põhinevat tehnoloogiat (nt GPRS, EDGE, "
+"UMTS, HSDPA)"
+
+#: ../src/connection-editor/page-mobile.c:580
+msgid "My provider uses C_DMA-based technology (i.e. 1xRTT, EVDO)"
+msgstr ""
+"Minu teenusepakkuja kasutab C_DMA-l põhinevat tehnoloogiat (nt 1xRTT, EVDO)"
+
+#: ../src/connection-editor/page-mobile.c:590 ../src/mb-menu-item.c:54
+#: ../src/mobile-helpers.c:279
+msgid "CDMA"
+msgstr "CDMA"
+
+#: ../src/connection-editor/page-mobile.c:593 ../src/mb-menu-item.c:58
+#: ../src/mobile-helpers.c:277
+msgid "GSM"
+msgstr "GSM"
+
+#: ../src/connection-editor/page-ppp.c:136
+msgid "EAP"
+msgstr "EAP"
+
+#: ../src/connection-editor/page-ppp.c:137
+#: ../src/wireless-security/eap-method-ttls.c:262
+msgid "PAP"
+msgstr "PAP"
+
+#: ../src/connection-editor/page-ppp.c:138
+#: ../src/wireless-security/eap-method-ttls.c:307
+msgid "CHAP"
+msgstr "CHAP"
+
+#: ../src/connection-editor/page-ppp.c:139
+#: ../src/wireless-security/eap-method-fast.c:284
+#: ../src/wireless-security/eap-method-peap.c:276
+#: ../src/wireless-security/eap-method-ttls.c:292
+msgid "MSCHAPv2"
+msgstr "MSCHAPv2"
+
+#: ../src/connection-editor/page-ppp.c:140
+#: ../src/wireless-security/eap-method-ttls.c:277
+msgid "MSCHAP"
+msgstr "MSCHAP"
+
+#. Translators: "none" refers to authentication methods
+#: ../src/connection-editor/page-ppp.c:143
+msgid "none"
+msgstr "puudub"
+
+#: ../src/connection-editor/page-ppp.c:203
+#, c-format
+msgid "Editing PPP authentication methods for %s"
+msgstr "%s PPP autentimisviiside muutmine"
+
+#: ../src/connection-editor/page-ppp.c:288
+msgid "PPP Settings"
+msgstr "PPP sätted"
+
+#: ../src/connection-editor/page-ppp.c:290
+msgid "Could not load PPP user interface."
+msgstr "PPP kasutajaliidest pole võimalik laadida."
+
+# importimise dialoogi pealkiri
+#: ../src/connection-editor/page-team.c:101
+#: ../src/connection-editor/page-team-port.c:77
+#: ../src/connection-editor/vpn-helpers.c:239
+msgid "Select file to import"
+msgstr "Importimiseks faili valimine"
+
+#: ../src/connection-editor/page-team.c:121
+#: ../src/connection-editor/page-team-port.c:97
+msgid "Error: file doesn't contain a valid JSON configuration"
+msgstr ""
+
+#: ../src/connection-editor/page-team.c:275
+#, fuzzy
+#| msgid "Could not load vlan user interface."
+msgid "Could not load team user interface."
+msgstr "VLAN kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-team.c:382
+#, fuzzy, c-format
+#| msgid "DSL connection %d"
+msgid "Team connection %d"
+msgstr "DSL-ühendus %d"
+
+#. Translators: a "Team Port" is a network
+#. * device that is part of a team.
+#.
+#: ../src/connection-editor/page-team-port.c:159
+#, fuzzy
+#| msgid "Bridge Port"
+msgid "Team Port"
+msgstr "Silla port"
+
+#: ../src/connection-editor/page-team-port.c:161
+#, fuzzy
+#| msgid "Could not load bridge port user interface."
+msgid "Could not load team port user interface."
+msgstr "Sildpordi kasutajaliidest pole võimalik laadida."
+
+#. Translators: the first %s is a device name (eg, "em1"), the
+#. * second is a connection name (eg, "Auto Ethernet").
+#.
+#: ../src/connection-editor/page-vlan.c:327
+#, c-format
+msgid "%s (via \"%s\")"
+msgstr ""
+
+#: ../src/connection-editor/page-vlan.c:505
+msgid "Could not load vlan user interface."
+msgstr "VLAN kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-vlan.c:642
+msgid "vlan parent"
+msgstr ""
+
+#: ../src/connection-editor/page-vlan.c:705
+#, c-format
+msgid "VLAN connection %d"
+msgstr "VLAN-ühendus %d"
+
+#: ../src/connection-editor/page-vpn.c:116
+msgid "Could not load VPN user interface."
+msgstr "VPN kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-vpn.c:131
+#, c-format
+msgid "Could not find VPN plugin service for '%s'."
+msgstr "VPN-i pluginat teenuse '%s' jaoks ei leitud."
+
+#: ../src/connection-editor/page-vpn.c:218
+#: ../src/connection-editor/page-vpn.c:315
+#, c-format
+msgid "VPN connection %d"
+msgstr "VPN-ühendus %d"
+
+#: ../src/connection-editor/page-vpn.c:244
+msgid ""
+"The VPN plugin failed to import the VPN connection correctly\n"
+"\n"
+"Error: no VPN service type."
+msgstr ""
+"VPN plugin ei suutnud VPN ühendust korrektselt importida\n"
+"\n"
+"Viga: puudub VPN teenuse tüüp."
+
+#: ../src/connection-editor/page-vpn.c:269
+msgid "Choose a VPN Connection Type"
+msgstr "VPN-ühenduse liigi valimine"
+
+#: ../src/connection-editor/page-vpn.c:270
+msgid ""
+"Select the type of VPN you wish to use for the new connection.  If the type "
+"of VPN connection you wish to create does not appear in the list, you may "
+"not have the correct VPN plugin installed."
+msgstr ""
+"Vali, mis liiki VPN ühendust kasutada. Kui soovitud VPN ühenduse liiki "
+"nimekirjas ei leidu, võib vajalik VPN plugin olla paigaldamata."
+
+#: ../src/connection-editor/page-wifi.c:85
+msgid ""
+"This option locks this connection to the Wi-Fi access point (AP) specified "
+"by the BSSID entered here.  Example: 00:11:22:33:44:55"
+msgstr ""
+"See valik lubab ühenduda ainult siia sisestatud BSSID aadressiga Wi-Fi "
+"ruuteriga (AP). Näiteks: 00:11:22:33:44:55"
+
+#: ../src/connection-editor/page-wifi.c:95
+#, fuzzy
+#| msgid ""
+#| "This option locks this connection to the network device specified by its "
+#| "permanent MAC address entered here.  Example: 00:11:22:33:44:55"
+msgid ""
+"This option locks this connection to the network device specified either by "
+"its interface name or permanent MAC or both. Examples: \"wlan0\", "
+"\"3C:97:0E:42:1A:19\", \"wlan0 (3C:97:0E:42:1A:19)\""
+msgstr ""
+"See valik lubab ühendumise ainult seadmel, mille riistvaraline MAC-aadress "
+"on siia sisestatud. Näiteks: 00:11:22:33:44:55"
+
+#: ../src/connection-editor/page-wifi.c:203
+#, c-format
+msgid "%u (%u MHz)"
+msgstr "%u (%u MHz)"
+
+#: ../src/connection-editor/page-wifi.c:462
+msgid "Could not load Wi-Fi user interface."
+msgstr "Wi-Fi-võrgu kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-wifi.c:589
+msgid "bssid"
+msgstr ""
+
+#: ../src/connection-editor/page-wifi.c:595
+#, fuzzy
+#| msgid "Any device"
+msgid "Wi-Fi device"
+msgstr "Iga seade"
+
+#: ../src/connection-editor/page-wifi.c:637
+#, c-format
+msgid "Wi-Fi connection %d"
+msgstr "Wi-Fi ühendus %d"
+
+#: ../src/connection-editor/page-wifi-security.c:319
+#: ../src/libnm-gtk/nm-wifi-dialog.c:925
+msgid "WEP 40/128-bit Key (Hex or ASCII)"
+msgstr "WEP 40/128-bitine võti (Hex või ASCII)"
+
+#: ../src/connection-editor/page-wifi-security.c:329
+#: ../src/libnm-gtk/nm-wifi-dialog.c:934
+msgid "WEP 128-bit Passphrase"
+msgstr "WEP 128-bitine parool"
+
+#: ../src/connection-editor/page-wifi-security.c:355
+#: ../src/libnm-gtk/nm-wifi-dialog.c:964
+msgid "Dynamic WEP (802.1x)"
+msgstr "Dünaamiline WEP (802.1x)"
+
+#: ../src/connection-editor/page-wifi-security.c:368
+#: ../src/libnm-gtk/nm-wifi-dialog.c:978
+msgid "WPA & WPA2 Personal"
+msgstr "WPA & WPA2 isiklik"
+
+#: ../src/connection-editor/page-wifi-security.c:381
+#: ../src/libnm-gtk/nm-wifi-dialog.c:992
+msgid "WPA & WPA2 Enterprise"
+msgstr "WPA & WPA2 ettevõtte"
+
+#: ../src/connection-editor/page-wifi-security.c:424
+msgid "Could not load Wi-Fi security user interface; missing Wi-Fi setting."
+msgstr ""
+"Wi-Fi-võrgu turvalisuse kasutajaliidest pole võimalik laadida; puudub Wi-Fi "
+"säte."
+
+#: ../src/connection-editor/page-wifi-security.c:436
+msgid "Wi-Fi Security"
+msgstr "Wi-Fi turvalisus"
+
+#: ../src/connection-editor/page-wifi-security.c:438
+msgid "Could not load Wi-Fi security user interface."
+msgstr "Wi-Fi-võrgu turvalisuse kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-wifi-security.c:518
+#, c-format
+msgid "missing SSID"
+msgstr ""
+
+#: ../src/connection-editor/page-wifi-security.c:524
+#, c-format
+msgid "Security not compatible with Ad-Hoc mode"
+msgstr ""
+
+#: ../src/connection-editor/page-wimax.c:126
+msgid "Could not load WiMAX user interface."
+msgstr "WiMAX-võrgu kasutajaliidest pole võimalik laadida."
+
+#: ../src/connection-editor/page-wimax.c:186
+msgid "WiMAX name missing"
+msgstr ""
+
+#: ../src/connection-editor/page-wimax.c:192
+#, fuzzy
+#| msgid "Any device"
+msgid "WiMAX device"
+msgstr "Iga seade"
+
+#: ../src/connection-editor/page-wimax.c:228
+#, c-format
+msgid "WiMAX connection %d"
+msgstr "WiMAX ühendus %d"
+
+#: ../src/connection-editor/vpn-helpers.c:212
+msgid "Cannot import VPN connection"
+msgstr "VPN-ühendust pole võimalik importida"
+
+#: ../src/connection-editor/vpn-helpers.c:214
+#, c-format
+msgid ""
+"The file '%s' could not be read or does not contain recognized VPN "
+"connection information\n"
+"\n"
+"Error: %s."
+msgstr ""
+"Faili '%s' ei saanud lugeda või ei sisaldanud see äratuntavat VPN ühenduse "
+"teavet\n"
+"\n"
+"Viga: %s."
+
+#: ../src/connection-editor/vpn-helpers.c:289
+#, c-format
+msgid "A file named \"%s\" already exists."
+msgstr "Fail nimega \"%s\" on juba olemas."
+
+#: ../src/connection-editor/vpn-helpers.c:291
+msgid "_Replace"
+msgstr "_Asenda"
+
+#: ../src/connection-editor/vpn-helpers.c:293
+#, c-format
+msgid "Do you want to replace %s with the VPN connection you are saving?"
+msgstr "Kas sa tahad asendada %s praegu salvestatava VPN ühendusega?"
+
+#: ../src/connection-editor/vpn-helpers.c:329
+msgid "Cannot export VPN connection"
+msgstr "VPN-ühendust pole võimalik eksportida"
+
+#: ../src/connection-editor/vpn-helpers.c:331
+#, c-format
+msgid ""
+"The VPN connection '%s' could not be exported to %s.\n"
+"\n"
+"Error: %s."
+msgstr ""
+"VPN-ühendust '%s' ei saanud eksportida %s.\n"
+"\n"
+"Viga: %s."
+
+# eksportimise faili valiku pealkiri
+#: ../src/connection-editor/vpn-helpers.c:366
+msgid "Export VPN connection..."
+msgstr "VPN-ühenduse eksportimine..."
+
+#: ../src/ethernet-dialog.c:92 ../src/ethernet-dialog.c:100
+msgid ""
+"The NetworkManager Applet could not find some required resources (the .ui "
+"file was not found)."
+msgstr ""
+"Võrguhalduri rakend ei suutnud leida vajalikke allikaid (.ui faili ei "
+"leitud)."
+
+#: ../src/gnome-bluetooth/bt-widget.c:321
+#, c-format
+msgid ""
+"Bluetooth configuration not possible (failed to connect to D-Bus: (%s) %s)."
+msgstr ""
+"Bluetoothi seadistamine pole võimalik (ühendumine D-Bus'iga nurjus: (%s) %s)."
+
+#: ../src/gnome-bluetooth/bt-widget.c:330
+#, c-format
+msgid ""
+"Bluetooth configuration not possible (error finding NetworkManager: (%s) %s)."
+msgstr ""
+"Bluetoothi seadistamine pole võimalik (tõrge võrguhalduri otsimisel: (%s) "
+"%s)."
+
+#: ../src/gnome-bluetooth/bt-widget.c:441
+msgid "Use your mobile phone as a network device (PAN/NAP)"
+msgstr "Mobiiltelefoni kasutamine võrguseadmena (PAN/NAP)"
+
+#: ../src/gnome-bluetooth/bt-widget.c:450
+msgid "Access the Internet using your mobile phone (DUN)"
+msgstr "Internetiühendus mobiiltelefoni kaudu (DUN)"
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:324
+#, c-format
+msgid "Error: %s"
+msgstr "Tõrge: %s"
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:431
+#, c-format
+msgid "Failed to create DUN connection: %s"
+msgstr "DUN-ühenduse loomine nurjus: %s"
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:433
+#: ../src/gnome-bluetooth/nma-bt-device.c:952
+msgid "Your phone is now ready to use!"
+msgstr "Sinu telefon on valmis kasutamiseks!"
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:456
+msgid "Mobile wizard was canceled"
+msgstr "Mobiiliühenduse nõustaja katkestati"
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:465
+msgid "Unknown phone device type (not GSM or CDMA)"
+msgstr "Tundmatut tüüpi telefoniseade (pole GSM ega CDMA)"
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:721
+#: ../src/gnome-bluetooth/nma-bt-device.c:727
+msgid "failed to connect to the phone."
+msgstr "telefoniga ühendumine nurjus."
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:740
+msgid "error getting bus connection"
+msgstr "viga siini ühenduse hankimisel"
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:794
+msgid "unexpectedly disconnected from the phone."
+msgstr "ühendus katkes ootamatult telefonist."
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:804
+msgid "timed out detecting phone details."
+msgstr "telefoni andmete tuvastamine aegus."
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:815
+msgid "Detecting phone configuration..."
+msgstr "Telefoni seadistuse tuvastamine..."
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:913
+msgid ""
+"The default Bluetooth adapter must be enabled before setting up a Dial-Up-"
+"Networking connection."
+msgstr ""
+"Vaikimisi Bluetoothi adapter peab olema enne sissehelistamisühenduse (dial-"
+"up) seadistamist sisse lülitatud."
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:950
+#, c-format
+msgid "Failed to create PAN connection: %s"
+msgstr "PAN-ühenduse loomine nurjus: %s"
+
+#: ../src/gnome-bluetooth/nma-bt-device.c:971
+#, c-format
+msgid "%s Network"
+msgstr "%s võrk"
+
+#: ../src/gsm-unlock.ui.h:1
+msgid "_Unlock"
+msgstr "_Võta lukust lahti"
+
+#: ../src/gsm-unlock.ui.h:2
+msgid "Automatically unlock this device"
+msgstr "Selle seadme luku automaatne avamine"
+
+#: ../src/info.ui.h:1
+msgid "Connection Information"
+msgstr "Ühenduse andmed"
+
+#: ../src/info.ui.h:2
+msgid "Active Network Connections"
+msgstr "Aktiivsed võrguühendused"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:204
+msgid ""
+"Your mobile broadband connection is configured with the following settings:"
+msgstr "Sinu mobiiliühendus on seadistatud järgmiselt:"
+
+#. Device
+#: ../src/libnm-gtk/nm-mobile-wizard.c:211
+msgid "Your Device:"
+msgstr "Sinu seade:"
+
+#. Provider
+#: ../src/libnm-gtk/nm-mobile-wizard.c:222
+msgid "Your Provider:"
+msgstr "Sinu teenusepakkuja:"
+
+#. Plan and APN
+#: ../src/libnm-gtk/nm-mobile-wizard.c:233
+msgid "Your Plan:"
+msgstr "Sinu makseplaan:"
+
+# Ubuntul on siin "Arvuti > Eelistused"
+#: ../src/libnm-gtk/nm-mobile-wizard.c:254
+msgid ""
+"A connection will now be made to your mobile broadband provider using the "
+"settings you selected.  If the connection fails or you cannot access network "
+"resources, double-check your settings.  To modify your mobile broadband "
+"connection settings, choose \"Network Connections\" from the System >> "
+"Preferences menu."
+msgstr ""
+"Nüüd luuakse ühendus sinu teenusepakkuja võrguga kasutades sinu valitud "
+"sätteid.  Kui ühendus nurjub või sa ei pääse võrgule ligi, kontrolli "
+"sätteid.  Mobiiliühenduse muutmiseks vali \"Võrguühendused\" menüüst Süsteem "
+"> Eelistused."
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:267
+msgid "Confirm Mobile Broadband Settings"
+msgstr "Mobiiliühenduse sätete kinnitamine"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:331
+msgid "Unlisted"
+msgstr "Pole loetelus"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:462
+msgid "_Select your plan:"
+msgstr "_Vali oma plaan:"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:486
+msgid "Selected plan _APN (Access Point Name):"
+msgstr "Valitud plaani _APN (Access Point Name, pöörduspunkti nimi):"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:506
+msgid ""
+"Warning: Selecting an incorrect plan may result in billing issues for your "
+"broadband account or may prevent connectivity.\n"
+"\n"
+"If you are unsure of your plan please ask your provider for your plan's APN."
+msgstr ""
+"Hoiatus: vale plaani valimine võib põhjustada makseprobleeme või tõkestada "
+"ühenduse loomist.\n"
+"\n"
+"Kui sa pole kindel, küsi oma teenusepakkujalt õige plaani APN (Access Point "
+"Name, pöörduspunkti nimi)."
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:514
+msgid "Choose your Billing Plan"
+msgstr "Makseplaani valimine"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:563
+msgid "My plan is not listed..."
+msgstr "Minu makseplaan pole loetelus..."
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:716
+msgid "Select your provider from a _list:"
+msgstr "Vali oma teenusepakkuja _loetelust:"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:729
+msgid "Provider"
+msgstr "Teenusepakkuja"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:754
+msgid "I can't find my provider and I wish to enter it _manually:"
+msgstr "Ma ei leidnud oma teenusepakkujat, ma tahan selle sisestada _käsitsi:"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:767
+msgid "Provider:"
+msgstr "Teenusepakkuja:"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:784
+msgid "My provider uses GSM technology (GPRS, EDGE, UMTS, HSPA)"
+msgstr ""
+"Minu teenusepakkuja kasutab _GSM-tehnoloogiat (GPRS, EDGE, UMTS, HSDPA)"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:786
+msgid "My provider uses CDMA technology (1xRTT, EVDO)"
+msgstr "Minu teenusepakkuja kasutab _CDMA-tehnoloogiat (1xRTT, EVDO)"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:797
+msgid "Choose your Provider"
+msgstr "Vali teenusepakkuja"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1059
+msgid "Country or Region List:"
+msgstr "Riikide ja piirkondade nimekiri:"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1072
+msgid "Country or region"
+msgstr "Riik või piirkond"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1082
+msgid "My country is not listed"
+msgstr "Minu riik pole loetelus"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1132
+msgid "Choose your Provider's Country or Region"
+msgstr "Teenusepakkuja asukohariigi või -regiooni valimine"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1189
+msgid "Installed GSM device"
+msgstr "Paigaldatud GSM-seade"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1192
+msgid "Installed CDMA device"
+msgstr "Paigaldatud CDMA-seade"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1360
+msgid ""
+"This assistant helps you easily set up a mobile broadband connection to a "
+"cellular (3G) network."
+msgstr "See abiline teeb mobiilivõrgu (3G) ühenduse seadistamise lihtsaks."
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1366
+msgid "You will need the following information:"
+msgstr "Vaja on alljärgnevat teavet:"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1377
+msgid "Your broadband provider's name"
+msgstr "Sinu teenusepakkuja nimi"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1383
+msgid "Your broadband billing plan name"
+msgstr "Sinu ühenduse makseplaani nimi"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1389
+msgid "(in some cases) Your broadband billing plan APN (Access Point Name)"
+msgstr ""
+"(Mõnel juhul) sinu ühenduse makseplaani APN (Access Point Name, "
+"pöörduspunkti nimi)"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1418
+msgid "Create a connection for _this mobile broadband device:"
+msgstr "Ühenduse loomine _selle mobiiliühenduse seadmega:"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1433
+msgid "Any device"
+msgstr "Iga seade"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1446
+msgid "Set up a Mobile Broadband Connection"
+msgstr "Mobiiliühenduse seadistamine"
+
+#: ../src/libnm-gtk/nm-mobile-wizard.c:1619
+msgid "New Mobile Broadband Connection"
+msgstr "Uus mobiiliühendus"
+
+#: ../src/libnm-gtk/nm-ui-utils.c:305 ../src/libnm-gtk/nm-ui-utils.c:374
+msgid "Wired"
+msgstr "Juhtmega"
+
+#: ../src/libnm-gtk/nm-ui-utils.c:330
+msgid "OLPC Mesh"
+msgstr "OLPC võrk"
+
+#: ../src/libnm-gtk/nm-ui-utils.c:346
+msgid "ADSL"
+msgstr "ADSL"
+
+#: ../src/libnm-gtk/nm-ui-utils.c:409
+msgid "PCI"
+msgstr "PCI"
+
+#: ../src/libnm-gtk/nm-ui-utils.c:411
+msgid "USB"
+msgstr "USB"
+
+#. Translators: the first %s is a bus name (eg, "USB") or
+#. * product name, the second is a device type (eg,
+#. * "Ethernet"). You can change this to something like
+#. * "%2$s (%1$s)" if there's no grammatical way to combine
+#. * the strings otherwise.
+#.
+#: ../src/libnm-gtk/nm-ui-utils.c:487 ../src/libnm-gtk/nm-ui-utils.c:507
+#, c-format
+msgctxt "long device name"
+msgid "%s %s"
+msgstr "%s %s"
+
+#: ../src/libnm-gtk/nm-ui-utils.c:620
+msgid "Store the password only for this user"
+msgstr ""
+
+#: ../src/libnm-gtk/nm-ui-utils.c:621
+msgid "Store the password for all users"
+msgstr ""
+
+#: ../src/libnm-gtk/nm-ui-utils.c:622
+#, fuzzy
+#| msgid "As_k for this password every time"
+msgid "Ask for this password every time"
+msgstr "_Seda parooli küsitakse iga kord"
+
+#: ../src/libnm-gtk/nm-ui-utils.c:623
+#, fuzzy
+#| msgid "A password is required to connect to '%s'."
+msgid "The password is not required"
+msgstr "Võrku '%s' ühendumiseks on vaja parooli."
+
+#: ../src/libnm-gtk/nm-vpn-password-dialog.c:102
+#, fuzzy
+#| msgid "_Password:"
+msgid "_Secondary Password:"
+msgstr "_Parool:"
+
+#: ../src/libnm-gtk/nm-vpn-password-dialog.c:105
+#, fuzzy
+#| msgid "_Password:"
+msgid "_Ternary Password:"
+msgstr "_Parool:"
+
+#: ../src/libnm-gtk/nm-vpn-password-dialog.c:250
+#, fuzzy
+#| msgid "Sho_w passwords"
+msgid "Sh_ow passwords"
+msgstr "_Näita paroole"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:144
+#, fuzzy
+#| msgid "Disconnect"
+msgid "Click to connect"
+msgstr "Katkesta ühendus"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:145
+msgid ""
+"Either a password is missing or the connection is invalid. In the latter "
+"case, you have to edit the connection with nm-connection-editor first"
+msgstr ""
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:468
+msgid "New..."
+msgstr "Uus..."
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:908
+msgctxt "Wifi/wired security"
+msgid "None"
+msgstr "Puudub"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1078
+msgid "C_reate"
+msgstr "_Loo"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1164
+#, c-format
+msgid ""
+"Passwords or encryption keys are required to access the Wi-Fi network '%s'."
+msgstr "Ligipääsuks Wi-Fi võrgule '%s' on vaja parooli või krüpteerimisvõtit."
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1166
+msgid "Wi-Fi Network Authentication Required"
+msgstr "Wi-Fi võrk nõuab salasõna"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1168
+msgid "Authentication required by Wi-Fi network"
+msgstr "Wi-Fi võrgu jaoks on vaja salasõna"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1173
+msgid "Create New Wi-Fi Network"
+msgstr "Uue Wi-Fi võrgu loomine"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1175
+msgid "New Wi-Fi network"
+msgstr "Uus Wi-Fi võrk"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1176
+msgid "Enter a name for the Wi-Fi network you wish to create."
+msgstr "Sisesta loodava Wi-Fi võrgu nimi."
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1178
+msgid "Connect to Hidden Wi-Fi Network"
+msgstr "Varjatud Wi-Fi võrku ühendumine"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1180
+msgid "Hidden Wi-Fi network"
+msgstr "Varjatud Wi-Fi võrk"
+
+#: ../src/libnm-gtk/nm-wifi-dialog.c:1181
+msgid ""
+"Enter the name and security details of the hidden Wi-Fi network you wish to "
+"connect to."
+msgstr "Sisesta varjatud Wi-Fi võrgu nimi ja parool."
+
+#: ../src/libnm-gtk/wifi.ui.h:2
+msgid "Wi-Fi _security:"
+msgstr "Wi-Fi _turvalisus:"
+
+#: ../src/libnm-gtk/wifi.ui.h:4
+msgid "C_onnection:"
+msgstr "Ü_hendus:"
+
+#: ../src/libnm-gtk/wifi.ui.h:5
+msgid "Wi-Fi _adapter:"
+msgstr "Wi-Fi _adapter:"
+
+#: ../src/main.c:73
+msgid "Usage:"
+msgstr "Kasutus:"
+
+#: ../src/main.c:75
+msgid ""
+"This program is a component of NetworkManager (https://wiki.gnome.org/"
+"Projects/NetworkManager/)."
+msgstr ""
+"See rakendus on võrguhalduri osa (https://wiki.gnome.org/Projects/"
+"NetworkManager/)."
+
+#: ../src/main.c:76
+msgid ""
+"It is not intended for command-line interaction but instead runs in the "
+"GNOME desktop environment."
+msgstr ""
+"See ei ole mõeldud käsurealt juhtimiseks, vaid GNOME töölauakeskkonnas "
+"kasutamiseks."
+
+#: ../src/mb-menu-item.c:56
+msgid "EVDO"
+msgstr "EVDO"
+
+#: ../src/mb-menu-item.c:60
+msgid "GPRS"
+msgstr "GPRS"
+
+#: ../src/mb-menu-item.c:62
+msgid "EDGE"
+msgstr "EDGE"
+
+#: ../src/mb-menu-item.c:64
+msgid "UMTS"
+msgstr "UMTS"
+
+#: ../src/mb-menu-item.c:66
+msgid "HSDPA"
+msgstr "HSDPA"
+
+#: ../src/mb-menu-item.c:68
+msgid "HSUPA"
+msgstr "HSUPA"
+
+#: ../src/mb-menu-item.c:70
+msgid "HSPA"
+msgstr "HSPA"
+
+#: ../src/mb-menu-item.c:72
+msgid "HSPA+"
+msgstr "HSPA+"
+
+#: ../src/mb-menu-item.c:76
+msgid "LTE"
+msgstr "LTE"
+
+#: ../src/mb-menu-item.c:112
+msgid "not enabled"
+msgstr "pole lubatud"
+
+#: ../src/mb-menu-item.c:118
+msgid "not registered"
+msgstr "pole registreeritud"
+
+#: ../src/mb-menu-item.c:136
+#, c-format
+msgid "Home network (%s)"
+msgstr "Koduvõrk (%s)"
+
+#: ../src/mb-menu-item.c:138
+#, c-format
+msgid "Home network"
+msgstr "Koduvõrk"
+
+#: ../src/mb-menu-item.c:146
+msgid "searching"
+msgstr "otsimine"
+
+#: ../src/mb-menu-item.c:149
+msgid "registration denied"
+msgstr "registreerimisest keelduti"
+
+#: ../src/mb-menu-item.c:154 ../src/mb-menu-item.c:160
+#, c-format
+msgid "%s (%s roaming)"
+msgstr "%s (%s roaming)"
+
+#: ../src/mb-menu-item.c:156 ../src/mb-menu-item.c:162
+#, c-format
+msgid "%s (roaming)"
+msgstr "%s (roaming)"
+
+# see ei ole päris õige tõlge, aga võib-olla kajastab potentsiaalselt suuremat kulukust rohkem
+#: ../src/mb-menu-item.c:165
+#, c-format
+msgid "Roaming network (%s)"
+msgstr "Välisriigi roaming-võrk (%s)"
+
+# see ei ole päris õige tõlge, aga võib-olla kajastab potentsiaalselt suuremat kulukust rohkem
+#: ../src/mb-menu-item.c:167
+#, c-format
+msgid "Roaming network"
+msgstr "Välisriigi roaming-võrk"
+
+#: ../src/mobile-helpers.c:327
+#, c-format
+msgid "PIN code for SIM card '%s' on '%s'"
+msgstr "'%s' SIM kaardi PIN kood seadmes '%s'"
+
+#: ../src/mobile-helpers.c:460
+msgid "PIN code required"
+msgstr "Vajalik on PIN-kood"
+
+#: ../src/mobile-helpers.c:468
+msgid "PIN code is needed for the mobile broadband device"
+msgstr "Mobiiliühenduse seadmele on vaja PIN-koodi"
+
+#. The %s is a mobile provider name, eg "T-Mobile"
+#: ../src/utils/utils.c:174
+#, c-format
+msgid "%s connection"
+msgstr "%s ühendus"
+
+#: ../src/wireless-security/eap-method.c:61
+msgid "undefined error in 802.1x security (wpa-eap)"
+msgstr ""
+
+#: ../src/wireless-security/eap-method.c:260
+msgid "unspecified error validating eap-method file"
+msgstr ""
+
+#: ../src/wireless-security/eap-method.c:437
+msgid "DER, PEM, or PKCS#12 private keys (*.der, *.pem, *.p12, *.key)"
+msgstr "DER, PEM või PKCS#12 privaatvõtmed (*.der, *.pem, *.p12, *.key)"
+
+#: ../src/wireless-security/eap-method.c:440
+msgid "DER or PEM certificates (*.der, *.pem, *.crt, *.cer)"
+msgstr "DER või PEM sertifikaadid (*.der, *.pem, *.crt, *.cer)"
+
+#: ../src/wireless-security/eap-method-fast.c:74
+msgid "missing EAP-FAST PAC file"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-fast.c:269
+#: ../src/wireless-security/eap-method-peap.c:306
+#: ../src/wireless-security/eap-method-ttls.c:337
+msgid "GTC"
+msgstr "GTC"
+
+#: ../src/wireless-security/eap-method-fast.c:407
+msgid "Choose a PAC file..."
+msgstr "PAC-faili lubamine..."
+
+#: ../src/wireless-security/eap-method-fast.c:414
+msgid "PAC files (*.pac)"
+msgstr "PAC failid (*.pac)"
+
+#: ../src/wireless-security/eap-method-fast.c:418
+msgid "All files"
+msgstr "Kõik failid"
+
+#: ../src/wireless-security/eap-method-fast.ui.h:2
+msgid "Anonymous"
+msgstr "Anonüümne"
+
+#: ../src/wireless-security/eap-method-fast.ui.h:3
+msgid "Authenticated"
+msgstr "Autenditud"
+
+#: ../src/wireless-security/eap-method-fast.ui.h:4
+msgid "Both"
+msgstr "Mõlemad"
+
+#: ../src/wireless-security/eap-method-fast.ui.h:5
+#: ../src/wireless-security/eap-method-peap.ui.h:5
+#: ../src/wireless-security/eap-method-ttls.ui.h:2
+msgid "Anony_mous identity:"
+msgstr "Anonüü_mne identiteet:"
+
+#: ../src/wireless-security/eap-method-fast.ui.h:6
+msgid "PAC _file:"
+msgstr "PAC _fail:"
+
+#: ../src/wireless-security/eap-method-fast.ui.h:7
+#: ../src/wireless-security/eap-method-peap.ui.h:8
+#: ../src/wireless-security/eap-method-ttls.ui.h:5
+msgid "_Inner authentication:"
+msgstr "_Sise-autentimine:"
+
+#: ../src/wireless-security/eap-method-fast.ui.h:8
+msgid "Allow automatic PAC pro_visioning"
+msgstr "Automaatsed _PAC-klauslid on lubatud"
+
+#: ../src/wireless-security/eap-method-leap.c:64
+msgid "missing EAP-LEAP username"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-leap.c:70
+msgid "missing EAP-LEAP password"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-peap.c:67
+#, c-format
+msgid "invalid EAP-PEAP CA certificate: %s"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-peap.c:72
+msgid "invalid EAP-PEAP CA ertificate: no certificate specified"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-peap.c:291
+#: ../src/wireless-security/eap-method-ttls.c:322
+#: ../src/wireless-security/wireless-security.c:434
+msgid "MD5"
+msgstr "MD5"
+
+#: ../src/wireless-security/eap-method-peap.c:385
+#: ../src/wireless-security/eap-method-tls.c:485
+#: ../src/wireless-security/eap-method-ttls.c:416
+msgid "Choose a Certificate Authority certificate..."
+msgstr "Vali sertifitseerimiskeskuse sertifikaadifail..."
+
+#: ../src/wireless-security/eap-method-peap.ui.h:3
+msgid "Version 0"
+msgstr "Versioon 0"
+
+#: ../src/wireless-security/eap-method-peap.ui.h:4
+msgid "Version 1"
+msgstr "Versioon 1"
+
+#: ../src/wireless-security/eap-method-peap.ui.h:6
+#: ../src/wireless-security/eap-method-tls.ui.h:3
+#: ../src/wireless-security/eap-method-ttls.ui.h:3
+msgid "C_A certificate:"
+msgstr "Sertifitseerimis_keskuse sert:"
+
+#: ../src/wireless-security/eap-method-peap.ui.h:7
+#: ../src/wireless-security/eap-method-tls.ui.h:4
+#: ../src/wireless-security/eap-method-ttls.ui.h:4
+#, fuzzy
+#| msgid "Ignore CA certificate"
+msgid "No CA certificate is _required"
+msgstr "Sertifitseerimiskeskuse sertifikaadi eiramine"
+
+#: ../src/wireless-security/eap-method-peap.ui.h:9
+msgid "PEAP _version:"
+msgstr "PEAP _versioon:"
+
+#: ../src/wireless-security/eap-method-simple.c:74
+msgid "missing EAP username"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-simple.c:84
+msgid "missing EAP password"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-tls.c:70
+msgid "missing EAP-TLS identity"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-tls.c:75
+#, fuzzy, c-format
+#| msgid "C_A certificate:"
+msgid "invalid EAP-TLS CA certificate: %s"
+msgstr "Sertifitseerimis_keskuse sert:"
+
+#: ../src/wireless-security/eap-method-tls.c:80
+msgid "invalid EAP-TLS CA certificate: no certificate specified"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-tls.c:88
+msgid "invalid EAP-TLS password: missing"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-tls.c:98
+#, c-format
+msgid "invalid EAP-TLS private-key: %s"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-tls.c:105
+#, c-format
+msgid "invalid EAP-TLS user-certificate: %s"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-tls.c:300
+msgid "Unencrypted private keys are insecure"
+msgstr "Krüpteerimata privaatvõtmed pole turvalised"
+
+#: ../src/wireless-security/eap-method-tls.c:303
+msgid ""
+"The selected private key does not appear to be protected by a password.  "
+"This could allow your security credentials to be compromised.  Please select "
+"a password-protected private key.\n"
+"\n"
+"(You can password-protect your private key with openssl)"
+msgstr ""
+"Tundub, et valitud privaatvõti ei ole parooliga kaitstud. Seetõttu võivad "
+"turvatunnused olla ohus. Palun kasuta parooliga kaitstud privaatvõtit.\n"
+"\n"
+"(Privaatvõtme saab parooliga kaitsta openssl-i abil)"
+
+#: ../src/wireless-security/eap-method-tls.c:479
+msgid "Choose your personal certificate..."
+msgstr "Vali privaatsertifikaadi fail..."
+
+#: ../src/wireless-security/eap-method-tls.c:491
+msgid "Choose your private key..."
+msgstr "Vali privaatvõtme fail..."
+
+#: ../src/wireless-security/eap-method-tls.ui.h:1
+msgid "I_dentity:"
+msgstr "I_dentiteet:"
+
+#: ../src/wireless-security/eap-method-tls.ui.h:2
+msgid "_User certificate:"
+msgstr "_Kasutaja sertifikaart:"
+
+#: ../src/wireless-security/eap-method-tls.ui.h:5
+msgid "Private _key:"
+msgstr "Privaat_võti:"
+
+#: ../src/wireless-security/eap-method-tls.ui.h:6
+msgid "_Private key password:"
+msgstr "_Privaatvõtme parool:"
+
+#: ../src/wireless-security/eap-method-ttls.c:67
+#, c-format
+msgid "invalid EAP-TTLS CA certificate: %s"
+msgstr ""
+
+#: ../src/wireless-security/eap-method-ttls.c:72
+msgid "invalid EAP-TTLS CA certificate: no certificate specified"
+msgstr ""
+
+#: ../src/wireless-security/wireless-security.c:82
+msgid "Unknown error validating 802.1x security"
+msgstr ""
+
+#: ../src/wireless-security/wireless-security.c:446
+msgid "TLS"
+msgstr "TLS"
+
+#: ../src/wireless-security/wireless-security.c:470
+msgid "PWD"
+msgstr ""
+
+#: ../src/wireless-security/wireless-security.c:481
+msgid "FAST"
+msgstr "FAST"
+
+#: ../src/wireless-security/wireless-security.c:492
+msgid "Tunneled TLS"
+msgstr "Tunnelis TLS"
+
+#: ../src/wireless-security/wireless-security.c:503
+msgid "Protected EAP (PEAP)"
+msgstr "Kaitstud EAP (PEAP)"
+
+#: ../src/wireless-security/ws-dynamic-wep.ui.h:2
+#: ../src/wireless-security/ws-wep-key.ui.h:9
+#: ../src/wireless-security/ws-wpa-eap.ui.h:2
+msgid "Au_thentication:"
+msgstr "_Autentimine:"
+
+#: ../src/wireless-security/ws-leap.c:62
+msgid "missing leap-username"
+msgstr ""
+
+#: ../src/wireless-security/ws-leap.c:70
+msgid "missing leap-password"
+msgstr ""
+
+#: ../src/wireless-security/ws-wep-key.c:108
+msgid "missing wep-key"
+msgstr ""
+
+#: ../src/wireless-security/ws-wep-key.c:116
+#, c-format
+msgid "invalid wep-key: key with a length of %zu must contain only hex-digits"
+msgstr ""
+
+#: ../src/wireless-security/ws-wep-key.c:123
+#, c-format
+msgid ""
+"invalid wep-key: key with a length of %zu must contain only ascii characters"
+msgstr ""
+
+#: ../src/wireless-security/ws-wep-key.c:128
+#, c-format
+msgid ""
+"invalid wep-key: wrong key length %zu. A key must be either of length 5/13 "
+"(ascii) or 10/26 (hex)"
+msgstr ""
+
+#: ../src/wireless-security/ws-wep-key.c:134
+msgid "invalid wep-key: passphrase must be non-empty"
+msgstr ""
+
+#: ../src/wireless-security/ws-wep-key.c:136
+msgid "invalid wep-key: passphrase must be shorter then 64 characters"
+msgstr ""
+
+#: ../src/wireless-security/ws-wep-key.ui.h:1
+msgid "1 (Default)"
+msgstr "1 (vaikimisi)"
+
+#: ../src/wireless-security/ws-wep-key.ui.h:5
+msgid "Open System"
+msgstr "Avatud süsteem"
+
+#: ../src/wireless-security/ws-wep-key.ui.h:6
+msgid "Shared Key"
+msgstr "Jagatud võti"
+
+#: ../src/wireless-security/ws-wep-key.ui.h:7
+msgid "_Key:"
+msgstr "_Võti:"
+
+#: ../src/wireless-security/ws-wep-key.ui.h:8
+msgid "Sho_w key"
+msgstr "_Näita võtit"
+
+#: ../src/wireless-security/ws-wep-key.ui.h:10
+msgid "WEP inde_x:"
+msgstr "WEP inde_ks:"
+
+#: ../src/wireless-security/ws-wpa-psk.c:70
+#, c-format
+msgid ""
+"invalid wpa-psk: invalid key-length %zu. Must be [8,63] bytes or 64 hex "
+"digits"
+msgstr ""
+
+#: ../src/wireless-security/ws-wpa-psk.c:78
+msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
+msgstr ""
+
+#: ../src/wireless-security/ws-wpa-psk.ui.h:2
+msgid "_Type:"
+msgstr "_Liik:"
+
+#~ msgid "Secondary DNS:"
+#~ msgstr "Teisene DNS:"
+
+#~ msgid "Ternary DNS:"
+#~ msgstr "Kolmas DNS:"
+
+#~ msgid "_Mode:"
+#~ msgstr "_Režiim:"
+
+#~ msgid "Yes"
+#~ msgstr "Jah"
+
+#~ msgid "Only on activation"
+#~ msgstr "Ainult aktiveerumisel"
+
+#~ msgid "No"
+#~ msgstr "Ei"
+
+#~ msgid "_Device MAC address:"
+#~ msgstr "_Seadme MAC-aadress:"
+
+#~ msgid "Carrier de_tect:"
+#~ msgstr "Operaatori _tuvastus:"
+
+#~ msgid "Any"
+#~ msgstr "Suvaline"
+
+#~ msgid "3G (UMTS/HSPA)"
+#~ msgstr "3G (UMTS/HSPA)"
+
+#~ msgid "2G (GPRS/EDGE)"
+#~ msgstr "2G (GPRS/EDGE)"
+
+#~ msgid "Prefer 3G (UMTS/HSPA)"
+#~ msgstr "Eelista 3G (UMTS/HSPA)"
+
+#~ msgid "Prefer 2G (GPRS/EDGE)"
+#~ msgstr "Eelista 2G (GPRS/EDGE)"
+
+#~ msgid "Prefer 4G (LTE)"
+#~ msgstr "Eelistatakse 4G ühendust (LTE)"
+
+#~ msgid "Use only 4G (LTE)"
+#~ msgstr "Kasutatakse ainult 4G ühendust (LTE)"
+
+#~ msgid "Infrastructure"
+#~ msgstr "Infrastruktuur"
+
+#~ msgid "_Save..."
+#~ msgstr "_Salvesta..."
+
+#~ msgid "_Edit..."
+#~ msgstr "_Muuda..."
+
+#~ msgid "_Delete..."
+#~ msgstr "_Kustuta..."
+
+#~ msgid "Automatic (PPP)"
+#~ msgstr "Automaatne (PPP)"
+
+#~ msgid "Automatic (PPP) addresses only"
+#~ msgstr "Automaatselt (PPP) ainult aadressid"
+
+#~ msgid "unknown modem type."
+#~ msgstr "tundmatu modemi liik."
+
+#~ msgid "No Certificate Authority certificate chosen"
+#~ msgstr "Ühtki sertifitseerimiskeskuse sertifikaadifaili pole valitud"
+
+#~ msgid ""
+#~ "Not using a Certificate Authority (CA) certificate can result in "
+#~ "connections to insecure, rogue Wi-Fi networks.  Would you like to choose "
+#~ "a Certificate Authority certificate?"
+#~ msgstr ""
+#~ "Sertifitseerimiskeskuse (CA) sertifikaadi mittekasutamine võib põhjustada "
+#~ "ühendumise ebaturvalistesse, kuritegelikesse Wi-Fi võrkudesse. Kas sa "
+#~ "valiksid siiski sertifitseerimiskeskuse sertifikaadi?"
+
+#~ msgid "Choose CA Certificate"
+#~ msgstr "Vali sertifitseerimiskeskuse sertifikaat"
+
+#~ msgid "Don't _warn me again"
+#~ msgstr "Ära enam _hoiata"
+
+#~ msgid "Connect _automatically"
+#~ msgstr "_Automaatne ühendumine"
+
+#~ msgid "A_vailable to all users"
+#~ msgstr "_Saadaval kõigile kasutajatele"
