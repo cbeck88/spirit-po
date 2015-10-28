@@ -10,7 +10,8 @@ addons:
     sources:
     - ubuntu-toolchain-r-test
     - boost-latest
-    - kubuntu-backports
+    - george-edison55-precise-backports
+    # - kubuntu-backports
     # ^ for cmake
     packages:
     - gcc-4.9
