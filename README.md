@@ -27,7 +27,7 @@ of parsing po files rather than mo files at run-time, is provided
 
 ## Licensing and Distribution
 
-**spirit-po** is free software available under the Boost software license.
+**spirit-po** is open-source software available under the Boost software license.
 
 ## Dependencies
 
