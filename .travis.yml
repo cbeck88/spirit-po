@@ -9,7 +9,7 @@ addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
-    - boost-latest/ppa
+    - ppa:boost-latest/ppa
     packages:
     - gcc-4.9
     - g++-4.9
@@ -19,4 +19,5 @@ addons:
     - libboost-all-dev
 script:
   - cd test && ./test.sh
+  - cd ..
   - cd test_libintl && ./test.sh
