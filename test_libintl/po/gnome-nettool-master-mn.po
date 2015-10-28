@@ -1,0 +1,1115 @@
+# translation of mntranslate.po to Mongolian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Sanlig Badral <badral@openmn.org>, 2004.
+# Batbileg <sbatbileg@yahoo.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mntranslate\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"nettool&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-27 21:22+0000\n"
+"PO-Revision-Date: 2004-12-10 14:44+0100\n"
+"Last-Translator: Sanlig Badral <badral@openmn.org>\n"
+"Language-Team: Mongolian <openmn-translation@lists.sf.net>\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Mongolian\n"
+"X-Poedit-Country: MONGOLIA\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: ../src/callbacks.c:332
+#, fuzzy
+msgid "translator-credits"
+msgstr "Цагаан овогт Сугарын Батбилэг"
+
+#. Translators: %s is the name of the copyright holder
+#: ../src/callbacks.c:339
+#, c-format
+msgid "Copyright © 2003-2008 %s"
+msgstr ""
+
+#. Dear translator: This is the name of the application
+#: ../src/callbacks.c:343 ../src/callbacks.c:344
+#: ../data/gnome-nettool.desktop.in.in.h:1
+msgid "Network Tools"
+msgstr "Мэдээллийн Хэрэгслүүд"
+
+#: ../src/callbacks.c:346
+msgid "Graphical user interface for common network utilities"
+msgstr "Сүлжээний нийтлэг хэрэгслийн график орчин"
+
+#: ../src/callbacks.c:458 ../src/main.c:142 ../src/nettool.c:524
+msgid "Idle"
+msgstr ""
+
+#. Dear Translator: This is the Window Title. 'Network Tools' is the
+#. * name of the application
+#: ../src/callbacks.c:463
+#, fuzzy, c-format
+#| msgid "Network Tools"
+msgid "%s - Network Tools"
+msgstr "Мэдээллийн Хэрэгслүүд"
+
+#: ../src/callbacks.c:487
+msgid "Unable to open help file"
+msgstr ""
+
+#: ../data/gnome-nettool.desktop.in.in.h:2
+#, fuzzy
+#| msgid "Load information for a network device"
+msgid "View information about your network"
+msgstr "Сүлжээний төхөөрөмжид мэдээллийг ачаалах"
+
+#: ../data/gnome-nettool.desktop.in.in.h:3
+msgid "network;monitor;remote;"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:1
+msgid "Historically used hostnames"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:2
+msgid "A list of hostnames previously used"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:3
+msgid "Historically used usernames"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:4
+msgid "A list of usernames previously used"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:5
+msgid "Historically used domains"
+msgstr ""
+
+#: ../data/org.gnome.gnome-nettool.gschema.xml.in.h:6
+msgid "A list of domains previously used"
+msgstr ""
+
+# ?
+#: ../data/gnome-nettool.ui.h:1
+msgid "Host"
+msgstr "Хост"
+
+#: ../data/gnome-nettool.ui.h:2
+msgid "User"
+msgstr "Хэрэглэгч"
+
+#: ../data/gnome-nettool.ui.h:3
+msgid "_Tool"
+msgstr "_Хэрэгсэл"
+
+#: ../data/gnome-nettool.ui.h:4
+msgid "Beep on ping"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:5
+msgid "_Edit"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:6
+msgid "Copy as text _report"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:7
+msgid "Clear _History"
+msgstr "_Түүх устгах"
+
+#: ../data/gnome-nettool.ui.h:8
+msgid "_Help"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:9
+msgid "_Contents"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:10
+#, fuzzy
+msgid "Devices - Network Tools"
+msgstr "Мэдээллийн Хэрэгслүүд"
+
+#: ../data/gnome-nettool.ui.h:11
+msgid "_Network device:"
+msgstr "__Сүлжээний төхөөрөмж:"
+
+#: ../data/gnome-nettool.ui.h:12
+msgid "_Configure"
+msgstr "_Тохиргоо"
+
+#: ../data/gnome-nettool.ui.h:13
+msgid "IP Information"
+msgstr "IP мэдээлэл"
+
+#: ../data/gnome-nettool.ui.h:14
+msgid "Hardware address:"
+msgstr "Төхөөрөмжийн хаяг:"
+
+#: ../data/gnome-nettool.ui.h:15
+msgid "Multicast:"
+msgstr "Мултикаст:"
+
+# Хамгийн их дамжуулах багц
+#: ../data/gnome-nettool.ui.h:16
+msgid "MTU:"
+msgstr "ХИДБ :"
+
+#: ../data/gnome-nettool.ui.h:17
+msgid "Link speed:"
+msgstr "Холболтын хурд :"
+
+#: ../data/gnome-nettool.ui.h:18
+msgid "State:"
+msgstr "Төлөв:"
+
+#: ../data/gnome-nettool.ui.h:19
+msgid "Not Available"
+msgstr "Боломжгүй"
+
+#: ../data/gnome-nettool.ui.h:20
+msgid "Interface Information"
+msgstr "Холболтын мэдээлэл"
+
+#: ../data/gnome-nettool.ui.h:21
+msgid "Transmitted bytes:"
+msgstr "Дамжуулсан байт:"
+
+#: ../data/gnome-nettool.ui.h:22
+msgid "Received bytes:"
+msgstr "Хүлээн авсан байтууд:"
+
+#: ../data/gnome-nettool.ui.h:23
+msgid "Transmission errors:"
+msgstr "Дамжуулалтын алдаа:"
+
+#: ../data/gnome-nettool.ui.h:24
+msgid "Transmitted packets:"
+msgstr "Дамжуулсан багц:"
+
+#: ../data/gnome-nettool.ui.h:25
+msgid "Received packets:"
+msgstr "Хүлээн авсан багц:"
+
+#: ../data/gnome-nettool.ui.h:26
+msgid "Reception errors:"
+msgstr "Хүлээн авалтын алдаа:"
+
+#: ../data/gnome-nettool.ui.h:27
+msgid "Collisions:"
+msgstr "Зөрчил:"
+
+#: ../data/gnome-nettool.ui.h:28
+msgid "Interface Statistics"
+msgstr "Холболтын статистик"
+
+#: ../data/gnome-nettool.ui.h:29
+msgid "Devices"
+msgstr "Төхөөрөмжүүд"
+
+#: ../data/gnome-nettool.ui.h:30
+msgid "Only"
+msgstr "Зөвхөн"
+
+#: ../data/gnome-nettool.ui.h:31
+msgid "requests"
+msgstr "хүсэлтүүд"
+
+#: ../data/gnome-nettool.ui.h:32
+msgid "Unlimited requests"
+msgstr "Хязгааргүй хүсэлт"
+
+#: ../data/gnome-nettool.ui.h:33
+msgid "Send:"
+msgstr "Илгээх:"
+
+#: ../data/gnome-nettool.ui.h:34
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to ping.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to ping. For example: www.domain.com or 192.168.2.1"
+msgstr ""
+"Пин илгээх сүлжээний хаягаа оруулна уу.\n"
+"Жишээ: www.domain.com эсвэл 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:35
+#, fuzzy
+#| msgid "_Network address:"
+msgid "Network address"
+msgstr "_Сүлжээний хаяг:"
+
+#: ../data/gnome-nettool.ui.h:36
+msgid "_Network address:"
+msgstr "_Сүлжээний хаяг:"
+
+#: ../data/gnome-nettool.ui.h:37 ../src/main.c:290
+msgid "Ping"
+msgstr "Пин"
+
+#: ../data/gnome-nettool.ui.h:38
+msgid "0.0"
+msgstr "0.0"
+
+#: ../data/gnome-nettool.ui.h:39
+msgid "ms"
+msgstr "милсекунд"
+
+#: ../data/gnome-nettool.ui.h:40
+msgid "Maximum:"
+msgstr "Хамгийн их :"
+
+#: ../data/gnome-nettool.ui.h:41
+msgid "Average:"
+msgstr "Дундаж:"
+
+#: ../data/gnome-nettool.ui.h:42
+msgid "Minimum:"
+msgstr "Хамгийн бага :"
+
+#: ../data/gnome-nettool.ui.h:43
+msgid "Round Trip Time Statistics"
+msgstr "Хугацааны статистик"
+
+#: ../data/gnome-nettool.ui.h:44
+msgid "Packets transmitted:"
+msgstr "Илгээсэн багц:"
+
+#: ../data/gnome-nettool.ui.h:46
+#, no-c-format
+msgid "0%"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:47
+msgid "0"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:48
+#, fuzzy
+#| msgid "Received packets:"
+msgid "Successful packets:"
+msgstr "Хүлээн авсан багц:"
+
+#: ../data/gnome-nettool.ui.h:49
+msgid "Packets received:"
+msgstr "Хүлээн авсан багц:"
+
+#: ../data/gnome-nettool.ui.h:50
+msgid "Transmission Statistics"
+msgstr "Дамжуулалтын статистик"
+
+#: ../data/gnome-nettool.ui.h:51
+msgid "Details"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:52
+msgid "Display:"
+msgstr "Дэлгэц:"
+
+#: ../data/gnome-nettool.ui.h:53
+msgid "Routing Table Information"
+msgstr "Дамжуулалтын хүснэгтийн мэдээлэл"
+
+#: ../data/gnome-nettool.ui.h:54
+msgid "Active Network Services"
+msgstr "Идэвхтэй сүлжээний үйлчилгээ"
+
+#: ../data/gnome-nettool.ui.h:55
+msgid "Multicast Information"
+msgstr "Мултикастийн мэдээлэл"
+
+#: ../data/gnome-nettool.ui.h:56 ../src/main.c:444
+msgid "Netstat"
+msgstr "Нэтстат"
+
+#: ../data/gnome-nettool.ui.h:57
+msgid "Output for net stat"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:58
+#, fuzzy
+#| msgid "Netstat"
+msgid "Netstat output"
+msgstr "Нэтстат"
+
+#: ../data/gnome-nettool.ui.h:59
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to trace a route to.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to trace a path to. For example: www.domain.com or "
+"192.168.2.1"
+msgstr ""
+"Мөрдлөг явуулах сүлжээний хаягаа оруулна уу.\n"
+"Жишээ: www.domain.com эсвэл 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:60 ../src/main.c:375
+msgid "Trace"
+msgstr "Мөрдлөг"
+
+#: ../data/gnome-nettool.ui.h:61
+msgid "Output for traceroute"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:62
+#, fuzzy
+#| msgid "Traceroute"
+msgid "Traceroute output"
+msgstr "Зам мөрдөх"
+
+#: ../data/gnome-nettool.ui.h:63
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to trace a route to.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to trace a route to. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"Мөрдлөг явуулах сүлжээний хаягаа оруулна уу.\n"
+"Жишээ: www.domain.com эсвэл 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:64
+msgid "Traceroute"
+msgstr "Зам мөрдөх"
+
+#: ../data/gnome-nettool.ui.h:65
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to scan for open ports.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter the network address to scan for open ports. For example: www.domain."
+"com or 192.168.2.1"
+msgstr ""
+"Нээлттэй суваг хайх хаягаа оруулна уу.\n"
+"Жишээ: www.domain.com эсвэл 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:66 ../src/main.c:615
+msgid "Scan"
+msgstr "Хайх"
+
+#: ../data/gnome-nettool.ui.h:67
+msgid "Output for port scan"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:68
+#, fuzzy
+#| msgid "Port Scan"
+msgid "Port scan output"
+msgstr "Порт хайлт"
+
+#: ../data/gnome-nettool.ui.h:69
+msgid "Port Scan"
+msgstr "Порт хайлт"
+
+#: ../data/gnome-nettool.ui.h:70
+msgid "_Information type:"
+msgstr "_Мэдээллийн төрөл:"
+
+#: ../data/gnome-nettool.ui.h:71
+#, fuzzy
+#| msgid ""
+#| "Enter the network address to lookup.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid "Enter the domain to lookup. For example: domain.com or ftp.domain.com."
+msgstr ""
+"Хайх сүлжээний хаягаа оруулна уу.\n"
+"Жишээ: www.domain.com эсвэл 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:72 ../src/main.c:733
+msgid "Lookup"
+msgstr "Хайлт"
+
+#: ../data/gnome-nettool.ui.h:73
+msgid "Output for lookup"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:74
+#, fuzzy
+#| msgid "Lookup"
+msgid "Lookup output"
+msgstr "Хайлт"
+
+#: ../data/gnome-nettool.ui.h:75
+#, fuzzy
+msgid ""
+"Enter the network address to finger that user. For example: www.domain.com "
+"or 192.168.2.1"
+msgstr ""
+"\"Finger\"-дэх хэрэглэгчийн сүлжээний хаягийг оруул.\n"
+"Жишээ нь: www.domain.com or 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:76
+#, fuzzy
+#| msgid "Enter the user to finger."
+msgid "Enter the user to finger"
+msgstr "\"Finger\" тушаал ажиллуулах хэрэглэгч оруул"
+
+#: ../data/gnome-nettool.ui.h:77
+#, fuzzy
+#| msgid "_Username:"
+msgid "User name"
+msgstr "Хэрэглэгчийн нэр:"
+
+#: ../data/gnome-nettool.ui.h:78
+msgid "_Username:"
+msgstr "Хэрэглэгчийн нэр:"
+
+#: ../data/gnome-nettool.ui.h:79 ../src/main.c:811
+msgid "Finger"
+msgstr "Finger"
+
+#: ../data/gnome-nettool.ui.h:80
+msgid "Output for finger"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:81
+#, fuzzy
+#| msgid "Finger"
+msgid "Finger output"
+msgstr "Finger"
+
+#: ../data/gnome-nettool.ui.h:82
+msgid "_Domain address:"
+msgstr "_Домэйн хаяг:"
+
+#: ../data/gnome-nettool.ui.h:83
+#, fuzzy
+#| msgid ""
+#| "Enter a domain address to lookup its whois information.\n"
+#| "For example: www.domain.com or 192.168.2.1"
+msgid ""
+"Enter a domain address to lookup its whois information. For example: www."
+"domain.com or 192.168.2.1"
+msgstr ""
+"Хэн мэдээллийг авах хэрэглэгчийн домэйнээ оруулна уу.\n"
+"Жишээ: www.domain.com эсвэл 192.168.2.1"
+
+#: ../data/gnome-nettool.ui.h:84
+#, fuzzy
+#| msgid "_Domain address:"
+msgid "Domain address"
+msgstr "_Домэйн хаяг:"
+
+#: ../data/gnome-nettool.ui.h:85 ../src/main.c:915
+msgid "Whois"
+msgstr "Хэн"
+
+#: ../data/gnome-nettool.ui.h:86
+msgid "Output for whois"
+msgstr ""
+
+#: ../data/gnome-nettool.ui.h:87
+msgid "Whois output"
+msgstr ""
+
+#. Interface Name                 Interface Type           icon          Device prefix  Pixbuf
+#: ../src/info.c:60
+msgid "Other type"
+msgstr "Бусад төрөл"
+
+#: ../src/info.c:61
+msgid "Ethernet Interface"
+msgstr "Итернэт холбоос"
+
+#: ../src/info.c:62
+msgid "Wireless Interface"
+msgstr "Утасгүй холболт"
+
+#: ../src/info.c:63
+msgid "Modem Interface"
+msgstr "Модем холболт"
+
+#: ../src/info.c:64
+msgid "Parallel Line Interface"
+msgstr "Зэрэгцээ шугамын холболт"
+
+#: ../src/info.c:65
+msgid "Infrared Interface"
+msgstr "Инфра холболт"
+
+#: ../src/info.c:66
+msgid "Loopback Interface"
+msgstr "Гогцоо холболт"
+
+#: ../src/info.c:67
+msgid "Unknown Interface"
+msgstr "Үл мэдэгдэх холболт"
+
+#: ../src/info.c:165
+msgid "Network Devices Not Found"
+msgstr "Сүлжээний төхөөрөмж олдсонгүй"
+
+#: ../src/info.c:396 ../src/info.c:399
+msgid "Unknown"
+msgstr "Тодорхой бус"
+
+#: ../src/info.c:471
+msgid "Active"
+msgstr "Идэвхжсэн"
+
+#: ../src/info.c:473
+msgid "Inactive"
+msgstr "Идэвхжээгүй"
+
+#: ../src/info.c:478
+msgid "Loopback"
+msgstr "Гогцоо"
+
+#: ../src/info.c:489
+msgid "Enabled"
+msgstr "Зөвшөөрөгдсөн"
+
+#: ../src/info.c:491
+msgid "Disabled"
+msgstr "Зөвшөөрөгдөөгүй"
+
+#. The info output in a text format (to copy on clipboard)
+#: ../src/info.c:580
+#, c-format
+msgid "Network device:\t%s\n"
+msgstr "Сүлжээний төхөөрөмж :\t%s\n"
+
+#: ../src/info.c:581
+#, c-format
+msgid "Hardware address:\t%s\n"
+msgstr "Төхөөрөмжийн хаяг:\t%s\n"
+
+#: ../src/info.c:582
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr "Multicast:\t%s\n"
+
+#: ../src/info.c:583
+#, c-format
+msgid "MTU:\t%s\n"
+msgstr "MTU:\t%s\n"
+
+#: ../src/info.c:584
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr "Шугамын хурд:\t%s\n"
+
+#: ../src/info.c:585
+#, c-format
+msgid "State:\t%s\n"
+msgstr "Төлөв:\t%s\n"
+
+#: ../src/info.c:587
+#, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr "Дамжуулсан багц:\t%s\n"
+
+#: ../src/info.c:588
+#, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Дамжуулалтын алдаа:\t%s\n"
+
+#: ../src/info.c:589
+#, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Хүлээн авсан багц:\t%s\n"
+
+#: ../src/info.c:590
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr "Хүлээн авалтын алдаа:\t%s\n"
+
+#: ../src/info.c:591
+#, c-format
+msgid "Collisions:\t%s\n"
+msgstr "Мөргөлдөөн:\t%s\n"
+
+#: ../src/info.h:23
+msgid "not available"
+msgstr "боломжгүй"
+
+#: ../src/lookup.c:85
+#, c-format
+msgid "Looking up %s"
+msgstr "%s г хайж байна "
+
+#: ../src/lookup.c:279
+msgid "Name"
+msgstr "Нэр"
+
+#. Time To Live of a hostname in a name server
+#: ../src/lookup.c:288
+msgid "TTL"
+msgstr "TTL"
+
+#: ../src/lookup.c:297
+msgid "Address Type"
+msgstr "Хаягийн төрөл"
+
+#: ../src/lookup.c:307
+msgid "Record Type"
+msgstr "Бичлэгийн төрөл"
+
+#: ../src/lookup.c:316
+msgid "Address"
+msgstr "Хаяг"
+
+# ялгарал
+#. The lookup output in text format:
+#. Source of query (hostname/ip address),
+#. Time To Live (TTL), Address Type,
+#. Record Type (A, PTR, HINFO, NS, TXT, etc.),
+#. Resolution (results of the query)
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/lookup.c:344
+msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
+msgstr "Эх\tTTL\tХаягийн төрөл\tБичлэгийн төрөл1\tЯлгарал\n"
+
+#: ../src/main.c:82
+msgid "Load information for a network device"
+msgstr "Сүлжээний төхөөрөмжид мэдээллийг ачаалах"
+
+#: ../src/main.c:83
+msgid "DEVICE"
+msgstr "ТӨХӨӨРӨМЖ"
+
+#: ../src/main.c:86
+msgid "Send a ping to a network address"
+msgstr "Сүлжээний хаяг руу пин илгээх"
+
+#: ../src/main.c:87 ../src/main.c:95 ../src/main.c:99 ../src/main.c:103
+msgid "HOST"
+msgstr "Хост"
+
+#: ../src/main.c:90
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr "Нэтстат мэдээлэл авах. Зөв хувилбарууд нь: route, active, multicast."
+
+#: ../src/main.c:91
+msgid "COMMAND"
+msgstr "ТУШААЛ"
+
+#: ../src/main.c:94
+msgid "Trace a route to a network address"
+msgstr "Сүлжээний хаягт хүрэх замыг мөрдөх"
+
+# Эсвэл сүлжээний хаягийн сувгийг хайх
+#: ../src/main.c:98
+msgid "Port scan a network address"
+msgstr "Сүлжээний хаягт хүрэх сувгийг хайх"
+
+#: ../src/main.c:102
+msgid "Look up a network address"
+msgstr "Сүлжээний хаягийг хайх"
+
+#: ../src/main.c:106
+msgid "Finger command to run"
+msgstr "\"Finger\" тушаал ажиллуулах"
+
+#: ../src/main.c:107
+msgid "USER"
+msgstr "ХЭРЭГЛЭГЧ"
+
+#: ../src/main.c:110
+msgid "Perform a whois lookup for a network domain"
+msgstr "Сүлжээний домэйний хэн хайлт хийх"
+
+#: ../src/main.c:111
+msgid "DOMAIN"
+msgstr "ДОМЭЙН"
+
+#: ../src/main.c:130
+#, fuzzy, c-format
+msgid ""
+"The file %s doesn't exist, please check if gnome-nettool is correctly "
+"installed"
+msgstr "%s файл олдсонгүй.Gnome-netinfo зөв суусан эсэхийг шалгана уу"
+
+#: ../src/main.c:478 ../src/netstat.c:464
+msgid "Protocol"
+msgstr "Протокол"
+
+#: ../src/main.c:485
+msgid "IP Address"
+msgstr "IP Хаяг"
+
+# PRefix
+#: ../src/main.c:492
+msgid "Netmask / Prefix"
+msgstr "Баг хаяг / Угтвар"
+
+#: ../src/main.c:499
+msgid "Broadcast"
+msgstr "Broadcast"
+
+#: ../src/main.c:506
+msgid "Scope"
+msgstr "Хүрээ"
+
+#: ../src/main.c:665
+#, fuzzy
+#| msgid "Multicast Information"
+msgid "Default Information"
+msgstr "Мултикастийн мэдээлэл"
+
+#: ../src/main.c:666
+#, fuzzy
+#| msgid "IP Address"
+msgid "Internet Address"
+msgstr "IP Хаяг"
+
+#: ../src/main.c:667
+msgid "Canonical Name"
+msgstr ""
+
+#: ../src/main.c:668
+msgid "CPU / OS Type"
+msgstr ""
+
+#. When asking for MX record in DNS context
+#: ../src/main.c:670
+msgid "Mailbox Exchange"
+msgstr ""
+
+#: ../src/main.c:671
+#, fuzzy
+#| msgid "IP Information"
+msgid "Mailbox Information"
+msgstr "IP мэдээлэл"
+
+#. When asking for NS record in DNS context
+#: ../src/main.c:673
+msgid "Name Server"
+msgstr ""
+
+# Эсвэл сүлжээний хаягийн сувгийг хайх
+#: ../src/main.c:674
+#, fuzzy
+#| msgid "Port scan a network address"
+msgid "Host name for Address"
+msgstr "Сүлжээний хаягт хүрэх сувгийг хайх"
+
+#. When asking for SOA record in DNS context.
+#. It defines which server is the primary nameserver
+#. for a domain
+#: ../src/main.c:678
+msgid "Start of Authority"
+msgstr ""
+
+#: ../src/main.c:679
+#, fuzzy
+#| msgid "IP Information"
+msgid "Text Information"
+msgstr "IP мэдээлэл"
+
+#: ../src/main.c:680
+msgid "Well Known Services"
+msgstr ""
+
+#: ../src/main.c:681
+#, fuzzy
+#| msgid "IP Information"
+msgid "Any / All Information"
+msgstr "IP мэдээлэл"
+
+#: ../src/netstat.c:134
+msgid "Getting routing table"
+msgstr "Дамжуулалтын хүснэгт байгуулж байна"
+
+#: ../src/netstat.c:149
+msgid "Getting active Internet connections"
+msgstr "Идэвхтэй интернэт холболт хайж байна"
+
+# ?
+#: ../src/netstat.c:158
+msgid "Getting group memberships"
+msgstr "Груп гишүүнчлэл хайж байна"
+
+#: ../src/netstat.c:471
+msgid "IP Source"
+msgstr "IP эх үүсвэр"
+
+#: ../src/netstat.c:479
+msgid "Port/Service"
+msgstr "Суваг/ Үйлчилгээ"
+
+#: ../src/netstat.c:487 ../src/scan.c:213
+msgid "State"
+msgstr "Төлөв"
+
+# prefix
+#: ../src/netstat.c:640
+msgid "Destination/Prefix"
+msgstr "Чиглэл/Угтвар"
+
+#: ../src/netstat.c:642
+msgid "Destination"
+msgstr "Чиглэл"
+
+#: ../src/netstat.c:649
+msgid "Gateway"
+msgstr "Гарц"
+
+#: ../src/netstat.c:657
+msgid "Netmask"
+msgstr "Баг хаяг"
+
+#: ../src/netstat.c:665 ../src/netstat.c:771
+msgid "Interface"
+msgstr "Холбоос"
+
+#: ../src/netstat.c:778
+msgid "Member"
+msgstr "Гишүүн"
+
+#: ../src/netstat.c:786
+msgid "Group"
+msgstr "Груп"
+
+#. The netstat "Display active network services" output in
+#. text format.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/netstat.c:826
+msgid "Protocol\tIP Source\tPort/Service\tState\n"
+msgstr "Протокол\tIP эх үүсвэр\tСуваг/Үйлчилгээ\tТөлөв\n"
+
+#. The netstat "Display routing" output in text format.
+#. This seems as a route table.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/netstat.c:832
+msgid "Destination\tGateway\tNetmask\tInterface\n"
+msgstr "Чиглэл\tГарц\tБаг хаяг\tХолбоос\n"
+
+#. The netstat "Multicast information" output in text format.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/netstat.c:837
+msgid "Interface\tMember\tGroup\n"
+msgstr "Холбоос\tГишүүн\tГруп\n"
+
+#: ../src/nettool.c:204
+msgid "A network address was not specified"
+msgstr "Сүлжээний хаяг өгөгдөөгүй байна"
+
+#: ../src/nettool.c:205 ../src/nettool.c:214
+msgid "Please enter a valid network address and try again."
+msgstr "Зөв сүлжээний хаяг өгөөд дахин оролдоно уу"
+
+#: ../src/nettool.c:212
+#, c-format
+msgid "The address '%s' cannot be found"
+msgstr "'%s' гэсэн хаяг олдсонгүй"
+
+#: ../src/nettool.c:241
+msgid "A domain address was not specified"
+msgstr "Домэйн хаяг өгөгдөөгүй байна"
+
+#: ../src/nettool.c:242
+msgid "Please enter a valid domain address and try again."
+msgstr "Зөв домэйн хаяг өгөөд дахин оролдоно уу"
+
+#: ../src/nettool.c:290
+#, c-format
+msgid "An error occurred when try to run '%s'"
+msgstr ""
+
+#: ../src/nettool.c:464
+msgid "Information not available"
+msgstr "Мэдээлэл байхгүй"
+
+#: ../src/nettool.c:589
+msgid "Stop"
+msgstr "Зогсоох"
+
+#: ../src/nettool.c:595
+msgid "Run"
+msgstr "Эхлүүлэх"
+
+#. Created up here so we can get the geometry info.
+#: ../src/ping.c:155
+#, fuzzy
+#| msgid "Time 1"
+msgid "Time (ms):"
+msgstr "Хугацаа 1"
+
+#: ../src/ping.c:176
+msgid "Seq. No.:"
+msgstr ""
+
+#: ../src/ping.c:261
+#, c-format
+msgid "Sending ping requests to %s"
+msgstr "Пин хүсэлтийг %s руу илгээж байна"
+
+#: ../src/ping.c:577
+msgid "Bytes"
+msgstr "Байтууд"
+
+#: ../src/ping.c:584
+msgid "Source"
+msgstr "Эх үүсвэр"
+
+#: ../src/ping.c:592
+msgid "Seq"
+msgstr "Seq"
+
+#: ../src/ping.c:602 ../src/traceroute.c:336
+msgid "Time"
+msgstr "Хугацаа"
+
+#: ../src/ping.c:610
+msgid "Units"
+msgstr "Нэгжүүд"
+
+#. The ping output in text format:
+#. Bytes received, Address Source, Number of Sequence,
+#. Round Trip Time (Time), Units of Time.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/ping.c:636
+msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
+msgstr "Байт\tЭх үүсвэр\tSeq\tХугацаа\tНэгж\n"
+
+#. The ping output in a text format (to copy on clipboard)
+#: ../src/ping.c:651
+#, c-format
+msgid "Time minimum:\t%s ms\n"
+msgstr "Хамгийн бага хугацаа:\t%s милсекунд\n"
+
+#: ../src/ping.c:652
+#, c-format
+msgid "Time average:\t%s ms\n"
+msgstr "Дундаж хугацаа:\t%s милсекунд\n"
+
+#: ../src/ping.c:653
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr "Хамгийн их хугацаа:\t%s милсекунд\n"
+
+#: ../src/ping.c:655
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr "Дамжуулсан багцууд:\t%s\n"
+
+#: ../src/ping.c:657
+#, c-format
+msgid "Packets received:\t%s\n"
+msgstr "Хүлээн авсан багцууд:\t%s\n"
+
+#: ../src/ping.c:660
+#, fuzzy, c-format
+#| msgid "Received packets:\t%s\n"
+msgid "Successful packets:\t%s\n"
+msgstr "Хүлээн авсан багц:\t%s\n"
+
+# check
+#: ../src/scan.c:68
+#, c-format
+msgid "Scanning %s for open ports"
+msgstr "Нээлттэй портод %s г хайж байна"
+
+#: ../src/scan.c:205
+msgid "Port"
+msgstr "Суваг"
+
+#: ../src/scan.c:221
+msgid "Service"
+msgstr "Үйлчилгээ"
+
+#. The portscan output in text format:
+#. Port, State, Service.
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/scan.c:243
+msgid "Port\tState\tService\n"
+msgstr "Суваг\tТөлөв\tҮйлчилгээ\n"
+
+#: ../src/traceroute.c:67
+#, c-format
+msgid "Tracing route to %s"
+msgstr "%s руу мөрдөж байна"
+
+#: ../src/traceroute.c:309
+msgid "Hop"
+msgstr "Үсрэлт"
+
+#: ../src/traceroute.c:317
+msgid "Hostname"
+msgstr "Хостын нэр"
+
+#: ../src/traceroute.c:325
+msgid "IP"
+msgstr "IP"
+
+#. The traceroute output in text format:
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1)
+#. It's a tabular output, and these belongs to the column titles
+#: ../src/traceroute.c:360
+#, fuzzy
+#| msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgid "Hop\tHostname\tIP\tTime 1\n"
+msgstr "Үсрэлт\tХост\tIP\tХугацаа 1\tХугацаа 2\n"
+
+#: ../src/utils.c:239
+#, c-format
+msgid ""
+"In order to use this feature of the program, %s must be installed in your "
+"system"
+msgstr ""
+
+#: ../src/finger.c:65
+#, c-format
+msgid "Getting information of %s on \"%s\""
+msgstr "\"%s\" д %s ийн мэдээллийг авч байна"
+
+#: ../src/finger.c:69
+#, c-format
+msgid "Getting information of all users on \"%s\""
+msgstr "\"%s\" д бүх хэрэглэгчийн мэдээллийг хайж байна"
+
+#: ../src/whois.c:62
+#, c-format
+msgid "Getting the whois information of %s"
+msgstr "%s ийн хэн мэдээллийг авч байна"
+
+#~ msgid "Broadcast:"
+#~ msgstr "Түгээлт:"
+
+#~ msgid "IP Address:"
+#~ msgstr "IP хаяг:"
+
+#~ msgid "Netmask:"
+#~ msgstr "Сүлжээний маск: "
+
+#~ msgid "Packets loss:"
+#~ msgstr "Пакетийн алдагдал:"
+
+#~ msgid "IP address:\t%s\n"
+#~ msgstr "IP хаяг: \t%s\n"
+
+#~ msgid "Netmask:\t%s\n"
+#~ msgstr "Баг хаяг:\t%s\n"
+
+#~ msgid "Broadcast:\t%s\n"
+#~ msgstr "Broadcast:\t%s\n"
+
+#~ msgid "Packet loss:\t%s\n"
+#~ msgstr "Багцын алдагдал:\t%s\n"
+
+#~ msgid "unknown"
+#~ msgstr "тодорхой бус"
+
+#~ msgid "Time 2"
+#~ msgstr "Хугацаа 2"
+
+#~ msgid "%s: Command not found"
+#~ msgstr "%s: Тушаал олдсонгүй"
+
+#~ msgid "Network Information Tools"
+#~ msgstr "Сүлжээний Мэдээллийн Хэрэгслүүд"
+
+#~ msgid "Network Tools - Devices"
+#~ msgstr "Сүлжээний хэрэгслүүд - Төхөөрөмж"
+
+#~ msgid "Network Information"
+#~ msgstr "Сүлжээний мэдээлэл"

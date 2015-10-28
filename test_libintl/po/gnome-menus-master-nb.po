@@ -1,0 +1,127 @@
+# Norwegian bokmål translation of gnome-menus.
+# Copyright (C) 2004, 2005 Red Hat, Inc.
+# This file is distributed under the same license as the gnome-menus package.
+# Kjartan Maraas <kmaraas@gnome.org>, 2004-2013.
+# Terance Edward Sola <terance@lyse.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus 3.7.x\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"menus&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-27 21:17+0000\n"
+"PO-Revision-Date: 2013-02-25 19:18+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/AudioVideo.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Lyd og bilde"
+
+#: ../desktop-directories/AudioVideo.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimedia"
+
+#: ../desktop-directories/Development.directory.in.h:1
+msgid "Programming"
+msgstr "Utvikling"
+
+#: ../desktop-directories/Development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Verktøy for programvareutvikling"
+
+#: ../desktop-directories/Education.directory.in.h:1
+msgid "Education"
+msgstr "Opplæring"
+
+#: ../desktop-directories/Game.directory.in.h:1
+msgid "Games"
+msgstr "Spill"
+
+#: ../desktop-directories/Game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Spill og underholdning"
+
+#: ../desktop-directories/Graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafikk"
+
+#: ../desktop-directories/Graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafiske programmer"
+
+#: ../desktop-directories/Network.directory.in.h:1
+msgid "Internet"
+msgstr "Internett"
+
+#: ../desktop-directories/Network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programmer for Internettaksess slik som nettleser og e-post"
+
+#: ../desktop-directories/Office.directory.in.h:1
+msgid "Office"
+msgstr "Kontorstøtte"
+
+#: ../desktop-directories/Office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Kontorstøtteprogrammer"
+
+#: ../desktop-directories/System-Tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Systemverktøy"
+
+#: ../desktop-directories/System-Tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Systemkonfigurasjon og overvåking"
+
+#: ../desktop-directories/Utility-Accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Tilgjengelighet"
+
+#: ../desktop-directories/Utility-Accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Innstillinger for tilgjengelighet"
+
+#: ../desktop-directories/Utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Tilbehør"
+
+#: ../desktop-directories/Utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Tilbehør for skrivebordet"
+
+#: ../desktop-directories/X-GNOME-Menu-Applications.directory.in.h:1
+msgid "Applications"
+msgstr "Programmer"
+
+#: ../desktop-directories/X-GNOME-Other.directory.in.h:1
+msgid "Other"
+msgstr "Annet"
+
+#: ../desktop-directories/X-GNOME-Other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Programmer som ikke passer i andre kategorier"
+
+#: ../desktop-directories/X-GNOME-Sundry.directory.in.h:1
+msgid "Sundry"
+msgstr "Diverse"
+
+#: ../desktop-directories/X-GNOME-Utilities.directory.in.h:1
+msgid "Utilities"
+msgstr "Verktøy"
+
+#: ../desktop-directories/X-GNOME-Utilities.directory.in.h:2
+msgid "Small but useful GNOME tools"
+msgstr "Små men nyttige verktøy for GNOME"
+
+#: ../desktop-directories/X-GNOME-WebApplications.directory.in.h:1
+msgid "Web Applications"
+msgstr "Nettleserprogrammer"
+
+#: ../desktop-directories/X-GNOME-WebApplications.directory.in.h:2
+msgid "Applications and sites saved from Web"
+msgstr "Programmer og nettsteder lagret fra nettleseren"

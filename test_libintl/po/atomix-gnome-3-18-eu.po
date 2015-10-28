@@ -1,0 +1,288 @@
+# translation of eu.po to Basque
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: eu\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=atomix&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-09-27 13:19+0000\n"
+"PO-Revision-Date: 2010-03-30 12:00+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/atomix.appdata.xml.in.h:1 ../data/atomix.desktop.in.h:1
+#: ../data/ui/interface.ui.h:1 ../src/main.c:127 ../src/main.c:684
+msgid "Atomix"
+msgstr "Atomix"
+
+#: ../data/atomix.appdata.xml.in.h:2
+msgid "Build molecules out of single atoms"
+msgstr ""
+
+#: ../data/atomix.appdata.xml.in.h:3
+msgid ""
+"Atomix is a puzzle game where your goal is to assemble molecules from "
+"compound atoms by moving them on the playfield. However, atoms don't just "
+"move wherever you want to move them to, they slide until they hit either a "
+"wall or another atom."
+msgstr ""
+
+#: ../data/atomix.appdata.xml.in.h:4
+msgid ""
+"Try to build the molecules as fast as you can on each level to earn a higher "
+"score."
+msgstr ""
+
+#: ../data/atomix.desktop.in.h:2
+msgid "Molecule puzzle game"
+msgstr "Molekulen puzzle-jokoa"
+
+#: ../data/level/aceticacid.atomix.xml.h:1
+msgid "Acetic Acid"
+msgstr "Azido azetikoa"
+
+#: ../data/level/acetone.atomix.xml.h:1
+msgid "Acetone"
+msgstr "Azetona"
+
+#: ../data/level/butanol.atomix.xml.h:1
+msgid "Butanol"
+msgstr "Butanola"
+
+#: ../data/level/cyclobutane.atomix.xml.h:1
+msgid "Cyclobutane"
+msgstr "Ziklobutanoa"
+
+#: ../data/level/dimethylether.atomix.xml.h:1
+msgid "Dimethyl Ether"
+msgstr "Dimetil eterra"
+
+#: ../data/level/ethanal.atomix.xml.h:1
+msgid "Ethanal"
+msgstr "Etanala"
+
+#: ../data/level/ethane.atomix.xml.h:1
+msgid "Ethane"
+msgstr "Etanoa"
+
+#: ../data/level/ethanol.atomix.xml.h:1
+msgid "Ethanol"
+msgstr "Etanola"
+
+#: ../data/level/ethylene.atomix.xml.h:1
+msgid "Ethylene"
+msgstr "Etilenoa"
+
+#: ../data/level/glycerin.atomix.xml.h:1
+msgid "Glycerin"
+msgstr "Glizerina"
+
+#: ../data/level/lactic-acid.atomix.xml.h:1
+msgid "Lactic Acid"
+msgstr "Azido laktikoa"
+
+#: ../data/level/methanal.atomix.xml.h:1
+msgid "Methanal"
+msgstr "Metanala"
+
+#: ../data/level/methane.atomix.xml.h:1
+msgid "Methane"
+msgstr "Metanoa"
+
+#: ../data/level/methanol.atomix.xml.h:1
+msgid "Methanol"
+msgstr "Metanola"
+
+#: ../data/level/propanal.atomix.xml.h:1
+msgid "Propanal"
+msgstr "Propanala"
+
+#: ../data/level/propylene.atomix.xml.h:1
+msgid "Propylene"
+msgstr "Propilenoa"
+
+#: ../data/level/pyran.atomix.xml.h:1
+msgid "Pyran"
+msgstr "Piranoa"
+
+#: ../data/level/transbutylen.atomix.xml.h:1
+msgid "Trans Butylen"
+msgstr "Trans-butilenoa"
+
+#: ../data/level/water.atomix.xml.h:1
+msgid "Water"
+msgstr "Ura"
+
+#: ../data/ui/interface.ui.h:2
+msgid "_File"
+msgstr ""
+
+#: ../data/ui/interface.ui.h:3
+msgid "_New Game"
+msgstr "Joko _berria"
+
+#: ../data/ui/interface.ui.h:4
+msgid "_End Game"
+msgstr "_Amaitu jokoa"
+
+#: ../data/ui/interface.ui.h:5
+#, fuzzy
+#| msgid "Skip _level"
+msgid "_Skip Level"
+msgstr "Saltatu _maila"
+
+#: ../data/ui/interface.ui.h:6
+#, fuzzy
+#| msgid "Reset level"
+msgid "_Reset Level"
+msgstr "Berrezarri maila"
+
+#: ../data/ui/interface.ui.h:7
+#, fuzzy
+#| msgid "_Undo move"
+msgid "_Undo Move"
+msgstr "_Desegin mugimendua"
+
+#: ../data/ui/interface.ui.h:8
+#, fuzzy
+#| msgid "_Pause game"
+msgid "_Pause Game"
+msgstr "_Pausarazi jokoa"
+
+#: ../data/ui/interface.ui.h:9
+#, fuzzy
+#| msgid "_Continue game"
+msgid "_Continue Game"
+msgstr "_Jarraitu jokoa"
+
+#: ../data/ui/interface.ui.h:10
+msgid "_Quit"
+msgstr ""
+
+#: ../data/ui/interface.ui.h:11
+msgid "_Help"
+msgstr "_Laguntza"
+
+#: ../data/ui/interface.ui.h:12
+msgid "_About"
+msgstr ""
+
+#: ../data/ui/interface.ui.h:13
+msgid "Level:"
+msgstr "Maila:"
+
+#: ../data/ui/interface.ui.h:14
+msgid "Molecule:"
+msgstr "Molekula:"
+
+#: ../data/ui/interface.ui.h:15
+msgid "Formula:"
+msgstr "Formula:"
+
+#: ../data/ui/interface.ui.h:16
+msgid "Score:"
+msgstr "Puntuazioa:"
+
+#: ../data/ui/interface.ui.h:17
+msgid "Time:"
+msgstr "Denbora:"
+
+#: ../data/ui/interface.ui.h:18
+msgid "empty"
+msgstr ""
+
+#: ../data/ui/interface.ui.h:19
+msgid "Statistics"
+msgstr "Estatistikak"
+
+#: ../src/level-manager.c:200
+msgid "Couldn't find level sequence description."
+msgstr "Ezin izan da mailaren sekuentziaren azalpena aurkitu."
+
+#: ../src/level-manager.c:214
+msgid "No level found."
+msgstr "Ez da mailarik aurkitu."
+
+#: ../src/level-manager.c:283
+#, c-format
+msgid "Found level '%s' in: %s"
+msgstr "'%s' maila aurkituta hemen: %s"
+
+#: ../src/main.c:129
+msgid "A puzzle game about atoms and molecules"
+msgstr "Atomo eta molekulei buruzko puzzle-jokoa"
+
+#: ../src/main.c:133
+msgid "translator-credits"
+msgstr "Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>"
+
+#: ../src/main.c:440
+msgid "Congratulations! You have finished all Atomix levels."
+msgstr "Zorionak! Atomix-en maila guztiak gainditu dituzu."
+
+#: ../src/theme-manager.c:225
+msgid "No themes found."
+msgstr "Ez da gairik aurkitu."
+
+#: ../src/theme-manager.c:283
+#, c-format
+msgid "Found theme '%s' in: %s"
+msgstr "'%s' gaia aurkitu da hemen: %s"
+
+#~ msgid "Continue paused game"
+#~ msgstr "Jarraitu pausatutako jokoa"
+
+#~ msgid "End a game"
+#~ msgstr "Amaitu jokoa"
+
+#~ msgid "Pause the running game"
+#~ msgstr "Pausarazi jokoa"
+
+#~ msgid "Restores start situation"
+#~ msgstr "Leheneratu hasierako egoera"
+
+#~ msgid "Set preferences"
+#~ msgstr "Ezarri hobespenak"
+
+#~ msgid "Skip the current level"
+#~ msgstr "Saltatu uneko maila"
+
+#~ msgid "Start a new game"
+#~ msgstr "Hasi joko berria"
+
+#~ msgid "Undo the last move"
+#~ msgstr "Desegin azken mugimendua"
+
+#~ msgid "View highscores"
+#~ msgstr "Ikusi puntuazioa"
+
+#~ msgid "_Game"
+#~ msgstr "_Jokoa"
+
+#~ msgid "_Preferences ..."
+#~ msgstr "_Hobespenak..."
+
+#~ msgid "_Scores ..."
+#~ msgstr "_Puntuazioak..."
+
+#~ msgid ""
+#~ "You have not achieved any scores yet. Play a little before coming back!"
+#~ msgstr "Ez duzu punturik lortu oraindik. Jolastu piska bat itzuli aurretik."
+
+#~ msgid "Couldn't find at least one level."
+#~ msgstr "Ezin izan da maila bat gutxienez aurkitu."
+
+#~ msgid "Do you want to finish the game?"
+#~ msgstr "Nahi duzu jokoa amaitzea?"
+
+#~ msgid "Couldn't find file: %s"
+#~ msgstr "Ezin izan da fitxategia aurkitu: %s"
