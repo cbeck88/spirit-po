@@ -29,11 +29,16 @@ of parsing po files rather than mo files at run-time, is provided
 
 **spirit-po** is free software available under the Boost software license.
 
+## Dependencies
+
+- **spirit-po** is only intended to work with UTF-8 encoded po files.
+- **spirit-po** is only known to work with boost spirit >= 1.53. I had issues with travis when using boost 1.46. Not sure what the minimum is.
+- **spirit-po** tests are only known to work with g++ >= 4.9, otherwise it has trouble with raw string literals I use in tests.
+- **spirit-po** tests are only known to work with clang++ >= 3.6. I had problems using clang 3.4, but possibly they were avoidable.
+
+
 ## Using it
 
-N.B.: **spirit-po** is only intended to work with UTF-8 encoded po files.
-N.B.: **spirit-po** is only known to work with boost spirit >= 1.53.
-I had issues with travis when using boost 1.46. Not sure what the minimum is.
 
 To use the library, you only need to include the `include` directory
 in your C++ source files.

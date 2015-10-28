@@ -19,7 +19,6 @@ addons:
     - g++-4.9
     - clang-3.6
     - gettext
-    - libintl-dev
     - libboost1.55-dev
     - gdb
     - cmake-data
@@ -28,7 +27,7 @@ script:
   - $CXX --version
 
   - echo "Unit Tests"
-  - cd test && ./test.sh #make clean && make CXXFLAGS="-O3 -Wall -Werror -std=c++11 $CXXFLAGS" && ./main
+  - cd test && ./test.sh
 
   - echo "Libintl Validation Tests"
   - cd ../test_libintl && ./test.sh
