@@ -31,3 +31,6 @@ script:
 
   - echo "Libintl Validation Tests"
   - cd ../test_libintl && ./test.sh
+
+  - echo "SPIRIT_PO_NOEXCEPT build"
+  - ./test.sh -DNOEXCEPT=1

@@ -2,4 +2,4 @@
 set -e
 make clean
 make
-./main
+gdb -batch -ex "run" -ex "thread apply all bt" -ex "quit" --args ./main

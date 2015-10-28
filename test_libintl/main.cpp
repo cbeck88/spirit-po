@@ -4,7 +4,7 @@
 //  file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 
 #include <libintl.h>
-#define SPIRIT_PO_NOEXCEPT
+//#define SPIRIT_PO_NOEXCEPT
 #define SPIRIT_PO_DEBUG
 #include <spirit_po.hpp>
 
@@ -159,11 +159,13 @@ RESULT do_test(const std::string & po_stem) {
   //auto cat = spirit_po::catalog<>::from_istream(po_stream);
   auto temp = std::string{std::istreambuf_iterator<char>(po_stream), {}};
   auto cat = spirit_po::catalog<>::from_range(temp, std::function<void(const std::string &)>{&warning_message});
+#ifdef SPIRIT_PO_NOEXCEPT
   if (!cat) {
     std::cerr << "When reading po:\n***\n" << temp << "\n***\n";
     std::cerr << "Could not read po file: '" << po_stem << ".po', error:\n" << cat.error() << std::endl;
     return RESULT::FAIL;
   }
+#endif
 
   bool all_pass = true;
   all_pass = all_pass && check_libintl_gettext(cat, "foo");

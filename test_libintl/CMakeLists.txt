@@ -26,11 +26,20 @@ find_package ( Intl REQUIRED )
 SET (PO_DIR ${CMAKE_CURRENT_SOURCE_DIR}/po)
 SET (SPIRIT_PO_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
+### Options
+
+OPTION(NOEXCEPT "Enable the SPIRIT_PO_NOEXCEPT flag" OFF)
+if (NOEXCEPT)
+  ADD_DEFINITIONS(-DSPIRIT_PO_NOEXCEPT)
+endif()
+
 ### Make target
+
 add_executable(${PROJECT_NAME} main.cpp)
 include_directories (${PROJECT_NAME} ${BOOST_INCLUDE_DIRS})
 include_directories (${PROJECT_NAME} ${SPIRIT_PO_INCLUDE_DIR})
 target_link_libraries (${PROJECT_NAME} ${INTL_LIBRARIES})
+
 
 ### Make po_path marker
 CreateFolderMarkerFile(${PROJECT_NAME} po_path.txt ${PO_DIR})
