@@ -23,6 +23,7 @@ addons:
 #    - libboost-all-dev
     - libboost1.55-all-dev
     - gdb
+    - cmake-data
     - cmake
 script:
   - cd test && ./test.sh
