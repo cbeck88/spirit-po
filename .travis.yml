@@ -34,3 +34,9 @@ script:
 
   - echo "SPIRIT_PO_NOEXCEPT build"
   - ./test.sh -DNOEXCEPT=1
+
+  - echo "SPIRIT_PO_DEBUG build"
+  - ./test.sh -DDEBUG=1
+
+  - echo "SPIRIT_PO_NOEXCEPT + SPIRIT_PO_DEBUG build"
+  - ./test.sh -DNOEXCEPT=1 -DDEBUG=1

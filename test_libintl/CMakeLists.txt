@@ -33,13 +33,17 @@ if (NOEXCEPT)
   ADD_DEFINITIONS(-DSPIRIT_PO_NOEXCEPT)
 endif()
 
+OPTION(DEBUG "Enable the SPIRIT_PO_DEBUG flag" OFF)
+if (DEBUG)
+  ADD_DEFINITIONS(-DSPIRIT_PO_DEBUG)
+endif()
+
 ### Make target
 
 add_executable(${PROJECT_NAME} main.cpp)
 include_directories (${PROJECT_NAME} ${BOOST_INCLUDE_DIRS})
 include_directories (${PROJECT_NAME} ${SPIRIT_PO_INCLUDE_DIR})
 target_link_libraries (${PROJECT_NAME} ${INTL_LIBRARIES})
-
 
 ### Make po_path marker
 CreateFolderMarkerFile(${PROJECT_NAME} po_path.txt ${PO_DIR})

@@ -4,8 +4,6 @@
 //  file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 
 #include <libintl.h>
-//#define SPIRIT_PO_NOEXCEPT
-#define SPIRIT_PO_DEBUG
 #include <spirit_po.hpp>
 
 #include <cstdlib>
@@ -189,6 +187,22 @@ RESULT do_test(const std::string & po_stem) {
 int main() {
   find_mo_path();
   find_po_path();
+
+  std::cout << "SPIRIT_PO_NOEXCEPT = ";
+#ifdef SPIRIT_PO_NOEXCEPT
+  std::cout << "1\n";
+#else
+  std::cout << "0\n";
+#endif
+
+  std::cout << "SPIRIT_PO_DEBUG = ";
+#ifdef SPIRIT_PO_DEBUG
+  std::cout << "1\n";
+#else
+  std::cout << "0\n";
+#endif
+
+  std::cout << std::endl;
 
   setlocale (LC_ALL, "");
   // Use system locale
