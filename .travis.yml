@@ -22,11 +22,13 @@ addons:
     - gettext
     - libintl-dev
 #    - libboost-all-dev
-    - libboost1.55-all-dev
+    - libboost1.55-dev
     - gdb
     - cmake-data
     - cmake
 script:
+  - echo "$CXXFLAGS"
+  - echo $CXXFLAGS
   - cd test && ./test.sh
   - cd ..
   - cd test_libintl && ./test.sh
