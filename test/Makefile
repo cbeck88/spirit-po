@@ -1,4 +1,4 @@
-CXXFLAGS := -std=c++11
+CXXFLAGS := $(CXXFLAGS) -std=c++11 
 INCLUDES := -I../include/ -I/usr/include
 
 main: main.cpp

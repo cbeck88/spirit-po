@@ -1,2 +1,7 @@
 #!/bin/bash
-make clean && make && ./main
+set -e
+export CXXFLAGS="$CXXFLAGS"
+echo "$CXXFLAGS"
+make clean
+make
+./main
