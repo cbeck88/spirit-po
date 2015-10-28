@@ -204,7 +204,6 @@ RESULT do_test(const std::string & po_stem) {
   auto cat = spirit_po::catalog<>::from_istream(po_stream, std::function<void(const std::string &)>{&warning_message});
 #ifdef SPIRIT_PO_NOEXCEPT
   if (!cat) {
-    std::cerr << "When reading po:\n***\n" << temp << "\n***\n";
     std::cerr << "Could not read po file: '" << po_stem << ".po', error:\n" << cat.error() << std::endl;
     return RESULT::FAIL;
   }
