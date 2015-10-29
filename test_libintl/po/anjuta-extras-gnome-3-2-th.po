@@ -1,0 +1,886 @@
+# Thai translation of anjuta.
+# Copyright (C) 2008-2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the anjuta package.
+# Akom Chotiphantawanon <knight2000@gmail.com>, 2008-2011.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2008-2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: anjuta\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=anjuta&keywords=I18N+L10N&component=unknown\n"
+"POT-Creation-Date: 2015-10-29 15:54+0000\n"
+"PO-Revision-Date: 2011-02-23 12:02+0700\n"
+"Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../plugins/scintilla/print.c:659
+#, c-format
+msgid "File: %s"
+msgstr "แฟ้ม: %s"
+
+#: ../plugins/scintilla/print.c:888
+msgid "Unable to get text buffer for printing"
+msgstr "ดึงบัฟเฟอร์ข้อความไปพิมพ์ไม่ได้"
+
+#: ../plugins/scintilla/print.c:966
+msgid "No file to print!"
+msgstr "ไม่มีแฟ้มที่จะพิมพ์!"
+
+#: ../plugins/scintilla/plugin.c:336 ../plugins/scintilla/plugin.c:348
+#: ../plugins/scintilla/anjuta-editor.plugin.in.h:1
+msgid "Scintilla Editor"
+msgstr "เครื่องมือแก้ไข Scintilla"
+
+#: ../plugins/scintilla/text_editor.c:471
+#, c-format
+msgid ""
+"The file '%s' has been changed.\n"
+"Do you want to reload it ?"
+msgstr ""
+"แฟ้ม '%s' มีการเปลี่ยนแปลง\n"
+"คุณต้องการเรียกอ่านใหม่หรือไม่?"
+
+#: ../plugins/scintilla/text_editor.c:477
+#, c-format
+msgid ""
+"The file '%s' has been changed.\n"
+"Do you want to loose your changes and reload it ?"
+msgstr ""
+"แฟ้ม '%s' มีการเปลี่ยนแปลง\n"
+"คุณต้องการทิ้งสิ่งที่ได้แก้ไขมา แล้วเรียกอ่านใหม่หรือไม่?"
+
+#: ../plugins/scintilla/text_editor.c:497
+#, c-format
+msgid ""
+"The file '%s' has been deleted.\n"
+"Do you confirm and close it ?"
+msgstr ""
+"แฟ้ม '%s' ถูกลบไปแล้ว\n"
+"คุณต้องการยืนยันและปิดแฟ้มดังกล่าวหรือไม่?"
+
+#: ../plugins/scintilla/text_editor.c:504
+#, c-format
+msgid ""
+"The file '%s' has been deleted.\n"
+"Do you want to loose your changes and close it ?"
+msgstr ""
+"แฟ้ม '%s' ถูกลบไปแล้ว\n"
+"คุณต้องการทิ้งสิ่งที่ได้แก้ไขมา และปิดแฟ้มดังกล่าวหรือไม่?"
+
+#: ../plugins/scintilla/text_editor.c:1483
+msgid "Could not get file info"
+msgstr "ไม่สามารถอ่านข้อมูลของแฟ้ม"
+
+#. DEBUG_PRINT ("%s", "This file is too big. Unable to allocate memory.");
+#: ../plugins/scintilla/text_editor.c:1495
+msgid "This file is too big. Unable to allocate memory."
+msgstr "แฟ้มนี้ใหญ่เกินไป ไม่สามารถจองหน่วยความจำได้"
+
+#: ../plugins/scintilla/text_editor.c:1504
+msgid "Could not open file"
+msgstr "เปิดแฟ้มไม่ได้"
+
+#: ../plugins/scintilla/text_editor.c:1515
+msgid "Error while reading from file"
+msgstr "เกิดข้อผิดพลาดขณะอ่านจากแฟ้ม"
+
+#: ../plugins/scintilla/text_editor.c:1561
+msgid ""
+"The file does not look like a text file or the file encoding is not "
+"supported. Please check if the encoding of file is in the supported "
+"encodings list. If not, add it from the preferences."
+msgstr ""
+"แฟ้มนี้ไม่ใช่แฟ้มข้อความหรือใช้รหัสอักขระที่ไม่รองรับ "
+"กรุณาตรวจสอบว่ารหัสอักขระของแฟ้มอยู่ในรายชื่อรหัสอักขระที่รองรับหรือไม่ ถ้าไม่อยู่ "
+"ให้เพิ่มจากค่าปรับแต่ง"
+
+#: ../plugins/scintilla/text_editor.c:1708
+msgid "Loading file..."
+msgstr "กำลังโหลดแฟ้ม..."
+
+#: ../plugins/scintilla/text_editor.c:1717
+#, c-format
+msgid ""
+"Could not load file: %s\n"
+"\n"
+"Details: %s"
+msgstr ""
+"ไม่สามารถโหลดแฟ้ม: %s\n"
+"\n"
+"รายละเอียด: %s"
+
+#: ../plugins/scintilla/text_editor.c:1738
+msgid "File loaded successfully"
+msgstr "โหลดแฟ้มเรียบร้อยแล้ว"
+
+#: ../plugins/scintilla/text_editor.c:1756
+msgid "Saving file..."
+msgstr "กำลังบันทึกแฟ้ม..."
+
+#: ../plugins/scintilla/text_editor.c:1765
+#, c-format
+msgid "Could not save intermediate file %s: %s"
+msgstr "ไม่สามารถบันทึกแฟ้มชั่วคราว %s: %s"
+
+#: ../plugins/scintilla/text_editor.c:1781
+msgid "File saved successfully"
+msgstr "บันทึกแฟ้มเสร็จแล้ว"
+
+#: ../plugins/scintilla/text_editor.c:2154
+#, c-format
+msgid ""
+"Cannot load Global defaults and configuration files:\n"
+"%s.\n"
+"This may result in improper behaviour or instabilities.\n"
+"Anjuta will fall back to built in (limited) settings"
+msgstr ""
+"ไม่สามารถโหลดค่าปริยายส่วนกลางและแฟ้มค่าตั้ง:\n"
+"%s\n"
+"ซึ่งอาจทำให้โปรแกรมทำงานผิดเพี้ยนหรือไม่เสถียร\n"
+"แอนจูตาจะถอยกลับไปที่ค่าตั้งที่กำหนดไว้ในตัว (ซึ่งมีความสามารถจำกัด)"
+
+#: ../plugins/scratchbox/plugin.c:209
+#, c-format
+msgid "Program '%s' does not exists"
+msgstr "โปรแกรม '%s' ไม่มีอยู่"
+
+#: ../plugins/scratchbox/plugin.c:460 ../plugins/scratchbox/plugin.c:482
+#: ../plugins/scratchbox/anjuta-scratchbox.plugin.in.h:1
+msgid "Scratchbox"
+msgstr "Scratchbox"
+
+#. Public functions
+#. *---------------------------------------------------------------------------
+#: ../plugins/sample1/anjuta-sample.plugin.in.h:1
+msgid "Sample Plugin"
+msgstr "ปลั๊กอินตัวอย่าง"
+
+#: ../plugins/sample1/anjuta-sample.plugin.in.h:2
+msgid "Sample Plugin for Anjuta."
+msgstr "ปลั๊กอินตัวอย่างสำหรับแอนจูตา"
+
+#: ../plugins/scintilla/anjuta-editor.plugin.in.h:2
+msgid "An alternate editor based on Scintilla"
+msgstr "เครื่องมือแก้ไขทางเลือก โดยใช้ Scintilla"
+
+#: ../plugins/scratchbox/anjuta-scratchbox.plugin.in.h:2
+msgid "Change build commands to use scratchbox 1 or 2"
+msgstr "เปลี่ยนคำสั่งสำหรับประกอบสร้างให้มาใช้ scratchbox 1 หรือ 2"
+
+#~ msgid "Function Name"
+#~ msgstr "ชื่อฟังก์ชัน"
+
+#~ msgid "Time"
+#~ msgstr "เวลา"
+
+#~ msgid "Self"
+#~ msgstr "ตัวเอง"
+
+#~ msgid "Children"
+#~ msgstr "ลูก"
+
+#~ msgid "Calls"
+#~ msgstr "การเรียก"
+
+#~ msgid "% Time"
+#~ msgstr "% เวลา"
+
+#~ msgid "Cumulative Seconds"
+#~ msgstr "วินาทีสะสม"
+
+#~ msgid "Self Seconds"
+#~ msgstr "วินาทีตัวเอง"
+
+#~ msgid "Self ms/call"
+#~ msgstr "มิลลิวินาทีตัวเอง/การเรียก"
+
+#~ msgid "Total ms/call"
+#~ msgstr "มิลลิวินาทีทั้งหมด/การเรียก"
+
+#~ msgid ""
+#~ "Could not get profiling data.\n"
+#~ "\n"
+#~ "Please check the path to this target's profiling data file."
+#~ msgstr ""
+#~ "ไม่สามารถอ่านข้อมูลการวัดประสิทธิภาพ\n"
+#~ "\n"
+#~ "กรุณาตรวจสอบพาธของแฟ้มข้อมูลการวัดประสิทธิภาพของเป้าหมายนี้"
+
+#~ msgid ""
+#~ "This target does not have any profiling data.\n"
+#~ "\n"
+#~ "Please ensure that the target is compiled with profiling support (-p)and "
+#~ "that it is run at least once."
+#~ msgstr ""
+#~ "เป้าหมายนี้ไม่มีข้อมูลการวัดประสิทธิภาพใดๆ เลย\n"
+#~ "\n"
+#~ "กรุณาตรวจสอบให้แน่ใจว่าเป้าหมายได้ถูกคอมไพล์โดยรองรับการวัดประสิทธิภาพ (-p) "
+#~ "และมีการเรียกทำงานอย่างน้อยหนึ่งครั้ง"
+
+#~ msgid "Debug"
+#~ msgstr "ดีบั๊ก"
+
+#~ msgid "Profiler"
+#~ msgstr "เครื่องวัดประสิทธิภาพ"
+
+#~ msgid "Select Target..."
+#~ msgstr "เลือกเป้าหมาย..."
+
+#~ msgid "Refresh"
+#~ msgstr "ปรับแสดง"
+
+#~ msgid "Delete Data"
+#~ msgstr "ลบข้อมูล"
+
+#~ msgid "Application Performance Profiler"
+#~ msgstr "เครื่องมือวัดประสิทธิภาพของโปรแกรม"
+
+#~ msgid "Flat Profile"
+#~ msgstr "โพรไฟล์แบบแบน"
+
+#~ msgid "Call Graph"
+#~ msgstr "กราฟของการเรียก"
+
+#~ msgid "Function Call Tree"
+#~ msgstr "แผนภาพต้นไม้ของการเรียกฟังก์ชัน"
+
+#~ msgid "Function Call Chart"
+#~ msgstr "แผนภูมิการเรียกฟังกชัน"
+
+#~ msgid "Options"
+#~ msgstr "ตัวเลือก"
+
+#~ msgid "Select debugging target"
+#~ msgstr "เลือกเป้าหมายของการดีบั๊ก"
+
+#~ msgid "Valgrind"
+#~ msgstr "Valgrind"
+
+#~ msgid ""
+#~ "No executable target selected for debugging with Valgrind. Please select "
+#~ "one."
+#~ msgstr "ไม่ได้เลือกแฟ้มโปรแกรมเป้าหมายสำหรับดีบั๊กด้วย valgrind กรุณาเลือกเสียก่อน"
+
+#~ msgid ""
+#~ "There aren't any available executable targets for this project.\n"
+#~ "Please create one first."
+#~ msgstr ""
+#~ "ไม่มีแฟ้มโปรแกรมเป้าหมายสำหรับโครงการนี้\n"
+#~ "กรุณาสร้างเสียก่อน"
+
+#~ msgid "Choose file where to save Valgrind log"
+#~ msgstr "เลือกแฟ้มที่จะบันทึกปูมของ Valgrind"
+
+#~ msgid ""
+#~ "The file '%s' already exists.\n"
+#~ "Do you want to replace it with the one you are saving?"
+#~ msgstr ""
+#~ "มีแฟ้ม '%s' อยู่ก่อนแล้ว\n"
+#~ "คุณต้องการบันทึกทับหรือไม่?"
+
+#~ msgid "_Replace"
+#~ msgstr "แ_ทนที่"
+
+#~ msgid "Open Valgrind log file"
+#~ msgstr "เปิดแฟ้มปูมของ Valgrind"
+
+#~ msgid "_Debug"
+#~ msgstr "_ดีบั๊ก"
+
+#~ msgid "_Valgrind"
+#~ msgstr "_Valgrind"
+
+#~ msgid "_Select Tool and Run..."
+#~ msgstr "เ_ลือกเครื่องมือและเรียกทำงาน..."
+
+#~ msgid "_Kill Execution"
+#~ msgstr "_ฆ่าการทำงาน"
+
+#~ msgid "_Load Log"
+#~ msgstr "โห_ลดปูม"
+
+#~ msgid "S_ave Log"
+#~ msgstr "_บันทึกปูม"
+
+#~ msgid "Edit Rules"
+#~ msgstr "แก้ไขกฎ"
+
+#~ msgid "Use Valgrind debug tool"
+#~ msgstr "ใช้เครื่องมือดีบั๊ก Valgrind"
+
+#~ msgid "<b>Valgrind general preferences</b>"
+#~ msgstr "<b>การปรับแต่งค่าทั่วไปของ Valgrind</b>"
+
+#~ msgid "Valgrind binary file path:"
+#~ msgstr "พาธของแฟ้มไบนารีของ Valgrind:"
+
+#~ msgid "Choose Valgrind Binary File Path..."
+#~ msgstr "เลือกพาธของแฟ้มไบนารีของ Valgrind..."
+
+#~ msgid "Preview"
+#~ msgstr "ดูตัวอย่าง"
+
+#~ msgid "lines above and below the target line."
+#~ msgstr "บรรทัดข้างบนและข้างล่างบรรทัดเป้าหมาย"
+
+#~ msgid "Failed to create pipe to '%s': %s"
+#~ msgstr "ไม่สามารถสร้างไปป์ไปยัง '%s': %s"
+
+#~ msgid "Failed to create child process '%s': %s"
+#~ msgstr "ไม่สามารถสร้างโพรเซสลูก '%s': %s"
+
+#~ msgid ""
+#~ "Reached the end of the input file or error in parsing valgrind output."
+#~ msgstr "ถึงจุดสิ้นสุดของแฟ้มข้อมูลเข้า หรือเกิดข้อผิดพลาดขณะแจงผลลัพธ์ของ Valgrind"
+
+#~ msgid "Process exited."
+#~ msgstr "โพรเซสจบแล้ว"
+
+#~ msgid "Could not get the right valgrind-binary gconf key:"
+#~ msgstr "ไม่สามารถอ่านคีย์ gconf valgrind-binary ที่ถูกต้อง:"
+
+#~ msgid ""
+#~ "Valgrind binary [%s] does not exist. Please check the preferences or "
+#~ "install Valgrind package."
+#~ msgstr ""
+#~ "ไม่มีแฟ้มไบนารีของ Valgrind [%s] กรุณาตรวจสอบค่าปรับแต่ง หรือติดตั้งแพกเกจ Valgrind "
+#~ "ให้เรียบร้อย"
+
+#~ msgid "Could not get the right pipe for the process."
+#~ msgstr "ไม่สามารถสร้างไปป์สำหรับโพรเซส"
+
+#~ msgid ""
+#~ "Invalid syntax in settings '%s'.\n"
+#~ "Please enter a value of the form \"<integer>,<integer>,<integer>\"."
+#~ msgstr ""
+#~ "ไวยากรณ์ไม่ถูกต้องในค่าตั้ง '%s'\n"
+#~ "กรุณาป้อนค่าในรูป \"<จำนวนเต็ม>,<จำนวนเต็ม>,<จำนวนเต็ม>\""
+
+#~ msgid "Override default settings"
+#~ msgstr "ทับค่าตั้งปริยาย"
+
+#~ msgid "Enter <size>,<assoc>,<line_size>:"
+#~ msgstr "ป้อน <size>,<assoc>,<line_size>:"
+
+#~ msgid "Cachegrind"
+#~ msgstr "Cachegrind"
+
+#~ msgid "Error contains"
+#~ msgstr "ข้อผิดพลาดมีคำว่า"
+
+#~ msgid "Function contains"
+#~ msgstr "ฟังก์ชันมีคำว่า"
+
+#~ msgid "Object contains"
+#~ msgstr "อ็อบเจกต์มีคำว่า"
+
+#~ msgid "Source filename contains"
+#~ msgstr "ชื่อแฟ้มซอร์สมีคำว่า"
+
+#~ msgid "Invalid regular expression: '%s': %s"
+#~ msgstr "นิพจน์เรกิวลาร์ไม่ถูกต้อง: '%s': %s"
+
+#~ msgid "Valgrind Suppression Rules"
+#~ msgstr "กฎการละเลยของ Valgrind"
+
+#~ msgid "Valgrind Suppression"
+#~ msgstr "การละเลยของ Valgrind"
+
+#~ msgid "Cu_t"
+#~ msgstr "_ตัด"
+
+#~ msgid "_Copy"
+#~ msgstr "_คัดลอก"
+
+#~ msgid "_Paste"
+#~ msgstr "_แปะ"
+
+#~ msgid "Suppress"
+#~ msgstr "ละเลย"
+
+#~ msgid "Edit in Custom Editor"
+#~ msgstr "แก้ไขในเครื่องมือแก้ไขที่กำหนดเอง"
+
+#~ msgid "General"
+#~ msgstr "ทั่วไป"
+
+#~ msgid "Demangle C++ symbol names"
+#~ msgstr "ถอดรหัสชื่อชื่อสัญลักษณ์ของ C++"
+
+#~ msgid "Show"
+#~ msgstr "แสดง"
+
+#~ msgid "callers in stack trace"
+#~ msgstr "ผู้เรียกในร่องรอยของสแต็ก"
+
+#~ msgid "Stop showing errors if there are too many"
+#~ msgstr "หยุดแสดงข้อผิดพลาดถ้ามีมากเกินไป"
+
+#~ msgid "Round malloc sizes to next word"
+#~ msgstr "ปัดเศษของขนาดที่ malloc ขึ้นเป็นจำนวนเต็มเวิร์ด"
+
+#~ msgid "Trace any child processes forked off by the program being debugged"
+#~ msgstr "ติดตามโพรเซสลูกที่ fork ออกจากโปรแกรมที่กำลังดีบั๊ก"
+
+#~ msgid "Track open file descriptors"
+#~ msgstr "ติดตาม file descriptor ที่เปิดอยู่"
+
+#~ msgid "Add time stamps to log messages"
+#~ msgstr "เพิ่มบันทึกเวลาลงในข้อความปูม"
+
+#~ msgid "Call __libc_freeres() at exit before checking for memory leaks"
+#~ msgstr "เรียก __libc_freeres() ขณะจบ ก่อนที่จะตรวจสอบหน่วยความจำรั่ว"
+
+#~ msgid "Suppressions File:"
+#~ msgstr "แฟ้มการละเลย:"
+
+#~ msgid "Choose Valgrind Suppressions File..."
+#~ msgstr "เลือกแฟ้มการละเลยของ Valgrind..."
+
+#~ msgid "Helgrind"
+#~ msgstr "Helgrind"
+
+#~ msgid "Assume thread stacks are used privately"
+#~ msgstr "ถือว่าใช้สแต็กของเธรดเป็นการภายใน"
+
+#~ msgid "Show location of last word access on error:"
+#~ msgstr "แสดงตำแหน่งของเวิร์ดสุดท้ายที่เข้าใช้เมื่อเกิดข้อผิดพลาด:"
+
+#~ msgid "Memcheck"
+#~ msgstr "Memcheck"
+
+#~ msgid "Memory leaks"
+#~ msgstr "หน่วยความจำรั่ว"
+
+#~ msgid "Leak check:"
+#~ msgstr "ตรวจสอบรูรั่ว:"
+
+#~ msgid "Show reachable blocks in leak check"
+#~ msgstr "แสดงบล็อคที่เข้าถึงได้ในการตรวจสอบรูรั่ว"
+
+#~ msgid "Leak resolution:"
+#~ msgstr "ความละเอียดของการรั่ว:"
+
+#~ msgid "Keep up to"
+#~ msgstr "เก็บไว้"
+
+#~ msgid "bytes in the queue after being free()'d"
+#~ msgstr "ไบต์ในคิวหลังจากการ free()"
+
+#~ msgid "Work around bugs generated by gcc 2.96"
+#~ msgstr "แก้ปัญหาบั๊กที่สร้างโดย gcc 2.96"
+
+#~ msgid "Function"
+#~ msgstr "ฟังก์ชัน"
+
+#~ msgid "Shared Object"
+#~ msgstr "อ็อบเจกต์ใช้ร่วม"
+
+#~ msgid "Grow"
+#~ msgstr "ขยาย"
+
+#~ msgid "Shrink"
+#~ msgstr "หด"
+
+#~ msgid "Rule name:"
+#~ msgstr "ชื่อกฎ:"
+
+#~ msgid "Suppress messages of type:"
+#~ msgstr "ละเลยข้อความชนิด:"
+
+#~ msgid "Suppress when using:"
+#~ msgstr "ละเลยเมื่อใช้:"
+
+#~ msgid "System call:"
+#~ msgstr "การเรียกระบบ:"
+
+#~ msgid "Call chain:"
+#~ msgstr "ห่วงโซ่ของการเรียก:"
+
+#~ msgid "Error saving to suppression file '%s': %s"
+#~ msgstr "เกิดข้อผิดพลาดขณะบันทึกแฟ้มการละเลย '%s': %s"
+
+#~ msgid "You have forgotten to name your suppression rule."
+#~ msgstr "คุณลืมตั้งชื่อกฎการละเลยของคุณ"
+
+#~ msgid "_Edit"
+#~ msgstr "แ_ก้ไข"
+
+#~ msgid "Cannot save suppression rules: %s"
+#~ msgstr "ไม่สามารถบันทึกกฎการละเลย: %s"
+
+#~ msgid "You have not set a suppressions file in your settings."
+#~ msgstr "คุณไม่ได้กำหนดแฟ้มการละเลยในค่าตั้งของคุณ"
+
+#~ msgid "Application performance profiler"
+#~ msgstr "เครื่องมือวัดประสิทธิภาพโปรแกรม"
+
+#~ msgid "Profile"
+#~ msgstr "โพรไฟล์"
+
+#~ msgid "Powerful debugging tool."
+#~ msgstr "เครื่องมือดีบั๊กที่มีประโยชน์"
+
+#~ msgid "Valgrind Plugin"
+#~ msgstr "ปลั๊กอิน Valgrind"
+
+#~ msgid "Fixed data-view"
+#~ msgstr "การแสดงข้อมูลแบบตายตัว"
+
+#~ msgid "Update"
+#~ msgstr "ปรับข้อมูล"
+
+#~ msgid "Update the graph"
+#~ msgstr "ปรับข้อมูลกราฟ"
+
+#~ msgid "Inheritance Graph"
+#~ msgstr "กราฟการสืบทอดมรดก"
+
+#~ msgid "<b>Called By</b>"
+#~ msgstr "<b>เรียกโดย</b>"
+
+#~ msgid "<b>Called</b>"
+#~ msgstr "<b>ถูกเรียก</b>"
+
+#~ msgid "<b>Functions</b>"
+#~ msgstr "<b>ฟังก์ชัน</b>"
+
+#~ msgid "<b>Profiling Data</b>"
+#~ msgstr "<b>ข้อมูลการวัดประสิทธิภาพ</b>"
+
+#~ msgid "<b>Select Target to Profile</b>"
+#~ msgstr "<b>เลือกเป้าหมายที่จะวัดประสิทธิภาพ</b>"
+
+#~ msgid "<b>Symbols</b>"
+#~ msgstr "<b>สัญลักษณ์</b>"
+
+#~ msgid "<b>Time Propagation</b>"
+#~ msgstr "<b>การส่งทอดเวลา</b>"
+
+#~ msgid "Automatically refresh profile data display"
+#~ msgstr "ปรับแสดงข้อมูลการวัดโดยอัตโนมัติ"
+
+#~ msgid "Browse..."
+#~ msgstr "เรียกดู..."
+
+#~ msgid "Do not propagate time for these symbols:"
+#~ msgstr "ไม่ส่งทอดเวลาสำหรับสัญลักษณ์เหล่านี้:"
+
+#~ msgid "Do not show static functions"
+#~ msgstr "ไม่แสดงฟังก์ชันสแตติก"
+
+#~ msgid "Do not show these symbols:"
+#~ msgstr "ไม่แสดงสัญลักษณ์เหล่านี้:"
+
+#~ msgid ""
+#~ "Enter one symbol specification per line.\n"
+#~ "\n"
+#~ "For information on symbol specifications, see section \n"
+#~ "4.5 of the gprof info page."
+#~ msgstr ""
+#~ "ป้อนข้อกำหนดสัญลักษณ์หนึ่งรายการต่อบรรทัด\n"
+#~ "\n"
+#~ "ดูข้อมูลเกี่ยวกับข้อกำหนดสัญลักษณ์ได้ที่หัวข้อ 4.5\n"
+#~ "ของหน้า info ของ gprof"
+
+#~ msgid "Options..."
+#~ msgstr "ตัวเลือก..."
+
+#~ msgid "Profiling Options"
+#~ msgstr "ตัวเลือกสำหรับการวัดประสิทธิภาพ"
+
+#~ msgid "Propagate time for all symbols"
+#~ msgstr "ส่งทอดเวลาสำหรับสัญลักษณ์ทั้งหมด"
+
+#~ msgid "Propagate time for only these symbols:"
+#~ msgstr "ส่งทอดเวลาสำหรับสัญลักษณ์เหล่านี้เท่านั้น:"
+
+#~ msgid "Select Other Target..."
+#~ msgstr "เลือกเป้าหมายอื่น..."
+
+#~ msgid "Select Profiling Target"
+#~ msgstr "เลือกเป้าหมายการวัดประสิทธิภาพ"
+
+#~ msgid "Show all symbols"
+#~ msgstr "แสดงสัญลักษณ์ทั้งหมด"
+
+#~ msgid "Show functions that could have been called but never were"
+#~ msgstr "แสดงฟังก์ชันที่สามารถจะถูกเรียกแต่ไม่เคยเรียก"
+
+#~ msgid "Show only these symbols:"
+#~ msgstr "แสดงสัญลักษณ์เหล่านี้เท่านั้น:"
+
+#~ msgid "Show uncalled functions"
+#~ msgstr "แสดงฟังก์ชันที่ไม่ถูกเรียก"
+
+#~ msgid "Use this profiling data file:"
+#~ msgstr "ใช้แฟ้มข้อมูลการวัดประสิทธิภาพนี้:"
+
+#~ msgid "<b>Autocompletion</b>"
+#~ msgstr "<b>เติมเต็มคำอัตโนมัติ</b>"
+
+#~ msgid "<b>Basic Indentation</b>"
+#~ msgstr "<b>การร่นย่อหน้าแบบธรรมดา</b>"
+
+#~ msgid "<b>Code folding</b>"
+#~ msgstr "<b>การพับโค้ด</b>"
+
+#~ msgid "<b>Highlight style</b>"
+#~ msgstr "<b>รูปแบบการเน้น</b>"
+
+#~ msgid "<b>Misc options</b>"
+#~ msgstr "<b>ตัวเลือกอื่นๆ</b>"
+
+#~ msgid "<b>Other colors</b>"
+#~ msgstr "<b>สือื่น ๆ</b>"
+
+#~ msgid "<b>Print options</b>"
+#~ msgstr "<b>ตัวเลือกการพิมพ์</b>"
+
+#~ msgid "Add line number every:"
+#~ msgstr "เพิ่มเลขบรรทัดทุกๆ:"
+
+#~ msgid "Add page header"
+#~ msgstr "เพิ่มส่วนหัวของหน้า"
+
+#~ msgid "Attributes:"
+#~ msgstr "คุณลักษณะ:"
+
+#~ msgid "Autocomplete XML/HTML closing tags"
+#~ msgstr "ปิดแท็ก XML/HTML อัตโนมัติ"
+
+#~ msgid "Autocompletion pop up choices"
+#~ msgstr "ตัวเลือกที่ผุดขึ้นของการเติมเต็มคำอัตโนมัติ"
+
+#~ msgid "Background color:"
+#~ msgstr "สีพื้นหลัง:"
+
+#~ msgid "Basic Indentation"
+#~ msgstr "การร่นย่อหน้าแบบธรรมดา"
+
+#~ msgid "Bold"
+#~ msgstr "หนา"
+
+#~ msgid "Calltip background:"
+#~ msgstr "สีพื้นหลังคำแนะนำการเรียก:"
+
+#~ msgid "Caret (cursor) color:"
+#~ msgstr "สีของเคอร์เซอร์:"
+
+#~ msgid "Caret blink period in ms"
+#~ msgstr "ช่วงเวลาการกะพริบของเคอร์เซอร์เป็นมิลลิวินาที"
+
+#~ msgid "Choose autocomplete for single match"
+#~ msgstr "เลือกเติมเต็มคำอัตโนมัติเมื่อมีรายการที่ตรงรายการเดียว"
+
+#~ msgid "Collapse all code folds on file open"
+#~ msgstr "พับโค้ดทุกพับของแฟ้มที่เปิด"
+
+#~ msgid "Colors & Fonts"
+#~ msgstr "สีและแบบอักษร"
+
+#~ msgid "Colour"
+#~ msgstr "สี"
+
+#~ msgid "Compact folding"
+#~ msgstr "บีบการพับ"
+
+#~ msgid "Disable syntax highlighting"
+#~ msgstr "ปิดการเน้นไวยากรณ์"
+
+#~ msgid "Draw line below folded lines"
+#~ msgstr "วาดเส้นข้างล่างเส้นที่ถูกพับ"
+
+#~ msgid "Edge column"
+#~ msgstr "คอลัมน์ขอบขวา"
+
+#~ msgid "Editor"
+#~ msgstr "เครื่องมือแก้ไข"
+
+#~ msgid "Editor caret (cursor) width in pixels"
+#~ msgstr "ความกว้างของเคอร์เซอร์ของเครื่องมือแก้ไขเป็นพิกเซล"
+
+#~ msgid "Enable HTML tags folding"
+#~ msgstr "เปิดใช้งานการพับแท็ก HTML"
+
+#~ msgid "Enable automatic indentation"
+#~ msgstr "เปิดใช้งานการร่นย่อหน้าอัตโนมัติ"
+
+#~ msgid "Enable braces check"
+#~ msgstr "เปิดใช้งานการตรวจสอบวงเล็บ"
+
+#~ msgid "Enable code folding"
+#~ msgstr "เปิดใช้งานการพับโค้ด"
+
+#~ msgid "Enable comments folding"
+#~ msgstr "เปิดใช้งานการพับคำอธิบาย"
+
+#~ msgid "Enable line wrap"
+#~ msgstr "เปิดใช้การตัดบรรทัด"
+
+#~ msgid "Enable python comments folding"
+#~ msgstr "เปิดใช้งานการพับคำอธิบายของไพธอน"
+
+#~ msgid "Enable python quoted strings folding"
+#~ msgstr "เปิดใช้งานการพับข้อความในคำพูดของไพธอน"
+
+#~ msgid "Filter extraneous characters in DOS mode"
+#~ msgstr "กรองอักขระส่วนเกินในโหมด DOS"
+
+#~ msgid "Fold style:"
+#~ msgstr "รูปแบบการพับ:"
+
+#~ msgid "Font:"
+#~ msgstr "แบบอักษร:"
+
+#~ msgid "Fonts and colors for editor"
+#~ msgstr "แบบอักษรและสีสำหรับเครื่องมือแก้ไข"
+
+#~ msgid "Foreground color:"
+#~ msgstr "สีข้อความ:"
+
+#~ msgid "Indent closing braces"
+#~ msgstr "ร่นย่อหน้าวงเล็บปีกกาปิด"
+
+#~ msgid "Indent opening braces"
+#~ msgstr "ร่นย่อหน้าวงเล็บปีกกาเปิด"
+
+#~ msgid "Indentation size in spaces:"
+#~ msgstr "ร่นย่อหน้าเป็นจำนวนช่องว่าง:"
+
+#~ msgid "Italic"
+#~ msgstr "เอียง"
+
+#~ msgid "Line numbers margin width in pixels"
+#~ msgstr "ความกว้างของขอบหมายเลขบรรทัดเป็นพิกเซล"
+
+#~ msgid "Lines"
+#~ msgstr "บรรทัด"
+
+#~ msgid "Maintain past Indentation"
+#~ msgstr "ใช้ระยะร่นย่อหน้าเดิมในบรรทัดใหม่"
+
+#~ msgid "Margin Fold visible"
+#~ msgstr "แสดงขอบพับ"
+
+#~ msgid "Margin Linenum visible"
+#~ msgstr "แสดงขอบหมายเลขบรรทัด"
+
+#~ msgid "Margin Marker visible"
+#~ msgstr "แสดงขอบเครื่องหมาย"
+
+#~ msgid "Mode:"
+#~ msgstr "โหมด:"
+
+#~ msgid "Monochrome"
+#~ msgstr "ขาวดำ"
+
+#~ msgid ""
+#~ "Plus/Minus\n"
+#~ "Arrows\n"
+#~ "Circular\n"
+#~ "Squares"
+#~ msgstr ""
+#~ "บวก/ลบ\n"
+#~ "ลูกศร\n"
+#~ "วงกลม\n"
+#~ "สี่เหลี่ยม"
+
+#~ msgid "Pressing backspace un-indents"
+#~ msgstr "กด backspace ลดการร่นย่อหน้า"
+
+#~ msgid "Pressing tab inserts indentation"
+#~ msgstr "การกดแท็บแทรกการร่นย่อหน้า"
+
+#~ msgid "Printing"
+#~ msgstr "การพิมพ์"
+
+#~ msgid "Select highlight style to edit:"
+#~ msgstr "เลือกรูปแบบการเน้นที่จะแก้ไข:"
+
+#~ msgid "Selection background:"
+#~ msgstr "สีพื้นหลังการเลือก:"
+
+#~ msgid "Selection foreground:"
+#~ msgstr "สีตัวอักษรการเลือก:"
+
+#~ msgid "Strip trailling spaces on file save"
+#~ msgstr "ขจัดช่องว่างท้ายบรรทัดเมื่อบันทึกแฟ้ม"
+
+#~ msgid "Tab size in spaces:"
+#~ msgstr "ขนาดแท็บเป็นจำนวนช่องว่าง:"
+
+#~ msgid "Underlined"
+#~ msgstr "ขีดเส้นใต้"
+
+#~ msgid "Use default"
+#~ msgstr "ใช้ค่าปริยาย"
+
+#~ msgid "Use tabs for indentation"
+#~ msgstr "ใช้แท็บในการร่นย่อหน้า"
+
+#~ msgid "View EOL chars"
+#~ msgstr "แสดงอักขระ EOL"
+
+#~ msgid "View Indentation Guides"
+#~ msgstr "แสดงแนวการร่นย่อหน้า"
+
+#~ msgid "View Line Wrap"
+#~ msgstr "แสดงการตัดบรรทัด"
+
+#~ msgid "View Whitespaces"
+#~ msgstr "แสดงอักขระช่องว่าง"
+
+#~ msgid "View indentation whitespaces"
+#~ msgstr "แสดงอักขระช่องว่างที่ใช้ร่นย่อหน้า"
+
+#~ msgid "Wrap bookmarks search around"
+#~ msgstr "เริ่มค้นที่คั่นหน้าใหม่เมื่อจบแฟ้มแล้ว"
+
+#~ msgid "<b>Scratchbox Options</b>\n"
+#~ msgstr "<b>ตัวเลือกของ Scratchbox</b>\n"
+
+#~ msgid "Scratchbox directory:"
+#~ msgstr "ไดเรกทอรี Scratchbox:"
+
+#~ msgid "Scratchbox target:"
+#~ msgstr "เป้าหมาย scratchbox:"
+
+#~ msgid "Scratchbox version:"
+#~ msgstr "รุ่นของ Scratchbox:"
+
+#~ msgid "Select Scratchbox Folder"
+#~ msgstr "เลือกโฟลเดอร์ Scratchbox"
+
+#~ msgid "<b>Program to test:</b>"
+#~ msgstr "<b>โปรแกรมที่จะทดสอบ:</b>"
+
+#~ msgid "<b>Valgrind</b>"
+#~ msgstr "<b>Valgrind</b>"
+
+#~ msgid ""
+#~ "Memcheck\n"
+#~ "Addrcheck\n"
+#~ "Helgrind"
+#~ msgstr ""
+#~ "Memcheck\n"
+#~ "Addrcheck\n"
+#~ "Helgrind"
+
+#~ msgid "Select Tool:"
+#~ msgstr "เลือกเครื่องมือ:"
+
+#~ msgid "Select Valgrind Target"
+#~ msgstr "เลือกเป้าหมายของ Valgrind"
+
+#~ msgid "A graph painter for the inheritance of the classes."
+#~ msgstr "เครื่องมือวาดกราฟการสืบทอดคุณสมบัติของคลาส"
+
+#~ msgid "Class Inheritance"
+#~ msgstr "การสืบทอดของคลาส"

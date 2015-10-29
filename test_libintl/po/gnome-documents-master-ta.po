@@ -1,0 +1,972 @@
+# Tamil translation for gnome-documents.
+# Copyright (C) 2011 gnome-documents's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-documents package.
+#
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2011, 2012, 2013.
+# naveenkumar palaniswamy(நவீன் குமார் கெம்ளின்)  <naveenmtp@gmail.com>, 2011.
+# Shantha kumar <shkumar@redhat.com>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-documents master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"documents&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-29 09:07+0000\n"
+"PO-Revision-Date: 2014-09-15 02:39+0530\n"
+"Last-Translator: Shantha kumar <shkumar@redhat.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:1
+#: ../data/org.gnome.Books.desktop.in.h:1 ../src/application.js:114
+#: ../src/embed.js:80 ../src/lib/gd-utils.c:418
+#, fuzzy
+#| msgid "Bookmarks"
+msgid "Books"
+msgstr "புத்தகக்குறிகள்"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:2
+#, fuzzy
+#| msgid "A document manager application for GNOME"
+msgid "An e-book manager application for GNOME"
+msgstr "GNOME க்கான ஆவண நிர்வாகப் பயன்பாடு"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:3
+#, fuzzy
+#| msgid ""
+#| "A simple application to access, organize and share your documents on "
+#| "GNOME. It is meant to be a simple and elegant replacement for using a "
+#| "file manager to deal with documents. Seamless cloud integration is "
+#| "offered through GNOME Online Accounts."
+msgid ""
+"A simple application to access and organize your e-books on GNOME. It is "
+"meant to be a simple and elegant replacement for using a file manager to "
+"deal with e-books."
+msgstr ""
+"GNOME இல் உங்கள் ஆவணங்களை அணுகவும் ஒழுங்கமைக்கவும் பகிரவும் உதவும் ஒரு எளிய பயன்பாடு. "
+"இது ஆவணங்களைக் கையாள கோப்பு நிர்வாகியைப் பயன்படுத்துவதற்கு பதிலாக உருவாக்கப்பட்ட ஒரு "
+"எளியதும் அற்புதமானதுமான ஒரு கருவி. GNOME ஆன்லைன் கணக்குகளுடன் சிக்கலற்ற ஒத்திசைவு "
+"வசதியையும் இது வழங்குகிறது."
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:4
+#: ../data/org.gnome.Documents.appdata.xml.in.h:4
+msgid "It lets you:"
+msgstr "இதைக் கொண்டு நீங்கள் செய்யக்கூடியவை:"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:5
+msgid "View recent e-books"
+msgstr ""
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:6
+#, fuzzy
+#| msgid "Search through documents"
+msgid "Search through e-books"
+msgstr "ஆவணங்களைத் தேடலாம்"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:7
+#, fuzzy
+#| msgid "View documents fullscreen"
+msgid "View e-books fullscreen"
+msgstr "ஆவணங்களை முழுத்திரையில் காணலாம்"
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:8
+msgid "Print e-books"
+msgstr ""
+
+#: ../data/org.gnome.Books.appdata.xml.in.h:9
+#: ../data/org.gnome.Documents.appdata.xml.in.h:12
+msgid "Allow opening full featured editor for non-trivial changes"
+msgstr "மிக முக்கியமல்லாத மாற்றங்களுக்கு முழு வசதி கொண்ட திருத்தியைத் திறக்க அனுமதி"
+
+#: ../data/org.gnome.Books.desktop.in.h:2
+#, fuzzy
+#| msgid "Access, manage and share documents"
+msgid "Access, manage and share books"
+msgstr "ஆவணங்களை அணுகு, மேலாளு, பகிர்"
+
+#: ../data/org.gnome.Books.desktop.in.h:3
+msgid "Books;Comics;ePub;PDF;"
+msgstr ""
+
+#: ../data/org.gnome.books.gschema.xml.h:1
+#: ../data/org.gnome.documents.gschema.xml.h:1
+msgid "View as"
+msgstr "இப்படிப்பார்க்க "
+
+#: ../data/org.gnome.books.gschema.xml.h:2
+#: ../data/org.gnome.documents.gschema.xml.h:2
+msgid "View as type"
+msgstr "இந்த வகையாக பார்க்க"
+
+#: ../data/org.gnome.books.gschema.xml.h:3
+#: ../data/org.gnome.documents.gschema.xml.h:3
+msgid "Window size"
+msgstr "சாளரத்தின் அளவு"
+
+#: ../data/org.gnome.books.gschema.xml.h:4
+#: ../data/org.gnome.documents.gschema.xml.h:4
+msgid "Window size (width and height)."
+msgstr "சாளரத்தின் அளவு(அகலம் மற்றும் உயரம்)"
+
+#: ../data/org.gnome.books.gschema.xml.h:5
+#: ../data/org.gnome.documents.gschema.xml.h:5
+msgid "Window position"
+msgstr "சாளரத்தின் நிலை"
+
+#: ../data/org.gnome.books.gschema.xml.h:6
+#: ../data/org.gnome.documents.gschema.xml.h:6
+msgid "Window position (x and y)."
+msgstr "சாளரத்தின் நிலை(x மற்றும் y)"
+
+#: ../data/org.gnome.books.gschema.xml.h:7
+#: ../data/org.gnome.documents.gschema.xml.h:7
+msgid "Window maximized"
+msgstr "முழுமையாக்கிய சாளரம்"
+
+#: ../data/org.gnome.books.gschema.xml.h:8
+#: ../data/org.gnome.documents.gschema.xml.h:8
+msgid "Window maximized state"
+msgstr "முழுமையாக்கிய சாளர நிலை"
+
+#: ../data/org.gnome.books.gschema.xml.h:9
+#: ../data/org.gnome.documents.gschema.xml.h:9
+msgid "Night mode"
+msgstr ""
+
+#: ../data/org.gnome.books.gschema.xml.h:10
+#: ../data/org.gnome.documents.gschema.xml.h:10
+msgid "Whether the application is in night mode."
+msgstr ""
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:1
+#: ../data/org.gnome.Documents.desktop.in.h:1 ../src/application.js:117
+#: ../src/embed.js:80 ../src/lib/gd-utils.c:411 ../src/mainWindow.js:54
+msgid "Documents"
+msgstr "ஆவணங்கள்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:2
+msgid "A document manager application for GNOME"
+msgstr "GNOME க்கான ஆவண நிர்வாகப் பயன்பாடு"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:3
+msgid ""
+"A simple application to access, organize and share your documents on GNOME. "
+"It is meant to be a simple and elegant replacement for using a file manager "
+"to deal with documents. Seamless cloud integration is offered through GNOME "
+"Online Accounts."
+msgstr ""
+"GNOME இல் உங்கள் ஆவணங்களை அணுகவும் ஒழுங்கமைக்கவும் பகிரவும் உதவும் ஒரு எளிய பயன்பாடு. "
+"இது ஆவணங்களைக் கையாள கோப்பு நிர்வாகியைப் பயன்படுத்துவதற்கு பதிலாக உருவாக்கப்பட்ட ஒரு "
+"எளியதும் அற்புதமானதுமான ஒரு கருவி. GNOME ஆன்லைன் கணக்குகளுடன் சிக்கலற்ற ஒத்திசைவு "
+"வசதியையும் இது வழங்குகிறது."
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:5
+msgid "View recent local and online documents"
+msgstr "சமீபத்தில் திறந்த கணினி மற்றும் இணைய ஆவணங்களைக் காண்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:6
+msgid "Access your Google, ownCloud or OneDrive content"
+msgstr "உங்கள் Google, ownCloud அல்லது OneDrive உள்ளடக்கத்தைக் காணலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:7
+msgid "Search through documents"
+msgstr "ஆவணங்களைத் தேடலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:8
+msgid "See new documents shared by friends"
+msgstr "நண்பர்கள் பகிர்ந்த புதிய ஆவணங்களைக் காணலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:9
+msgid "View documents fullscreen"
+msgstr "ஆவணங்களை முழுத்திரையில் காணலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:10
+msgid "Print documents"
+msgstr "ஆவணங்களை அச்சிடலாம்"
+
+#: ../data/org.gnome.Documents.appdata.xml.in.h:11
+msgid "Select favorites"
+msgstr "பிடித்தவற்றைத் தேர்ந்தெடுக்கலாம்"
+
+#: ../data/org.gnome.Documents.desktop.in.h:2
+msgid "Access, manage and share documents"
+msgstr "ஆவணங்களை அணுகு, மேலாளு, பகிர்"
+
+#: ../data/org.gnome.Documents.desktop.in.h:3
+msgid "Docs;PDF;Document;"
+msgstr "டாக்ஸ்;பிடிஎஃப்;ஆவணங்கள்;"
+
+#: ../data/ui/app-menu.ui.h:1
+msgid "Fullscreen"
+msgstr "முழுத்திரை"
+
+#: ../data/ui/app-menu.ui.h:2
+msgid "Night Mode"
+msgstr ""
+
+#: ../data/ui/app-menu.ui.h:3
+msgid "Help"
+msgstr "உதவி"
+
+#: ../data/ui/app-menu.ui.h:4
+msgid "About"
+msgstr "அறிமுகம்"
+
+#: ../data/ui/app-menu.ui.h:5
+msgid "Quit"
+msgstr "வெளியேறு"
+
+#: ../data/ui/organize-collection-dialog.ui.h:1
+msgid "Enter a name for your first collection"
+msgstr ""
+
+#: ../data/ui/organize-collection-dialog.ui.h:2
+#, fuzzy
+#| msgid "Collection"
+msgid "New Collection…"
+msgstr "சேகரம்"
+
+#: ../data/ui/organize-collection-dialog.ui.h:3 ../src/sharing.js:226
+msgid "Add"
+msgstr "சேர்க்க"
+
+#: ../data/ui/organize-collection-dialog.ui.h:4 ../src/mainToolbar.js:218
+msgid "Cancel"
+msgstr "ரத்து"
+
+#. Label for Done button in Sharing dialog
+#: ../data/ui/organize-collection-dialog.ui.h:5 ../src/sharing.js:112
+msgid "Done"
+msgstr "முடிந்தது"
+
+#: ../data/ui/preview-context-menu.ui.h:1
+msgid "_Copy"
+msgstr "நகலெடு (_C)"
+
+#. open button
+#. Translators: this is the Open action in a context menu
+#: ../data/ui/preview-menu.ui.h:1 ../src/selections.js:875
+#: ../src/selections.js:1003
+msgid "Open"
+msgstr "திற"
+
+#: ../data/ui/preview-menu.ui.h:2
+msgid "Edit"
+msgstr "திருத்து"
+
+#: ../data/ui/preview-menu.ui.h:3
+msgid "Print…"
+msgstr "அச்சிடுக...…"
+
+#: ../data/ui/preview-menu.ui.h:4
+msgid "Present"
+msgstr "முன் வை"
+
+#: ../data/ui/preview-menu.ui.h:5
+msgid "Zoom In"
+msgstr "அணுகிப்பார்க்கவும்"
+
+#: ../data/ui/preview-menu.ui.h:6
+msgid "Zoom Out"
+msgstr "விலகிப் பார்க்கவும்"
+
+#: ../data/ui/preview-menu.ui.h:7
+msgid "Rotate ↶"
+msgstr "சுழற்றவும் ↶"
+
+#: ../data/ui/preview-menu.ui.h:8
+msgid "Rotate ↷"
+msgstr "சுழற்றவும் ↷"
+
+#. properties button
+#: ../data/ui/preview-menu.ui.h:9 ../src/properties.js:62
+#: ../src/selections.js:897
+msgid "Properties"
+msgstr "பண்புகள்"
+
+#: ../data/ui/selection-menu.ui.h:1
+msgid "Select All"
+msgstr "அனைத்தையும் தேர்வு செய்"
+
+#: ../data/ui/selection-menu.ui.h:2
+msgid "Select None"
+msgstr "எதையும் தேர்ந்தெடுக்காதே "
+
+#: ../src/documents.js:630
+msgid "Failed to print document"
+msgstr "ஆவணத்தை அச்சிட முடியவில்லை"
+
+#. Translators: this refers to local documents
+#: ../src/documents.js:672 ../src/search.js:510
+msgid "Local"
+msgstr "உள்ளமை"
+
+#. Translators: Documents ships a "Getting Started with Documents"
+#. tutorial PDF. The "GNOME" string below is displayed as the author name
+#. of that document, and doesn't normally need to be translated.
+#: ../src/documents.js:699
+msgid "GNOME"
+msgstr "GNOME"
+
+#: ../src/documents.js:700
+msgid "Getting Started with Documents"
+msgstr "ஆவணங்களை துவக்கலாம்"
+
+#: ../src/documents.js:716 ../src/documents.js:919 ../src/documents.js:987
+#: ../src/documents.js:1103
+msgid "Collection"
+msgstr "சேகரம்"
+
+#. overridden
+#: ../src/documents.js:797
+msgid "Google Docs"
+msgstr "கூகுள் டாக்ஸ்"
+
+#: ../src/documents.js:798
+msgid "Google"
+msgstr "கூகுள்"
+
+#: ../src/documents.js:921 ../src/documents.js:1105
+msgid "Spreadsheet"
+msgstr "விரிதாள்"
+
+#: ../src/documents.js:923 ../src/documents.js:1107 ../src/presentation.js:49
+msgid "Presentation"
+msgstr "முன்வைப்பு"
+
+#: ../src/documents.js:925 ../src/documents.js:1109
+msgid "e-Book"
+msgstr ""
+
+#: ../src/documents.js:927 ../src/documents.js:1111
+msgid "Document"
+msgstr "ஆவணம்"
+
+#. overridden
+#: ../src/documents.js:966
+msgid "ownCloud"
+msgstr "ownCloud"
+
+#. overridden
+#: ../src/documents.js:1037 ../src/documents.js:1038
+msgid "OneDrive"
+msgstr "OneDrive"
+
+#: ../src/documents.js:1287
+msgid "Please check the network connection."
+msgstr "வலையமைப்பு இணைப்பை சரி பார்க்கவும்"
+
+#: ../src/documents.js:1290
+msgid "Please check the network proxy settings."
+msgstr "வலையமைப்பு பதிலாள் அமைப்புகளை சரி பார்க்கவும்"
+
+#: ../src/documents.js:1293
+msgid "Unable to sign in to the document service."
+msgstr "ஆவண சேவைக்கு உள் நுழைய முடியவில்லை"
+
+#: ../src/documents.js:1296
+msgid "Unable to locate this document."
+msgstr "இந்த ஆவணத்தின் இடம் காண முடியவில்லை"
+
+#: ../src/documents.js:1299
+#, javascript-format
+msgid "Hmm, something is fishy (%d)."
+msgstr "ஹும்ம்ம்ம், ஏதோ சரியில்லை  (%d)."
+
+#: ../src/documents.js:1306
+msgid ""
+"You are using a preview of Books. Full viewing capabilities are coming soon!"
+msgstr ""
+
+#. Translators: %s is the title of a document
+#: ../src/documents.js:1327
+#, javascript-format
+msgid "Oops! Unable to load “%s”"
+msgstr "அடடா, “%s” ஐ ஏற்ற முடியவில்லை"
+
+#: ../src/edit.js:180
+msgid "View"
+msgstr "காட்சி"
+
+#. collections button
+#: ../src/embed.js:84 ../src/search.js:203 ../src/search.js:209
+#: ../src/selections.js:902
+msgid "Collections"
+msgstr "சேகரங்கள்"
+
+#: ../src/lib/gd-nav-bar.c:242
+#, c-format
+msgid "Page %u of %u"
+msgstr "பக்கம் %u,   %u இல்"
+
+#: ../src/lib/gd-pdf-loader.c:247
+msgid "Unable to load the document"
+msgstr "ஆவணத்தை ஏற்ற முடியவில்லை"
+
+#: ../src/lib/gd-pdf-loader.c:715
+msgid "LibreOffice is required to view this document"
+msgstr "இந்த ஆவணத்தை காண லிப்ரே ஆபீஸ் தேவை"
+
+#. Translators: %s is the number of the page, already formatted
+#. * as a string, for example "Page 5".
+#.
+#: ../src/lib/gd-places-bookmarks.c:321
+#, c-format
+msgid "Page %s"
+msgstr "பக்கம் %s"
+
+#: ../src/lib/gd-places-bookmarks.c:384
+msgid "No bookmarks"
+msgstr "புத்தக குறிகள் இல்லை"
+
+#: ../src/lib/gd-places-bookmarks.c:392 ../src/lib/gd-places-links.c:257
+msgid "Loading…"
+msgstr "ஏற்றுகிறது..."
+
+#: ../src/lib/gd-places-bookmarks.c:656 ../src/preview.js:631
+msgid "Bookmarks"
+msgstr "புத்தகக்குறிகள்"
+
+#: ../src/lib/gd-places-links.c:342
+msgid "No table of contents"
+msgstr "உள்ளடக்க அட்டவணை இல்லை"
+
+#: ../src/lib/gd-places-links.c:514
+msgid "Contents"
+msgstr "உள்ளடக்கங்கள்"
+
+#: ../src/lib/gd-utils.c:412
+msgid "A document manager application"
+msgstr "ஒரு ஆவண மேலாண்மை பயன்பாடு"
+
+#: ../src/lib/gd-utils.c:419
+#, fuzzy
+#| msgid "A document manager application"
+msgid "An e-books manager application"
+msgstr "ஒரு ஆவண மேலாண்மை பயன்பாடு"
+
+#: ../src/lib/gd-utils.c:427
+msgid "translator-credits"
+msgstr ""
+"Dr.T.Vasudevan <agnihot3@gmail.com>, 2011, 2012., naveenkumar palaniswamy "
+"<naveenmtp@gmail.com>, 2011."
+
+#: ../src/mainToolbar.js:89
+msgid "Search"
+msgstr "தேடு"
+
+#: ../src/mainToolbar.js:97
+msgid "Back"
+msgstr "பின்"
+
+#: ../src/mainToolbar.js:156
+msgid "View items as a list"
+msgstr "உருப்படிகளை பட்டியலாகக் காண்பி"
+
+#: ../src/mainToolbar.js:162
+msgid "View items as a grid of icons"
+msgstr "உருப்படிகளை சின்னங்களின் குறுக்கு நெடுக்கு வரிசையாகக் காண்பி"
+
+#: ../src/mainToolbar.js:192
+msgid "Click on items to select them"
+msgstr "உருப்படிகளை தேர்ந்தெடுக்க அதன் மீது சொடுக்கவும்"
+
+#: ../src/mainToolbar.js:194
+#, javascript-format
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "%d தேர்வு செய்யப்பட்டது"
+msgstr[1] "%d தேர்வு செய்யப்பட்டது"
+
+#: ../src/mainToolbar.js:278
+msgid "Select Items"
+msgstr "தேர்வு செய்த உருப்படிகள்"
+
+#. Translators: only one item has been deleted and %s is its name
+#: ../src/notifications.js:54
+#, javascript-format
+msgid "“%s” deleted"
+msgstr ""
+
+#. Translators: one or more items might have been deleted, and %d
+#. is the count
+#: ../src/notifications.js:58
+#, fuzzy, javascript-format
+#| msgid "Selected item has been deleted"
+#| msgid_plural "Selected items have been deleted"
+msgid "%d item deleted"
+msgid_plural "%d items deleted"
+msgstr[0] "தேர்ந்தெடுத்த உருப்படி நீக்கப்பட்டுவிட்டது"
+msgstr[1] "தேர்ந்தெடுத்த உருப்படிகள் நீக்கப்பட்டுவிட்டன"
+
+#: ../src/notifications.js:67 ../src/selections.js:393
+msgid "Undo"
+msgstr "செயல்தவிர்"
+
+#: ../src/notifications.js:167
+#, javascript-format
+msgid "Printing “%s”: %s"
+msgstr "\"%s\" ஐ அச்சிடுகிறது : %s"
+
+#: ../src/notifications.js:223
+msgid "Your documents are being indexed"
+msgstr "உங்கள் ஆவணங்கள் பட்டியலிடப்படுகின்றன."
+
+#: ../src/notifications.js:224
+msgid "Some documents might not be available during this process"
+msgstr "இந்த செயலின் போது சில ஆவனங்கள் கிடைக்காமல் போகலாம்."
+
+#. Translators: %s refers to an online account provider, e.g.
+#. "Google", or "Windows Live".
+#: ../src/notifications.js:246
+#, javascript-format
+msgid "Fetching documents from %s"
+msgstr "%s இல் இருந்து ஆவணங்களை கொண்டு வருகிறது"
+
+#: ../src/notifications.js:248
+msgid "Fetching documents from online accounts"
+msgstr "வலை இணைப்பு கணக்குகளில் இருந்து ஆவணங்களை கொண்டு வருகிறது"
+
+#: ../src/password.js:47
+msgid "Password Required"
+msgstr "கடவுச்சொல் தேவைப்படுகிறது"
+
+#: ../src/password.js:50
+msgid "_Unlock"
+msgstr "விடுவி (_U)"
+
+#: ../src/password.js:66
+#, javascript-format
+msgid "Document %s is locked and requires a password to be opened."
+msgstr "ஆவணம் %s பூட்டப்பட்டுள்ளது, அதனை திறப்பதற்கு கடவுச்சொல் தேவைப்படுகிறது."
+
+#: ../src/password.js:80
+msgid "_Password"
+msgstr "கடவுச்சொல் (_P)"
+
+#: ../src/presentation.js:107
+msgid "Running in presentation mode"
+msgstr "காட்சி அளிப்பு பாங்கில் இயங்குகிறது"
+
+#: ../src/presentation.js:130
+msgid "Present On"
+msgstr "இந்த நாளில் முன்வை"
+
+#. Translators: "Mirrored" describes when both displays show the same view
+#: ../src/presentation.js:166
+msgid "Mirrored"
+msgstr ""
+
+#: ../src/presentation.js:168
+msgid "Primary"
+msgstr ""
+
+#: ../src/presentation.js:170
+msgid "Off"
+msgstr ""
+
+#: ../src/presentation.js:172
+msgid "Secondary"
+msgstr ""
+
+#: ../src/preview.js:639
+msgid "Bookmark this page"
+msgstr "இந்த பக்கத்தைப் புத்தகக்குறியில் சேர்"
+
+#. Translators: this is the Open action in a context menu
+#: ../src/preview.js:901 ../src/selections.js:1000
+#, javascript-format
+msgid "Open with %s"
+msgstr "%s ஆல் திற"
+
+#: ../src/preview.js:964
+msgid "Find Previous"
+msgstr "முந்தையதைக் கண்டுபிடி"
+
+#: ../src/preview.js:971
+msgid "Find Next"
+msgstr "அடுத்ததைக் கண்டுபிடி"
+
+#. Title item
+#. Translators: "Title" is the label next to the document title
+#. in the properties dialog
+#: ../src/properties.js:82
+msgctxt "Document Title"
+msgid "Title"
+msgstr "தலைப்பு"
+
+#. Translators: "Author" is the label next to the document author
+#. in the properties dialog
+#: ../src/properties.js:91
+msgctxt "Document Author"
+msgid "Author"
+msgstr "உருவாக்கியவர்"
+
+#. Source item
+#: ../src/properties.js:98
+msgid "Source"
+msgstr "மூலம்"
+
+#. Date Modified item
+#: ../src/properties.js:104
+msgid "Date Modified"
+msgstr "மாற்றப்பட்ட தேதி"
+
+#: ../src/properties.js:111
+msgid "Date Created"
+msgstr "உருவாக்கிய தேதி"
+
+#. Document type item
+#. Translators: "Type" is the label next to the document type
+#. (PDF, spreadsheet, ...) in the properties dialog
+#: ../src/properties.js:120
+msgctxt "Document Type"
+msgid "Type"
+msgstr "வகை"
+
+#: ../src/search.js:126
+msgid "Category"
+msgstr "வகை"
+
+#. Translators: this refers to new and recent documents
+#. Translators: this refers to documents
+#: ../src/search.js:131 ../src/search.js:200 ../src/search.js:333
+#: ../src/search.js:504
+msgid "All"
+msgstr "அனைத்தும் "
+
+#. Translators: this refers to favorite documents
+#: ../src/search.js:137
+msgid "Favorites"
+msgstr "விருப்பங்கள்"
+
+#. Translators: this refers to shared documents
+#: ../src/search.js:142
+msgid "Shared with you"
+msgstr "உங்களுடன் பகிர்ந்த"
+
+#. Translators: "Type" refers to a search filter on the document type
+#. (PDF, spreadsheet, ...)
+#: ../src/search.js:197
+msgctxt "Search Filter"
+msgid "Type"
+msgstr "வகை"
+
+#: ../src/search.js:213
+msgid "PDF Documents"
+msgstr "பிடிஎஃப் ஆவணங்கள்"
+
+#: ../src/search.js:220
+#, fuzzy
+#| msgid "Bookmarks"
+msgid "e-Books"
+msgstr "புத்தகக்குறிகள்"
+
+#: ../src/search.js:224
+msgid "Comics"
+msgstr ""
+
+#: ../src/search.js:229
+msgid "Presentations"
+msgstr "முன்வைப்புகள்"
+
+#: ../src/search.js:232
+msgid "Spreadsheets"
+msgstr "விரிதாட்கள்"
+
+#: ../src/search.js:235
+msgid "Text Documents"
+msgstr "உரை ஆவணங்கள்"
+
+#. Translators: this is a verb that refers to "All", "Title" and "Author",
+#. as in "Match All", "Match Title" and "Match Author"
+#: ../src/search.js:330
+msgid "Match"
+msgstr "ஒப்பிடு"
+
+#. Translators: "Title" refers to "Match Title" when searching
+#: ../src/search.js:336
+msgctxt "Search Filter"
+msgid "Title"
+msgstr "தலைப்பு"
+
+#. Translators: "Author" refers to "Match Author" when searching
+#: ../src/search.js:339
+msgctxt "Search Filter"
+msgid "Author"
+msgstr "உருவாக்கியவர்"
+
+#: ../src/search.js:500
+msgid "Sources"
+msgstr "மூலங்கள் "
+
+#: ../src/selections.js:366 ../src/selections.js:368
+msgid "Rename…"
+msgstr ""
+
+#. trash button
+#: ../src/selections.js:372 ../src/selections.js:374 ../src/selections.js:885
+msgid "Delete"
+msgstr "நீக்கு"
+
+#: ../src/selections.js:388
+#, javascript-format
+msgid "“%s” removed"
+msgstr ""
+
+#: ../src/selections.js:779
+msgid "Rename"
+msgstr ""
+
+#. Translators: "Collections" refers to documents in this context
+#: ../src/selections.js:785
+msgctxt "Dialog Title"
+msgid "Collections"
+msgstr "தொகுப்புகள்"
+
+#. print button
+#: ../src/selections.js:880
+msgid "Print"
+msgstr "அச்சிடு"
+
+#: ../src/selections.js:891
+msgid "Share"
+msgstr "பகிர்"
+
+#: ../src/sharing.js:108
+msgid "Sharing Settings"
+msgstr " அமைப்புகளை பகிர்கிறது"
+
+#. Label for widget group for changing document permissions
+#: ../src/sharing.js:145
+msgid "Document permissions"
+msgstr "ஆவணங்கள் அனுமதிகள்"
+
+#. Label for permission change in Sharing dialog
+#: ../src/sharing.js:152 ../src/sharing.js:330
+msgid "Change"
+msgstr "மாற்று"
+
+#. Label for radiobutton that sets doc permission to private
+#: ../src/sharing.js:176 ../src/sharing.js:305
+msgid "Private"
+msgstr "அந்தரங்க"
+
+#: ../src/sharing.js:186 ../src/sharing.js:298
+msgid "Public"
+msgstr "பொது"
+
+#. Label for checkbutton that sets doc permission to Can edit
+#: ../src/sharing.js:190 ../src/sharing.js:300
+msgid "Everyone can edit"
+msgstr "யாரும் திருத்தலாம்"
+
+#. Label for widget group used for adding new contacts
+#: ../src/sharing.js:197
+msgid "Add people"
+msgstr "மக்களை சேர்"
+
+#. Editable text in entry field
+#: ../src/sharing.js:204
+msgid "Enter an email address"
+msgstr "ஒரு மின்னஞ்சல் முகவரியை உள்ளிடுக"
+
+#: ../src/sharing.js:219 ../src/sharing.js:371
+msgid "Can edit"
+msgstr "திருத்தலாம்"
+
+#: ../src/sharing.js:219 ../src/sharing.js:374
+msgid "Can view"
+msgstr "காணலாம்"
+
+#: ../src/sharing.js:302
+msgid "Everyone can read"
+msgstr "யாரும் படிக்கலாம்"
+
+#: ../src/sharing.js:317
+msgid "Save"
+msgstr "சேமி"
+
+#: ../src/sharing.js:368
+msgid "Owner"
+msgstr "உரிமையாளர்"
+
+#: ../src/sharing.js:437
+#, javascript-format
+msgid "You can ask %s for access"
+msgstr "நீங்கள்  %s ஐ அணுகலுக்கு கேட்கலாம். "
+
+#: ../src/sharing.js:474 ../src/sharing.js:510 ../src/sharing.js:567
+#: ../src/sharing.js:584 ../src/sharing.js:603
+msgid "The document was not updated"
+msgstr "ஆவணம் இற்றைப்படுத்தப்படவில்லை."
+
+#: ../src/shellSearchProvider.js:292
+msgid "Untitled Document"
+msgstr "தலைப்பில்லா ஆவணம்"
+
+#: ../src/trackerController.js:172
+msgid "Unable to fetch the list of documents"
+msgstr "ஆவணங்கள் பட்டியலை கொண்டுவர முடியவில்லை"
+
+#: ../src/view.js:260
+#, fuzzy
+#| msgid "No Documents Found"
+msgid "No Books Found"
+msgstr "ஆவணங்கள் ஏதும் காணப்படவில்லை"
+
+#: ../src/view.js:261
+msgid "No Documents Found"
+msgstr "ஆவணங்கள் ஏதும் காணப்படவில்லை"
+
+#. Translators: %s here is "Settings", which is in a separate string due to
+#. markup, and should be translated only in the context of this sentence
+#: ../src/view.js:283
+#, javascript-format
+msgid "You can add your online accounts in %s"
+msgstr "நீங்கள் %s இல் உங்கள் இணைய கணக்குகளை சேர்க்கலாம் "
+
+#. Translators: this should be translated in the context of the
+#. "You can add your online accounts in Settings" sentence above
+#: ../src/view.js:287
+msgid "Settings"
+msgstr "அமைவுகள்"
+
+#: ../src/view.js:483
+msgid "Yesterday"
+msgstr "நேற்று"
+
+#: ../src/view.js:485
+#, javascript-format
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d நாள் முன்"
+msgstr[1] "%d நாட்களுக்கு முன்"
+
+#: ../src/view.js:489
+msgid "Last week"
+msgstr "போன வாரம்"
+
+#: ../src/view.js:491
+#, javascript-format
+msgid "%d week ago"
+msgid_plural "%d weeks ago"
+msgstr[0] "%d வாரம் முன்"
+msgstr[1] "%d வாரங்கள் முன்"
+
+#: ../src/view.js:495
+msgid "Last month"
+msgstr "போன மாதம்"
+
+#: ../src/view.js:497
+#, javascript-format
+msgid "%d month ago"
+msgid_plural "%d months ago"
+msgstr[0] "%d மாதம் முன்"
+msgstr[1] "%d மாதங்களுக்கு முன்"
+
+#: ../src/view.js:501
+msgid "Last year"
+msgstr "போன வருடம்"
+
+#: ../src/view.js:503
+#, javascript-format
+msgid "%d year ago"
+msgid_plural "%d years ago"
+msgstr[0] "%d வருடத்திற்கு முன்"
+msgstr[1] "%d வருடங்களுக்கு முன்"
+
+#~ msgid ""
+#~ "You don't have any collections yet. Enter a new collection name above."
+#~ msgstr ""
+#~ "உங்களிடம் தொகுப்புகள் எதுவும் இல்லை. மேலே ஒரு புதிய தொகுப்பின் பெயரை உள்ளிடவும்."
+
+#~ msgid "Create new collection"
+#~ msgstr "ஒரு புதிய தொகுப்பை உருவாக்கு"
+
+#~ msgid "Add to Collection"
+#~ msgstr "தொகுப்பில் சேர்"
+
+#~ msgid "Load More"
+#~ msgstr "மேலும் ஏற்றுக"
+
+#~ msgid ""
+#~ "<li>View recent local and online documents</li> <li>Access your Google, "
+#~ "ownCloud or SkyDrive content</li> <li>Search through documents</li> "
+#~ "<li>See new documents shared by friends</li> <li>View documents "
+#~ "fullscreen</li> <li>Print documents</li> <li>Select favorites</li> "
+#~ "<li>Allow opening full featured editor for non-trivial changes</li>"
+#~ msgstr ""
+#~ "<li>சமீபத்திய கணினிக்குள்ளான ஆவணங்களையும் ஆன்லைன் ஆவணங்களையும் காணலாம்</li> <li>உங்கள் "
+#~ "Google, ownCloud அல்லது SkyDrive உள்ளடக்கங்களை அணுகலாம்</li> <li>ஆவணங்களைத் "
+#~ "தேடியறியலாம்</li> <li>நண்பர்கள் பகிரும் புதிய ஆவணங்களைக் காணலாம்</li> <li>ஆவணங்களை "
+#~ "முழுத்திரையில் காணலாம்</li> <li>ஆவணங்களை அச்சிடலாம்</li> <li>பிடித்தவற்றைத் "
+#~ "தேர்ந்தெடுக்கலாம்</li> <li>மிக முக்கியத்துவம் வாய்ந்ததல்லாத மாற்றங்களைச் செய்ய முழு "
+#~ "அம்சங்கள் நிறைந்த திருத்தியைத் திறக்கலாம்</li>"
+
+#~ msgid "Skydrive"
+#~ msgstr "ஸ்கைட்ரைவ்"
+
+#~ msgid "Results for “%s”"
+#~ msgstr "\"%s\" க்கான விடைகள்"
+
+#~ msgid "Close"
+#~ msgstr "மூடு"
+
+#~ msgid "Grid"
+#~ msgstr "வலைப்பின்னல்"
+
+#~ msgid "List"
+#~ msgstr "பட்டியல்"
+
+#~ msgid "About Documents"
+#~ msgstr "ஆவணங்கள் - அறிமுகம்"
+
+#~ msgid "Organize"
+#~ msgstr "ஒருங்கிணை"
+
+#~ msgid "Unable to load \"%s\" for preview"
+#~ msgstr " \"%s\"  ஐ முன்பார்வைக்கு ஏற்ற முடியவில்லை"
+
+#~ msgid "Cannot find \"unoconv\", please check your LibreOffice installation"
+#~ msgstr ""
+#~ "\"unoconv\" ஐ கண்டுபிடிக்க முடியவில்லை, உங்கள் லிப்ரே ஆபீஸ் நிறுவலை சரி பார்க்கவும்."
+
+#~ msgid "New and Recent"
+#~ msgstr "புதிய மற்றும் அண்மை"
+
+#~ msgid "filtered by title"
+#~ msgstr "தலைப்பால் வடிகட்டப்பட்டது"
+
+#~ msgid "filtered by author"
+#~ msgstr "ஆசிரியரால் வடிகட்டப்பட்டது"
+
+#~ msgid "Rotate Right"
+#~ msgstr "வலப்புறம் சுழற்று"
+
+#~ msgid "Load %d more document"
+#~ msgid_plural "Load %d more documents"
+#~ msgstr[0] "மேலும் %d ஆவணத்தை ஏற்றுக"
+#~ msgstr[1] "மேலும் %d ஆவணங்களை ஏற்றுக"
+
+#~ msgid "The active source filter"
+#~ msgstr "செயலில் உள்ள மூல வடிப்பி"
+
+#~ msgid "The last active source filter"
+#~ msgstr "கடைசியாக செயலில் இருந்த மூல வடிப்பி"
+
+#~ msgid "(%d of %d)"
+#~ msgstr "(%d  %dஇல் )"
+
+#~ msgid "Remove from favorites"
+#~ msgstr "விருப்பங்களிலிருந்து நீக்கு"
+
+#~ msgid "Add to favorites"
+#~ msgstr "விருப்பங்களில் சேர்"
+
+#~ msgid "Enable list view"
+#~ msgstr "பட்டியல் பார்வையை செயலாக்கு"

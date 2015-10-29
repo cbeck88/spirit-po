@@ -1,0 +1,600 @@
+# Thai translation for gedit-latex.
+# Copyright (C) 2011 Free Software Foundation Inc.
+# This file is distributed under the same license as the gedit-latex package.
+# Akom Chotiphantawanon <knight2000@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gedit-latex master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gedit&keywords=I18N+L10N&component=Plugins\n"
+"POT-Creation-Date: 2015-10-29 07:00+0000\n"
+"PO-Revision-Date: 2011-08-23 18:21+0700\n"
+"Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/bibtex.xml.h:1
+msgid "Title"
+msgstr "ชื่อ"
+
+#: ../data/bibtex.xml.h:2
+msgid "Book Title"
+msgstr "ชื่อหนังสือ"
+
+#: ../data/bibtex.xml.h:3
+msgid "Author"
+msgstr "ผู้เขียน"
+
+#: ../data/bibtex.xml.h:4
+msgid "Editor"
+msgstr "บรรณาธิการ"
+
+#: ../data/bibtex.xml.h:5
+msgid "Pages"
+msgstr "หน้า"
+
+#: ../data/bibtex.xml.h:6
+msgid "Journal"
+msgstr "วารสาร"
+
+#: ../data/bibtex.xml.h:7
+msgid "Volume"
+msgstr "ฉบับที่"
+
+#: ../data/bibtex.xml.h:8
+msgid "Number"
+msgstr "เล่มที่"
+
+#: ../data/bibtex.xml.h:9
+msgid "Month"
+msgstr "เดือน"
+
+#: ../data/bibtex.xml.h:10
+msgid "Year"
+msgstr "ปี"
+
+#: ../data/bibtex.xml.h:11
+msgid "ISSN"
+msgstr "ISSN"
+
+#: ../data/bibtex.xml.h:12
+msgid "Series"
+msgstr "ลำดับ"
+
+#: ../data/bibtex.xml.h:13
+msgid "Edition"
+msgstr "ฉบับแก้ไข"
+
+#: ../data/bibtex.xml.h:14
+msgid "Publisher"
+msgstr "ผู้จัดพิมพ์"
+
+#: ../data/bibtex.xml.h:15
+msgid "Address"
+msgstr "ที่อยู่"
+
+#: ../data/bibtex.xml.h:16
+msgid "ISBN"
+msgstr "ISBN"
+
+#: ../data/bibtex.xml.h:17
+msgid "How Published"
+msgstr "วิธีเผยแพร่"
+
+#: ../data/bibtex.xml.h:18
+msgid "Organization"
+msgstr "องค์กร"
+
+#: ../data/bibtex.xml.h:19
+msgid "Location"
+msgstr "ตำแหน่ง"
+
+#: ../data/bibtex.xml.h:20
+msgid "URL"
+msgstr "URL"
+
+#: ../data/bibtex.xml.h:21
+msgid "Note"
+msgstr "บันทึกข้อความ"
+
+#: ../data/bibtex.xml.h:22
+msgid "Type"
+msgstr "ชนิด"
+
+#: ../data/bibtex.xml.h:23
+msgid "Chapter"
+msgstr "บท"
+
+#: ../data/bibtex.xml.h:24
+msgid "Key"
+msgstr "คำหลัก"
+
+#: ../data/bibtex.xml.h:25
+msgid "School"
+msgstr "โรงเรียน"
+
+#: ../data/bibtex.xml.h:26
+msgid "Institution"
+msgstr "สถาบัน"
+
+#: ../data/bibtex.xml.h:27
+msgid "Cross Reference"
+msgstr "การอ้างอิงข้าม"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:1
+msgid "Maximum BibTeX Size"
+msgstr "ขนาดสูงสุดของ BibTeX"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:2
+msgid "Connect Outline to Editor"
+msgstr "เชื่อมต่อเค้าโครงเข้ากับเครื่องมือแก้ไข"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:3
+msgid "Show Labels in Outline"
+msgstr "แสดงป้ายชื่อในเค้าโครง"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:4
+msgid "Show Tables in Outline"
+msgstr "แสดงตารางในเค้าโครง"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:5
+msgid "Show Graphics in Outline"
+msgstr "แสดงรูปภาพในเค้าโครง"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:6
+msgid "Show Warnings in Issues"
+msgstr "แสดงคำเตือนในประเด็นต่างๆ"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:7
+msgid "Show Tasks in Issues"
+msgstr "แสดงภารกิจในประเด็นต่างๆ"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:8
+#: ../data/ui/configure.ui.h:7
+msgid "Hide Box Warnings"
+msgstr "ซ่อนคำเตือนเกี่ยวกับกล่อง"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:9
+msgid ""
+"Show LaTeX Toolbar below (normal), combined with the main toolbar, or "
+"disabled"
+msgstr "แสดงแถบเครื่องมือ LaTeX ด้านล่าง (ปกติ), หรือรวมเข้าในแถบเครื่องมือหลัก หรือปิดใช้งาน"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:10
+msgid "Expanded Symbol Groups"
+msgstr "กลุ่มสัญลักษณ์เพิ่มเติม"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:11
+msgid "LaTeX Extensions"
+msgstr "นามสกุลแฟ้ม LaTeX"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:12
+msgid "Graphics File Extensions"
+msgstr "นามสกุลของแฟ้มรูปภาพ"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:13
+msgid "Paths Relative to .tex File to Look for Graphics"
+msgstr "พาธสัมพัทธ์กับแฟ้ม .tex ที่จะหาแฟ้มรูปภาพ"
+
+#: ../data/org.gnome.gedit.plugins.latex.gschema.xml.in.in.h:14
+msgid "Extra LaTeX commands used to mark issues, such as \\fxnote{foo}"
+msgstr "คำสั่งพิเศษของ LaTeX สำหรับทำเครื่องหมายประเด็นต่างๆ เช่น \\fxnote{foo}"
+
+#: ../data/ui/build_image_dialog.ui.h:1
+msgid "Render to Image"
+msgstr "วาดลงเป็นภาพ"
+
+#: ../data/ui/build_image_dialog.ui.h:2
+msgid "Attempt to render tight bounding box"
+msgstr "พยายามวาดกรอบขอบเขตแบบกระชับ"
+
+#: ../data/ui/build_image_dialog.ui.h:3
+msgid "Render whole page(s)"
+msgstr "วาดทั้งหน้า"
+
+#: ../data/ui/build_image_dialog.ui.h:4
+msgid "<b>Area</b>"
+msgstr "<b>พื้นที่</b>"
+
+#: ../data/ui/build_image_dialog.ui.h:5
+msgid "Resolution:"
+msgstr "ความละเอียด;"
+
+#: ../data/ui/build_image_dialog.ui.h:6
+msgid "Antialiasing:"
+msgstr "การลบรอยหยัก:"
+
+#: ../data/ui/build_image_dialog.ui.h:7
+msgid "<b>Rendering</b>"
+msgstr "<b>การวาดแสดง</b>"
+
+#: ../data/ui/build_image_dialog.ui.h:8
+msgid "GIF"
+msgstr "GIF"
+
+#: ../data/ui/build_image_dialog.ui.h:9
+msgid "JPEG"
+msgstr "JPEG"
+
+#: ../data/ui/build_image_dialog.ui.h:10
+msgid "Color Mode:"
+msgstr "โหมดสี:"
+
+#: ../data/ui/build_image_dialog.ui.h:11
+msgid "PNG"
+msgstr "PNG"
+
+#: ../data/ui/build_image_dialog.ui.h:12
+msgid "<b>Image Format</b>"
+msgstr "<b>รูปแบบภาพ</b>"
+
+#: ../data/ui/choose_master_dialog.ui.h:1
+msgid "Select Master Document"
+msgstr "เลือกเอกสารต้นแบบ"
+
+#: ../data/ui/choose_master_dialog.ui.h:2
+msgid "Filename:"
+msgstr "ชื่อแฟ้ม:"
+
+#: ../data/ui/configure.ui.h:1
+msgid "Tools"
+msgstr "เครื่องมือ"
+
+#: ../data/ui/configure.ui.h:2
+msgid "Maximum Parsed File Size:"
+msgstr "ขนาดสูงสุดของแฟ้มที่แจงอ่าน:"
+
+#: ../data/ui/configure.ui.h:3
+msgid "KB"
+msgstr "KB"
+
+#: ../data/ui/configure.ui.h:4
+msgid "<b>Templates</b>"
+msgstr "<b>แม่แบบ</b>"
+
+#: ../data/ui/configure.ui.h:5
+msgid "Folder:"
+msgstr "โฟลเดอร์:"
+
+#: ../data/ui/configure.ui.h:6
+msgid "<b><i>rubber</i> Post-Processor</b>"
+msgstr "<b>การประมวลผลปิดท้ายสำหรับ <i>ยางยืด</i></b>"
+
+#: ../data/ui/configure.ui.h:8
+msgid "<b>BibTeX</b>"
+msgstr "<b>BibTeX</b>"
+
+#: ../data/ui/configure.ui.h:9
+msgid "Miscellaneous"
+msgstr "เบ็ดเตล็ด"
+
+#: ../data/ui/configure_tool.ui.h:1
+msgid ""
+"Remember to run all commands in batch mode (e.g. append <tt>-interaction "
+"batchmode</tt> to <tt>latex</tt>)"
+msgstr ""
+"อย่าลืมเรียกทำงานทุกคำสั่งในโหมดแบตช์ (เช่น เพิ่มตัวเลือก <tt>-interaction batchmode</"
+"tt> ให้กับคำสั่ง <tt>latex</tt>)"
+
+#: ../data/ui/configure_tool.ui.h:2
+msgid "<b>_Label</b>"
+msgstr "<b>_ป้ายชื่อ</b>"
+
+#: ../data/ui/configure_tool.ui.h:3
+msgid ""
+"Valid placeholders are <tt>$filename</tt>, <tt>$shortname</tt>, <tt>"
+"$directory</tt>"
+msgstr ""
+"ตัวแปรสำหรับแทนค่าที่ใช้ได้คือ <tt>$filename</tt>, <tt>$shortname</tt>, <tt>"
+"$directory</tt>"
+
+#: ../data/ui/configure_tool.ui.h:4
+msgid "<b>_Jobs</b>"
+msgstr "<b>_งาน</b>"
+
+#: ../data/ui/configure_tool.ui.h:5
+msgid "<b>_Description</b>"
+msgstr "<b>_คำอธิบาย</b>"
+
+#: ../data/ui/configure_tool.ui.h:6
+msgid "<b>_File Extensions</b>"
+msgstr "<b>_นามสกุลแฟ้ม</b>"
+
+#: ../data/ui/configure_tool.ui.h:7
+msgid "_Generated"
+msgstr "_สร้างเอา"
+
+#: ../data/ui/configure_tool.ui.h:8
+msgid "_User Defined:"
+msgstr "_กำหนดเอง:"
+
+#: ../data/ui/configure_tool.ui.h:9
+msgid "<Ctrl><Alt>1"
+msgstr "<Ctrl><Alt>1"
+
+#: ../data/ui/configure_tool.ui.h:10
+msgid "<b>Accelerator</b>"
+msgstr "<b>คีย์ด่วน</b>"
+
+#: ../data/ui/insert_bibtex_entry.ui.h:1
+msgid "Create Bibliography Entry"
+msgstr "สร้างรายการบรรณานุกรม"
+
+#: ../data/ui/insert_bibtex_entry.ui.h:2
+msgid "Required Fields"
+msgstr "ข้อมูลจำเป็น"
+
+#: ../data/ui/insert_bibtex_entry.ui.h:3
+msgid "Optional Fields"
+msgstr "ข้อมูลเสริม"
+
+#: ../data/ui/insert_bibtex_entry.ui.h:4
+msgid "_Identifier:"
+msgstr "_ตัวระบุ:"
+
+#: ../data/ui/insert_bibtex_entry.ui.h:5
+msgid "_Type:"
+msgstr "_ชนิด:"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:1
+msgid "Image Size"
+msgstr "ขนาดภาพ"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:2
+msgid "Text Width"
+msgstr "ความกว้างข้อความ"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:3
+msgid "Insert Graphics"
+msgstr "แทรกรูปภาพ"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:4
+msgid "&#xB0; CCW"
+msgstr "&#xB0; ทวนเข็ม"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:5
+msgid "_Rotate:"
+msgstr "_หมุน:"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:6
+msgid "Flip _Horizontally"
+msgstr "พลิกแนว_นอน"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:7
+msgid "_File:"
+msgstr "แ_ฟ้ม:"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:8
+#: ../data/ui/insert_table_dialog.ui.h:7
+msgid "_Caption:"
+msgstr "_คำบรรยาย:"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:9
+#: ../data/ui/insert_table_dialog.ui.h:8
+msgid "_Label:"
+msgstr "_ป้ายชื่อ:"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:10
+msgid "fig:"
+msgstr "fig:"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:11
+msgid "_Width:"
+msgstr "ความ_กว้าง:"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:13
+#, no-c-format
+msgid "% _of"
+msgstr "% _ของ"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:14
+msgid "Floating _Object"
+msgstr "_วัตถุลอยตัว"
+
+#: ../data/ui/insert_graphics_dialog.ui.h:15
+msgid "_Spread over two Columns"
+msgstr "แผ่คลุม_สองคอลัมน์"
+
+#: ../data/ui/insert_listing_dialog.ui.h:1
+msgid "Insert Source Code Listing"
+msgstr "แทรกรายการซอร์สโค้ด"
+
+#: ../data/ui/insert_listing_dialog.ui.h:2
+msgid "_Dialect:"
+msgstr "แ_บบย่อย:"
+
+#: ../data/ui/insert_listing_dialog.ui.h:3
+msgid "Programming _Language:"
+msgstr "_ภาษาโปรแกรม:"
+
+#: ../data/ui/insert_listing_dialog.ui.h:4
+msgid "Load From _File:"
+msgstr "โหลดจากแ_ฟ้ม:"
+
+#: ../data/ui/insert_table_dialog.ui.h:1
+msgid "Insert Table or Matrix"
+msgstr "แทรกตารางหรือเมทริกซ์"
+
+#: ../data/ui/insert_table_dialog.ui.h:2
+msgid "Type:"
+msgstr "ชนิด:"
+
+#: ../data/ui/insert_table_dialog.ui.h:3
+msgid "_Table"
+msgstr "_ตาราง"
+
+#: ../data/ui/insert_table_dialog.ui.h:4
+msgid "_Matrix:"
+msgstr "เ_มทริกซ์:"
+
+#: ../data/ui/insert_table_dialog.ui.h:5
+msgid "_Rows:"
+msgstr "แ_ถว:"
+
+#: ../data/ui/insert_table_dialog.ui.h:6
+msgid "C_olumns:"
+msgstr "คอ_ลัมน์:"
+
+#: ../data/ui/insert_table_dialog.ui.h:9
+msgid "tab:"
+msgstr "tab:"
+
+#: ../data/ui/insert_table_dialog.ui.h:10
+msgid "_Floating Object"
+msgstr "_วัตถุลอยตัว"
+
+#: ../data/ui/new_document_template_dialog.ui.h:1
+msgid "New LaTeX Document"
+msgstr "เอกสาร LaTeX ใหม่"
+
+#: ../data/ui/new_document_template_dialog.ui.h:2
+msgid "T_emplate:"
+msgstr "แ_ม่แบบ:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:3
+msgid "document"
+msgstr "เอกสาร"
+
+#: ../data/ui/new_document_template_dialog.ui.h:4
+msgid ".tex"
+msgstr ".tex"
+
+#: ../data/ui/new_document_template_dialog.ui.h:5
+msgid "Di_rectory:"
+msgstr "ไ_ดเรกทอรี:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:6
+#: ../data/ui/save_as_template_dialog.ui.h:2
+msgid "_Name:"
+msgstr "_ชื่อ:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:7
+msgid "_Babel Package:"
+msgstr "แ_พกเกจ Babel:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:8
+msgid "_Input Encoding:"
+msgstr "รหัสอักขระขา_เข้า:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:9
+msgid "<b>Language Customization</b>"
+msgstr "<b>ข้อกำหนดเกี่ยวกับภาษา</b>"
+
+#: ../data/ui/new_document_template_dialog.ui.h:10
+msgid "_Landscape"
+msgstr "แนว_นอน"
+
+#: ../data/ui/new_document_template_dialog.ui.h:11
+msgid "_Paper:"
+msgstr "_กระดาษ:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:12
+msgid "De_fault"
+msgstr "_ค่าปริยาย"
+
+#: ../data/ui/new_document_template_dialog.ui.h:13
+msgid "U_ser Defined:"
+msgstr "กำหนดเอ_ง:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:14
+msgid "pt"
+msgstr "pt"
+
+#: ../data/ui/new_document_template_dialog.ui.h:15
+msgid "Base Font Size:"
+msgstr "ขนาดแบบอักษรพื้นฐาน:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:16
+msgid "Document _Class:"
+msgstr "คลา_สเอกสาร:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:17
+msgid "<b>Style and Layout</b>"
+msgstr "<b>รูปแบบและการจัดวาง</b>"
+
+#: ../data/ui/new_document_template_dialog.ui.h:18
+msgid "Include PDF _Metadata"
+msgstr "รวมข้อมู_ลกำกับ PDF"
+
+#: ../data/ui/new_document_template_dialog.ui.h:19
+msgid "Date:"
+msgstr "วันที่:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:20
+msgid "To_day"
+msgstr "_วันนี้"
+
+#: ../data/ui/new_document_template_dialog.ui.h:21
+msgid "C_ustom:"
+msgstr "กำ_หนดเอง:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:22
+msgid "_Author:"
+msgstr "ผู้เ_ขียน:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:23
+msgid "_Title:"
+msgstr "ชื่อเ_รื่อง:"
+
+#: ../data/ui/new_document_template_dialog.ui.h:24
+msgid "<b>Meta Information</b>"
+msgstr "<b>ข้อมูลของเอกสาร</b>"
+
+#: ../data/ui/new_document_template_dialog.ui.h:25
+msgid "Default F_ont Family:"
+msgstr "ตระกูลแ_บบอักษรปริยาย:"
+
+#: ../data/ui/save_as_template_dialog.ui.h:1
+msgid "Save As Template"
+msgstr "บันทึกเป็นแม่แบบ"
+
+#: ../data/ui/save_as_template_dialog.ui.h:3
+msgid "Please specify a name for the new template."
+msgstr "กรุณาระบุชื่อสำหรับแม่แบบใหม่"
+
+#: ../data/ui/save_as_template_dialog.ui.h:4
+msgid "label"
+msgstr "ป้ายชื่อ"
+
+#: ../data/ui/use_bibliography_dialog.ui.h:1
+msgid "Use Bibliography"
+msgstr "ใช้บรรณานุกรม"
+
+#: ../data/ui/use_bibliography_dialog.ui.h:2
+msgid "Bibliography _File:"
+msgstr "แ_ฟ้มบรรณานุกรม:"
+
+#: ../data/ui/use_bibliography_dialog.ui.h:3
+msgid "_Style:"
+msgstr "รูปแ_บบ:"
+
+#: ../data/ui/use_bibliography_dialog.ui.h:4
+msgid "Style Preview:"
+msgstr "ตัวอย่างรูปแบบ:"
+
+#: ../data/ui/use_bibliography_dialog.ui.h:5
+msgid "Refresh Style Preview"
+msgstr "เรียกแสดงตัวอย่างรูปแบบใหม่"
+
+#: ../latex.plugin.desktop.in.in.h:1
+msgid "LaTeX Plugin"
+msgstr "ปลั๊กอิน LaTeX"
+
+#: ../latex.plugin.desktop.in.in.h:2
+msgid ""
+"A plugin that assists you in handling LaTeX documents and BibTeX "
+"bibliographies"
+msgstr "ปลั๊กอินช่วยจัดการเอกสาร LaTeX และบรรณานุกรม BibTeX"
+
+#~ msgid "Show LaTeX Toolbar"
+#~ msgstr "แสดงแถบเครื่องมือ LaTeX"
+
+#~ msgid "<b>LaTeX Toolbar</b>"
+#~ msgstr "<b>แถบเครื่องมือ LaTeX</b>"
+
+#~ msgid "Show LaTeX Toolbar when editing LaTeX files"
+#~ msgstr "แสดงแถบเครื่องมือ LaTeX ขณะกำลังแก้ไขแฟ้ม LaTeX"

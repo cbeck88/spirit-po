@@ -1,0 +1,4013 @@
+# translation of ekiga.HEAD.ar.po to Arabic
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER.
+# Ossama Khayat <okhayat@yahoo.com>, 2003.
+# Ossama M. Khayat <okhayat@yahoo.com>, 2003, 2004, 2007.
+# Djihed Afifi <djihed@gmail.com, 2006.
+# Mohamed Magdy <alnokta@yahoo.com>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2011.
+# Anas Afif Emad <anas.e87@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: ekiga.HEAD.ar\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=ekiga&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-29 16:28+0000\n"
+"PO-Revision-Date: 2011-02-13 17:44+0300\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Virtaal 0.6.1\n"
+"X-Poedit-Country: EGYPT\n"
+
+#. Application name
+#: ../ekiga.desktop.in.in.h:1 ../src/gui/main.cpp:106 ../src/gui/main.cpp:108
+msgid "Ekiga Softphone"
+msgstr "الهاتف البرمجي إكِجا"
+
+#: ../ekiga.desktop.in.in.h:2
+msgid "IP Telephony, VoIP and Video Conferencing"
+msgstr "هوتفة ب.إ ، صوت عبر ب.إ و مؤتمرات فيديو"
+
+#: ../ekiga.desktop.in.in.h:3
+msgid "Talk to and see people over the Internet"
+msgstr "تحدث مع العالم عبر الإنترنت"
+
+#: ../ekiga.schemas.in.in.h:1
+msgid "Audio output device"
+msgstr "جهاز خرج الصوت"
+
+#: ../ekiga.schemas.in.in.h:2
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:754
+msgid "Select the audio output device to use"
+msgstr "إختر جهاز خرج الصوت لاستخدامه"
+
+#: ../ekiga.schemas.in.in.h:3
+msgid "Audio input device"
+msgstr "جهاز دخل الصوت"
+
+#: ../ekiga.schemas.in.in.h:4
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:761
+msgid "Select the audio input device to use"
+msgstr "إختر جهاز دخل الصوت لاستخدامه"
+
+#: ../ekiga.schemas.in.in.h:5
+msgid "Video input device"
+msgstr "جهاز دخل الفيديو"
+
+#: ../ekiga.schemas.in.in.h:6
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:897
+msgid ""
+"Select the video input device to use. If an error occurs when using this "
+"device a test picture will be transmitted."
+msgstr ""
+"حدد جهاز دخل الفيديو لاستخدامه. إذا حدث خطأ عند استخدام هذا الجهاز سوف تبثّ "
+"صورة تجريبية."
+
+#: ../ekiga.schemas.in.in.h:7
+msgid "Video size"
+msgstr "حجم الفيديو"
+
+#: ../ekiga.schemas.in.in.h:8
+msgid ""
+"Select the transmitted video size: Small (QCIF 176x144) or Large (CIF "
+"352x288)"
+msgstr "إختر حجم الفيديو المبثوث: صغير (QCIF 176×144) أو كبير (CIF 352×288)"
+
+#: ../ekiga.schemas.in.in.h:9
+msgid "Video channel"
+msgstr "قناة الفيديو"
+
+#: ../ekiga.schemas.in.in.h:10
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:901
+msgid "The video channel number to use (to select camera, tv or other sources)"
+msgstr "رقم قناة الفيديو لاستخدامها (لتختار الكاميرا، التلفزيون أو مصادر أخرى)"
+
+#: ../ekiga.schemas.in.in.h:11
+msgid "Video format"
+msgstr "تنسيق الفيديو"
+
+#: ../ekiga.schemas.in.in.h:12
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:905
+msgid ""
+"Select the format for video cameras (does not apply to most USB cameras)"
+msgstr "اختر التنسيق لكاميرات الفيديو. (لا ينطبق على معظم كاميرات USB)"
+
+#: ../ekiga.schemas.in.in.h:13
+msgid "Video preview"
+msgstr "استعراض الفيديو"
+
+#: ../ekiga.schemas.in.in.h:14 ../src/gui/main_window.cpp:1202
+#: ../src/gui/main_window.cpp:1342
+msgid "Display images from your camera device"
+msgstr "أظهر الصور من جهاز كاميرتك"
+
+#: ../ekiga.schemas.in.in.h:15
+msgid "Frame Rate"
+msgstr "معدل الإطارات"
+
+#: ../ekiga.schemas.in.in.h:16
+msgid ""
+"The maximum transmitted frame rate in frames/s. This rate may not be reached "
+"in case a minimum quality was configure via a TSTO value smaller than 31 and "
+"the bitrate selected is not sufficient to support this minimum quality"
+msgstr ""
+"أقصى معدل الإطارات مرسل (إطار في الثانية). هذا المعدل قد لا يتم الوصول إليه "
+"في حال ضبط الجودة الدنيا عبر قيمة TSTO أقل من 31 و معدل البت المحدد غير كاف "
+"لتحمل هذه الجودة الدنيا"
+
+#: ../ekiga.schemas.in.in.h:17
+msgid "Full name"
+msgstr "الاسم الكامل"
+
+#: ../ekiga.schemas.in.in.h:18
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:461
+msgid "Enter your full name"
+msgstr "ادخل اسمك الكامل"
+
+#: ../ekiga.schemas.in.in.h:19
+msgid "Contact short status"
+msgstr "حالة المتراسل القصيرة"
+
+#: ../ekiga.schemas.in.in.h:20
+msgid "The short status information"
+msgstr "معلومات الحالة القصيرة"
+
+#: ../ekiga.schemas.in.in.h:21
+msgid "Contact long status"
+msgstr "حالة المتراسل الطويلة"
+
+#: ../ekiga.schemas.in.in.h:22
+msgid "The long status information"
+msgstr "معلومات الحالة الطويلة"
+
+#: ../ekiga.schemas.in.in.h:23
+msgid "The Audio Codecs List"
+msgstr "لائحة مِرمازات الصوت"
+
+#: ../ekiga.schemas.in.in.h:24
+msgid "The audio codecs list"
+msgstr "قائمة مِرمازات الصوت"
+
+#: ../ekiga.schemas.in.in.h:25
+msgid "Enable silence detection"
+msgstr "فعّل التحقق من الصمت"
+
+#: ../ekiga.schemas.in.in.h:26
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:940
+msgid "If enabled, use silence detection with the codecs supporting it"
+msgstr "إذا فعلت ، إستخدم الكشف الصامت مع المرامز الداعمة له"
+
+#: ../ekiga.schemas.in.in.h:27
+#, fuzzy
+#| msgid "Enable echo cancelation"
+msgid "Enable echo cancellation"
+msgstr "تفعيل إلغاء الصدى"
+
+#: ../ekiga.schemas.in.in.h:28
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:942
+#, fuzzy
+#| msgid "If enabled, use echo cancelation"
+msgid "If enabled, use echo cancellation"
+msgstr "إن كان محددًا ،إلغاء صدى تلقائي"
+
+#: ../ekiga.schemas.in.in.h:29
+msgid "Alternative audio output device"
+msgstr "جهاز خرج الصّوت البديل"
+
+#: ../ekiga.schemas.in.in.h:30
+msgid "Select an alternative audio output device to use for sound events."
+msgstr "إختر جهاز خرج الصوت بديل لاستخدامه لأصوات الأحداث."
+
+#: ../ekiga.schemas.in.in.h:31
+msgid "The incoming call sound"
+msgstr "صوت المكالمة الواردة"
+
+#: ../ekiga.schemas.in.in.h:32
+msgid "The sound that will be played on incoming calls, if enabled"
+msgstr "الصوت الذي سوف يُلعب في حال المكالمات الواردة، إن كان مفعّلًا"
+
+#: ../ekiga.schemas.in.in.h:33
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:366
+msgid "Play sound on incoming calls"
+msgstr "إلعب صوتًا في حال المكالمات الواردة"
+
+#: ../ekiga.schemas.in.in.h:34
+msgid "The chosen sound will be played on incoming calls, if enabled"
+msgstr "الصوت المحدد سيُلعب عند الاتصال الوارد، إن كان مفعّلًا"
+
+#: ../ekiga.schemas.in.in.h:35
+msgid "The new instant message sound"
+msgstr "مقطع صوتي لرسالة فورية جديدة"
+
+#: ../ekiga.schemas.in.in.h:36
+msgid ""
+"The sound that will be played when there is a new instant message, if enabled"
+msgstr "الصوت الذي سوف يُلعب عند ارسال رسالة فورية، إن كان مفعلا"
+
+#: ../ekiga.schemas.in.in.h:37
+msgid "Play sound on new message"
+msgstr "إلعب صوتًا في حال رسالة جديدة"
+
+#: ../ekiga.schemas.in.in.h:38
+msgid ""
+"The chosen sound will be played when a new instant message is received, if "
+"enabled"
+msgstr "الصوت المختار سيتم تشغيله عند وصول رسالة قصيرة جديدة، إذا فعٌلت"
+
+#: ../ekiga.schemas.in.in.h:39
+msgid "The new voice mail sound"
+msgstr "مقطع صوتي لرسالة صوتية جديدة"
+
+#: ../ekiga.schemas.in.in.h:40
+msgid ""
+"The sound that will be played when there is a new voice mail, if enabled"
+msgstr "الصوت الذي سوف يُلعب عند استقبال رسالة جديدة، إن كان مفعلا"
+
+#: ../ekiga.schemas.in.in.h:41
+msgid "Play sound on new voice mail"
+msgstr "إلعب صوتًا في حال رسالة صوتية جديدة"
+
+#: ../ekiga.schemas.in.in.h:42
+msgid ""
+"The chosen sound will be played when a new voice mail is received, if enabled"
+msgstr ""
+"الصوت الذى تم اختياره سيتم تشغيله عند استقبال بريد صوتى جديد، فى حالة تفعيله"
+
+#: ../ekiga.schemas.in.in.h:43
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:376
+msgid "Play ring tone"
+msgstr "العب نغمة الرنين"
+
+#: ../ekiga.schemas.in.in.h:44
+msgid "The chosen sound will be played when calling somebody, if enabled"
+msgstr "الصوت المحدد سيُلعب عند الاتصال بأحدهم، إن كان مفعّلًا"
+
+#: ../ekiga.schemas.in.in.h:45
+msgid "The dial tone sound"
+msgstr "صوت نغمة إدخال الأرقاام"
+
+#: ../ekiga.schemas.in.in.h:46
+msgid "The sound that will be played when calling somebody, if enabled"
+msgstr "الصوت الذي سوف يُلعب عند الاتصال بأحدهم، إن كان مفعّلًا"
+
+#: ../ekiga.schemas.in.in.h:47
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:386
+msgid "Play busy tone"
+msgstr "العب نغمة المشغول"
+
+#: ../ekiga.schemas.in.in.h:48
+msgid ""
+"The chosen sound will be played at the end of calls or calling somebody who "
+"is busy, if enabled"
+msgstr ""
+"الصوت المحدد سوف يُلعب بنهاية الاتصالات الاتصال بأحد مشغول، إن كان مفعّلًا"
+
+#: ../ekiga.schemas.in.in.h:49
+msgid "The busy tone sound"
+msgstr "صوت نغمة مشغول"
+
+#: ../ekiga.schemas.in.in.h:50
+msgid ""
+"The sound that will be played at the end of calls or when calling somebody "
+"who is busy, if enabled"
+msgstr ""
+"الصوت الذي سوف يُلعب بنهاية الاتصالات أو عند الاتصال بأحد مشغول، إن كان مفعّلًا"
+
+#: ../ekiga.schemas.in.in.h:51
+msgid "The accounts list"
+msgstr "قائمة الحسابات"
+
+#: ../ekiga.schemas.in.in.h:52
+msgid "The list of accounts to which Ekiga should register"
+msgstr "قائمة الحسابات التى يجب على إكِجا ان يسجلها"
+
+#: ../ekiga.schemas.in.in.h:53
+msgid "Type of Service (TOS) byte on outgoing RTP IP packets"
+msgstr ""
+
+#: ../ekiga.schemas.in.in.h:54
+msgid ""
+"The Type of Service (TOS) byte on outgoing RTP IP packets. This byte is used "
+"by the network to provide some level of Quality of Service (QoS). Default "
+"value 184 (0xB8) correspond to Expedited Forwarding (EF) PHB as defined in "
+"RFC 3246."
+msgstr ""
+
+#: ../ekiga.schemas.in.in.h:55
+msgid "Listen port"
+msgstr "منفذ الاستماع"
+
+#: ../ekiga.schemas.in.in.h:56
+msgid ""
+"The port to listen to for incoming connections. Ekiga needs to be restarted "
+"for the new value to take effect"
+msgstr ""
+"رقم البوابة لاستخدامها للمكالمات الواردة. يجب إعادة تشغيل إكِجا كي تصبح "
+"القيمة الجديدة فعالة."
+
+#: ../ekiga.schemas.in.in.h:57
+msgid "Outbound Proxy"
+msgstr "وسيط الجهة الخارجية"
+
+#: ../ekiga.schemas.in.in.h:58
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:716
+msgid "The SIP Outbound Proxy to use for outgoing calls"
+msgstr "The SIP Outbound Proxy to use for outgoing calls"
+
+#: ../ekiga.schemas.in.in.h:59
+msgid "Forward calls to host"
+msgstr "حوّل الاتصالات إلى المستضيف"
+
+#: ../ekiga.schemas.in.in.h:60
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:671
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:719
+msgid "The host where calls should be forwarded if call forwarding is enabled"
+msgstr ""
+"المستضيف الذى سوف يتم تحويل المكالمات إليه فى حالة تفعيل خاصية تحويل "
+"المكالمات"
+
+#: ../ekiga.schemas.in.in.h:61
+msgid "DTMF sending"
+msgstr "إرسالة نغمة DTMF"
+
+#: ../ekiga.schemas.in.in.h:62
+#, fuzzy
+msgid ""
+"Select the mode for sending DTMFs. The values can be 0 (for \"RFC2833\") and "
+"1 (for \"INFO\")"
+msgstr ""
+"ذلك يسمح بضبط وضعية ارسالDTMFs . القيم يمكن ان تكون \"RFC2833\" (0),\"INFO"
+"\"(1)  "
+
+#: ../ekiga.schemas.in.in.h:63
+msgid ""
+"The port to listen to for incoming connections. Ekiga needs to be restarted "
+"for the new value to take effect."
+msgstr ""
+"رقم البوابة لاستخدامها للمكالمات الواردة. يجب إعادة تشغيل إكِجا كي تصبح "
+"القيمة الجديدة فعالة."
+
+#: ../ekiga.schemas.in.in.h:64
+msgid "TCP port range"
+msgstr "مدى منافذ TCP"
+
+#: ../ekiga.schemas.in.in.h:65
+msgid ""
+"The range of TCP ports that Ekiga will use for the H.323 H.245 channel. This "
+"port range has no effect if both participants to the conference are using "
+"H.245 Tunneling."
+msgstr ""
+"مدى منافذ TCP التي سيستخدمها إكجا من أجل قناة H.323 H.245. ليس لهذا المدى "
+"أيّة أثر في حال كان كلا المشتركان في التحاور يستخدمان H.245 Tunneling."
+
+#: ../ekiga.schemas.in.in.h:66
+msgid "UDP port range"
+msgstr "مدى أرقام منافذ UDP"
+
+#: ../ekiga.schemas.in.in.h:67
+msgid "The range of UDP ports that Ekiga will use."
+msgstr "مجال منافذ UDP الذي سيستخدمه إكجا."
+
+#: ../ekiga.schemas.in.in.h:68
+msgid "Enable H.245 tunneling"
+msgstr "فعّل نفق H.245"
+
+#: ../ekiga.schemas.in.in.h:69
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:680
+msgid ""
+"This enables H.245 Tunneling mode. In H.245 Tunneling mode H.245 messages "
+"are encapsulated into the H.225 channel (port 1720). This saves one TCP "
+"connection during calls. H.245 Tunneling was introduced in H.323v2 and "
+"Netmeeting does not support it. Using both Fast Start and H.245 Tunneling "
+"can crash some versions of Netmeeting."
+msgstr ""
+"يمكن هذا وضع H.245 Tunnelling. في هذا الوضع يتم تضمين رسائل H.245 في قناة "
+"H.225 (المنفذ 1720). يبقي هذا اتصال TCP واحد خلال المكالمات. قدمت تقنية "
+"H.245 Tunnelling  في H323v2 ولا يدعم نت ميتنج هذه التقنية. استخدام البدء "
+"السريع مع H.245 Tunnelling قد يحطم بعد إصدارات نت ميتنج."
+
+#: ../ekiga.schemas.in.in.h:70
+msgid "Enable early H.245"
+msgstr "فعّل H.245"
+
+#: ../ekiga.schemas.in.in.h:71
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:682
+msgid "This enables H.245 early in the setup"
+msgstr "يفعّل هذا H.245 منذ البداية في الإعداد"
+
+#: ../ekiga.schemas.in.in.h:72
+msgid "Enable 'Fast Start'"
+msgstr "فعّل 'التشغيل السريع'"
+
+#: ../ekiga.schemas.in.in.h:73
+msgid ""
+"Connection will be established in Fast Start mode. Fast Start is a new way "
+"to start calls faster that was introduced in H.323v2. It is not supported by "
+"Netmeeting and using both Fast Start and H.245 Tunneling can crash some "
+"versions of Netmeeting"
+msgstr ""
+"سيتم بدأ الاتصال فى وضعية البدأ السريع. البدأ السريع هى طريقة جديدة لبدأ "
+"المكالمات بشكل أسرع و الذى تم تقديمه فىH.323v2 و لكنها غير مدعومة من قبل  "
+"Netmeeting و استخدام البدأ السريع و H.245 Tunneling Netmeetingيمكن أن يقوم "
+"بكسر بعض نسخ "
+
+#: ../ekiga.schemas.in.in.h:74
+#, fuzzy
+#| msgid "Enable early H.245"
+msgid "Enable H.239"
+msgstr "فعّل H.245"
+
+#: ../ekiga.schemas.in.in.h:75
+msgid "This enables H.239 capability for additional video roles"
+msgstr ""
+
+#: ../ekiga.schemas.in.in.h:76
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2037
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2038
+msgid "Extended Video Roles"
+msgstr ""
+
+#: ../ekiga.schemas.in.in.h:77
+msgid ""
+"Select the H.239 Video Role. The values can be 0 (for \"disable extended "
+"video\"), 1 (for \"allow per content role mask\"), 2 (for \"force "
+"presentation\"), or 3 (for \"force live role\")"
+msgstr ""
+
+#: ../ekiga.schemas.in.in.h:78
+#, fuzzy
+msgid ""
+"Select the mode for sending DTMFs. The values can be 0 (for \"String\"), 1 "
+"(for \"Tone\"), 2 (for \"RFC2833\"), or 3 (for \"Q.931\") (default is "
+"\"String\"). Choosing other values than \"String\" disables the Text Chat."
+msgstr ""
+"يسمح هذا بتحديد وضع إرسال نغمات DTMF. القيم الممكنة هي \"مقطع\"(0),\"نغمة"
+"\"(1),\"Q.931\"(3),\"RFC2833\"(2 (القيمة الافتراضية هي \"مقطع \" ). اختيار "
+"قيم غير \"مقطع\" يعطل الدردشة النصية"
+
+#: ../ekiga.schemas.in.in.h:79
+msgid "Always forward calls to the given host"
+msgstr "حوّل الاتصالات دائما إلى المستضيف المحدد"
+
+#: ../ekiga.schemas.in.in.h:80
+msgid ""
+"If enabled, all incoming calls will be forwarded to the host that is "
+"specified in the field below"
+msgstr ""
+"إن كان محدّدًا، سوف تحول كل المكالمات إلى المستضيف المحدد في المربع أدناه"
+
+#: ../ekiga.schemas.in.in.h:81
+msgid "Forward calls to the given host if busy"
+msgstr "حوّل الاتصالات إلى المستضيف المحدد إن كنت مشغولًا"
+
+#: ../ekiga.schemas.in.in.h:82
+#, fuzzy
+#| msgid ""
+#| "If enabled, all incoming calls will be forwarded to the host that is "
+#| "specified in the field below if you already are in a call or if you are "
+#| "in Do Not Disturb mode"
+msgid ""
+"If enabled, all incoming calls will be forwarded to the host that is "
+"specified in the field below if you already are in a call or if you are in "
+"busy mode"
+msgstr ""
+"إن كان محدّدًا، سوف تحول كل المكالمات إلى المستضيف المحدد في المربع أدناه إن "
+"كنت تجري مكالمة أو كنت في وضع لاتزعجني"
+
+#: ../ekiga.schemas.in.in.h:83
+msgid "Forward calls to the given host if no answer"
+msgstr "حوّل المكالمات إلى المستضيف المحدد إن لم يكن هناك إجابة"
+
+#: ../ekiga.schemas.in.in.h:84
+msgid ""
+"If enabled, all incoming calls will be forwarded to the host that is "
+"specified in the field below if you do not answer the call"
+msgstr ""
+"إن كان محدّدًا، سوف تحول كل المكالمات الواردة إلى المستضيف المحدد في المربع "
+"أدناه إن لم تجب المكالمة"
+
+#: ../ekiga.schemas.in.in.h:85
+msgid "The STUN Server"
+msgstr "خادوم STUN"
+
+#: ../ekiga.schemas.in.in.h:86
+msgid ""
+"The STUN server to use for STUN Support. STUN is a technology that permits "
+"passage through some types of NAT gateway"
+msgstr ""
+"خادوم STUN الذي تريد استخدامه لدعم STUN. تقنية STUN هي تقنية تسمح بالمرور "
+"عبر بعض أنواع بوابات NAT."
+
+#: ../ekiga.schemas.in.in.h:87
+msgid "Enable STUN network detection"
+msgstr "فعّل استكشاف الشبكة عبر STUN"
+
+#: ../ekiga.schemas.in.in.h:88
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:483
+msgid "Enable the automatic network setup resulting from the STUN test"
+msgstr "فعّل إعداد الشبكة الآلي الناتج من اختبار STUN"
+
+#: ../ekiga.schemas.in.in.h:89
+msgid "NAT Binding Timeout"
+msgstr "NAT Binding Timeout"
+
+#: ../ekiga.schemas.in.in.h:90
+msgid ""
+"Enter the number of seconds after which Ekiga should try refreshing the NAT "
+"binding when STUN is being used"
+msgstr ""
+"أدخل عدد الثواني التي ينتظرها إكِجا قبل أن يحاول أن ينعش ارتباط NAT STUN "
+"عندما يتم استخدام"
+
+#: ../ekiga.schemas.in.in.h:91
+#, fuzzy
+#| msgid "Position on the screen of the chat window"
+msgid "Position on the screen of the call window"
+msgstr "موضع نافذة الدردشة على الشاشة"
+
+#: ../ekiga.schemas.in.in.h:92
+#, fuzzy
+#| msgid "Size of the chat window"
+msgid "Size of the call window"
+msgstr "حجم نافذة المحادثة"
+
+#: ../ekiga.schemas.in.in.h:93
+msgid "Position on the screen of the main window"
+msgstr "موضع النافذة الرئيسية على الشاشة"
+
+#: ../ekiga.schemas.in.in.h:94
+msgid "Change the panel section of the main window"
+msgstr ""
+
+#: ../ekiga.schemas.in.in.h:95
+msgid ""
+"Change the panel section of the main window (0=Contacts, 1=Dialpad, 2=Call "
+"history)"
+msgstr ""
+
+#: ../ekiga.schemas.in.in.h:96
+msgid "Size of the chat window"
+msgstr "حجم نافذة المحادثة"
+
+#: ../ekiga.schemas.in.in.h:97
+msgid "Position on the screen of the chat window"
+msgstr "موضع نافذة الدردشة على الشاشة"
+
+#: ../ekiga.schemas.in.in.h:98
+msgid "Size of the druid window"
+msgstr "حجم نافذة المساعد"
+
+#: ../ekiga.schemas.in.in.h:99
+msgid "Position on the screen of the druid window"
+msgstr "موضع نافذة المساعد على الشاشة"
+
+#: ../ekiga.schemas.in.in.h:100
+msgid "Position on the screen of the address book window"
+msgstr "موضع نافذة دفتر العناوين على الشاشة"
+
+#: ../ekiga.schemas.in.in.h:101
+msgid "Size of the address book window"
+msgstr "حجم نافذة دفتر العناوين"
+
+#: ../ekiga.schemas.in.in.h:102
+msgid "Position on the screen of the audio settings window"
+msgstr "موضع نافذة إعدادات الصوت على الشاشة"
+
+#: ../ekiga.schemas.in.in.h:103
+msgid "Size of the audio settings window"
+msgstr "حجم نافذة إعدادات الصوت"
+
+#: ../ekiga.schemas.in.in.h:104
+msgid "Position on the screen of the video settings window"
+msgstr "موضع نافذة إعدادات الفيديو على الشاشة"
+
+#: ../ekiga.schemas.in.in.h:105
+msgid "Size of the video settings window"
+msgstr "حجم نافذة إعدادات الفيديو"
+
+#: ../ekiga.schemas.in.in.h:106
+msgid "Position on the screen of the preferences window"
+msgstr "موضع نافذة التفضيلات على الشاشة"
+
+#: ../ekiga.schemas.in.in.h:107
+msgid "Size of the preferences window"
+msgstr "حجم نافذة التفضيلات"
+
+#: ../ekiga.schemas.in.in.h:108
+msgid "Disable video hardware acceleration"
+msgstr "تعطيل تسريع فيديو العتاد"
+
+#: ../ekiga.schemas.in.in.h:109
+msgid ""
+"This key disables DirectX (on win32) and XVideo (on Linux) video hardware "
+"acceleration"
+msgstr ""
+"هذا المفتاح يعطل تسريع عتاد الفيديو على كل من DirectX (win32) و XVideo "
+"(لينوكس) "
+
+#: ../ekiga.schemas.in.in.h:110
+msgid "Allow picture-in-picture software scaling"
+msgstr "السماح بالتحجيم برمجيا للصورة-ضمن-الصورة"
+
+#: ../ekiga.schemas.in.in.h:111
+msgid ""
+"Allow Ekiga to fall back to software scaling the picture-in-picture if "
+"hardware support is not available. If this is set to false, Ekiga will not "
+"try to open the PIP if hardware support is not available."
+msgstr ""
+"اسمح لإكِجا الرجوع إلى التحجيم البرمجي للصورة داخل الصورة. إذا ما تم تعيين "
+"ذلك لخطأ، فإن إكِجا لن يحاول فتح الصورة داخل الصورة إذا غاب دعم العتاد."
+
+#: ../ekiga.schemas.in.in.h:112
+msgid "Specify the software scaling algorithm"
+msgstr "حدد خوارزمية التحجيم البرمجي "
+
+#: ../ekiga.schemas.in.in.h:113
+msgid ""
+"Specify the software scaling algorithm: 0: nearest neighbor, 1: nearest "
+"neighbor with box filter, 2: bilinear filtering, 3: hyperbolic filtering. "
+"Does not apply on windows systems."
+msgstr ""
+"حدد خوارزمية التحجيم البرمجي: 0: أقرب جار، 1: أقرب جار ذو صندوق ترشيح، 2: "
+"ترشيح ، 3: ترشيح هيبربولي. لا ينطبق على أنظمة ويندوز."
+
+#: ../ekiga.schemas.in.in.h:114
+msgid "The zoom value"
+msgstr "قيمة التحجيم"
+
+#: ../ekiga.schemas.in.in.h:115
+msgid ""
+"The zoom value in percent to apply to images displayed in the main GUI (can "
+"be 50, 100, or 200)"
+msgstr ""
+"القيمة المئوية للتحجيم قصد تطبيقها على الصور المعروضة في واجهة المستخدم "
+"الرئيسية (يمكن أن تكون 50 أو 100 أو 200)"
+
+#: ../ekiga.schemas.in.in.h:116
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:477
+msgid "Place windows displaying video above other windows during calls"
+msgstr "ضع النوافذ العارضة للفيديو أعلى النوافذ الأخرى خلال المكالمات"
+
+#: ../ekiga.schemas.in.in.h:117
+msgid "The default video view"
+msgstr "عرض الفيديو الافتراضي"
+
+#: ../ekiga.schemas.in.in.h:118
+#, fuzzy
+msgid ""
+"The default video view (0: Local, 1: Remote, 2: Both, 3: Both in a separate "
+"window)"
+msgstr ""
+"عرض الفيديو الافتراضي (0: محلي، 1: بعيد، 2: كلاهما مدمجين، 3: كلاهما مع عرض "
+"الفيديو المحلي في نافذة منفصلة، 4: كلاهما)"
+
+#: ../ekiga.schemas.in.in.h:119
+msgid "The video view before having switched to fullscreen"
+msgstr "عرض الفيديو قبل الانتقال إلى العرض ملء الشاشة "
+
+#: ../ekiga.schemas.in.in.h:120
+msgid ""
+"The video view before having switched to fullscreen (same values as "
+"video_view)"
+msgstr "عرض الفيديو قبل الانتقال إلى العرض ملء الشاشة (نفس قيم video_view)"
+
+#: ../ekiga.schemas.in.in.h:121
+msgid "Remote video window size"
+msgstr "حجم نافذة الفيديو البعيد"
+
+#: ../ekiga.schemas.in.in.h:122
+msgid "The size of the remote video window"
+msgstr "حجم نافذة الفيديو البعيدة"
+
+#: ../ekiga.schemas.in.in.h:123
+msgid "Remote video window position"
+msgstr "موضع نافذة الفيديو البعيد"
+
+#: ../ekiga.schemas.in.in.h:124
+msgid "The position of the remote video window"
+msgstr "موضع نافذة عرض الفيديو البعيد"
+
+#: ../ekiga.schemas.in.in.h:125
+msgid "Maximum jitter buffer"
+msgstr "أقصى حد لتخزين للتأخير"
+
+#: ../ekiga.schemas.in.in.h:126
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:944
+msgid "The maximum jitter buffer size for audio reception (in ms)"
+msgstr "أقصى حد لحجم التخزين المؤقت لاستقبال الصوت (بالملي ثانية)"
+
+#: ../ekiga.schemas.in.in.h:127
+msgid "The video codecs list"
+msgstr "قائمة مِرمازات الفيديو"
+
+#: ../ekiga.schemas.in.in.h:128
+msgid "Maximum TX video bitrate"
+msgstr "عرض الموجة الأقصى لبث الفيديو"
+
+#: ../ekiga.schemas.in.in.h:129
+msgid ""
+"The maximum TX video bitrate in kbit/s. The video quality and the number of "
+"transmitted frames per second (depends on selected codec) will be "
+"dynamically adjusted above their minimum during calls to try to minimize the "
+"bandwidth to the given value"
+msgstr ""
+"أقصى عرض موجة للفيديو بالكيلوبايت/ثانية. جودة الفيديو وعدد الإطارات المبثوثة "
+"في كل ثانية سوف يتم تعديلها ديناميكيًا بحيث تصبح أقل ما يمكن خلال المكالمة "
+"بمحاولة لتقليص عرض الموجة المستخدم للقيمة المعطاة"
+
+#: ../ekiga.schemas.in.in.h:130
+msgid "Maximum RX video bitrate"
+msgstr "عرض الموجة الأقصى لاستقبال الفيديو"
+
+#: ../ekiga.schemas.in.in.h:131
+msgid ""
+"The maximum RX video bitrate in kbit/s. This value will be signaled to the "
+"peer endpoint that can adjust (if it supports it) its TX bitrate if it is "
+"above the signaled value"
+msgstr ""
+"أقصى RX معدل البت للفيديو ب بالكيلوبت/ثانية. سيرسل هذا العدد إلى آخر نظير "
+"الذي يمكنه ضبط (إن كان بمقدوره ذلك) معدل البت TX لو كان فوق العدد المرسل"
+
+#: ../ekiga.schemas.in.in.h:132
+msgid "Temporal Spatial Trade Off"
+msgstr "مقايضة فضائية وزمانية"
+
+#: ../ekiga.schemas.in.in.h:133
+msgid ""
+"Whether to prefer to sustain the max. frame rate or lower it possibly in "
+"order to keep a minimum level of (spatial) quality for all frames. 0: "
+"Highest minimal quality, 31: lowest minimal quality"
+msgstr ""
+"إما الرغبة في دعم المعدل الاقصى للاطار أو التقليل منه ما أمكن من أجل الحفاظ "
+"على مستوى أدنى من الجودة لكل الأطر. 0:  أعلى جودة دنيا، 31: أقل جودة دنيا"
+
+#: ../ekiga.schemas.in.in.h:134
+msgid "List of folded groups in the roster"
+msgstr "قائمة بالمجموعات المطوية في القائمة"
+
+#: ../ekiga.schemas.in.in.h:135 ../src/gui/main_window.cpp:1367
+msgid "Show offline contacts"
+msgstr "أعرض المتراسلين غير المتصلين"
+
+#: ../ekiga.schemas.in.in.h:136
+msgid "If enabled, offline contacts will be shown in the roster"
+msgstr "إذا كان محدداً، سيُظهر المتراسلين غير المتصلين في القائمة"
+
+#: ../ekiga.schemas.in.in.h:137
+msgid "LDAP servers"
+msgstr "خوادم LDAP"
+
+#: ../ekiga.schemas.in.in.h:138
+msgid "List of configured LDAP servers"
+msgstr "قائمة بخوادم LDAP المُشَكّلة"
+
+#: ../ekiga.schemas.in.in.h:139
+msgid "Calls history"
+msgstr "تاريخ المكالمات"
+
+#: ../ekiga.schemas.in.in.h:140
+msgid "The history of the 100 last calls"
+msgstr "تاريخ آخر 100 مكالمة "
+
+#: ../ekiga.schemas.in.in.h:141
+msgid "Kind of network selected in the assistant"
+msgstr "نوع الشبكة المحددة باستخدام المساعد"
+
+#: ../ekiga.schemas.in.in.h:142
+msgid "0: 56kbps, 1: ISDN, 2: DSL128, 3: DSL512, 4: LAN, 5: Custom"
+msgstr "‏0: 56Kbps،‏ 1: ISDN،‏ 2: DSL128،‏ 3: DSL512،‏ 4: شبكة محلية، 5: مخصص"
+
+#: ../ekiga.schemas.in.in.h:143
+msgid "No answer timeout"
+msgstr "نفاذ وقت عدم الردّ"
+
+#: ../ekiga.schemas.in.in.h:144
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:506
+msgid ""
+"Automatically reject or forward incoming calls if no answer is given after "
+"the specified amount of time (in seconds)"
+msgstr ""
+"ارفض أو حوّل المكالمات الواردة تلقائيًا إن لم يكن هناك رد بعد الوقت المحدد "
+"(بالثواني)"
+
+#: ../ekiga.schemas.in.in.h:145
+msgid "Automatic answer"
+msgstr "الرد الآلي"
+
+#: ../ekiga.schemas.in.in.h:146
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:507
+msgid "If enabled, automatically answer incoming calls"
+msgstr "إن كان محددًا، سيرد آليا على المكالمات الواردة"
+
+#: ../lib/engine/audioinput/audioinput-core.cpp:201
+#: ../lib/engine/audioinput/audioinput-core.cpp:206
+#: ../lib/engine/audiooutput/audiooutput-core.cpp:222
+#: ../lib/engine/audiooutput/audiooutput-core.cpp:227
+#: ../lib/engine/videoinput/videoinput-core.cpp:245
+#: ../lib/engine/videoinput/videoinput-core.cpp:250
+msgid "New device detected"
+msgstr ""
+
+#: ../lib/engine/audioinput/audioinput-core.cpp:206
+#: ../lib/engine/audiooutput/audiooutput-core.cpp:227
+#: ../lib/engine/videoinput/videoinput-core.cpp:250
+msgid "Use it"
+msgstr ""
+
+#: ../lib/engine/audioinput/audioinput-core.cpp:236
+#: ../lib/engine/audiooutput/audiooutput-core.cpp:256
+#: ../lib/engine/videoinput/videoinput-core.cpp:280
+msgid "Device removed"
+msgstr ""
+
+#: ../lib/engine/components/call-history/history-book.cpp:143
+#: ../lib/engine/gui/gtk-frontend/call-history-view-gtk.cpp:188
+msgid "Clear List"
+msgstr "امسح القائمة"
+
+#: ../lib/engine/components/call-history/history-contact.cpp:171
+msgid "Received"
+msgstr "مستلمة"
+
+#: ../lib/engine/components/call-history/history-contact.cpp:174
+msgid "Placed"
+msgstr "موضوع"
+
+#: ../lib/engine/components/call-history/history-contact.cpp:177
+msgid "Missed"
+msgstr "مفقود"
+
+#: ../lib/engine/components/local-roster/local-cluster.cpp:82
+#: ../lib/engine/components/local-roster/local-heap.cpp:118
+#: ../plugins/evolution/evolution-book.cpp:343
+#, fuzzy
+#| msgid "New _Contact"
+msgid "_New Contact"
+msgstr "مُ_راسل جديد"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:94
+msgid "Services"
+msgstr "الخدمات"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:95
+msgid "Echo test"
+msgstr "اختبار الصدى"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:96
+msgid "Conference room"
+msgstr "غرفة المؤتمرات"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:97
+msgid "Call back test"
+msgstr "اختبار الاتصال"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:111
+#: ../src/gui/main_window.cpp:1431
+msgid "Contacts"
+msgstr "مُراسلون"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:128
+msgid "Rename"
+msgstr "غيّر الاسم"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:197
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:485
+msgid "Family"
+msgstr "العائلة"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:198
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:486
+msgid "Friend"
+msgstr "صديق"
+
+#. Translator: http://www.ietf.org/rfc/rfc4480.txt proposes several
+#. relationships between you and your contact; associate means
+#. someone who is at the same "level" than you.
+#.
+#: ../lib/engine/components/local-roster/local-heap.cpp:203
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:491
+msgid "Associate"
+msgstr "زميل"
+
+#. Translator: http://www.ietf.org/rfc/rfc4480.txt proposes several
+#. relationships between you and your contact; assistant means
+#. someone who is at a lower "level" than you.
+#.
+#: ../lib/engine/components/local-roster/local-heap.cpp:208
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:496
+msgid "Assistant"
+msgstr "مساعد"
+
+#. Translator: http://www.ietf.org/rfc/rfc4480.txt proposes several
+#. relationships between you and your contact; supervisor means
+#. someone who is at a higher "level" than you.
+#.
+#: ../lib/engine/components/local-roster/local-heap.cpp:213
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:501
+msgid "Supervisor"
+msgstr "مُشرف"
+
+#. Translator: http://www.ietf.org/rfc/rfc4480.txt proposes several
+#. relationships between you and your contact; self means yourself.
+#.
+#: ../lib/engine/components/local-roster/local-heap.cpp:217
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:505
+msgid "Self"
+msgstr "أنا"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:233
+#: ../lib/engine/components/local-roster/local-roster-bridge.cpp:93
+msgid "Add to local roster"
+msgstr "أضِف إلى القائمة المحلية"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:234
+msgid ""
+"Please fill in this form to add a new contact to ekiga's internal roster"
+msgstr "رجاءً، عبأ هذه الاستمارة لإضافة مُراسل جديد إلى القائمة الداخلية لإكِجا "
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:236
+#: ../lib/engine/components/local-roster/local-heap.cpp:427
+#: ../lib/engine/components/local-roster/local-presentity.cpp:270
+#: ../lib/engine/components/opal/opal-account.cpp:459
+#: ../plugins/evolution/evolution-contact.cpp:324
+#: ../plugins/loudmouth/loudmouth-account.cpp:342
+#: ../plugins/loudmouth/loudmouth-bank.cpp:125
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:338
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:289
+#: ../plugins/resource-list/rl-cluster.cpp:169
+#: ../plugins/resource-list/rl-heap.cpp:526
+#: ../plugins/resource-list/rl-presentity.cpp:233
+msgid "Name:"
+msgstr "الاسم:"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:236
+#: ../lib/engine/components/local-roster/local-presentity.cpp:270
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:338
+msgid "Name of the contact, as shown in your roster"
+msgstr "اسم المتراسل كما سيظهر في دفتر الأسماء"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:245
+#: ../lib/engine/components/local-roster/local-heap.cpp:247
+#: ../lib/engine/components/local-roster/local-presentity.cpp:271
+#: ../plugins/resource-list/rl-cluster.cpp:170
+#: ../plugins/resource-list/rl-heap.cpp:527
+#: ../plugins/resource-list/rl-presentity.cpp:234
+msgid "Address:"
+msgstr "العنوان:"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:245
+#: ../lib/engine/components/local-roster/local-heap.cpp:247
+#: ../lib/engine/components/local-roster/local-presentity.cpp:271
+msgid "Address, e.g. sip:xyz@ekiga.net"
+msgstr "العنوان، مثلا sip:xyz@ekiga.net"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:251
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:340
+msgid "Put contact in groups:"
+msgstr "ضع المُراسل في مجموعات:"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:412
+msgid "You supplied an unsupported address"
+msgstr "لقد قدمت عنوانا غير مدعوم"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:414
+msgid "You already have a contact with this address!"
+msgstr "لديك مُراسل بهذا العنوان بالفعل!"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:425
+msgid "Rename group"
+msgstr "أعد تسمية مجموعة"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:426
+msgid "Please edit this group name"
+msgstr "رجاءً، حرّر اسم هذه المجموعة"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:138
+#: ../plugins/resource-list/rl-entry.cpp:141
+#: ../plugins/resource-list/rl-heap.cpp:102
+#: ../plugins/resource-list/rl-heap.cpp:144
+#: ../plugins/resource-list/rl-heap.cpp:176
+#: ../plugins/resource-list/rl-presentity.cpp:143
+msgid "Unnamed"
+msgstr "بلا اسم"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:240
+#: ../lib/engine/components/opal/opal-account.cpp:414
+#: ../plugins/evolution/evolution-contact.cpp:228
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:174
+#: ../plugins/resource-list/rl-presentity.cpp:212
+#: ../src/gui/main_window.cpp:1317
+msgid "_Edit"
+msgstr "ح_رّر"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:242
+#: ../lib/engine/components/opal/opal-account.cpp:416
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:683
+#: ../plugins/evolution/evolution-contact.cpp:230
+#: ../plugins/loudmouth/loudmouth-account.cpp:445
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:199
+#: ../plugins/resource-list/rl-presentity.cpp:214
+msgid "_Remove"
+msgstr "أ_زل"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:267
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:286
+msgid "Edit roster element"
+msgstr "حرّر عنصر القائمة"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:268
+msgid ""
+"Please fill in this form to change an existing element of ekiga's internal "
+"roster"
+msgstr "رجاء، املأ هذه الاستمارة لتغيير عنصر موجود من القائمة الداخلية لإكِجا"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:272
+msgid "Is a preferred contact"
+msgstr "المتراسل المُفضّل"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:274
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:291
+#: ../plugins/resource-list/rl-heap.cpp:528
+#: ../plugins/resource-list/rl-presentity.cpp:236
+msgid "Choose groups:"
+msgstr "اختر المجموعات:"
+
+#: ../lib/engine/components/opal/h323-endpoint.cpp:146
+#: ../lib/engine/components/opal/opal-call.cpp:688
+#: ../lib/engine/components/opal/sip-endpoint.cpp:249
+#: ../lib/engine/components/opal/sip-endpoint.cpp:253
+msgid "Call"
+msgstr "اتصل"
+
+#: ../lib/engine/components/opal/h323-endpoint.cpp:149
+#: ../lib/engine/components/opal/sip-endpoint.cpp:250
+#: ../lib/engine/components/opal/sip-endpoint.cpp:254
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2172
+msgid "Transfer"
+msgstr "حوّل"
+
+#. Translators : The alias we are registering already exists : failure
+#: ../lib/engine/components/opal/h323-endpoint.cpp:347
+msgid "Duplicate alias"
+msgstr "كرر الكنية"
+
+#: ../lib/engine/components/opal/h323-endpoint.cpp:350
+msgid "Bad username/password"
+msgstr "اسم مستخدم/كلمة سرّ سيّئة"
+
+#: ../lib/engine/components/opal/h323-endpoint.cpp:353
+#: ../lib/engine/components/opal/sip-endpoint.cpp:598
+msgid "Transport error"
+msgstr "خطأ في التوصيل"
+
+#: ../lib/engine/components/opal/h323-endpoint.cpp:364
+#: ../lib/engine/components/opal/h323-endpoint.cpp:369
+#: ../lib/engine/components/opal/sip-endpoint.cpp:811
+msgid "Failed"
+msgstr "فشل"
+
+#. Translators: this is a state, not an action, i.e. it should be read as
+#. "(you are) unregistered", and not as "(you have been) unregistered"
+#: ../lib/engine/components/opal/opal-account.cpp:73
+#: ../lib/engine/components/opal/opal-account.cpp:362
+#: ../lib/engine/components/opal/opal-account.cpp:673
+msgid "Unregistered"
+msgstr "غير مُسجّل"
+
+#. translators : the result will look like :
+#. * "registered (with 2 voice mail messages)"
+#.
+#: ../lib/engine/components/opal/opal-account.cpp:248
+#, c-format
+msgid "%s (with %d voice mail message)"
+msgid_plural "%s (with %d voice mail messages)"
+msgstr[0] "%s (دون أي رسائل صوتية)"
+msgstr[1] "%s (مع رسالة صوتية واحدة)"
+msgstr[2] "%s (مع رسالتين صوتيتين)"
+msgstr[3] "%s (مع %d رسائل صوتية)"
+msgstr[4] "%s (مع %d رسالة صوتية)"
+msgstr[5] "%s (مع %d رسالة صوتية)"
+
+#: ../lib/engine/components/opal/opal-account.cpp:326
+#: ../lib/engine/components/opal/opal-account.cpp:755
+msgid "Processing..."
+msgstr "يُعالج..."
+
+#: ../lib/engine/components/opal/opal-account.cpp:406
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:677
+#: ../plugins/loudmouth/loudmouth-account.cpp:433
+msgid "_Disable"
+msgstr "_عطّل"
+
+#: ../lib/engine/components/opal/opal-account.cpp:409
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:674
+#: ../plugins/loudmouth/loudmouth-account.cpp:437
+msgid "_Enable"
+msgstr "_فعّل"
+
+#: ../lib/engine/components/opal/opal-account.cpp:430
+#: ../src/gui/assistant.cpp:761
+msgid "Recharge the account"
+msgstr "أعِد شحن تحميل الحساب"
+
+#: ../lib/engine/components/opal/opal-account.cpp:435
+#: ../src/gui/assistant.cpp:773
+msgid "Consult the balance history"
+msgstr "راجع تاريخ التوازن"
+
+#: ../lib/engine/components/opal/opal-account.cpp:440
+#: ../src/gui/assistant.cpp:785
+msgid "Consult the call history"
+msgstr "راجع تاريخ المكالمات"
+
+#: ../lib/engine/components/opal/opal-account.cpp:455
+#: ../lib/engine/components/opal/opal-bank.cpp:98
+#: ../plugins/loudmouth/loudmouth-account.cpp:337
+#: ../plugins/loudmouth/loudmouth-bank.cpp:121
+msgid "Edit account"
+msgstr "حرّر الحساب"
+
+#: ../lib/engine/components/opal/opal-account.cpp:457
+#: ../lib/engine/components/opal/opal-bank.cpp:99
+#: ../plugins/evolution/evolution-book.cpp:345
+#: ../plugins/evolution/evolution-contact.cpp:322
+#: ../plugins/loudmouth/loudmouth-account.cpp:339
+msgid "Please update the following fields:"
+msgstr "رجاء، حدث الحقول التالية:"
+
+#: ../lib/engine/components/opal/opal-account.cpp:459
+#: ../lib/engine/components/opal/opal-bank.cpp:125
+#: ../lib/engine/components/opal/opal-bank.cpp:135
+#: ../plugins/loudmouth/loudmouth-account.cpp:342
+#: ../plugins/loudmouth/loudmouth-bank.cpp:125
+msgid "Account name, e.g. MyAccount"
+msgstr "اسم الحساب، مثلا MyAccount"
+
+#: ../lib/engine/components/opal/opal-account.cpp:461
+msgid "Registrar:"
+msgstr "المسجِّل:"
+
+#: ../lib/engine/components/opal/opal-account.cpp:461
+#: ../lib/engine/components/opal/opal-bank.cpp:136
+msgid "The registrar, e.g. ekiga.net"
+msgstr "المسجِّل، مثلا ekiga.net"
+
+#: ../lib/engine/components/opal/opal-account.cpp:463
+msgid "Gatekeeper:"
+msgstr "بوّاب:"
+
+#: ../lib/engine/components/opal/opal-account.cpp:463
+#: ../lib/engine/components/opal/opal-bank.cpp:126
+msgid "The gatekeeper, e.g. ekiga.net"
+msgstr "البوّاب، مثلا ekiga.net"
+
+#: ../lib/engine/components/opal/opal-account.cpp:464
+#: ../plugins/loudmouth/loudmouth-account.cpp:346
+#: ../plugins/loudmouth/loudmouth-bank.cpp:126
+#: ../plugins/resource-list/rl-cluster.cpp:174
+msgid "User:"
+msgstr "المستخدم:"
+
+#: ../lib/engine/components/opal/opal-account.cpp:464
+#: ../lib/engine/components/opal/opal-bank.cpp:107
+#: ../lib/engine/components/opal/opal-bank.cpp:118
+#: ../lib/engine/components/opal/opal-bank.cpp:127
+#: ../lib/engine/components/opal/opal-bank.cpp:137
+#: ../plugins/loudmouth/loudmouth-account.cpp:346
+#: ../plugins/loudmouth/loudmouth-bank.cpp:126
+msgid "The user name, e.g. jim"
+msgstr "اسم المستخدم، مثلا jim"
+
+#. Translators:
+#. * SIP knows two usernames: The name for the client ("User") and the name
+#. * for the authentication procedure ("Authentication user")
+#: ../lib/engine/components/opal/opal-account.cpp:469
+#, fuzzy
+#| msgid "Authentication User:"
+msgid "Authentication user:"
+msgstr "مستخدم الاستيثاق:"
+
+#: ../lib/engine/components/opal/opal-account.cpp:469
+#: ../lib/engine/components/opal/opal-bank.cpp:138
+msgid ""
+"The user name used during authentication, if different than the user name; "
+"leave empty if you do not have one"
+msgstr ""
+"اسم المستخدم الذي سيُستخدم أثناء الاستيثاق، إذا كان يختلف عن اسم المستخدم "
+"وإلا فدعه خاليا"
+
+#: ../lib/engine/components/opal/opal-account.cpp:470
+#: ../plugins/loudmouth/loudmouth-account.cpp:362
+#: ../plugins/loudmouth/loudmouth-bank.cpp:129
+#: ../plugins/resource-list/rl-cluster.cpp:173
+msgid "Password:"
+msgstr "كلمة السرّ:"
+
+#: ../lib/engine/components/opal/opal-account.cpp:470
+#: ../lib/engine/components/opal/opal-bank.cpp:109
+#: ../lib/engine/components/opal/opal-bank.cpp:120
+#: ../lib/engine/components/opal/opal-bank.cpp:129
+#: ../lib/engine/components/opal/opal-bank.cpp:139
+#: ../plugins/loudmouth/loudmouth-account.cpp:362
+#: ../plugins/loudmouth/loudmouth-bank.cpp:129
+msgid "Password associated to the user"
+msgstr "كلمة السرّ التي تخص المستخدم"
+
+#: ../lib/engine/components/opal/opal-account.cpp:471
+msgid "Timeout:"
+msgstr "المهلة:"
+
+#: ../lib/engine/components/opal/opal-account.cpp:471
+#: ../lib/engine/components/opal/opal-bank.cpp:130
+#: ../lib/engine/components/opal/opal-bank.cpp:140
+msgid ""
+"Time in seconds after which the account registration is automatically retried"
+msgstr "المهلة الزمنية التي عند نفاذها يُلغى تسجيل المستخدم تلقائيا"
+
+#: ../lib/engine/components/opal/opal-account.cpp:472
+#: ../lib/engine/components/opal/opal-bank.cpp:143
+#: ../plugins/loudmouth/loudmouth-account.cpp:376
+#: ../plugins/loudmouth/loudmouth-bank.cpp:130
+#, fuzzy
+#| msgid "Enable Account"
+msgid "Enable account"
+msgstr "فعّل الحساب"
+
+#: ../lib/engine/components/opal/opal-account.cpp:500
+#: ../lib/engine/components/opal/opal-bank.cpp:177
+msgid "You did not supply a name for that account."
+msgstr "لم تزود باسم لهذا المتراسل."
+
+#: ../lib/engine/components/opal/opal-account.cpp:502
+#: ../lib/engine/components/opal/opal-bank.cpp:179
+msgid "You did not supply a host to register to."
+msgstr "لم تزود مستضيفاً ليتم التسجيل عليه."
+
+#: ../lib/engine/components/opal/opal-account.cpp:504
+#: ../lib/engine/components/opal/opal-bank.cpp:181
+msgid "You did not supply a user name for that account."
+msgstr "لم تزود اسم المستخدم لهذا المتراسل."
+
+#: ../lib/engine/components/opal/opal-account.cpp:506
+#: ../lib/engine/components/opal/opal-bank.cpp:183
+msgid "The timeout should be at least 10 seconds."
+msgstr "يجب أن تكون المهلة 10 ثوان على الأقل."
+
+#. Translators: this is a state, not an action, i.e. it should be read as
+#. "(you are) registered", and not as "(you have been) registered"
+#: ../lib/engine/components/opal/opal-account.cpp:646
+msgid "Registered"
+msgstr "مُسجّل"
+
+#: ../lib/engine/components/opal/opal-account.cpp:687
+msgid "Could not unregister"
+msgstr "تعذر إلغاء التسجيل"
+
+#: ../lib/engine/components/opal/opal-account.cpp:700
+#: ../lib/engine/components/opal/opal-account.cpp:734
+#, fuzzy
+#| msgid "Could not register"
+msgid "Could not register to "
+msgstr "تعذر التسجيل"
+
+#: ../lib/engine/components/opal/opal-account.cpp:701
+#: ../lib/engine/components/opal/opal-account.cpp:735
+#: ../plugins/loudmouth/loudmouth-account.cpp:443
+msgid "Edit"
+msgstr "حرّر"
+
+#: ../lib/engine/components/opal/opal-account.cpp:729
+msgid "Could not register"
+msgstr "تعذر التسجيل"
+
+#: ../lib/engine/components/opal/opal-account.cpp:877
+msgid "Appointment"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:882
+msgid "Breakfast"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:887
+msgid "Dinner"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:893
+msgid "Holiday"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:898
+msgid "In transit"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:903
+msgid "Looking for work"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:908
+msgid "Lunch"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:913
+msgid "Meal"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:918
+#, fuzzy
+#| msgid "Settings"
+msgid "Meeting"
+msgstr "الإعدادات"
+
+#: ../lib/engine/components/opal/opal-account.cpp:923
+#, fuzzy
+#| msgid "_Office phone:"
+msgid "On the phone"
+msgstr "هات_ف المكتب:"
+
+#: ../lib/engine/components/opal/opal-account.cpp:928
+#, fuzzy
+#| msgid "Play"
+msgid "Playing"
+msgstr "شغّل"
+
+#: ../lib/engine/components/opal/opal-account.cpp:933
+msgid "Shopping"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:938
+msgid "Sleeping"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-account.cpp:943
+msgid "Working"
+msgstr ""
+
+#: ../lib/engine/components/opal/opal-bank.cpp:76
+msgid "_Add an Ekiga.net Account"
+msgstr "أ_ضف حساب Ekiga.net "
+
+#: ../lib/engine/components/opal/opal-bank.cpp:78
+msgid "_Add an Ekiga Call Out Account"
+msgstr "أ_ضف حساب إكجا Call Out"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:80
+msgid "_Add a SIP Account"
+msgstr "أ_ضف حساب SIP"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:83
+msgid "_Add an H.323 Account"
+msgstr "أ_ضف حساب H.323"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:104 ../src/gui/assistant.cpp:645
+msgid "Get an Ekiga.net SIP account"
+msgstr "احصل على حساب Ekiga.net SIP"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:107
+#: ../lib/engine/components/opal/opal-bank.cpp:127
+#: ../lib/engine/components/opal/opal-bank.cpp:137
+msgid "_User:"
+msgstr "الم_ستخدم:"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:109
+#: ../lib/engine/components/opal/opal-bank.cpp:129
+#: ../lib/engine/components/opal/opal-bank.cpp:139
+#: ../plugins/ldap/ldap-book.cpp:986
+msgid "_Password:"
+msgstr "_كلمة السرّ:"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:114 ../src/gui/assistant.cpp:749
+msgid "Get an Ekiga Call Out account"
+msgstr "إحصل على حساب  Ekiga Call Out"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:118
+msgid "_Account ID:"
+msgstr "مُعرّف ال_حساب:"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:120
+#, fuzzy
+#| msgid "_PIN Code:"
+msgid "_PIN code:"
+msgstr "رمز ال_تعريف الشخصي (PIN):"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:125
+#: ../lib/engine/components/opal/opal-bank.cpp:135
+#: ../plugins/evolution/evolution-book.cpp:347
+msgid "_Name:"
+msgstr "الا_سم:"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:126
+msgid "_Gatekeeper:"
+msgstr "ال_بوّاب:"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:130
+#: ../lib/engine/components/opal/opal-bank.cpp:140
+msgid "_Timeout:"
+msgstr "ال_مهلة:"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:136
+msgid "_Registrar:"
+msgstr "المس_جِّل:"
+
+#: ../lib/engine/components/opal/opal-bank.cpp:138
+#, fuzzy
+#| msgid "_Authentication User:"
+msgid "_Authentication user:"
+msgstr "مستخدم الاستي_ثاق:"
+
+#: ../lib/engine/components/opal/opal-call.cpp:423
+msgid "Local user cleared the call"
+msgstr "قطع المستخدم المحلي المكالمة"
+
+#: ../lib/engine/components/opal/opal-call.cpp:426
+#: ../lib/engine/components/opal/opal-call.cpp:429
+msgid "Local user rejected the call"
+msgstr "رفض المستخدم المحلي المكالمة"
+
+#: ../lib/engine/components/opal/opal-call.cpp:432
+msgid "Remote user cleared the call"
+msgstr "قطع المستخدم البعيد المكالمة"
+
+#: ../lib/engine/components/opal/opal-call.cpp:435
+msgid "Remote user rejected the call"
+msgstr "رفض المستخدم البعيد المكالمة"
+
+#: ../lib/engine/components/opal/opal-call.cpp:438
+msgid "Remote user has stopped calling"
+msgstr "توقف المُتّصل عن الاتصال"
+
+#: ../lib/engine/components/opal/opal-call.cpp:441
+msgid "Abnormal call termination"
+msgstr "قَطْع غير طبيعي للاتصال"
+
+#: ../lib/engine/components/opal/opal-call.cpp:444
+#: ../src/gui/main_window.cpp:531
+msgid "Could not connect to remote host"
+msgstr "تعذّر الاتصال بالمستضيف البعيد"
+
+#: ../lib/engine/components/opal/opal-call.cpp:448
+msgid "The Gatekeeper cleared the call"
+msgstr "قام البوّاب بقطع الاتصال"
+
+#: ../lib/engine/components/opal/opal-call.cpp:451
+msgid "User not found"
+msgstr "لم يعثر على المستخدم"
+
+#: ../lib/engine/components/opal/opal-call.cpp:454
+msgid "Insufficient bandwidth"
+msgstr "عرض الموجة غير كافي"
+
+#: ../lib/engine/components/opal/opal-call.cpp:457
+msgid "No common codec"
+msgstr "لا يوجد مِرماز مشترك"
+
+#: ../lib/engine/components/opal/opal-call.cpp:460
+msgid "Call forwarded"
+msgstr "تم تحويل المكالمة"
+
+#: ../lib/engine/components/opal/opal-call.cpp:463
+msgid "Security check failed"
+msgstr "فشل الفحص الأمني"
+
+#: ../lib/engine/components/opal/opal-call.cpp:466
+msgid "Local user is busy"
+msgstr "المستخدم المحلي مشغول"
+
+#: ../lib/engine/components/opal/opal-call.cpp:469
+#: ../lib/engine/components/opal/opal-call.cpp:475
+msgid "Congested link to remote party"
+msgstr "الوصلة إلى المشترك البعيد محتقنة"
+
+#: ../lib/engine/components/opal/opal-call.cpp:472
+msgid "Remote user is busy"
+msgstr "المستخدم البعيد مشغول"
+
+#: ../lib/engine/components/opal/opal-call.cpp:478
+msgid "Remote host is offline"
+msgstr "المستخدم البعيد ليس على الخط"
+
+#: ../lib/engine/components/opal/opal-call.cpp:484
+msgid "User is not available"
+msgstr "المُستخدم غير مُتاح"
+
+#: ../lib/engine/components/opal/opal-call.cpp:487
+#: ../lib/engine/components/opal/sip-endpoint.cpp:776
+msgid "Service unavailable"
+msgstr "الخدمة غير متوفّرة"
+
+#: ../lib/engine/components/opal/opal-call.cpp:497
+msgid "Call completed"
+msgstr "انتهت المكالمة"
+
+#: ../lib/engine/components/opal/opal-call.cpp:685
+#, fuzzy
+#| msgid "Missed call from %s"
+msgid "Missed call from"
+msgstr "مكالمة فائتة مِن %s"
+
+#: ../lib/engine/components/opal/opal-call.cpp:687
+#, fuzzy
+#| msgid "Missed call from %s"
+msgid "Missed call"
+msgstr "مكالمة فائتة مِن %s"
+
+#: ../lib/engine/components/opal/opal-call-manager.cpp:842
+msgid ""
+"Ekiga did not manage to configure your network settings automatically. You "
+"can still use it, but you need to configure your network settings manually.\n"
+"\n"
+"Please see http://wiki.ekiga.org/index.php/Enable_port_forwarding_manually "
+"for instructions"
+msgstr ""
+"لم ينجح إيكجا في ضبط إعدادت شبكتك بشكل تلقائي. مازلت تستطيع استخدامه. لكن "
+"عليك ضيط إعدادت شبكتك يدوياً. \n"
+"\n"
+"الرجاء أنظر http://wiki.ekiga.org/index.php/Enable_port_forwarding_manually "
+"للمزيد من الملعلومات"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:274
+#: ../lib/engine/components/opal/sip-endpoint.cpp:276
+msgid "Message"
+msgstr "رسالة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:594
+msgid "Illegal status code"
+msgstr "رمز حالة غير شرعي"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:602
+msgid "Invalid address"
+msgstr ""
+
+#. Translators: Host of the remote party is offline, this should
+#. * appear when the remote host does not reply in an acceptable time
+#: ../lib/engine/components/opal/sip-endpoint.cpp:608
+msgid "Remote party host is offline"
+msgstr "الطرف البعيد ليس على الخط"
+
+#. Translators: the following strings are answers from the SIP server
+#. * when the packet it receives has an error, see
+#. * http://www.ietf.org/rfc/rfc3261.txt, chapter 21 for more information
+#: ../lib/engine/components/opal/sip-endpoint.cpp:624
+msgid "Multiple choices"
+msgstr "خيارات متعددة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:628
+msgid "Moved permanently"
+msgstr "انتقل بشكل دائم"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:632
+msgid "Moved temporarily"
+msgstr "انتقل بشكل مؤقت"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:636
+msgid "Use proxy"
+msgstr "استخدم وكيلاً"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:640
+msgid "Alternative service"
+msgstr "الخدمة البديلة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:644
+msgid "Bad request"
+msgstr "طلب سيء"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:648
+msgid "Unauthorized"
+msgstr "غير مخوّل"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:652
+msgid "Payment required"
+msgstr "الدفع مطلوب"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:656
+msgid "Forbidden, please check that username and password are correct"
+msgstr "ممنوع، تحقق من صحة اسم المستخدم وكلمة السر"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:660
+msgid "Not found"
+msgstr "غير موجود"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:664
+msgid "Method not allowed"
+msgstr "هذه الطريقة غير مسموحة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:668
+msgid "Not acceptable"
+msgstr "غير مقبول"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:672
+msgid "Proxy authentication required"
+msgstr "استيثاق الوسيط مطلوب"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:676
+msgid "Timeout"
+msgstr "المهلة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:680
+msgid "Conflict"
+msgstr "تضارب"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:684
+msgid "Length required"
+msgstr "الطول مطلوب"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:688
+msgid "Request entity too big"
+msgstr "طلب الهوية كبير جداً"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:692
+msgid "Request URI too long"
+msgstr "طلب المسار طويل جداً"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:696
+msgid "Unsupported media type"
+msgstr "نوع وسائط غير مدعوم"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:700
+msgid "Unsupported URI scheme"
+msgstr "شكل مسار غير مدعوم"
+
+#. Translators:  The extension we are trying to register does not exist.
+#. * Here extension is a specific "phone number", see
+#. * http://en.wikipedia.org/wiki/Extension_(telephone)
+#. * for more information
+#: ../lib/engine/components/opal/sip-endpoint.cpp:708
+msgid "Bad extension"
+msgstr "امتداد سيء"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:712
+msgid "Extension required"
+msgstr "الامتداد مطلوب"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:716
+msgid "Interval too brief"
+msgstr "الفترة الفاصلة صغيرة جداً"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:720
+msgid "Temporarily unavailable"
+msgstr "غير متوفّر مؤقتا"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:724
+msgid "Loop detected"
+msgstr "تم العثور على حلقة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:728
+msgid "Too many hops"
+msgstr "هناك العديد من القفزات"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:732
+msgid "Address incomplete"
+msgstr "العنوان غير كامل"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:736
+msgid "Ambiguous"
+msgstr "ملتبس"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:740
+msgid "Busy Here"
+msgstr "مشغول هنا"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:744
+msgid "Request terminated"
+msgstr "تم إنهاء الطلب"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:748
+msgid "Not acceptable here"
+msgstr "غير مقبول هنا"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:752
+msgid "Bad event"
+msgstr "حدث سيء"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:756
+msgid "Request pending"
+msgstr "الطلب معلّق"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:760
+msgid "Undecipherable"
+msgstr "غير قابل للتفسير"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:764
+msgid "Internal server error"
+msgstr "خطأ خادم داخلي"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:768
+msgid "Not implemented"
+msgstr "غير مطبّق"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:772
+msgid "Bad gateway"
+msgstr "بوابة سيئة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:780
+msgid "Server timeout"
+msgstr "نفاذ وقت الخادم"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:784
+msgid "SIP version not supported"
+msgstr "نسخة SIP غير مدعومة."
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:788
+msgid "Message too large"
+msgstr "الرسالة كبيرة جداً"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:792
+msgid "Busy everywhere"
+msgstr "مشغول في كل مكان"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:796
+msgid "Decline"
+msgstr "هبوط"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:800
+msgid "Does not exist anymore"
+msgstr "لم يعد يوجد إطلاقاً"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:804
+msgid "Globally not acceptable"
+msgstr "غير مقبول عالمياً"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:923
+#, fuzzy
+#| msgid "Could not send message"
+msgid "Could not send message: "
+msgstr "تعذر إرسال رسالة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:925
+msgid "user offline"
+msgstr ""
+
+#. Ignore
+#: ../lib/engine/components/opal/sip-endpoint.cpp:964
+#: ../plugins/libnotify/libnotify-main.cpp:272
+#, c-format
+msgid "Incoming call from %s"
+msgstr "مكالمة واردة من %s"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:966
+#, c-format
+msgid "Incoming call"
+msgstr "مكالمة واردة"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:972
+#, c-format
+msgid "In a call with %s"
+msgstr "يُهاتف %s"
+
+#: ../lib/engine/components/opal/sip-endpoint.cpp:974
+#, c-format
+msgid "In a call"
+msgstr "يُهاتف شخصا آخر"
+
+#: ../lib/engine/gui/gtk-core/codecsbox.cpp:449
+msgid "Move selected codec priority upwards"
+msgstr "ارفع أولية المِرماز المحدد"
+
+#: ../lib/engine/gui/gtk-core/codecsbox.cpp:459
+msgid "Move selected codec priority downwards"
+msgstr "اخفض أولويّة المِرماز المحدد"
+
+#: ../lib/engine/gui/gtk-core/form-dialog-gtk.cpp:661
+msgid "Advanced"
+msgstr "متقدم"
+
+#: ../lib/engine/gui/gtk-core/form-dialog-gtk.cpp:1303
+msgid "Add Group"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:567
+msgid "Account Name"
+msgstr "اسم الحساب"
+
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:568
+msgid "Status"
+msgstr "الحالة"
+
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:575
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:613
+msgid "Accounts"
+msgstr "حسابات"
+
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:584
+#: ../src/gui/main_window.cpp:1327
+msgid "_Accounts"
+msgstr "ال_حسابات"
+
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:588
+#: ../src/gui/main_window.cpp:1373
+msgid "_Help"
+msgstr "_مساعدة"
+
+#: ../lib/engine/gui/gtk-frontend/accounts-window.cpp:680
+msgid "Edi_t"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/addressbook-window.cpp:630
+msgid "Address Book"
+msgstr "دفتر العناوين"
+
+#: ../lib/engine/gui/gtk-frontend/addressbook-window.cpp:646
+#: ../src/gui/main_window.cpp:1298
+msgid "Address _Book"
+msgstr "دفتر الع_ناوين"
+
+#. This will add static and dynamic actions
+#: ../lib/engine/gui/gtk-frontend/addressbook-window.cpp:655
+msgid "_Action"
+msgstr "إ_جراء"
+
+#: ../lib/engine/gui/gtk-frontend/addressbook-window.cpp:699
+msgid "Category"
+msgstr "المجموعة"
+
+#: ../lib/engine/gui/gtk-frontend/book-view-gtk.cpp:571
+#: ../src/gui/assistant.cpp:1394
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+#: ../lib/engine/gui/gtk-frontend/book-view-gtk.cpp:586
+msgid "_Search Filter:"
+msgstr "مُرشِّح الب_حث:"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:782
+msgid "Error while initializing video output"
+msgstr "حدث خطأ خلال تجهيز جهاز خرج الصورة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:783
+msgid "No video will be displayed on your machine during this call"
+msgstr "لن تظهر الصورة على جهازك أثناء هذه المكالمة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:793
+msgid ""
+"There was an error opening or initializing the video output. Please verify "
+"that no other application is using the accelerated video output."
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:795
+msgid ""
+"There was an error opening or initializing the video output. Please verify "
+"that you are using a color depth of 24 or 32 bits per pixel."
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:909
+#, c-format
+msgid "Error while accessing video device %s"
+msgstr "حدث خطأ خلال فتح جهاز الصورة %s"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:912
+msgid "A moving logo will be transmitted during calls."
+msgstr "سيُنقل شعار متحرك أثناء المكالمات."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:916
+msgid ""
+"There was an error while opening the device. In case it is a pluggable "
+"device it may be sufficient to reconnect it. If not, or if it still is not "
+"accessible, please check your permissions and make sure that the appropriate "
+"driver is loaded."
+msgstr ""
+"حدث خطأ خلال فتح الجهاز. في حال كون الجهاز قابل للوصل قد يكون كافياً أن تقوم "
+"بفصل الجهاز ثم إعادة وصله، إذا لم يكن كذلك أو في حال بقائه غير قابل للوصول، "
+"الرجاء التحقق من صلاحياتك وتأكد من تحميل برنامج التعريف المناسب."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:920
+msgid "Your video driver doesn't support the requested video format."
+msgstr "مُشغّل الفيديو لا يدعم تنسيق الفيديو المطلوب."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:924
+msgid "Could not open the chosen channel."
+msgstr "تعذّر فتح القناة المحددة."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:928
+msgid ""
+"Your driver doesn't seem to support any of the color formats supported by "
+"Ekiga.\n"
+" Please check your kernel driver documentation in order to determine which "
+"Palette is supported."
+msgstr ""
+"يبدوا أن مشغلك لا يدعم أي من هيئات الألوان التي يدعمها إكِجا.\n"
+" من فضلك راجع وثائق النواة لترى أي لوحات الألوان مدعزمة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:932
+msgid "Error while setting the frame rate."
+msgstr "حدث خطأ خلال تحديد معدل الإطارات."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:936
+msgid "Error while setting the frame size."
+msgstr "حدث خطأ خلال تحديد حجم الإطار."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:941
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1011
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1092
+msgid "Unknown error."
+msgstr "خطأ مجهول"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:993
+#, c-format
+msgid "Error while opening audio input device %s"
+msgstr "حدث خطأ خلال فتح جهاز الصوت %s"
+
+#. Translators: This happens when there is an error with audio input:
+#. * Nothing ("silence") will be transmitted
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:998
+msgid "Only silence will be transmitted."
+msgstr "سيتم إرسال الصمت فقط"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1002
+msgid ""
+"Unable to open the selected audio device for recording. In case it is a "
+"pluggable device it may be sufficient to reconnect it. If not, or if it "
+"still is not accessible, please check your audio setup, the permissions and "
+"that the device is not busy."
+msgstr ""
+"تعذّر فتح جهاز الصوت المحدد للتسجيل. في حال كون الجهاز قابل للوصل قد يكون "
+"كافياً أن تقوم بفصل الجهاز ثم إعادة وصله، إذا لم يكن كذلك أو في حال بقائه غير "
+"قابل للوصول، الرجاء التحقق إعداد الصوت، وصلاحياتك والتحقق من أن الجهاز ليس "
+"مشغولاً."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1006
+msgid ""
+"The selected audio device was successfully opened but it is impossible to "
+"read data from this device. In case it is a pluggable device it may be "
+"sufficient to reconnect it. If not, or if it still is not accessible, please "
+"check your audio setup."
+msgstr ""
+"تم فتح جهاز الصوت المحدد بنجاح إلا أنه تعذّر قراءة البيانات من هذا الجهاز. في "
+"حال كون الجهاز قابل للوصل قد يكون كافياً أن تقوم بفصل الجهاز ثم إعادة وصله، "
+"إذا لم يكن كذلك أو في حال بقائه غير قابل للوصول، الرجاء التحقق من إعداد "
+"الصوت لديك."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1076
+#, c-format
+msgid "Error while opening audio output device %s"
+msgstr "حدث خطأ خلال فتح جهاز خرج الصوت %s"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1079
+msgid "No incoming sound will be played."
+msgstr "لن يتم تشغيل أي صوت وارد"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1083
+msgid ""
+"Unable to open the selected audio device for playing. In case it is a "
+"pluggable device it may be sufficient to reconnect it. If not, or if it "
+"still is not accessible, please check your audio setup, the permissions and "
+"that the device is not busy."
+msgstr ""
+"تعذّر فتح جهاز الصوت المحدد للتشغيل. في حال كون الجهاز قابل للوصل قد يكون "
+"كافياً أن تقوم بفصل الجهاز ثم إعادة وصله، إذا لم يكن كذلك أو في حال بقائه غير "
+"قابل للوصول، الرجاء التحقق من إعداد الصوت لديك، صلاحياتك وأن الجهاز غير "
+"مشغول."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1087
+msgid ""
+"The selected audio device was successfully opened but it is impossible to "
+"write data to this device. In case it is a pluggable device it may be "
+"sufficient to reconnect it. If not, or if it still is not accessible, please "
+"check your audio setup."
+msgstr ""
+"تم فتح جهاز الصوت المحدد بنجاح إلا أنه تعذّر كتابة البيانات إلى هذا الجهاز. "
+"في حال كون الجهاز قابل للوصل قد يكون كافياً أن تقوم بفصل الجهاز ثم إعادة "
+"وصله، إذا لم يكن كذلك أو في حال بقائه غير قابل للوصول، الرجاء التحقق من "
+"إعداد الصوت لديك."
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1128
+#, c-format
+msgid "Calling %s..."
+msgstr ""
+
+#. %s is the SIP/H.323 address of the remote user, this text is shown
+#. below video during a call
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1158
+#: ../src/gui/main_window.cpp:653
+#, c-format
+msgid "Connected with %s"
+msgstr "متصل مع %s"
+
+#. Init
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1181
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1208
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2510
+msgid "Standby"
+msgstr "انتظر"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1193
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1206
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2722
+#, fuzzy
+#| msgid "Chat Window"
+msgid "Call Window"
+msgstr "نافذة المحادثة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1219
+msgid "Call on hold"
+msgstr "مكالمة في الانتظار"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1230
+msgid "Call retrieved"
+msgstr "مكالمة مُستلمة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1318
+#, fuzzy, c-format
+#| msgid "Connected with %s"
+msgid ""
+"Connected with %s\n"
+"%s"
+msgstr "متصل مع %s"
+
+#. Translators: TX is a common abbreviation for "transmit".  As it
+#. * is shown in a tooltip, there is no space constraint
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1526
+#, fuzzy, c-format
+#| msgid "TX: %dx%d "
+msgid "TX: %dx%d"
+msgstr "البث: %Id×%Id "
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1528
+#, fuzzy
+#| msgid "TX: %dx%d "
+msgid "TX: / "
+msgstr "البث: %Id×%Id "
+
+#. Translators: RX is a common abbreviation for "receive".  As it
+#. * is shown in a tooltip, there is no space constraint
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1533
+#, fuzzy, c-format
+#| msgid "RX: %dx%d "
+msgid "RX: %dx%d"
+msgstr "الاستقبال: %Id×%Id "
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1535
+#, fuzzy
+#| msgid "RX: %dx%d "
+msgid "RX: / "
+msgstr "الاستقبال: %Id×%Id "
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1544
+#, fuzzy, c-format
+#| msgid ""
+#| "Lost packets: %.1f %%\n"
+#| "Late packets: %.1f %%\n"
+#| "Out of order packets: %.1f %%\n"
+#| "Jitter buffer: %d ms%s%s%s"
+msgid ""
+"Lost packets: %.1f %%\n"
+"Late packets: %.1f %%\n"
+"Out of order packets: %.1f %%\n"
+"Jitter buffer: %d ms\n"
+"Codecs: %s\n"
+"Resolution: %s %s"
+msgstr ""
+"حزم مفقودة: %I.1f %%\n"
+"حزم متأخرة: %I.1f %%\n"
+"حزم في غير ترتيبها: %I.1f %%\n"
+"صِوان الارتعاش: %Id ملي ثانية %s%s%s"
+
+#. Translators: A = Audio, V = Video, FPS = Frames per second
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1644
+#, fuzzy, c-format
+#| msgid "A:%.1f/%.1f   V:%.1f/%.1f   FPS:%d/%d"
+msgid "A:%.1f/%.1f V:%.1f/%.1f FPS:%d/%d"
+msgstr "ص:%I.1f/%I.1f   ف:%I.1f/%I.1f  إطار/ث:%Id/%Id"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1668
+msgid "_Retrieve Call"
+msgstr "ا_ستلم المكالمة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1681
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1990
+msgid "H_old Call"
+msgstr "_علّق المكالمة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1712
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2002
+msgid "Suspend _Audio"
+msgstr "علّق ال_صوت"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1714
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2007
+msgid "Suspend _Video"
+msgstr "علّق ال_فيديو"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1716
+msgid "Resume _Audio"
+msgstr "استك_مل الصوت"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1718
+msgid "Resume _Video"
+msgstr "استكمل ال_فيديو"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1752
+msgid "Video Settings"
+msgstr "إعدادات الفيديو"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1777
+msgid "Adjust brightness"
+msgstr "اضبط السطوع"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1796
+msgid "Adjust whiteness"
+msgstr "اضبط البياض"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1815
+msgid "Adjust color"
+msgstr "اضبط الألوان"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1834
+msgid "Adjust contrast"
+msgstr "اضبط التباين"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1876
+msgid "Audio Settings"
+msgstr "إعدادات الصوت"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1978
+#, fuzzy
+#| msgid "Call"
+msgid "_Call"
+msgstr "اتصل"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1980
+msgid "_Pick up"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1980
+#, fuzzy
+#| msgid "Hold the current call"
+msgid "Pick up the current call"
+msgstr "علّق المكالمة الحالية"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1984
+#, fuzzy
+#| msgid "_Hang up"
+msgid "_Hangup"
+msgstr "ا_قطع"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1984
+#, fuzzy
+#| msgid "Hold the current call"
+msgid "Hangup the current call"
+msgstr "علّق المكالمة الحالية"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1990
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2479
+msgid "Hold the current call"
+msgstr "علّق المكالمة الحالية"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1994
+msgid "_Transfer Call"
+msgstr "_حوّل المكالمة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:1995
+msgid "Transfer the current call"
+msgstr "حوّل المكالمة الحالية"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2003
+msgid "Suspend or resume the audio transmission"
+msgstr "علّق أو تابع البثّ الصوتي"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2008
+msgid "Suspend or resume the video transmission"
+msgstr "علّق أو تابع البث المرئي"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2015
+#: ../src/gui/main_window.cpp:1306
+msgid "Close the Ekiga window"
+msgstr "أغلق نافذة إكِجا"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2020
+#: ../src/gui/main_window.cpp:1339
+msgid "_View"
+msgstr "_عرض"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2022
+msgid "_Local Video"
+msgstr "الفيديو ال_محلّي"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2023
+msgid "Local video image"
+msgstr "صورة الفيديو المحلي"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2027
+msgid "_Remote Video"
+msgstr "الفيديو ال_بعيد"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2028
+msgid "Remote video image"
+msgstr "صورة الفيديو البعيد"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2032
+msgid "_Picture-in-Picture"
+msgstr "_صورة-في-صورة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2033
+msgid "Both video images"
+msgstr "كلتا صورتي الفيديو"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2044
+msgid "Zoom in"
+msgstr "قرّب"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2048
+msgid "Zoom out"
+msgstr "بعّد"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2052
+msgid "Normal size"
+msgstr "الحجم الطبيعي"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2056
+msgid "_Fullscreen"
+msgstr "_ملء الشاشة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2056
+msgid "Switch to fullscreen"
+msgstr "بدّل إلى ملء الشاشة"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2171
+msgid "Transfer call to:"
+msgstr "حوّل المكالمة إلى:"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2397
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2412
+#, fuzzy
+#| msgid "Hold the current call"
+msgid "Hang up the current call"
+msgstr "علّق المكالمة الحالية"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2440
+msgid "Change the volume of your soundcard"
+msgstr "غير شدّة بطاقة الصوت"
+
+#: ../lib/engine/gui/gtk-frontend/call-window.cpp:2460
+msgid "Change the color settings of your video device"
+msgstr "غيّر إعدادات ألوان جهاز الفيديو"
+
+#: ../lib/engine/gui/gtk-frontend/chat-area.cpp:247
+msgid "says:"
+msgstr "يقول:"
+
+#: ../lib/engine/gui/gtk-frontend/chat-area.cpp:370
+msgid "Open link in browser"
+msgstr "افتح الرابط في المتصفّح"
+
+#: ../lib/engine/gui/gtk-frontend/chat-area.cpp:376
+msgid "Copy link"
+msgstr "إنسخ الرابط"
+
+#: ../lib/engine/gui/gtk-frontend/chat-area.cpp:899
+msgid "_Smile..."
+msgstr "_ابتسامة..."
+
+#: ../lib/engine/gui/gtk-frontend/chat-window.cpp:139
+#, fuzzy, c-format
+#| msgid "You have %d message"
+#| msgid_plural "You have %d messages"
+msgid "You have %d unread text message"
+msgid_plural "You have %d unread text messages"
+msgstr[0] "لديك %Id رسالة"
+msgstr[1] "لديك %Id رسالة"
+msgstr[2] "لديك %Id رسالة"
+msgstr[3] "لديك %Id رسائل"
+msgstr[4] "لديك %Id رسالة"
+msgstr[5] "لديك %Id رسالة"
+
+#: ../lib/engine/gui/gtk-frontend/chat-window.cpp:144
+msgid "Read"
+msgstr ""
+
+#. we can't do much here since we get the Chat as reference...
+#: ../lib/engine/gui/gtk-frontend/chat-window.cpp:451
+msgid "Chat Window"
+msgstr "نافذة المحادثة"
+
+#: ../lib/engine/gui/gtk-frontend/heap-view.cpp:238
+#: ../lib/engine/gui/gtk-frontend/heap-view.cpp:277
+#: ../lib/engine/gui/gtk-frontend/roster-view-gtk.cpp:1040
+#: ../lib/engine/gui/gtk-frontend/roster-view-gtk.cpp:1131
+msgid "Unsorted"
+msgstr "غير مرتب"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:396
+msgid "Play sound for new voice mails"
+msgstr "شغّل صوت للبريد الصوتي الجديد"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:406
+msgid "Play sound for new instant messages"
+msgstr "تشغيل صوت للرسائل القصيرة الجديدة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:457
+#: ../src/gui/assistant.cpp:373
+msgid "Personal Information"
+msgstr "المعلومات الشخصية"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:459
+msgid "_Full name:"
+msgstr "الا_سم الكامل:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:475
+msgid "Video Display"
+msgstr "عرض الفيديو"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:477
+msgid "Place windows displaying video _above other windows"
+msgstr "ضع النوافذ التي تعرض الفيديو أ_على النوافذ الأخرى"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:481
+msgid "Network Settings"
+msgstr "إعدادات الشّبكة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:483
+#, fuzzy
+msgid "Enable network _detection"
+msgstr "فعّل ال_تحقق من الصمت"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:493
+msgid "Call Forwarding"
+msgstr "تحويل المكالمات"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:495
+msgid "_Always forward calls to the given host"
+msgstr "حوّل المكالمات _دائمًا إلى المستضيف المحدد"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:495
+msgid ""
+"If enabled, all incoming calls will be forwarded to the host that is "
+"specified in the protocol settings"
+msgstr ""
+"إذا فعلت، كل المكالمات الواردة سيتم تحويلها إلى المستضيف الذى تم المحدد في "
+"إعدادات البروتوكول"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:497
+msgid "Forward calls to the given host if _no answer"
+msgstr "حوّل المكالمات إلى المستضيف المحدد إن ل_م يكن هناك ردّ"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:497
+msgid ""
+"If enabled, all incoming calls will be forwarded to the host that is "
+"specified in the protocol settings if you do not answer the call"
+msgstr ""
+"إذا فعلت، كل المكالمات الواردة سيتم تحويلها إلى المستضيف المحدد في إعدادات "
+"البروتوكول إذا لم ترُد على المكالمة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:499
+msgid "Forward calls to the given host if _busy"
+msgstr "حوّل المكالمات إلى المستضيف المحدد إن كنت م_شغولًا"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:499
+#, fuzzy
+#| msgid ""
+#| "If enabled, all incoming calls will be forwarded to the host that is "
+#| "specified in the protocol settings if you already are in a call or if you "
+#| "are in Do Not Disturb mode"
+msgid ""
+"If enabled, all incoming calls will be forwarded to the host that is "
+"specified in the protocol settings if you already are in a call or if you "
+"are in busy mode"
+msgstr ""
+"إذا فعلت، كل المكالمات الواردة سيتم تحويلها إلى المستضيف المحدد في إعدادات "
+"البروتوكول إذا كنت تجرى مكالمة بالفعل أو فى حالة أنك فى وضعية عدم المقاطعة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:503
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1314
+msgid "Call Options"
+msgstr "خيارات المكالمات"
+
+#. Add all the fields
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:506
+msgid "Timeout to reject or forward unanswered incoming calls (in seconds):"
+msgstr "مهلة رفض أو تحويل المكالمات الواردة غير المجابة بالثوانى:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:507
+msgid "_Automatically answer incoming calls"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:538
+msgid "Ekiga Sound Events"
+msgstr "أصوات لأحداث إكِجا"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:575
+msgid "A"
+msgstr "ح"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:587
+msgid "Event"
+msgstr "حدث"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:599
+msgid "Choose a sound"
+msgstr "اختر صوتا"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:604
+msgid "Wavefiles"
+msgstr "ملفات Wave"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:613
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:632
+msgid "Play"
+msgstr "شغّل"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:653
+msgid "String"
+msgstr "نصّ"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:654
+msgid "Tone"
+msgstr "نغمة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:655
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:707
+msgid "RFC2833"
+msgstr "RFC2833"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:656
+msgid "Q.931"
+msgstr "Q.931"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:660
+msgid "Disable H.239 Extended Video"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:661
+msgid "Allow H.239 per Content Role Mask"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:662
+msgid "Force H.239 Presentation Role"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:663
+msgid "Force H.239 Live Role"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:668
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:714
+msgid "Misc Settings"
+msgstr "إعدادات منوّعة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:671
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:719
+msgid "Forward _URI:"
+msgstr "مسار التحويل:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:677
+msgid "Advanced Settings"
+msgstr "إعدادات متقدمة"
+
+#. The toggles
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:680
+msgid "Enable H.245 _tunneling"
+msgstr "فعّل أ_نفقة H.245"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:682
+msgid "Enable _early H.245"
+msgstr "فعّل H.245 ال_مبكّر"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:684
+msgid "Enable fast _start procedure"
+msgstr "فعّل إجراء الت_شغيل السريع"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:684
+msgid ""
+"Connection will be established in Fast Start mode. Fast Start is a new way "
+"to start calls faster that was introduced in H.323v2. It is not supported by "
+"Netmeeting and using both Fast Start and H.245 Tunneling can crash some "
+"versions of Netmeeting."
+msgstr ""
+"سوف يتم إنشاء الاتصال بوضع البدء السريع. البدء السريع هو طريقة جديدة لبدء "
+"المكالمات بشكل أسرع تم تقديمها في بروتوكول H.323v2. ليست مدعومة في نت ميتنج، "
+"كما أن استخدام كل من البدء السريع والأنفقة لبروتوكول H.245 يمكن أن يجعل بعض "
+"إصدارات نت ميتنج تنهار."
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:686
+#, fuzzy
+#| msgid "Enable Account"
+msgid "Enable H.239 control"
+msgstr "فعّل الحساب"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:686
+msgid "This enables H.239 capability for additional video roles."
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:688
+msgid "Extended Video Roles:"
+msgstr ""
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:688
+#, fuzzy
+#| msgid "Select the transmitted video size"
+msgid "Select the H.239 Video Role"
+msgstr "اختر حجم الفيديو المَبثوث"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:692
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:725
+msgid "DTMF Mode"
+msgstr "وضع DTMF"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:694
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:727
+msgid "_Send DTMF as:"
+msgstr "أر_سل نغمات DTMF على شكل:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:694
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:727
+#, fuzzy
+msgid "Select the mode for DTMFs sending"
+msgstr "ذلك يسمح بتعيين وضعية إرسال DTMF."
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:708
+msgid "INFO"
+msgstr "معلومات"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:716
+#, fuzzy
+#| msgid "_Outbound Proxy:"
+msgid "_Outbound proxy:"
+msgstr "وسيط الجهة ال_خارجية:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:744
+#: ../src/gui/assistant.cpp:996
+msgid "Audio Devices"
+msgstr "أجهزة الصوت"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:752
+#, fuzzy
+#| msgid "Ringing Device"
+msgid "Ringing device:"
+msgstr "جهاز الرنين"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:752
+msgid "Select the ringing audio device to use"
+msgstr "اختر جهاز صوت الرنين ليتم استخدامه"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:754
+msgid "Output device:"
+msgstr "جهاز الخرج:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:761
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:897
+msgid "Input device:"
+msgstr "جهاز الدخل:"
+
+#. That button will refresh the device list
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:765
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:908
+msgid "_Detect devices"
+msgstr "ا_كتشف الأجهزة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:765
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:908
+#, fuzzy
+msgid "Click here to refresh the device list"
+msgstr "اضغط هنا لتحديث قائمة الأجهزة."
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:785
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:807
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:827
+#: ../src/gui/assistant.cpp:1262 ../src/gui/assistant.cpp:1284
+#: ../src/gui/assistant.cpp:1306
+msgid "No device found"
+msgstr "لم يُعثر على أي جهاز"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:876
+msgid "PAL (Europe)"
+msgstr "بال (أوروبا)"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:877
+msgid "NTSC (America)"
+msgstr "إن تي إس سي (أمريكا)"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:878
+msgid "SECAM (France)"
+msgstr "سيكام (فرنسا)"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:879
+msgid "Auto"
+msgstr "تلقائي"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:891
+msgid "Video Devices"
+msgstr "أجهزة الصورة"
+
+#. Video Channel
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:901
+msgid "Channel:"
+msgstr "القناة:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:903
+msgid "Size:"
+msgstr "الحجم:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:903
+msgid "Select the transmitted video size"
+msgstr "اختر حجم الفيديو المَبثوث"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:905
+msgid "Format:"
+msgstr "التنسيق:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:924
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:957
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1341
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1351
+msgid "Codecs"
+msgstr "مِرمازات"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:936
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:969
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. Translators: the full sentence is Automatically adjust jitter buffer
+#. between X and Y ms
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:940
+msgid "Enable silence _detection"
+msgstr "فعّل ال_تحقق من الصمت"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:942
+msgid "Enable echo can_celation"
+msgstr "فعّل إل_غاء الصدى:"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:944
+msgid "Maximum _jitter buffer (in ms):"
+msgstr "الحد الأقصى لتخزين التأخير (بالملي ثانية):"
+
+#. Translators: the full sentence is Keep a minimum video quality of X %
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:972
+#, fuzzy
+#| msgid "Picture Quality"
+msgid "Picture quality"
+msgstr "جودة الصورة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:972
+#, fuzzy
+#| msgid "Frame Rate"
+msgid "Frame rate"
+msgstr "معدل الإطارات"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:972
+#, fuzzy
+msgid ""
+"Choose if you want to guarantee a minimum image quality (possibly leading to "
+"dropped frames in order not to surpass the bitrate limit) or if you prefer "
+"to keep the frame rate"
+msgstr ""
+"اختر إذا أردت ضمان جودة الصورة بالحد الأدنى (ربما سيؤدي ذلك إلى فقد بعض "
+"الإطارات من أجل عدم تجاوز حدود معدل البت) أو إذا كنت تفضل الحفاظ على معدّل "
+"الإطارات."
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:974
+msgid "Maximum video _bitrate (in kbits/s):"
+msgstr "أقصى معدل البت للفيديو (ك.بتّة/ث):"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:974
+msgid ""
+"The maximum video bitrate in kbits/s. The video quality and the effective "
+"frame rate will be dynamically adjusted to keep the bitrate at the given "
+"value."
+msgstr ""
+"أقصى معدل البت للفيديو بالـ (كيلوبت/ثانية). سيتم تعديل جودة الفيديو ومعدّل "
+"الإطارات الفعّالة ديناميكياً للحفاظ على معدل البت عند القيمة المعطاة."
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1286
+msgid "Ekiga Preferences"
+msgstr "تفضيلات إكِجا"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1304
+msgid "General"
+msgstr "عامّ"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1305
+msgid "Personal Data"
+msgstr "البيانات الشخصية"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1310
+msgid "General Settings"
+msgstr "الإعدادات العامّة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1319
+msgid "Sound Events"
+msgstr "الأحداث الصوتيّة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1323
+msgid "Protocols"
+msgstr "البروتوكولات"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1325
+msgid "SIP Settings"
+msgstr "إعدادات SIP"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1330
+msgid "H.323 Settings"
+msgstr "إعدادات H.323"
+
+#. The player
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1336
+msgid "Audio"
+msgstr "الصوت"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1337
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1347
+msgid "Devices"
+msgstr "الأجهزة"
+
+#: ../lib/engine/gui/gtk-frontend/preferences-window.cpp:1346
+msgid "Video"
+msgstr "الفيديو"
+
+#: ../lib/engine/gui/gtk-frontend/statusicon.cpp:309
+#, c-format
+msgid "You have %d message"
+msgid_plural "You have %d messages"
+msgstr[0] "لديك %Id رسالة"
+msgstr[1] "لديك %Id رسالة"
+msgstr[2] "لديك %Id رسالة"
+msgstr[3] "لديك %Id رسائل"
+msgstr[4] "لديك %Id رسالة"
+msgstr[5] "لديك %Id رسالة"
+
+#: ../lib/engine/gui/gtk-frontend/statusicon.cpp:378
+#: ../src/gui/main_window.cpp:1376
+msgid "Get help by reading the Ekiga manual"
+msgstr "احصل على مساعدة عن طريق قراءة دليل إكِجا"
+
+#: ../lib/engine/gui/gtk-frontend/statusicon.cpp:383
+#: ../src/gui/main_window.cpp:1381
+msgid "View information about Ekiga"
+msgstr "اعرض معلومات عنْ إكِجا"
+
+#: ../lib/engine/gui/gtk-frontend/statusicon.cpp:390
+#: ../src/gui/main_window.cpp:1313
+msgid "Quit"
+msgstr "اخرج"
+
+#: ../lib/gui/dialpad.c:52
+msgid "abc"
+msgstr "abc"
+
+#: ../lib/gui/dialpad.c:53
+msgid "def"
+msgstr "def"
+
+#: ../lib/gui/dialpad.c:54
+msgid "ghi"
+msgstr "ghi"
+
+#: ../lib/gui/dialpad.c:55
+msgid "jkl"
+msgstr "jkl"
+
+#: ../lib/gui/dialpad.c:56
+msgid "mno"
+msgstr "mno"
+
+#: ../lib/gui/dialpad.c:57
+msgid "pqrs"
+msgstr "pqrs"
+
+#: ../lib/gui/dialpad.c:58
+msgid "tuv"
+msgstr "tuv"
+
+#: ../lib/gui/dialpad.c:59
+msgid "wxyz"
+msgstr "wxyz"
+
+#: ../lib/gui/gmcallbacks.c:67
+msgid "Contributors:"
+msgstr "المساهمون:"
+
+#: ../lib/gui/gmcallbacks.c:72
+msgid "Artwork:"
+msgstr "العمل الفني:"
+
+#: ../lib/gui/gmcallbacks.c:79
+msgid "See AUTHORS file for full credits"
+msgstr "اذهب إلى ملف AUTHORS لعرض كل المساهمين"
+
+#: ../lib/gui/gmcallbacks.c:95
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version. "
+msgstr ""
+"إن هذا البرنامج هو برمجية حرة بامكانك إعادة توزيعه و/أو تعديله تحت شروط "
+"الرخصة العمومية العامة لجنو والتي نشرتها منظمة البرمجيات الحرة؛ سواء "
+"الإصدارة 2 من الرخصة أو أي إصدارة بعدها حسب رغبتك."
+
+#: ../lib/gui/gmcallbacks.c:99
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for "
+"more details. You should have received a copy of the GNU General Public "
+"License along with this program; if not, write to the Free Software "
+"Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"يوزّع هذا البرنامج على أمل أن يكون مفيدا، ولكن دون أدنى مسؤولية؛ ولا حتى أي "
+"ضمان يضمن صلاحية العرض في السوق أو توافقه مع أي استخدام محدد. يمكنك مراجعة "
+"الرخصة العمومية العامة لجنو لمزيد من التفاصيل. من المفترض أن تكون قد استلمت "
+"نسخة من رخصة جنو العامة مع هذا البرنامج؛ في حال عدم استلامك لذلك، يمكنك "
+"مراسلة: Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, "
+"MA 02110-1301, USA."
+
+#: ../lib/gui/gmcallbacks.c:106
+msgid ""
+"Ekiga is licensed under the GPL license and as a special exception, you have "
+"permission to link or otherwise combine this program with the programs OPAL, "
+"OpenH323 and PWLIB, and distribute the combination, without applying the "
+"requirements of the GNU GPL to the OPAL, OpenH323 and PWLIB programs, as "
+"long as you do follow the requirements of the GNU GPL for all the rest of "
+"the software thus combined."
+msgstr ""
+"إن إكجا مرخّص تحت بنود رخصة GPL وكاستثناء خاص، لديك الحق في ربط أو بمعنى آخر "
+"تجميع هذا البرنامج مع برامج OPAL، وهي OpenH323 و PWLIP وتوزيع المجموعة "
+"الناتجة، دون تطبيق متطلبات جنو GPL على برامج OPAL وهما برنامجي OpenH323 و "
+"PWLIB، طالما اتبعت متطلبات جنو GPL لجميع البرمجيات المتبقية والمجمعّة."
+
+#. Translators: Please write translator credits here, and
+#. * separate names with \n
+#: ../lib/gui/gmcallbacks.c:118
+msgid "translator-credits"
+msgstr ""
+"فريق عرب آيز للترجمة http://www.arabeyes.org:\n"
+"جهاد عفيفي\t<djihed@gmail.com>\n"
+"محمد مجدي\t<alnokta@yahoo.com>\n"
+"صهيب عفيفي\t<sohaibafifi@gmail.com>\n"
+"خالد حسني\t<khaledhosny@eglug.org>\n"
+"أنس عفيف عماد\t<anas.e87@gmail.com>"
+
+#: ../lib/gui/gmcallbacks.c:123
+msgid ""
+"Ekiga is full-featured SIP and H.323 compatible VoIP, IP-Telephony and "
+"Videoconferencing application that allows you to make audio and video calls "
+"to remote users with SIP and H.323 hardware or software."
+msgstr ""
+"إكِجا هو برنامج غنيّ بالمزايا: مؤتمرات مرئية، VoIP، هاتف IP متوافق مع H.323 و "
+"يُمَكٌِنك من عمل الاتصالات المرئية والمسموعة مع المستخدمين البعيدين باستخدام "
+"جهاز أو برنامج H.323."
+
+#: ../lib/gui/gmcallbacks.c:196
+msgid "Unable to open help file."
+msgstr "تعذّر فتح ملف المساعدة."
+
+#: ../lib/gui/gmdialog.c:327
+msgid "Do not show this dialog again"
+msgstr "لا تظهر هذا الحوار مجددًا"
+
+#: ../plugins/avahi/avahi-heap.cpp:129 ../plugins/avahi/avahi-heap.cpp:375
+msgid "Neighbours"
+msgstr "جيران"
+
+#: ../plugins/evolution/evolution-book.cpp:75 ../plugins/ldap/ldap-book.cpp:920
+#, c-format
+msgid "%d user found"
+msgid_plural "%d users found"
+msgstr[0] "لم يجد مستخدمين"
+msgstr[1] "وجد مستخدم واحد"
+msgstr[2] "وجد مستخدمَيْن"
+msgstr[3] "وجد %d مستخدمِين"
+msgstr[4] "وجد %d مستخدمِ"
+msgstr[5] "وجد %d مستخدمِ"
+
+#: ../plugins/evolution/evolution-book.cpp:301
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:71
+msgid "New _Contact"
+msgstr "مُ_راسل جديد"
+
+#: ../plugins/evolution/evolution-book.cpp:348
+#: ../plugins/evolution/evolution-contact.cpp:333
+msgid "VoIP _URI:"
+msgstr "_مسار VoIP:"
+
+#: ../plugins/evolution/evolution-book.cpp:349
+#: ../plugins/evolution/evolution-contact.cpp:334
+msgid "_Home phone:"
+msgstr "_هاتف المنزل:"
+
+#: ../plugins/evolution/evolution-book.cpp:350
+#: ../plugins/evolution/evolution-contact.cpp:335
+msgid "_Office phone:"
+msgstr "هات_ف المكتب:"
+
+#: ../plugins/evolution/evolution-book.cpp:351
+#: ../plugins/evolution/evolution-contact.cpp:336
+msgid "_Cell phone:"
+msgstr "الهاتف الم_حمول:"
+
+#: ../plugins/evolution/evolution-book.cpp:352
+#: ../plugins/evolution/evolution-contact.cpp:337
+msgid "_Pager:"
+msgstr "ج_هاز الاستدعاء:"
+
+#: ../plugins/evolution/evolution-contact.cpp:320
+msgid "Edit contact"
+msgstr "حرر المتراسل"
+
+#: ../plugins/evolution/evolution-contact.cpp:374
+msgid "Remove contact"
+msgstr "إزل المُراسل"
+
+#: ../plugins/evolution/evolution-contact.cpp:376
+#, c-format
+msgid "Are you sure you want to remove %s from the addressbook?"
+msgstr "أمتأكّد أنّك تريد حذف %s من دفتر العناوين؟"
+
+#: ../plugins/gstreamer/gst-audioinput.cpp:196
+msgid "Audio test"
+msgstr "فحص الصّوت"
+
+#: ../plugins/gstreamer/gst-audiooutput.cpp:226
+msgid "Silent"
+msgstr "صامت"
+
+#: ../plugins/gstreamer/gst-videoinput.cpp:190
+msgid "Video test"
+msgstr "فحص الصّورة"
+
+#. Translators: "Screencast" means the video input device will be your screen -- the other end will see your desktop
+#: ../plugins/gstreamer/gst-videoinput.cpp:342
+#: ../plugins/gstreamer/gst-videoinput.cpp:347
+msgid "Crazy"
+msgstr "مجنون"
+
+#: ../plugins/gstreamer/gst-videoinput.cpp:347
+msgid "Screencast"
+msgstr "صورة الشاشة"
+
+#: ../plugins/ldap/ldap-book.cpp:427 ../plugins/resource-list/rl-entry.cpp:160
+#: ../plugins/resource-list/rl-entry-ref.cpp:138
+msgid "_Refresh"
+msgstr "_حدّث"
+
+#: ../plugins/ldap/ldap-book.cpp:430
+msgid "_Remove addressbook"
+msgstr "ا_حذف دفتر العناوين"
+
+#: ../plugins/ldap/ldap-book.cpp:432
+msgid "Addressbook _properties"
+msgstr "خصائص _دفتر العناوين"
+
+#: ../plugins/ldap/ldap-book.cpp:563
+msgid "LDAP SASL Interaction"
+msgstr "تفاعل LDAP SASL"
+
+#. Translators, Howard explained : "Challenge" is a generic term
+#. * in authentication. It's a prompt from the authentication mechanism
+#. * for some type of credential. Exactly what kind of challenge and
+#. * what kind of credential depends on the specific authentication
+#. * mechanism. Since SASL is a generic interface, and can dynamically
+#. * load arbitrary mechanisms, there's not much more specific you can
+#. * say about it. You might google for "challenge response
+#. * authentication" if you'd like more background context.
+#.
+#: ../plugins/ldap/ldap-book.cpp:605
+msgid "Challenge: "
+msgstr "أُحجية"
+
+#: ../plugins/ldap/ldap-book.cpp:613
+msgid "Interact"
+msgstr "التفاعل"
+
+#: ../plugins/ldap/ldap-book.cpp:680
+msgid "Refreshing"
+msgstr "يُحدّث"
+
+#: ../plugins/ldap/ldap-book.cpp:686
+msgid "Could not initialize server"
+msgstr "تعذر بدء الخادم"
+
+#: ../plugins/ldap/ldap-book.cpp:700 ../plugins/ldap/ldap-book.cpp:745
+msgid "LDAP Error: "
+msgstr "خطأ LDAP:"
+
+#: ../plugins/ldap/ldap-book.cpp:754
+msgid "Contacted server"
+msgstr "الخادوم المتصل به"
+
+#. patience == 0
+#: ../plugins/ldap/ldap-book.cpp:793
+msgid "Could not connect to server"
+msgstr "تعذر الاتصال بالخادم"
+
+#. patience == 0
+#: ../plugins/ldap/ldap-book.cpp:841 ../plugins/ldap/ldap-book.cpp:890
+msgid "Could not search"
+msgstr "تعذر البحث"
+
+#: ../plugins/ldap/ldap-book.cpp:849
+msgid "Waiting for search results"
+msgstr "في انتظار نتائج البحث"
+
+#: ../plugins/ldap/ldap-book.cpp:942
+msgid "Please edit the following fields"
+msgstr "رجاء، حرر الحقول التالية"
+
+#: ../plugins/ldap/ldap-book.cpp:944
+#, fuzzy
+#| msgid "Book _Name:"
+msgid "Book _name:"
+msgstr "ا_سم الدفتر:"
+
+#: ../plugins/ldap/ldap-book.cpp:944
+msgid "Book name, as shown in your dialog box"
+msgstr "اسم الدفتر كما سيظهر في المربع الحواري"
+
+#: ../plugins/ldap/ldap-book.cpp:945
+msgid "Server _URI:"
+msgstr "م_سار الخادوم:"
+
+#: ../plugins/ldap/ldap-book.cpp:945
+msgid "Name of LDAP server, prefixed by ldap://"
+msgstr "اسم خادوم LDAP يسبقه ‪ldap://‬"
+
+#: ../plugins/ldap/ldap-book.cpp:946
+msgid "_Base DN:"
+msgstr "أس_اس DN:"
+
+#: ../plugins/ldap/ldap-book.cpp:952
+msgid "Subtree"
+msgstr "ال_شجرة الفرعية"
+
+#: ../plugins/ldap/ldap-book.cpp:953
+#, fuzzy
+#| msgid "Single Level"
+msgid "Single level"
+msgstr "مستوى وحيد"
+
+#: ../plugins/ldap/ldap-book.cpp:954
+#, fuzzy
+#| msgid "_Search Scope"
+msgid "_Search scope"
+msgstr "مجال ال_بحث:"
+
+#. Translators: DisplayName Attribute is the name of the LDAP
+#. * attribute whose value will be used to name an addressbook entry.
+#. * On Microsoft systems the actual attribute is literally named
+#. * "DisplayName" (i.e., "the name that will be displayed") but on
+#. * most LDAP servers it's "CommonName".
+#.
+#: ../plugins/ldap/ldap-book.cpp:969
+#, fuzzy
+#| msgid "_DisplayName Attribute:"
+msgid "_DisplayName attribute:"
+msgstr "خاصية _DisplayName:"
+
+#: ../plugins/ldap/ldap-book.cpp:970
+#, fuzzy
+#| msgid "Call _Attributes:"
+msgid "Call _attributes:"
+msgstr "خواص ال_نداء:"
+
+#: ../plugins/ldap/ldap-book.cpp:970
+msgid "The field you are searching for"
+msgstr "المجال الذي تبحث فيه"
+
+#: ../plugins/ldap/ldap-book.cpp:972 ../plugins/ldap/ldap-book.cpp:974
+#, fuzzy
+#| msgid "_Filter Template:"
+msgid "_Filter template:"
+msgstr "قالب ال_مُرشِّح:"
+
+#: ../plugins/ldap/ldap-book.cpp:972 ../plugins/ldap/ldap-book.cpp:974
+msgid "Here, a \"$\" is replaced by the search string"
+msgstr "ستستبدل \"$\" هنا بنص البحث"
+
+#. Translators: Bind ID - In LDAP, the operation that begins an LDAP
+#. * session and authenticates the user to the directory is called a
+#. * Bind operation.  There are two types of Binds supported in the
+#. * standard protocol - Simple Bind and SASL Bind.  Since both of
+#. * them are used for authentication, both of them require some type
+#. * of user ID as a parameter, and that is supplied here.  (Of
+#. * course, the Bind ID can be left blank, in which case the session
+#. * is anonymous / unauthenticated.)
+#.
+#: ../plugins/ldap/ldap-book.cpp:985
+msgid "Bind _ID:"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:985
+msgid "User ID; leave blank for anonymous / nonauthenticated"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:986
+msgid "The password for the user ID above, if any"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:987
+msgid "Use TLS"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:988
+msgid "Use SASL"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:1002
+msgid "SASL _mechanism"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:1012
+msgid "Edit LDAP directory"
+msgstr "حرّر دليل LDAP"
+
+#: ../plugins/ldap/ldap-book.cpp:1034
+msgid "Please provide a Book Name for this directory\n"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:1037
+msgid "Please provide a Server URI\n"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:1040
+#, fuzzy
+#| msgid "_DisplayName Attribute:"
+msgid "Please provide a DisplayName attribute\n"
+msgstr "خاصية _DisplayName:\n"
+
+#: ../plugins/ldap/ldap-book.cpp:1043
+msgid "Please provide a Call attribute\n"
+msgstr ""
+
+#: ../plugins/ldap/ldap-book.cpp:1046 ../plugins/ldap/ldap-book.cpp:1082
+msgid "Invalid Server URI\n"
+msgstr ""
+
+#: ../plugins/ldap/ldap-source.cpp:130
+msgid "Add an LDAP Address Book"
+msgstr "أضِف دفتر عناوين LDAP"
+
+#: ../plugins/ldap/ldap-source.cpp:134
+msgid "Add the Ekiga.net Directory"
+msgstr "أ_ضف دليل Ekiga.net "
+
+#: ../plugins/ldap/ldap-source.cpp:155
+msgid "Create LDAP directory"
+msgstr "أنشئ دفتر عناوين LDAP"
+
+#: ../plugins/ldap/ldap-source.cpp:164
+msgid "Ekiga.net Directory"
+msgstr "دليل Ekiga.net"
+
+#: ../plugins/libnotify/libnotify-main.cpp:273
+msgid "Remote URI:"
+msgstr "المسار البعيد:"
+
+#: ../plugins/libnotify/libnotify-main.cpp:286
+msgid "Reject"
+msgstr "ارفض"
+
+#: ../plugins/libnotify/libnotify-main.cpp:288
+msgid "Accept"
+msgstr "اقبل"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:112
+#: ../plugins/loudmouth/loudmouth-account.cpp:159
+msgid "inactive"
+msgstr "غير نشط"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:238
+#, c-format
+msgid "error connecting (%s)"
+msgstr "خطأ في الاتصال (%s)"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:244
+msgid "connecting"
+msgstr "يتّصل"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:284
+msgid "authenticating"
+msgstr "يستوثق"
+
+#. FIXME: can't we report better?
+#: ../plugins/loudmouth/loudmouth-account.cpp:294
+msgid "error connecting"
+msgstr "خطأ في الاتصال"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:304
+msgid "disconnected"
+msgstr "قُطِع الاتّصال"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:314
+msgid "connected"
+msgstr "اتّصل"
+
+#. FIXME: can't we report something better?
+#: ../plugins/loudmouth/loudmouth-account.cpp:320
+msgid "error authenticating loudmouth account"
+msgstr "خطأ أثناء استيثاق حساب loudmouth"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:350
+#: ../plugins/loudmouth/loudmouth-bank.cpp:127
+msgid "Server:"
+msgstr "الخادوم:"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:350
+#: ../plugins/loudmouth/loudmouth-bank.cpp:127
+#, fuzzy
+#| msgid "The user name, e.g. jim"
+msgid "The server, e.g. jabber.org"
+msgstr "اسم المستخدم، مثلا jim"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:354
+msgid "Port:"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:354
+msgid "The transport protocol port, if different than the default"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:358
+#: ../plugins/loudmouth/loudmouth-bank.cpp:128
+msgid "Resource:"
+msgstr "المورد:"
+
+#: ../plugins/loudmouth/loudmouth-account.cpp:358
+#: ../plugins/loudmouth/loudmouth-bank.cpp:128
+msgid ""
+"The resource, such as home or work, allowing to distinguish among several "
+"terminals registered to the same account; leave empty if you do not know "
+"what it is"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-bank.cpp:111
+#, fuzzy
+#| msgid "_Add a jabber/XMPP account"
+msgid "_Add a Jabber/XMPP Account"
+msgstr "أ_ضف حساب جابِر\\XMPP"
+
+#: ../plugins/loudmouth/loudmouth-bank.cpp:123
+#, fuzzy
+msgid "Please fill in the following fields:"
+msgstr "رجاء، حرر الحقول التالية"
+
+#. FIXME: this is here until the feature is ready
+#: ../plugins/loudmouth/loudmouth-dialect.cpp:121
+msgid "Join a discussion group"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-dialect.cpp:132
+msgid "Open a group chat room"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-dialect.cpp:134
+#, fuzzy
+#| msgid "Please edit this group name"
+msgid "Please provide a room name"
+msgstr "رجاءً، حرّر اسم هذه المجموعة"
+
+#: ../plugins/loudmouth/loudmouth-dialect.cpp:136
+#, fuzzy
+#| msgid "Rename"
+msgid "Room name"
+msgstr "غيّر الاسم"
+
+#: ../plugins/loudmouth/loudmouth-dialect.cpp:136
+msgid "The name of the room you want to enter"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-dialect.cpp:138
+msgid "Pseudonym"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-dialect.cpp:138
+msgid "The pseudonym you'll have in the room"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:172
+msgid "Authorization to see your presence"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:176
+#, c-format
+msgid "%s asks the permission to see your presence, saying: \"%s\"."
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:180
+#, c-format
+msgid "%s asks the permission to see your presence."
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:187
+msgid "grant him/her the permission to see your presence"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:188
+msgid "refuse him/her the permission to see your presence"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:189
+msgid "decide later (also close or cancel this dialog)"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:190
+msgid "Your answer is: "
+msgstr "إجابتك هي:"
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:334
+#, fuzzy
+msgid "Add a roster element"
+msgstr "حرّر عنصر القائمة"
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:335
+#, fuzzy
+msgid "Please fill in this form to add a new element to the remote roster"
+msgstr "رجاءً، عبأ هذه الاستمارة لإضافة مُراسل جديد إلى القائمة الداخلية لإكِجا "
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:337
+#: ../plugins/resource-list/rl-heap.cpp:470
+msgid "Identifier:"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:337
+msgid "identifier@server"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:167
+#, fuzzy
+msgid "Start chat"
+msgstr "إبدأ مخفيًا"
+
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:170
+msgid "Continue chat"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:179
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:185
+msgid "Ask him/her to see his/her status"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:183
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:195
+msgid "Forbid him/her to see my status"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:187
+msgid "Ask him/her to see his/her status (pending)"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:191
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:196
+msgid "Stop getting his/her status"
+msgstr ""
+
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:287
+#, fuzzy
+msgid ""
+"Please fill in this form to change an existing element of the remote roster"
+msgstr "رجاء، املأ هذه الاستمارة لتغيير عنصر موجود من القائمة الداخلية لإكِجا"
+
+#: ../plugins/resource-list/rl-cluster.cpp:102
+msgid "New resource list"
+msgstr ""
+
+#: ../plugins/resource-list/rl-cluster.cpp:166
+msgid "Add new resource-list"
+msgstr ""
+
+#: ../plugins/resource-list/rl-cluster.cpp:167
+#, fuzzy
+msgid ""
+"Please fill in this form to add a new contact list to ekiga's remote roster"
+msgstr "رجاءً، عبأ هذه الاستمارة لإضافة مُراسل جديد إلى القائمة الداخلية لإكِجا "
+
+#: ../plugins/resource-list/rl-cluster.cpp:171
+#: ../plugins/resource-list/rl-heap.cpp:471
+msgid "Writable:"
+msgstr ""
+
+#: ../plugins/resource-list/rl-cluster.cpp:172
+msgid "Username:"
+msgstr "اسم المستخدم:"
+
+#: ../plugins/resource-list/rl-entry.cpp:202
+#, fuzzy
+msgid "Invalid server data"
+msgstr "خطأ خادم داخلي"
+
+#: ../plugins/resource-list/rl-entry-ref.cpp:53
+msgid "Click to fetch"
+msgstr ""
+
+#: ../plugins/resource-list/rl-entry-ref.cpp:120
+#, fuzzy
+msgid "Distant contact"
+msgstr "حرر المتراسل"
+
+#: ../plugins/resource-list/rl-heap.cpp:198
+#, fuzzy
+msgid "_Add a new contact"
+msgstr "مُراسل جديد"
+
+#: ../plugins/resource-list/rl-heap.cpp:200
+#, fuzzy
+msgid "_Refresh contact list"
+msgstr "اعرض قائمة المتراسلين"
+
+#: ../plugins/resource-list/rl-heap.cpp:202
+#, fuzzy
+msgid "Contact list _properties"
+msgstr "حالة المتراسل الطويلة"
+
+#: ../plugins/resource-list/rl-heap.cpp:462
+#, fuzzy
+msgid "Edit contact list properties"
+msgstr "ضع المُراسل في مجموعات:"
+
+#: ../plugins/resource-list/rl-heap.cpp:464
+#, fuzzy
+msgid "Please edit the following fields (no identifier means global)"
+msgstr "رجاء، حرر الحقول التالية"
+
+#: ../plugins/resource-list/rl-heap.cpp:467
+#, fuzzy
+msgid "Contact list's name:"
+msgstr "حالة المتراسل الطويلة"
+
+#. "Document" used as a name -- uri point to the root of a document tree
+#: ../plugins/resource-list/rl-heap.cpp:469
+msgid "Document root:"
+msgstr ""
+
+#: ../plugins/resource-list/rl-heap.cpp:472
+#, fuzzy
+msgid "Server username:"
+msgstr "رجاء أدخل اسم المستخدم:"
+
+#: ../plugins/resource-list/rl-heap.cpp:473
+#, fuzzy
+msgid "Server password:"
+msgstr "كلمة السرّ:"
+
+#: ../plugins/resource-list/rl-heap.cpp:512
+#, fuzzy
+msgid "Add a remote contact"
+msgstr "إزل المُراسل"
+
+#: ../plugins/resource-list/rl-heap.cpp:513
+#, fuzzy
+msgid "Please fill in this form to create a new contact on a remote server"
+msgstr "رجاءً، عبأ هذه الاستمارة لإضافة مُراسل جديد إلى القائمة الداخلية لإكِجا "
+
+#. Translators: #%d - ordinal number
+#: ../plugins/resource-list/rl-list.cpp:183
+#, c-format
+msgid "%s / List #%d"
+msgstr "%s \\ القائمة #%d"
+
+#. Translators: #%d - ordinal number
+#: ../plugins/resource-list/rl-list.cpp:188
+#, c-format
+msgid "List #%d"
+msgstr "القائمة #%d"
+
+#: ../plugins/resource-list/rl-presentity.cpp:230
+msgid "Edit remote contact"
+msgstr "حرّر المتراسل البعيد"
+
+#: ../plugins/resource-list/rl-presentity.cpp:231
+msgid ""
+"Please fill in this form to change an existing contact on a remote server"
+msgstr "رجاء، املأ هذه الاستمارة لتغيير متراسِل موجود على خادوم بعيد"
+
+#: ../src/gui/assistant.cpp:341
+msgid ""
+"This is the Ekiga general configuration assistant. The following steps will "
+"set up Ekiga by asking a few simple questions.\n"
+"\n"
+"Once you have completed these steps, you can always change them later by "
+"selecting Preferences in the Edit menu."
+msgstr ""
+"أهلًا بك في مُساعِد الإعدادات العامة لإكِجا. الخطوات التالية ستقوم بإعداد إكِجا "
+"بسؤالك بعض الأسئلة.\n"
+"\n"
+"بعد إكمالك هذه الخطوات، يمكنك دائمًا تغيير هذه الإعدادات لاحقًا باختيار "
+"تفضيلات من قائمة تحرير."
+
+#: ../src/gui/assistant.cpp:349
+msgid "Welcome to Ekiga"
+msgstr "مرحبا في إكِجا"
+
+#. The user fields
+#: ../src/gui/assistant.cpp:376
+msgid "Please enter your first name and your surname:"
+msgstr "أدخل اسمك الأول ولقبك:"
+
+#: ../src/gui/assistant.cpp:385
+msgid ""
+"Your first name and surname will be used when connecting to other VoIP and "
+"videoconferencing software."
+msgstr ""
+"سوف يستخدم اسمك الأول ولقبك عند الاتصال ببرامج VoIP وبرامج المؤتمرات المرئية "
+"الأخرى."
+
+#: ../src/gui/assistant.cpp:435
+msgid ""
+"If you do not have a SIP or H323 account, ekiga can only be used on your "
+"local internal network (inside your company, for example).  You will require "
+"an account if you want to be accessible to people on the Internet.  Many web "
+"sites allow you to create an account.  We suggest that you use a free ekiga."
+"net account, which allows you to be joined by any person with a SIP "
+"account.  If you want to call regular phone lines too, we suggest that you "
+"purchase an inexpensive call out account.\n"
+"\n"
+"The following two pages allow you to create such accounts."
+msgstr ""
+
+#: ../src/gui/assistant.cpp:450
+msgid "Introduction to Accounts"
+msgstr ""
+
+#: ../src/gui/assistant.cpp:608
+msgid "Ekiga.net Account"
+msgstr "حساب Ekiga.net"
+
+#: ../src/gui/assistant.cpp:610
+msgid "Please enter your username:"
+msgstr "رجاء أدخل اسم المستخدم:"
+
+#: ../src/gui/assistant.cpp:618
+msgid "Please enter your password:"
+msgstr "رجاء أدخل كلمة سرّ:"
+
+#: ../src/gui/assistant.cpp:628
+msgid ""
+"The username and password are used to login to your existing account at the "
+"ekiga.net free SIP service. If you do not have an ekiga.net SIP address yet, "
+"you may first create an account below. This will provide a SIP address that "
+"allows people to call you.\n"
+"\n"
+"You may skip this step if you use an alternative SIP service, or if you "
+"would prefer to specify the login details later."
+msgstr ""
+"يُستخدم اسم المستخدم وكلمة السر للولوج في حسابك الموجود على خدمة SIP المجانية "
+"من ekiga.net. إذا لم يكن لك حساب على ekiga.net بعد، يمكنك إنشاء واحد من "
+"أسفل. سيُعطيك هذا عنوان SIP ليتّصل بك الناس عليه.\n"
+"يمكنك تخطي هذه الخطوة إذا كنت تستخدم خدمة SIP بديلة أو تُفضل إعطاء معلومات "
+"الولوج فيما بعد."
+
+#: ../src/gui/assistant.cpp:654
+msgid "I do not want to sign up for the ekiga.net free service"
+msgstr "لا أريد التسجيل في الخدمة المجانية من ekiga.net"
+
+#: ../src/gui/assistant.cpp:714
+msgid "Ekiga Call Out Account"
+msgstr "حساب Ekiga Call Out"
+
+#: ../src/gui/assistant.cpp:716
+msgid "Please enter your account ID:"
+msgstr "رجاءً أدخل معرّف حسابك:"
+
+#: ../src/gui/assistant.cpp:724
+msgid "Please enter your PIN code:"
+msgstr "رجاء أدخل الرمز الشخصي PIN الخاص بك:"
+
+#: ../src/gui/assistant.cpp:735
+msgid ""
+"You can make calls to regular phones and cell numbers worldwide using Ekiga. "
+"To enable this, you need to do two things:\n"
+"- First buy an account at the URL below.\n"
+"- Then enter your account ID and PIN code.\n"
+"The service will work only if your account is created using the URL in this "
+"dialog.\n"
+msgstr ""
+"يمكنك أن تجرى مكالمات إلى هواتف أرضية و هواتف نقالة إلى جميع أنحاء العالم "
+"باستخدام إكِجا.\n"
+"لتفعيل ذلك ، فانك تحتاج إلى أمرين:\n"
+"- أولا، اشتر حساب على العنوان فى الأسفل. \n"
+"- ثم أدخل معرّف الحساب و الرمز الشخصي PIN. \n"
+"الخدمة ستعمل فقط في حال استخدامك المسار الموجود فى صندوق الحوار هذا لعمل "
+"حسابك.\n"
+
+#: ../src/gui/assistant.cpp:794
+msgid "I do not want to sign up for the Ekiga Call Out service"
+msgstr "لا أريد الاشتراك في خدمة Ekiga Call Out "
+
+#: ../src/gui/assistant.cpp:857 ../src/gui/assistant.cpp:1407
+msgid "Connection Type"
+msgstr "نوع الاتصال"
+
+#. The connection type
+#: ../src/gui/assistant.cpp:860
+msgid "Please choose your connection type:"
+msgstr "رجاء اختر نوع اتصالك:"
+
+#: ../src/gui/assistant.cpp:877
+msgid "56k Modem"
+msgstr "مودم 56K"
+
+#: ../src/gui/assistant.cpp:882
+msgid "ISDN"
+msgstr "ISDN"
+
+#: ../src/gui/assistant.cpp:887
+msgid "DSL/Cable (128 kbit/s uplink)"
+msgstr "DSL/Cable (128 kbit/s uplink)"
+
+#: ../src/gui/assistant.cpp:892
+msgid "DSL/Cable (512 kbit/s uplink)"
+msgstr "DSL/Cable (512 kbit/s uplink)"
+
+#: ../src/gui/assistant.cpp:897
+msgid "LAN"
+msgstr "شبكة محلية"
+
+#: ../src/gui/assistant.cpp:902
+msgid "Keep current settings"
+msgstr "ابق الإعدادات الحالية"
+
+#: ../src/gui/assistant.cpp:907
+msgid ""
+"The connection type will permit determining the best quality settings that "
+"Ekiga will use during calls. You can later change the settings individually "
+"in the preferences window."
+msgstr ""
+"سيسنح نوع الاتصال هذا بتحديد أفضل إعدادات الجودة التي سيستخدمها إكِجا في "
+"الاتصال. يمكنك تغيير الإعدادات فيما بعد على حِدة من نافذة التفضيلات."
+
+#: ../src/gui/assistant.cpp:998
+msgid "Please choose the audio ringing device:"
+msgstr "رجاء اختر جهاز صوت الرنين:"
+
+#: ../src/gui/assistant.cpp:1018
+msgid ""
+"The audio ringing device is the device that will be used to play the ringing "
+"sound on incoming calls."
+msgstr ""
+"جهاز صوت الرنين هو الجهاز الذي سيتم استخدامه لتشغيل صوت الرنين عند ورود "
+"المكالمات."
+
+#. ---
+#: ../src/gui/assistant.cpp:1029
+msgid "Please choose the audio output device:"
+msgstr "رجاءً اختر جهاز خرج الصّوت:"
+
+#: ../src/gui/assistant.cpp:1049
+msgid ""
+"The audio output device is the device that will be used to play audio during "
+"calls."
+msgstr "جهاز خرج الصّوت هو الجهاز الذي سيستخدم لتشغيل الصّوت خلال المكالمات."
+
+#. ---
+#: ../src/gui/assistant.cpp:1060
+msgid "Please choose the audio input device:"
+msgstr "رجاء اختر جهاز دخل الصوت:"
+
+#: ../src/gui/assistant.cpp:1080
+msgid ""
+"The audio input device is the device that will be used to record your voice "
+"during calls."
+msgstr "جهاز دخل الصوت هو الجهاز الذي سوف يستخدم لتسجيل صوتك خلال المكالمات."
+
+#: ../src/gui/assistant.cpp:1176 ../src/gui/assistant.cpp:1474
+msgid "Video Input Device"
+msgstr "جهاز دخل الفيديو"
+
+#: ../src/gui/assistant.cpp:1178
+msgid "Please choose your video input device:"
+msgstr "رجاء اختر جهاز دخل الفيديو:"
+
+#: ../src/gui/assistant.cpp:1198
+msgid ""
+"The video input device is the device that will be used to capture video "
+"during calls."
+msgstr ""
+"جهاز دخل الفيديو هو الجهاز الذي سيستخدم لالتقاط الفيديو خلال المكالمات."
+
+#: ../src/gui/assistant.cpp:1337
+msgid "Configuration Complete"
+msgstr "اكتمل الإعداد"
+
+#: ../src/gui/assistant.cpp:1339
+msgid ""
+"You have now finished the Ekiga configuration. All the settings can be "
+"changed in the Ekiga preferences. Enjoy!"
+msgstr ""
+"لقد أتممت الآن إعدادات إكِجا. يمكن تغيير كل الإعدادات من تفضيلات إكِجا. استمتع"
+
+#: ../src/gui/assistant.cpp:1346
+msgid "Configuration summary:"
+msgstr "ملخص الإعدادات:"
+
+#: ../src/gui/assistant.cpp:1424
+msgid "Audio Ringing Device"
+msgstr "جهاز صوت الرنين"
+
+#: ../src/gui/assistant.cpp:1441
+msgid "Audio Output Device"
+msgstr "جهاز خرج الصوت"
+
+#: ../src/gui/assistant.cpp:1458
+msgid "Audio Input Device"
+msgstr "جهاز دخل الصوت"
+
+#: ../src/gui/assistant.cpp:1490
+msgid "SIP URI"
+msgstr "مسار SIP"
+
+#: ../src/gui/assistant.cpp:1505
+msgid "Ekiga Call Out"
+msgstr "إكجا Call Out"
+
+#: ../src/gui/assistant.cpp:1550
+#, c-format
+msgid "Ekiga Configuration Assistant (%d of %d)"
+msgstr "مساعد إعدادات إكِجا (%Id مِن %Id)"
+
+#: ../src/gui/main.cpp:133
+#, fuzzy
+#| msgid "Prints debug messages in the console (level between 1 and 5)"
+msgid "Prints debug messages in the console (level between 1 and 8)"
+msgstr "يطبع رسائل التنقيح في سطر الأوامر (بين المستوى 1 و 5)"
+
+#: ../src/gui/main.cpp:138
+msgid "Makes Ekiga call the given URI"
+msgstr "يجعل إكِجا يتصل بالمسار المعطى"
+
+#: ../src/gui/main_window.cpp:376
+msgid "Presence"
+msgstr "التواجد"
+
+#: ../src/gui/main_window.cpp:383
+msgid "Addressbook"
+msgstr "دفتر العناوين"
+
+#: ../src/gui/main_window.cpp:412
+msgid "Unknown"
+msgstr "غير معروف"
+
+#: ../src/gui/main_window.cpp:713
+#, c-format
+msgid "Missed call from %s"
+msgstr "مكالمة فائتة مِن %s"
+
+#: ../src/gui/main_window.cpp:747
+msgid "Error"
+msgstr "خطأ"
+
+#: ../src/gui/main_window.cpp:1170
+#, fuzzy
+msgid ""
+"Enter a URI on the left, and click this button to place a call or to hangup"
+msgstr "أدخِل عنوان على اليسار ، ثم اضغط هذا الزر لتجرى مكالمة"
+
+#: ../src/gui/main_window.cpp:1221 ../src/gui/main_window.cpp:1349
+msgid "View the contacts list"
+msgstr "اعرض قائمة المتراسلين"
+
+#: ../src/gui/main_window.cpp:1232 ../src/gui/main_window.cpp:1354
+msgid "View the dialpad"
+msgstr "اعرض لوح الاتصال"
+
+#: ../src/gui/main_window.cpp:1243 ../src/gui/main_window.cpp:1359
+msgid "View the call history"
+msgstr "أعرض تاريخ المكالمات"
+
+#: ../src/gui/main_window.cpp:1281
+msgid "_Chat"
+msgstr "محا_دثة"
+
+#: ../src/gui/main_window.cpp:1283
+msgid "Co_ntact"
+msgstr "م_تراسل"
+
+#: ../src/gui/main_window.cpp:1284
+msgid "Act on selected contact"
+msgstr "طبّق على المتراسلين المحددين"
+
+#: ../src/gui/main_window.cpp:1288
+msgid "Ca_ll a Number"
+msgstr ""
+
+#: ../src/gui/main_window.cpp:1288
+msgid "Place a new call"
+msgstr "ضع مكالمة جديدة"
+
+#: ../src/gui/main_window.cpp:1294
+msgid "A_dd Contact"
+msgstr "أ_ضف متراسل"
+
+#: ../src/gui/main_window.cpp:1294
+msgid "Add a contact to the roster"
+msgstr "أضِف مُراسل إلى القائمة"
+
+#: ../src/gui/main_window.cpp:1299
+msgid "Find contacts"
+msgstr "ابحث عن المُراسلين"
+
+#: ../src/gui/main_window.cpp:1319
+msgid "_Configuration Assistant"
+msgstr "مُساعد الإ_عداد"
+
+#: ../src/gui/main_window.cpp:1320
+msgid "Run the configuration assistant"
+msgstr "شغّل مساعد الإعداد"
+
+#: ../src/gui/main_window.cpp:1328
+msgid "Edit your accounts"
+msgstr "حرّر حساباتك"
+
+#: ../src/gui/main_window.cpp:1334
+msgid "Change your preferences"
+msgstr "غيّر تفضيلاتك"
+
+#: ../src/gui/main_window.cpp:1341
+#, fuzzy
+#| msgid "Video preview"
+msgid "_Video Preview"
+msgstr "استعراض الفيديو"
+
+#: ../src/gui/main_window.cpp:1349
+msgid "Con_tacts"
+msgstr "ال_متراسلون"
+
+#: ../src/gui/main_window.cpp:1354
+msgid "_Dialpad"
+msgstr "_لوح الاتصال"
+
+#: ../src/gui/main_window.cpp:1359
+msgid "_Call History"
+msgstr "_تاريخ المكالمات"
+
+#: ../src/gui/main_window.cpp:1367
+#, fuzzy
+#| msgid "Show offline _contacts"
+msgid "Show Offline _Contacts"
+msgstr "أظهر المتراسلين _غير المتصلين"
+
+#: ../src/gui/main_window.cpp:1460
+msgid "Dialpad"
+msgstr "لوح الاتصال"
+
+#: ../src/gui/main_window.cpp:1478
+msgid "Call history"
+msgstr "تاريخ المكالمات"
+
+#: ../src/gui/main_window.cpp:1490
+msgid "Ekiga"
+msgstr "إكِجا"
+
+#: ../src/gui/statusmenu.cpp:87
+#, fuzzy
+#| msgid "Disable"
+msgid "Available"
+msgstr "عطّل"
+
+#: ../src/gui/statusmenu.cpp:88
+msgid "Away"
+msgstr "غائب"
+
+#: ../src/gui/statusmenu.cpp:89
+#, fuzzy
+#| msgid "Busy Here"
+msgid "Busy"
+msgstr "مشغول هنا"
+
+#: ../src/gui/statusmenu.cpp:387
+msgid "Custom message..."
+msgstr "رسالة مخصصة..."
+
+#: ../src/gui/statusmenu.cpp:432
+msgid "Clear"
+msgstr "إمسح"
+
+#. Build the dialog
+#: ../src/gui/statusmenu.cpp:520 ../src/gui/statusmenu.cpp:668
+msgid "Custom Message"
+msgstr "رسالة مخصصة"
+
+#: ../src/gui/statusmenu.cpp:536
+msgid "Delete custom messages:"
+msgstr "إحدف الرسالة المخصصة:"
+
+#: ../src/gui/statusmenu.cpp:685
+msgid "Define a custom message:"
+msgstr "عرّف رسالة مخصصة:"
+
+#~ msgid ""
+#~ "If enabled, Ekiga will start hidden provided that the notification area "
+#~ "is present in the GNOME panel"
+#~ msgstr ""
+#~ "إن كان محدّدًا، سوف يبدأ إكِجا خفيًا إن كانت منطقة التنبيه موجودة في لوح "
+#~ "جينوم."
+
+#~ msgid "Show the call panel"
+#~ msgstr "أظهر لوحة المكالمة"
+
+#~ msgid "Start hidden"
+#~ msgstr "إبدأ مخفيًا"
+
+#~ msgid "_Find"
+#~ msgstr "ا_بحث"
+
+#~ msgid "New contact"
+#~ msgstr "مُراسل جديد"
+
+#~ msgid "Local roster"
+#~ msgstr "القائمة المحلية"
+
+#~ msgid "Active"
+#~ msgstr "نشِط"
+
+#~ msgid "Enable"
+#~ msgstr "فعّل"
+
+#~ msgid "Remove"
+#~ msgstr "أزل"
+
+#~ msgid "Added video input device %s"
+#~ msgstr "أُضيف جهاز دخل الصورة %s"
+
+#~ msgid "Removed video input device %s"
+#~ msgstr "أُزيل جهاز دخل الصورة %s"
+
+#~ msgid "Added audio input device %s"
+#~ msgstr "تم إضافة جهاز دخل الصّوت %s"
+
+#~ msgid "Removed audio input device %s"
+#~ msgstr "تم إزالة جهاز دخل الصّوت %s"
+
+#~ msgid "Added audio output device %s"
+#~ msgstr "تم إضافة جهاز خرج الصّوت %s"
+
+#~ msgid "Removed audio output device %s"
+#~ msgstr "تم إزالة جهاز خرج الصّوت %s"
+
+#~ msgid "Incoming call from"
+#~ msgstr "مكالمة واردة من"
+
+#~ msgid "Remote Application:"
+#~ msgstr "التطبيق البعيد:"
+
+#~ msgid "Account ID:"
+#~ msgstr "مُعرّف الحساب:"
+
+#~ msgid "Call from %s"
+#~ msgstr "مكالمة من %s"
+
+#~ msgid "Call Duration: %s\n"
+#~ msgstr "مدة المكالمة: %s\n"
+
+#~ msgid "No"
+#~ msgstr "لا"
+
+#~ msgid "Yes"
+#~ msgstr "نعم"
+
+#~ msgid "Detected new audio input device:"
+#~ msgstr "اكتُشِف جهاز دخل صوت جديد:"
+
+#~ msgid "Detected new audio output device:"
+#~ msgstr "اكتُشِف جهاز خرج صوت جديد:"
+
+#~ msgid "Detected new ringer device:"
+#~ msgstr "اكتُشِف جهاز قرع جرس جديد:"
+
+#~ msgid "Detected new video input device:"
+#~ msgstr "اكتُشِف جهاز دخل فيديو جديد:"
+
+#~ msgid "Do you want to use it as default device?"
+#~ msgstr "هل تريد جعله الجهاز المبدئي؟"
+
+#~ msgid "Ca_ll"
+#~ msgstr "اتّ_صل"
+
+#~ msgid "Terminate the current call"
+#~ msgstr "انهِ المكالمة الحالية"
+
+#~ msgid "_Show Call Panel"
+#~ msgstr "أ_ظهر لوحة المكالمة"
+
+#~ msgid "Picture-in-Picture in Separate _Window"
+#~ msgstr "صورة-في-صورة في _نافذة مستقلة"
+
+#~ msgid ""
+#~ "Prints user plane debug messages in the console (level between 1 and 4)"
+#~ msgstr "يطبع رسائل تنقيح لوح المستخدم في سطر الأوامر (بين المستوى 1 و 4)"
+
+#~ msgid "User Interface"
+#~ msgstr "واجهة المستخدم"
+
+#~ msgid "Start _hidden"
+#~ msgstr "ابدأ م_خفيًا"
+
+#~ msgid "Online"
+#~ msgstr "متصل"
+
+#~ msgid "Do Not Disturb"
+#~ msgstr "الرجاء عدم الإزعاج"
+
+#~ msgid "Local video window size"
+#~ msgstr "حجم نافذة الفيديو المحلية"
+
+#~ msgid "Position of the local video window"
+#~ msgstr "موضع نافذة الفيديو المحلي"
+
+#~ msgid "The position of the local video window"
+#~ msgstr "موضع نافذة عرض الفيديو المحلي"
+
+#~ msgid "The size of the local video window"
+#~ msgstr "حجم نافذة الفيديو المحلية"

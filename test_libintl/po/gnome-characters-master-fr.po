@@ -1,0 +1,212 @@
+# French translation for gnome-characters.
+# Copyright (C) 2015 gnome-characters's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-characters package.
+# Guillaume Bernard <translate@filorin.fr>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-characters gnome-3-16\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"characters&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-29 08:09+0000\n"
+"PO-Revision-Date: 2015-09-04 14:06+0200\n"
+"Last-Translator: Guillaume Bernard <translate@filorin.fr>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../data/app-menu.ui.h:1
+msgid "About"
+msgstr ""
+
+#: ../data/app-menu.ui.h:2
+msgid "Quit"
+msgstr "Quitter"
+
+#: ../data/characterlist.ui.h:1
+msgid "Search produced empty result"
+msgstr "La recherche ne contient aucun résultat"
+
+#: ../data/characterlist.ui.h:2
+msgid "Try another search criteria."
+msgstr "Essayez un autre critère de recherche."
+
+#: ../data/characterlist.ui.h:3
+msgid "Loading…"
+msgstr "Chargement…"
+
+#: ../data/characterlist.ui.h:4
+msgid "No recent characters found"
+msgstr "Aucun caractère récent trouvé"
+
+#: ../data/characterlist.ui.h:5
+msgid "Characters will appear here if you use them."
+msgstr "Les caractères apparaîtront ici si vous les utilisez."
+
+#: ../data/character.ui.h:1
+msgid "Copy Character"
+msgstr "Copier le caractère"
+
+#: ../data/character.ui.h:2
+#, fuzzy
+#| msgid "Characters Application started"
+msgid "Character copied to clipboard"
+msgstr "Application Caractères démarée"
+
+#: ../data/mainwindow.ui.h:1
+msgid "Current page"
+msgstr "Page actuelle"
+
+#: ../data/menu.ui.h:1
+msgid "Filter by font"
+msgstr "Filtrer par police"
+
+#: ../data/org.gnome.Characters.appdata.xml.in.h:1
+msgid ""
+"Characters is a simple utility application to find and insert unusual "
+"characters. It allows you to quickly find the character you are looking for "
+"by searching for keywords."
+msgstr ""
+"Caractères est un utilitaire pour chercher et insérer des caractères "
+"inhabituels. Il vous permet de trouver rapidement le caractère que vous "
+"cherchez par le biais de mots-clés."
+
+#: ../data/org.gnome.Characters.appdata.xml.in.h:2
+msgid ""
+"You can also browse characters by categories, such as Punctuation, Pictures, "
+"etc."
+msgstr ""
+"Vous pouvez aussi naviguer dans les caractères par catégories, comme par "
+"Ponctuation, Images, etc."
+
+#: ../data/org.gnome.Characters.desktop.in.h:1 ../src/service.js:51
+msgid "Characters"
+msgstr "Caractères"
+
+#: ../data/org.gnome.Characters.desktop.in.h:2
+msgid "Utility application to find and insert unusual characters"
+msgstr "Utilitaire pour chercher et insérer des caractères inhabituels."
+
+#: ../data/org.gnome.Characters.desktop.in.h:3
+msgid "characters;unicode;"
+msgstr "caractères;unicode;"
+
+#: ../data/org.gnome.Characters.gschema.xml.h:1
+msgid "Font to display characters"
+msgstr "Police d'affichage des caractères"
+
+#: ../data/org.gnome.Characters.gschema.xml.h:2
+msgid "Use the font to render characters on the character list."
+msgstr "Utiliser la police pour afficher la liste des caractères."
+
+#: ../data/org.gnome.Characters.gschema.xml.h:3
+msgid "Maximum recent characters"
+msgstr "Nombre maximal de caractères récents"
+
+#: ../src/categoryList.js:33
+msgid "Recently Used"
+msgstr "Récemment utilisé"
+
+#: ../src/categoryList.js:39
+msgid "Punctuation"
+msgstr "Ponctuation"
+
+#: ../src/categoryList.js:45
+msgid "Arrows"
+msgstr "Flèches"
+
+#: ../src/categoryList.js:51
+msgid "Bullets"
+msgstr "Puces"
+
+#: ../src/categoryList.js:57
+msgid "Pictures"
+msgstr "Images"
+
+#: ../src/categoryList.js:63
+msgid "Currencies"
+msgstr "Monnaies"
+
+#: ../src/categoryList.js:69
+msgid "Math"
+msgstr "Math"
+
+#: ../src/categoryList.js:75
+msgid "Letters"
+msgstr "Lettres"
+
+#: ../src/categoryList.js:81
+msgid "Emoticons"
+msgstr "Émoticônes"
+
+#: ../src/categoryList.js:96
+#, javascript-format
+msgid "%s Category List Row"
+msgstr "Ligne de la catégorie %s"
+
+#: ../src/character.js:52
+msgid "See Also"
+msgstr "Voir aussi"
+
+#: ../src/character.js:114
+#, javascript-format
+msgid "Unicode U+%04s"
+msgstr "Unicode U+%04s"
+
+#: ../src/main.js:58
+msgid "Characters Application"
+msgstr "Application de caractères"
+
+#: ../src/main.js:95
+msgid "Characters Application started"
+msgstr "Application Caractères démarée"
+
+#: ../src/main.js:103
+msgid "Characters Application exiting"
+msgstr "Fermeture de l'application Caractères"
+
+#: ../src/menu.js:39
+msgid "None"
+msgstr "Aucun"
+
+#: ../src/searchProvider.js:94
+msgid "Unknown character name"
+msgstr "Nom de caractère inconnu"
+
+#: ../src/searchProvider.js:97
+#, javascript-format
+msgid "U+%s, %s: %s"
+msgstr "U+%s, %s: %s"
+
+#. TRANSLATORS: put your names here, one name per line.
+#: ../src/window.js:165
+msgid "translator-credits"
+msgstr "Guillaume Bernard <translate@filorin.fr>"
+
+#: ../src/window.js:166
+msgid "GNOME Characters"
+msgstr "GNOME Caractères"
+
+#: ../src/window.js:167
+msgid "Character Map"
+msgstr "Table de caractères"
+
+#: ../src/window.js:187
+#, javascript-format
+msgid "%s (%s only)"
+msgstr "%s (%s seulement)"
+
+#: ../src/window.js:273
+#, javascript-format
+msgid "%s Character List"
+msgstr "%s liste de caractères"
+
+#: ../src/window.js:280
+msgid "Search Result Character List"
+msgstr "Liste des caractères issus de la recherche"
+
+#~ msgid "About Characters"
+#~ msgstr "À propos de Caractères"

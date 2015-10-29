@@ -1,0 +1,1385 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# naveenmtp <naveenmtp@gmail.com>, 2012.
+# Shantha kumar <shkumar@redhat.com>, 2012, 2013, 2014.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"boxes&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-10-29 08:00+0000\n"
+"PO-Revision-Date: 2014-09-14 23:45+0630\n"
+"Last-Translator: Shantha kumar <shkumar@redhat.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../data/org.gnome.Boxes.appdata.xml.in.h:1
+msgid ""
+"A simple GNOME 3 application to access remote or virtual systems. Unlike "
+"some other virtual machine management software, Boxes is targeted towards "
+"typical desktop end-users. For this reason, Boxes will not provide many "
+"advanced options to tweak virtual machines. Instead Boxes will focus on "
+"getting things working out of the box with very little input from user."
+msgstr ""
+"தொலைநிலை அல்லது மெய்நிகர் கணினிகளை அணுகுவதற்கு உதவும் ஒரு எளிய GNOME 3 பயன்பாடு. "
+"மற்ற மெய்நிகர் கணினி நிர்வாக மென்பொருளைப் போலன்றி, Boxes மென்பொருள்வழக்கமான கணினி "
+"பயனர்களுக்காக வடிவமைக்கப்பட்டது. இந்தக் காரணத்தினாலேயே மெய்நிகர் கணினிகளை சரிசெய்ய "
+"உதவும் பல மேம்பட்ட விருப்பங்களை Boxes வழங்குவதில்லை. அதற்கு பதிலாக பயனரிடமிருந்து "
+"மிகக் குறைந்த உள்ளீட்டையே பெற்று அதன் மூலம் அப்பாலுள்ள கணினிகளில் செயல்களைச் செய்து முடிக்க "
+"உதவுவதையே Boxes முக்கியமான அம்சமாக வழங்குகிறது."
+
+#: ../data/org.gnome.Boxes.appdata.xml.in.h:2
+msgid ""
+"You want to install Boxes if you just want a very safe and easy way to try "
+"out new operating systems or new (potentially unstable) versions of your "
+"favorite operating system(s), or need to connect to a remote machine (for "
+"example, in your office)."
+msgstr ""
+"புதிய இயக்க முறைமைகள் அல்லது உங்களுக்குப் பிடித்த இயக்க முறைமைகளின் புதிய பதிப்புகளை "
+"(அவை நிலையற்றவையாக இருக்கலாம்) பாதுகாப்பாகவும் எளிமையாகவும் பயன்படுத்தி முயற்சித்துப் "
+"பார்க்க விரும்பினால் அல்லது தொலைவில் உள்ள கணினிகளுடன் இணைக்க விரும்பினால் (உதாரணத்திற்கு "
+"உங்கள் அலுவலக கணினியுடன் இணைக்கலாம்) நீங்கள் Boxes ஐ நிறுவலாம்."
+
+#: ../data/org.gnome.Boxes.desktop.in.in.h:1
+#: ../data/gnome-boxes-search-provider.ini.in.h:1 ../data/ui/app-window.ui.h:1
+#: ../src/app-window.vala:129 ../src/app-window.vala:230
+#: ../src/app-window.vala:232 ../src/main.vala:72 ../src/topbar.vala:94
+msgid "Boxes"
+msgstr "பெட்டிகள்"
+
+#: ../data/org.gnome.Boxes.desktop.in.in.h:2
+msgid "Virtual machine viewer/manager"
+msgstr "மெய்நிகர் கணினி காட்சிப்படுத்தி/நிர்வாகி"
+
+#: ../data/org.gnome.Boxes.desktop.in.in.h:3
+msgid "View and use virtual machines"
+msgstr "மெய்நிகர் கணினிகளைக் காணலாம் பயன்படுத்தலாம்"
+
+#: ../data/org.gnome.Boxes.desktop.in.in.h:4
+msgid "virtual machine;vm;"
+msgstr "மெய்நிகர் கணினி;விஎம்;"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:1
+msgid "Collections"
+msgstr "சேகரிப்புகள்"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:2
+msgid "The list of boxes collections"
+msgstr "பெட்டிகள் சேகரிப்பின் பட்டியல்"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:3
+msgid "Screenshot interval"
+msgstr "திரைப்பிடிப்பு இடைவெளி"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:4
+msgid "The interval in seconds between screenshot updates"
+msgstr "திரைப்பிடிப்புப் புதுப்பிப்புகளுக்கு இடையிலான இடைவேளை நொடிகளில்"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:5
+msgid "Window size"
+msgstr "சாளரத்தின் அளவு"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:6
+msgid "Window size (width and height)"
+msgstr "சாளரத்தின் அளவு(அகலம் மற்றும் உயரம்)"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:7
+msgid "Window position"
+msgstr "சாளரத்தின் நிலை"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:8
+msgid "Window position (x and y)"
+msgstr "சாளரத்தின் நிலை (x மற்றும் y)"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:9
+msgid "Window maximized"
+msgstr "சாளரம் விரிவாக்கப்பட்டது"
+
+#: ../data/org.gnome.boxes.gschema.xml.in.h:10
+msgid "Window maximized state"
+msgstr "விரிவாக்கப்பட்ட சாளரத்தின் நிலை"
+
+#: ../data/ui/auth-notification.ui.h:1
+msgid "_Username"
+msgstr "(_U) பயனர் பெயர்"
+
+#: ../data/ui/auth-notification.ui.h:2
+msgid "_Password"
+msgstr "கடவுச்சொல் (_P)"
+
+#: ../data/ui/auth-notification.ui.h:3 ../src/notificationbar.vala:47
+msgid "Sign In"
+msgstr "உள்நுழை"
+
+#: ../data/ui/collection-filter-switcher.ui.h:1
+msgid "All"
+msgstr ""
+
+#: ../data/ui/collection-filter-switcher.ui.h:2
+msgid "Local"
+msgstr ""
+
+#: ../data/ui/collection-filter-switcher.ui.h:3
+#, fuzzy
+#| msgid "Remove"
+msgid "Remote"
+msgstr "நீக்குக"
+
+#: ../data/ui/collection-toolbar.ui.h:1
+msgid "_New"
+msgstr "புதிய (_N)"
+
+#: ../data/ui/collection-toolbar.ui.h:2 ../data/ui/display-toolbar.ui.h:1
+#: ../data/ui/properties-toolbar.ui.h:2 ../data/ui/wizard-toolbar.ui.h:7
+msgid "Back"
+msgstr "பின்"
+
+#: ../data/ui/collection-toolbar.ui.h:3
+msgid "Select Items"
+msgstr "உருப்படிகளைத் தேர்ந்தெடுக்கவும்"
+
+#: ../data/ui/collection-toolbar.ui.h:4
+msgid "List view"
+msgstr ""
+
+#: ../data/ui/collection-toolbar.ui.h:5
+msgid "Grid view"
+msgstr ""
+
+#: ../data/ui/collection-toolbar.ui.h:6 ../data/ui/selection-toolbar.ui.h:2
+msgid "Search"
+msgstr "தேடு"
+
+#: ../data/ui/display-toolbar.ui.h:2
+#, fuzzy
+#| msgid "Collections"
+msgid "Actions"
+msgstr "சேகரிப்புகள்"
+
+#: ../data/ui/display-toolbar.ui.h:3
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: ../data/ui/display-toolbar.ui.h:4 ../src/display-toolbar.vala:54
+msgid "Fullscreen"
+msgstr "முழுத்திரை"
+
+#: ../data/ui/empty-boxes.ui.h:1
+msgid "State of the art virtualization"
+msgstr ""
+
+#: ../data/ui/empty-boxes.ui.h:2
+#, fuzzy
+#| msgid "View and use virtual machines"
+msgid "Boxes can be virtual or remote machines."
+msgstr "மெய்நிகர் கணினிகளைக் காணலாம் பயன்படுத்தலாம்"
+
+#: ../data/ui/empty-boxes.ui.h:3
+msgid "Just hit the <b>New</b> button to create your first one."
+msgstr ""
+
+#: ../data/ui/properties-toolbar.ui.h:1
+#, fuzzy
+#| msgid "Troubleshooting log"
+msgid "Troubleshooting Log"
+msgstr "பிரச்சினை தீவு பதிவேடு"
+
+#: ../data/ui/properties-toolbar.ui.h:3
+#, fuzzy
+#| msgid "Copy to clipboard"
+msgid "_Copy to Clipboard"
+msgstr "ஒட்டுப்பலகைக்கு படியெடு "
+
+#: ../data/ui/properties-toolbar.ui.h:4 ../data/ui/wizard-toolbar.ui.h:8
+msgid "Select a device or ISO file"
+msgstr "ஒரு சாதனம் அல்லது ISO கோப்பைத் தேர்ந்தெடுக்கவும்"
+
+#: ../data/ui/properties-toolbar.ui.h:5 ../data/ui/selection-toolbar.ui.h:1
+#: ../data/ui/wizard-toolbar.ui.h:2
+msgid "_Cancel"
+msgstr "ரத்து செய் (_C)"
+
+#: ../data/ui/properties-toolbar.ui.h:6 ../data/ui/wizard-toolbar.ui.h:9
+msgid "_Open"
+msgstr "திற (_O)"
+
+#: ../data/ui/selectionbar.ui.h:1
+msgid "_Favorite"
+msgstr ""
+
+#: ../data/ui/selectionbar.ui.h:2
+msgid "P_ause"
+msgstr "இடைநிறுத்து (_a)"
+
+#: ../data/ui/selectionbar.ui.h:3
+msgid "_Delete"
+msgstr "அழி (_D)"
+
+#: ../data/ui/selection-toolbar.ui.h:3
+msgid "Select All"
+msgstr "அனைத்தையும் தேர்வு செய்க"
+
+#: ../data/ui/selection-toolbar.ui.h:4
+msgid "Select Running"
+msgstr "இயங்குவதை தேர்ந்தெடு"
+
+#: ../data/ui/selection-toolbar.ui.h:5
+msgid "Select None"
+msgstr "எதையும் தேர்ந்தெடுக்காதே "
+
+#: ../data/ui/snapshot-list-row.ui.h:1
+msgid "Revert to this state"
+msgstr "இந்த நிலைக்கு மீட்டமை"
+
+#: ../data/ui/snapshot-list-row.ui.h:2
+msgid "Rename"
+msgstr "மறுபெயரிடு"
+
+#. Delete
+#: ../data/ui/snapshot-list-row.ui.h:3 ../src/actions-popover.vala:63
+msgid "Delete"
+msgstr "நீக்கு"
+
+#: ../data/ui/snapshot-list-row.ui.h:4
+msgid "Done"
+msgstr "முடிந்தது"
+
+#: ../data/ui/unattended-setup-box.ui.h:1
+msgid ""
+"Choose express install to automatically preconfigure the box with optimal "
+"settings."
+msgstr ""
+"பெட்டியை கூடுமான சிறந்த வகையில் பயன்படுத்த தானாகவே உகந்த அமைவாக்க அமைவுகளுடன் நிறுவ "
+"விரைவு நிறுவலைத் தேர்வு செய்யவும்."
+
+#: ../data/ui/unattended-setup-box.ui.h:2
+msgid "Express Install"
+msgstr "விரைவு நிறுவல்"
+
+#: ../data/ui/unattended-setup-box.ui.h:3 ../src/unattended-installer.vala:278
+msgid "Username"
+msgstr "பயனர்பெயர்"
+
+#: ../data/ui/unattended-setup-box.ui.h:4 ../src/unattended-installer.vala:279
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: ../data/ui/unattended-setup-box.ui.h:5
+msgid "_Add Password"
+msgstr "கடவுச்சொல்லைச் சேர் (_A)"
+
+#: ../data/ui/unattended-setup-box.ui.h:6
+msgid "Product Key"
+msgstr "தயாரிப்பு திறப்பு"
+
+#: ../data/ui/wizard-media-entry.ui.h:1
+msgid "Unknown media"
+msgstr "தெரியாத ஊடகம்."
+
+#: ../data/ui/wizard-source.ui.h:1
+msgid "Insert operating system installation media or select a source below"
+msgstr ""
+"இயக்க முறைமை நிறுவல் ஊடகத்தை இடவும் அல்லது கீழே இருந்து ஒரு மூலத்தைத் தேர்ந்தெடுக்கவும்"
+
+#: ../data/ui/wizard-source.ui.h:2
+#, fuzzy
+#| msgid "Enter URL"
+msgid "_Enter URL"
+msgstr "URL ஐ உள்ளிடவும்"
+
+#: ../data/ui/wizard-source.ui.h:3
+msgid "▶"
+msgstr "▶"
+
+#: ../data/ui/wizard-source.ui.h:4
+#, fuzzy
+#| msgid "Select a file"
+msgid "_Select a file"
+msgstr "ஒரு கோப்பினை தேர்ந்தெடுக்கவும்"
+
+#: ../data/ui/wizard-source.ui.h:5
+msgid ""
+"Any trademarks shown above are used merely for identification of software "
+"products you have already obtained and are the property of their respective "
+"owners."
+msgstr ""
+"மேலே காண்பிக்கப்படும் வர்த்தக முத்திரைகள் எதுவும் நீங்கள் மென்பொருளைப் பெற்றுள்ளீர்கள் என்பதை "
+"உணர்த்தும் அடையாளம் மட்டுமே, அவை அவற்றுக்குரிய உரிமையாளர்களுக்கு சொந்தமானவை."
+
+#: ../data/ui/wizard-source.ui.h:6
+msgid "◀"
+msgstr "◀"
+
+#: ../data/ui/wizard-source.ui.h:7
+msgid "Enter URL"
+msgstr "URL ஐ உள்ளிடவும்"
+
+#: ../data/ui/wizard-source.ui.h:8
+msgid ""
+"Enter an address for the box you want to add. Addresses can be of "
+"installation images, SPICE and VNC servers, or oVirt or Libvirt brokers."
+msgstr ""
+
+#: ../data/ui/wizard-source.ui.h:9
+msgid ""
+"Examples: http://download.com/image.iso, spice://somehost:5051, ovirt://host/"
+"path"
+msgstr ""
+
+#: ../data/ui/wizard-toolbar.ui.h:1 ../data/ui/wizard-window.ui.h:1
+msgid "Create a Box"
+msgstr "ஒரு பெட்டியை உருவாக்கு"
+
+#: ../data/ui/wizard-toolbar.ui.h:3
+msgid "C_reate"
+msgstr "உருவாக்கு (_r)"
+
+#: ../data/ui/wizard-toolbar.ui.h:4
+msgid "C_ontinue"
+msgstr "தொடரு (_o)"
+
+#: ../data/ui/wizard-toolbar.ui.h:5
+msgid "_Back"
+msgstr "திரும்பு (_B)"
+
+#: ../data/ui/wizard-toolbar.ui.h:6
+msgid "Customize Resources"
+msgstr ""
+
+#: ../data/ui/wizard.ui.h:1
+msgid "Preparing to create new box"
+msgstr "புதிய பெட்டியை உருவாக்கத் தயாராகிறது"
+
+#: ../data/ui/wizard.ui.h:2
+#, fuzzy
+#| msgid ""
+#| "Virtualization extensions are unavailable on your system. If your system "
+#| "is recent (post 2008), check your BIOS settings to enable them."
+msgid ""
+"Virtualization extensions are unavailable on your system.\n"
+"Check your BIOS settings to enable them."
+msgstr ""
+"உங்கள் கணினியில் மெய்நிகராக்க நீட்டிப்புகள் கிடைக்கவில்லை. உங்கள் கணினிசமீபத்தியது எனில் "
+"(2008 க்குப் பிறகானது), மெய்நிகராக்கத்தைச் செயல்படுத்த உங்கள் BIOS அமைவுகளைப் பார்க்கவும்."
+
+#. Translators: Accessibility name for context menu with box-related actions (e.g Pause, Delete etc)
+#: ../src/actions-popover.vala:26
+#, fuzzy
+#| msgid "Collections"
+msgid "Box actions"
+msgstr "சேகரிப்புகள்"
+
+#. Open in new Window
+#: ../src/actions-popover.vala:38
+#, fuzzy
+#| msgid "_Open in new window"
+#| msgid_plural "_Open in %d new windows"
+msgid "Open in New Window"
+msgstr "புதிய சாளரத்தில் திற (_O)"
+
+#. Favorite
+#: ../src/actions-popover.vala:42
+msgid "Remove from Favorites"
+msgstr ""
+
+#: ../src/actions-popover.vala:44
+msgid "Add to Favorites"
+msgstr ""
+
+#: ../src/actions-popover.vala:51
+msgid "Force Shutdown"
+msgstr "கணினி இயக்க நிறுத்தத்தைக் கட்டாயப்படுத்து"
+
+#. Pause
+#: ../src/actions-popover.vala:57
+#, fuzzy
+#| msgid "P_ause"
+msgid "Pause"
+msgstr "இடைநிறுத்து (_a)"
+
+#. Properties (in separate section)
+#: ../src/actions-popover.vala:72
+#, fuzzy
+#| msgid "_Properties"
+msgid "Properties"
+msgstr "பண்புகள் (_P)"
+
+#: ../src/actions-popover.vala:96 ../src/selectionbar.vala:60
+#, c-format
+msgid "Pausing '%s' failed"
+msgstr "'%s' ஐ இடை நிறுத்தல்  தோல்வி"
+
+#: ../src/app.vala:101
+msgid "translator-credits"
+msgstr "I. Felix <ifelix@redhat.com>. Dr. T. Vasudevan <agnihot3@gmail.com>"
+
+#: ../src/app.vala:102
+msgid "A simple GNOME 3 application to access remote or virtual systems"
+msgstr "தொலைநிலை அல்லது மெய்நிகர் கணினிகளை அணுகுவதற்கான எளிய GNOME 3 பயன்பாடு"
+
+#: ../src/app.vala:121
+msgid "Help"
+msgstr "உதவி"
+
+#: ../src/app.vala:122
+msgid "About"
+msgstr "அறிமுகம்"
+
+#: ../src/app.vala:123
+msgid "Quit"
+msgstr "வெளியேறு"
+
+#: ../src/app.vala:181 ../src/main.vala:9
+msgid "Display version number"
+msgstr "பதிப்பு எண்ணைக் காண்பி"
+
+#: ../src/app.vala:183
+msgid "Open in full screen"
+msgstr "முழுத்திரையில் திற"
+
+#: ../src/app.vala:184 ../src/main.vala:10
+msgid "Check virtualization capabilities"
+msgstr "மெய்நிகராக்கத் திறப்பாடுகளை ஆய்வு செய்"
+
+#: ../src/app.vala:185
+msgid "Open box with UUID"
+msgstr "பெட்டியை UUID கொண்டு திற"
+
+#: ../src/app.vala:186
+msgid "Search term"
+msgstr "தேடுதல் சொல்"
+
+#. A 'broker' is a virtual-machine manager (local or remote). Currently libvirt and ovirt are supported.
+#: ../src/app.vala:188
+msgid "URI to display, broker or installer media"
+msgstr "புரோக்கர் அல்லது நிறுவல் ஊடகத்தைக் காண்பிப்பதற்கான URI"
+
+#: ../src/app.vala:199
+msgid "- A simple application to access remote or virtual machines"
+msgstr "- தொலைநிலை அல்லது மெய்நிகர் கணினிகளை அணுகுவதற்கான எளிய  பயன்பாடு"
+
+#: ../src/app.vala:221
+msgid "Too many command line arguments specified.\n"
+msgstr "மிக அதிக கட்டளை வரி அளவுருக்கள் குறிப்பிடப்பட்டுள்ளன.\n"
+
+#: ../src/app.vala:434
+#, c-format
+msgid "Box '%s' installed and ready to use"
+msgstr ""
+
+#: ../src/app.vala:522
+#, c-format
+msgid "Box '%s' has been deleted"
+msgstr "'%s' பெட்டி நீக்கப்பட்டது"
+
+#: ../src/app.vala:523
+#, c-format
+msgid "%u box has been deleted"
+msgid_plural "%u boxes have been deleted"
+msgstr[0] "%u பெட்டி நீக்கப்பட்டது"
+msgstr[1] "%u பெட்டிகள் நீக்கப்பட்டன"
+
+#: ../src/app.vala:550 ../src/snapshot-list-row.vala:194
+msgid "_Undo"
+msgstr "செயல்தவிர் (_U)"
+
+#: ../src/display-page.vala:110
+#, fuzzy
+#| msgid "(press [left] Ctrl+Alt keys to ungrab)"
+msgid "Press (left) Ctrl+Alt to ungrab"
+msgstr "(விடுவிக்க [இடது]Ctrl+Alt விசைகளை அழுத்தவும்)"
+
+#: ../src/display-page.vala:112
+#, fuzzy
+#| msgid "(press [left] Ctrl+Alt keys to ungrab)"
+msgid "Press & release (left) Ctrl+Alt to ungrab keyboard."
+msgstr "(விடுவிக்க [இடது]Ctrl+Alt விசைகளை அழுத்தவும்)"
+
+#. Translators: Showing size of widget as WIDTHxHEIGHT here.
+#: ../src/display-page.vala:256
+#, c-format
+msgid "%dx%d"
+msgstr ""
+
+#: ../src/display-toolbar.vala:51
+#, fuzzy
+#| msgid "Fullscreen"
+msgid "Exit fullscreen"
+msgstr "முழுத்திரை"
+
+#: ../src/icon-view.vala:56
+msgid "New and Recent"
+msgstr "புதிய மற்றும் சமீபத்திய"
+
+#: ../src/installed-media.vala:51
+msgid "Unsupported disk image format."
+msgstr "ஆதரிக்கப்படாத வட்டு பிம்ப வடிவமைப்பு."
+
+#: ../src/installed-media.vala:108 ../src/installer-media.vala:112
+#: ../src/properties-page-widget.vala:19
+msgid "System"
+msgstr "கணினி"
+
+#. Translators: This is memory or disk size. E.g. "2 GB (1 GB used)".
+#: ../src/i-properties-provider.vala:89
+#, c-format
+msgid "%s <span color=\"grey\">(%s used)</span>"
+msgstr ""
+
+#. Translators: This is memory or disk size. E.g. "1 GB (recommended)".
+#: ../src/i-properties-provider.vala:101
+#, c-format
+msgid "%s (recommended)"
+msgstr ""
+
+#. Translators: This is memory or disk size. E.g. "1 GB (maximum)".
+#: ../src/i-properties-provider.vala:131
+#, fuzzy, c-format
+#| msgid "%s maximum"
+msgid "%s (maximum)"
+msgstr "%s அதிகபட்சம்"
+
+#: ../src/keys-input-popover.vala:24
+msgid "Ctrl + Alt + Backspace"
+msgstr ""
+
+#. New section
+#: ../src/keys-input-popover.vala:28
+msgid "Ctrl + Alt + F1"
+msgstr ""
+
+#: ../src/keys-input-popover.vala:29
+msgid "Ctrl + Alt + F2"
+msgstr ""
+
+#: ../src/keys-input-popover.vala:30
+msgid "Ctrl + Alt + F7"
+msgstr ""
+
+#. Translators: Accessibility name for context menu with a set of keyboard combos (that would normally be
+#. intercepted by host/client, to send to the box.
+#: ../src/keys-input-popover.vala:39
+msgid "Send key combinations"
+msgstr ""
+
+#: ../src/libvirt-machine-properties.vala:118 ../src/remote-machine.vala:56
+#, fuzzy
+#| msgid "Name"
+msgid "_Name"
+msgstr "பெயர்"
+
+#: ../src/libvirt-machine-properties.vala:130
+msgid "IP Address"
+msgstr ""
+
+#: ../src/libvirt-machine-properties.vala:132 ../src/ovirt-machine.vala:68
+msgid "Broker"
+msgstr ""
+
+#. Translators: This is the protocal being used to connect to the display/desktop, e.g Spice, VNC, etc.
+#: ../src/libvirt-machine-properties.vala:135
+#, fuzzy
+#| msgid "Protocol"
+msgid "Display Protocol"
+msgstr "நெறிமுறை"
+
+#. Translators: This is the URI to connect to the display/desktop. e.g spice://somehost:5051.
+#: ../src/libvirt-machine-properties.vala:137
+#, fuzzy
+#| msgid "Display"
+msgid "Display URI"
+msgstr "காண்பி"
+
+#. Only add smartcart support to guests if HAVE_SMARTCARD, as qemu built
+#. without smartcard support will not start vms with it.
+#: ../src/libvirt-machine-properties.vala:189
+#: ../src/libvirt-machine-properties.vala:207
+msgid "Add support to guest"
+msgstr "விருந்துக்கு ஆதரவு சேர்"
+
+#: ../src/libvirt-machine-properties.vala:191
+msgid "USB device support"
+msgstr "யூஎஸ்பி சாதன ஆதரவு"
+
+#: ../src/libvirt-machine-properties.vala:209
+msgid "Smartcard support"
+msgstr "சூட்டிகை அட்டை ஆதரவு"
+
+#. Translators: empty is listed as the filename for a non-mounted CD
+#: ../src/libvirt-machine-properties.vala:261
+#: ../src/libvirt-machine-properties.vala:313
+msgid "empty"
+msgstr "வெற்று"
+
+#. Don't let user eject installer media if it's an express installation or a live media
+#: ../src/libvirt-machine-properties.vala:270
+#: ../src/libvirt-machine-properties.vala:322
+msgid "CD/DVD"
+msgstr "சிடி/டிவிடி"
+
+#. Translators: This is the text on the button to select an iso for the cd
+#: ../src/libvirt-machine-properties.vala:284
+#: ../src/libvirt-machine-properties.vala:312
+#, fuzzy
+#| msgid "Select"
+msgid "_Select"
+msgstr "தேர்ந்தெடுக்கவும்"
+
+#. Translators: Remove is the label on the button to remove an iso from a cdrom drive
+#: ../src/libvirt-machine-properties.vala:287
+#: ../src/libvirt-machine-properties.vala:295
+#, fuzzy
+#| msgid "Remove"
+msgid "_Remove"
+msgstr "நீக்குக"
+
+#. Translators: First '%s' is filename of ISO or CD/DVD device that user selected and
+#. Second '%s' is name of the box.
+#: ../src/libvirt-machine-properties.vala:302
+#, c-format
+msgid "Insertion of '%s' as a CD/DVD into '%s' failed"
+msgstr "'%s' ஐ சிடி/டிவிடி ஆக '%s' உள் நுழைத்தல் தோல்வி"
+
+#. Translators: '%s' here is name of the box.
+#: ../src/libvirt-machine-properties.vala:316
+#, c-format
+msgid "Removal of CD/DVD from '%s' failed"
+msgstr "'%s' இலிருந்து சிடி/டிவிடி ஐ நீக்குதல் தோல்வி"
+
+#: ../src/libvirt-machine-properties.vala:386
+#, fuzzy
+#| msgid "CPU:"
+msgid "CPU"
+msgstr "CPU:"
+
+#. I/O
+#. 100 MiB/s
+#: ../src/libvirt-machine-properties.vala:392
+#, fuzzy
+#| msgid "I/O:"
+msgid "I/O"
+msgstr "I/O:"
+
+#. Network
+#. 1 MiB/s
+#: ../src/libvirt-machine-properties.vala:398
+msgid "Network"
+msgstr ""
+
+#: ../src/libvirt-machine-properties.vala:427 ../src/properties.vala:84
+msgid "_Restart"
+msgstr "மறுதுவக்கு (_R)"
+
+#: ../src/libvirt-machine-properties.vala:435
+#, fuzzy
+#| msgid "Force Shutdown"
+msgid "_Force Shutdown"
+msgstr "கணினி இயக்க நிறுத்தத்தைக் கட்டாயப்படுத்து"
+
+#: ../src/libvirt-machine-properties.vala:449
+#, fuzzy
+#| msgid "Troubleshooting log"
+msgid "_Troubleshooting Log"
+msgstr "பிரச்சினை தீவு பதிவேடு"
+
+#: ../src/libvirt-machine-properties.vala:470
+#, fuzzy
+#| msgid "Memory"
+msgid "_Memory: "
+msgstr "நினைவகம்"
+
+#: ../src/libvirt-machine-properties.vala:539
+#, c-format
+msgid ""
+"<span color=\"grey\">Maximum Disk Size</span>\t\t %s <span color=\"grey"
+"\">(%s used)</span>"
+msgstr ""
+
+#: ../src/libvirt-machine-properties.vala:555
+msgid ""
+"There is not enough space on your machine to increase the maximum disk size."
+msgstr "அதிகபட்ச வட்டு அளவை அதிகரிக்க உங்கள் கணினியில் போதிய இடமில்லை."
+
+#: ../src/libvirt-machine-properties.vala:564
+#, fuzzy
+#| msgid "Maximum Disk Size"
+msgid "Maximum _Disk Size: "
+msgstr "அதிகபட்ச வட்டு அளவு"
+
+#: ../src/libvirt-machine-properties.vala:698
+msgid "_Run in background"
+msgstr ""
+
+#: ../src/libvirt-machine-properties.vala:709
+#: ../src/libvirt-machine-properties.vala:712
+#, fuzzy, c-format
+#| msgid "Live box '%s' has been deleted automatically."
+msgid "'%s' will not be paused automatically."
+msgstr "நேரடி பாக்ஸ் '%s' தானாக நீக்கப்பட்டுவிட்டது."
+
+#: ../src/libvirt-machine-properties.vala:710
+#: ../src/libvirt-machine-properties.vala:713
+#, c-format
+msgid "'%s' will be paused automatically to save resources."
+msgstr ""
+
+#. Translators: The %s will be expanded with the name of the vm
+#: ../src/libvirt-machine.vala:588
+#, c-format
+msgid "Restoring %s from disk"
+msgstr "வட்டிலிருந்து %s ஐ மீட்டெடுக்கிறது"
+
+#. Translators: The %s will be expanded with the name of the vm
+#: ../src/libvirt-machine.vala:591
+#, c-format
+msgid "Starting %s"
+msgstr "%s ஐ துவக்குகிறது"
+
+#: ../src/libvirt-machine.vala:656
+#, c-format
+msgid "Restart of '%s' is taking too long. Force it to shutdown?"
+msgstr "'%s' ஐ மீள்துவக்க அதிக நேரம் எடுக்கிறது. அதை வலுக்கட்டாயமாக நிறுத்திவிடலாமா?"
+
+#: ../src/libvirt-machine.vala:658
+msgid "_Shutdown"
+msgstr "இயக்கநிறுத்தம் (_S)"
+
+#: ../src/libvirt-machine.vala:733
+msgid "Installing…"
+msgstr "நிறுவுகிறது…"
+
+#. Translators: We show 'Live' tag next or below the name of live OS media or box based on such media.
+#. http://en.wikipedia.org/wiki/Live_CD
+#: ../src/libvirt-machine.vala:735 ../src/wizard-source.vala:82
+msgid "Live"
+msgstr "நேரடி"
+
+#: ../src/libvirt-machine.vala:737
+msgid "Importing…"
+msgstr "இறக்குமதியாகிறது…"
+
+#: ../src/libvirt-machine.vala:746 ../src/ovirt-machine.vala:84
+#, c-format
+msgid "host: %s"
+msgstr ""
+
+#: ../src/libvirt-system-importer.vala:18
+#, fuzzy, c-format
+#| msgid "Import '%s' from system broker"
+msgid "_Import '%s' from system broker"
+msgstr "கணினி ப்ரோக்கரிலிருந்து '%s' ஐ இறக்குமதி செய்"
+
+#. Translators: %u here is the number of boxes available for import
+#: ../src/libvirt-system-importer.vala:21
+#, fuzzy, c-format
+#| msgid "Import %u box from system broker"
+#| msgid_plural "Import %u boxes from system broker"
+msgid "_Import %u box from system broker"
+msgid_plural "_Import %u boxes from system broker"
+msgstr[0] "கணினி ப்ரோக்கரிலிருந்து %u ஐ இறக்குமதி செய்"
+msgstr[1] "கணினி ப்ரோக்கரிலிருந்து %u பாக்ஸ்களை இறக்குமதி செய்"
+
+#: ../src/libvirt-system-importer.vala:32
+#, c-format
+msgid "Will import '%s' from system broker"
+msgstr "கணினி ப்ரோக்கரிலிருந்து '%s' ஐ இறக்குமதி செய்யும்"
+
+#. Translators: %u here is the number of boxes available for import
+#: ../src/libvirt-system-importer.vala:35
+#, c-format
+msgid "Will import %u box from system broker"
+msgid_plural "Will import %u boxes from system broker"
+msgstr[0] "கணினி ப்ரோக்கரிலிருந்து %u ஐ இறக்குமதி செய்யும்"
+msgstr[1] "கணினி ப்ரோக்கரிலிருந்து %u பாக்ஸ்களை இறக்குமதி செய்யும்"
+
+#: ../src/libvirt-system-importer.vala:47
+msgid "No boxes to import"
+msgstr "இறக்குமதி செய்ய பாக்ஸ் எதுவும் இல்லை"
+
+#: ../src/libvirt-system-importer.vala:121
+#, c-format
+msgid "Failed to find suitable disk to import for box '%s'"
+msgstr "பாக்ஸ் '%s' க்காக இறக்குமதி செய்ய பொருத்தமான வட்டைக் கண்டறிவதில் தோல்வியடைந்தது"
+
+#: ../src/list-view-row.vala:128
+msgid "Connected"
+msgstr ""
+
+#: ../src/list-view-row.vala:128
+msgid "Disconnected"
+msgstr ""
+
+#: ../src/list-view-row.vala:134
+#, fuzzy
+#| msgid "Select Running"
+msgid "Running"
+msgstr "இயங்குவதை தேர்ந்தெடு"
+
+#: ../src/list-view-row.vala:140
+#, fuzzy
+#| msgid "P_ause"
+msgid "Paused"
+msgstr "இடைநிறுத்து (_a)"
+
+#: ../src/list-view-row.vala:145
+msgid "Powered Off"
+msgstr ""
+
+#. Translators: The %s will be expanded with the name of the vm
+#: ../src/machine.vala:195
+#, c-format
+msgid "Connecting to %s"
+msgstr "%s க்கு இணைக்கிறது"
+
+#: ../src/machine.vala:217 ../src/machine.vala:613
+#, c-format
+msgid "Connection to '%s' failed"
+msgstr "'%s' க்கான இணைப்பு தோல்வி"
+
+#: ../src/machine.vala:412
+msgid "Saving…"
+msgstr "சேமிக்கிறது…"
+
+#: ../src/machine.vala:599
+#, c-format
+msgid ""
+"'%s' could not be restored from disk\n"
+"Try without saved state?"
+msgstr ""
+"'%s' ஐ வட்டிலிருந்து மீட்டெடுக்க முடியவில்லை \n"
+"சேமித்தல் நிலையில்லாமல் முயற்சி செய்யவா?"
+
+#: ../src/machine.vala:600
+msgid "Restart"
+msgstr "மறு துவக்கம்"
+
+#: ../src/machine.vala:609
+#, c-format
+msgid "Failed to start '%s'"
+msgstr "'%s' ஐ துவக்க முடியவில்லை"
+
+#. Translators: %s => name of launched box
+#: ../src/machine.vala:642
+#, c-format
+msgid "'%s' requires authentication"
+msgstr "'%s' க்கு அங்கீகாரம் தேவைப்படுகிறது"
+
+#. FIXME: add proper UI & docs
+#: ../src/main.vala:53
+#, c-format
+msgid "• The CPU is capable of virtualization: %s\n"
+msgstr "• CPU மெய்நிகராக்கத் திறன் கொண்டது: %s\n"
+
+#: ../src/main.vala:54
+#, c-format
+msgid "• The KVM module is loaded: %s\n"
+msgstr "• KVM மாட்யுல் ஏற்றப்பட்டது: %s\n"
+
+#: ../src/main.vala:55
+#, c-format
+msgid "• Libvirt KVM guest available: %s\n"
+msgstr "• Libvirt KVM விருந்தினர் உள்ளது: %s\n"
+
+#: ../src/main.vala:56
+#, c-format
+msgid "• Boxes storage pool available: %s\n"
+msgstr "• பெட்டிகள் பகிர் சேமிப்பு உள்ளது: %s\n"
+
+#: ../src/main.vala:60
+#, c-format
+msgid "• The SELinux context is default: %s\n"
+msgstr "• SELinux சூழல் முன்னிருப்பாக உள்ளது: %s\n"
+
+#: ../src/main.vala:64
+#, c-format
+msgid "Report bugs to <%s>.\n"
+msgstr "வழுக்களை <%s> க்கு புகாரளிக்கவும்.\n"
+
+#: ../src/main.vala:65
+#, c-format
+msgid "%s home page: <%s>.\n"
+msgstr "%s முகப்புப் பக்கம்: <%s>.\n"
+
+#: ../src/media-manager.vala:227
+#, c-format
+msgid "No such file %s"
+msgstr "%s எனும் ஒரு கோப்பு இல்லை"
+
+#: ../src/notificationbar.vala:43
+#, c-format
+msgid "Sign In to %s"
+msgstr "%s க்கு உள்நுழை"
+
+#: ../src/notificationbar.vala:46
+#, c-format
+msgid "Not connected to %s"
+msgstr "%s க்கு இணைக்கப்படவில்லை"
+
+#: ../src/ovirt-broker.vala:69
+msgid "Connection to oVirt broker failed"
+msgstr "ஒவிர்ட் ப்ரோக்கருக்கு இணைப்பு தோல்வி"
+
+#: ../src/ovirt-machine.vala:69 ../src/remote-machine.vala:66
+msgid "Protocol"
+msgstr "நெறிமுறை"
+
+#: ../src/ovirt-machine.vala:70 ../src/remote-machine.vala:68
+#: ../src/wizard.vala:486
+msgid "URI"
+msgstr "URI"
+
+#: ../src/properties.vala:83
+#, c-format
+msgid "Changes require restart of '%s'."
+msgstr "இந்த மாற்றங்களால் '%s' ஐ மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ../src/properties-page-widget.vala:15
+msgid "General"
+msgstr ""
+
+#: ../src/properties-page-widget.vala:23
+msgid "Devices"
+msgstr "சாதனங்கள்"
+
+#: ../src/properties-page-widget.vala:27
+msgid "Snapshots"
+msgstr "நொடிப்புகள்"
+
+#: ../src/remote-machine.vala:70
+msgid "_URI"
+msgstr ""
+
+#. Translators: This is a button to open box(es) in new window(s)
+#: ../src/selectionbar.vala:152 ../src/selectionbar.vala:154
+#, c-format
+msgid "_Open in new window"
+msgid_plural "_Open in %d new windows"
+msgstr[0] "புதிய சாளரத்தில் திற (_O)"
+msgstr[1] "%d புதிய சாளரங்காளில் திற (_O)"
+
+#. This goes with the "Click on items to select them" string and is about selection of items (boxes)
+#. when the main collection view is in selection mode.
+#: ../src/selection-toolbar.vala:46
+#, c-format
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "%d தேர்வு செய்யப்பட்டது"
+msgstr[1] "%d தேர்வு செய்யப்பட்டன"
+
+#: ../src/selection-toolbar.vala:48
+msgid "(Click on items to select them)"
+msgstr "(உருப்படிகளை தேர்ந்தெடுக்க அதன் மீது சொடுக்கவும்)"
+
+#: ../src/snapshot-list-row.vala:137
+#, c-format
+msgid "Reverting to %s…"
+msgstr "%s க்கு மீட்டமைக்கிறது…"
+
+#: ../src/snapshot-list-row.vala:155
+msgid "Failed to apply snapshot"
+msgstr "நொடிப்பைச் செயல்படுத்துதல் தோல்வியடைந்தது"
+
+#: ../src/snapshot-list-row.vala:172
+#, c-format
+msgid "Snapshot \"%s\" deleted."
+msgstr "நொடிப்பு \"%s\" நீக்கப்பட்டது."
+
+#: ../src/snapshots-property.vala:61
+msgid "No snapshots created yet. Create one using the button below."
+msgstr ""
+
+#: ../src/snapshots-property.vala:122
+msgid "Creating new snapshot…"
+msgstr "புதிய ஸ்னாப்ஷாட்டை உருவாக்குகிறது…"
+
+#: ../src/snapshots-property.vala:130
+#, c-format
+msgid "Failed to create snapshot of %s"
+msgstr "%s இன் ஸ்னாப்ஷாட்டை உருவாக்குதல் தோல்வியடைந்தது"
+
+#. Translators: "Unknown" is a placeholder for a box name when it could not be determined
+#: ../src/spice-display.vala:36
+msgid "Unknown"
+msgstr "தெரியாதது"
+
+#: ../src/spice-display.vala:54 ../src/spice-display.vala:363
+#, c-format
+msgid "Redirection of USB device '%s' for '%s' failed"
+msgstr " யூஎஸ்பி சாதனம் '%s' ஐ '%s'க்கு திசை திருப்பல் தோல்வி"
+
+#: ../src/spice-display.vala:310
+#, fuzzy
+#| msgid "Share clipboard"
+msgid "Share Clipboard"
+msgstr "கிளிப் போர்டைப் பகிர்"
+
+#: ../src/spice-display.vala:376
+msgid "USB devices"
+msgstr "USB சாதனங்கள்"
+
+#: ../src/spice-display.vala:519 ../src/wizard.vala:309 ../src/wizard.vala:316
+msgid "Invalid URI"
+msgstr "தவறான URI"
+
+#: ../src/spice-display.vala:529
+msgid "The port must be specified once"
+msgstr "துறை குறிப்பிட்டதாக இருக்க வேண்டும்"
+
+#: ../src/spice-display.vala:538
+msgid "Missing port in Spice URI"
+msgstr "ஸ்பைஸ் யூஆர்எல்லில் துறையை காணவில்லை"
+
+#. An error occurred when trying to setup unattended installation, but it's likely that a non-unattended
+#. installation will work. When this happens, just disable unattended installs, and let the caller decide
+#. if it wants to retry a non-automatic install or to just abort the box creation..
+#: ../src/unattended-installer.vala:188
+msgid ""
+"An error occurred during installation preparation. Express Install disabled."
+msgstr "நிறுவலுக்கு தயார் செய்யும் போது பிழை ஏற்பட்டது. விரைவு நிறுவல் முடக்கப்பட்டது."
+
+#: ../src/unattended-installer.vala:465
+msgid "Downloading device drivers…"
+msgstr "சாதன இயக்கிகளை பதிவிறக்குகிறது…"
+
+#: ../src/unattended-setup-box.vala:52
+msgid "no password"
+msgstr "கடவுச்சொல் இல்லை"
+
+#: ../src/unattended-setup-box.vala:105
+#, c-format
+msgid "Express installation of %s requires an internet connection."
+msgstr "%s இன் விரைவு நிறுவலுக்கு இணைய இணைப்பு தேவை."
+
+#: ../src/util-app.vala:242
+#, c-format
+msgid ""
+"Your SELinux context looks incorrect, you can try to fix it by running:\n"
+"%s"
+msgstr ""
+"உங்கள் SELinux சூழல் தவறு போலுள்ளது, நீங்கள் இதை இயக்கி அதைச் சரி செய்ய முயற்சிக்கலாம்:\n"
+"%s"
+
+#: ../src/util-app.vala:246
+msgid "SELinux not installed?"
+msgstr "SELinux நிறுவப்படவில்லையா?"
+
+#: ../src/util-app.vala:328
+msgid ""
+"Could not get 'gnome-boxes' storage pool information from libvirt. Make sure "
+"'virsh -c qemu:///session pool-dumpxml gnome-boxes' is working."
+msgstr ""
+"லிப்விர்ட் இலிருந்து 'க்னோம் பாக்ஸஸ்' பகிர்சேமிப்பு தகவலை பெற முடியவில்லை. 'virsh -c "
+"qemu:///session pool-dumpxml gnome-boxes' வேலை செய்கிறதா என சோதிக்கவும்."
+
+#: ../src/util-app.vala:333
+#, c-format
+msgid ""
+"%s is known to libvirt as GNOME Boxes's storage pool but this directory does "
+"not exist"
+msgstr ""
+"%s லிப்விர்ட் க்கு க்னோம் பாக்ஸஸின் பகிர் சேமிப்பு என அறியப்படுகிறது. ஆனால் இந்த அடைவு "
+"இருப்பில் இல்லை."
+
+#: ../src/util-app.vala:337
+#, c-format
+msgid ""
+"%s is known to libvirt as GNOME Boxes's storage pool but is not a directory"
+msgstr ""
+"%s லிப்விர்ட் க்கு க்னோம் பாக்ஸஸின் பகிர் சேமிப்பு என அறியப்படுகிறது. ஆனால் இது அடைவு "
+"இல்லை."
+
+#: ../src/util-app.vala:341
+#, c-format
+msgid ""
+"%s is known to libvirt as GNOME Boxes's storage pool but is not user-"
+"readable/writable"
+msgstr ""
+"%s லிப்விர்ட் க்கு க்னோம் பாக்ஸஸின் பகிர் சேமிப்பு என அறியப்படுகிறது. ஆனால் இது பயனர் "
+"படிக்க/ எழுத அனுமதியுடன் இல்லை."
+
+#: ../src/util.vala:341
+msgid "yes"
+msgstr "ஆம்"
+
+#: ../src/util.vala:341
+msgid "no"
+msgstr "இல்லை"
+
+#. No guest caps or none compatible
+#. FIXME: Better error messsage than this please?
+#: ../src/vm-configurator.vala:556
+msgid "Incapable host system"
+msgstr "திறனில்லாத வழங்கி கணினி"
+
+#: ../src/vm-creator.vala:174
+#, c-format
+msgid "Live box '%s' has been deleted automatically."
+msgstr "நேரடி பாக்ஸ் '%s' தானாக நீக்கப்பட்டுவிட்டது."
+
+#: ../src/vm-importer.vala:46
+#, c-format
+msgid "Box import from file '%s' failed."
+msgstr "கோப்பு '%s' இலிருந்தான பெட்டி இறக்குமதி தோல்வியடைந்தது."
+
+#: ../src/vnc-display.vala:149
+msgid "Read-only"
+msgstr "வாசிக்க-மட்டும்"
+
+#: ../src/wizard-source.vala:86
+msgid "32-bit x86 system"
+msgstr "32-பிட் x86 கணினி"
+
+#: ../src/wizard-source.vala:87
+msgid "64-bit x86 system"
+msgstr "64-பிட் x86 கணினி"
+
+#. Translator comment: %s is name of vendor here (e.g Canonical Ltd or Red Hat Inc)
+#: ../src/wizard-source.vala:92
+#, c-format
+msgid " from %s"
+msgstr " %s இல் இருந்து"
+
+#: ../src/wizard-toolbar.vala:6
+msgid "Source Selection"
+msgstr "மூலத் தேர்ந்தெடுப்பு"
+
+#: ../src/wizard-toolbar.vala:7
+#, fuzzy
+#| msgid "Preparation"
+msgid "Box Preparation"
+msgstr "தயார் செய்தல்"
+
+#: ../src/wizard-toolbar.vala:8
+#, fuzzy
+#| msgid "Setup"
+msgid "Box Setup"
+msgstr "அமைப்பு"
+
+#: ../src/wizard-toolbar.vala:9
+msgid "Review"
+msgstr "மறுஆய்வு"
+
+#: ../src/wizard.vala:116
+msgid "Box creation failed"
+msgstr "பெட்டி உருவாக்கம் தோல்வி"
+
+#: ../src/wizard.vala:268
+msgid "Empty location"
+msgstr "வெற்று இடம்"
+
+#: ../src/wizard.vala:291
+#, fuzzy
+#| msgid "Unsupported protocol '%s'"
+msgid "Unsupported file"
+msgstr "ஆதரவில்லாத  நெறிமுறை '%s'"
+
+#: ../src/wizard.vala:297
+#, fuzzy
+#| msgid "Invalid URI"
+msgid "Invalid file"
+msgstr "தவறான URI"
+
+#: ../src/wizard.vala:333
+#, c-format
+msgid "Unsupported protocol '%s'"
+msgstr "ஆதரவில்லாத  நெறிமுறை '%s'"
+
+#: ../src/wizard.vala:339 ../src/wizard.vala:408
+msgid "Unknown installer media"
+msgstr "தெரியாத நிறுவல் ஊடகம்."
+
+#: ../src/wizard.vala:340 ../src/wizard.vala:409
+msgid "Analyzing…"
+msgstr "பகுத்தாய்கிறது…"
+
+#: ../src/wizard.vala:354
+msgid "Failed to analyze installer media. Corrupted or incomplete media?"
+msgstr "நிறுவல் ஊடகத்தை ஆய்விட முடியவில்லை. சிதைந்த அல்லது முழுமையாகாத ஊடகமா?"
+
+#. We did this, so ignore!
+#: ../src/wizard.vala:462
+msgid "Box setup failed"
+msgstr "பெட்டி அமைவு தோல்வி"
+
+#: ../src/wizard.vala:476
+msgid "Boxes will create a new box with the following properties:"
+msgstr "பின்வரும் பண்புகளிலிருந்து பாக்ஸஸ் புதிய பெட்டியை உருவாக்கும்:"
+
+#: ../src/wizard.vala:481
+msgid "Type"
+msgstr "வகை"
+
+#: ../src/wizard.vala:484
+msgid "Host"
+msgstr "வழங்கி"
+
+#: ../src/wizard.vala:495 ../src/wizard.vala:506
+msgid "Port"
+msgstr "முனையம்"
+
+#: ../src/wizard.vala:497
+msgid "TLS Port"
+msgstr "TLS முனையம்"
+
+#: ../src/wizard.vala:511
+msgid "Will add boxes for all systems available from this account:"
+msgstr "இந்தக் கணக்கிலிருந்து கிடைக்கக்கூடிய எல்லா கணினிகளிலும் பெட்டிகளைச் சேர்க்கும்:"
+
+#: ../src/wizard.vala:524
+msgid "Memory"
+msgstr "நினைவகம்"
+
+#: ../src/wizard.vala:533
+msgid "Disk"
+msgstr "வட்டு"
+
+#. Translators: This is disk size. E.g "1 GB maximum".
+#: ../src/wizard.vala:535
+#, c-format
+msgid "%s maximum"
+msgstr "%s அதிகபட்சம்"
+
+#: ../src/wizard.vala:598
+msgid "Downloading media…"
+msgstr "ஊடகத்தைப் பதிவிறக்குகிறது…"
+
+#: ../src/wizard.vala:608
+msgid "Download failed."
+msgstr "பதிவிறக்கம் தோல்வி."
+
+#: ../src/wizard.vala:716
+msgid "C_ustomize…"
+msgstr "தனிப்பயனாக்கு (_u)…"
+
+#~ msgid "<b><span size=\"large\">No boxes found</span></b>"
+#~ msgstr "<b><span size=\"large\">பாக்ஸுகள் எதுவும் காணப்படவில்லை</span></b>"
+
+#~ msgid "Create one using the button on the top left."
+#~ msgstr "மேல் இடது பக்கமுள்ள பொத்தானைக்கொண்டு ஒன்றை உருவாக்கவும்."
+
+#~ msgid "Net:"
+#~ msgstr "நெட்:"
+
+#~ msgid "Introduction"
+#~ msgstr "அறிமுகம்"
+
+#~ msgid ""
+#~ "Creating a Box will allow you to use another operating system directly "
+#~ "from your existing login.\n"
+#~ "\n"
+#~ "You may connect to an existing machine <b><i>over the network</i></b> or "
+#~ "create a <b><i>virtual machine</i></b> that runs locally on your own."
+#~ msgstr ""
+#~ "ஒரு பெட்டியை உருவாக்கினால், நீங்கள் தற்போது புகுபதிவு செய்துள்ள கணக்கில் இருந்துகொண்டே "
+#~ "வேறொரு இயக்க முறைமையைப் பயன்படுத்த முடியும்.\n"
+#~ "\n"
+#~ "<b><i>பிணையத்தின் மூலம்</i></b> ஒரு கணினியுடன் இணைக்கலாம் அல்லது உங்கள் "
+#~ "கணினியிலேயே இயங்கும் ஒரு புதிய <b><i>மெய்நிகர் கணினியை</i></b> உருவாக்கலாம்."
+
+#~ msgid "Virtualizer"
+#~ msgstr "விர்ச்சுவலைஸர்"
+
+#~ msgid "_Save"
+#~ msgstr "சேமி (_S)"
+
+#~ msgid "_Close"
+#~ msgstr "மூடு (_C)"
+
+#~ msgid "Save log"
+#~ msgstr "பதிவேட்டை சேமி"
+
+#~ msgid "Error saving: %s"
+#~ msgstr "சேமிக்கும் போது பிழை: %s"
+
+#~ msgid "When you force shutdown, the box may lose data."
+#~ msgstr ""
+#~ "கணினி இயக்க நிறுத்தத்தைக் கட்டாயப்படுத்தும் போது, பெட்டியிலிருந்து தரவு இழக்கப்படலாம்."
+
+#~ msgid "Login"
+#~ msgstr "புகுபதிவு"
+
+#~ msgid "Automatic redirection of USB device '%s' for '%s' failed"
+#~ msgstr " யூஎஸ்பி சாதனம் '%s' ஐ '%s'க்கு தானியங்கி திசை திருப்பல் தோல்வி"
+
+#~ msgid "Resize guest"
+#~ msgstr "விருந்தினரை மறுஅளவீடு செய்"
+
+#~ msgid "Redirect new USB devices"
+#~ msgstr "புதிய யூஎஸ்பி சாதனத்தை திசை திருப்பு"
+
+#~ msgid "%d%% Installed"
+#~ msgid_plural "%d%% Installed"
+#~ msgstr[0] "%d%% நிறுவப்பட்டது"
+#~ msgstr[1] "%d%% நிறுவப்பட்டன"
+
+#~ msgid "Please enter desktop or collection URI"
+#~ msgstr "டெஸ்க்டாப் அல்லது சேகரிப்பு URI ஐ உள்ளிடவும்"
+
+#~ msgid "Will add boxes for all systems available from this account."
+#~ msgstr "இந்தக் கணக்கிலிருந்து கிடைக்கக்கூடிய எல்லா கணினிகளிலும் பெட்டிகளைச் சேர்க்கும்."
+
+#~ msgid "Will add a single box."
+#~ msgstr "ஓரே ஓரு பெட்டியைச் சேர்க்கும்."
+
+#~ msgid "Desktop Access"
+#~ msgstr "டெஸ்க்டாப் அணுகல்"
+
+#~ msgid "Animation duration"
+#~ msgstr "அனிமேஷன் நேரம்"
+
+#~ msgid "The time it takes for transitions and animation, in ms."
+#~ msgstr "இடைநிலை மாற்றங்களுக்கும் அனிமேஷன்களுக்கும் ஆகும் நேரம், மில்லி செகன்டில்."
+
+#~ msgid "New"
+#~ msgstr "புதிய"
+
+#~ msgid "No boxes found"
+#~ msgstr "பாக்ஸஸ் ஏதும் காணப்படவில்லை"
+
+#~ msgid "_Yes"
+#~ msgstr "ஆம் (_Y)"
+
+#~ msgid "Enter password for %s"
+#~ msgstr "%s க்கு கடவுச்சொல்லை உள்ளிடவும்"
+
+#~ msgid "%s - Properties"
+#~ msgstr "%s - பண்புகள்"
+
+#~ msgid "Some changes may take effect only after reboot"
+#~ msgstr "சில மாற்றங்கள் மறுதொடக்கத்திற்குப் பின்னரே விளைவை ஏற்படுத்தும்"
+
+#~ msgid ""
+#~ "<b>Desktop Access</b>\n"
+#~ "\n"
+#~ "Will add boxes for all systems available from this account."
+#~ msgstr ""
+#~ "<b>டெஸ்க்டாப் அணுகல்</b>\n"
+#~ "\n"
+#~ "இந்தக் கணக்கிலிருந்து கிடைக்கக்கூடிய எல்லா கணினிகளிலும் பெட்டிகளைச் சேர்க்கும்."
+
+#~ msgid "D_one"
+#~ msgstr "_ o முடிந்த"
+
+#~ msgid ""
+#~ "Virtualization extensions are unavailable on your system. Expect this box "
+#~ "to be extremely slow. If your system is recent enough (made in or after "
+#~ "2008), these extensions are probably available on your system and you may "
+#~ "need to enable them in your system's BIOS setup."
+#~ msgstr ""
+#~ "உங்கள் கணினியில் மெய்நிகராக்க நீட்சிகள் இல்லை. இந்தப் பெட்டி மிகவும் மெதுவாக இயங்கலாம் "
+#~ "என்பதை நினைவில் கொள்ளவும். உங்கள் கணினி ஓரளவு புதியது தான் (2008 அல்லது பிறகு "
+#~ "உற்பத்தி செய்யப்பட்டது) எனில், உங்கள் கணினியில் இந்த நீட்சிகள் நிச்சயமாக இருக்கக்கூடும், "
+#~ "நீங்கள் உங்கள் கணினியின் BIOS அமைப்பில் அவற்றை செயல்படுத்த வேண்டியிருக்கும்."
+
+#~ msgid "Error connecting %s: %s"
+#~ msgstr "%s க்கு இணைக்கிறது: %s "
+
+#~ msgid "USB redirection"
+#~ msgstr "USB திருப்பிவிடுதல்"
