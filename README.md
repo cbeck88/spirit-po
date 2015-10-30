@@ -1,6 +1,7 @@
 # spirit-po
 
 [![Build Status](https://travis-ci.org/cbeck88/spirit-po.svg?branch=master)](http://travis-ci.org/cbeck88/spirit-po)
+[![Coverage Status](https://coveralls.io/repos/cbeck88/spirit-po/badge.svg?branch=master&service=github)](https://coveralls.io/github/cbeck88/spirit-po?branch=master)
 
 **spirit-po** is a header-only C++11 library that you can use for
 localization within the GNU gettext system, instead of using `libintl`.
