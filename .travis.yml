@@ -33,7 +33,7 @@ install:
   - BOOST_UNDERSCORE_VER_STRING=1_${BOOST_VER_NUM}_0
 
   - BOOST_SUBDIR_NAME=${BOOST_UNDERSCORE_VER_STRING}
-  - BOOST_TAR_NAME=boost_${BOOST_UNDERSORE_VER_STRING}.tar.gz
+  - BOOST_TAR_NAME=boost_${BOOST_UNDERSCORE_VER_STRING}.tar.gz
 
   - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_DOT_VER_STRING}/${BOOST_TAR_NAME}"
   - mkdir boost && travis_retry wget ${BOOST_URL}
