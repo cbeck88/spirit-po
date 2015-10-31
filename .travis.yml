@@ -26,6 +26,27 @@ matrix:
     - env: COMPILER=g++-4.9 BOOST_VER_NUM=59
       addons: *gcc49
 
+    - env: COMPILER=g++-5 BOOST_VER_NUM=48
+      addons: &gcc5
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - george-edison55-precise-backports
+          packages:
+            - gettext
+            - gdb
+            - cmake-data
+            - cmake
+            - g++-5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=51
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=54
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=57
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=59
+      addons: *gcc5
+
     - env: COMPILER=clang++-3.5 BOOST_VER_NUM=48
       addons: &clang35
         apt:
