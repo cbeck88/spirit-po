@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/cbeck88/spirit-po.svg?branch=master)](http://travis-ci.org/cbeck88/spirit-po)
 [![Coverage Status](https://coveralls.io/repos/cbeck88/spirit-po/badge.svg?branch=master&service=github)](https://coveralls.io/github/cbeck88/spirit-po?branch=master)
+[![Boost licensed](https://img.shields.io/badge/license-Boost-blue.svg)](./LICENSE)
 
 **spirit-po** is a header-only C++11 library that you can use for
 localization within the GNU gettext system, instead of using `libintl`.
@@ -18,7 +19,7 @@ Our po grammar itself is only a few dozen lines.
 This makes it very simple and transparent, and easy to modify if needed.
 
 By contrast, the `libgettext-po` po-manipulation library,
-depending on how you count, span about ten thousand lines of ANSI C.
+depending on how you count, spans about ten thousand lines of ANSI C.
 Guess which parser implementation I would prefer to read. :)
 
 An in-depth explanation of the rationale for this library as compared to
