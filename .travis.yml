@@ -2,21 +2,21 @@ sudo: false
 language: cpp
 compiler:
   - clang
+addons: &gcc49
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+      - george-edison55-precise-backports
+    packages:
+      - gettext
+      - gdb
+      - cmake-data
+      - cmake
+      - g++-4.9
+env: COMPILER=g++-4.9 BOOST_VER_NUM=48
 
 matrix:
   include:
-    - env: COMPILER=g++-4.9 BOOST_VER_NUM=48
-      addons: &gcc49
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-            - george-edison55-precise-backports
-          packages:
-            - gettext
-            - gdb
-            - cmake-data
-            - cmake
-            - g++-4.9
     - env: COMPILER=g++-4.9 BOOST_VER_NUM=51
       addons: *gcc49
     - env: COMPILER=g++-4.9 BOOST_VER_NUM=54
@@ -69,10 +69,6 @@ matrix:
       addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
       addons: *clang37
-
-# The 'global' matrix always generates at least one entry, we use that for the default ubuntu precise clang
-env: COMPILER=clang++ BOOST_VER_NUM=48
-addons: *gcc49
 
 
 before_install:
