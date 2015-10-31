@@ -2,32 +2,71 @@ sudo: false
 language: cpp
 compiler:
   - gcc
-  - clang
-env:
-  - BOOST_VER_NUM=48
-  - BOOST_VER_NUM=51
-  - BOOST_VER_NUM=54
-  - BOOST_VER_NUM=57
-  - BOOST_VER_NUM=59
+
+# Global apt requirements (packages and sources)
 addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
-    - llvm-toolchain-precise-3.5
     - george-edison55-precise-backports
     # ^ for cmake
     packages:
-    - gcc-4.9
-    - g++-4.9
-    - clang-3.5
     - gettext
     - gdb
     - cmake-data
     - cmake
-install:
+
+matrix:
+  include:
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=48
+      addons: {apt: {packages: g++-4.9}}
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=51
+      addons: {apt: {packages: g++-4.9}}
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=54
+      addons: {apt: {packages: g++-4.9}}
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=57
+      addons: {apt: {packages: g++-4.9}}
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=59
+      addons: {apt: {packages: g++-4.9}}
+
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=48
+      addons: {apt: {packages: clang++-3.5} {sources: llvm-toolchain-precise-3.5}
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=51
+      addons: {apt: {packages: clang++-3.5} {sources: llvm-toolchain-precise-3.5}
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=54
+      addons: {apt: {packages: clang++-3.5} {sources: llvm-toolchain-precise-3.5}
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=57
+      addons: {apt: {packages: clang++-3.5} {sources: llvm-toolchain-precise-3.5}
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=59
+      addons: {apt: {packages: clang++-3.5} {sources: llvm-toolchain-precise-3.5}
+
+    - env: COMPILER=clang++-3.6 BOOST_VER_NUM=48
+      addons: {apt: {packages: clang++-3.6} {sources: llvm-toolchain-precise-3.6}
+    - env: COMPILER=clang++-3.6 BOOST_VER_NUM=51
+      addons: {apt: {packages: clang++-3.6} {sources: llvm-toolchain-precise-3.6}
+    - env: COMPILER=clang++-3.6 BOOST_VER_NUM=54
+      addons: {apt: {packages: clang++-3.6} {sources: llvm-toolchain-precise-3.6}
+    - env: COMPILER=clang++-3.6 BOOST_VER_NUM=57
+      addons: {apt: {packages: clang++-3.6} {sources: llvm-toolchain-precise-3.6}
+    - env: COMPILER=clang++-3.6 BOOST_VER_NUM=59
+      addons: {apt: {packages: clang++-3.6} {sources: llvm-toolchain-precise-3.6}
+
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=48
+      addons: {apt: {packages: clang++-3.7} {sources: llvm-toolchain-precise-3.7}
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=51
+      addons: {apt: {packages: clang++-3.7} {sources: llvm-toolchain-precise-3.7}
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=54
+      addons: {apt: {packages: clang++-3.7} {sources: llvm-toolchain-precise-3.7}
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=57
+      addons: {apt: {packages: clang++-3.7} {sources: llvm-toolchain-precise-3.7}
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
+      addons: {apt: {packages: clang++-3.7} {sources: llvm-toolchain-precise-3.7}
+
+before-install:
 # set CXX variable
-  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9"; fi
-  - if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.5"; fi
+  - export CXX=${COMPILER}
+  - echo ${CXX}
+install:
 # Install Boost headers
   - pwd
   - ls
