@@ -31,51 +31,54 @@ typedef unsigned int uint;
 
 namespace default_plural_forms {
 
+// X Macro for repetitive binary ops declarations
+
+#define SPIRIT_PO_BINARY_OPS_LIST \
+ X_(and_op, &&) X_(or_op, ||) X_(eq_op, ==) X_(neq_op, !=) X_(ge_op, >=) X_(le_op, <=) X_(gt_op, >) X_(lt_op, <) X_(mod_op, %)
+
+/***
+ * Declare / forward declare expr struct types
+ */
+
 struct constant { uint value; };
 struct n_var { n_var() = default; n_var(char) {}};
 struct not_op;
-struct and_op;
-struct or_op;
-struct eq_op;
-struct neq_op;
-struct ge_op;
-struct le_op;
-struct gt_op;
-struct lt_op;
-struct mod_op;
 struct ternary_op;
 
-template <typename T>
-using rw = boost::recursive_wrapper<T>;
+#define X_(name, op) \
+struct name ; \
 
-typedef boost::variant<constant, n_var, rw<not_op>, rw<and_op>, rw<or_op>, rw<eq_op>, rw<neq_op>, rw<ge_op>, rw<le_op>, rw<gt_op>, rw<lt_op>, rw<mod_op>, rw<ternary_op>> expr;
+SPIRIT_PO_BINARY_OPS_LIST
+#undef X_
+
+/***
+ * Define expr variant type
+ */
+
+#define X_(name, op) boost::recursive_wrapper< name >, \
+
+typedef boost::variant<constant, n_var, boost::recursive_wrapper<not_op>, 
+SPIRIT_PO_BINARY_OPS_LIST
+boost::recursive_wrapper<ternary_op>> expr;
+
+#undef X_
+
+/***
+ * Define structs
+ */
 
 struct not_op { expr e1; };
+struct ternary_op { expr e1, e2, e3; };
 
-#define MAKE_BINARY_OP(name, op) \
-struct name { \
-  expr e1; \
-  expr e2; \
-};
+#define X_(name, op) \
+struct name { expr e1, e2; }; \
 
-MAKE_BINARY_OP(and_op, &&)
-MAKE_BINARY_OP(or_op, ||)
-MAKE_BINARY_OP(eq_op, ==)
-MAKE_BINARY_OP(neq_op, !=)
-MAKE_BINARY_OP(ge_op, >=)
-MAKE_BINARY_OP(le_op, <=)
-MAKE_BINARY_OP(gt_op, >)
-MAKE_BINARY_OP(lt_op, <)
-MAKE_BINARY_OP(mod_op, %)
+SPIRIT_PO_BINARY_OPS_LIST
+#undef X_
 
-#undef MAKE_BINARY_OP
-
-struct ternary_op {
-  expr e1;
-  expr e2;
-  expr e3;
-};
-
+/***
+ * Visitor that evaluates expressions
+ */
 struct evaluator : public boost::static_visitor<uint> {
   uint n_value_;
   evaluator(uint n) : n_value_(n) {}
@@ -83,20 +86,12 @@ struct evaluator : public boost::static_visitor<uint> {
   uint operator()(const constant & c) const { return c.value; }
   uint operator()(n_var) const { return n_value_; }
   uint operator()(const not_op & op) const { return !boost::apply_visitor(*this, op.e1); }
-#define MAKE_BINARY_OP(name, OPERATOR) \
+
+#define X_(name, OPERATOR) \
   uint operator()(const name & op) const { return (boost::apply_visitor(*this, op.e1)) OPERATOR (boost::apply_visitor(*this, op.e2)); } \
 
-MAKE_BINARY_OP(and_op, &&)
-MAKE_BINARY_OP(or_op, ||)
-MAKE_BINARY_OP(eq_op, ==)
-MAKE_BINARY_OP(neq_op, !=)
-MAKE_BINARY_OP(ge_op, >=)
-MAKE_BINARY_OP(le_op, <=)
-MAKE_BINARY_OP(gt_op, >)
-MAKE_BINARY_OP(lt_op, <)
-MAKE_BINARY_OP(mod_op, %)
-
-#undef MAKE_BINARY_OP
+SPIRIT_PO_BINARY_OPS_LIST
+#undef X_
 
   uint operator()(const ternary_op & op) const { return boost::apply_visitor(*this, op.e1) ? boost::apply_visitor(*this, op.e2) : boost::apply_visitor(*this, op.e3); }
 };
@@ -106,44 +101,28 @@ MAKE_BINARY_OP(mod_op, %)
 } // end namespace spirit_po
 
 /***
- * Adapt structs
+ * Adapt structs for fusion / qi
  */
 
 BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::constant,
   (uint, value))
 BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::not_op,
   (spirit_po::default_plural_forms::expr, e1))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::and_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::or_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::eq_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::neq_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::ge_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::le_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::gt_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::lt_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
-BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::mod_op,
-  (spirit_po::default_plural_forms::expr, e1)
-  (spirit_po::default_plural_forms::expr, e2))
 BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms::ternary_op,
   (spirit_po::default_plural_forms::expr, e1)
   (spirit_po::default_plural_forms::expr, e2)
   (spirit_po::default_plural_forms::expr, e3))
+
+#define X_(name, op) \
+BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms:: name, \
+  (spirit_po::default_plural_forms::expr, e1) \
+  (spirit_po::default_plural_forms::expr, e2)) \
+
+SPIRIT_PO_BINARY_OPS_LIST
+#undef X_
+
+// X macros not used anymore
+#undef SPIRIT_PO_BINARY_OPS_LIST
 
 namespace spirit_po {
 
