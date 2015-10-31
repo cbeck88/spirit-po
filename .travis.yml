@@ -43,8 +43,9 @@ install:
   - pwd
   - ls
   - if [[   -d ${DEPS_DIR}/boost ]]; then echo "Have boost"; else echo "No boost (?)"; fi
+  - if [[   -f ${DEPS_DIR}/boost/boost/version.hpp ]]; then echo "Have boost version hpp"; else echo "No boost version hpp (?)"; fi
 
-  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${DEPS_DIR}/boost"
+  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${DEPS_DIR}/boost -DBoost_DEBUG=on"
 script:
   - $CXX --version
   - pwd
