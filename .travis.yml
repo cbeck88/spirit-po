@@ -29,12 +29,17 @@ install:
   - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
 
   - BOOST_VER_NUM=57
-  - BOOST_VER_STRING=1.${BOOST_VER_NUM}.0
-  - BOOST_TAR_NAME=boost_1_${BOOST_VER_NUM}_0.tar.gz
+  - BOOST_DOT_VER_STRING=1.${BOOST_VER_NUM}.0
+  - BOOST_UNDERSCORE_VER_STRING=1_${BOOST_VER_NUM}_0
 
-  - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_VER_STRING}/${BOOST_TAR_NAME}"
+  - BOOST_SUBDIR_NAME=${BOOST_UNDERSCORE_VER_STRING}
+  - BOOST_TAR_NAME=boost_${BOOST_UNDERSORE_VER_STRING}.tar.gz
+
+  - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_DOT_VER_STRING}/${BOOST_TAR_NAME}"
   - mkdir boost && travis_retry wget ${BOOST_URL}
-  - tar --strip-components=1 -xzf ${BOOST_TAR_NAME}
+  - tar -xzf ${BOOST_TAR_NAME}
+
+  - BOOST_DIR_NAME=${DEPS_DIR}/boost/${BOOST_SUBDIR_NAME}
 
   - pwd
   - ls
@@ -42,17 +47,17 @@ install:
 
   - pwd
   - ls
-  - if [[   -d ${DEPS_DIR}/boost ]]; then echo "Have boost"; else echo "No boost (?)"; fi
-  - if [[   -f ${DEPS_DIR}/boost/boost/version.hpp ]]; then echo "Have boost version hpp"; else echo "No boost version hpp (?)"; fi
+  - if [[   -d ${BOOST_DIR_NAME} ]]; then echo "Have boost"; else echo "No boost (?)"; fi
+  - if [[   -f ${BOOST_DIR_NAME}/boost/version.hpp ]]; then echo "Have boost version hpp"; else echo "No boost version hpp (?)"; fi
 
-  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${DEPS_DIR}/boost -DBoost_DEBUG=on"
+  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME} -DBoost_DEBUG=on"
 script:
   - $CXX --version
   - pwd
   - ls
 
   - echo "Unit Tests"
-  - cd test && ./test.sh BOOST_DIR=${DEPS_DIR}/boost
+  - cd test && ./test.sh BOOST_DIR=${BOOST_DIR_NAME}
 
   - echo "Libintl Validation Tests"
   - cd ../test_libintl && ./test.sh ${CMAKE_OPTIONS}
