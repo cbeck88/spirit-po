@@ -38,7 +38,8 @@ install:
   - cd ..
 
   - pwd
-  - if [[ -d ${DEPS_DIR}/boost ]]; then echo "Have boost"; else echo "No boost (?)"; fi
+  - if [[   -d ${DEPS_DIR}/boost ]]; then echo "Have boost"; fi
+  - if [[ ! -d ${DEPS_DIR}/boost ]]; then echo "No boost (?)"; fi
 
   - CMAKE_OPTIONS+=" -DBOOST_ROOT=${DEPS_DIR}/boost"; fi
 script:
