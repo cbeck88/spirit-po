@@ -271,7 +271,7 @@ public:
 
   const char * ngettext(const char * msgid, const char * msgid_plural, uint plural) const {
     auto it = hashmap_.find(msgid);
-    if (it != hashmap_.end()) {
+    if (it != hashmap_.end() && it->second.is_plural()) {
       return get(it->second, plural).c_str();
     } else {
       return (plural == 1 ? msgid : msgid_plural);
@@ -289,7 +289,7 @@ public:
 
   const char * npgettext(const char * context, const char * msgid, const char * msgid_plural, uint plural) const {
     auto it = hashmap_.find(form_context_index(context, msgid));
-    if (it != hashmap_.end()) {
+    if (it != hashmap_.end() && it->second.is_plural()) {
       return get(it->second, plural).c_str();
     } else {
       return (plural == 1 ? msgid : msgid_plural);
@@ -312,7 +312,7 @@ public:
 
   std::string ngettext_str(const std::string & msgid, const std::string & msgid_plural, uint plural) const {
     auto it = hashmap_.find(msgid);
-    if (it != hashmap_.end()) {
+    if (it != hashmap_.end() && it->second.is_plural()) {
       return get(it->second, plural);
     } else {
       return (plural == 1 ? msgid : msgid_plural);
@@ -330,7 +330,7 @@ public:
 
   std::string npgettext_str(const std::string & context, const std::string & msgid, const std::string & msgid_plural, uint plural) const {
     auto it = hashmap_.find(form_context_index(context, msgid));
-    if (it != hashmap_.end()) {
+    if (it != hashmap_.end() && it->second.is_plural()) {
       return get(it->second, plural);
     } else {
       return (plural == 1 ? msgid : msgid_plural);
