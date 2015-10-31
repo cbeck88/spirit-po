@@ -1,7 +1,7 @@
 sudo: false
 language: cpp
 compiler:
-  - gcc
+  - clang
 
 matrix:
   include:
@@ -69,6 +69,10 @@ matrix:
       addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
       addons: *clang37
+
+# The 'global' matrix always generates at least one entry, we use that for the default ubuntu precise clang
+env: COMPILER=clang++ BOOST_VER_NUM=48
+addons: *gcc49
 
 
 before_install:
