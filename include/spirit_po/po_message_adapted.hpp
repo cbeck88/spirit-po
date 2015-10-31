@@ -14,7 +14,7 @@
 #include <utility>
 #include <vector>
 
-#include "po_message.hpp"
+#include <spirit_po/po_message.hpp>
 
 BOOST_FUSION_ADAPT_STRUCT(
   spirit_po::po_message,

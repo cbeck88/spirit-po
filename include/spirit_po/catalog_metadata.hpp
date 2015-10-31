@@ -5,11 +5,11 @@
 
 #pragma once 
 
-#include "exceptions.hpp"
-
 #ifndef BOOST_SPIRIT_USE_PHOENIX_V3
 #define BOOST_SPIRIT_USE_PHOENIX_V3
 #endif
+
+#include <spirit_po/exceptions.hpp>
 
 #include <boost/spirit/include/qi.hpp>
 #include <boost/fusion/include/std_pair.hpp>

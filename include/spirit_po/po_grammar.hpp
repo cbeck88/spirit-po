@@ -15,7 +15,7 @@
 #include <boost/fusion/include/std_pair.hpp>
 #include <boost/fusion/include/define_struct.hpp>
 
-#include "po_message_adapted.hpp"
+#include <spirit_po/po_message_adapted.hpp>
 
 #include <boost/optional/optional.hpp>
 #include <string>

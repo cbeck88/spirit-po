@@ -9,12 +9,12 @@
 #define BOOST_SPIRIT_USE_PHOENIX_V3
 #endif
 
-#include "catalog_metadata.hpp"
-#include "default_plural_forms.hpp"
-#include "default_plural_forms_compiler.hpp"
-#include "exceptions.hpp"
-#include "po_grammar.hpp"
-#include "po_message.hpp"
+#include <spirit_po/catalog_metadata.hpp>
+#include <spirit_po/default_plural_forms.hpp>
+#include <spirit_po/default_plural_forms_compiler.hpp>
+#include <spirit_po/exceptions.hpp>
+#include <spirit_po/po_grammar.hpp>
+#include <spirit_po/po_message.hpp>
 
 #include <boost/spirit/include/qi.hpp>
 #include <functional>

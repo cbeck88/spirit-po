@@ -64,8 +64,8 @@
 #define BOOST_SPIRIT_USE_PHOENIX_V3
 #endif
 
-#include "default_plural_forms.hpp"
-#include "exceptions.hpp"
+#include <spirit_po/default_plural_forms.hpp>
+#include <spirit_po/exceptions.hpp>
 #include <boost/optional/optional.hpp>
 #include <boost/spirit/include/qi.hpp>
 #include <string>
