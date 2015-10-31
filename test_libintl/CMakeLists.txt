@@ -23,6 +23,8 @@ find_package ( Boost REQUIRED )
 find_package ( Gettext REQUIRED )
 find_package ( Intl REQUIRED )
 
+MESSAGE(STATUS "Boost INCLUDE DIR = " ${Boost_INCLUDE_DIRS})
+
 SET (PO_DIR ${CMAKE_CURRENT_SOURCE_DIR}/po)
 SET (SPIRIT_PO_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
@@ -41,8 +43,8 @@ endif()
 ### Make target
 
 add_executable(${PROJECT_NAME} main.cpp)
-include_directories (${PROJECT_NAME} ${BOOST_INCLUDE_DIRS})
-include_directories (${PROJECT_NAME} ${SPIRIT_PO_INCLUDE_DIR})
+include_directories (${PROJECT_NAME} SYSTEM ${Boost_INCLUDE_DIRS})
+include_directories (${PROJECT_NAME} SYSTEM ${SPIRIT_PO_INCLUDE_DIR})
 target_link_libraries (${PROJECT_NAME} ${INTL_LIBRARIES})
 
 ### Make po_path marker
