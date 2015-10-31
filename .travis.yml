@@ -35,8 +35,12 @@ install:
   - mkdir boost && travis_retry wget ${BOOST_URL}
   - tar --strip-components=1 -xzf ${BOOST_TAR_NAME}
 
+  - cd ..
+
   - pwd
-  - if [[ -d ${DEPS_DIR}/boost ]]; then CMAKE_OPTIONS+=" -DBOOST_ROOT=${DEPS_DIR}/boost"; fi
+  - if [[ -d ${DEPS_DIR}/boost ]]; then echo "Have boost"; else echo "No boost (?)"; fi
+
+  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${DEPS_DIR}/boost"; fi
 script:
   - $CXX --version
   - pwd
