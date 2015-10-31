@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include <boost/spirit/include/support_line_pos_iterator.hpp>
+#include <boost/spirit/home/support/iterators/line_pos_iterator.hpp>
 #include <string>
 
 namespace spirit_po {
