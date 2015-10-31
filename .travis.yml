@@ -96,14 +96,12 @@ before_install:
 # set CXX variable
   - export CXX=${COMPILER}
   - echo ${CXX}
-install:
-# Install Boost headers
-  - pwd
-  - ls
+# Make a 'deps' dir to hold installed stuff
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
   - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
 
-  - echo ${BOOST_VER_NUM}
+install:
+# Install Boost headers
   - BOOST_DOT_VER_STRING=1.${BOOST_VER_NUM}.0
   - BOOST_UNDERSCORE_VER_STRING=1_${BOOST_VER_NUM}_0
 
@@ -115,21 +113,12 @@ install:
   - tar -xzf ${BOOST_TAR_NAME}
 
   - BOOST_DIR_NAME=${DEPS_DIR}/${BOOST_SUBDIR_NAME}
+  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME}"
 
-  - pwd
-  - ls
-  - cd ..
-
-  - pwd
-  - ls
-  - if [[   -d ${BOOST_DIR_NAME} ]]; then echo "Have boost"; else echo "No boost (?)"; fi
-  - if [[   -f ${BOOST_DIR_NAME}/boost/version.hpp ]]; then echo "Have boost version hpp"; else echo "No boost version hpp (?)"; fi
-
-  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME} -DBoost_DEBUG=on"
+# Back to root dir
+  - cd ${TRAVIS_BUILD_DIR}
 script:
   - $CXX --version
-  - pwd
-  - ls
 
   - echo "Unit Tests"
   - cd test && ./test.sh BOOST_DIR=${BOOST_DIR_NAME}
