@@ -36,10 +36,10 @@ install:
   - BOOST_TAR_NAME=${BOOST_SUBDIR_NAME}.tar.gz
 
   - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_DOT_VER_STRING}/${BOOST_TAR_NAME}"
-  - mkdir boost && travis_retry wget ${BOOST_URL}
+  - travis_retry wget ${BOOST_URL}
   - tar -xzf ${BOOST_TAR_NAME}
 
-  - BOOST_DIR_NAME=${DEPS_DIR}/boost/${BOOST_SUBDIR_NAME}
+  - BOOST_DIR_NAME=${DEPS_DIR}/${BOOST_SUBDIR_NAME}
 
   - pwd
   - ls
