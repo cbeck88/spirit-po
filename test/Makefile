@@ -1,5 +1,7 @@
+BOOST_DIR ?= /usr/include
+
 CXXFLAGS := $(CXXFLAGS) -std=c++11 
-INCLUDES := -I../include/ -I/usr/include
+INCLUDES := -I../include/ -I$(BOOST_DIR)
 
 main: main.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) $< -o $@
@@ -7,3 +9,5 @@ main: main.cpp
 clean:
 	rm -f main
 
+check:
+	./main

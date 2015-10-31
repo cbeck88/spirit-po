@@ -13,6 +13,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <boost/version.hpp>
 
 /***
  * Utility functions
@@ -400,6 +401,7 @@ namespace file {
 } // end namespace file
 
 int main() {
+  std::cout << "Boost version = " << BOOST_LIB_VERSION << std::endl;
   std::cout << "Testing plural forms expression grammar..." << std::endl;
   TEST(test_default_expr_grammar("n != 1", { {0, 1}, {1, 0}, {2, 1}, {3, 1}, {4, 1}}));
   TEST(test_default_expr_grammar("n == 1", { {0, 0}, {1, 1}, {2, 0}, {3, 0}, {4, 0}}));
