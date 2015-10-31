@@ -71,7 +71,7 @@ matrix:
       addons: *clang37
 
 
-before-install:
+before_install:
 # set CXX variable
   - export CXX=${COMPILER}
   - echo ${CXX}
