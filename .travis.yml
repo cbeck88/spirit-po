@@ -24,6 +24,7 @@ install:
   - if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.5"; fi
 # Install Boost headers
   - pwd
+  - ls
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
   - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
 
@@ -35,17 +36,19 @@ install:
   - mkdir boost && travis_retry wget ${BOOST_URL}
   - tar --strip-components=1 -xzf ${BOOST_TAR_NAME}
 
+  - pwd
   - ls
   - cd ..
 
-  - ls
   - pwd
+  - ls
   - if [[   -d ${DEPS_DIR}/boost ]]; then echo "Have boost"; else echo "No boost (?)"; fi
 
   - CMAKE_OPTIONS+=" -DBOOST_ROOT=${DEPS_DIR}/boost"
 script:
   - $CXX --version
   - pwd
+  - ls
 
   - echo "Unit Tests"
   - cd test && ./test.sh BOOST_DIR=${DEPS_DIR}/boost
