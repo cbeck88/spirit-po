@@ -3,6 +3,12 @@ language: cpp
 compiler:
   - gcc
   - clang
+env:
+  - BOOST_VER_NUM=48
+  - BOOST_VER_NUM=51
+  - BOOST_VER_NUM=54
+  - BOOST_VER_NUM=57
+  - BOOST_VER_NUM=59
 addons:
   apt:
     sources:
@@ -28,7 +34,7 @@ install:
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
   - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
 
-  - BOOST_VER_NUM=57
+  - echo ${BOOST_VER_NUM}
   - BOOST_DOT_VER_STRING=1.${BOOST_VER_NUM}.0
   - BOOST_UNDERSCORE_VER_STRING=1_${BOOST_VER_NUM}_0
 
