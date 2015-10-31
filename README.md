@@ -34,7 +34,7 @@ of parsing po files rather than mo files at run-time, is provided
 ## Dependencies
 
 - **spirit-po** is only intended to work with UTF-8 encoded po files.
-- **spirit-po** has been tested with boost 1.48, boost 1.54, boost 1.59. travis-ci tests run with boost 1.55. I had issues with travis when using boost 1.46.
+- **spirit-po** has been tested with boost 1.48, 1.54, 1.59. travis-ci tests run with boost 1.55. I had issues with travis when using boost 1.46.
 - **spirit-po** tests are known to work with g++ 4.9, at 4.8 it has trouble with raw string literals that I use in tests.
 - **spirit-po** tests are known to work with clang++ 3.5, 3.6. I had problems using clang 3.4 on travis, but possibly they were avoidable.
 

@@ -19,6 +19,7 @@ extern "C" {
 #include <vector>
 
 #include <dirent.h>
+#include <boost/version.hpp>
 
 /***
  * Utility functions
@@ -243,6 +244,7 @@ int main() {
   find_mo_path();
   find_po_path();
 
+  std::cout << "Boost version = " << BOOST_LIB_VERSION << std::endl;
   std::cout << "SPIRIT_PO_NOEXCEPT = ";
 #ifdef SPIRIT_PO_NOEXCEPT
   std::cout << "1\n";

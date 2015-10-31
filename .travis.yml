@@ -3,14 +3,10 @@ language: cpp
 compiler:
   - gcc
   - clang
-install:
-- if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
-- if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.5"; fi
 addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
-    - boost-latest
     - llvm-toolchain-precise-3.5
     - george-edison55-precise-backports
     # ^ for cmake
@@ -19,15 +15,31 @@ addons:
     - g++-4.9
     - clang-3.5
     - gettext
-    - libboost1.55-dev
     - gdb
     - cmake-data
     - cmake
+install:
+# set CXX variable
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9"; fi
+  - if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.5"; fi
+# Install Boost headers
+  - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
+  - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
+
+  - BOOST_VER_NUM=57
+  - BOOST_VER_STRING=1.${BOOST_VER_NUM}.0
+  - BOOST_TAR_NAME=boost_1_${BOOST_VER_NUM}_0.tar.gz
+
+  - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_VER_STRING}/${BOOST_TAR_NAME}"
+  - mkdir boost && travis_retry wget ${BOOST_URL}
+  - tar --strip-components=1 -xzf ${BOOST_TAR_NAME}
+
+  - if [[ -d ${DEPS_DIR}/boost ]]; then CMAKE_OPTIONS+=" -DBOOST_ROOT=${DEPS_DIR}/boost"; fi
 script:
   - $CXX --version
 
   - echo "Unit Tests"
-  - cd test && ./test.sh
+  - cd test && ./test.sh BOOST_DIR=${DEPS_DIR}/boost
 
   - echo "Libintl Validation Tests"
   - cd ../test_libintl && ./test.sh
