@@ -5,6 +5,19 @@
 
 #define ENABLE_NLS
 
+#ifdef SPIRIT_PO_NOEXCEPT
+#define BOOST_NO_EXCEPTIONS
+#include <iostream>
+#include <stdexcept>
+namespace boost {
+  void throw_exception(const std::exception & e) {
+    std::cerr << "Boost threw an exception: " << e.what() << std::endl;
+    std::terminate();
+  }
+}
+#endif
+
+
 #include <spirit_po.hpp>
 
 extern "C" {

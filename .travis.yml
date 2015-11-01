@@ -96,6 +96,11 @@ before_install:
 # set CXX variable
   - export CXX=${COMPILER}
   - echo ${CXX}
+# set CXX_FLAGS variable, if boost version is recent enough then use -fno-exceptions with SPIRIT_PO_NOEXCEPT builds
+  - export CXX_FLAGS_BASE="-O3 -Wall -Werror"
+  - export CXX_FLAGS_NOEXCEPT="${CXX_FLAGS_BASE}"
+  - export CXX_FLAGS_NOEXCEPT+=" -fno-exceptions"
+
 # Make a 'deps' dir to hold installed stuff
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
   - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
@@ -123,14 +128,14 @@ script:
   - echo "Unit Tests"
   - cd test && ./test.sh BOOST_DIR=${BOOST_DIR_NAME}
 
-  - echo "Libintl Validation Tests"
+  - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
   - cd ../test_libintl && ./test.sh ${CMAKE_OPTIONS}
 
-  - echo "SPIRIT_PO_NOEXCEPT build"
+  - echo "SPIRIT_PO_NOEXCEPT build" && export CXXFLAGS=${CXX_FLAGS_NOEXCEPT}
   - ./test.sh -DNOEXCEPT=1 ${CMAKE_OPTIONS}
 
-  - echo "SPIRIT_PO_DEBUG build"
+  - echo "SPIRIT_PO_DEBUG build" && export CXXFLAGS=${CXX_FLAGS_BASE}
   - ./test.sh -DDEBUG=1 ${CMAKE_OPTIONS}
 
-  - echo "SPIRIT_PO_NOEXCEPT + SPIRIT_PO_DEBUG build"
+  - echo "SPIRIT_PO_NOEXCEPT + SPIRIT_PO_DEBUG build" && export CXXFLAGS=${CXX_FLAGS_NOEXCEPT}
   - ./test.sh -DNOEXCEPT=1 -DDEBUG=1 ${CMAKE_OPTIONS}
