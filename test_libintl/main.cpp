@@ -8,7 +8,7 @@
 #ifdef SPIRIT_PO_NOEXCEPT
 #define BOOST_NO_EXCEPTIONS
 #include <iostream>
-#include <stdexcept>
+#include <exception>
 namespace boost {
   void throw_exception(const std::exception & e) {
     std::cerr << "Boost threw an exception: " << e.what() << std::endl;
