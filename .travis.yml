@@ -99,7 +99,7 @@ before_install:
 # set CXX_FLAGS variable, if boost version is recent enough then use -fno-exceptions with SPIRIT_PO_NOEXCEPT builds
   - export CXX_FLAGS_BASE="-O3 -Wall -Werror"
   - export CXX_FLAGS_NOEXCEPT="${CXX_FLAGS_BASE}"
-  - if [[ $BOOST_VER_NUM -ge 55 ]] then; export CXX_FLAGS_NOEXCEPT+=" -fno-exceptions"; fi
+  - if [ $BOOST_VER_NUM -ge 55 ]; then export CXX_FLAGS_NOEXCEPT+=" -fno-exceptions"; fi
 
 # Make a 'deps' dir to hold installed stuff
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
