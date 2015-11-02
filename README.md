@@ -34,9 +34,12 @@ of parsing po files rather than mo files at run-time, is provided
 ## Dependencies
 
 - **spirit-po** is only intended to work with UTF-8 encoded po files.
-- **spirit-po** has been tested with boost 1.59 and multiple versions >= 1.48, see .travis.yml for more details.
-- **spirit-po** is known to work with gcc >= 4.9, clang >= 3.5. It is tested with multiple versions of these compilers, see .travis.yml for more details.
-- **spirit_po** tests run when compiled with SPIRIT_PO_NOEXCEPT and `-fno-exceptions` provided that boost version >= 1.55. (Fails below that due to a bug in boost::variant.)
+- **spirit-po** has been tested with boost 1.59 and multiple versions >= 1.48, see `.travis.yml` for more details.
+- **spirit-po** is known to work with gcc >= 4.9, clang >= 3.5. It is tested with multiple versions of these compilers.
+- **spirit_po** does not require C++ exceptions to be enabled. The tests run when compiled with `-fno-exceptions` flag, provided that
+  - `SPIRIT_PO_NOEXCEPT` is defined
+  - `BOOST_NO_EXCEPTIONS` is defined
+  - boost version >= 1.55. (Fails below that due to a bug in boost::variant.)
 
 ## Using it
 
