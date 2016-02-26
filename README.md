@@ -16,12 +16,14 @@ requires special tools to create.
 According to `sloccount`, it is only 733 lines of code in total (at time of writing),
 and is implemented using `boost::spirit`.
 Our po grammar itself is only a few dozen lines.
-This makes it very simple and transparent, and easy to modify if needed.
-
-By contrast, the `libgettext-po` po-manipulation library,
-depending on how you count, spans about ten thousand lines of ANSI C.
-Guess which parser implementation I would prefer to read. :)
-
+This makes it very simple and transparent, and easy to modify if needed.  
+  
+By contrast, the equivalent po-parser facility within the gettext project is
+the `libgettext-po` po-manipulation library. Sloccount counts the entire
+`libgettext-po` directory as `ansic:        29382 (98.35%)`, and the parser
+implementation itself is quite complex and difficult to separate from this.
+(Which is partly why I made `libgettext-po`.)  
+  
 An in-depth explanation of the rationale for this library as compared to
 `libintl` and `boost::locale::gettext`, and specifically, the advantages
 of parsing po files rather than mo files at run-time, is provided
@@ -37,7 +39,7 @@ of parsing po files rather than mo files at run-time, is provided
 - **spirit-po** has been tested with boost 1.59 and multiple versions >= 1.48.
 - **spirit-po** is known to work with gcc >= 4.9, clang >= 3.5.  
   It is tested with multiple versions of these compilers. See `.travis.yml`.
-- **spirit_po** does not require C++ exceptions to be enabled.  
+- **spirit-po** does not require C++ exceptions to be enabled.  
   The tests run when compiled with `-fno-exceptions`, provided that
   - `SPIRIT_PO_NOEXCEPT` is defined
   - `BOOST_NO_EXCEPTIONS` is defined
@@ -157,5 +159,5 @@ compiler for your desired language.
 
 ## Acknowledgements
 
-The author thanks David White and Kristina Simpson for conversations
+The author thanks David White, Kristina Simpson, and others for conversations
 which informed the creation of this library.
