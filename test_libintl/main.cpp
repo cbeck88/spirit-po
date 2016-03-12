@@ -196,6 +196,7 @@ RESULT do_test(const std::string & po_stem) {
     std::cerr << "Could not find po file: '" << po_stem << ".po'\n";
     return RESULT::NA;
   }
+  std::cerr << ".";
   // Find mo file
   {
     bindtextdomain (po_stem.c_str(), mo_path.c_str());
@@ -214,6 +215,7 @@ RESULT do_test(const std::string & po_stem) {
     }
   }
 
+  std::cerr << ".";
   // Read po file
   auto cat = spirit_po::catalog<>::from_istream(po_stream, std::function<void(const std::string &)>{&warning_message});
 #ifdef SPIRIT_PO_NOEXCEPT
@@ -222,6 +224,8 @@ RESULT do_test(const std::string & po_stem) {
     return RESULT::FAIL;
   }
 #endif
+
+  std::cerr << ".";
 
   bool all_pass = true;
   all_pass = all_pass && check_libintl_gettext(cat, "foo");
@@ -286,7 +290,7 @@ int main() {
 
   for (const std::string & str : list_po_files()) {
     std::cout << str << "... ";
-    int padding = 50 - str.size();
+    int padding = 46 - str.size();
     if (padding < 0) { padding = 0; }
     for (uint i = 0; i < static_cast<uint>(padding); ++i) { std::cout << " "; }
 
@@ -296,12 +300,12 @@ int main() {
 
     if (result == RESULT::PASS) {
       ++passed;
-      std::cout << "pass";
+      std::cout << " pass";
     } else if (result == RESULT::FAIL) {
       ++failed;
-      std::cout << "FAIL";
+      std::cout << " FAIL";
     } else {
-      std::cout << "  invalid";
+      std::cout << "   invalid";
     }
     std::cout << std::endl;
   }
