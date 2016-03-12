@@ -10,7 +10,6 @@
 #endif
 
 #include <spirit_po/catalog_metadata.hpp>
-#include <spirit_po/default_plural_forms.hpp>
 #include <spirit_po/default_plural_forms_compiler.hpp>
 #include <spirit_po/exceptions.hpp>
 #include <spirit_po/po_grammar.hpp>
