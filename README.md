@@ -109,7 +109,7 @@ They are otherwise equivalent.
    - `std::string gettext_str(const std::string & msgid)`
    - `std::string ngettext_str(const std::string & msgid, const std::string & msgid_plural, uint plural)`
    - `std::string pgettext_str(const std::string & msgctxt, const std::string & msgid)`
-   - `std::string npgettext_str(const std::string & msgctxt, const char std::string & msgid, const std::string & msgid_plural, uint plural)`
+   - `std::string npgettext_str(const std::string & msgctxt, const  std::string & msgid, const std::string & msgid_plural, uint plural)`
 
 We do not provide implementations of the `dcgettext` functions, which implement
 alternate textdomains.
@@ -138,9 +138,9 @@ Some less commonly useful accessors
 
    - `const spirit_po::catalog_metadata & get_metadata() const`  
      Return the metadata structure that was parsed from the po header.
-   - `std::size_t gettext_line_no(const std::string & msgid) const`
+   - `std::size_t gettext_line_no(const std::string & msgid) const`  
      Return the line number at which a given catalog message was read. 0 if it is not found.
-   - `std::size_t pgettext_line_no(const std::string & msgctxt, const std::string & msgid) const`
+   - `std::size_t pgettext_line_no(const std::string & msgctxt, const std::string & msgid) const`  
      Return the line number at which a given catalog message (with context) was read. 0 if it is not found.
 
 
@@ -148,10 +148,12 @@ Some less commonly useful accessors
 
 `spirit_po::catalog` is a template, and you may customize it in two ways.
 
-- Specify an alternate hashmap type. The default is `std::unordered_map`, but
+- Specify an alternate hashmap type.  
+  The default is `std::unordered_map`, but
 if you like you can experiment with `boost::flat_map` or a flat unordered map,
 or one of the Loki hashmaps, etc.
-- Specify an alternate plural forms compiler. If instead of the pseudo-C
+- Specify an alternate plural forms compiler.  
+  If instead of the pseudo-C
 language for plural-forms functions specified by GNU gettext, you would like
 to use a different programming language to specify the plural-forms index function,
 you can easily specialize the catalog to use a different plural-forms function
