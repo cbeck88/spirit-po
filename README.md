@@ -22,7 +22,7 @@ By contrast, the equivalent po-parser facility within the gettext project is
 the `libgettext-po` po-manipulation library. Sloccount counts the entire
 `libgettext-po` directory as `ansic:        29382 (98.35%)`, that is, 30kloc of ANSI C.
 The parser is only a piece of this, but it is also quite complex and difficult to separate
-from the rest of the code. (Which is partly why I made `libgettext-po`.)  
+from the rest of the code. (Which is partly why I made `spirit-po`.)  
   
 An in-depth explanation of the rationale for this library as compared to
 `libintl` and `boost::locale::gettext`, and specifically, the advantages
