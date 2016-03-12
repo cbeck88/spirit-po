@@ -126,7 +126,7 @@ public:
   }
 
   std::string error() const {
-    return *error_message_; // asserts that there is an error message
+    return *error_message_; // UB if there there is not an error message
   }
 #endif
 
@@ -150,7 +150,8 @@ public:
     {
       // must be able to parse first message
       if (!qi::parse(it, end, grammar, msg)) {
-        SPIRIT_PO_CATALOG_FAIL("Failed to parse po header, stopped at " + iterator_context(it, end));
+        int err_line = it.position();
+        SPIRIT_PO_CATALOG_FAIL("Failed to parse po header, stopped at line " + std::to_string(err_line) + ": " + iterator_context(it, end));
       }
 
 //#ifdef SPIRIT_PO_DEBUG
@@ -177,13 +178,17 @@ public:
       // Try to compile the plural forms function string
       pf_function_object_ = compiler(metadata_.plural_forms_function_string);
       if (!pf_function_object_) {
-        SPIRIT_PO_CATALOG_FAIL(("Failed to read plural forms function. Input: '" + metadata_.plural_forms_function_string + "', error message: " + pf_function_object_.error()));
+        SPIRIT_PO_CATALOG_FAIL(("Failed to read plural forms function. "
+                                "Input: '" + metadata_.plural_forms_function_string + "', "
+                                "error message: " + pf_function_object_.error()));
       } 
 
-      // Cache the 'singular' form index
+      // Cache the 'singular' form index since it is most common
       singular_index_ = pf_function_object_(1);
       if (singular_index_ >= metadata_.num_plural_forms) {
-        SPIRIT_PO_CATALOG_FAIL(("Invalid plural forms function. On input n = 1, returned plural = " + std::to_string(singular_index_) + ", while num_plurals = " + std::to_string(metadata_.num_plural_forms)));
+        SPIRIT_PO_CATALOG_FAIL(("Invalid plural forms function. "
+                                "On input n = 1, returned plural = " + std::to_string(singular_index_) + ", "
+                                "while num_plurals = " + std::to_string(metadata_.num_plural_forms)));
       }
 
       msg.line_no = line_no;
@@ -195,11 +200,17 @@ public:
       msg.strings().reserve(metadata_.num_plural_forms); // try to prevent frequent vector reallocations
       line_no = it.position();
       if (!qi::parse(it, end, grammar, msg)) {
-        SPIRIT_PO_CATALOG_FAIL(("Failed to parse po file, stopped at " + iterator_context(it, end)));
+        int err_line = it.position();
+        SPIRIT_PO_CATALOG_FAIL(("Failed to parse po file, "
+                                "started at " + std::to_string(line_no) + ": , stopped at " + std::to_string(err_line) + ":\n"
+                                + iterator_context(it, end)));
       }
       // cannot overwrite header
       if (!msg.id.size()) {
-        SPIRIT_PO_CATALOG_FAIL(("Malformed po file: Cannot overwrite the header entry later in the po file. Stopped at " + iterator_context(it, end)));
+        int err_line = it.position();
+        SPIRIT_PO_CATALOG_FAIL(("Malformed po file: Cannot overwrite the header entry later in the po file."
+                                "Started at " + std::to_string(line_no) + ": , stopped at " + std::to_string(err_line) + ":\n" 
+                                + iterator_context(it, end)));
       }
       msg.line_no = line_no;
       insert_message(std::move(msg));
