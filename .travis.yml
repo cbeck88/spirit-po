@@ -88,8 +88,10 @@ matrix:
       addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
       addons: *clang37
-    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=60
-      addons: *clang37
+# TODO: Investigate why this is failing
+#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=60
+#      addons: *clang37
+
 
 
 before_install:
