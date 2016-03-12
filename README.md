@@ -44,6 +44,8 @@ of parsing po files rather than mo files at run-time, is provided
   - `SPIRIT_PO_NOEXCEPT` is defined
   - `BOOST_NO_EXCEPTIONS` is defined
   - Boost version >= 1.55. (Fails below that due to a bug in `boost::variant`.)
+  
+  I believe that it should also not require RTTI if you define `BOOST_NO_RTTI`, but I haven't tested this.
 
 ## Using it
 
@@ -156,8 +158,10 @@ or one of the Loki hashmaps, etc.
   If instead of the pseudo-C
 language for plural-forms functions specified by GNU gettext, you would like
 to use a different programming language to specify the plural-forms index function,
-you can easily specialize the catalog to use a different plural-forms function
-compiler for your desired language.
+you can specialize the catalog to use a different plural-forms function compiler for your desired language.
+The compiler is a function object that should be default constructible, and should take a string and return a
+function object of signature `unsigned int(unsigned int)`, representing the compiled function. See the default
+implementation for details.
 
 ## Acknowledgements
 

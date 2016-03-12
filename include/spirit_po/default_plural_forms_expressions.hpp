@@ -319,14 +319,13 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
 
 #undef EMIT_OP_
 
-  // TODO: This could be improved if we add a "skip" and a "jump if" instruction...
-  // then we can skip the unneeded branch...
   std::vector<instruction> operator()(const ternary_op & o) const {
     auto result = boost::apply_visitor(*this, o.e1);
     auto tbranch = boost::apply_visitor(*this, o.e2);
     auto fbranch = boost::apply_visitor(*this, o.e3);
 
     // We use jump if / jump if not in the way that will let us put the shorter branch first.
+    // Because, it is more likely to fit in the cache line.
     if (tbranch.size() > fbranch.size()) {
        // + 1 to size because we have to put a jump at end of this branch also
       result.emplace_back(skip_if{fbranch.size() + 1});
