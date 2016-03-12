@@ -222,7 +222,11 @@ struct skip {
   uint distance;
 };
 
-/// Instruction that conditionally causes us to skip upcoming instructions
+/// Instructions that conditionally causes us to skip upcoming instructions
+struct skip_if {
+  uint distance;
+};
+
 struct skip_if_not {
   uint distance;
 };
@@ -230,7 +234,7 @@ struct skip_if_not {
 /***
  * Instruction is a variant type that represents either a push_constant, branch, jump, or arithmetic op.
  */
-typedef boost::variant<constant, skip, skip_if_not, op_code> instruction;
+typedef boost::variant<constant, skip, skip_if, skip_if_not, op_code> instruction;
 
 /***
  * Debug stirngs for instruction set
@@ -269,6 +273,9 @@ struct instruction_debug_string_maker : boost::static_visitor<std::string> {
   }
   std::string operator()(const skip & s) const {
     return "[ skip : " + std::to_string(s.distance) + " ]";
+  }
+  std::string operator()(const skip_if & s) const {
+    return "[ sif  : " + std::to_string(s.distance) + " ]";
   }
   std::string operator()(const skip_if_not & s) const {
     return "[ sifn : " + std::to_string(s.distance) + " ]";
@@ -318,10 +325,20 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
     auto result = boost::apply_visitor(*this, o.e1);
     auto tbranch = boost::apply_visitor(*this, o.e2);
     auto fbranch = boost::apply_visitor(*this, o.e3);
-    result.emplace_back(skip_if_not{tbranch.size() + 1}); // + 1 because we have to put a jump at end of tbranch
-    std::move(tbranch.begin(), tbranch.end(), std::back_inserter(result));
-    result.emplace_back(skip{fbranch.size()});
-    std::move(fbranch.begin(), fbranch.end(), std::back_inserter(result));
+
+    // We use jump if / jump if not in the way that will let us put the shorter branch first.
+    if (tbranch.size() > fbranch.size()) {
+       // + 1 to size because we have to put a jump at end of this branch also
+      result.emplace_back(skip_if{fbranch.size() + 1});
+      std::move(fbranch.begin(), fbranch.end(), std::back_inserter(result));
+      result.emplace_back(skip{tbranch.size()});
+      std::move(tbranch.begin(), tbranch.end(), std::back_inserter(result));
+    } else {
+      result.emplace_back(skip_if_not{tbranch.size() + 1});
+      std::move(tbranch.begin(), tbranch.end(), std::back_inserter(result));
+      result.emplace_back(skip{fbranch.size()});
+      std::move(fbranch.begin(), fbranch.end(), std::back_inserter(result));
+    }
     return result;
   }
 };
@@ -331,23 +348,26 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
  */
 
 class stack_machine : public boost::static_visitor<uint> {
-  std::vector<instruction> instruction_set_;
+  std::vector<instruction> instruction_seq_;
   std::vector<uint> stack_;
   uint n_value_;
 
 #ifdef SPIRIT_PO_DEBUG
   void debug_print_instructions() const {
-    std::cerr << "Instruction set:\n";
-    for (const auto & i : instruction_set_) {
+    std::cerr << "Instruction sequence:\n";
+    for (const auto & i : instruction_seq_) {
       std::cerr << debug_string(i) << std::endl;
     }
   }
 
-#define MACHINE_ASSERT(X)                     \
-  if (!(X)) {                                 \
-    debug_print_instructions();               \
-  }                                           \
-  assert((X) && #X)
+#define MACHINE_ASSERT(X)                       \
+  do {                                          \
+    if (!(X)) {                                 \
+      std::cerr << "Stack machine failure:\n";  \
+      debug_print_instructions();               \
+      assert(false && #X);                      \
+    }                                           \
+  } while(0)
 
 #else
 
@@ -365,11 +385,17 @@ class stack_machine : public boost::static_visitor<uint> {
 
 public:
   explicit stack_machine(const expr & e)
-    : instruction_set_(boost::apply_visitor(emitter{}, e))
+    : instruction_seq_(boost::apply_visitor(emitter{}, e))
     , stack_()
     , n_value_()
   {}
 
+  /***
+   * operator() takes the instruction that we should execute
+   * It should perform the operation adjusting the stack
+   * It returns the amount by which we should increment the
+   * program counter.
+   */
   uint operator()(const constant & c) {
     stack_.emplace_back(c.value);
     return 1;
@@ -379,12 +405,12 @@ public:
     return 1 + s.distance;
   }
 
+  uint operator()(const skip_if & s) {
+   return 1 + (pop_one() ? s.distance : 0);
+  }
+
   uint operator()(const skip_if_not & s) {
-    if (pop_one()) {
-      return 1;
-    } else {
-      return 1 + s.distance;
-    }
+   return 1 + (pop_one() ? 0 : s.distance);
   }
 
   uint operator()(op_code oc) {
@@ -416,9 +442,11 @@ FOREACH_SPIRIT_PO_BINARY_OP(STACK_MACHINE_CASE_)
   uint compute(uint arg) {
     n_value_ = arg;
     stack_.resize(0);
-    for (uint idx = 0; idx < instruction_set_.size(); ) {
-      idx += boost::apply_visitor(*this, instruction_set_[idx]);
+    uint pc = 0;
+    while (pc < instruction_seq_.size()) {
+      pc += boost::apply_visitor(*this, instruction_seq_[pc]);
     }
+    MACHINE_ASSERT(pc == instruction_seq_.size());
     MACHINE_ASSERT(stack_.size() == 1);
     return stack_[0];
   }
