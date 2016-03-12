@@ -53,14 +53,14 @@ class catalog {
   hashmap_type hashmap_;
 
 public:
-  static constexpr unsigned char EOT = static_cast<unsigned char>(4);
+  static constexpr char EOT = static_cast<char>(4);
   // ASCII 4 is EOT character
   // Used to separate msg context from msgid in the hashmap, in MO files
-  // We use the same formatting system, just for simplicity.
+  // We use the same formatting system, just for consistency.
   // c.f. https://www.gnu.org/software/gettext/manual/html_node/MO-Files.html
 
   static std::string form_context_index(const std::string & msgctxt, const std::string & id) {
-    return msgctxt + static_cast<char>(EOT) + id;
+    return msgctxt + EOT + id;
   }
 
   static std::string form_index(const po_message & msg) {
