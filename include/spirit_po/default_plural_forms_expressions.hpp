@@ -19,10 +19,15 @@
 #define BOOST_SPIRIT_USE_PHOENIX_V3
 #endif
 
+#include <algorithm>
 #include <boost/spirit/include/qi.hpp>
 #include <boost/fusion/include/adapt_struct.hpp>
 #include <boost/variant/variant.hpp>
 #include <boost/variant/recursive_wrapper.hpp>
+
+#ifdef SPIRIT_PO_DEBUG
+#include <cassert>
+#endif
 
 namespace spirit_po {
 
@@ -125,9 +130,6 @@ FOREACH_SPIRIT_PO_BINARY_OP(ADAPT_STRUCT_)
 
 #undef ADAPT_STRUCT_
 
-// X macros not used anymore
-#undef FOREACH_SPIRIT_PO_BINARY_OP
-
 namespace spirit_po {
 
 namespace default_plural_forms {
@@ -202,6 +204,134 @@ struct op_grammar : qi::grammar<Iterator, expr(), qi::space_type> {
     main_ = expr_ >> -lit(';');
   }
 };
+
+/***
+ * Now define a simple stack machine to evaluate the expressions efficiently.
+ *
+ * First define op_codes
+ */
+
+#define ENUMERATE(X, Y) X,
+
+enum class op_code { n_var, not_op, FOREACH_SPIRIT_PO_BINARY_OP(ENUMERATE) ternary_op };
+
+#undef ENUMERATE
+
+typedef boost::variant<constant, op_code> instruction;
+
+/***
+ * Visitor that maps expressions to instruction sequences
+ */
+struct emitter : public boost::static_visitor<std::vector<instruction>> {
+  std::vector<instruction> operator()(const constant & c) const {
+    return std::vector<instruction>{instruction{c}};
+  }
+  std::vector<instruction> operator()(const n_var &) const {
+    return std::vector<instruction>{instruction{op_code::n_var}};
+  }
+  std::vector<instruction> operator()(const not_op & o) const {
+    auto result = boost::apply_visitor(*this, o.e1);
+    result.emplace_back(op_code::not_op);
+    return result;
+  }
+#define EMIT_OP_(name, op) \
+  std::vector<instruction> operator()(const name & o) const {        \
+    auto result = boost::apply_visitor(*this, o.e1);                 \
+    auto temp = boost::apply_visitor(*this, o.e2);                   \
+    std::move(temp.begin(), temp.end(), std::back_inserter(result)); \
+    result.emplace_back(op_code::name);                              \
+    return result;                                                   \
+  }
+
+FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
+
+#undef EMIT_OP_
+
+  // TODO: This could be improved if we add a "skip" and a "jump if" instruction...
+  // then we can skip the unneeded branch...
+  std::vector<instruction> operator()(const ternary_op & o) const {
+    auto result = boost::apply_visitor(*this, o.e1);
+    auto tbranch = boost::apply_visitor(*this, o.e2);
+    auto fbranch = boost::apply_visitor(*this, o.e3);
+    std::move(tbranch.begin(), tbranch.end(), std::back_inserter(result));
+    std::move(fbranch.begin(), fbranch.end(), std::back_inserter(result));
+    result.emplace_back(op_code::ternary_op);
+    return result;
+  }
+};
+
+/***
+ * Actual stack machine
+ */
+
+class stack_machine : public boost::static_visitor<> {
+  std::vector<instruction> instruction_set_;
+  std::vector<uint> stack_;
+  uint n_value_;
+
+public:
+  explicit stack_machine(const expr & e)
+    : instruction_set_(boost::apply_visitor(emitter{}, e))
+    , stack_()
+    , n_value_()
+  {}
+
+  void operator()(const constant & c) {
+    stack_.emplace_back(c.value);
+  }
+
+  void operator()(op_code oc) {
+    switch (oc) {
+      case op_code::n_var: {
+        stack_.emplace_back(n_value_);
+        return;
+      }
+      case op_code::not_op: {
+        stack_.back() = !stack_.back();
+        return;
+      }
+#define STACK_MACHINE_CASE_(name, op)               \
+      case op_code::name: {                         \
+        uint parm2 = stack_.back();                 \
+        stack_.resize(stack_.size() - 1);           \
+        stack_.back() = (stack_.back() op parm2);   \
+        return;                                     \
+      }
+
+FOREACH_SPIRIT_PO_BINARY_OP(STACK_MACHINE_CASE_)
+
+#undef STACK_MACHINE_CASE_
+
+      case op_code::ternary_op: {
+        uint parm3 = stack_.back();
+        stack_.resize(stack_.size() - 1);
+        uint parm2 = stack_.back();
+        stack_.resize(stack_.size() - 1);
+        stack_.back() = stack_.back() ? parm2 : parm3;
+        return;
+      }
+    }
+#ifdef SPIRIT_PO_DEBUG
+    assert(false);
+#endif
+  }
+
+  uint compute(uint arg) {
+    n_value_ = arg;
+    stack_.resize(0);
+    for (const auto & i : instruction_set_) {
+      boost::apply_visitor(*this, i);
+    }
+#ifdef SPIRIT_PO_DEBUG
+    assert(stack_.size() == 1);
+#endif
+
+    return stack_[0];
+  }
+};
+
+// X macros not used anymore
+#undef FOREACH_SPIRIT_PO_BINARY_OP
 
 } // end namespace default plural forms
 

@@ -78,17 +78,16 @@ typedef unsigned int uint;
 namespace default_plural_forms {
 
 class function_object {
-  expr e_;
+  mutable stack_machine machine_;
   boost::optional<std::string> parse_error_;
 
 public:
-  function_object(const expr & _e) : e_(_e), parse_error_() {}
-  function_object(expr && _e) : e_(std::move(_e)), parse_error_() {}
-  function_object(const std::string & s) : e_(n_var()), parse_error_(s) {}
+  function_object(const expr & _e) : machine_(_e), parse_error_() {}
+  function_object(const std::string & s) : machine_(n_var()), parse_error_(s) {}
   function_object() : function_object(std::string{"uninitialized"}) {}
 
   uint operator()(uint n) const {
-    return boost::apply_visitor(evaluator{n}, e_);
+    return machine_.compute(n);
   }
 
   explicit operator bool() const { return !parse_error_; }

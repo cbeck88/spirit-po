@@ -1,7 +1,6 @@
 TODO
 ====
 
-- Add a bytecode for the plural forms function expressions?
 - Add more `msgfmt`-style validation? (if one of `msgid`, `msgstr`
   ends with `'\n'` and one does not, give a warning?)
 - Allow to detect and omit fuzzy strings?
