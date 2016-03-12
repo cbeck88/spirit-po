@@ -26,7 +26,7 @@ matrix:
     - env: COMPILER=g++-4.9 BOOST_VER_NUM=59
       addons: *gcc49
 
-    - env: COMPILER=g++-5 BOOST_VER_NUM=48
+    - env: COMPILER=g++-5 BOOST_VER_NUM=54
       addons: &gcc5
         apt:
           sources:
@@ -38,8 +38,6 @@ matrix:
             - cmake-data
             - cmake
             - g++-5
-    - env: COMPILER=g++-5 BOOST_VER_NUM=54
-      addons: *gcc5
     - env: COMPILER=g++-5 BOOST_VER_NUM=57
       addons: *gcc5
     - env: COMPILER=g++-5 BOOST_VER_NUM=58
@@ -71,7 +69,7 @@ matrix:
     - env: COMPILER=clang++-3.5 BOOST_VER_NUM=59
       addons: *clang35
 
-    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=48
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=54
       addons: &clang37
         apt:
           sources:
@@ -84,8 +82,6 @@ matrix:
             - cmake-data
             - cmake
             - clang-3.7
-    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=54
-      addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=57
       addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=58
