@@ -213,11 +213,76 @@ struct op_grammar : qi::grammar<Iterator, expr(), qi::space_type> {
 
 #define ENUMERATE(X, Y) X,
 
-enum class op_code { n_var, not_op, FOREACH_SPIRIT_PO_BINARY_OP(ENUMERATE) ternary_op };
+enum class op_code { n_var, FOREACH_SPIRIT_PO_BINARY_OP(ENUMERATE) not_op };
 
 #undef ENUMERATE
 
-typedef boost::variant<constant, op_code> instruction;
+/// Instruction that causes us to skip upcoming instructions
+struct skip {
+  uint distance;
+};
+
+/// Instruction that conditionally causes us to skip upcoming instructions
+struct skip_if_not {
+  uint distance;
+};
+
+/***
+ * Instruction is a variant type that represents either a push_constant, branch, jump, or arithmetic op.
+ */
+typedef boost::variant<constant, skip, skip_if_not, op_code> instruction;
+
+/***
+ * Debug stirngs for instruction set
+ */
+#ifdef SPIRIT_PO_DEBUG
+inline std::string op_code_string(op_code oc) {
+  std::string result = "[  ";
+  switch (oc) {
+    case op_code::n_var: {
+      result += "n ";
+      break;
+    }
+    case op_code::not_op: {
+      result += "! ";
+      break;
+    }
+#define OP_CODE_STR_CASE_(X, Y)                  \
+    case op_code::X: {                           \
+      result += #Y;                              \
+      break;                                     \
+    }
+
+FOREACH_SPIRIT_PO_BINARY_OP(OP_CODE_STR_CASE_)
+
+#undef OP_CODE_STR_CASE_
+  }
+
+  if (result.size() < 5) { result += ' '; } \
+  result += "  :   ]";
+  return result;
+}
+
+struct instruction_debug_string_maker : boost::static_visitor<std::string> {
+  std::string operator()(const constant & c) const {
+    return "[ push : " + std::to_string(c.value) + " ]";
+  }
+  std::string operator()(const skip & s) const {
+    return "[ skip : " + std::to_string(s.distance) + " ]";
+  }
+  std::string operator()(const skip_if_not & s) const {
+    return "[ sifn : " + std::to_string(s.distance) + " ]";
+  }
+  std::string operator()(const op_code & oc) const {
+    return op_code_string(oc);
+  }
+};
+
+inline std::string debug_string(const instruction & i) {
+  return boost::apply_visitor(instruction_debug_string_maker{}, i);
+}
+
+#endif // SPIRIT_PO_DEBUG
 
 /***
  * Visitor that maps expressions to instruction sequences
@@ -253,9 +318,10 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
     auto result = boost::apply_visitor(*this, o.e1);
     auto tbranch = boost::apply_visitor(*this, o.e2);
     auto fbranch = boost::apply_visitor(*this, o.e3);
+    result.emplace_back(skip_if_not{tbranch.size() + 1}); // + 1 because we have to put a jump at end of tbranch
     std::move(tbranch.begin(), tbranch.end(), std::back_inserter(result));
+    result.emplace_back(skip{fbranch.size()});
     std::move(fbranch.begin(), fbranch.end(), std::back_inserter(result));
-    result.emplace_back(op_code::ternary_op);
     return result;
   }
 };
@@ -264,10 +330,38 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
  * Actual stack machine
  */
 
-class stack_machine : public boost::static_visitor<> {
+class stack_machine : public boost::static_visitor<uint> {
   std::vector<instruction> instruction_set_;
   std::vector<uint> stack_;
   uint n_value_;
+
+#ifdef SPIRIT_PO_DEBUG
+  void debug_print_instructions() const {
+    std::cerr << "Instruction set:\n";
+    for (const auto & i : instruction_set_) {
+      std::cerr << debug_string(i) << std::endl;
+    }
+  }
+
+#define MACHINE_ASSERT(X)                     \
+  if (!(X)) {                                 \
+    debug_print_instructions();               \
+  }                                           \
+  assert((X) && #X)
+
+#else
+
+#define MACHINE_ASSERT(...)  do {} while(0)
+
+#endif
+
+  uint pop_one() {
+    MACHINE_ASSERT(stack_.size());
+
+    uint result = stack_.back();
+    stack_.resize(stack_.size() - 1);
+    return result;
+  }
 
 public:
   explicit stack_machine(const expr & e)
@@ -276,63 +370,65 @@ public:
     , n_value_()
   {}
 
-  void operator()(const constant & c) {
+  uint operator()(const constant & c) {
     stack_.emplace_back(c.value);
+    return 1;
   }
 
-  void operator()(op_code oc) {
+  uint operator()(const skip & s) {
+    return 1 + s.distance;
+  }
+
+  uint operator()(const skip_if_not & s) {
+    if (pop_one()) {
+      return 1;
+    } else {
+      return 1 + s.distance;
+    }
+  }
+
+  uint operator()(op_code oc) {
     switch (oc) {
       case op_code::n_var: {
         stack_.emplace_back(n_value_);
-        return;
+        return 1;
       }
       case op_code::not_op: {
+        MACHINE_ASSERT(stack_.size());
         stack_.back() = !stack_.back();
-        return;
+        return 1;
       }
 #define STACK_MACHINE_CASE_(name, op)               \
       case op_code::name: {                         \
-        uint parm2 = stack_.back();                 \
-        stack_.resize(stack_.size() - 1);           \
+        MACHINE_ASSERT(stack_.size() >= 2);         \
+        uint parm2 = pop_one();                     \
         stack_.back() = (stack_.back() op parm2);   \
-        return;                                     \
+        return 1;                                   \
       }
 
 FOREACH_SPIRIT_PO_BINARY_OP(STACK_MACHINE_CASE_)
 
 #undef STACK_MACHINE_CASE_
-
-      case op_code::ternary_op: {
-        uint parm3 = stack_.back();
-        stack_.resize(stack_.size() - 1);
-        uint parm2 = stack_.back();
-        stack_.resize(stack_.size() - 1);
-        stack_.back() = stack_.back() ? parm2 : parm3;
-        return;
-      }
     }
-#ifdef SPIRIT_PO_DEBUG
-    assert(false);
-#endif
+    MACHINE_ASSERT(false);
   }
 
   uint compute(uint arg) {
     n_value_ = arg;
     stack_.resize(0);
-    for (const auto & i : instruction_set_) {
-      boost::apply_visitor(*this, i);
+    for (uint idx = 0; idx < instruction_set_.size(); ) {
+      idx += boost::apply_visitor(*this, instruction_set_[idx]);
     }
-#ifdef SPIRIT_PO_DEBUG
-    assert(stack_.size() == 1);
-#endif
-
+    MACHINE_ASSERT(stack_.size() == 1);
     return stack_[0];
   }
 };
 
+#undef MACHINE_ASSERT
+
 // X macros not used anymore
 #undef FOREACH_SPIRIT_PO_BINARY_OP
 
-} // end namespace default plural forms
+} // end namespace default_plural_forms
 
 } // end namespace spirit_po
