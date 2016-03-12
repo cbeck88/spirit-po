@@ -366,6 +366,10 @@ namespace file {
     std::string test6po =
 #include "test6.po"
 ;
+    std::string test7po =
+#include "test7.po"
+;
+
     std::string test_fail1po =
 #include "test_fail1.po"
 ;
@@ -621,6 +625,18 @@ msgstr "jkl;"
     using file::test6po;
     TEST(test_catalog_gettext( test6po, {} ));
     auto cat = spirit_po::catalog<>::from_range(test6po);
+#ifdef SPIRIT_PO_NOEXCEPT
+    TEST(static_cast<bool>(cat));
+#endif
+    const auto & meta = cat.get_metadata();
+    CHECK_EQ("UTF-8", meta.charset);
+  }
+
+  std::cout << "Testing test7.po..." << std::endl;
+  {
+    using file::test7po;
+    TEST(test_catalog_gettext( test7po, {} ));
+    auto cat = spirit_po::catalog<>::from_range(test7po);
 #ifdef SPIRIT_PO_NOEXCEPT
     TEST(static_cast<bool>(cat));
 #endif

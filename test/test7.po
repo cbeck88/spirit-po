@@ -1,0 +1,2723 @@
+R"===(
+# #-#-#-#-#  he.po (nautilus.HEAD.he)  #-#-#-#-#
+# translation of nautilus.HEAD.he.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER.
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003.
+# Gil Osher <dolfin@rpg.org.il>, 2004, 2005.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2010.
+#
+# #-#-#-#-#  he.po (eel.HEAD.he)  #-#-#-#-#
+# translation of eel.HEAD.he.po to Hebrew
+# translation of eel.he.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Gil Osher <dolfin@rpg.org.il>, 2002, 2004.
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003.
+# Yuval Tanny, 2005.
+# Yosef Or Boczko <yoseforb@gnome.org>, 2013, 2014, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eel.HEAD.he\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus&keywords=I18N+L10N&component=Internationalization (i18n)\n"
+"POT-Creation-Date: 2015-10-27 13:41+0000\n"
+"PO-Revision-Date: 2015-09-27 11:40+0300\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"Language-Team: עברית <>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural= (n!=1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#: ../src/gtk/gtkplacesview.c:1951 ../src/gtk/gtkplacesview.c:1960
+msgid "On This Computer"
+msgstr "על מחשב זה"
+
+#: ../src/gtk/gtkplacesviewrow.c:324
+msgid "Disconnect"
+msgstr "התנתקות"
+
+#~ msgid "Location _Bar"
+#~ msgstr "סרגל _מיקום"
+
+#~ msgid "Change the visibility of this window's location bar"
+#~ msgstr "הצגה או הסתרה של סרגל המיקום של חלון זה"
+
+#~ msgid "_Zoom"
+#~ msgstr "_תקריב"
+
+#~ msgid "_View As"
+#~ msgstr "_צפייה בתור"
+
+#~ msgid "_Search"
+#~ msgstr "_חיפוש"
+
+#~ msgid "_Places"
+#~ msgstr "_מקומות"
+
+#~ msgid "Close P_arent Folders"
+#~ msgstr "סגירת תיקיות _ההורים"
+
+#~ msgid "Close this folder's parents"
+#~ msgstr "סגירת ההורים של תיקייה זו"
+
+#~ msgid "Clos_e All Folders"
+#~ msgstr "סג_ירת כל התיקיות"
+
+#~ msgid "Close all folder windows"
+#~ msgstr "סגירת כל חלונות התיקיות"
+
+#~ msgid "Locate documents and folders on this computer by name or content"
+#~ msgstr "חיפוש מסמכים ותיקיות במחשב זה על פי שם או תוכן"
+
+#~ msgid "_Browse Folder"
+#~ msgid_plural "_Browse Folders"
+#~ msgstr[0] "_דפדוף בתיקייה"
+#~ msgstr[1] "ד_פדוף בתיקיות"
+
+#~ msgid "Manage files on your computer and network locations"
+#~ msgstr "ניהול בקצים במחשב שלך ובמיקומי רשת"
+
+#~ msgid "By Path"
+#~ msgstr "לפי נתיב"
+
+#~ msgid "%s's Home"
+#~ msgstr "הבית של %s"
+
+#~ msgid "new file"
+#~ msgstr "קובץ חדש"
+
+#~ msgid "Browse the file system with the file manager"
+#~ msgstr "דפדוף במערכת הקבצים עם מנהל הקבצים"
+
+#~ msgid "File Browser"
+#~ msgstr "דפדפן הקבצים"
+
+#~ msgid "Open Folder"
+#~ msgstr "פתיחת תיקייה"
+
+#~ msgid "Home Folder"
+#~ msgstr "תיקיית הבית"
+
+#~ msgid "Create a new empty file inside this folder"
+#~ msgstr "יצירת קובץ חדש וריק בתוך תיקייה זו"
+
+#~ msgid "Format the selected volume"
+#~ msgstr "פרמוט הכרך הנבחר"
+
+#~ msgid "Format the volume associated with the open folder"
+#~ msgstr "פרמוט הכרך המשויך לתיקייה הפתוחה"
+
+#~ msgid "Format the volume associated with this folder"
+#~ msgstr "פרמוט הכרך המשויך לתיקייה זאת"
+
+#~ msgid "_Home Folder"
+#~ msgstr "תיקיית ה_בית"
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "הקובץ אינו קובץ ‎.desktop תקין"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "גרסת קובץ שולחן העבודה '%s' אינה מזוהה"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s מופעל"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "היישום אינו מקבל מסמכים משורת הפקודה"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "אפשרות שיגור לא מוכרת: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr "לא ניתן להעביר כתובת מסמך לרשומת שולחן עבודה 'Type=Link'"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "הפריט אינו ניתן לשיגור"
+
+#~ msgid "Disable connection to session manager"
+#~ msgstr "Disable connection to session manager"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Specify file containing saved configuration"
+
+#~ msgid "FILE"
+#~ msgstr "FILE"
+
+#~ msgid "Specify session management ID"
+#~ msgstr "Specify session management ID"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Session management options:"
+#~ msgstr "Session management options:"
+
+#~ msgid "Show session management options"
+#~ msgstr "Show session management options"
+
+#~ msgid "Background"
+#~ msgstr "רקע"
+
+#~ msgid "Could not invoke bulk rename utility"
+#~ msgstr "לא ניתן להפעיל את כלי שינוי השם הקבוצתי"
+
+#~ msgid ""
+#~ "If set to true, then Nautilus will exit when all windows are destroyed. "
+#~ "This is the default setting. If set to false, it can be started without "
+#~ "any window, so nautilus can serve as a daemon to monitor media automount, "
+#~ "or similar tasks."
+#~ msgstr ""
+#~ "If set to true, then Nautilus will exit when all windows are destroyed. "
+#~ "This is the default setting. If set to false, it can be started without "
+#~ "any window, so nautilus can serve as a daemon to monitor media automount, "
+#~ "or similar tasks."
+
+#~ msgid "Nautilus will exit when last window destroyed."
+#~ msgstr "Nautilus will exit when last window destroyed."
+
+#~ msgid "Ask what to do"
+#~ msgstr "הצגת שאלה להמשך ביצוע"
+
+#~ msgid "Do Nothing"
+#~ msgstr "התעלמות"
+
+#~ msgid "Open with other Application..."
+#~ msgstr "פתיחה באמצעות יישום אחר..."
+
+#~ msgid "You have just inserted an Audio CD."
+#~ msgstr "תקליטור שמע הוכנס."
+
+#~ msgid "You have just inserted an Audio DVD."
+#~ msgstr "תקליטור DVD שמע הוכנס."
+
+#~ msgid "You have just inserted a Video DVD."
+#~ msgstr "תקליטור DVD וידאו הוכנס."
+
+#~ msgid "You have just inserted a Video CD."
+#~ msgstr "תקליטור וידאו הוכנס."
+
+#~ msgid "You have just inserted a Super Video CD."
+#~ msgstr "תקליטור סופר־וידאו הוכנס."
+
+#~ msgid "You have just inserted a blank CD."
+#~ msgstr "תקליטור ריק הוכנס."
+
+#~ msgid "You have just inserted a blank DVD."
+#~ msgstr "תקליטור DVD ריק הוכנס."
+
+#~ msgid "You have just inserted a blank Blu-Ray disc."
+#~ msgstr "תקליטור Blu-Ray ריק הוכנס."
+
+#~ msgid "You have just inserted a blank HD DVD."
+#~ msgstr "תקליטור HD DVD ריק הוכנס."
+
+#~ msgid "You have just inserted a Photo CD."
+#~ msgstr "תקליטור תמונות הוכנס."
+
+#~ msgid "You have just inserted a Picture CD."
+#~ msgstr "תקליטור תמונות הוכנס."
+
+#~ msgid "You have just inserted a medium with digital photos."
+#~ msgstr "מדיה עם תמונות דיגיטליות הוכנסה."
+
+#~ msgid "You have just inserted a digital audio player."
+#~ msgstr "נגן שמע דיגיטלי הוכנס."
+
+#~ msgid ""
+#~ "You have just inserted a medium with software intended to be "
+#~ "automatically started."
+#~ msgstr "מדיה המכילה תכנה שאמורה לפעול אוטומטית הוכנסה."
+
+#~ msgid "You have just inserted a medium."
+#~ msgstr "מדיה הוכנסה."
+
+#~ msgid "Choose what application to launch."
+#~ msgstr "יש לבחור איזה יישום לשגר."
+
+#~ msgid ""
+#~ "Select how to open \"%s\" and whether to perform this action in the "
+#~ "future for other media of type \"%s\"."
+#~ msgstr ""
+#~ "נא לבחור כיצד לפתוח את \"%s\" והאם לבצע פעולה זו בעתיד עבור סוגי מדיה "
+#~ "אחרים מסוג ״%s״."
+
+#~ msgid "_Always perform this action"
+#~ msgstr "_תמיד לבצע את פעולה זו"
+
+#~ msgid "Could not set application as the default: %s"
+#~ msgstr "לא ניתן להגדיר כיישום בררת המחדל: %s"
+
+#~ msgid "Default"
+#~ msgstr "בררת מחדל"
+
+#~ msgid "Icon"
+#~ msgstr "סמל"
+
+#~ msgid "No applications selected"
+#~ msgstr "לא נבחרו יישומים"
+
+#~ msgid "Could not find '%s'"
+#~ msgstr "לא ניתן למצוא את '%s'"
+
+#~ msgid "Could not find application"
+#~ msgstr "היישום לא נמצא"
+
+#~ msgid "Could not add application to the application database: %s"
+#~ msgstr "לא ניתן להוסיף את היישום למסד נתוני היישומים: %s"
+
+#~ msgid "Select an Application"
+#~ msgstr "בחירת יישום"
+
+#~ msgid "Select an application to view its description."
+#~ msgstr "נא לבחור יישום כדי לצפות בתיאורו"
+
+#~ msgid "_Use a custom command"
+#~ msgstr "יש לה_שתמש בפקודה מותאמת אישית"
+
+#~ msgid "Open %s and other %s document with:"
+#~ msgstr "פתיחת %s ומסמכים אחרים מסוג %s באמצעות:"
+
+#~ msgid "_Remember this application for %s documents"
+#~ msgstr "יש לה_שתמש קבוע ביישום זה עבור מסמכי %s"
+
+#~ msgid "Open all %s documents with:"
+#~ msgstr "פתיחת כל הקבצים מסוג %s באמצעות:"
+
+#~ msgid "Open %s and other \"%s\" files with:"
+#~ msgstr "פתיחת %s וקבצים אחרים מסוג \"%s\" באמצעות:"
+
+#~ msgid "_Remember this application for \"%s\" files"
+#~ msgstr "יש לה_שתמש קבוע ביישום זה עבור קובצי %s"
+
+#~ msgid "Open all \"%s\" files with:"
+#~ msgstr "פתיחת כל הקבצים מסוג \"%s\" באמצעות:"
+
+#~ msgid "Add Application"
+#~ msgstr "הוספת יישום"
+
+#~ msgid "Open Failed, would you like to choose another application?"
+#~ msgstr "הפתיחה נכשלה, האם ברצונך לבחור ביישום אחר?"
+
+#~ msgid ""
+#~ "\"%s\" cannot open \"%s\" because \"%s\" cannot access files at \"%s\" "
+#~ "locations."
+#~ msgstr ""
+#~ "אין באפשרות \"%s\" לפתוח את \"%s\" כיוון של־\"%s\" אין גישה לקבצים "
+#~ "במיקומים \"%s\"."
+
+#~ msgid "Open Failed, would you like to choose another action?"
+#~ msgstr "פתיחה נכשלה, האם ברצונך לבחור פעולה אחרת?"
+
+# c-format
+#~ msgid ""
+#~ "The default action cannot open \"%s\" because it cannot access files at "
+#~ "\"%s\" locations."
+#~ msgstr ""
+#~ "פעולת בררת המחדל לא יכולה לפתוח את \"%s\" כיוון שאיננה יכולה לגשת לקבצים "
+#~ "במיקומים \"%s\"."
+
+#~ msgid ""
+#~ "No other applications are available to view this file. If you copy this "
+#~ "file onto your computer, you may be able to open it."
+#~ msgstr ""
+#~ "אין יישומים אחר הזמינים להצגת קובץ זה. אם קובץ זה יועתק למחשב שלך, ייתכן "
+#~ "שיהיה באפשרותך לפתוח אותו."
+
+#~ msgid ""
+#~ "No other actions are available to view this file. If you copy this file "
+#~ "onto your computer, you may be able to open it."
+#~ msgstr ""
+#~ "אין פעולות אחרות הזמינות להצגת קובץ זה. אם קובץ זה יועתק למחשב שלך, ייתכן "
+#~ "שיהיה באפשרותך לפתוח אותו."
+
+#~ msgid ""
+#~ "If set to true, then Nautilus will automatically mount media such as user-"
+#~ "visible hard disks and removable media on start-up and media insertion."
+#~ msgstr ""
+#~ "If set to true, then Nautilus will automatically mount media such as user-"
+#~ "visible hard disks and removable media on start-up and media insertion."
+
+#~ msgid ""
+#~ "If set to true, then Nautilus will automatically open a folder when media "
+#~ "is automounted. This only applies to media where no known x-content/* "
+#~ "type was detected; for media where a known x-content type is detected, "
+#~ "the user configurable action will be taken instead."
+#~ msgstr ""
+#~ "If set to true, then Nautilus will automatically open a folder when media "
+#~ "is automounted. This only applies to media where no known x-content/* "
+#~ "type was detected; for media where a known x-content type is detected, "
+#~ "the user configurable action will be taken instead."
+
+#~ msgid ""
+#~ "If set to true, then Nautilus will never prompt nor autorun/autostart "
+#~ "programs when a medium is inserted."
+#~ msgstr ""
+#~ "If set to true, then Nautilus will never prompt nor autorun/autostart "
+#~ "programs when a medium is inserted."
+
+#~ msgid ""
+#~ "List of x-content/* types for which the user have chosen \"Do Nothing\" "
+#~ "in the preference capplet. No prompt will be shown nor will any matching "
+#~ "application be started on insertion of media matching these types."
+#~ msgstr ""
+#~ "List of x-content/* types for which the user have chosen \"Do Nothing\" "
+#~ "in the preference capplet. No prompt will be shown nor will any matching "
+#~ "application be started on insertion of media matching these types."
+
+#~ msgid ""
+#~ "List of x-content/* types for which the user have chosen \"Open Folder\" "
+#~ "in the preferences capplet. A folder window will be opened on insertion "
+#~ "of media matching these types."
+#~ msgstr ""
+#~ "List of x-content/* types for which the user have chosen \"Open Folder\" "
+#~ "in the preferences capplet. A folder window will be opened on insertion "
+#~ "of media matching these types."
+
+#~ msgid ""
+#~ "List of x-content/* types for which the user have chosen to start an "
+#~ "application in the preference capplet. The preferred application for the "
+#~ "given type will be started on insertion on media matching these types."
+#~ msgstr ""
+#~ "List of x-content/* types for which the user have chosen to start an "
+#~ "application in the preference capplet. The preferred application for the "
+#~ "given type will be started on insertion on media matching these types."
+
+#~ msgid "List of x-content/* types set to \"Do Nothing\""
+#~ msgstr "List of x-content/* types set to \"Do Nothing\""
+
+#~ msgid "List of x-content/* types set to \"Open Folder\""
+#~ msgstr "List of x-content/* types set to \"Open Folder\""
+
+#~ msgid ""
+#~ "List of x-content/* types where the preferred application will be launched"
+#~ msgstr ""
+#~ "List of x-content/* types where the preferred application will be launched"
+
+#~ msgid "Never prompt or autorun/autostart programs when media are inserted"
+#~ msgstr "Never prompt or autorun/autostart programs when media are inserted"
+
+#~ msgid "Whether to automatically mount media"
+#~ msgstr "Whether to automatically mount media"
+
+#~ msgid "Whether to automatically open a folder for automounted media"
+#~ msgstr "Whether to automatically open a folder for automounted media"
+
+#~ msgid "Change the behaviour and appearance of file manager windows"
+#~ msgstr "שינוי ההתנהגות והמראה של חלונות מנהל הקבצים"
+
+#~ msgid "File Management"
+#~ msgstr "ניהול קבצים"
+
+#~ msgid "Show Tree"
+#~ msgstr "הצגת עץ"
+
+#~ msgid "<b>Media Handling</b>"
+#~ msgstr "<b>טיפול במדיה</b>"
+
+#~ msgid "<b>Other Media</b>"
+#~ msgstr "<b>מדיה אחרת</b>"
+
+#~ msgid "B_rowse media when inserted"
+#~ msgstr "_עיון במדיה כאשר היא מוכנסת"
+
+#~ msgid "CD _Audio:"
+#~ msgstr "‏תקליטור _שמע:"
+
+#~ msgid ""
+#~ "Choose what happens when inserting media or connecting devices to the "
+#~ "system"
+#~ msgstr "יש לבחור מה יקרה כשמוכנסת מדיה או בחיבור התקנים למערכת"
+
+#~ msgid "Less common media formats can be configured here"
+#~ msgstr "סוגי מדיה פחות נפוצים ניתן להגדיר כאן"
+
+#~ msgid "Media"
+#~ msgstr "מדיה"
+
+#~ msgid "_DVD Video:"
+#~ msgstr "תקליטור _DVD וידאו:"
+
+#~ msgid "_Music Player:"
+#~ msgstr "נגן _מוזיקה:"
+
+#~ msgid "_Never prompt or start programs on media insertion"
+#~ msgstr "_אף פעם אין לפתוח או להפעיל תכנות בהכנסת מדיה"
+
+#~ msgid "_Software:"
+#~ msgstr "_תכנה:"
+
+#~ msgid "History"
+#~ msgstr "היסטוריה"
+
+#~ msgid "Show History"
+#~ msgstr "הצג היסטוריה"
+
+#~ msgid "_Side Pane"
+#~ msgstr "_חלונית צד"
+
+#~ msgid "Notes"
+#~ msgstr "הערות"
+
+#~ msgid "Show Notes"
+#~ msgstr "הצגת הערות"
+
+#~ msgid "Show Places"
+#~ msgstr "הצגת מקומות"
+
+#~ msgid "Close the side pane"
+#~ msgstr "סגירת חלונית הצד"
+
+#~ msgid "If set to true, then Nautilus will draw the icons on the desktop."
+#~ msgstr "If set to true, then Nautilus will draw the icons on the desktop."
+
+#~ msgid "Nautilus handles drawing the desktop"
+#~ msgstr "Nautilus handles drawing the desktop"
+
+#~ msgid ""
+#~ "Color for the default folder background. Only used if background_set is "
+#~ "true."
+#~ msgstr ""
+#~ "Color for the default folder background. Only used if background_set is "
+#~ "true."
+
+#~ msgid "Custom Background"
+#~ msgstr "Custom Background"
+
+#~ msgid "Custom Side Pane Background Set"
+#~ msgstr "Custom Side Pane Background Set"
+
+#~ msgid "Default Background Color"
+#~ msgstr "Default Background Color"
+
+#~ msgid "Default Background Filename"
+#~ msgstr "Default Background Filename"
+
+#~ msgid "Default Side Pane Background Color"
+#~ msgstr "Default Side Pane Background Color"
+
+#~ msgid "Default Side Pane Background Filename"
+#~ msgstr "Default Side Pane Background Filename"
+
+#~ msgid ""
+#~ "Filename for the default side pane background. Only used if "
+#~ "side_pane_background_set is true."
+#~ msgstr ""
+#~ "Filename for the default side pane background. Only used if "
+#~ "side_pane_background_set is true."
+
+#~ msgid ""
+#~ "Uri of the default folder background. Only used if background_set is true."
+#~ msgstr ""
+#~ "Uri of the default folder background. Only used if background_set is true."
+
+#~ msgid ""
+#~ "Uri of the default side pane background. Only used if "
+#~ "side_pane_background_set is true."
+#~ msgstr ""
+#~ "Uri of the default side pane background. Only used if "
+#~ "side_pane_background_set is true."
+
+#~ msgid "Whether a custom default folder background has been set."
+#~ msgstr "Whether a custom default folder background has been set."
+
+#~ msgid "Whether a custom default side pane background has been set."
+#~ msgstr "Whether a custom default side pane background has been set."
+
+#~ msgid "Image/label border"
+#~ msgstr "גבול תמונה/תווית"
+
+#~ msgid "Width of border around the label and image in the alert dialog"
+#~ msgstr "רוחב הגבול סביב התווית והתמונה בדו־שיח התראה"
+
+#~ msgid "Alert Type"
+#~ msgstr "סוג התראה"
+
+#~ msgid "The type of alert"
+#~ msgstr "סוג ההתראה"
+
+#~ msgid "Alert Buttons"
+#~ msgstr "כפתורי התראה"
+
+#~ msgid "The buttons shown in the alert dialog"
+#~ msgstr "הכפתורים שיוצגו בדו־שיח ההתראה"
+
+#~ msgid "Set as background for _all folders"
+#~ msgstr "הגדרה כרקע ל_כל התיקיות"
+
+#~ msgid "Set as background for _this folder"
+#~ msgstr "הגדרה כרקע לתיקייה _זו"
+
+#~ msgid "An older"
+#~ msgstr "ישן יותר"
+
+#~ msgid "A newer"
+#~ msgstr "חדש יותר"
+
+#~ msgid "Another"
+#~ msgstr "אחר"
+
+#~ msgid ""
+#~ "%s folder with the same name already exists in \"%s\".\n"
+#~ "Merging will ask for confirmation before replacing any files in the "
+#~ "folder that conflict with the files being copied."
+#~ msgstr ""
+#~ "תיקיית %s בעלת אותו השם כבר קיימת ב־״%s״.\n"
+#~ "לצורך המיזוג יתבקש אישור בטרם החלפת קבצים כלשהם בתיקייה המתנגשים עם "
+#~ "הקבצים שמועתקים."
+
+#~ msgid "Switch to Manual Layout?"
+#~ msgstr "להחליף לסידור ידני?"
+
+#~ msgid "Cannot display location \"%s\""
+#~ msgstr "לא ניתן להציג את המיקום ״%s״"
+
+#~ msgid "[URI]"
+#~ msgstr "[URI]"
+
+#~ msgid "Custom Location"
+#~ msgstr "מיקום מותאם אישית"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
+#~ msgstr "לא ניתן להתחבר לשרת. יש להכניס שם עבור השרת."
+
+#~ msgid "Please enter a name and try again."
+#~ msgstr "נא לכתוב שם ולנסות שנית."
+
+#~ msgid "_Location (URI):"
+#~ msgstr "_מיקום (URI):"
+
+#~ msgid "Optional information:"
+#~ msgstr "מידע נוסף:"
+
+#~ msgid "Bookmark _name:"
+#~ msgstr "_שם הסימנייה:"
+
+#~ msgid "Service _type:"
+#~ msgstr "_סוג שירות:"
+
+#~ msgid "Add _bookmark"
+#~ msgstr "הו_ספת סימנייה"
+
+#~ msgid ""
+#~ "If you choose to empty the trash, all items in it will be permanently "
+#~ "lost. Please note that you can also delete them separately."
+#~ msgstr ""
+#~ "אם יהיה ברצונך לרוקן את האשפה, כל הפריטים יאבדו לצמיתות. נא לשים לב שניתן "
+#~ "למחוק אותם בנפרד."
+
+#~ msgid "Apparition"
+#~ msgstr "התגלות"
+
+#~ msgid "Azul"
+#~ msgstr "כחול"
+
+#~ msgid "Black"
+#~ msgstr "שחור"
+
+#~ msgid "Blue Ridge"
+#~ msgstr "פסים כחולים"
+
+#~ msgid "Blue Rough"
+#~ msgstr "כחול מחוספס"
+
+#~ msgid "Blue Type"
+#~ msgstr "כתיבה כחולה"
+
+#~ msgid "Brushed Metal"
+#~ msgstr "מתכת מוברשת"
+
+#~ msgid "Bubble Gum"
+#~ msgstr "מסטיק"
+
+#~ msgid "Burlap"
+#~ msgstr "אריג גס"
+
+#~ msgid "C_olors"
+#~ msgstr "_צבעים"
+
+#~ msgid "Camouflage"
+#~ msgstr "צבאי"
+
+#~ msgid "Chalk"
+#~ msgstr "גיר"
+
+#~ msgid "Charcoal"
+#~ msgstr "פחם"
+
+#~ msgid "Concrete"
+#~ msgstr "בטון"
+
+#~ msgid "Cork"
+#~ msgstr "שעם"
+
+#~ msgid "Countertop"
+#~ msgstr "צורות"
+
+#~ msgid "Danube"
+#~ msgstr "דנובה"
+
+#~ msgid "Dark Cork"
+#~ msgstr "שעם כהה"
+
+#~ msgid "Dark GNOME"
+#~ msgstr "GNOME כהה"
+
+#~ msgid "Deep Teal"
+#~ msgstr "טורקיז עמוק"
+
+#~ msgid "Dots"
+#~ msgstr "נקודות"
+
+#~ msgid "Drag a color to an object to change it to that color"
+#~ msgstr "גרור צבע לאובייקט כדי לשנות את צבעו"
+
+#~ msgid "Drag a pattern tile to an object to change it"
+#~ msgstr "גרור דוגמה לאובייקט כדי לשנות אותו"
+
+#~ msgid "Drag an emblem to an object to add it to the object"
+#~ msgstr "גרור סמל לאובייקט כדי להוסיפו לאובייקט"
+
+#~ msgid "Eclipse"
+#~ msgstr "אפל"
+
+#~ msgid "Envy"
+#~ msgstr "ירוק"
+
+#~ msgid "Erase"
+#~ msgstr "מחק"
+
+#~ msgid "Fibers"
+#~ msgstr "סיבים"
+
+#~ msgid "Fire Engine"
+#~ msgstr "מנוע אש"
+
+#~ msgid "Fleur De Lis"
+#~ msgstr "Fleur De Lis"
+
+#~ msgid "Floral"
+#~ msgstr "פרחוני"
+
+#~ msgid "Fossil"
+#~ msgstr "מאובן"
+
+#~ msgid "GNOME"
+#~ msgstr "GNOME"
+
+#~ msgid "Granite"
+#~ msgstr "גרניט"
+
+#~ msgid "Grapefruit"
+#~ msgstr "אשכולית"
+
+#~ msgid "Green Weave"
+#~ msgstr "טווייה ירוקה"
+
+#~ msgid "Ice"
+#~ msgstr "קרח"
+
+#~ msgid "Indigo"
+#~ msgstr "כחול כהה"
+
+#~ msgid "Leaf"
+#~ msgstr "עלה"
+
+#~ msgid "Lemon"
+#~ msgstr "לימון"
+
+#~ msgid "Mango"
+#~ msgstr "מנגו"
+
+#~ msgid "Manila Paper"
+#~ msgstr "נייר מנילה"
+
+#~ msgid "Moss Ridge"
+#~ msgstr "פסי אזוב"
+
+#~ msgid "Mud"
+#~ msgstr "בוץ"
+
+#~ msgid "Numbers"
+#~ msgstr "מספרים"
+
+#~ msgid "Ocean Strips"
+#~ msgstr "רצועות אוקיינוס"
+
+#~ msgid "Onyx"
+#~ msgstr "שהם"
+
+#~ msgid "Pale Blue"
+#~ msgstr "כחול חיוור"
+
+#~ msgid "Purple Marble"
+#~ msgstr "שיש סגול"
+
+#~ msgid "Ridged Paper"
+#~ msgstr "נייר מפוספס"
+
+#~ msgid "Rough Paper"
+#~ msgstr "נייר מקומט"
+
+#~ msgid "Ruby"
+#~ msgstr "רובי"
+
+#~ msgid "Sea Foam"
+#~ msgstr "קצף ים"
+
+#~ msgid "Shale"
+#~ msgstr "צפחה"
+
+#~ msgid "Silver"
+#~ msgstr "כסף"
+
+#~ msgid "Sky"
+#~ msgstr "שמיים"
+
+#~ msgid "Sky Ridge"
+#~ msgstr "פסי שמיים"
+
+#~ msgid "Snow Ridge"
+#~ msgstr "פסי שלג"
+
+#~ msgid "Stucco"
+#~ msgstr "קישוטי טייח"
+
+#~ msgid "Tangerine"
+#~ msgstr "מנדרינה"
+
+#~ msgid "Terracotta"
+#~ msgstr "ריצוף"
+
+#~ msgid "Violet"
+#~ msgstr "סגול"
+
+#~ msgid "Wavy White"
+#~ msgstr "לבן גלי"
+
+#~ msgid "White"
+#~ msgstr "לבן"
+
+#~ msgid "White Ribs"
+#~ msgstr "צלעות לבנים"
+
+#~ msgid "_Emblems"
+#~ msgstr "_סמלים"
+
+#~ msgid "_Patterns"
+#~ msgstr "_דוגמאות"
+
+#~ msgid ""
+#~ "GConf error:\n"
+#~ "  %s"
+#~ msgstr ""
+#~ "שגיאת GConf:\n"
+#~ "  %s"
+
+#~ msgid "GConf error: %s"
+#~ msgstr "שגיאת GConf: %s"
+
+#~ msgid "All further errors shown only on terminal."
+#~ msgstr "כל שאר השגיאות מופיעות רק במסוף."
+
+#~ msgid "Criteria for search bar searching"
+#~ msgstr "Criteria for search bar searching"
+
+#~ msgid ""
+#~ "Criteria when matching files searched for in the search bar. If set to "
+#~ "\"search_by_text\", then Nautilus will Search for files by file name "
+#~ "only. If set to \"search_by_text_and_properties\", then Nautilus will "
+#~ "search for files by file name and file properties."
+#~ msgstr ""
+#~ "Criteria when matching files searched for in the search bar. If set to "
+#~ "\"search_by_text\", then Nautilus will Search for files by file name "
+#~ "only. If set to \"search_by_text_and_properties\", then Nautilus will "
+#~ "search for files by file name and file properties."
+
+#~ msgid "Current Nautilus theme (deprecated)"
+#~ msgstr "Current Nautilus theme (deprecated)"
+
+#~ msgid ""
+#~ "Filename for the default folder background. Only used if background_set "
+#~ "is true."
+#~ msgstr ""
+#~ "Filename for the default folder background. Only used if background_set "
+#~ "is true."
+
+#~ msgid ""
+#~ "Folders over this size will be truncated to around this size. The purpose "
+#~ "of this is to avoid unintentionally blowing the heap and killing Nautilus "
+#~ "on massive folders. A negative value denotes no limit. The limit is "
+#~ "approximate due to the reading of folders chunk-wise."
+#~ msgstr ""
+#~ "Folders over this size will be truncated to around this size. The purpose "
+#~ "of this is to avoid unintentionally blowing the heap and killing Nautilus "
+#~ "on massive folders. A negative value denotes no limit. The limit is "
+#~ "approximate due to the reading of folders chunk-wise."
+
+#~ msgid ""
+#~ "If set to true, then backup files such as those created by Emacs are "
+#~ "displayed. Currently, only files ending in a tilde (~) are considered "
+#~ "backup files."
+#~ msgstr ""
+#~ "If set to true, then backup files such as those created by Emacs are "
+#~ "displayed. Currently, only files ending in a tilde (~) are considered "
+#~ "backup files."
+
+#~ msgid ""
+#~ "If true, files in new windows will be sorted in reverse order. ie, if "
+#~ "sorted by name, then instead of sorting the files from \"a\" to \"z\", "
+#~ "they will be sorted from \"z\" to \"a\"."
+#~ msgstr ""
+#~ "If true, files in new windows will be sorted in reverse order. ie, if "
+#~ "sorted by name, then instead of sorting the files from \"a\" to \"z\", "
+#~ "they will be sorted from \"z\" to \"a\"."
+
+#~ msgid "If true, new windows will use manual layout by default."
+#~ msgstr "If true, new windows will use manual layout by default."
+
+#~ msgid "Maximum handled files in a folder"
+#~ msgstr "Maximum handled files in a folder"
+
+#~ msgid ""
+#~ "Name of the Nautilus theme to use. This has been deprecated as of "
+#~ "Nautilus 2.2. Please use the icon theme instead."
+#~ msgstr ""
+#~ "Name of the Nautilus theme to use. This has been deprecated as of "
+#~ "Nautilus 2.2. Please use the icon theme instead."
+
+#~ msgid "Sans 10"
+#~ msgstr "Sans 10"
+
+#~ msgid ""
+#~ "The default sort-order for items in the icon view. Possible values are "
+#~ "\"name\", \"size\", \"type\", \"modification_date\", and \"emblems\"."
+#~ msgstr ""
+#~ "The default sort-order for items in the icon view. Possible values are "
+#~ "\"name\", \"size\", \"type\", \"modification_date\", and \"emblems\"."
+
+#~ msgid "Use manual layout in new windows"
+#~ msgstr "Use manual layout in new windows"
+
+#~ msgid "Whether to show backup files"
+#~ msgstr "Whether to show backup files"
+
+#~ msgid "The emblem cannot be installed."
+#~ msgstr "הסמל לא יכול להיות מותקן."
+
+#~ msgid "Sorry, but you must specify a non-blank keyword for the new emblem."
+#~ msgstr "מצטער, אך אתה חייב לציין שם לא ריק לסמל החדש."
+
+#~ msgid ""
+#~ "Sorry, but emblem keywords can only contain letters, spaces and numbers."
+#~ msgstr "מצטער, אך שם הסמל יכול להכיל רק אותיות רווחים ומספרים."
+
+#~ msgid "Sorry, but there is already an emblem named \"%s\"."
+#~ msgstr "מצטער, אך כבר קיים סמל בשם \"%s\"."
+
+#~ msgid "Please choose a different emblem name."
+#~ msgstr "אנא בחר שם סמל אחר."
+
+#~ msgid "Sorry, unable to save custom emblem."
+#~ msgstr "מצטער, לא ניתן לשמור סמל מותאם אישית."
+
+#~ msgid "Sorry, unable to save custom emblem name."
+#~ msgstr "מצטער, לא ניתן לשמור שם סמל מותאם אישית."
+
+#~ msgid "_Always"
+#~ msgstr "_תמיד"
+
+#~ msgid "_Local File Only"
+#~ msgstr "_קבצים מקומיים בלבד"
+
+#~ msgid "25%"
+#~ msgstr "25%"
+
+#~ msgid "75%"
+#~ msgstr "75%"
+
+#~ msgid "100 K"
+#~ msgstr "100 K"
+
+#~ msgid "500 K"
+#~ msgstr "500 K"
+
+#~ msgid "Activate items with a _single click"
+#~ msgstr "הפעל פריטים עם לחיצה _בודדת"
+
+#~ msgid "Activate items with a _double click"
+#~ msgstr "הפעל פריטים עם לחיצה _כפולה"
+
+#~ msgid "E_xecute files when they are clicked"
+#~ msgstr "ה_פעל פריטים כשלוחצים עליהם"
+
+#~ msgid "Display _files when they are clicked"
+#~ msgstr "הצג _קבצים כשלוחצים עליהם"
+
+#~ msgid "Search for files by file name only"
+#~ msgstr "חפש קבצים לפי שם הקובץ בלבד"
+
+#~ msgid "Search for files by file name and file properties"
+#~ msgstr "חפש קבצים לפי שם הקובץ ומאפייניו"
+
+#~ msgid "Manually"
+#~ msgstr "ידנית"
+
+#~ msgid "By Emblems"
+#~ msgstr "לפי סמלים"
+
+#~ msgid "8"
+#~ msgstr "8"
+
+#~ msgid "10"
+#~ msgstr "10"
+
+#~ msgid "12"
+#~ msgstr "12"
+
+#~ msgid "14"
+#~ msgstr "14"
+
+#~ msgid "16"
+#~ msgstr "16"
+
+#~ msgid "18"
+#~ msgstr "18"
+
+#~ msgid "20"
+#~ msgstr "20"
+
+#~ msgid "22"
+#~ msgstr "22"
+
+#~ msgid "24"
+#~ msgstr "24"
+
+#~ msgid "The folder \"%s\" contains more files than Nautilus can handle."
+#~ msgstr ""
+#~ "התיקייה \"%s\" מכילה יותר קבצים ממספר הקבצים המקסימלי שבו יכול Nautilus "
+#~ "לטפל."
+
+#~ msgid "Some files will not be displayed."
+#~ msgstr "חלק מהקבצים לא יוצגו."
+
+#~ msgid "by _Emblems"
+#~ msgstr "לפי _סמלים"
+
+#~ msgid "Keep icons sorted by emblems in rows"
+#~ msgstr "משאיר איקונים ממוינים לפי סמלים בשורות"
+
+#~ msgid "By _Emblems"
+#~ msgstr "לפי ס_מלים"
+
+#~ msgid "Emblems"
+#~ msgstr "סמלים"
+
+#~ msgid "Could not remove emblem with name '%s'."
+#~ msgstr "לא ניתן להסיר את הסמל עם השם '%s'."
+
+#~ msgid ""
+#~ "This is probably because the emblem is a permanent one, and not one that "
+#~ "you added yourself."
+#~ msgstr "זה כנראה כיוון שזהו סמל קבוע, ולא אחד שהוספת בעצמך."
+
+#~ msgid "Could not rename emblem with name '%s'."
+#~ msgstr "לא ניתן לשנות את שם הסמל עם השם '%s'."
+
+#~ msgid "Rename Emblem"
+#~ msgstr "שינוי שם הסמל"
+
+#~ msgid "Enter a new name for the displayed emblem:"
+#~ msgstr "נא להזין שם חדש לסמל המוצג:"
+
+#~ msgid "Add Emblems..."
+#~ msgstr "הוספת סמלים..."
+
+#~ msgid ""
+#~ "Enter a descriptive name next to each emblem.  This name will be used in "
+#~ "other places to identify the emblem."
+#~ msgstr ""
+#~ "הכנס שם מתאר ליד כל סמל.  שם זה יופיע במקומות שונים כדי לזהות את הסמל."
+
+#~ msgid ""
+#~ "Enter a descriptive name next to the emblem.  This name will be used in "
+#~ "other places to identify the emblem."
+#~ msgstr ""
+#~ "הכנס שם מתאר ליד הסמל.  שם זה יופיע במקומות שונים כדי לזהות את הסמל."
+
+#~ msgid "Some of the files could not be added as emblems."
+#~ msgstr "חלק מהקבצים לא יכלו להתווסף כסמלים."
+
+#~ msgid "The emblems do not appear to be valid images."
+#~ msgstr "לא נראה כי הסמלים הם תמונות חוקיות."
+
+#~ msgid "None of the files could be added as emblems."
+#~ msgstr "אף אחד מהקבצים לא נוסף כסמל."
+
+#~ msgid "The file '%s' does not appear to be a valid image."
+#~ msgstr "הקובץ '%s' איננו תמונה תקנית."
+
+#~ msgid "The dragged file does not appear to be a valid image."
+#~ msgstr "הקובץ הנגרר איננו תמונה תקנית."
+
+#~ msgid "The emblem cannot be added."
+#~ msgstr "הסמל לא יכל להתווסף."
+
+#~ msgid "Show Emblems"
+#~ msgstr "הצגת סמלים"
+
+#~ msgid "Information"
+#~ msgstr "מידע"
+
+#~ msgid "Show Information"
+#~ msgstr "הצג מידע"
+
+#~ msgid "Use _Default Background"
+#~ msgstr "השתמש ברקע _ברירת מחדל"
+
+#~ msgid "You cannot assign more than one custom icon at a time."
+#~ msgstr "לא ניתן לשייך יותר מאיקון מותאם אישית אחד בכל זמן."
+
+#~ msgid "You can only use images as custom icons."
+#~ msgstr "ניתן להשתמש רק בתמונות כאיקונים מותאמים אישית."
+
+#~ msgid "Backgrounds and Emblems"
+#~ msgstr "רקעים וסמלים"
+
+#~ msgid "_Remove..."
+#~ msgstr "_הסר..."
+
+#~ msgid "Add new..."
+#~ msgstr "הוסף חדש..."
+
+#~ msgid "Sorry, but pattern %s could not be deleted."
+#~ msgstr "מצטער, אך הדוגמה %s לא יכולה להימחק."
+
+#~ msgid "Check that you have permission to delete the pattern."
+#~ msgstr "בדוק שיש לך הרשאות למחוק את הדוגמה."
+
+#~ msgid "Sorry, but emblem %s could not be deleted."
+#~ msgstr "מצטער, אך הסמל %s לא יכול להימחק."
+
+#~ msgid "Check that you have permission to delete the emblem."
+#~ msgstr "בדוק שיש לך הרשאות למחוק את הסמל."
+
+#~ msgid "Select an Image File for the New Emblem"
+#~ msgstr "בחר קובץ תמונה לסמל החדש:"
+
+#~ msgid "Create a New Emblem"
+#~ msgstr "צור סמל חדש"
+
+#~ msgid "_Keyword:"
+#~ msgstr "_מילת מפתח:"
+
+#~ msgid "_Image:"
+#~ msgstr "_תמונה:"
+
+#~ msgid "Create a New Color:"
+#~ msgstr "צור צבע חדש:"
+
+#~ msgid "Color _name:"
+#~ msgstr "_שם הצבע:"
+
+#~ msgid "Color _value:"
+#~ msgstr "_ערך הצבע:"
+
+#~ msgid "Sorry, but you cannot replace the reset image."
+#~ msgstr "מצטער, אך אינך יכול להחליף את תמונת האיפוס."
+
+#~ msgid "Reset is a special image that cannot be deleted."
+#~ msgstr "קבע מחדש זו תמונה מיוחדת שלא יכולה להמחק."
+
+#~ msgid "Sorry, but the pattern %s could not be installed."
+#~ msgstr "מצטער, אך הדוגמה %s לא יכולה להיות מותקנת."
+
+#~ msgid "Select an Image File to Add as a Pattern"
+#~ msgstr "בחר קובץ תמונה להוספה כתבנית"
+
+#~ msgid "The color cannot be installed."
+#~ msgstr "הצבע לא יכול להיות מותקן."
+
+#~ msgid "Sorry, but you must specify an unused color name for the new color."
+#~ msgstr "מצטער, אך אתה חייב לציין שם שלא בשימוש לצבע החדש."
+
+#~ msgid "Sorry, but you must specify a non-blank name for the new color."
+#~ msgstr "מצטער, אך אתה חייב לציין שם לא ריק לצבע החדש."
+
+#~ msgid "Select a Color to Add"
+#~ msgstr "בחר צבע להוספה"
+
+#~ msgid "Sorry, but \"%s\" is not a usable image file."
+#~ msgstr "מצטער, אך \"%s\" אינו קובץ תמונה שימושי."
+
+#~ msgid "Select a Category:"
+#~ msgstr "בחר קטגוריה:"
+
+#~ msgid "C_ancel Remove"
+#~ msgstr "_בטל הסרה"
+
+#~ msgid "_Add a New Pattern..."
+#~ msgstr "_הוסף דוגמה חדשה..."
+
+#~ msgid "_Add a New Color..."
+#~ msgstr "_הוסף צבע חדש..."
+
+#~ msgid "_Add a New Emblem..."
+#~ msgstr "_הוסף סמל חדש..."
+
+#~ msgid "Click on a pattern to remove it"
+#~ msgstr "לחץ על דוגמה כדי להסירה"
+
+#~ msgid "Click on a color to remove it"
+#~ msgstr "לחץ על צבע כדי להסירו"
+
+#~ msgid "Click on an emblem to remove it"
+#~ msgstr "לחץ על סמל כדי להסירו"
+
+#~ msgid "Patterns:"
+#~ msgstr "דוגמאות:"
+
+#~ msgid "Colors:"
+#~ msgstr "צבעים:"
+
+#~ msgid "Emblems:"
+#~ msgstr "סמלים:"
+
+#~ msgid "_Remove a Pattern..."
+#~ msgstr "_הסר דוגמה..."
+
+#~ msgid "_Remove a Color..."
+#~ msgstr "_הסר צבע..."
+
+#~ msgid "_Remove an Emblem..."
+#~ msgstr "_הסר סמל..."
+
+#~ msgid "_Backgrounds and Emblems..."
+#~ msgstr "_רקעים וסמלים..."
+
+#~ msgid ""
+#~ "Display patterns, colors, and emblems that can be used to customize "
+#~ "appearance"
+#~ msgstr "מציג דוגמאות, צבעים וסמלים שיכולים לשמש להתאמה אישית של המראה"
+
+#~ msgid "Could not use system package installer"
+#~ msgstr "לא ניתן להשתמש במתקין חבילות המערכת"
+
+#~ msgid "Clean _Up by Name"
+#~ msgstr "_נקה לפי שם"
+
+#~ msgid ""
+#~ "If set to true, then multiple views can be opened in one browser window, "
+#~ "each in a separate tab."
+#~ msgstr ""
+#~ "If set to true, then multiple views can be opened in one browser window, "
+#~ "each in a separate tab."
+
+#~ msgid "Whether to enable tabs in Nautilus browser windows"
+#~ msgstr "Whether to enable tabs in Nautilus browser windows"
+
+#~ msgid ""
+#~ "A folder named \"%B\" already exists.  Do you want to merge the source "
+#~ "folder?"
+#~ msgstr "התיקייה \"%B\" כבר קיימת.  האם ברצונך למזג עם תיקיית המקור?"
+
+#~ msgid "A folder named \"%B\" already exists.  Do you want to replace it?"
+#~ msgstr "התיקייה \"%B\" כבר קיימת.  האם ברצונך להחליפה?"
+
+#~ msgid "A file named \"%B\" already exists.  Do you want to replace it?"
+#~ msgstr "הקובץ \"%B\" כבר קיים.  האם ברצונך להחליפו?"
+
+#~ msgid "Always open in _browser windows"
+#~ msgstr "פתח תמיד בחלונות _דפדפן"
+
+#~ msgid "Toggle between button and text-based location bar"
+#~ msgstr "בחר אם להשתמש בתיבת מיקום מבוססת טקסט או כפתורים"
+
+#~ msgid "throbber"
+#~ msgstr "סמלון"
+
+#~ msgid "provides visual status"
+#~ msgstr "מספק מצב נראה"
+
+#~| msgid "Format the selected volume"
+#~ msgid "Start the select drive"
+#~ msgstr "התחל את הכונן הנבחר"
+
+#~ msgid ""
+#~ "Whether to present the user a dialog to search using the package "
+#~ "installer for an application that can open an unknown mime type."
+#~ msgstr ""
+#~ "Whether to present the user a dialog to search using the package "
+#~ "installer for an application that can open an unknown mime type."
+
+#~ msgid "Open with \"%s\""
+#~ msgstr "פתיחה באמצעות \"%s\""
+
+#~ msgid "_Mount Volume"
+#~ msgstr "_חבר כרך"
+
+#~ msgid "_Unmount Volume"
+#~ msgstr "_נתק כרך"
+
+#~ msgid "_Eject Volume"
+#~ msgstr "_הוצא כרך"
+
+#~ msgid "_Open with \"%s\""
+#~ msgstr "_פתח באמצעות \"%s\""
+
+#~ msgid "_Rescan"
+#~ msgstr "_סרוק מחדש"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "%'d file left to delete — %T left"
+#~ msgid_plural "%'d files left to delete — %T left"
+#~ msgstr[0] "נשאר קובץ אחד למחיקה — %T נותרו"
+#~ msgstr[1] "נשארו %d קבצים למחיקה — %T נותרו"
+
+#~ msgid "MIME type description (MIME type)|%s (%s)"
+#~ msgstr "‏%s ‏(‏%s‏)"
+
+#~ msgid "CD/_DVD Creator"
+#~ msgstr "יוצר _תקליטורים"
+
+#~ msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+#~ msgstr "פתח תיקייה אליה ניתן לגרור קבצים לצריבה על גבי תקליטור"
+
+#, fuzzy
+#~ msgid "Opening %d Item"
+#~ msgid_plural "Opening %d Items"
+#~ msgstr[0] ""
+#~ "#-#-#-#-#  he.po (nautilus.HEAD.he)  #-#-#-#-#\n"
+#~ "פותח פריט %d\n"
+#~ "#-#-#-#-#  he.po (eel.HEAD.he)  #-#-#-#-#\n"
+#~ "פותח פריט אחד"
+#~ msgstr[1] ""
+#~ "#-#-#-#-#  he.po (nautilus.HEAD.he)  #-#-#-#-#\n"
+#~ "פותח %d פריטים\n"
+#~ "#-#-#-#-#  he.po (eel.HEAD.he)  #-#-#-#-#\n"
+#~ "פותח %d פריטים"
+
+#~ msgid "No image was selected."
+#~ msgstr "אף תמונה לא נבחרה."
+
+#~ msgid "You must click on an image to select it."
+#~ msgstr "אתה חייב ללחוץ על תמונה כדי לבחור אותה."
+
+#~ msgid "Factory for Nautilus shell and file manager"
+#~ msgstr "יצרן למעטפת Nautilus ולמנהל הקבצים"
+
+#~ msgid "Nautilus factory"
+#~ msgstr "יצרן Nautilus"
+
+#~ msgid "Nautilus instance"
+#~ msgstr "מופע Nautilus"
+
+#~ msgid "Nautilus metafile factory"
+#~ msgstr "יצרן קבצי META של Nautilus"
+
+#~ msgid ""
+#~ "Nautilus operations that can be done from subsequent command-line "
+#~ "invocations"
+#~ msgstr ""
+#~ "Nautilus operations that can be done from subsequent command-line "
+#~ "invocations"
+
+#~ msgid "Produces metafile objects for accessing Nautilus metadata"
+#~ msgstr "Produces metafile objects for accessing Nautilus metadata"
+
+#~ msgid ""
+#~ "Nautilus cannot be used now. Running the command \"bonobo-slay\" from the "
+#~ "console may fix the problem. If not, you can try rebooting the computer "
+#~ "or installing Nautilus again."
+#~ msgstr ""
+#~ "‏Nautilus לא יכול לפעול כרגע. הרצת הפקודה \"bonobo-slay\" מהמסוף עשויה "
+#~ "לפתור את הבעיה. אם לא, אתה יכול לנסות להפעיל מחדש את המחשב או להתקין את "
+#~ "Nautilus שוב."
+
+#~ msgid ""
+#~ "Nautilus cannot be used now. Running the command \"bonobo-slay\" from the "
+#~ "console may fix the problem. If not, you can try rebooting the computer "
+#~ "or installing Nautilus again.\n"
+#~ "\n"
+#~ "Bonobo could not locate the Nautilus_shell.server file. One cause of this "
+#~ "seems to be an LD_LIBRARY_PATH that does not include the bonobo-"
+#~ "activation library's directory. Another possible cause would be bad "
+#~ "install with a missing Nautilus_Shell.server file.\n"
+#~ "\n"
+#~ "Running \"bonobo-slay\" will kill all Bonobo Activation and GConf "
+#~ "processes, which may be needed by other applications.\n"
+#~ "\n"
+#~ "Sometimes killing bonobo-activation-server and gconfd fixes the problem, "
+#~ "but we do not know why.\n"
+#~ "\n"
+#~ "We have also seen this error when a faulty version of bonobo-activation "
+#~ "was installed."
+#~ msgstr ""
+#~ "‏Nautilus לא יכול לפעול כרגע. הרצת הפקודה \"bonobo-slay\" מהמסוף עשויה "
+#~ "לפתור את הבעיה. אם לא, אתה יכול לנסות להפעיל מחדש את המחשב או להתקין את "
+#~ "Nautilus שוב.\n"
+#~ "‏הקובץ Nautilus_shell.server לא נמצא. גורם אפשרי לזה יכול להיות ש "
+#~ "LD_LIBRARY_PATH לא מכיל את תיקיית הספריות של bonobo-activation. גורם נוסף "
+#~ "אחר יכול להיות התקנה גרועה ללא הקובץ Nautilus_Shell.server\n"
+#~ "\n"
+#~ "הפעלת \"bonobo-slay\" תהרוג את כל התהליכים של Bonobo Activation ו GConf, "
+#~ "שעשויים להיות דרושים ליישומים אחרים.\n"
+#~ "\n"
+#~ "לפעמים הריגת שרת bonobo-activation ו gconfd מתקנת את הבעיה, אך איננו "
+#~ "יודעים מדוע.\n"
+#~ "\n"
+#~ "ראינו את השגיאה הזו מתרחשת גם כשהותקנה גירסה שגוייה של bonobo-activation."
+
+#~ msgid "Nautilus cannot be used now, due to an unexpected error."
+#~ msgstr "Nautilus לא יכול לפעול כרגע, בגלל שגיאה לא צפויה."
+
+#~ msgid ""
+#~ "Nautilus cannot be used now, due to an unexpected error from Bonobo when "
+#~ "attempting to register the file manager view server."
+#~ msgstr ""
+#~ "לא ניתן להשתמש ב-Nautilus כרגע, עקב שגיאה לא צפויה מ Bonobo בניסיון לרשום "
+#~ "את שרת תצוגת מנהל הקבצים."
+
+#~ msgid ""
+#~ "Nautilus cannot be used now, due to an unexpected error from Bonobo when "
+#~ "attempting to locate the factory. Killing bonobo-activation-server and "
+#~ "restarting Nautilus may help fix the problem."
+#~ msgstr ""
+#~ "לא ניתן להשתמש ב-Nautilus כרגע, עקב שגיאה לא צפויה מ Bonobo בניסיון לאתר "
+#~ "את המפעל. הריגת bonobo-activation-server והפעלת Nautilus מחדש עשויים לתקן "
+#~ "את הבעיה."
+
+#~ msgid ""
+#~ "Nautilus cannot be used now, due to an unexpected error from Bonobo when "
+#~ "attempting to locate the shell object. Killing bonobo-activation-server "
+#~ "and restarting Nautilus may help fix the problem."
+#~ msgstr ""
+#~ "לא ניתן להשתמש ב-Nautilus כרגע, עקב שגיאה לא צפויה מ Bonobo בניסיון לאתר "
+#~ "את אובייקט המעטפת. הריגת שרת bonobo-activation והפעלת Nautilus מחדש "
+#~ "עשויים לתקן את הבעיה."
+
+#~ msgid ""
+#~ "100 KB\n"
+#~ "500 KB\n"
+#~ "1 MB\n"
+#~ "3 MB\n"
+#~ "5 MB\n"
+#~ "10 MB\n"
+#~ "100 MB\n"
+#~ "1 GB"
+#~ msgstr ""
+#~ "100 KB\n"
+#~ "500 KB\n"
+#~ "1 MB\n"
+#~ "3 MB\n"
+#~ "5 MB\n"
+#~ "10 MB\n"
+#~ "100 MB\n"
+#~ "1 GB"
+
+#~ msgid ""
+#~ "33%\n"
+#~ "50%\n"
+#~ "66%\n"
+#~ "100%\n"
+#~ "150%\n"
+#~ "200%\n"
+#~ "400%"
+#~ msgstr ""
+#~ "33%\n"
+#~ "50%\n"
+#~ "66%\n"
+#~ "100%\n"
+#~ "150%\n"
+#~ "200%\n"
+#~ "400%"
+
+#~ msgid ""
+#~ "Always\n"
+#~ "Local Files Only\n"
+#~ "Never"
+#~ msgstr ""
+#~ "תמיד\n"
+#~ "קבצים מקומיים בלבד\n"
+#~ "לעולם לא"
+
+#~ msgid ""
+#~ "By Name\n"
+#~ "By Size\n"
+#~ "By Type\n"
+#~ "By Modification Date\n"
+#~ "By Emblems"
+#~ msgstr ""
+#~ "לפי שם\n"
+#~ "לפי גודל\n"
+#~ "לפי סוג\n"
+#~ "לפי תאריך שינוי\n"
+#~ "לפי סמלים"
+
+#~ msgid ""
+#~ "Icon View\n"
+#~ "List View\n"
+#~ "Compact View"
+#~ msgstr ""
+#~ "תצוגת איקונים\n"
+#~ "תצוגת רשימה\n"
+#~ "תצוגה קומפקטית"
+
+#~ msgid "Restart Nautilus."
+#~ msgstr "Restart Nautilus.."
+
+#~ msgid ""
+#~ "Load a saved session from the specified file. Implies \"--no-default-"
+#~ "window\"."
+#~ msgstr ""
+#~ "Load a saved session from the specified file. Implies \"--no-default-"
+#~ "window\"."
+
+#~ msgid "Sorry, but \"%s\" is not a valid file name."
+#~ msgstr "מצטער, אך \"%s\" אינו שם תקני."
+
+#~ msgid "Sorry, but you did not supply a valid file name."
+#~ msgstr "מצטער, אך לא סיפקת שם תקני."
+
+#~ msgid "Please try again."
+#~ msgstr "אנא נסה שנית."
+
+#~ msgid ""
+#~ "Nautilus is a graphical shell for GNOME that makes it easy to manage your "
+#~ "files and the rest of your system."
+#~ msgstr ""
+#~ "‏Nautilus הינו מעטפת גרפית עבור GNOME שמקלה את ניהול קבציך ושאר המערכת."
+
+#~ msgid "Blank Blu-Ray Disc"
+#~ msgstr "דיסק Blu-Ray ריק"
+
+#~ msgid "Blank CD Disc"
+#~ msgstr "דיסק CD ריק"
+
+#~ msgid "Blank DVD Disc"
+#~ msgstr "דיסק DVD ריק"
+
+#~ msgid "Blank HD DVD Disc"
+#~ msgstr "דיסק HD DVD ריק"
+
+#~ msgid "Blu-Ray Video"
+#~ msgstr "‏Blu-Ray וידאו"
+
+#~ msgid "Compact Disc Audio"
+#~ msgstr "‏CD אודיו"
+
+#~ msgid "DVD Audio"
+#~ msgstr "‏DVD אודיו"
+
+#~ msgid "DVD Video"
+#~ msgstr "‏DVD וידאו"
+
+#~ msgid "Digital Photos"
+#~ msgstr "תמונות דיגיטליות"
+
+#~ msgid "HD DVD Video"
+#~ msgstr "‏HD-DVD וידאו"
+
+#~ msgid "Portable Audio Player"
+#~ msgstr "נגן אודיו נייד"
+
+#~ msgid "List of x-content/* types to ask the user what to do on insertion."
+#~ msgstr "List of x-content/* types to ask the user what to do on insertion."
+
+#~ msgid ""
+#~ "List of x-content/* types where a folder window should be opened on "
+#~ "insertion."
+#~ msgstr ""
+#~ "List of x-content/* types where a folder window should be opened on "
+#~ "insertion."
+
+#~ msgid "List of x-content/* where to prompt the user on insertion"
+#~ msgstr "List of x-content/* where to prompt the user on insertion"
+
+#~ msgid "E_ject"
+#~ msgstr "הו_צא"
+
+#~ msgid "Are you sure you want to forget history?"
+#~ msgstr "אתה בטוח שברצונך לשכוח את ההיסטוריה?"
+
+#~ msgid "If you do, you will be doomed to repeat it."
+#~ msgstr "אם כן, אתה תינדן לחזור עליה."
+
+#~ msgid "Show the contents in more detail"
+#~ msgstr "הצג את התוכן ביתר פירוט"
+
+#~ msgid "Show the contents in less detail"
+#~ msgstr "הצג את התוכן בפחות פירוט"
+
+#~ msgid "Show in the default detail level"
+#~ msgstr "הצג בגודל ברירת המחדל"
+
+#~ msgid "Select Pattern"
+#~ msgstr "בחר דוגמה"
+
+#~ msgid "Select _Pattern"
+#~ msgstr "בחר _דוגמה"
+
+#~ msgid "Launcher"
+#~ msgstr "משגר"
+
+#~ msgid "MIME type:"
+#~ msgstr "סוג MIME:"
+
+#~ msgid "_Show"
+#~ msgstr "ה_צג"
+
+#~ msgid "Hi_de"
+#~ msgstr "ה_סתר"
+
+#~ msgid "View as Desktop"
+#~ msgstr "הצג כשולחן עבודה"
+
+#~ msgid "View as _Desktop"
+#~ msgstr "הצג כ_שולחן עבודה"
+
+#~ msgid "View as Icons"
+#~ msgstr "הצג כסמלים"
+
+#~ msgid "View as _Icons"
+#~ msgstr "הצג כ_סמלים"
+
+#~ msgid "View as _List"
+#~ msgstr "הצג כ_רשימה"
+
+#~ msgid ""
+#~ "Existence of this file indicates that the Nautilus configuration druid\n"
+#~ "has been presented.\n"
+#~ "\n"
+#~ "You can manually erase this file to present the druid again.\n"
+#~ msgstr ""
+#~ "הקיום של הקובץ הזה מסמל שאשף ההתקנה של Nautilus\n"
+#~ "כבר הורץ.\n"
+#~ "\n"
+#~ "אתה יכול למחוק קובץ זה ידנית כדי להציג את האשף שוב.\n"
+
+#~ msgid "%s %ld of %ld %s"
+#~ msgstr "%s %ld מתוך %ld %s"
+
+#~ msgid "(%d:%02d:%02d Remaining)"
+#~ msgstr "(%d:%02d:%02d נותרו)"
+
+#~ msgid "(%d:%02d Remaining)"
+#~ msgstr "(נותרו %d:%02d)"
+
+#~ msgid ""
+#~ "Can't find description even for \"x-directory/normal\". This probably "
+#~ "means that your gnome-vfs.keys file is in the wrong place or isn't being "
+#~ "found for some other reason."
+#~ msgstr ""
+#~ "לא הצלחתי למצוא הגדרה אפילו עבור \"x-directory/normal\". זה ככל הנראה "
+#~ "אומר שהקובץ gnome-vfs.keys נמצא במקום הלא נכון או לא נמצא בכלל מסיבה אחרת."
+
+#~ msgid ""
+#~ "No description found for mime type \"%s\" (file is \"%s\"), please tell "
+#~ "the gnome-vfs mailing list."
+#~ msgstr ""
+#~ "לא נמצא תיאור לטיפוס ה MIME \"%s\" (הקובץ הוא \"%s\"), אנא הודע לרשימת "
+#~ "הדיוור של gnome-vfs."
+
+#~ msgid "--"
+#~ msgstr "--"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "<span weight=\"bold\">Behavior</span>"
+#~ msgstr "<span weight=\"bold\">התנהגות</span>"
+
+#~ msgid "<span weight=\"bold\">Date</span>"
+#~ msgstr "<span weight=\"bold\">תאריך</span>"
+
+#~ msgid "<span weight=\"bold\">Folders</span>"
+#~ msgstr "<span weight=\"bold\">תיקיות</span>"
+
+#~ msgid "<span weight=\"bold\">Icon Captions</span>"
+#~ msgstr "<span weight=\"bold\">כותרות הסמלים</span>"
+
+#~ msgid "<span weight=\"bold\">List Columns</span>"
+#~ msgstr "<span weight=\"bold\">רשימת עמודות</span>"
+
+#~ msgid "<span weight=\"bold\">Text Files</span>"
+#~ msgstr "<span weight=\"bold\">קבצי טקסט</span>"
+
+#~ msgid "<span weight=\"bold\">Trash</span>"
+#~ msgstr "<span weight=\"bold\">אשפה</span>"
+
+#~ msgid "Link To Old Desktop"
+#~ msgstr "קישור לשולחן העבודה הישן"
+
+#~ msgid ""
+#~ "A link called \"Link To Old Desktop\" has been created on the desktop."
+#~ msgstr "קישור הנקרא \"קישור לשולחן העבודה הישן\" נוצר על שולחן העבודה."
+
+#~ msgid ""
+#~ "The location of the desktop directory has changed in GNOME 2.4. You can "
+#~ "open the link and move over the files you want, then delete the link."
+#~ msgstr ""
+#~ "המיקום של ספריית שולחן העבודה השתנה ב GNOME 2.4. אתה יכול לפתוח את הקישור "
+#~ "כדי להעביר את הקבצים שאתה רוצה, ולאחר-מכן למחוק את הקישור."
+
+#~ msgid "From:"
+#~ msgstr "מ:"
+
+#~ msgid "To:"
+#~ msgstr "ל:"
+
+#~ msgid "\"%s\" cannot be moved because it is on a read-only disk."
+#~ msgstr "\"%s\" לא ניתן להזזה כיוון שזהו דיסק לקריאה בלבד."
+
+#~ msgid ""
+#~ "\"%s\" cannot be deleted because you do not have permissions to modify "
+#~ "its parent folder."
+#~ msgstr ""
+#~ "‏\"%s\" לא ניתן למחיקה כיוון שאין לך הרשאות לערוך אותו את תיקיית ההורה שלו."
+
+#~ msgid "\"%s\" cannot be deleted because it is on a read-only disk."
+#~ msgstr "‏\"%s\" לא ניתן למחיקה כיוון שזהו דיסק לקריאה בלבד."
+
+#~ msgid ""
+#~ "\"%s\" cannot be moved because you do not have permissions to change it "
+#~ "or its parent folder."
+#~ msgstr ""
+#~ "‏\"%s\" לא ניתן להזזה כיוון שאין לך הרשאות לערוך אותו או את תיקיית ההורה "
+#~ "שלו."
+
+#~ msgid ""
+#~ "Cannot move \"%s\" because it or its parent folder are contained in the "
+#~ "destination."
+#~ msgstr "לא ניתן להעביר את \"%s\" כיוון שהוא או תיקיית ההורה נמצאים ביעד."
+
+#~ msgid ""
+#~ "Cannot move \"%s\" to the trash because you do not have permissions to "
+#~ "change it or its parent folder."
+#~ msgstr ""
+#~ "לא ניתן להעביר את \"%s\" לאשפה כיוון שאין לך הרשאות לערוך אותו או את "
+#~ "תיקיית ההורה שלו."
+
+#~ msgid "You do not have permissions to write to this folder."
+#~ msgstr "אין לך הרשאות לכתוב לתיקייה זו."
+
+#~ msgid "Error while creating links in \"%s\"."
+#~ msgstr "שגיאה במהלך יצירת קישורים ב \"%s\"."
+
+#~ msgid "Error \"%s\" while copying \"%s\"."
+#~ msgstr "שגיאה \"%s\" במהלך העתקת \"%s\"."
+
+#~ msgid "Would you like to continue?"
+#~ msgstr "האם ברצונך להמשיך?"
+
+#~ msgid "Error \"%s\" while moving \"%s\"."
+#~ msgstr "שגיאה \"%s\" במהלך הזזת \"%s\"."
+
+#~ msgid "Error \"%s\" while creating a link to \"%s\"."
+#~ msgstr "שגיאה \"%s\" במהלך יצירת קישור ל \"%s\"."
+
+#~ msgid "Error \"%s\" while deleting \"%s\"."
+#~ msgstr "שגיאה \"%s\" במהלך מחיקת \"%s\"."
+
+#~ msgid "Error \"%s\" while copying."
+#~ msgstr "שגיאה \"%s\" במהלך העתקה."
+
+#~ msgid "Error \"%s\" while moving."
+#~ msgstr "שגיאה \"%s\" במהלך הזזה."
+
+#~ msgid "Error \"%s\" while linking."
+#~ msgstr "שגיאה \"%s\" במהלך קישור."
+
+#~ msgid "Error \"%s\" while deleting."
+#~ msgstr "שגיאה \"%s\" במהלך מחיקה."
+
+#~ msgid ""
+#~ "The name is already used for a special item that cannot be removed or "
+#~ "replaced.  If you still want to move the item, rename it and try again."
+#~ msgstr ""
+#~ "השם כבר בשימוש פריט מיוחד שלא יכול להתחלף או להימחק.  אם עדיין ברצונך "
+#~ "להעביר את הפריט, שנה את שמו ונסה שנית."
+
+#~ msgid "Could not copy \"%s\" to the new location."
+#~ msgstr "לא ניתן להעתיק את \"%s\" למיקום החדש."
+
+#~ msgid ""
+#~ "The name is already used for a special item that cannot be removed or "
+#~ "replaced.  If you still want to copy the item, rename it and try again."
+#~ msgstr ""
+#~ "השם כבר בשימוש פריט מיוחד שלא יכול להתחלף או להימחק.  אם עדיין ברצונך "
+#~ "להעתיק את הפריט, שנה את שמו ונסה שנית."
+
+#~ msgid "Unknown GnomeVFSXferProgressStatus %d"
+#~ msgstr "GnomeVFSXferProgressStatus לא ידוע %d"
+
+#~ msgid "Throwing out file:"
+#~ msgstr "זורק קובץ:"
+
+#~ msgid "Moving"
+#~ msgstr "מעביר"
+
+#~ msgid "Finishing Move..."
+#~ msgstr "מסיים העברה..."
+
+#~ msgid "Linking"
+#~ msgstr "מקשר"
+
+#~ msgid "Finishing Creating Links..."
+#~ msgstr "מסיים יצירת קישורים..."
+
+#~ msgid "Copying"
+#~ msgstr "מעתיק"
+
+#~ msgid "Preparing To Copy..."
+#~ msgstr "מתכונן להעתקה..."
+
+#~ msgid "You cannot copy items into the trash."
+#~ msgstr "לא ניתן להעתיק פריטים לאשפה."
+
+#~ msgid "You cannot create links inside the trash."
+#~ msgstr "לא ניתן ליצור קישורים באשפה."
+
+#~ msgid "You cannot move this trash folder."
+#~ msgstr "לא ניתן להעביר את תיקיית האשפה הזו."
+
+#~ msgid "You cannot copy this trash folder."
+#~ msgstr "אתה לא יכול להעתיק את תיקיית האשפה הזו."
+
+#~ msgid "A trash folder is used for storing items moved to the trash."
+#~ msgstr "תיקיית האשפה משמשת לשמירת פריטים שהועברו לאשפה."
+
+#~ msgid "The destination and source are the same file."
+#~ msgstr "היעד והמקור הם אותו קובץ."
+
+#~ msgid "Error \"%s\" creating new folder."
+#~ msgstr "שגיאה \"%s\" ביצירת תיקייה חדשה."
+
+#~ msgid "Error creating new folder."
+#~ msgstr "שגיאה ביצירת תיקייה חדשה."
+
+#~ msgid "Error \"%s\" creating new document."
+#~ msgstr "שגיאה \"%s\" ביצירת מסמך חדש."
+
+#~ msgid "Error creating new document."
+#~ msgstr "שגיאה ביצירת מסמך חדש."
+
+#~ msgid "Deleting"
+#~ msgstr "מוחק"
+
+#~ msgid "Emptying the Trash"
+#~ msgstr "מרוקן את האשפה"
+
+#~ msgid "Preparing to Empty the Trash..."
+#~ msgstr "מתכונן לרוקן את האשפה..."
+
+#~ msgid "_Empty Trash"
+#~ msgstr "_רוקן את האשפה"
+
+#~ msgid "Themes"
+#~ msgstr "ערכות נושא"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "יוצר תקליטורים"
+
+#~ msgid "Windows Network"
+#~ msgstr "רשת חלונות"
+
+#~ msgid "The attempt to log in failed."
+#~ msgstr "הניסיון להתחבר נכשל."
+
+#~ msgid "\"%s\" is not a valid location."
+#~ msgstr "\"%s\" אינו מיקום תקני."
+
+# msgid "Are you sure you want to permanently delete the %d selected item?"
+# "Are you sure you want to permanently delete the %d selected items?"
+# msgstr "אתה בטוח שברצונך למחוק לצמיתות את הפריט ה-%d שנבחר?"
+#~ msgid "If you delete an item, it is permanently lost."
+#~ msgstr "אם אתה מוחק פריט, הוא אבוד לנצח."
+
+#~ msgid "Cannot move items to trash, do you want to delete them immediately?"
+#~ msgstr "לא יכול לזרוק פריטים לאשפה. האם ברצונך למחוק אותם מיידית?"
+
+#~ msgid "The selected item could not be moved to the Trash"
+#~ msgid_plural "The %d selected items could not be moved to the Trash"
+#~ msgstr[0] "אין אפשרות להעביר לאשפה את הפריט שנבחר"
+#~ msgstr[1] "אין אפשרות להעביר לאשפה את %d הפריטים שנבחרו"
+
+#~ msgid ""
+#~ "Cannot move some items to trash, do you want to delete these immediately?"
+#~ msgstr "אין אפשרות להזיז חלק מהפריטים לאשפה. האם ברצונך למחוק אותם מיידית?"
+
+#~ msgid "%d of the selected items cannot be moved to the Trash"
+#~ msgstr "אין אפשרות להזיז לאשפה %d מהפריטים שנבחרו"
+
+#~ msgid ""
+#~ "The filename \"%s\" indicates that this file is of type \"%s\". The "
+#~ "contents of the file indicate that the file is of type \"%s\". If you "
+#~ "open this file, the file might present a security risk to your system.\n"
+#~ "\n"
+#~ "Do not open the file unless you created the file yourself, or received "
+#~ "the file from a trusted source. To open the file, rename the file to the "
+#~ "correct extension for \"%s\", then open the file normally. Alternatively, "
+#~ "use the Open With menu to choose a specific application for the file. "
+#~ msgstr ""
+#~ "שם הקובץ \"%s\" מציין כי זהו קובץ מסוג \"%s\". תוכן הקובץ מציין שהוקבץ "
+#~ "הוא מסוג \"%s\". אם תפתח קובץ זה, הקובץ עלול לגרום לסיכון אבטחה למערכת "
+#~ "שלך.\n"
+#~ "\n"
+#~ "אל תפתח קובץ זה אלא אם יצרת אותו בעצמך, או שקיבלת אותו ממקור בטוח. כדי "
+#~ "לפתוח קובץ זה, שנה את שמו לסיומת הנכונה עבור \"%s\", ואז פתח את הקובץ "
+#~ "כרגיל. אפשרות נוספת היא להשתמש בתפריט פתח באמצעות כדי לבחור יישום מסויים "
+#~ "לקובץ. "
+
+#~ msgid "Couldn't change the name of \"%s\" because it is on a read-only disk"
+#~ msgstr "לא ניתן לשנות את השם של \"%s\" כיוון שזהו דיסק לקריאה בלבד"
+
+#~ msgid ""
+#~ "Couldn't change the group of \"%s\" because it is on a read-only disk"
+#~ msgstr "לא ניתן לשנות את הקבוצה של \"%s\" כיוון שזהו דיסק לקריאה בלבד"
+
+#~ msgid ""
+#~ "Couldn't change the owner of \"%s\" because it is on a read-only disk"
+#~ msgstr "לא ניתן לשנות את הבעלים של \"%s\" כיוון שזהו דיסק לקריאה בלבד"
+
+#~ msgid ""
+#~ "Couldn't change the permissions of \"%s\" because it is on a read-only "
+#~ "disk"
+#~ msgstr "לא ניתן לשנות את ההרשאות של \"%s\" כיוון שזהו דיסק לקריאה בלבד."
+
+#~ msgid "Can't Connect to Server. \"%s\" is not a valid location."
+#~ msgstr "לא ניתן להתחבר לשרת. \"%s\" אינו מיקום תיקני"
+
+#~ msgid "_Name to use for connection:"
+#~ msgstr "_שם לשימוש בהתחברות:"
+
+#~ msgid "The dragged text was not a valid file location."
+#~ msgstr "הטקסט הנגרר איננו מיקום קובץ תקין."
+
+#~ msgid "Check that your proxy settings are correct."
+#~ msgstr "בדוק שהגדרות המתווך שלך נכונות."
+
+#~ msgid ""
+#~ "Couldn't display \"%s\", because Nautilus cannot contact the SMB master "
+#~ "browser."
+#~ msgstr ""
+#~ "לא יכול להציג את \"%s\", כיוון שנאוטילוס לא יכולה ליצור קשר עם דפדפן ה "
+#~ "SMB הראשי."
+
+#~ msgid "Check that an SMB server is running in the local network."
+#~ msgstr "בדוק ששרת SMB מופעל ברשת המקומית."
+
+#~ msgid "Check if the service is available."
+#~ msgstr "בדוק האם השירות קיים."
+
+#~ msgid "Nautilus cannot display \"%s\"."
+#~ msgstr "נאוטילוס לא יכול להציג את \"%s\"."
+
+#~ msgid "None of the %d selected items can be moved to the Trash"
+#~ msgstr "אין אפשרות להזיז לאשפה אף אחד מ %d הפריטים שנבחרו"
+
+#~ msgid "Shutter Speed"
+#~ msgstr "מהירות צמצם"
+
+#~ msgid "Normal Alpha"
+#~ msgstr "אלפא רגילה"
+
+#~ msgid "Opacity of the normal icons if frame_text is set"
+#~ msgstr "אטימות של סמלים רגילים אם frame_text נקבע"
+
+#, fuzzy
+#~ msgid "Prelight Alpha"
+#~ msgstr "אלפא ההדגשה"
+
+#, fuzzy
+#~ msgid "Opacity of the prelight icons if frame_text is set"
+#~ msgstr "אטימות של סמלים רגילים אם frame_text נקבע"
+
+#~ msgid "\"%s\" selected (%s)"
+#~ msgstr "‏\"%s\" נבחר (%s)"
+
+#~ msgid "CD/_DVD"
+#~ msgstr "CD/_DVD"
+
+#~ msgid "View your computer storage"
+#~ msgstr "צפה באחסון המחשב שלך"
+
+#~ msgid "Change how files are managed"
+#~ msgstr "שנה את איך שהקבצים מנוהלים"
+
+#~ msgid "View your home folder in the Nautilus file manager"
+#~ msgstr "הצג את תיקיית הבית שלך במנהל הקבצים נאוטילוס"
+
+#~ msgid "<b>Image Type:</b> %s (%s)\n"
+#~ msgstr "‏<b>סוג תמונה:</b> %s (%s)\n"
+
+#~ msgid "_Write contents to CD"
+#~ msgstr "_כתוב תכנים לתקליטור"
+
+#~ msgid "Go to the home folder"
+#~ msgstr "לך לתיקיית הבית"
+
+#~ msgid "Go to the trash folder"
+#~ msgstr "מעבר לתיקיית האשפה"
+
+#~ msgid "Go to the CD/DVD Creator"
+#~ msgstr "לך ליוצר התקליטורים"
+
+#~ msgid "View your network servers in the Nautilus file manager"
+#~ msgstr "ראה את שרתי הרשת שלך במנהל הקבצים של נאוטילוס"
+
+#~ msgid "Enable 'special' flags in file preferences dialog"
+#~ msgstr "אפשר דגלים 'מיוחדים' בתיבת דו-השיח העדפות הקובץ"
+
+#~ msgid "If you replace an existing file, its contents will be overwritten."
+#~ msgstr "אם אתה מחליף קובץ קיים, התכנים שלו יכתבו מחדש."
+
+#~ msgid ""
+#~ "\"%s\" can't open \"%s\" because \"%s\" can't access files at \"%s\"."
+#~ "locations."
+#~ msgstr ""
+#~ "\"%s\" לא יכול לפתוח את \"%s\" כיוון ש \"%s\" לא יכול לגשת לקבצים "
+#~ "במיקומים \"%s\"."
+
+#~ msgid ""
+#~ "The default action can't open \"%s\" because it can't access files at \"%s"
+#~ "\".locations."
+#~ msgstr ""
+#~ "הפעולה ברירת המחדל לא יכולה לפתוח את \"%s\" כיוון שהיא אינה יכולה לגשת "
+#~ "לקבצים במיקומים \"%s\"."
+
+#~ msgid "File _owner:"
+#~ msgstr "_בעל הקובץ:"
+
+#~ msgid "File owner:"
+#~ msgstr "בעל הקובץ:"
+
+#~ msgid "_File group:"
+#~ msgstr "_קבוצת הקובץ:"
+
+#~ msgid "File group:"
+#~ msgstr "קבוצת הקובץ:"
+
+#~ msgid "Number view:"
+#~ msgstr "תצוגת מספר:"
+
+#~ msgid "Always use _text-entry location bar"
+#~ msgstr "השתמש תמיד בשורת מיקום _טקסטואלית"
+
+#~ msgid "Art"
+#~ msgstr "אומנות"
+
+#~ msgid "Camera"
+#~ msgstr "מצלמה"
+
+#~ msgid "Certified"
+#~ msgstr "מאושר"
+
+#~ msgid "Cool"
+#~ msgstr "מגניב"
+
+#~ msgid "Danger"
+#~ msgstr "סכנה"
+
+#~ msgid "Distinguished"
+#~ msgstr "מיוחד"
+
+#~ msgid "Draft"
+#~ msgstr "טיוטה"
+
+#~ msgid "Favorite"
+#~ msgstr "מועדף"
+
+#~ msgid "Important"
+#~ msgstr "חשוב"
+
+#~ msgid "Mail"
+#~ msgstr "דואר"
+
+#~ msgid "New"
+#~ msgstr "חדש"
+
+#~ msgid "Oh No"
+#~ msgstr "הו לא"
+
+#~ msgid "Package"
+#~ msgstr "חבילה"
+
+#~ msgid "Personal"
+#~ msgstr "אישי"
+
+#~ msgid "Sound"
+#~ msgstr "קול"
+
+#~ msgid "Special"
+#~ msgstr "מיוחד"
+
+#~ msgid "Urgent"
+#~ msgstr "דחוף"
+
+#~ msgid "Web"
+#~ msgstr "רשת"
+
+#~ msgid "Couldn't Install Emblem"
+#~ msgstr "לא ניתן להתקין סמל"
+
+#~ msgid "Couldn't install emblem"
+#~ msgstr "לא הצליח להתקין סמל"
+
+#~ msgid "Error While Copying"
+#~ msgstr "שגיאה במהלך העתקה"
+
+#~ msgid "Error While Moving"
+#~ msgstr "שגיאה במהלך הזזה"
+
+#~ msgid "Error While Linking"
+#~ msgstr "שגיאה במהלך קישור"
+
+#~ msgid "Error While Deleting"
+#~ msgstr "שגיאה במהלך מחיקה"
+
+#~ msgid "Conflict While Copying"
+#~ msgstr "התנגשות בזמן העתקה"
+
+#~ msgid "Can't Change Trash Location"
+#~ msgstr "לא ניתן לשנות את מיקום האשפה"
+
+#~ msgid "Can't Copy Trash"
+#~ msgstr "לא ניתן להעתיק אשפה"
+
+#~ msgid "Can't Move Into Self"
+#~ msgstr "לא יכול לעבור לעצמו"
+
+#~ msgid "Can't Copy Into Self"
+#~ msgstr "לא יכול להיות מועתק לעצמו"
+
+#~ msgid "Can't Copy Over Self"
+#~ msgstr "לא יכול להיות מועתק על עצמו"
+
+#~ msgid "Error Creating New Folder"
+#~ msgstr "שגיאה ביצירת תיקייה חדשה"
+
+#~ msgid "Error Creating New Document"
+#~ msgstr "שגיאה ביצירת מסמך חדש"
+
+#~ msgid "Switch"
+#~ msgstr "החלף"
+
+#~ msgid "Can't Open Location"
+#~ msgstr "לא ניתן לפתוח מיקום"
+
+#~ msgid "Can't Display Location"
+#~ msgstr "לא ניתן להציג מיקום"
+
+#~ msgid "Can't Execute Remote Links"
+#~ msgstr "לא ניתן להפעיל קישורים מרוחקים"
+
+#~ msgid "Drop Target Only Supports Local Files"
+#~ msgstr "מטרת הזריקה תומכת רק בקבצים מקומיים"
+
+#~ msgid ""
+#~ "Are you sure you want to permanently delete the %d selected item?Are you "
+#~ "sure you want to permanently delete the %d selected items?"
+#~ msgstr "האם למחוק את הפריט הנבחר??"
+
+#~ msgid "Delete?"
+#~ msgstr "מחק?"
+
+#~ msgid "Delete Immediately?"
+#~ msgstr "למחוק מיידית?"
+
+#~ msgid ""
+#~ "Are you sure you want to permanently delete the %d selected item from the "
+#~ "trash?Are you sure you want to permanently delete the %d selected items "
+#~ "from the trash?"
+#~ msgstr "האם למחוק את הפריט הנבחר מהאשפה לצמיתות?"
+
+#~ msgid "Run or Display?"
+#~ msgstr "הפעל או הצג?"
+
+#~ msgid "About Scripts"
+#~ msgstr "אודות התסריטים"
+
+#~ msgid ""
+#~ "The %d selected item will be moved if you select the Paste commandThe %d "
+#~ "selected items will be moved if you select the Paste command"
+#~ msgstr "הפריט הנבחר יועבר אם תבחר בפקודת הדבק"
+
+#~ msgid ""
+#~ "The %d selected item will be copied if you select the Paste commandThe %d "
+#~ "selected items will be copied if you select the Paste command"
+#~ msgstr "הפריט הנבחר יועתק אם תבחר בפקודת הדבק"
+
+#~ msgid "Mount Error"
+#~ msgstr "שגיאת Mount"
+
+#~ msgid "Unmount Error"
+#~ msgstr "שגיאת Unmount"
+
+#~ msgid "Eject Error"
+#~ msgstr "שגיאת הוצאה"
+
+#~ msgid "Broken Link"
+#~ msgstr "קישור שבור"
+
+#~ msgid "Cancel Open?"
+#~ msgstr "בטל פתיחה?"
+
+#~ msgid "Drag and Drop Error"
+#~ msgstr "שגיאת גרור וזרוק"
+
+#~ msgid "Error Displaying Folder"
+#~ msgstr "שגיאה בהצגת תיקייה"
+
+#~ msgid "Renaming Error"
+#~ msgstr "שגיאת שינוי-שם"
+
+#~ msgid "Error Setting Group"
+#~ msgstr "שגיאה בקביעת קבוצה"
+
+#~ msgid "Error Setting Owner"
+#~ msgstr "שגיאה בקביעת בעלים"
+
+#~ msgid "Cancel Rename?"
+#~ msgstr "בטל שינוי שם?"
+
+#~ msgid "More Than One Image"
+#~ msgstr "יותר מתמונה אחת"
+
+#~ msgid "Local Images Only"
+#~ msgstr "תמונות מקומיות בלבד"
+
+#~ msgid "Images Only"
+#~ msgstr "תמונות בלבד"
+
+#~ msgid "Couldn't Show Help"
+#~ msgstr "לא ניתן להציג עזרה"
+
+#~ msgid "Cancel Showing Properties Window?"
+#~ msgstr "בטל הצגת חלון מאפיינים?"
+
+#~ msgid "Couldn't Create Required Folders"
+#~ msgstr "לא הצליח ליצור תיקיות נדרשות"
+
+#~ msgid "Migrated Old Desktop"
+#~ msgstr "הגר שולחן עבודה ישן"
+
+#~ msgid "Can't Connect to Server"
+#~ msgstr "לא ניתן להתחבר לשרת"
+
+#~ msgid "Couldn't Remove Emblem"
+#~ msgstr "לא ניתן להסיר סמל"
+
+#~ msgid "Couldn't Rename Emblem"
+#~ msgstr "לא ניתן לשנות שם סמל"
+
+#~ msgid "Couldn't Add Emblems"
+#~ msgstr "לא ניתן להוסיף סמלים"
+
+#~ msgid "Couldn't Add Emblem"
+#~ msgstr "לא ניתן להוסיף סמל"
+
+#~ msgid "MIME type"
+#~ msgstr "סוג MIME"
+
+#~ msgid "date accessed"
+#~ msgstr "תאריך גישה"
+
+#~ msgid "group"
+#~ msgstr "קבוצה"
+
+#~ msgid "informal"
+#~ msgstr "לא רשמי"
+
+#~ msgid "iso"
+#~ msgstr "iso"
+
+#~ msgid "locale"
+#~ msgstr "מקום"
+
+#~ msgid "none"
+#~ msgstr "ללא"
+
+#~ msgid "owner"
+#~ msgstr "בעלים"
+
+#~ msgid "permissions"
+#~ msgstr "הרשאות"
+
+#~ msgid "size"
+#~ msgstr "גודל"
+
+#~ msgid "type"
+#~ msgstr "סוג"
+
+#~ msgid "Can't Launch CD Burner"
+#~ msgstr "לא ניתן להפעיל את צורב התקליטורים"
+
+#~ msgid "View in Multiple Windows?"
+#~ msgstr "הצג במספר חלונות?"
+
+#~ msgid "Clear History"
+#~ msgstr "נקה היסטוריה"
+
+#~ msgid "Couldn't Delete Pattern"
+#~ msgstr "לא יכול למחוק דוגמה"
+
+#~ msgid "Couldn't Delete Emblem"
+#~ msgstr "לא ניתן למחוק סמל"
+
+#~ msgid "Couldn't Install Pattern"
+#~ msgstr "לא יכול להתקין דוגמה"
+
+#~ msgid "Not an Image"
+#~ msgstr "לא תמונה"
+
+#~ msgid "Couldn't Install Color"
+#~ msgstr "לא יכול להתקין צבע"
+
+#~ msgid "Applications"
+#~ msgstr "יישומים"
+
+#~ msgid "Browse available software"
+#~ msgstr "דפדף בתוכנות הקיימות"
+
+#~ msgid "Favorites"
+#~ msgstr "מועדפים"
+
+#~ msgid "An Eggplant variation of the Crux theme."
+#~ msgstr "הגירסה החצילית של ערכת הנושא \"העיקר\"."
+
+#~ msgid "Crux-Eggplant"
+#~ msgstr "\"העיקר\" - חציל"
+
+#~ msgid "A Teal variation of the Crux theme."
+#~ msgstr "הגירסה הטורקיזית של ערכת הנושא \"העיקר\"."
+
+#~ msgid "Crux-Teal"
+#~ msgstr "\"העיקר\" - טורקיז"
+
+#~ msgid "Eazel"
+#~ msgstr "Eazel"
+
+#~ msgid "This is the default theme for Nautilus."
+#~ msgstr "זוהי ערכת הנושא ברירת המחדל לנאוטילוס."
+
+#~ msgid "A theme designed to fit well with the classic GNOME environment."
+#~ msgstr "ערכת נושא שתוכננה להתאים היטב עם סביבת GNOME הקלאסית."
+
+#~ msgid "Sierra"
+#~ msgstr "Sierra"
+
+#~ msgid "Uses manila folders and gray-green backgrounds."
+#~ msgstr "משתמש בתיקיות מנילה ורקעים אפורים-ירוקים."
+
+#~ msgid "Tahoe"
+#~ msgstr "Tahoe"
+
+#~ msgid "This theme uses photo-realistic folders."
+#~ msgstr "זוהי ערכת נושא שמשתמשת בתמונות תיקיות ריאליסטיות."
+
+#~ msgid "Attribute"
+#~ msgstr "מאפיין"
+
+#~ msgid "The attribute name to display"
+#~ msgstr "שם המאפיין להצגה"
+
+#~ msgid "Label to display in the column"
+#~ msgstr "תווית להצגה בעמודה"
+
+#~ msgid "A user-visible description of the column"
+#~ msgstr "תיאור הנראה למשתמש בעמודה"
+
+#~ msgid "xalign"
+#~ msgstr "יישור X"
+
+#~ msgid "Name of the item"
+#~ msgstr "שם הפריט"
+
+#~ msgid "Label to display to the user"
+#~ msgstr "תווית להצגה למשתמש"
+
+#~ msgid "Tip"
+#~ msgstr "עצה"
+
+#~ msgid "Tooltip for the menu item"
+#~ msgstr "תגית כלי לפריט התפריט"
+
+#~ msgid "Name of the icon to display in the menu item"
+#~ msgstr "שם הסמל להצגה בפריט התפריט"
+
+#~ msgid "Sensitive"
+#~ msgstr "רגיש"
+
+#~ msgid "Whether the menu item is sensitive"
+#~ msgstr "האם פריט התפריט רגיש"
+
+#~ msgid "Priority"
+#~ msgstr "עדיפות"
+
+#~ msgid "Show priority text in toolbars"
+#~ msgstr "הצג טקסט עדיפות בסרגלי הכלים"
+
+#~ msgid "Name of the page"
+#~ msgstr "שם העמוד"
+
+#~ msgid "Label widget to display in the notebook tab"
+#~ msgstr "פריט תווית לתצוגה בכרטיסיית המחברת"
+
+#~ msgid "Page"
+#~ msgstr "עמוד"
+
+#~ msgid "Widget for the property page"
+#~ msgstr "פריט למאפיין העמוד"
+
+#~ msgid "Bring up a new window for every opened file"
+#~ msgstr "הבא חלון חדש לכל קובץ נפתח"
+
+#~ msgid "Cut _Text"
+#~ msgstr "חתוך _טקסט"
+
+#~ msgid "You cannot delete a volume icon."
+#~ msgstr "אתה לא יכול למחוק סמל כרך."
+
+#~ msgid "Can't Delete Volume"
+#~ msgstr "לא ניתן למחוק כרך"
+
+#~ msgid "editable text"
+#~ msgstr "טקסט לעריכה"
+
+#~ msgid "the editable label"
+#~ msgstr "התווית לעריכה"
+
+#~ msgid "additional text"
+#~ msgstr "טקסט נוסף"
+
+#~ msgid "some more text"
+#~ msgstr "ועוד טקסט"
+
+#~ msgid "highlighted for selection"
+#~ msgstr "סומן לבחירה"
+
+#~ msgid "whether we are highlighted for a selection"
+#~ msgstr "מה שאנו מסמנים לבחירה"
+
+#~ msgid "highlighted as keyboard focus"
+#~ msgstr "מודגש כמוקד מקלדת"
+
+#~ msgid "whether we are highlighted to render keyboard focus"
+#~ msgstr "האם אנו מדגישים כדי לחולל מוקד מקלדת"
+
+#~ msgid "highlighted for drop"
+#~ msgstr "הדגשה לזריקה"
+
+#~ msgid "whether we are highlighted for a D&D drop"
+#~ msgstr "האם אנו מדגישים לזריקת גרור וזרוק"
+
+#~ msgid "Frame Text"
+#~ msgstr "מסגרת טקסט"
+
+#~ msgid "Draw a frame around unselected text"
+#~ msgstr "צייר מסגרת סביב טקסט שלא נבחר"
+
+#~ msgid "Selection Box Color"
+#~ msgstr "צבע תיבת הבחירה"
+
+#~ msgid "Color of the selection box"
+#~ msgstr "צבע תיבת הבחירה"
+
+#~ msgid "Selection Box Alpha"
+#~ msgstr "אלפא תיבת הבחירה"
+
+#~ msgid "Opacity of the selection box"
+#~ msgstr "שקיפות תיבת הבחירה"
+
+#~ msgid "Opacity of the highlight for selected icons"
+#~ msgstr "שקיפות להדגשה של סמלים נבחרים"
+
+#~ msgid "Light Info Color"
+#~ msgstr "צבע מידע בהיר"
+
+#~ msgid "Color used for information text against a dark background"
+#~ msgstr "הצבע המשמש לטקסט המידע מול רקע כהה"
+
+#~ msgid "Dark Info Color"
+#~ msgstr "צבע מידע כהה"
+
+#~ msgid "Color used for information text against a light background"
+#~ msgstr "הצבע המשמש לטקסט המידע מול רקע בהיר"
+
+#~ msgid ""
+#~ "Do you want to switch to manual layout and leave this item where you "
+#~ "dropped it? This will clobber the stored manual layout."
+#~ msgstr ""
+#~ "אתה רוצה להחליף לסידור ידני ולהשאיר את הפריט במקום שזרקת אותו? זה יחליף "
+#~ "את המיקום הידני השמור."
+
+#~ msgid "This folder uses automatic layout."
+#~ msgstr "תיקייה זו משתמשת בסידור אוטומטי."
+
+#~ msgid ""
+#~ "Do you want to switch to manual layout and leave these items where you "
+#~ "dropped them? This will clobber the stored manual layout."
+#~ msgstr ""
+#~ "אתה רוצה להחליף לסידור ידני ולהשאיר את הפריטים במקום שזרקת אותם? זה יחליף "
+#~ "את המיקום הידני השמור."
+
+#~ msgid ""
+#~ "Do you want to switch to manual layout and leave this item where you "
+#~ "dropped it?"
+#~ msgstr "אתה רוצה להחליף לסידור ידני ולהשאיר את הפריט במקום שזרקת אותו?"
+
+#~ msgid ""
+#~ "Do you want to switch to manual layout and leave these items where you "
+#~ "dropped them?"
+#~ msgstr "אתה רוצה להחליף לסידור ידני ולהשאיר את הפריטים במקום שזרקת אותם?"
+
+#~ msgid "Open T_erminal"
+#~ msgstr "פתח מ_סוף"
+
+#~ msgid "Open a new GNOME terminal window"
+#~ msgstr "פתח בחלון המסוף של GNOME"
+
+#~ msgid ""
+#~ "The %d selected item will be moved if you select the Paste Files "
+#~ "commandThe %d selected items will be moved if you select the Paste Files "
+#~ "command"
+#~ msgstr "הפריט הנבחר יועבר אם תבחר בפקודת הדבק קבצים"
+
+#~ msgid ""
+#~ "The %d selected item will be copied if you select the Paste Files "
+#~ "commandThe %d selected items will be copied if you select the Paste Files "
+#~ "command"
+#~ msgstr "הפריט הנבחר יועתק אם תבחר בפקודת הדבק קבצים"
+
+#~ msgid "_Paste Files"
+#~ msgstr "ה_דבק קבצים"
+
+#~ msgid "Select _All Files"
+#~ msgstr "בחר את _כל הקבצים"
+
+#~ msgid "_Browse Folders"
+#~ msgstr "ד_פדף בתיקיות"
+
+#~ msgid "Ma_ke Links"
+#~ msgstr "_צור קישורים"
+
+#~ msgid "_Copy File"
+#~ msgstr "ה_עתק קובץ"
+
+#~ msgid "_Names:"
+#~ msgstr "_שמות:"
+
+#~ msgid "Cut Folder"
+#~ msgstr "גזור תיקייה"
+
+#~ msgid "Copy Folder"
+#~ msgstr "העתק תיקייה"
+
+#~ msgid "Paste Files into Folder"
+#~ msgstr "הדבק קבצים לתוך התיקייה"
+
+#~ msgid ""
+#~ "This is probably because the emblem is a permanent one, and not one you "
+#~ "added yourself."
+#~ msgstr "זה כנראה כיוון שזהו סמל קבוע, ולא אחד שהוספת בעצמך."
+
+#~ msgid ""
+#~ "<b>Image Type:</b> %s (%s)\n"
+#~ "<b>Resolution:</b> %dx%d pixels\n"
+#~ "<b>Image Type:</b> %s (%s)\n"
+#~ "<b>Resolution:</b> %dx%d pixels\n"
+#~ msgstr ""
+#~ "<b>סוג תמונה:</b> %s (%s)\n"
+#~ "<b>רזולוצייה:</b> %dx%d פיקסלים\n"
+#~ "<b>סוג תמונה:</b> %s (%s)\n"
+#~ "<b>רזולוצייה:</b> %dx%d פיקסלים\n"
+
+#~ msgid "View as %s"
+#~ msgstr "הצג כ %s"
+
+#~ msgid "The %s view encountered an error and can't continue."
+#~ msgstr "תצוגת ה%s נתקלה בשגיאה ולא יכולה להמשיך."
+
+#~ msgid "The NautilusApplication associated with this window."
+#~ msgstr "יישום הנאוטילוס משויך לחלון זה."
+
+#~ msgid "Allaire"
+#~ msgstr "Allaire"
+
+#~ msgid "Borland"
+#~ msgstr "בורלנד"
+
+#~ msgid "CNET Computers.com"
+#~ msgstr "CNET Computers.com"
+
+#~ msgid "CollabNet"
+#~ msgstr "CollabNet"
+
+#~ msgid "Conectiva"
+#~ msgstr "Conectiva"
+
+#~ msgid "Debian.org"
+#~ msgstr "Debian.org"
+
+#~ msgid "Dell"
+#~ msgstr "דל"
+
+#~ msgid "Freshmeat.net"
+#~ msgstr "Freshmeat.net"
+
+#~ msgid "GNOME.org"
+#~ msgstr "GNOME.org"
+
+#~ msgid "GNU.org"
+#~ msgstr "GNU.org"
+
+#~ msgid "Hardware"
+#~ msgstr "חומרה"
+
+#~ msgid "Linux Documentation Project"
+#~ msgstr "פרויקט תיעוד לינוקס"
+
+#~ msgid "Linux One"
+#~ msgstr "Linux One"
+
+#~ msgid "Linux Online"
+#~ msgstr "Linux Online"
+
+#~ msgid "Linux Resources"
+#~ msgstr "משאבי לינוקס"
+
+#~ msgid "Linux Weekly News"
+#~ msgstr "Linux Weekly News"
+
+#~ msgid "LinuxNewbie.org"
+#~ msgstr "LinuxNewbie.org"
+
+#~ msgid "LinuxOrbit.com"
+#~ msgstr "LinuxOrbit.com"
+
+#~ msgid "MandrakeSoft"
+#~ msgstr "MandrakeSoft"
+
+#~ msgid "Netraverse"
+#~ msgstr "Netraverse"
+
+#~ msgid "News and Media"
+#~ msgstr "חדשות ומדיה"
+
+#~ msgid "O'Reilly"
+#~ msgstr "O'Reilly"
+
+#~ msgid "OSDN"
+#~ msgstr "OSDN"
+
+#~ msgid "Open Source Asia"
+#~ msgstr "קוד פתוח אסיה"
+
+#~ msgid "OpenOffice"
+#~ msgstr "OpenOffice"
+
+#~ msgid "Penguin Computing"
+#~ msgstr "Penguin Computing"
+
+#~ msgid "Rackspace"
+#~ msgstr "Rackspace"
+
+#~ msgid "Red Hat"
+#~ msgstr "Red Hat"
+
+#~ msgid "Red Hat Network"
+#~ msgstr "Red Hat Network"
+
+#~ msgid "RedFlag Linux"
+#~ msgstr "RedFlag Linux"
+
+#~ msgid "SuSE"
+#~ msgstr "SuSE"
+
+#~ msgid "Sun StarOffice"
+#~ msgstr "Sun StarOffice"
+
+#~ msgid "Sun Wah Linux"
+#~ msgstr "Sun Wah Linux"
+
+#~ msgid "Web Services"
+#~ msgstr "שירותי רשת"
+
+#~ msgid "Ximian"
+#~ msgstr "Ximian"
+
+#~ msgid "ZDNet Linux Hardware Database"
+#~ msgstr "מסד נתוני החומרה ללינוקס של ZDNet"
+
+#~ msgid "ZDNet Linux Resource Center"
+#~ msgstr "מרכז משאבי לינוקס של ZDNet"
+
+#~ msgid "Zero-Knowledge"
+#~ msgstr "Zero-Knowledge"
+
+#~ msgid "List Viewer"
+#~ msgstr "מציג רשימה"
+
+#~ msgid "Nautilus Tree side pane"
+#~ msgstr "חלונית צד עץ נאוטילוס"
+
+#~ msgid "Nautilus file manager component that shows a scrollable list"
+#~ msgstr "רכיב מנהל הקבצים של נאוטילוס המראה רשימת נגררת"
+
+#~ msgid ""
+#~ "Nautilus file manager component that shows a scrollable list for search "
+#~ "results"
+#~ msgstr "רכיב מנהל הקבצים של נאוטילוס המראה רשימת נגררת עבור תוצאות חיפוש"
+
+#~ msgid ""
+#~ "Nautilus file manager component that shows a two-dimensional icon space"
+#~ msgstr "רכיב מנהל הקבצים של נאוטילוס המראה חלל סמל דו-מימדי"
+
+#~ msgid "Nautilus file manager component that shows icons on the desktop"
+#~ msgstr "רכיב מנהל הקבצים של נאוטילוס המראה סמלים על שולחן העבודה"
+
+#~ msgid "Nautilus file manager desktop icon view"
+#~ msgstr "מנהל הקבצים של נאוטילוס תצוגת סמלים על שולחן העבודה"
+
+#~ msgid "Nautilus file manager icon view"
+#~ msgstr "מנהל הקבצים של נאוטילוס תצוגת סמלים"
+
+#~ msgid "Nautilus file manager list view"
+#~ msgstr "מנהל הקבצים של נאוטילוס תצוגת רשימה"
+
+#~ msgid "Nautilus file manager search results list view"
+#~ msgstr "מנהל הקבצים של נאוטילוס תצוגת סמלים של תוצאות חיפוש"
+
+#~ msgid "Could not add application to the application database"
+#~ msgstr "לא ניתן להוסיף את היישום למסד נתונים של היישומים"
+
+#~ msgid "01/01/00, 01:00 AM"
+#~ msgstr "01/01/00, 01:00 AM"
+
+#~ msgid "1/1/00, 1:00 AM"
+#~ msgstr "1/1/00, 1:00 AM"
+
+#~ msgid " 1/ 1/00,  1:00 AM"
+#~ msgstr " 1/ 1/00,  1:00 AM"
+
+#~ msgid "GConf Error"
+#~ msgstr "שגיאת GConf"
+
+#~ msgid "No Selection Made"
+#~ msgstr "לא נבחר דבר"
+
+#~ msgid "Info"
+#~ msgstr "מידע"
+
+#~ msgid "Error"
+#~ msgstr "שגיאה"
+
+#~ msgid "Question"
+#~ msgstr "שאלה")==="
