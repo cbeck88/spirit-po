@@ -285,12 +285,14 @@ int main() {
   uint failed = 0;
 
   for (const std::string & str : list_po_files()) {
-    auto result = do_test(str);
-
     std::cout << str << "... ";
     int padding = 50 - str.size();
     if (padding < 0) { padding = 0; }
     for (uint i = 0; i < static_cast<uint>(padding); ++i) { std::cout << " "; }
+
+    std::cout.flush();
+
+    auto result = do_test(str);
 
     if (result == RESULT::PASS) {
       ++passed;
