@@ -54,10 +54,9 @@ struct po_grammar : qi::grammar<Iterator, po_message()> {
   qi::rule<Iterator, po_message()> message;
 
   // Related to parsing "fuzzy" po comment
-  qi::rule<Iterator> fuzzy_lit;
-  qi::rule<Iterator> fuzzy;
+  qi::rule<Iterator, qi::locals<bool>> fuzzy;
   qi::rule<Iterator> preamble_comment_line;
-  qi::rule<Iterator> fuzzy_preamble;
+  qi::rule<Iterator> preamble_comment_block;
 
   /// consume any number of blocks, consisting of any number of comments followed by a white line
   qi::rule<Iterator> ignored_comments;
@@ -107,16 +106,18 @@ struct po_grammar : qi::grammar<Iterator, po_message()> {
      * First, parse "ignored_comments", 
      * message_preamble is the main rule of this section
      */
-    fuzzy_lit = lit(" fuzzy");
-    fuzzy = lit('#') >> &lit(',') >> *(lit(',') >> !fuzzy_lit >> *(char_ - '\n' - ',')) >> lit(',') >> fuzzy_lit >> *(char_ - '\n') >> lit('\n');
+
+    /// Fuzzy: Expect comment of the form #, with literal `, fuzzy` in the list somewhere.
+    /// We use a qi local to keep track of if we saw it, this avoids excessive backtracking
+    fuzzy = lit('#') >> (&lit(','))[qi::_a = false] >> *(lit(',') >> -(lit(" fuzzy")[qi::_a = true]) >> *(char_ - '\n' - ',')) >> lit('\n') >> qi::eps(qi::_a);
     preamble_comment_line = comment_line >> lit('\n');
 
-    // A contiguous comment block that contains fuzzy
-    fuzzy_preamble = *(!fuzzy >> preamble_comment_line) >> fuzzy >> *preamble_comment_line;
-
     ignored_comments = *(*preamble_comment_line >> white_line >> lit('\n'));
-    message_preamble = (fuzzy_preamble >> attr(true)) | (*preamble_comment_line >> -comment_line >> attr(false));
-    //                                                                             ^ if po-file ends in a comment without eol we should still consume it
+    preamble_comment_block = *preamble_comment_line >> -comment_line;
+    //                                                 ^ if po-file ends in a comment without eol we should still consume it
+    message_preamble = (fuzzy >> preamble_comment_block >> attr(true)) | (preamble_comment_line >> message_preamble) | (-comment_line >> attr(false));
+    //                  ^ if we find fuzzy, short cut out of this test    ^ consume one comment line and repeat         ^ didn't find fuzzy, return false
+    //                  ^ note: should not backtrack after fuzzy...       ^ note: should not backtrack after comment line...
   }
 };
 
