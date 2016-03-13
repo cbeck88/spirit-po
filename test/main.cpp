@@ -807,5 +807,7 @@ msgstr "jkl;"
 
   if (!any_failed) {
     std::cout << "All " << test_count << " tests passed." << std::endl;
+    return 0;
   }
+  return 1;
 }

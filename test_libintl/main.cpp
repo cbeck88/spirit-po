@@ -318,4 +318,6 @@ int main() {
   std::cout << "\n" << std::endl;
   if (!failed) { std::cout << "All "; }
   std::cout << passed << " / " << (passed + failed) << " tests passed.\n" << std::endl;
+
+  return failed ? 1 : 0;
 }
