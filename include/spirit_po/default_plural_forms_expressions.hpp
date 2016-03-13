@@ -185,26 +185,26 @@ struct op_grammar : qi::grammar<Iterator, expr(), qi::space_type> {
     not_ = lit('!') >> atom_level_;
     atom_level_ = paren_expr_ | not_ | n_ | constant_;
 
-    mod_ = attr(qi::_r1) >> lit('%') >> atom_level_; 
+    mod_ = lit('%') >> attr(qi::_r1) >> atom_level_; 
     mod_level_ = qi::omit[atom_level_[qi::_a = qi::_1]] >> (mod_(qi::_a) | attr(qi::_a));
 
-    ge_ = attr(qi::_r1) >> lit(">=") >> mod_level_;
-    le_ = attr(qi::_r1) >> lit("<=") >> mod_level_;
-    gt_ = attr(qi::_r1) >> lit('>') >> mod_level_;
-    lt_ = attr(qi::_r1) >> lit('<') >> mod_level_;
+    ge_ = lit(">=") >> attr(qi::_r1) >> mod_level_;
+    le_ = lit("<=") >> attr(qi::_r1) >> mod_level_;
+    gt_ = lit('>') >> attr(qi::_r1) >> mod_level_;
+    lt_ = lit('<') >> attr(qi::_r1) >> mod_level_;
     rel_level_ = qi::omit[mod_level_[qi::_a = qi::_1]] >> (ge_(qi::_a) | le_(qi::_a) | gt_(qi::_a) | lt_(qi::_a) | attr(qi::_a));
 
-    eq_ = attr(qi::_r1) >> lit("==") >> rel_level_;
-    neq_ = attr(qi::_r1) >> lit("!=") >> rel_level_;
+    eq_ = lit("==") >> attr(qi::_r1) >> rel_level_;
+    neq_ = lit("!=") >> attr(qi::_r1) >> rel_level_;
     eq_level_ = qi::omit[rel_level_[qi::_a = qi::_1]] >> (eq_(qi::_a) | neq_(qi::_a) | attr(qi::_a));
 
-    and_ = attr(qi::_r1) >> lit("&&") >> and_level_;
+    and_ = lit("&&") >> attr(qi::_r1) >> and_level_;
     and_level_ = qi::omit[eq_level_[qi::_a = qi::_1]] >> (and_(qi::_a) | attr(qi::_a));
 
-    or_ = attr(qi::_r1) >> lit("||") >> or_level_;
+    or_ = lit("||") >> attr(qi::_r1) >> or_level_;
     or_level_ = qi::omit[and_level_[qi::_a = qi::_1]] >> (or_(qi::_a) | attr(qi::_a));
 
-    ternary_ = attr(qi::_r1) >> lit('?') >> ternary_level_ >> lit(':') >> ternary_level_;
+    ternary_ = lit('?') >> attr(qi::_r1) >> ternary_level_ >> lit(':') >> ternary_level_;
     ternary_level_ = qi::omit[or_level_[qi::_a = qi::_1]] >> (ternary_(qi::_a) | attr(qi::_a));
 
     expr_ = ternary_level_;
@@ -326,6 +326,10 @@ struct emitter : public boost::static_visitor<std::vector<instruction>> {
 FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
 
 #undef EMIT_OP_
+
+  /***
+   * We make &&, ||, and ? shortcut
+   */
 
   std::vector<instruction> operator()(const ternary_op & o) const {
     auto result = boost::apply_visitor(*this, o.e1);
