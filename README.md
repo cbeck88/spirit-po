@@ -161,6 +161,20 @@ The compiler is a function object that should be default constructible, and shou
 function object of signature `unsigned int(unsigned int)`, representing the compiled function. See the default
 implementation for details.
 
+## Compatibility
+
+`spirit_po` is intended to be 100% compatible with GNU `msgfmt`, meaning that, it should parse any `.po` file
+that msgfmt would read, and read the exact same string map that msgfmt would produce.  
+
+It's not guaranteed to reject any po file that `msgfmt` would reject, or to emit warnings
+similar to `msgfmt` for common translator errors. Broadly speaking, the parser has been engineered with a fail-fast
+mentality, and there are several unit tests that check that major structural problems cause a parse error rather than
+silently being accepted. However, for best results you may wish to validate po files by running them through `msgfmt`
+just to see if it emits warnings, before deploying them, even if you use `spirit_po` in your application.  
+
+If you are aware of any po file which libintl parses, but `spirit_po` fails to parse, or, our emulation of the libintl
+interface doesn't yield equivalent results, please post a report on the issue tracker, with the po file included.  
+
 ## Acknowledgements
 
 The author thanks David White, Kristina Simpson, and others for conversations
