@@ -46,7 +46,7 @@ namespace default_plural_forms {
  */
 
 struct constant { uint value; };
-struct n_var { n_var() = default; n_var(char) {}};
+struct n_var { n_var() = default; n_var(char) {}}; // work around a quirk in spirit
 struct not_op;
 struct ternary_op;
 
@@ -136,6 +136,11 @@ namespace default_plural_forms {
 
 /***
  * Pseudo-C Grammar
+ *
+ * Note that the grammar has been somewhat optimized by using local variables
+ * and inherited attributes, in order to avoid exponential backtracking overhead.
+ * This makes it a little harder to read than if we got rid of all local variables,
+ * but then it is too slow to parse the expressions for certain languages.
  */
 
 template <typename Iterator>
@@ -143,25 +148,25 @@ struct op_grammar : qi::grammar<Iterator, expr(), qi::space_type> {
   qi::rule<Iterator, constant(), qi::space_type> constant_;
   qi::rule<Iterator, n_var(), qi::space_type> n_;
   qi::rule<Iterator, not_op(), qi::space_type> not_;
-  qi::rule<Iterator, and_op(), qi::space_type> and_;
-  qi::rule<Iterator, or_op(), qi::space_type> or_;
-  qi::rule<Iterator, eq_op(), qi::space_type> eq_;
-  qi::rule<Iterator, neq_op(), qi::space_type> neq_;
-  qi::rule<Iterator, ge_op(), qi::space_type> ge_;
-  qi::rule<Iterator, le_op(), qi::space_type> le_;
-  qi::rule<Iterator, gt_op(), qi::space_type> gt_;
-  qi::rule<Iterator, lt_op(), qi::space_type> lt_;
-  qi::rule<Iterator, mod_op(), qi::space_type> mod_;
-  qi::rule<Iterator, ternary_op(), qi::space_type> ternary_;
+  qi::rule<Iterator, and_op(expr), qi::space_type> and_;
+  qi::rule<Iterator, or_op(expr), qi::space_type> or_;
+  qi::rule<Iterator, eq_op(expr), qi::space_type> eq_;
+  qi::rule<Iterator, neq_op(expr), qi::space_type> neq_;
+  qi::rule<Iterator, ge_op(expr), qi::space_type> ge_;
+  qi::rule<Iterator, le_op(expr), qi::space_type> le_;
+  qi::rule<Iterator, gt_op(expr), qi::space_type> gt_;
+  qi::rule<Iterator, lt_op(expr), qi::space_type> lt_;
+  qi::rule<Iterator, mod_op(expr), qi::space_type> mod_;
+  qi::rule<Iterator, ternary_op(expr), qi::space_type> ternary_;
   qi::rule<Iterator, expr(), qi::space_type> paren_expr_;
 
   // expression precedence levels
-  qi::rule<Iterator, expr(), qi::space_type> ternary_level_;
-  qi::rule<Iterator, expr(), qi::space_type> or_level_;
-  qi::rule<Iterator, expr(), qi::space_type> and_level_;
-  qi::rule<Iterator, expr(), qi::space_type> eq_level_;
-  qi::rule<Iterator, expr(), qi::space_type> rel_level_;
-  qi::rule<Iterator, expr(), qi::space_type> mod_level_;
+  qi::rule<Iterator, expr(), qi::space_type, qi::locals<expr>> ternary_level_;
+  qi::rule<Iterator, expr(), qi::space_type, qi::locals<expr>> or_level_;
+  qi::rule<Iterator, expr(), qi::space_type, qi::locals<expr>> and_level_;
+  qi::rule<Iterator, expr(), qi::space_type, qi::locals<expr>> eq_level_;
+  qi::rule<Iterator, expr(), qi::space_type, qi::locals<expr>> rel_level_;
+  qi::rule<Iterator, expr(), qi::space_type, qi::locals<expr>> mod_level_;
   qi::rule<Iterator, expr(), qi::space_type> atom_level_;
   qi::rule<Iterator, expr(), qi::space_type> expr_;
 
@@ -169,6 +174,7 @@ struct op_grammar : qi::grammar<Iterator, expr(), qi::space_type> {
   qi::rule<Iterator, expr(), qi::space_type> main_;
 
   op_grammar() : op_grammar::base_type(main_) {
+    using qi::attr;
     using qi::lit;
 
     constant_ = qi::uint_;
@@ -177,27 +183,27 @@ struct op_grammar : qi::grammar<Iterator, expr(), qi::space_type> {
     not_ = lit('!') >> atom_level_;
     atom_level_ = paren_expr_ | not_ | n_ | constant_;
 
-    mod_ = atom_level_ >> lit('%') >> atom_level_; 
-    mod_level_ = mod_ | atom_level_;
+    mod_ = attr(qi::_r1) >> lit('%') >> atom_level_; 
+    mod_level_ = qi::omit[atom_level_[qi::_a = qi::_1]] >> (mod_(qi::_a) | attr(qi::_a));
 
-    ge_ = mod_level_ >> lit(">=") >> mod_level_;
-    le_ = mod_level_ >> lit("<=") >> mod_level_;
-    gt_ = mod_level_ >> lit(">") >> mod_level_;
-    lt_ = mod_level_ >> lit("<") >> mod_level_;
-    rel_level_ = ge_ | le_ | gt_ | lt_ | mod_level_;
+    ge_ = attr(qi::_r1) >> lit(">=") >> mod_level_;
+    le_ = attr(qi::_r1) >> lit("<=") >> mod_level_;
+    gt_ = attr(qi::_r1) >> lit('>') >> mod_level_;
+    lt_ = attr(qi::_r1) >> lit('<') >> mod_level_;
+    rel_level_ = qi::omit[mod_level_[qi::_a = qi::_1]] >> (ge_(qi::_a) | le_(qi::_a) | gt_(qi::_a) | lt_(qi::_a) | attr(qi::_a));
 
-    eq_ = rel_level_ >> lit("==") >> rel_level_;
-    neq_ = rel_level_ >> lit("!=") >> rel_level_;
-    eq_level_ = eq_ | neq_ | rel_level_;
+    eq_ = attr(qi::_r1) >> lit("==") >> rel_level_;
+    neq_ = attr(qi::_r1) >> lit("!=") >> rel_level_;
+    eq_level_ = qi::omit[rel_level_[qi::_a = qi::_1]] >> (eq_(qi::_a) | neq_(qi::_a) | attr(qi::_a));
 
-    and_ = eq_level_ >> lit("&&") >> and_level_;
-    and_level_ = and_ | eq_level_;
+    and_ = attr(qi::_r1) >> lit("&&") >> and_level_;
+    and_level_ = qi::omit[eq_level_[qi::_a = qi::_1]] >> (and_(qi::_a) | attr(qi::_a));
 
-    or_ = and_level_ >> lit("||") >> or_level_;
-    or_level_ = or_ | and_level_;
+    or_ = attr(qi::_r1) >> lit("||") >> or_level_;
+    or_level_ = qi::omit[and_level_[qi::_a = qi::_1]] >> (or_(qi::_a) | attr(qi::_a));
 
-    ternary_ = or_level_ >> lit('?') >> ternary_level_ >> lit(':') >> ternary_level_;
-    ternary_level_ = ternary_ | or_level_;
+    ternary_ = attr(qi::_r1) >> lit('?') >> ternary_level_ >> lit(':') >> ternary_level_;
+    ternary_level_ = qi::omit[or_level_[qi::_a = qi::_1]] >> (ternary_(qi::_a) | attr(qi::_a));
 
     expr_ = ternary_level_;
 

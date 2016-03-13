@@ -251,11 +251,9 @@ template <typename T, typename U>
 void check_eq(const T & a, const U & b, const char * a_str, const char * b_str, int line) {
   bool _check_eq = ((a) == (b));
   if (!_check_eq) {
-    std::cerr << "Expected: (a) == (b)\n";
-    std::cerr << "       a:" << a_str << "\n";
-    std::cerr << "       b:" << b_str << "\n";
-    std::cerr << "Found: a=" << (a) << "\n";
-    std::cerr << "       b=" << (b) << "\n";
+    std::cerr << "Expected: (" << a_str << ") == (" << b_str << ")\n";
+    std::cerr << "Found: LHS=" << (a) << "\n";
+    std::cerr << "       RHS=" << (b) << "\n";
   }
   test_condition(_check_eq, line);
 }
@@ -417,33 +415,55 @@ namespace file {
 ;
 } // end namespace file
 
+#define TIME_DOT \
+do { \
+  std::cout << "."; std::cout.flush(); \
+} while(0)
+
 int main() {
   std::cout << "Boost version = " << BOOST_LIB_VERSION << std::endl;
-  std::cout << "Testing plural forms expression grammar..." << std::endl;
+  std::cout << "Testing plural forms expression grammar...\n";
   TEST(test_default_expr_grammar("n != 1", { {0, 1}, {1, 0}, {2, 1}, {3, 1}, {4, 1}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("n == 1", { {0, 0}, {1, 1}, {2, 0}, {3, 0}, {4, 0}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("n < 5",  { {0, 1}, {1, 1}, {2, 1}, {3, 1}, {4, 1}, {5, 0}, {6, 0}, {7, 0}, {8, 0}, {9, 0}, {10, 0}})); 
+  TIME_DOT;
   TEST(test_default_expr_grammar("n <= 5", { {0, 1}, {1, 1}, {2, 1}, {3, 1}, {4, 1}, {5, 1}, {6, 0}, {7, 0}, {8, 0}, {9, 0}, {10, 0}})); 
-  TEST(test_default_expr_grammar("n > 5",  { {0, 0}, {1, 0}, {2, 0}, {3, 0}, {4, 0}, {5, 0}, {6, 1}, {7, 1}, {8, 1}, {9, 1}, {10, 1}})); 
-  TEST(test_default_expr_grammar("n >= 5", { {0, 0}, {1, 0}, {2, 0}, {3, 0}, {4, 0}, {5, 1}, {6, 1}, {7, 1}, {8, 1}, {9, 1}, {10, 1}})); 
+  TIME_DOT;
+  TEST(test_default_expr_grammar("n > 5",  { {0, 0}, {1, 0}, {2, 0}, {3, 0}, {4, 0}, {5, 0}, {6, 1}, {7, 1}, {8, 1}, {9, 1}, {10, 1}}));   std::cout << ".";
+  TIME_DOT;
+  TEST(test_default_expr_grammar("n >= 5", { {0, 0}, {1, 0}, {2, 0}, {3, 0}, {4, 0}, {5, 1}, {6, 1}, {7, 1}, {8, 1}, {9, 1}, {10, 1}}));   std::cout << ".";
+  TIME_DOT;
   TEST(test_default_expr_grammar("n == 1 ? 0 : (n == 2 ? 1 : 2)", { { 0, 2}, { 1, 0} , {2, 1}, {3, 2}, {4, 2}, {5, 2} }));
+  TIME_DOT;
   TEST(test_default_expr_grammar("n % 5 == 0", { {0, 1}, {1, 0}, {2, 0}, {3, 0}, {4, 0}, {5, 1}, {6, 0}, {7, 0}, {8, 0}, {9, 0}, {10, 1}, {11, 0}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("n % 2 || n % 3", { {0, 0}, {1, 1}, {2, 1}, {3, 1}, {4, 1}, {5, 1}, {6, 0}, {7, 1}, {8, 1}, {9, 1}, {10, 1}, {11, 1}, {12, 0}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("n % 2 && n % 3", { {0, 0}, {1, 1}, {2, 0}, {3, 0}, {4, 0}, {5, 1}, {6, 0}, {7, 1}, {8, 0}, {9, 0}, {10, 0}, {11, 1}, {12, 0}})); 
+  TIME_DOT;
   TEST(test_default_expr_grammar("n % 2 || n < 5", { {0, 1}, {1, 1}, {2, 1}, {3, 1}, {4, 1}, {5, 1}, {6, 0}, {7, 1}, {8, 0}, {9, 1}, {10, 0}, {11, 1}, {12, 0}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("(n % 6 == 2) || (n % 6 == 1) || (n % 5 == 1)",
                                  {{0, 0}, {1, 1}, {2, 1}, {3, 0}, {4, 0}, {5, 0}, {6, 1}, {7, 1}, {8, 1}, {9, 0}, {10, 0}, {11, 1}, {12, 0}, {13, 1}, {14, 1}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("(n % 6 == 2) || (n % 6 == 1) && (n % 5 == 1)",
                                  {{0, 0}, {1, 1}, {2, 1}, {3, 0}, {4, 0}, {5, 0}, {6, 0}, {7, 0}, {8, 1}, {9, 0}, {10, 0}, {11, 0}, {12, 0}, {13, 0}, {14, 1}, {31, 1}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("(n % 6 == 2) && (n % 6 == 1) || (n % 5 == 1)",
                                  {{0, 0}, {1, 1}, {2, 0}, {3, 0}, {4, 0}, {5, 0}, {6, 1}, {7, 0}, {8, 0}, {9, 0}, {10, 0}, {11, 1}, {12, 0}, {13, 0}, {14, 0}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("!(n % 6 == 2) && (n % 6 == 1) || (n % 5 == 1)",
                                  {{0, 0}, {1, 1}, {2, 0}, {3, 0}, {4, 0}, {5, 0}, {6, 1}, {7, 1}, {8, 0}, {9, 0}, {10, 0}, {11, 1}, {12, 0}, {13, 1}, {14, 0}}));
+  TIME_DOT;
   TEST(test_default_expr_grammar("!(n % 6 == 2) && !(n % 6 == 1) || (n % 5 == 1)",
                                  {{0, 1}, {1, 1}, {2, 0}, {3, 1}, {4, 1}, {5, 1}, {6, 1}, {7, 0}, {8, 0}, {9, 1}, {10, 1}, {11, 1}, {12, 1}, {13, 0}, {14, 0}}));
-
+  TIME_DOT;
+  TEST(test_default_expr_grammar("(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))",
+                                 {{0, 1}, {1, 0}, {2, 1}, {3, 1}, {4, 1}, {15, 1}, {19, 1}, {20, 2}, {33, 2}, {99, 2}, {100, 2}, {101, 1}, {111, 1}, {123, 2}, {153, 2}, {174, 2}, {200, 2}, {201, 1}, {219, 1},{274, 2}}));
   // Test parts of po grammar
-  std::cout << "Testing po grammar elements..." << std::endl;
+  std::cout << "\nTesting po grammar elements..." << std::endl;
   {
     CHECK_PARSE( grammar.skipped_line, "       \n");
     CHECK_PARSE( grammar.skipped_line, " \t \t    \n");

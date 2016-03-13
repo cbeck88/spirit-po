@@ -196,6 +196,9 @@ RESULT do_test(const std::string & po_stem) {
     std::cerr << "Could not find po file: '" << po_stem << ".po'\n";
     return RESULT::NA;
   }
+  // Buffer the content in a string
+  std::string po_content{std::istreambuf_iterator<char>(po_stream), std::istreambuf_iterator<char>()};
+
   std::cerr << ".";
   // Find mo file
   {
@@ -217,7 +220,7 @@ RESULT do_test(const std::string & po_stem) {
 
   std::cerr << ".";
   // Read po file
-  auto cat = spirit_po::catalog<>::from_istream(po_stream, std::function<void(const std::string &)>{&warning_message});
+  auto cat = spirit_po::catalog<>::from_range(po_content, std::function<void(const std::string &)>{&warning_message});
 #ifdef SPIRIT_PO_NOEXCEPT
   if (!cat) {
     std::cerr << "Could not read po file: '" << po_stem << ".po', error:\n" << cat.error() << std::endl;
