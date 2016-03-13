@@ -390,7 +390,16 @@ public:
   /***
    * Catalog size
    */
-  uint size() const { return hashmap_.size(); }
+  uint size() const {
+    uint result = hashmap_.size();
+#ifdef SPIRIT_PO_NOEXCEPT
+    if (result) { --result; } // exclude po header
+    return result;
+#else
+    // can't have empty hashmap_, we would have thrown an exception
+    return --result;
+#endif
+  }
 
   /***
    * Debugging output

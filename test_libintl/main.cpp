@@ -227,6 +227,8 @@ RESULT do_test(const std::string & po_stem) {
 
   std::cerr << ".";
 
+  std::cerr << " (" << cat.size() << " messages) ";
+
   bool all_pass = true;
   all_pass = all_pass && check_libintl_gettext(cat, "foo");
   all_pass = all_pass && check_libintl_gettext(cat, "bar");

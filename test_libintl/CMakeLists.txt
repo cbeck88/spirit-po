@@ -72,7 +72,7 @@ foreach(PO ${ALL_PO})
   set(MO_FILES ${MO_FILES} ${MO})
   add_custom_command(
     OUTPUT ${MO}
-    COMMAND ${GETTEXT_MSGFMT_EXECUTABLE} ${PO} -o ${MO} # --use-fuzzy
+    COMMAND ${GETTEXT_MSGFMT_EXECUTABLE} ${PO} -o ${MO} --check --verbose # --use-fuzzy
                                                         # can we ask libintl how many strings the po file contained, to make sure we didn't read too few?
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
     DEPENDS ${PO})
