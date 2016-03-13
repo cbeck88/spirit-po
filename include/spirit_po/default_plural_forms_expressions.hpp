@@ -143,6 +143,24 @@ namespace default_plural_forms {
  * and inherited attributes, in order to avoid exponential backtracking overhead.
  * This makes it a little harder to read than if we got rid of all local variables,
  * but then it is too slow to parse the expressions for certain languages.
+ *
+ * The main idea is that instead of parsing things like
+ *
+ *   BINARY_OP = LOWER_PRECENDENCE >> BINARY_OP_LITERAL >> CURRENT_PRECEDENCE
+ *   CURRENT_PRECEDENCE = BINARY_OP | OTHER_OP | YET_ANOTHER_OP | LOWER_PRECEDENCE
+ *
+ * (which is bad because if the binary op literal is not there then we have to
+ *  backtrack through an entire subexpression)
+ *
+ * we make BINARY_OP take the subexpression as a parameter, and in each
+ * precedence level, we capture the subexpression first and store it in a local
+ * variable, so that it does not get reparsed when we backtrack.
+ *
+ *   BINARY_OP = BINARY_OP_LITERAL >> qi::attr(parameter) >> CURRENT_PRECEDENCE
+ *
+ *   CURRENT_PRECEDENCE = LOWER_PRECEDENCE[local_var = result] >>
+ *     (BINARY_OP(local_var) | OTHER_OP(local_var) | YET_ANOTHER_OP(local_var) | qi::attr(local_var)
+ * 
  */
 
 template <typename Iterator>
