@@ -320,7 +320,7 @@ do { \
 } while(0)
 
 void check_catalog_keys(const spirit_po::catalog<> & cat, const std::set<std::string> & expected, int line) {
-  CHECK_EQ_L(cat.size(), expected.size(), line);
+  CHECK_EQ_L(cat.size(), expected.size() - expected.count(""), line);
   auto _result = all_keys(cat.get_hashmap());
   if (_result != expected) {
     std::cout << "Difference of result & expected:\n";
@@ -625,7 +625,7 @@ msgstr "jkl;"
   std::cout << "Testing test5.po..." << std::endl;
   {
     using file::test5po;
-    CHECK_EQ(4u, spirit_po::catalog<>::from_range(test5po).size());
+    CHECK_EQ(3u, spirit_po::catalog<>::from_range(test5po).size());
     TEST(test_catalog_gettext( test5po, {{"note", "nota"}, {"goat", "cabro"}}));
     TEST(test_catalog_ngettext( test5po, {{"note", "notes", 1, "nota"}, {"note", "notes", 2, "notas"}, {"goat", "goats", 1, "cabro"}, {"goat", "goats", 2, "cabros"}}));
     TEST(test_catalog_pgettext( test5po, {{"female", "goat", "cabra"}, {"female", "note", "note"}, {"nice", "photo", "photo"}}));
