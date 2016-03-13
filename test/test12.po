@@ -1,0 +1,36 @@
+R"===(
+# This is a test po file
+# It is making sure that we are handling po comments correctly,
+# even when interspersed with messages
+msgid ""
+msgstr "Language: Test\n"
+"Project-Id-Version: spirit-po\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "jaawa"
+# hmm
+msgstr "raja"
+# a comment
+
+# --
+msgid "django"
+
+msgstr "foo"
+"bar"
+"baz"
+
+#, fuzzy
+msgid "jango"
+msgstr "bother"
+
+msgid "regicide"
+
+msgstr "the act"
+# TODO: WC?
+"of killing"
+
+"the king"
+
+msgid "foo""bar"
+msgstr "baz")==="

@@ -372,6 +372,18 @@ namespace file {
     std::string test8po =
 #include "test8.po"
 ;
+    std::string test9po =
+#include "test9.po"
+;
+    std::string test10po =
+#include "test10.po"
+;
+    std::string test11po =
+#include "test11.po"
+;
+    std::string test12po =
+#include "test12.po"
+;
 
     std::string test_fail1po =
 #include "test_fail1.po"
@@ -647,7 +659,8 @@ msgstr "jkl;"
   std::cout << "Testing test8.po..." << std::endl;
   {
     using file::test8po;
-    TEST(test_catalog_gettext( test8po, {} ));
+    check_catalog_keys (test8po, { "", "asdf", "foobar" }, __LINE__ );
+    TEST(test_catalog_gettext( test8po, {{"asdf", "jkl;"}, {"foobar", "baz"}}));
     auto cat = spirit_po::catalog<>::from_range(test8po);
 #ifdef SPIRIT_PO_NOEXCEPT
     TEST(static_cast<bool>(cat));
@@ -656,6 +669,43 @@ msgstr "jkl;"
     CHECK_EQ("UTF-8", meta.charset);
   }
 
+  std::cout << "Testing test9.po..." << std::endl;
+  {
+    using file::test9po;
+    check_catalog_keys( test9po, { "", "asdf"}, __LINE__ );
+  }
+
+  std::cout << "Testing test10.po..." << std::endl;
+  {
+    using file::test10po;
+    check_catalog_keys( test10po, { "", "foobar"}, __LINE__ );
+  }
+
+  std::cout << "Testing test11.po..." << std::endl;
+  {
+    using file::test11po;
+    check_catalog_keys (test11po, { "", "jaawa", "django", "jango", "regicide", "foobar" }, __LINE__ );
+    TEST(test_catalog_gettext( test11po, {{"jaawa", "raja"}, {"django", "foobarbaz"}, {"jango", "bother"}, {"foobar", "baz"}}));
+    auto cat = spirit_po::catalog<>::from_range(test11po);
+#ifdef SPIRIT_PO_NOEXCEPT
+    TEST(static_cast<bool>(cat));
+#endif
+    const auto & meta = cat.get_metadata();
+    CHECK_EQ("UTF-8", meta.charset);
+  }
+
+  std::cout << "Testing test12.po..." << std::endl;
+  {
+    using file::test12po;
+    check_catalog_keys (test12po, { "", "jaawa", "django", "regicide", "foobar" }, __LINE__ );
+    TEST(test_catalog_gettext( test12po, {{"jaawa", "raja"}, {"django", "foobarbaz"}, {"foobar", "baz"}}));
+    auto cat = spirit_po::catalog<>::from_range(test12po);
+#ifdef SPIRIT_PO_NOEXCEPT
+    TEST(static_cast<bool>(cat));
+#endif
+    const auto & meta = cat.get_metadata();
+    CHECK_EQ("UTF-8", meta.charset);
+  }
 
   std::cout << "Testing test_fail1.po..." << std::endl;
   {

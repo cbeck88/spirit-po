@@ -1,0 +1,14 @@
+R"===(
+msgid ""
+msgstr "Language: Test\n"
+"Project-Id-Version: spirit-po\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#| This string is fuzzy
+#, fuzzy
+msgid "asdf"
+msgstr "jkl;"
+
+msgid "foo""bar"
+msgstr "baz")==="
