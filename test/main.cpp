@@ -369,6 +369,9 @@ namespace file {
     std::string test7po =
 #include "test7.po"
 ;
+    std::string test8po =
+#include "test8.po"
+;
 
     std::string test_fail1po =
 #include "test_fail1.po"
@@ -384,9 +387,6 @@ namespace file {
 ;
     std::string test_fail5po =
 #include "test_fail5.po"
-;
-    std::string test_fail6po =
-#include "test_fail6.po"
 ;
     std::string test_fail7po =
 #include "test_fail7.po"
@@ -644,6 +644,19 @@ msgstr "jkl;"
     CHECK_EQ("UTF-8", meta.charset);
   }
 
+  std::cout << "Testing test8.po..." << std::endl;
+  {
+    using file::test8po;
+    TEST(test_catalog_gettext( test8po, {} ));
+    auto cat = spirit_po::catalog<>::from_range(test8po);
+#ifdef SPIRIT_PO_NOEXCEPT
+    TEST(static_cast<bool>(cat));
+#endif
+    const auto & meta = cat.get_metadata();
+    CHECK_EQ("UTF-8", meta.charset);
+  }
+
+
   std::cout << "Testing test_fail1.po..." << std::endl;
   {
     using file::test_fail1po;
@@ -672,12 +685,6 @@ msgstr "jkl;"
   {
     using file::test_fail5po;
     check_not_parse(test_fail5po, __LINE__);
-  }
-
-  std::cout << "Testing test_fail6.po..." << std::endl;
-  {
-    using file::test_fail6po;
-    check_not_parse(test_fail6po, __LINE__);
   }
 
   std::cout << "Testing test_fail7.po..." << std::endl;

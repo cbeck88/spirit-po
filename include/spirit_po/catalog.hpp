@@ -149,7 +149,8 @@ public:
     // Parse header first
     {
       // must be able to parse first message
-      if (!qi::parse(it, end, grammar, msg)) {
+      qi::parse(it, end, grammar.skipped_block); // first parse any comments
+      if (!qi::parse(it, end, grammar, msg)) {   // now parse the main grammar target
         int err_line = it.position();
         SPIRIT_PO_CATALOG_FAIL("Failed to parse po header, stopped at line " + std::to_string(err_line) + ": " + iterator_context(it, end));
       }
@@ -195,25 +196,38 @@ public:
       insert_message(std::move(msg)); // for compatibility, need to insert the header message at msgid ""
     }
 
+    // Now parse non-fuzzy messages
     while (it != end) {
-      msg = po_message{};
-      msg.strings().reserve(metadata_.num_plural_forms); // try to prevent frequent vector reallocations
-      line_no = it.position();
-      if (!qi::parse(it, end, grammar, msg)) {
-        int err_line = it.position();
-        SPIRIT_PO_CATALOG_FAIL(("Failed to parse po file, "
-                                "started at " + std::to_string(line_no) + ": , stopped at " + std::to_string(err_line) + ":\n"
-                                + iterator_context(it, end)));
+      // this parse rule cannot fail, it can be a zero length match
+      qi::parse(it, end, grammar.ignored_comments);
+
+      bool fuzzy = false;
+      // this parse rule cannot fail, it can be a zero length match
+      qi::parse(it, end, grammar.message_preamble, fuzzy);
+
+      // check if we exhausted the file by comments
+      if (it != end) {
+        msg = po_message{};
+        msg.strings().reserve(metadata_.num_plural_forms); // try to prevent frequent vector reallocations
+        line_no = it.position();
+        // actually parse a message
+        if (!qi::parse(it, end, grammar, msg)) {
+          int err_line = it.position();
+          SPIRIT_PO_CATALOG_FAIL(("Failed to parse po file, "
+                                  "started at " + std::to_string(line_no) + ": , stopped at " + std::to_string(err_line) + ":\n"
+                                  + iterator_context(it, end)));
+        }
+        // cannot overwrite header
+        if (!msg.id.size()) {
+          int err_line = it.position();
+          SPIRIT_PO_CATALOG_FAIL(("Malformed po file: Cannot overwrite the header entry later in the po file."
+                                  "Started at " + std::to_string(line_no) + ": , stopped at " + std::to_string(err_line) + ":\n" 
+                                  + iterator_context(it, end)));
+        }
+        msg.line_no = line_no;
+        // only insert it if it wasn't marked fuzzy
+        if (!fuzzy) { insert_message(std::move(msg)); }
       }
-      // cannot overwrite header
-      if (!msg.id.size()) {
-        int err_line = it.position();
-        SPIRIT_PO_CATALOG_FAIL(("Malformed po file: Cannot overwrite the header entry later in the po file."
-                                "Started at " + std::to_string(line_no) + ": , stopped at " + std::to_string(err_line) + ":\n" 
-                                + iterator_context(it, end)));
-      }
-      msg.line_no = line_no;
-      insert_message(std::move(msg));
     }
 
 #ifdef SPIRIT_PO_DEBUG
