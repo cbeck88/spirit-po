@@ -78,15 +78,15 @@ struct po_grammar : qi::grammar<Iterator, po_message()> {
 
     // TODO: Do we need to handle other escaped characters?
     escaped_character = lit('\\') >> (char_("\'\"\\") | (lit('n') >> attr('\n')) | (lit('t') >> attr('\t')));
-    single_line_string = lit('"') >> *(escaped_character | (char_ - '\\' - '"')) >> lit('"');
-    multiline_string = single_line_string >> ((skipped_block >> multiline_string) | attr(""));
+    single_line_string = lit('"') >> *(escaped_character | (char_ - '"')) >> lit('"');
+    multiline_string = single_line_string % skipped_block;
 
     message_context = skipped_block >> lit("msgctxt ") >> multiline_string;
     message_id = skipped_block >> lit("msgid ") >> multiline_string;
     message_str = skipped_block >> lit("msgstr ") >> multiline_string;
     message_id_plural = skipped_block >> lit("msgid_plural ") >> multiline_string;
     message_str_plural = skipped_block >> lit("msgstr[") >> omit[ uint_(qi::_r1) ] >> lit("] ") >> multiline_string;
-    //                                                             ^ the index in the po file must match what we expect
+    //                                                            ^ the index in the po file must match what we expect
 
     // qi::repeat converts it from a std::string, to a singleton vector, as required
     message_single_str = qi::repeat(1)[message_str];
@@ -117,7 +117,8 @@ struct po_grammar : qi::grammar<Iterator, po_message()> {
     //                                                 ^ if po-file ends in a comment without eol we should still consume it
     message_preamble = (fuzzy >> preamble_comment_block >> attr(true)) | (preamble_comment_line >> message_preamble) | (-comment_line >> attr(false));
     //                  ^ if we find fuzzy, short cut out of this test    ^ consume one comment line and repeat         ^ didn't find fuzzy, return false
-    //                  ^ note: should not backtrack after fuzzy...       ^ note: should not backtrack after comment line...
+    //                  ^ note: no backtrack after fuzzy...               ^ note: no backtrack after comment line...      and consume trailing comment
+    //                      preamble_comment_block is nullable                message_preamble is nullable
   }
 };
 
