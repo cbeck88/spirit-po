@@ -141,7 +141,7 @@ bool check_result(const std::string & cat_result, const char * libintl_result, c
   if (!check) {
     std::cerr << "Error, mismatch on msgid = \"" << msgid << "\" line = ";
 
-    if (msgctxt) {
+    if (!msgctxt) {
       if (auto line = cat.gettext_line_no(msgid)) {
         std::cerr << line;
       } else {
