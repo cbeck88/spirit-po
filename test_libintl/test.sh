@@ -9,4 +9,4 @@ cd build
 
 cmake "$@" ..
 make VERBOSE=1
-gdb -batch -ex "run" -ex "thread apply all bt" -ex "quit" --args ./test_libintl
+gdb -return-child-result -batch -ex "run" -ex "thread apply all bt" -ex "quit" --args ./test_libintl
