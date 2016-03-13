@@ -127,10 +127,12 @@ script:
   - $CXX --version
 
   - echo "Unit Tests"
-  - cd test && ./test.sh BOOST_DIR=${BOOST_DIR_NAME}
+  - cd test
+  - ./test.sh BOOST_DIR=${BOOST_DIR_NAME}
 
   - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
-  - cd ../test_libintl && ./test.sh ${CMAKE_OPTIONS}
+  - cd ../test_libintl
+  - ./test.sh ${CMAKE_OPTIONS}
 
   - echo "SPIRIT_PO_NOEXCEPT build" && export CXXFLAGS=${CXX_FLAGS_NOEXCEPT}
   - ./test.sh -DNOEXCEPT=1 ${CMAKE_OPTIONS}
