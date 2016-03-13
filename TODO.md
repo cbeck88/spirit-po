@@ -9,3 +9,5 @@ TODO
 - Refactor the catalog metadata header parse function into a
   single `qi` grammar?
 - Benchmarks?
+- Refactor warning channel so as not to rely on `std::function`?
+- Test / support BOOST_NO_RTTI builds?

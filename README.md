@@ -13,7 +13,7 @@ translators rather than require a non-portable binary format which
 requires special tools to create.
 
 **spirit-po** is very easy to use in your C++11 projects.
-According to `sloccount`, it is only 733 lines of code in total (at time of writing),
+According to `sloccount`, it is only 916 lines of code in total (at time of writing),
 and is implemented using `boost::spirit`.
 Our po grammar itself is only a few dozen lines.
 This makes it very simple and transparent, and easy to modify if needed.  
@@ -44,8 +44,6 @@ of parsing po files rather than mo files at run-time, is provided
   - `SPIRIT_PO_NOEXCEPT` is defined
   - `BOOST_NO_EXCEPTIONS` is defined
   - Boost version >= 1.55. (Fails below that due to a bug in `boost::variant`.)
-  
-  I believe that it should also not require RTTI if you define `BOOST_NO_RTTI`, but I haven't tested this.
 
 ## Using it
 
