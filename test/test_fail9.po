@@ -1,3 +1,5 @@
+// This test should fail because of an unknown escape character '\j'
+
 R"===(
 msgid ""
 msgstr "Language: Test\n"

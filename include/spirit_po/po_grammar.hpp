@@ -78,8 +78,8 @@ struct po_grammar : qi::grammar<Iterator, po_message()> {
 
     // TODO: Do we need to handle other escaped characters?
     escaped_character = lit('\\') >> (char_("\'\"\\") | (lit('n') >> attr('\n')) | (lit('t') >> attr('\t')));
-    single_line_string = lit('"') >> *(escaped_character | (char_ - '"')) >> lit('"');
-    multiline_string = single_line_string % skipped_block;
+    single_line_string = lit('"') >> *(escaped_character | (char_ - '\\' - '"')) >> lit('"');
+    multiline_string = single_line_string % skipped_block;         // ^ this is important, if we don't have this then \\ does not have to be escaped in po string, just form an illegal escape code
 
     message_context = skipped_block >> lit("msgctxt ") >> multiline_string;
     message_id = skipped_block >> lit("msgid ") >> multiline_string;

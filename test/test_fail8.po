@@ -1,3 +1,5 @@
+// This test should fail because the msgstr indices are not counting up correctly
+
 R"===(
 msgid ""
 msgstr "Language: Test\n"
