@@ -16,7 +16,7 @@ requires special tools to create.
 According to `sloccount`, it is only 916 lines of code in total (at time of writing),
 and is implemented using `boost::spirit`.
 Our po grammar itself is only a few dozen lines.
-This makes it very simple and transparent, and easy to modify if needed.  
+This makes it relatively easy to understand its behavior, and makes the library as a whole easy to modify if needed.  
   
 By contrast, the equivalent po-parser facility within the gettext project is
 the `libgettext-po` po-manipulation library. Sloccount counts the entire
