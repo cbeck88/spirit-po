@@ -1,0 +1,456 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Ardit Dani <ardit.dani@gmail.com>, 2014
+# Besnik <besnik@programeshqip.org>, 2015
+# Besnik <besnik@programeshqip.org>, 2015-2016
+# Genti Ereqi, 2014
+# Genti Ereqi, 2014
+# Odeen <rapid_odeen@zoho.com>, 2013
+# Odeen <rapid_odeen@zoho.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2016-03-14 02:18-0400\n"
+"PO-Revision-Date: 2016-03-12 10:58+0000\n"
+"Last-Translator: Besnik <besnik@programeshqip.org>\n"
+"Language-Team: Albanian (http://www.transifex.com/owncloud-org/owncloud/language/sq/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: appinfo/app.php:49 js/breadcrumb.js:120
+msgid "Gallery"
+msgstr "Galeri"
+
+#: js/gallery.js:255
+msgid "Aborting preview. Could not find the file"
+msgstr "Po ndërpritet paraparja. S’u gjet dot kartela"
+
+#: js/gallery.js:343
+msgid "Could not move \"{file}\", target exists"
+msgstr "S’u lëviz dot \"{file}\", objektivi ekziston"
+
+#: js/gallery.js:347
+msgid "Could not move \"{file}\""
+msgstr "S’u lëviz dot \"{file}\""
+
+#: js/gallery.js:507
+msgid "No ownCloud installation (7 or higher) found at {remote}"
+msgstr "Te {remote} s’u gjet instalim ownCloud (7 ose më sipër)"
+
+#: js/gallery.js:509
+msgid "Invalid ownCloud url"
+msgstr "URL ownCloud e pavlefshme"
+
+#: js/gallerybutton.js:66
+msgid "Gallery view"
+msgstr "Pamje Galeri"
+
+#: js/galleryinfobox.js:49
+msgid "Could not load the description"
+msgstr "S’ngarkoi dot përshkrimin"
+
+#: js/galleryinfobox.js:73
+msgid "Could not load the description: "
+msgstr "S’ngarkoi dot përshkrimin: "
+
+#: js/galleryinfobox.js:120
+msgid "Copyright"
+msgstr "Të drejta kopjimi"
+
+#: js/galleryinfobox.js:129
+msgid "Could not load the copyright notice: "
+msgstr "S’u ngarkua dot shënimi mbi të drejta kopjimi: "
+
+#: js/galleryinfobox.js:132
+msgid "Copyright notice"
+msgstr "Shënim të drejtash kopjimi"
+
+#: js/galleryinfobox.js:159
+msgid "Link to copyright document"
+msgstr "Lidhje për te dokumenti i të drejtave të kopjimit"
+
+#: js/galleryutility.js:45
+msgid "This application may not work properly on your browser."
+msgstr "Ky aplikacion mund të mos punojë si duhet në shfletuesin tuaj."
+
+#: js/galleryutility.js:47
+msgid ""
+"For an improved experience, please install one of the following alternatives"
+msgstr "Për një punim më të mirë, ju lutemi, instaloni një nga alternativat vijuese"
+
+#: js/galleryutility.js:50
+msgid "Your browser is not supported!"
+msgstr "Shfletuesi juaj nuk mbulohet!"
+
+#: js/galleryutility.js:51
+msgid "please install one of the following alternatives"
+msgstr "ju lutemi, instaloni një alternativat vijuese"
+
+#: js/galleryview.js:211
+msgid "Album cannot be shown"
+msgstr "Albumi s’shfaqet dot"
+
+#: js/galleryview.js:216
+msgid "No media files found"
+msgstr "S’u gjetën kartela media"
+
+#: js/galleryview.js:220
+msgid "Upload pictures in the files app to display them here"
+msgstr "Ngarkoni foto te aplikacioni i kartelave që t’i shfaqni këtu"
+
+#: js/galleryview.js:223
+msgid "Upload new files via drag and drop or by using the [+] button above"
+msgstr "Ngarkoni kartela të reja përmes teknikës merr dhe vër, ose duke përdorur butonin [+] me sipër"
+
+#: js/galleryview.js:401
+msgid "Configuration error"
+msgstr "Gabim formësimi"
+
+#: js/galleryview.js:500
+msgid "New"
+msgstr "E re"
+
+#: js/slideshow.js:71
+msgid "Error loading slideshow template"
+msgstr "Gabim gjatë ngarkimit të gjedhes për diapozitiva"
+
+#: js/slideshow.js:247
+msgid "<strong>Error!</strong> Could not generate a preview of this file.<br>"
+msgstr "<strong>Gabim!</strong> S’u prodhua dot një paraparje e kësaj kartele.<br>"
+
+#: js/slideshow.js:377
+msgid "Next"
+msgstr "Pasuesja"
+
+#: js/slideshow.js:381
+msgid "Play"
+msgstr "Luaje"
+
+#: js/slideshow.js:385
+msgid "Pause"
+msgstr "Pauzë"
+
+#: js/slideshow.js:389
+msgid "Previous"
+msgstr "E mëparshmja"
+
+#: js/slideshow.js:393
+msgid "Close"
+msgstr "Mbylle"
+
+#: js/slideshow.js:397 templates/public.php:93
+msgid "Download"
+msgstr "Shkarko"
+
+#: js/slideshow.js:402
+msgid "Toggle background"
+msgstr "Ndërroni sfondin"
+
+#: js/upload-helper.js:100
+msgid "\"{name}\" is an invalid file name."
+msgstr "\"{name}\" është emër i pavlefshëm kartele."
+
+#: js/upload-helper.js:102
+msgid "File name cannot be empty."
+msgstr "Emri i kartelës s’mund të jetë i zbrazët."
+
+#: js/vendor/owncloud/newfilemenu.js:71
+msgid "Upload"
+msgstr "Ngarkoje"
+
+#: js/vendor/owncloud/share.js:88 js/vendor/owncloud/share.js:111
+#: js/vendor/owncloud/share.js:130 js/vendor/owncloud/share.js:653
+#: js/vendor/owncloud/share.js:1139
+msgid "Error"
+msgstr "Gabim"
+
+#: js/vendor/owncloud/share.js:92 js/vendor/owncloud/share.js:1212
+msgid "Error while sharing"
+msgstr "Gabim gjatë ndarjes me të tjerët"
+
+#: js/vendor/owncloud/share.js:111
+msgid "Error while unsharing"
+msgstr "Gabim gjatë heqjes së ndarjes me të tjerët"
+
+#: js/vendor/owncloud/share.js:129
+msgid "Error while changing permissions"
+msgstr "Gabim gjatë ndryshimit të lejeve"
+
+#: js/vendor/owncloud/share.js:158
+msgid "Shared with you and the group {group} by {owner}"
+msgstr "Ndarë me ju dhe me grupin {group} nga {owner}"
+
+#: js/vendor/owncloud/share.js:163
+msgid "Shared with you by {owner}"
+msgstr "Ndarë me ju nga {owner}"
+
+#: js/vendor/owncloud/share.js:191
+msgid "Share with users or groups …"
+msgstr "Ndajeni me përdorues ose grupe …"
+
+#: js/vendor/owncloud/share.js:193
+msgid "Share with users, groups or remote users …"
+msgstr "Ndajeni me përdorues, grupe ose përdorues të largët …"
+
+#: js/vendor/owncloud/share.js:196 templates/part.content.php:106
+#: templates/part.content.php:109
+msgid "Share"
+msgstr "Ndajeni me të tjerët"
+
+#: js/vendor/owncloud/share.js:204
+msgid ""
+"Share with people on other ownClouds using the syntax "
+"username@example.com/owncloud"
+msgstr "Ndajeni me persona në ownCloud-e të tjera duke përdorur sintaksën username@example.com/owncloud"
+
+#: js/vendor/owncloud/share.js:219
+msgid "Share link"
+msgstr "Ndani lidhjen"
+
+#: js/vendor/owncloud/share.js:227
+msgid ""
+"The public link will expire no later than {days} days after it is created"
+msgstr "Lidhja publike do të skadojë jo më vonë se {days} ditë pas krijimit"
+
+#: js/vendor/owncloud/share.js:231
+msgid "Link"
+msgstr "Lidhje"
+
+#: js/vendor/owncloud/share.js:238
+msgid "Password protect"
+msgstr "Mbroje me fjalëkalim"
+
+#: js/vendor/owncloud/share.js:241 templates/authenticate.php:21
+#: templates/authenticate.php:24
+msgid "Password"
+msgstr "Fjalëkalim"
+
+#: js/vendor/owncloud/share.js:243 js/vendor/owncloud/share.js:972
+#: js/vendor/owncloud/share.js:1081
+msgid "Choose a password for the public link"
+msgstr "Zgjidhni një fjalëkalim për lidhjen publike"
+
+#: js/vendor/owncloud/share.js:256
+msgid "Allow editing"
+msgstr "Lejo përpunim"
+
+#: js/vendor/owncloud/share.js:266
+msgid "Email link to person"
+msgstr "Dërgo personi lidhjen me email"
+
+#: js/vendor/owncloud/share.js:269
+msgid "Send"
+msgstr "Dërgoje"
+
+#: js/vendor/owncloud/share.js:279
+msgid "Set expiration date"
+msgstr "Caktoni datë skadimi"
+
+#: js/vendor/owncloud/share.js:281
+msgid "Expiration"
+msgstr "Skadim"
+
+#: js/vendor/owncloud/share.js:283
+msgid "Expiration date"
+msgstr "Datë skadimi"
+
+#: js/vendor/owncloud/share.js:362
+msgid "An error occured. Please try again"
+msgstr "Ndodhi një gabim. Ju lutemi, riprovoni"
+
+#: js/vendor/owncloud/share.js:405
+msgid "Adding user..."
+msgstr "Po shtohet përdorues…"
+
+#: js/vendor/owncloud/share.js:434 js/vendor/owncloud/share.js:679
+msgid "group"
+msgstr "grup"
+
+#: js/vendor/owncloud/share.js:436 js/vendor/owncloud/share.js:682
+msgid "remote"
+msgstr "i largët"
+
+#: js/vendor/owncloud/share.js:478
+msgid "Resharing is not allowed"
+msgstr "Nuk lejohen rindarjet"
+
+#: js/vendor/owncloud/share.js:652
+msgid "Error while retrieving shares"
+msgstr "Gabim teksa merreshin ndarjet"
+
+#: js/vendor/owncloud/share.js:716 js/vendor/owncloud/share.js:717
+msgid "Unshare"
+msgstr "Hiqja ndarjen"
+
+#: js/vendor/owncloud/share.js:735
+msgid "notify by email"
+msgstr "njoftoje me email"
+
+#: js/vendor/owncloud/share.js:743
+msgid "can share"
+msgstr "mund të ndajë"
+
+#: js/vendor/owncloud/share.js:752
+msgid "can edit"
+msgstr "mund të ndryshojë"
+
+#: js/vendor/owncloud/share.js:756
+msgid "access control"
+msgstr "kontroll hyrjesh"
+
+#: js/vendor/owncloud/share.js:765
+msgid "create"
+msgstr "krijoje"
+
+#: js/vendor/owncloud/share.js:772
+msgid "change"
+msgstr "ndërroje"
+
+#: js/vendor/owncloud/share.js:779
+msgid "delete"
+msgstr "fshije"
+
+#: js/vendor/owncloud/share.js:1106
+msgid "Password protected"
+msgstr "Mbrojtur me fjalëkalim"
+
+#: js/vendor/owncloud/share.js:1138
+msgid "Error unsetting expiration date"
+msgstr "Gabim në heqjen e datës së skadimit"
+
+#: js/vendor/owncloud/share.js:1166
+msgid "Error setting expiration date"
+msgstr "Gabim në caktimin e datës së skadimit"
+
+#: js/vendor/owncloud/share.js:1191
+msgid "Sending ..."
+msgstr "Po dërgohet …"
+
+#: js/vendor/owncloud/share.js:1207
+msgid "Email sent"
+msgstr "Email-i u dërgua"
+
+#: js/vendor/owncloud/share.js:1241
+msgid "Warning"
+msgstr "Kujdes"
+
+#: templates/authenticate.php:14
+msgid "This share is password-protected"
+msgstr "Kjo pjesë është e mbrojtur me fjalëkalim"
+
+#: templates/authenticate.php:18
+msgid "The password is wrong. Try again."
+msgstr "Fjalëkalimi është i gabuar. Riprovoni."
+
+#: templates/part.content.php:73 templates/part.content.php:76
+#: templates/public.php:112 templates/public.php:115
+msgid "Sort by date"
+msgstr "Renditi sipas datash"
+
+#: templates/part.content.php:83 templates/part.content.php:86
+#: templates/public.php:122 templates/public.php:125
+msgid "Sort by name"
+msgstr "Renditi sipas emrash"
+
+#: templates/part.content.php:95
+msgid "Cancel upload"
+msgstr "Anuloje ngarkimin"
+
+#: templates/part.content.php:116 templates/public.php:134
+msgid "Album information"
+msgstr "Të dhëna albumi"
+
+#: templates/part.content.php:127
+msgid "File list"
+msgstr "Listë kartelash"
+
+#: templates/part.filenotfounderror.php:17
+msgid "Sorry, this file could not be found."
+msgstr "Na ndjeni, kjo kartelë s’u gjet dot."
+
+#: templates/part.filenotfounderror.php:19 templates/part.linkerror.php:19
+msgid "Reasons might be:"
+msgstr "Arsyet mund të jenë:"
+
+#: templates/part.filenotfounderror.php:21
+msgid "the wrong file ID was provided"
+msgstr "u dha ID e gabuar kartele"
+
+#: templates/part.filenotfounderror.php:22
+msgid "the file was removed"
+msgstr "kartela është hequr"
+
+#: templates/part.filenotfounderror.php:23
+msgid "the file is corrupt"
+msgstr "kartela është e dëmtuar"
+
+#: templates/part.filenotfounderror.php:24
+msgid "the encryption key is missing"
+msgstr "mungon kyçi i fshehtëzimeve"
+
+#: templates/part.filenotfounderror.php:28
+#: templates/part.internalservererror.php:27 templates/part.linkerror.php:27
+msgid "Here is the error message returned by the server: "
+msgstr "Ky është mesazhi i gabimit i kthyer nga shërbyesi: "
+
+#: templates/part.filenotfounderror.php:33
+#: templates/part.internalservererror.php:32
+msgid ""
+"For more information, please contact your friendly ownCloud administrator."
+msgstr "Për më tepër të dhëna, ju lutemi, lidhuni me ne përgjegjësin miqësor të ownCloud-it tuaj."
+
+#: templates/part.internalservererror.php:17
+msgid "Sorry, but the server could not fulfill your request."
+msgstr "Na ndjeni, por shërbyesi s’e përmbushi dot kërkesën tuaj."
+
+#: templates/part.internalservererror.php:19
+msgid "Possible reasons for the problem:"
+msgstr "Arsye të mundshme për problemin:"
+
+#: templates/part.internalservererror.php:21
+msgid "a conflicting app was installed"
+msgstr "qe instaluar një aplikacion konfliktues"
+
+#: templates/part.internalservererror.php:22
+msgid "a required component is missing or was disconnected"
+msgstr "mungon ose është shkëputur një përbërës i domosdoshëm"
+
+#: templates/part.internalservererror.php:23
+msgid "the filesystem is not readable"
+msgstr "sistemi i kartelave nuk lejon lexim"
+
+#: templates/part.linkerror.php:17
+msgid "Sorry, this link doesn't seem to work anymore."
+msgstr "Na ndjeni, kjo lidhje nuk duket se funksionon më."
+
+#: templates/part.linkerror.php:21
+msgid "the item was removed"
+msgstr "objekti u hoq"
+
+#: templates/part.linkerror.php:22
+msgid "the link has expired"
+msgstr "lidhja ka skaduar"
+
+#: templates/part.linkerror.php:23
+msgid "sharing is disabled"
+msgstr "ndarjet janë çaktivizuar"
+
+#: templates/part.linkerror.php:32
+msgid ""
+"For more information, please ask the person who has sent you this link."
+msgstr "Për më tepër të dhëna, ju lutemi, pyetni personin që ju dërgoi këtë lidhje."
+
+#: templates/public.php:79
+msgid "Add to your ownCloud"
+msgstr "Shtojeni te ownCloud-i juaj"
+
+#: templates/public.php:145
+msgid "Picture view"
+msgstr "Pamje Foto"

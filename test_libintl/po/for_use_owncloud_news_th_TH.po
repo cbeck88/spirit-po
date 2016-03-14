@@ -1,0 +1,546 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# AriesAnywhere Anywhere <ariesanywhere@gmail.com>, 2012-2013
+# minkbear <minkbear@gmail.com>, 2014
+# Sunchai Paejaroenchai, 2015-2016
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2016-03-14 01:01-0400\n"
+"PO-Revision-Date: 2016-01-28 12:41+0000\n"
+"Last-Translator: Sunchai Paejaroenchai\n"
+"Language-Team: Thai (Thailand) (http://www.transifex.com/owncloud-org/owncloud/language/th_TH/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: th_TH\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: fetcher/feedfetcher.php:116
+msgid "Feed contains invalid XML"
+msgstr "ฟีดประกอบด้วย XML ที่ไม่ถูกต้อง"
+
+#: fetcher/feedfetcher.php:118
+msgid ""
+"Feed not found: either the website does not provide a feed or blocks access."
+" To rule out blocking, try to download the feed on your server's command "
+"line using curl: curl http://the-feed.tld"
+msgstr "ไม่พบฟีด: เว็บไซต์ไม่ได้ระบุฟีดหรือบล็อกการเข้าถึง ลองพยายามดาวน์โหลดฟีดในเซิร์ฟเวอร์ด้วยคำสั่งนี้: http://the-feed.tld"
+
+#: fetcher/feedfetcher.php:123
+msgid "Detected feed format is not supported"
+msgstr "รูปแบบฟีดที่ตรวจพบไม่ได้รับการสนับสนุน"
+
+#: fetcher/feedfetcher.php:125
+msgid "SSL Certificate is invalid"
+msgstr "ใบรับรองความปลอดภัย SSL ไม่ถูกต้อง"
+
+#: fetcher/feedfetcher.php:127
+msgid "Website not found"
+msgstr "ไม่พบเว็บไซต์"
+
+#: fetcher/feedfetcher.php:129
+msgid "More redirects than allowed, aborting"
+msgstr "มีการเปลี่ยนเส้นทางมากกว่าที่อนุญาตไว้ ยกเลิก!"
+
+#: fetcher/feedfetcher.php:131
+msgid "Bigger than maximum allowed size"
+msgstr "มีขนาดใหญ่กว่าขนาดสูงสุดที่อนุญาต"
+
+#: fetcher/feedfetcher.php:133
+msgid "Request timed out"
+msgstr "การร้องขอหมดเวลา"
+
+#: js/app/Config.js:49
+msgid "Request failed, network connection unavailable!"
+msgstr "คำขอล้มเหลวเชื่อมต่อเครือข่ายไม่ได้!"
+
+#: js/app/Config.js:50
+msgid "Request unauthorized. Are you logged in?"
+msgstr "คำขอไม่ได้รับอนุญาต คุณเข้าสู่ระบบ?"
+
+#: js/app/Config.js:51
+msgid "Request forbidden. Are you an admin?"
+msgstr "คำขอถูกปฏิเสธ คุณเป็นผู้ดูแลระบบ?"
+
+#: js/app/Config.js:52
+msgid "Token expired or app not enabled! Reload the page!"
+msgstr "โทเค็นหมดอายุหรือไม่เปิดใช้งานแอพพลิเคชัน! โหลดหน้าใหม่อีกครั้ง!"
+
+#: js/app/Config.js:53
+msgid "Internal server error! Please check your "
+msgstr "ข้อผิดพลาดภายในเซิร์ฟเวอร์! กรุณาตรวจสอบบันทึกของคุณ"
+
+#: js/app/Config.js:56
+msgid "Request failed, ownCloud is in currently "
+msgstr "คำขอล้มเหลว ownCloud อยู่ในขณะนี้"
+
+#: service/feedservice.php:105
+msgid "Can not add feed: Exists already"
+msgstr "ไม่สามารถเพิ่มฟีด: มีอยู่แล้ว"
+
+#: service/feedservice.php:322
+msgid "Articles without feed"
+msgstr "บทความไม่มีฟีด"
+
+#: service/folderservice.php:58
+msgid "Can not add folder: Exists already"
+msgstr "ไม่สามารถเพิ่มโฟลเดอร์: มีอยู่แล้ว"
+
+#: templates/admin.php:12
+msgid "Use ownCloud cron for updates"
+msgstr "ใช้ Cron ownCloud สำหรับการอัพเดท"
+
+#: templates/admin.php:17
+msgid ""
+"Disable this if you run a custom updater such as the Python updater included"
+" in the app"
+msgstr "ปิดการใช้งานนี้ถ้าคุณเรียกใช้อัพเดทด้วยตนเองเช่นอัพเดท Python รวมอยู่ในแอพฯ"
+
+#: templates/admin.php:25
+msgid "Purge interval"
+msgstr "ช่วงเวลาที่ล้าง"
+
+#: templates/admin.php:30
+msgid ""
+"Minimum amount of seconds after deleted feeds and folders are removed from "
+"the database; values below 60 seconds are ignored"
+msgstr "จำนวนขั้นต่ำของวินาทีหลังจากลบฟีดและโฟลเดอร์ที่ถูกลบออกจากฐานข้อมูลนั้น ค่าต่ำกว่า 60 วินาทีจะถูกยกเว้น"
+
+#: templates/admin.php:41
+msgid "Maximum read count per feed"
+msgstr "นับจำนวนอ่านสูงสุดต่อฟีด"
+
+#: templates/admin.php:47
+msgid ""
+"Defines the maximum amount of articles that can be read per feed which won't"
+" be deleted by the cleanup job; if old articles reappear after being read, "
+"increase this value; negative values such as -1 will turn this feature off "
+"completely"
+msgstr "กำหนดจำนวนสูงสุดของบทความที่สามารถอ่านต่อฟีดที่จะไม่ถูกลบโดยการล้างข้อมูล หากบทความเก่าเกิดขึ้นอีกครั้งหลังจากที่ถูกอ่านเพิ่มค่านี้; ค่าลบเช่น -1 จะปิดคุณลักษณะนี้อย่างสมบูรณ์"
+
+#: templates/admin.php:60
+msgid "Maximum redirects"
+msgstr "เปลี่ยนเส้นทางสูงสุด"
+
+#: templates/admin.php:66
+msgid "How many redirects the feed fetcher should follow"
+msgstr "กี่เส้นทางที่ตัวเรียกฟีดควรทำตาม"
+
+#: templates/admin.php:76
+msgid "Maximum feed page size"
+msgstr "ขนาดหน้าฟีดสูงสุด"
+
+#: templates/admin.php:82
+msgid ""
+"Maximum feed size in bytes. If the RSS/Atom page is bigger than this value, "
+"the update will be aborted"
+msgstr "ขนาดฟีดสูงสุดเป็นไบต์ หากหน้า RSS/Atom มีขนาดใหญ่กว่าค่านี้การอัพเดทจะถูกยกเลิก"
+
+#: templates/admin.php:93
+msgid "Feed fetcher timeout"
+msgstr "ตัวเรียกฟีดหมดเวลา"
+
+#: templates/admin.php:99
+msgid ""
+"Maximum number of seconds to wait for an RSS or Atom feed to load; if it "
+"takes longer the update will be aborted"
+msgstr "จำนวนวินาทีสูงสุดของ RSS หรือ Atom เพื่อรอโหลดฟีด ถ้ามันใช้เวลานานในการอัพเดทจะถูกยกเลิก"
+
+#: templates/admin.php:109
+msgid "Explore Service URL"
+msgstr "สำรวจบริการ URL"
+
+#: templates/admin.php:115
+msgid ""
+"If given, this service's URL will be queried for displaying the feeds in the"
+" explore feed section. To fall back to the built in explore service, leave "
+"this input empty"
+msgstr "หากได้รับบริการ URL นี้ คุณจะได้รับการสอบถามการสำรวจการแสดงของฟีด ปล่อยว่างไว้หากคุณไม่ต้องการมัน"
+
+#: templates/admin.php:122
+msgid "For more information check the Wiki"
+msgstr "สำหรับข้อมูลเพิ่มเติมสามารถตรวจสอบวิกิพีเดีย"
+
+#: templates/admin.php:129
+msgid "Saved"
+msgstr "บันทึกแล้ว"
+
+#: templates/index.php:99
+msgid "Download"
+msgstr "ดาวน์โหลด"
+
+#: templates/index.php:102
+msgid "Close"
+msgstr "ปิด"
+
+#: templates/part.content.cronwarning.php:3
+msgid ""
+"Ajax or webcron cron mode detected! Your feeds will not be updated "
+"correctly. It is recommended to either use the operating system cron or a "
+"custom updater."
+msgstr "ตรวจพบโหมด Ajax หรือ webcron! ฟีดของคุณจะไม่ได้รับการปรับปรุงอย่างถูกต้อง แนะนำให้ใช้ระบบ cron หรืออัพเดทด้วยตนเอง"
+
+#: templates/part.content.cronwarning.php:12
+msgid "How to set up the operating system cron"
+msgstr "วิธีการตั้งค่าระบบปฏิบัติการ cron"
+
+#: templates/part.content.cronwarning.php:20
+msgid "How to set up a custom updater (faster and no possible deadlock) "
+msgstr "วิธีการติดตั้งการอัพเดทที่กำหนดเอง (ได้เร็วขึ้นและไม่มีการหยุดชะงัก)"
+
+#: templates/part.content.explore.php:6
+msgid "filter"
+msgstr "ตัวกรอง"
+
+#: templates/part.content.explore.php:12
+msgid "Language"
+msgstr "ภาษา"
+
+#: templates/part.content.explore.php:43
+#: templates/part.navigation.addfeed.php:6
+#: templates/part.navigation.addfeed.php:79
+msgid "Subscribe"
+msgstr "สมัครรับข้อมูล"
+
+#: templates/part.content.explore.php:51
+msgid "Got more awesome feeds? Share them with us!"
+msgstr "มีฟีดที่น่าสนใจบ้างไหม? แชร์มันให้เรารู้ด้วยสิ!"
+
+#: templates/part.content.php:14 templates/part.content.shortcuts.php:46
+msgid "Refresh"
+msgstr "รีเฟรช"
+
+#: templates/part.content.php:18
+msgid "No articles available"
+msgstr "ไม่มีบทความที่"
+
+#: templates/part.content.php:19
+msgid "No unread articles available"
+msgstr "ไม่มีบทความที่ยังไม่ได้อ่าน"
+
+#: templates/part.content.php:39
+msgid "Open website"
+msgstr "เปิดเว็บไซต์"
+
+#: templates/part.content.php:71
+msgid "Star article"
+msgstr "บทความติดดาว"
+
+#: templates/part.content.php:75
+msgid "Unstar article"
+msgstr "ยกเลิกติดดาวบทความ"
+
+#: templates/part.content.php:83
+msgid "Keep article unread"
+msgstr "ตั้งเป็นยังไม่ได้อ่านบทความ"
+
+#: templates/part.content.php:89
+msgid "Remove keep article unread"
+msgstr "ลบการตั้งเป็นยังไม่ได้อ่านบทความ"
+
+#: templates/part.content.php:125
+msgid "by"
+msgstr "โดย"
+
+#: templates/part.content.php:127
+msgid "from"
+msgstr "จาก"
+
+#: templates/part.content.php:137
+msgid "Play audio"
+msgstr "เล่นเพลง"
+
+#: templates/part.content.php:139
+msgid "Download video"
+msgstr "ดาวน์โหลดวิดีโอ"
+
+#: templates/part.content.php:142
+msgid "Download audio"
+msgstr "ดาวน์โหลดเพลง"
+
+#: templates/part.content.shortcuts.php:7
+msgid "Keyboard shortcut"
+msgstr "แป้นพิมพ์ลัด"
+
+#: templates/part.content.shortcuts.php:8
+msgid "Description"
+msgstr "คำอธิบาย"
+
+#: templates/part.content.shortcuts.php:11
+msgid "right"
+msgstr "ขวา"
+
+#: templates/part.content.shortcuts.php:12
+msgid "Jump to next article"
+msgstr "ข้ามไปยังบทความถัดไป"
+
+#: templates/part.content.shortcuts.php:15
+msgid "left"
+msgstr "ซ้าย"
+
+#: templates/part.content.shortcuts.php:16
+msgid "Jump to previous article"
+msgstr "ข้ามไปยังบทความก่อนหน้านี้"
+
+#: templates/part.content.shortcuts.php:20
+msgid "Toggle star article"
+msgstr "สลับบทความติดดาว"
+
+#: templates/part.content.shortcuts.php:25
+msgid "Star article and jump to next one"
+msgstr "บทความติดดาวและกระข้ามไปอีกหน้าหนึ่ง"
+
+#: templates/part.content.shortcuts.php:31
+msgid "Toggle keep current article unread"
+msgstr "สลับให้บทความในปัจจุบันยังไม่ได้อ่าน"
+
+#: templates/part.content.shortcuts.php:36
+msgid "Open article in new tab"
+msgstr "เปิดบทความในแท็บใหม่"
+
+#: templates/part.content.shortcuts.php:41
+msgid "Toggle expand article in compact view"
+msgstr "สลับการขยายบทความในมุมมองที่เล็กลง"
+
+#: templates/part.content.shortcuts.php:50
+msgid "Load next feed"
+msgstr "โหลดฟีดถัดไป"
+
+#: templates/part.content.shortcuts.php:54
+msgid "Load previous feed"
+msgstr "โหลดฟีดก่อนหน้านี้"
+
+#: templates/part.content.shortcuts.php:58
+msgid "Load next folder"
+msgstr "โหลดโฟลเดอร์ถัดไป"
+
+#: templates/part.content.shortcuts.php:62
+msgid "Load previous folder"
+msgstr "โหลดโฟลเดอร์ก่อนหน้า"
+
+#: templates/part.content.shortcuts.php:66
+msgid "Scroll to active navigation entry"
+msgstr "เลื่อนเพื่อใช้งานรายการนำทาง"
+
+#: templates/part.content.shortcuts.php:70
+msgid "Focus search field"
+msgstr "โฟกัสช่องค้นหา"
+
+#: templates/part.content.shortcuts.php:74
+msgid "Mark current article's feed/folder read"
+msgstr "ทำเครื่องหมายอ่านบทความปัจจุบัน ฟีด/โฟลเดอร์"
+
+#: templates/part.navigation.addfeed.php:20
+msgid "Web address"
+msgstr "ที่อยู่เว็บ"
+
+#: templates/part.navigation.addfeed.php:29
+msgid "Feed exists already!"
+msgstr "ฟีดมีอยู่แล้วในระบบ!"
+
+#: templates/part.navigation.addfeed.php:34
+msgid "Folder"
+msgstr "แฟ้มเอกสาร"
+
+#: templates/part.navigation.addfeed.php:40
+msgid "No folder"
+msgstr "ไม่มีโฟลเดอร์"
+
+#: templates/part.navigation.addfeed.php:45
+msgid "New folder"
+msgstr "โฟลเดอร์ใหม่"
+
+#: templates/part.navigation.addfeed.php:60
+#: templates/part.navigation.addfolder.php:22
+#: templates/part.navigation.addfolder.php:23
+msgid "Folder name"
+msgstr "ชื่อโฟลเดอร์"
+
+#: templates/part.navigation.addfeed.php:67
+msgid "Go back"
+msgstr "กลับไป"
+
+#: templates/part.navigation.addfeed.php:75
+#: templates/part.navigation.addfolder.php:29
+#: templates/part.navigation.folder.php:70
+msgid "Folder exists already!"
+msgstr "โฟลเดอร์มีอยู่แล้วในระบบ"
+
+#: templates/part.navigation.addfolder.php:7
+msgid "New Folder"
+msgstr "โฟลเดอร์ใหม่"
+
+#: templates/part.navigation.addfolder.php:33
+msgid "Create"
+msgstr "สร้าง"
+
+#: templates/part.navigation.explore.php:3
+msgid "Explore"
+msgstr "สำรวจ"
+
+#: templates/part.navigation.feed.php:36
+msgid "Update failed more than 50 times"
+msgstr "อัพเดทล้มเหลวมากกว่า 50 ครั้ง"
+
+#: templates/part.navigation.feed.php:50
+msgid "Deleted feed"
+msgstr "ฟีดที่ถูกลบ"
+
+#: templates/part.navigation.feed.php:53
+msgid "Undo delete feed"
+msgstr "ยกเลิกการลบฟีด"
+
+#: templates/part.navigation.feed.php:67
+#: templates/part.navigation.folder.php:60
+msgid "Rename"
+msgstr "เปลี่ยนชื่อ"
+
+#: templates/part.navigation.feed.php:82
+#: templates/part.navigation.folder.php:105
+msgid "Menu"
+msgstr "เมนู"
+
+#: templates/part.navigation.feed.php:93
+msgid "Unpin feed from the top"
+msgstr "ยกเลิกการปักหมุดฟีดจากด้านบน"
+
+#: templates/part.navigation.feed.php:98
+msgid "Pin feed to the top"
+msgstr "ปักหมุดฟีดจากด้านบน"
+
+#: templates/part.navigation.feed.php:105
+msgid "No feed ordering"
+msgstr "ไม่มีรายการฟีด"
+
+#: templates/part.navigation.feed.php:110
+msgid "Reversed feed ordering"
+msgstr "ย้อนกลับรายการฟีด"
+
+#: templates/part.navigation.feed.php:115
+msgid "Normal feed ordering"
+msgstr "รายการฟีดปกติ"
+
+#: templates/part.navigation.feed.php:122
+msgid "Enable full text feed fetching"
+msgstr "เปิดการใช้งานการเรียกข้อความฟีดแบบเต็ม"
+
+#: templates/part.navigation.feed.php:127
+msgid "Disable full text feed fetching"
+msgstr "ปิดการใช้งานการเรียกข้อความฟีดแบบเต็ม"
+
+#: templates/part.navigation.feed.php:134
+msgid "Keep updated articles as is"
+msgstr "บทความได้รับการปรับปรุงตามที่เป็นอยู่"
+
+#: templates/part.navigation.feed.php:139
+msgid "Mark updated articles unread"
+msgstr "เลือกให้เป็นบทความที่ยังไม่ได้อ่าน"
+
+#: templates/part.navigation.feed.php:145
+msgid "Rename feed"
+msgstr "เปลี่ยนชื่อฟีด"
+
+#: templates/part.navigation.feed.php:151
+msgid "Delete feed"
+msgstr "ลบ feed"
+
+#: templates/part.navigation.feed.php:157
+#: templates/part.navigation.folder.php:127
+#: templates/part.navigation.unreadfeed.php:33
+msgid "Mark all articles read"
+msgstr "ทำเครื่องหมายอ่านบทความทั้งหมด"
+
+#: templates/part.navigation.feed.php:167
+#: templates/part.navigation.folder.php:142
+msgid "Dismiss"
+msgstr "ยกเลิก"
+
+#: templates/part.navigation.folder.php:20
+msgid "Collapse"
+msgstr "ย่อ"
+
+#: templates/part.navigation.folder.php:27
+msgid "Deleted folder"
+msgstr "โฟลเดอร์ที่ถูกลบ"
+
+#: templates/part.navigation.folder.php:30
+msgid "Undo delete folder"
+msgstr "ยกเลิกการลบโฟลเดอร์"
+
+#: templates/part.navigation.folder.php:115
+msgid "Rename folder"
+msgstr "เปลี่ยนชื่อโฟลเดอร์"
+
+#: templates/part.navigation.folder.php:121
+msgid "Delete folder"
+msgstr "ลบโฟลเดอร์"
+
+#: templates/part.navigation.starredfeed.php:8
+msgid "Starred"
+msgstr "ติดดาวแล้ว"
+
+#: templates/part.navigation.unreadfeed.php:8
+msgid "Unread articles"
+msgstr "บทความที่ยังไม่ได้อ่าน"
+
+#: templates/part.navigation.unreadfeed.php:12
+msgid "All articles"
+msgstr "บทความทั้งหมด"
+
+#: templates/part.settings.php:8
+msgid "Settings"
+msgstr "ตั้งค่า"
+
+#: templates/part.settings.php:11
+msgid "Keyboard shortcuts"
+msgstr "ปุ่มลัด"
+
+#: templates/part.settings.php:20
+msgid "Disable mark read through scrolling"
+msgstr "ปิดการใช้งานเครื่องหมายอ่านอ่านแล้วผ่านการเลื่อน"
+
+#: templates/part.settings.php:30
+msgid "Compact view"
+msgstr "มุมมองขนาดเล็ก"
+
+#: templates/part.settings.php:41
+msgid "Expand articles on key navigation"
+msgstr "ขยายบทความเกี่ยวกับการนำทางที่สำคัญ"
+
+#: templates/part.settings.php:51
+msgid "Show all articles"
+msgstr "แสดงบทความทั้งหมด"
+
+#: templates/part.settings.php:61
+msgid "Reverse ordering (oldest on top)"
+msgstr "ย้อนกลับรายการ (เก่าที่สุดอยู่ด้านบน)"
+
+#: templates/part.settings.php:66
+msgid "Subscriptions (OPML)"
+msgstr "สมัครเป็นสมาชิก (OPML)"
+
+#: templates/part.settings.php:73 templates/part.settings.php:110
+msgid "Import"
+msgstr "นำเข้า"
+
+#: templates/part.settings.php:81 templates/part.settings.php:90
+#: templates/part.settings.php:118 templates/part.settings.php:126
+msgid "Export"
+msgstr "ส่งออก"
+
+#: templates/part.settings.php:97
+msgid "Error when importing: file does not contain valid OPML"
+msgstr "ข้อผิดพลาดเมื่อนำเข้า: ไฟล์มี OPML ที่ไม่ถูกต้อง"
+
+#: templates/part.settings.php:102
+msgid "Unread/Starred Articles"
+msgstr "บทความที่ ยังไม่ได้อ่าน/ติดดาว"
+
+#: templates/part.settings.php:133
+msgid "Error when importing: file does not contain valid JSON"
+msgstr "ข้อผิดพลาดเมื่อนำเข้า: ไฟล์มี JSON ที่ไม่ถูกต้อง"

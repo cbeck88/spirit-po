@@ -1,0 +1,422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# AriesAnywhere Anywhere <ariesanywhere@gmail.com>, 2012
+# Sunchai Paejaroenchai, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2016-03-14 01:07-0400\n"
+"PO-Revision-Date: 2015-09-08 09:23+0000\n"
+"Last-Translator: Sunchai Paejaroenchai\n"
+"Language-Team: Thai (Thailand) (http://www.transifex.com/owncloud-org/owncloud/language/th_TH/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: th_TH\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: appinfo/app.php:37
+msgid "Tasks"
+msgstr "งาน"
+
+#: js/calendar-missing.js:12
+msgid "Tasks app is unavailable because the calendar is not installed"
+msgstr "งานของแอพฯยังไม่พร้อมใช้งาน เพราะไม่ได้ติดตั้งปฏิทิน"
+
+#: js/public/app.js:52
+msgid "Due yesterday"
+msgstr "ครบกำหนดเมื่อวานนี้"
+
+#: js/public/app.js:53
+msgid "Due today"
+msgstr "ครบกำหนดวันนี้"
+
+#: js/public/app.js:54
+msgid "Due tomorrow"
+msgstr "ครบกำหนดเมื่อวานนี้"
+
+#: js/public/app.js:55 js/public/app.js:56 js/public/app.js:57
+msgid "Due on"
+msgstr "ครบกำหนดเมื่อ"
+
+#: js/public/app.js:62
+msgid "Started yesterday"
+msgstr "เริ่มต้นเมื่อวานนี้"
+
+#: js/public/app.js:63
+msgid "Starts today"
+msgstr "เริ่มต้นวันนี้"
+
+#: js/public/app.js:64
+msgid "Starts tomorrow"
+msgstr "เริ่มต้นวันพรุ่งนี้"
+
+#: js/public/app.js:65 js/public/app.js:71
+msgid "Started on"
+msgstr "เริ่มต้นบน"
+
+#: js/public/app.js:66 js/public/app.js:69
+msgid "Starts on"
+msgstr "เริ่มต้นบน"
+
+#: js/public/app.js:78
+msgid "[Remind me yesterday at ]HH:mm"
+msgstr "[เตือนฉันเมื่อวานตอนเวลา] HH:mm"
+
+#: js/public/app.js:79
+msgid "[Remind me today at ]HH:mm"
+msgstr "[เตือนฉันวันนี้ตอนเวลา] HH:mm"
+
+#: js/public/app.js:80
+msgid "[Remind me tomorrow at ]HH:mm"
+msgstr "[เตือนฉันพรุ่งนี้ตอนเวลา] HH:mm"
+
+#: js/public/app.js:81 js/public/app.js:82 js/public/app.js:83
+msgid "[Remind me on ]MMM DD, YYYY,[ at ]HH:mm"
+msgstr "[เตือนฉันเมื่อ] DD-MMM-YYYY [ตอนเวลา] HH:mm"
+
+#: js/public/app.js:88 js/public/app.js:98 js/public/app.js:108
+msgid "Yesterday"
+msgstr "เมื่อวานนี้"
+
+#: js/public/app.js:89 js/public/app.js:99 js/public/app.js:109
+#: service/collectionsservice.php:54
+msgid "Today"
+msgstr "วันนี้"
+
+#: js/public/app.js:90 js/public/app.js:100 js/public/app.js:110
+msgid "Tomorrow"
+msgstr "วันพรุ่งนี้"
+
+#: js/public/app.js:118
+#, python-format
+msgid "in %s"
+msgstr "ใน %s"
+
+#: js/public/app.js:119
+#, python-format
+msgid "%s ago"
+msgstr "%s ที่ผ่านมา"
+
+#: js/public/app.js:120 js/public/app.js:405
+msgid "seconds"
+msgstr "วินาที"
+
+#: js/public/app.js:121
+msgid "a minute"
+msgstr "หนึ่งนาที"
+
+#: js/public/app.js:122
+#, python-format
+msgid "%d minutes"
+msgstr "%d นาที"
+
+#: js/public/app.js:123
+msgid "an hour"
+msgstr "หนึ่งชั่วโมง"
+
+#: js/public/app.js:124
+#, python-format
+msgid "%d hours"
+msgstr "%d ชั่วโมง"
+
+#: js/public/app.js:125
+msgid "a day"
+msgstr "หนึ่งวัน"
+
+#: js/public/app.js:126
+#, python-format
+msgid "%d days"
+msgstr "%d วัน"
+
+#: js/public/app.js:127
+msgid "a month"
+msgstr "หนึ่งเดือน"
+
+#: js/public/app.js:128
+#, python-format
+msgid "%d months"
+msgstr "%d เดือน"
+
+#: js/public/app.js:129
+msgid "a year"
+msgstr "หนึ่งปี"
+
+#: js/public/app.js:130
+#, python-format
+msgid "%d years"
+msgstr "%d ปี"
+
+#: js/public/app.js:261
+msgid "Hours"
+msgstr "ชั่วโมง"
+
+#: js/public/app.js:262
+msgid "Minutes"
+msgstr "นาที"
+
+#: js/public/app.js:388
+msgid "week"
+msgstr "สัปดาห์"
+
+#: js/public/app.js:389
+msgid "weeks"
+msgstr "สัปดาห์"
+
+#: js/public/app.js:392
+msgid "day"
+msgstr "วัน"
+
+#: js/public/app.js:393
+msgid "days"
+msgstr "วัน"
+
+#: js/public/app.js:396
+msgid "hour"
+msgstr "ชั่วโมง"
+
+#: js/public/app.js:397
+msgid "hours"
+msgstr "ชั่วโมง"
+
+#: js/public/app.js:400
+msgid "minute"
+msgstr "นาที"
+
+#: js/public/app.js:401
+msgid "minutes"
+msgstr "นาที"
+
+#: js/public/app.js:404
+msgid "second"
+msgstr "วินาที"
+
+#: js/public/app.js:430 js/public/app.js:3818
+msgid "before beginning"
+msgstr "ก่อนเริ่มต้น"
+
+#: js/public/app.js:435 js/public/app.js:3824
+msgid "after beginning"
+msgstr "หลังจากเริ่มต้น"
+
+#: js/public/app.js:440 js/public/app.js:3816
+msgid "before end"
+msgstr "ก่อนจบ"
+
+#: js/public/app.js:445 js/public/app.js:3822
+msgid "after end"
+msgstr "หลังจบ"
+
+#: js/public/app.js:704
+msgid "Comment"
+msgstr "แสดงความคิดเห็น"
+
+#: js/public/app.js:705
+msgid "Add a comment"
+msgstr "เพิ่มความคิดเห็น"
+
+#: js/public/app.js:753
+#, python-format
+msgid "This will delete the Calendar \"%s\" and all of its entries."
+msgstr "นี้จะลบปฏิทิน \"%s\" และรายการทั้งหมด"
+
+#: js/public/app.js:798 js/public/app.js:830
+#, python-format
+msgid "The name \"%s\" is already used."
+msgstr "ชื่อ \"%s\" ถูกใช้ไปแล้ว"
+
+#: js/public/app.js:801 js/public/app.js:833
+msgid "An empty name is not allowed."
+msgstr "ชื่อห้ามปล่อยว่าง"
+
+#: js/public/app.js:937
+msgid "Hidden"
+msgstr "ซ่อน"
+
+#: js/public/app.js:940
+msgid "Visible"
+msgstr "มองเห็นได้"
+
+#: js/public/app.js:943
+msgid "Automatic"
+msgstr "อัตโนมัติ"
+
+#: js/public/app.js:949
+msgid "Sunday"
+msgstr "วันอาทิตย์"
+
+#: js/public/app.js:952
+msgid "Monday"
+msgstr "วันจันทร์"
+
+#: js/public/app.js:955
+msgid "Tuesday"
+msgstr "วันอังคาร"
+
+#: js/public/app.js:958
+msgid "Wednesday"
+msgstr "วันพุธ"
+
+#: js/public/app.js:961
+msgid "Thursday"
+msgstr "วันพฤหัสบดี"
+
+#: js/public/app.js:964
+msgid "Friday"
+msgstr "วันศุกร์"
+
+#: js/public/app.js:967
+msgid "Saturday"
+msgstr "วันเสาร์"
+
+#: js/public/app.js:1021
+#, python-format
+msgid "Add an important item in \"%s\"..."
+msgstr "เพิ่มรายการที่สำคัญใน \"%s\" ..."
+
+#: js/public/app.js:1023
+#, python-format
+msgid "Add an item due today in \"%s\"..."
+msgstr "เพิ่มรายการที่ครบกำหนดวันนี้ใน \"%s\" ..."
+
+#: js/public/app.js:1025 js/public/app.js:1033
+#, python-format
+msgid "Add an item in \"%s\"..."
+msgstr "เพิ่มรายการใน \"%s\" ..."
+
+#: js/public/app.js:1027
+#, python-format
+msgid "Add a current item in \"%s\"..."
+msgstr "เพิ่มรายการปัจจุบันใน \"%s\" ..."
+
+#: js/public/app.js:1039
+#, python-format
+msgid "Add a subtask to \"%s\"..."
+msgstr "เพิ่ม subtask ไปยัง \"%s\"..."
+
+#: js/public/app.js:1172
+msgid "%n Completed Task"
+msgid_plural "%n Completed Tasks"
+msgstr[0] "%n งานเสร็จสมบูรณ์"
+
+#: js/public/app.js:3689
+msgid "Set due date"
+msgstr "ระบุวันครบกำหนด"
+
+#: js/public/app.js:3760
+#, python-format
+msgid "%s %% completed"
+msgstr "%s %% เสร็จสมบูรณ์"
+
+#: js/public/app.js:3770
+#, python-format
+msgid "priority %s: "
+msgstr "ลำดับความสำคัญ %s:"
+
+#: js/public/app.js:3772
+msgid "high"
+msgstr "สูง"
+
+#: js/public/app.js:3774
+msgid "medium"
+msgstr "ปานกลาง"
+
+#: js/public/app.js:3776
+msgid "low"
+msgstr "ต่ำ"
+
+#: js/public/app.js:3778
+msgid "no priority assigned"
+msgstr "ไม่มีมีความสำคัญ"
+
+#: js/public/app.js:3793 js/public/app.js:3830 js/public/app.js:3833
+msgid "Remind me"
+msgstr "เตือนฉัน"
+
+#: js/public/app.js:3809
+msgid "at the end"
+msgstr "ที่จุดสิ้นสุด"
+
+#: js/public/app.js:3811
+msgid "at the beginning"
+msgstr "ที่จุดเริ่มต้น"
+
+#: js/public/app.js:3846
+msgid "Set start date"
+msgstr "วันที่เริ่มต้นการตั้งค่า"
+
+#: service/collectionsservice.php:50
+msgid "Important"
+msgstr "สำคัญ"
+
+#: service/collectionsservice.php:58
+msgid "Week"
+msgstr "สัปดาห์"
+
+#: service/collectionsservice.php:62
+msgid "All"
+msgstr "ทั้งหมด"
+
+#: service/collectionsservice.php:66
+msgid "Current"
+msgstr "ปัจจุบัน"
+
+#: service/collectionsservice.php:70
+msgid "Completed"
+msgstr "เสร็จสมบูรณ์"
+
+#: templates/main.php:44 templates/main.php:46
+msgid "rename"
+msgstr "เปลี่ยนชื่อ"
+
+#: templates/main.php:48 templates/main.php:50
+msgid "delete"
+msgstr "ลบ"
+
+#: templates/main.php:64
+msgid "Add List..."
+msgstr "เพิ่มรายชื่อ ..."
+
+#: templates/main.php:69
+msgid "New List"
+msgstr "รายชื่อใหม่"
+
+#: templates/main.php:78
+msgid "Settings"
+msgstr "ตั้งค่า"
+
+#: templates/main.php:84
+msgid "Start of week"
+msgstr "จุดเริ่มต้นของสัปดาห์"
+
+#: templates/main.php:88
+msgid "Visibility of Smart Collections"
+msgstr "การแสดงผลของสมาร์ทคอลเลกชัน"
+
+#: templates/part.collectionall.php:26 templates/part.tasklist.php:43
+msgid "Load remaining completed tasks."
+msgstr "โหลดงานที่เสร็จสมบูรณ์ที่เหลืออยู่"
+
+#: templates/part.details.php:106
+msgid "(New category)"
+msgstr "(หมวดหมู่ใหม่)"
+
+#: templates/part.details.php:108
+msgid "Select categories..."
+msgstr "เลือกหมวดหมู่ ..."
+
+#: templates/part.details.php:162
+msgid "Loading the task..."
+msgstr "กำลังโหลดงาน ..."
+
+#: templates/part.details.php:166
+msgid "Task not found!"
+msgstr "ไม่พบงาน!"
+
+#: templates/part.taskbody.php:14
+msgid "add a subtask to"
+msgstr "เพิ่ม subtask ไปยัง"

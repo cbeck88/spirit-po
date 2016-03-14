@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Arvid Nornes <arvid.nornes@gmail.com>, 2012
+# Bjørn Roger Thomassen <brthomassen@gmail.com>, 2013
+# Hans Nesse <>, 2013
+# Håvard Dalgrav <hdalgrav@gmail.com>, 2012
+# vidaren <news@vidartysse.net>, 2014-2016
+# troll <oyvind.hojem@gmail.com>, 2013
+# runesudden <runesudden@gmail.com>, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2016-03-14 02:10-0400\n"
+"PO-Revision-Date: 2016-02-29 19:58+0000\n"
+"Last-Translator: vidaren <news@vidartysse.net>\n"
+"Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/owncloud-org/owncloud/language/nb_NO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nb_NO\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: appinfo/app.php:22
+msgid "Bookmarks"
+msgstr "Bokmerker"
+
+#: controller/lib/search.php:45
+msgid "Bookm."
+msgstr "Bokmrk."
+
+#: controller/rest/bookmarkcontroller.php:224
+msgid "No file provided for import"
+msgstr "Ingen fil valgt for importering"
+
+#: controller/rest/bookmarkcontroller.php:234
+msgid "Unsupported file type for import"
+msgstr "Ikke støttet filtype for importering"
+
+#: js/bookmarklet.js:58
+msgid "Some Error happened."
+msgstr "Det oppstod en feil."
+
+#: js/bookmarklet.js:59
+msgid "Error"
+msgstr "Feil"
+
+#: js/bookmarklet.js:70 js/bookmarks.js:272
+msgid "Tags"
+msgstr "Merkelapper"
+
+#: js/bookmarks.js:25
+msgid "Filter by tag"
+msgstr "Filtrer ut fra merkelapp"
+
+#: js/bookmarks.js:230
+msgid "Are you sure you want to remove this bookmark?"
+msgstr "Er du sikker på at du vil fjerne dette bokmerket?"
+
+#: js/bookmarks.js:231 js/bookmarks.js:407
+msgid "Warning"
+msgstr "Advarsel"
+
+#: js/bookmarks.js:406
+msgid "Are you sure you want to remove this tag from every entry?"
+msgstr "Er du sikker på at du vil slette denne merkelappen fra alle oppføringene?"
+
+#: js/settings.js:19
+msgid "Import error"
+msgstr "Importerings-feil"
+
+#: js/settings.js:30
+msgid "Import completed successfully."
+msgstr "Importering fullførte vellykket."
+
+#: js/settings.js:62
+msgid "Uploading..."
+msgstr "Laster opp..."
+
+#: templates/addBookmarklet.php:13
+msgid "Add a bookmark"
+msgstr "Legg til et bokmerke"
+
+#: templates/addBookmarklet.php:22
+msgid "This URL is already bookmarked! Overwrite?"
+msgstr "Denne URL-en er allerede i et bokmerke. Overskrive?"
+
+#: templates/addBookmarklet.php:33 templates/js_tpl.php:27
+msgid "The title of the page"
+msgstr "Sidens tittel"
+
+#: templates/addBookmarklet.php:38 templates/js_tpl.php:31
+msgid "The address of the page"
+msgstr "Sidens adresse"
+
+#: templates/addBookmarklet.php:51 templates/js_tpl.php:40
+msgid "Description of the page"
+msgstr "Beskrivelse av siden"
+
+#: templates/addBookmarklet.php:55 templates/js_tpl.php:45
+msgid "Save"
+msgstr "Lagre"
+
+#: templates/js_tpl.php:6 templates/js_tpl.php:55
+msgid "Delete"
+msgstr "Slett"
+
+#: templates/js_tpl.php:14 templates/js_tpl.php:59
+msgid "Edit"
+msgstr "Endre"
+
+#: templates/js_tpl.php:44
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: templates/main.php:25
+msgid ""
+"Drag this to your browser bookmarks and click it, when you want to bookmark "
+"a webpage quickly:"
+msgstr "Dra denne til bokmerkene i nettleseren din og klikk på den når du ønsker å raskt legge til en nettside som bokmerke:"
+
+#: templates/main.php:26
+msgid "Add to ownCloud"
+msgstr "Legg til i ownCloud"
+
+#: templates/main.php:35
+msgid "Address"
+msgstr "Adresse"
+
+#: templates/main.php:44
+msgid "Filterable Tags"
+msgstr "Filtrerbare merkelapper"
+
+#: templates/main.php:65
+msgid "You have no bookmarks"
+msgstr "Du har ingen bokmerker"
+
+#: templates/main.php:74
+msgid "You can also import a bookmark file"
+msgstr "Du kan også imortere en bokmerke-fil"
+
+#: templates/settings.php:12
+msgid "Bookmarklet"
+msgstr "Bokmerke-applet"
+
+#: templates/settings.php:25
+msgid "Export & Import"
+msgstr "Eksport og import"
+
+#: templates/settings.php:26
+msgid "Export"
+msgstr "Eksporter"
+
+#: templates/settings.php:29
+msgid "Import"
+msgstr "Importer"

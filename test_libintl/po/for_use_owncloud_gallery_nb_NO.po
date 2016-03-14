@@ -1,0 +1,459 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# anjar <ajarmund@gmail.com>, 2012
+# Christer Eriksson <post@hceriksson.com>, 2012
+# Daniel <i18n@daniel.priv.no>, 2012
+# Espen Bye, 2014
+# Espen Bye, 2012
+# Jukselapp <ingemundskalnes@gmail.com>, 2014
+# abjectio, 2014
+# vidaren <news@vidartysse.net>, 2014-2016
+# troll <oyvind.hojem@gmail.com>, 2013
+# runesudden <runesudden@gmail.com>, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2016-03-14 02:18-0400\n"
+"PO-Revision-Date: 2016-03-13 13:01+0000\n"
+"Last-Translator: vidaren <news@vidartysse.net>\n"
+"Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/owncloud-org/owncloud/language/nb_NO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nb_NO\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: appinfo/app.php:49 js/breadcrumb.js:120
+msgid "Gallery"
+msgstr "Galleri"
+
+#: js/gallery.js:255
+msgid "Aborting preview. Could not find the file"
+msgstr "Avbryter visning. Fant ikke filen"
+
+#: js/gallery.js:343
+msgid "Could not move \"{file}\", target exists"
+msgstr "Klarte ikke å flytte \"{file}\", målfilen finnes"
+
+#: js/gallery.js:347
+msgid "Could not move \"{file}\""
+msgstr "Klarte ikke å flytte \"{file}\""
+
+#: js/gallery.js:507
+msgid "No ownCloud installation (7 or higher) found at {remote}"
+msgstr "Ingen ownCloud-installasjon (7 eller høyere) funnet på {remote}"
+
+#: js/gallery.js:509
+msgid "Invalid ownCloud url"
+msgstr "Ugyldig ownCloud-url"
+
+#: js/gallerybutton.js:66
+msgid "Gallery view"
+msgstr "Gallerivisning"
+
+#: js/galleryinfobox.js:49
+msgid "Could not load the description"
+msgstr "Klarte ikke å laste inn beskrivelsen"
+
+#: js/galleryinfobox.js:73
+msgid "Could not load the description: "
+msgstr "Klarte ikke å laste inn beskrivelsen:"
+
+#: js/galleryinfobox.js:120
+msgid "Copyright"
+msgstr "Opphavsrett"
+
+#: js/galleryinfobox.js:129
+msgid "Could not load the copyright notice: "
+msgstr "Klarte ikke å laste inn notat om opphavsrett:"
+
+#: js/galleryinfobox.js:132
+msgid "Copyright notice"
+msgstr "Notat om opphavsrett"
+
+#: js/galleryinfobox.js:159
+msgid "Link to copyright document"
+msgstr "Lenke til dokument om opphavsrett"
+
+#: js/galleryutility.js:45
+msgid "This application may not work properly on your browser."
+msgstr "Denne applikasjonen virker kanskje ikke optimalt i nettleseren din."
+
+#: js/galleryutility.js:47
+msgid ""
+"For an improved experience, please install one of the following alternatives"
+msgstr "For en forbedret opplevelse, installer ett av følgende alternativer"
+
+#: js/galleryutility.js:50
+msgid "Your browser is not supported!"
+msgstr "Nettleseren din støttes ikke!"
+
+#: js/galleryutility.js:51
+msgid "please install one of the following alternatives"
+msgstr "vennligst installer ett av følgende alternativer"
+
+#: js/galleryview.js:211
+msgid "Album cannot be shown"
+msgstr "Kan ikke vise album"
+
+#: js/galleryview.js:216
+msgid "No media files found"
+msgstr "Finner ingen media-filer"
+
+#: js/galleryview.js:220
+msgid "Upload pictures in the files app to display them here"
+msgstr "Last opp bilder i Filer-appen for å vise dem her"
+
+#: js/galleryview.js:223
+msgid "Upload new files via drag and drop or by using the [+] button above"
+msgstr "Last opp nye filer med dra & slipp eller med [+]-knappen over"
+
+#: js/galleryview.js:401
+msgid "Configuration error"
+msgstr "Konfigurasjonsfeil"
+
+#: js/galleryview.js:500
+msgid "New"
+msgstr "Ny"
+
+#: js/slideshow.js:71
+msgid "Error loading slideshow template"
+msgstr "Feil ved lasting av mal for lysbildevisning"
+
+#: js/slideshow.js:247
+msgid "<strong>Error!</strong> Could not generate a preview of this file.<br>"
+msgstr "<strong>Feil!</strong> Klarte ikke å generere forhåndsvisning av denne filen.<br>"
+
+#: js/slideshow.js:377
+msgid "Next"
+msgstr "Neste"
+
+#: js/slideshow.js:381
+msgid "Play"
+msgstr "Spill"
+
+#: js/slideshow.js:385
+msgid "Pause"
+msgstr "Pause"
+
+#: js/slideshow.js:389
+msgid "Previous"
+msgstr "Forrige"
+
+#: js/slideshow.js:393
+msgid "Close"
+msgstr "Lukk"
+
+#: js/slideshow.js:397 templates/public.php:93
+msgid "Download"
+msgstr "Last ned"
+
+#: js/slideshow.js:402
+msgid "Toggle background"
+msgstr "Bytt bakgrunn"
+
+#: js/upload-helper.js:100
+msgid "\"{name}\" is an invalid file name."
+msgstr "\"{name}\" er et uglydig filnavn."
+
+#: js/upload-helper.js:102
+msgid "File name cannot be empty."
+msgstr "Filnavn kan ikke være tomt."
+
+#: js/vendor/owncloud/newfilemenu.js:71
+msgid "Upload"
+msgstr "Last opp"
+
+#: js/vendor/owncloud/share.js:88 js/vendor/owncloud/share.js:111
+#: js/vendor/owncloud/share.js:130 js/vendor/owncloud/share.js:653
+#: js/vendor/owncloud/share.js:1139
+msgid "Error"
+msgstr "Feil"
+
+#: js/vendor/owncloud/share.js:92 js/vendor/owncloud/share.js:1212
+msgid "Error while sharing"
+msgstr "Feil under deling"
+
+#: js/vendor/owncloud/share.js:111
+msgid "Error while unsharing"
+msgstr "Feil ved oppheving av deling"
+
+#: js/vendor/owncloud/share.js:129
+msgid "Error while changing permissions"
+msgstr "Feil ved endring av tillatelser"
+
+#: js/vendor/owncloud/share.js:158
+msgid "Shared with you and the group {group} by {owner}"
+msgstr "Delt med deg og gruppen {group} av {owner}"
+
+#: js/vendor/owncloud/share.js:163
+msgid "Shared with you by {owner}"
+msgstr "Delt med deg av {owner}"
+
+#: js/vendor/owncloud/share.js:191
+msgid "Share with users or groups …"
+msgstr "Del med brukere eller grupper ..."
+
+#: js/vendor/owncloud/share.js:193
+msgid "Share with users, groups or remote users …"
+msgstr "Del med brukere, grupper eller eksterne brukere ..."
+
+#: js/vendor/owncloud/share.js:196 templates/part.content.php:106
+#: templates/part.content.php:109
+msgid "Share"
+msgstr "Del"
+
+#: js/vendor/owncloud/share.js:204
+msgid ""
+"Share with people on other ownClouds using the syntax "
+"username@example.com/owncloud"
+msgstr "Del med personer på andre ownCloud-installasjoner med syntaksen brukernavn@example.com/owncloud"
+
+#: js/vendor/owncloud/share.js:219
+msgid "Share link"
+msgstr "Del lenke"
+
+#: js/vendor/owncloud/share.js:227
+msgid ""
+"The public link will expire no later than {days} days after it is created"
+msgstr "Den offentlige lenken vil utløpe senest {days} dager etter at den lages"
+
+#: js/vendor/owncloud/share.js:231
+msgid "Link"
+msgstr "Lenke"
+
+#: js/vendor/owncloud/share.js:238
+msgid "Password protect"
+msgstr "Passordbeskyttet"
+
+#: js/vendor/owncloud/share.js:241 templates/authenticate.php:21
+#: templates/authenticate.php:24
+msgid "Password"
+msgstr "Passord"
+
+#: js/vendor/owncloud/share.js:243 js/vendor/owncloud/share.js:972
+#: js/vendor/owncloud/share.js:1081
+msgid "Choose a password for the public link"
+msgstr "Velg et passord for den offentlige lenken"
+
+#: js/vendor/owncloud/share.js:256
+msgid "Allow editing"
+msgstr "Tillat redigering"
+
+#: js/vendor/owncloud/share.js:266
+msgid "Email link to person"
+msgstr "Email lenke til person"
+
+#: js/vendor/owncloud/share.js:269
+msgid "Send"
+msgstr "Send"
+
+#: js/vendor/owncloud/share.js:279
+msgid "Set expiration date"
+msgstr "Sett utløpsdato"
+
+#: js/vendor/owncloud/share.js:281
+msgid "Expiration"
+msgstr "Utløpsdato"
+
+#: js/vendor/owncloud/share.js:283
+msgid "Expiration date"
+msgstr "Utløpsdato"
+
+#: js/vendor/owncloud/share.js:362
+msgid "An error occured. Please try again"
+msgstr "Det oppstod en feil. Prøv igjen"
+
+#: js/vendor/owncloud/share.js:405
+msgid "Adding user..."
+msgstr "Legger til bruker..."
+
+#: js/vendor/owncloud/share.js:434 js/vendor/owncloud/share.js:679
+msgid "group"
+msgstr "gruppe"
+
+#: js/vendor/owncloud/share.js:436 js/vendor/owncloud/share.js:682
+msgid "remote"
+msgstr "ekstern"
+
+#: js/vendor/owncloud/share.js:478
+msgid "Resharing is not allowed"
+msgstr "Videre deling er ikke tillatt"
+
+#: js/vendor/owncloud/share.js:652
+msgid "Error while retrieving shares"
+msgstr "Feil under henting av delinger"
+
+#: js/vendor/owncloud/share.js:716 js/vendor/owncloud/share.js:717
+msgid "Unshare"
+msgstr "Avslutt deling"
+
+#: js/vendor/owncloud/share.js:735
+msgid "notify by email"
+msgstr "Varsle på email"
+
+#: js/vendor/owncloud/share.js:743
+msgid "can share"
+msgstr "kan dele"
+
+#: js/vendor/owncloud/share.js:752
+msgid "can edit"
+msgstr "kan endre"
+
+#: js/vendor/owncloud/share.js:756
+msgid "access control"
+msgstr "tilgangskontroll"
+
+#: js/vendor/owncloud/share.js:765
+msgid "create"
+msgstr "opprette"
+
+#: js/vendor/owncloud/share.js:772
+msgid "change"
+msgstr "endre"
+
+#: js/vendor/owncloud/share.js:779
+msgid "delete"
+msgstr "slett"
+
+#: js/vendor/owncloud/share.js:1106
+msgid "Password protected"
+msgstr "Passordbeskyttet"
+
+#: js/vendor/owncloud/share.js:1138
+msgid "Error unsetting expiration date"
+msgstr "Feil ved nullstilling av utløpsdato"
+
+#: js/vendor/owncloud/share.js:1166
+msgid "Error setting expiration date"
+msgstr "Kan ikke sette utløpsdato"
+
+#: js/vendor/owncloud/share.js:1191
+msgid "Sending ..."
+msgstr "Sender..."
+
+#: js/vendor/owncloud/share.js:1207
+msgid "Email sent"
+msgstr "E-post sendt"
+
+#: js/vendor/owncloud/share.js:1241
+msgid "Warning"
+msgstr "Advarsel"
+
+#: templates/authenticate.php:14
+msgid "This share is password-protected"
+msgstr "Denne delingen er passordbeskyttet"
+
+#: templates/authenticate.php:18
+msgid "The password is wrong. Try again."
+msgstr "Passordet er feil. Prøv på nytt."
+
+#: templates/part.content.php:73 templates/part.content.php:76
+#: templates/public.php:112 templates/public.php:115
+msgid "Sort by date"
+msgstr "Sorter på dato"
+
+#: templates/part.content.php:83 templates/part.content.php:86
+#: templates/public.php:122 templates/public.php:125
+msgid "Sort by name"
+msgstr "Sorter på navn"
+
+#: templates/part.content.php:95
+msgid "Cancel upload"
+msgstr "Avbryt opplasting"
+
+#: templates/part.content.php:116 templates/public.php:134
+msgid "Album information"
+msgstr "Album-informasjon"
+
+#: templates/part.content.php:127
+msgid "File list"
+msgstr "Filliste"
+
+#: templates/part.filenotfounderror.php:17
+msgid "Sorry, this file could not be found."
+msgstr "Beklager, denne filen ble ikke funnet."
+
+#: templates/part.filenotfounderror.php:19 templates/part.linkerror.php:19
+msgid "Reasons might be:"
+msgstr "Mulige årsaker:"
+
+#: templates/part.filenotfounderror.php:21
+msgid "the wrong file ID was provided"
+msgstr "feil fil-ID ble angitt"
+
+#: templates/part.filenotfounderror.php:22
+msgid "the file was removed"
+msgstr "filen ble fjernet"
+
+#: templates/part.filenotfounderror.php:23
+msgid "the file is corrupt"
+msgstr "filen er ødelagt"
+
+#: templates/part.filenotfounderror.php:24
+msgid "the encryption key is missing"
+msgstr "krypteringsnøkkelen mangler"
+
+#: templates/part.filenotfounderror.php:28
+#: templates/part.internalservererror.php:27 templates/part.linkerror.php:27
+msgid "Here is the error message returned by the server: "
+msgstr "Her er feilmeldingen som ble returnert av serveren:"
+
+#: templates/part.filenotfounderror.php:33
+#: templates/part.internalservererror.php:32
+msgid ""
+"For more information, please contact your friendly ownCloud administrator."
+msgstr "For mer informasjon, kontakt ownCloud-administratoren."
+
+#: templates/part.internalservererror.php:17
+msgid "Sorry, but the server could not fulfill your request."
+msgstr "Beklager, men serveren kunne ikke utføre forespørselen din."
+
+#: templates/part.internalservererror.php:19
+msgid "Possible reasons for the problem:"
+msgstr "Mulige årsaker til problemet:"
+
+#: templates/part.internalservererror.php:21
+msgid "a conflicting app was installed"
+msgstr "en uforenlig app var installert"
+
+#: templates/part.internalservererror.php:22
+msgid "a required component is missing or was disconnected"
+msgstr "en påkrevet komponent mangler eller var frakoblet"
+
+#: templates/part.internalservererror.php:23
+msgid "the filesystem is not readable"
+msgstr "filsystemet kan ikke leses"
+
+#: templates/part.linkerror.php:17
+msgid "Sorry, this link doesn't seem to work anymore."
+msgstr "Beklager, denne lenken ser ikke ut til å virke lenger."
+
+#: templates/part.linkerror.php:21
+msgid "the item was removed"
+msgstr "elementet er fjernet"
+
+#: templates/part.linkerror.php:22
+msgid "the link has expired"
+msgstr "lenken er utløpt"
+
+#: templates/part.linkerror.php:23
+msgid "sharing is disabled"
+msgstr "deling er deaktivert"
+
+#: templates/part.linkerror.php:32
+msgid ""
+"For more information, please ask the person who has sent you this link."
+msgstr "For mer informasjon, spør personen som har sendt deg lenken."
+
+#: templates/public.php:79
+msgid "Add to your ownCloud"
+msgstr "Legg til i din ownCloud"
+
+#: templates/public.php:145
+msgid "Picture view"
+msgstr "Bildevisning"

@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# André Koot <meneer@tken.net>, 2012-2013,2015
+# Richard Bos <radoeka@gmail.com>, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2016-03-14 02:11-0400\n"
+"PO-Revision-Date: 2015-12-11 21:36+0000\n"
+"Last-Translator: André Koot <meneer@tken.net>\n"
+"Language-Team: Dutch (http://www.transifex.com/owncloud-org/owncloud/language/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: controller/filehandlingcontroller.php:85
+msgid "This file is too big to be opened. Please download the file instead."
+msgstr "Dit bestand is te groot om te worden geopend. Download het bestand om het te bewerken."
+
+#: controller/filehandlingcontroller.php:108
+msgid "Cannot read the file."
+msgstr "Kan het bestand niet lezen."
+
+#: controller/filehandlingcontroller.php:111
+msgid "Invalid file path supplied."
+msgstr "Ongeldig pad opgegeven."
+
+#: controller/filehandlingcontroller.php:115
+#: controller/filehandlingcontroller.php:157
+msgid "The file is locked."
+msgstr "Het bestand is besloten."
+
+#: controller/filehandlingcontroller.php:123
+#: controller/filehandlingcontroller.php:188
+msgid "An internal server error occurred."
+msgstr "Er heeft zich een interne serverfout voorgedaan."
+
+#: controller/filehandlingcontroller.php:148
+msgid "Cannot save file as it has been modified since opening"
+msgstr "Kan het bestand niet opslaan omdat het is gewijzigd na het openen"
+
+#: controller/filehandlingcontroller.php:172
+msgid "Insufficient permissions"
+msgstr "Onvoldoende rechten"
+
+#: controller/filehandlingcontroller.php:178
+msgid "File path not supplied"
+msgstr "Bestandspad niet opgegeven"
+
+#: controller/filehandlingcontroller.php:181
+msgid "File mtime not supplied"
+msgstr "Tijdstempel bestand niet opgegeven"
+
+#: js/editor.js:98
+msgid "saving..."
+msgstr "opslaan..."
+
+#: js/editor.js:114
+msgid "saved!"
+msgstr "opgeslagen!"
+
+#: js/editor.js:122
+msgid "failed!"
+msgstr "mislukt!"
+
+#: js/editor.js:155
+msgid "Saved"
+msgstr "Bewaard"
+
+#: js/editor.js:164
+msgid "There was a problem saving your changes. Click to resume editing."
+msgstr "Probleem bij het opslaan van uw wijzigingen. Klik om door te gaan met bewerken."
+
+#: js/editor.js:326
+msgid "An error occurred!"
+msgstr "Er is iets fout gegaan!"
+
+#: js/editor.js:617
+msgid "Text file"
+msgstr "Tekstbestand"
+
+#: js/editor.js:618
+msgid "New text file.txt"
+msgstr "Nieuw tekstbestand.txt"

@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Besnik <besnik@programeshqip.org>, 2015
+# Odeen <rapid_odeen@zoho.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2016-03-14 00:48-0400\n"
+"PO-Revision-Date: 2015-10-19 16:43+0000\n"
+"Last-Translator: Besnik <besnik@programeshqip.org>\n"
+"Language-Team: Albanian (http://www.transifex.com/owncloud-org/owncloud/language/sq/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ajax/setsites.php:33
+msgid ""
+"Please enter valid urls - they have to start with either http://, https:// "
+"or /"
+msgstr "Ju lutemi, jepni URL të vlefshme - duhet të fillojnë http://, https:// ose /"
+
+#: ajax/setsites.php:43
+msgid "External sites saved."
+msgstr "Sajtet e jashtëm u ruajtën."
+
+#: templates/settings.php:3
+msgid "External Sites"
+msgstr "Sajte të Jashtëm"
+
+#: templates/settings.php:5
+msgid ""
+"Please note that some browsers will block displaying of sites via http if "
+"you are running https."
+msgstr "Ju lutemi, kini parasysh që disa shfletues do të bllokojnë shfaqjen e sajteve përmes http-je, nëse xhironi https."
+
+#: templates/settings.php:7
+msgid ""
+"Furthermore please note that many sites these days disallow iframing due to "
+"security reasons."
+msgstr "Për më tepër, ju lutemi, kini parasysh që mjaft sajte në këto kohë s’lejojnë iframing, për arsye sigurie."
+
+#: templates/settings.php:9
+msgid "We highly recommend to test the configured sites below properly."
+msgstr "Këshillojmë me forcë të testoni si duhet më poshtë sajtet e formësuar."
+
+#: templates/settings.php:17 templates/settings.php:40
+msgid "Name"
+msgstr "Emër"
+
+#: templates/settings.php:18 templates/settings.php:41
+msgid "URL"
+msgstr "URL"
+
+#: templates/settings.php:30 templates/settings.php:32
+#: templates/settings.php:46
+msgid "Select an icon"
+msgstr "Përzgjidhni një ikonë"
+
+#: templates/settings.php:35 templates/settings.php:48
+msgid "Remove site"
+msgstr "Hiqe vendndodhjen"
+
+#: templates/settings.php:56
+msgid "Add"
+msgstr "Shtoje"

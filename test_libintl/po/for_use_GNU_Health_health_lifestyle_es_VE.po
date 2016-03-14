@@ -1,0 +1,1057 @@
+# 
+# Translators:
+# Lenin <fernandezplenin@gmail.com>, 2014
+# Lenin <fernandezplenin@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU Health\n"
+"Report-Msgid-Bugs-To: https://savannah.gnu.org/bugs/?group=health\n"
+"POT-Creation-Date: 2015-01-27 11:17+0000\n"
+"PO-Revision-Date: 2016-01-31 02:20+0000\n"
+"Last-Translator: jhuliana delgado <crisyelit@gmail.com>\n"
+"Language-Team: Spanish (Venezuela) (http://www.transifex.com/meanmicio/GNU_Health/language/es_VE/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_VE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "error:gnuhealth.drugs_recreational:"
+msgid "The Recreational Drug CODE must be unique"
+msgstr "El CODIGO de la Droga debe ser único"
+
+msgctxt "error:gnuhealth.drugs_recreational:"
+msgid "The Recreational Drug NAME must be unique"
+msgstr "El NOMBRE de la Droga debe ser único"
+
+msgctxt "field:gnuhealth.drugs_recreational,addiction_level:"
+msgid "Dependence"
+msgstr "Dependencia"
+
+msgctxt "field:gnuhealth.drugs_recreational,category:"
+msgid "Category"
+msgstr "Categoría"
+
+msgctxt "field:gnuhealth.drugs_recreational,code:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "field:gnuhealth.drugs_recreational,create_date:"
+msgid "Create Date"
+msgstr "Crear fecha"
+
+msgctxt "field:gnuhealth.drugs_recreational,create_uid:"
+msgid "Create User"
+msgstr "Crear usuario"
+
+msgctxt "field:gnuhealth.drugs_recreational,dea_schedule_i:"
+msgid "DEA schedule I"
+msgstr "Nivel DEA I"
+
+msgctxt "field:gnuhealth.drugs_recreational,dea_schedule_ii:"
+msgid "II"
+msgstr "II"
+
+msgctxt "field:gnuhealth.drugs_recreational,dea_schedule_iii:"
+msgid "III"
+msgstr "III"
+
+msgctxt "field:gnuhealth.drugs_recreational,dea_schedule_iv:"
+msgid "IV"
+msgstr "IV"
+
+msgctxt "field:gnuhealth.drugs_recreational,dea_schedule_v:"
+msgid "V"
+msgstr "V"
+
+msgctxt "field:gnuhealth.drugs_recreational,dependence_level:"
+msgid "Dependence"
+msgstr "Dependencia"
+
+msgctxt "field:gnuhealth.drugs_recreational,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.drugs_recreational,info:"
+msgid "Extra Info"
+msgstr "Información Adicional"
+
+msgctxt "field:gnuhealth.drugs_recreational,intoxication_level:"
+msgid "Intoxication"
+msgstr "Intoxicación"
+
+msgctxt "field:gnuhealth.drugs_recreational,legal_status:"
+msgid "Legal Status"
+msgstr "Estatus legal"
+
+msgctxt "field:gnuhealth.drugs_recreational,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:gnuhealth.drugs_recreational,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:gnuhealth.drugs_recreational,reinforcement_level:"
+msgid "Reinforcement"
+msgstr "Refuerzo"
+
+msgctxt "field:gnuhealth.drugs_recreational,route_inhaling:"
+msgid "Smoke / Inhale"
+msgstr "Fumado / Inhalado"
+
+msgctxt "field:gnuhealth.drugs_recreational,route_injection:"
+msgid "Injection"
+msgstr "Inyección"
+
+msgctxt "field:gnuhealth.drugs_recreational,route_oral:"
+msgid "Oral"
+msgstr "Oral"
+
+msgctxt "field:gnuhealth.drugs_recreational,route_popping:"
+msgid "Skin Popping"
+msgstr "Inyección subcutánea"
+
+msgctxt "field:gnuhealth.drugs_recreational,route_sniffing:"
+msgid "Sniffing"
+msgstr "Sniffing"
+
+msgctxt "field:gnuhealth.drugs_recreational,street_name:"
+msgid "Street names"
+msgstr "Nombres callejeros"
+
+msgctxt "field:gnuhealth.drugs_recreational,tolerance_level:"
+msgid "Tolerance"
+msgstr "Tolerancia"
+
+msgctxt "field:gnuhealth.drugs_recreational,toxicity:"
+msgid "Toxicity"
+msgstr "Toxicidad"
+
+msgctxt "field:gnuhealth.drugs_recreational,withdrawal_level:"
+msgid "Withdrawal"
+msgstr "Abstinencia"
+
+msgctxt "field:gnuhealth.drugs_recreational,write_date:"
+msgid "Write Date"
+msgstr "Escriba la fecha"
+
+msgctxt "field:gnuhealth.drugs_recreational,write_uid:"
+msgid "Write User"
+msgstr "Escriba el usuario"
+
+msgctxt "field:gnuhealth.patient,age_quit_drinking:"
+msgid "Age quit drinking "
+msgstr "Edad abandono alcohol"
+
+msgctxt "field:gnuhealth.patient,age_quit_drugs:"
+msgid "Age quit drugs "
+msgstr "Edad abandono de drogas"
+
+msgctxt "field:gnuhealth.patient,age_quit_smoking:"
+msgid "Age of quitting"
+msgstr "Edad de abandono"
+
+msgctxt "field:gnuhealth.patient,age_start_drinking:"
+msgid "Age started to drink "
+msgstr "Edad que comenzó a beber alcohol"
+
+msgctxt "field:gnuhealth.patient,age_start_drugs:"
+msgid "Age started drugs "
+msgstr "Edad que se inició en las drogas"
+
+msgctxt "field:gnuhealth.patient,age_start_smoking:"
+msgid "Age started to smoke"
+msgstr "Edad inicio tabaquismo"
+
+msgctxt "field:gnuhealth.patient,alcohol:"
+msgid "Drinks Alcohol"
+msgstr "Bebe Alcohol"
+
+msgctxt "field:gnuhealth.patient,alcohol_beer_number:"
+msgid "Beer / day"
+msgstr "Cervezas diarias"
+
+msgctxt "field:gnuhealth.patient,alcohol_liquor_number:"
+msgid "Liquor / day"
+msgstr "Licor / día"
+
+msgctxt "field:gnuhealth.patient,alcohol_wine_number:"
+msgid "Wine / day"
+msgstr "Vasos de vino / día"
+
+msgctxt "field:gnuhealth.patient,anticonceptive:"
+msgid "Anticonceptive Method"
+msgstr "Método anticonceptivo"
+
+msgctxt "field:gnuhealth.patient,cage:"
+msgid "CAGE"
+msgstr "CAGE"
+
+msgctxt "field:gnuhealth.patient,car_child_safety:"
+msgid "Car Child Safety"
+msgstr "Seguridad vial infantil"
+
+msgctxt "field:gnuhealth.patient,car_revision:"
+msgid "Car Revision"
+msgstr "Revisión del automóvil"
+
+msgctxt "field:gnuhealth.patient,car_seat_belt:"
+msgid "Seat belt"
+msgstr "Cinturón de seguridad"
+
+msgctxt "field:gnuhealth.patient,coffee:"
+msgid "Coffee"
+msgstr "Café"
+
+msgctxt "field:gnuhealth.patient,coffee_cups:"
+msgid "Cups per day"
+msgstr "Tazas por día"
+
+msgctxt "field:gnuhealth.patient,diet:"
+msgid "Currently on a diet"
+msgstr "Actualmente en dieta"
+
+msgctxt "field:gnuhealth.patient,diet_info:"
+msgid "Diet info"
+msgstr "Información de la dieta"
+
+msgctxt "field:gnuhealth.patient,drug_iv:"
+msgid "IV drug user"
+msgstr "Drogadicto Intravenoso"
+
+msgctxt "field:gnuhealth.patient,drug_usage:"
+msgid "Drug Habits"
+msgstr "Drogadicción"
+
+msgctxt "field:gnuhealth.patient,eats_alone:"
+msgid "Eats alone"
+msgstr "Come solo/a"
+
+msgctxt "field:gnuhealth.patient,ex_alcoholic:"
+msgid "Ex alcoholic"
+msgstr "Ex-alcohólico"
+
+msgctxt "field:gnuhealth.patient,ex_drug_addict:"
+msgid "Ex drug addict"
+msgstr "Ex drogadicto"
+
+msgctxt "field:gnuhealth.patient,ex_smoker:"
+msgid "Ex-smoker"
+msgstr "Ex-fumador"
+
+msgctxt "field:gnuhealth.patient,exercise:"
+msgid "Exercise"
+msgstr "Ejercicio"
+
+msgctxt "field:gnuhealth.patient,exercise_minutes_day:"
+msgid "Minutes / day"
+msgstr "Minutos / día"
+
+msgctxt "field:gnuhealth.patient,first_sexual_encounter:"
+msgid "Age first sexual encounter"
+msgstr "Edad de su primer acto sexual"
+
+msgctxt "field:gnuhealth.patient,helmet:"
+msgid "Uses helmet"
+msgstr "Usa el casco"
+
+msgctxt "field:gnuhealth.patient,home_safety:"
+msgid "Home safety"
+msgstr "Seguridad en hogar"
+
+msgctxt "field:gnuhealth.patient,lifestyle_info:"
+msgid "Extra Information"
+msgstr "Información Adicional"
+
+msgctxt "field:gnuhealth.patient,motorcycle_rider:"
+msgid "Motorcycle Rider"
+msgstr "Motociclista"
+
+msgctxt "field:gnuhealth.patient,number_of_meals:"
+msgid "Meals per day"
+msgstr "Comidas por día"
+
+msgctxt "field:gnuhealth.patient,prostitute:"
+msgid "Prostitute"
+msgstr "Prostituta"
+
+msgctxt "field:gnuhealth.patient,recreational_drugs:"
+msgid "Drugs"
+msgstr "Drogas"
+
+msgctxt "field:gnuhealth.patient,salt:"
+msgid "Salt"
+msgstr "Sal"
+
+msgctxt "field:gnuhealth.patient,second_hand_smoker:"
+msgid "Passive smoker"
+msgstr "Fumador pasivo"
+
+msgctxt "field:gnuhealth.patient,sex_anal:"
+msgid "Anal Sex"
+msgstr "Sexo Anal"
+
+msgctxt "field:gnuhealth.patient,sex_oral:"
+msgid "Oral Sex"
+msgstr "Sexo Oral"
+
+msgctxt "field:gnuhealth.patient,sex_with_prostitutes:"
+msgid "Sex with prostitutes"
+msgstr "Sexo con prostitutas"
+
+msgctxt "field:gnuhealth.patient,sexual_partners:"
+msgid "Sexual Partners"
+msgstr "Partners sexuales"
+
+msgctxt "field:gnuhealth.patient,sexual_partners_number:"
+msgid "Number of sexual partners"
+msgstr "Número de partners sexuales"
+
+msgctxt "field:gnuhealth.patient,sexual_practices:"
+msgid "Sexual Practices"
+msgstr "Prácticas sexuales"
+
+msgctxt "field:gnuhealth.patient,sexual_preferences:"
+msgid "Sexual Preferences"
+msgstr "Preferencias sexuales"
+
+msgctxt "field:gnuhealth.patient,sexuality_info:"
+msgid "Extra Information"
+msgstr "Información Adicional"
+
+msgctxt "field:gnuhealth.patient,sleep_during_daytime:"
+msgid "Sleeps at daytime"
+msgstr "Duerme durante el día"
+
+msgctxt "field:gnuhealth.patient,sleep_hours:"
+msgid "Hours of sleep"
+msgstr "Horas de sueño"
+
+msgctxt "field:gnuhealth.patient,smoking:"
+msgid "Smokes"
+msgstr "Fuma"
+
+msgctxt "field:gnuhealth.patient,smoking_number:"
+msgid "Cigarretes a day"
+msgstr "Cigarrillos al día"
+
+msgctxt "field:gnuhealth.patient,soft_drinks:"
+msgid "Soft drinks (sugar)"
+msgstr "Refrescos azucarados"
+
+msgctxt "field:gnuhealth.patient,traffic_laws:"
+msgid "Obeys Traffic Laws"
+msgstr "Obedece normas de tráfico"
+
+msgctxt "field:gnuhealth.patient.cage,cage_a:"
+msgid "Angry with Critics"
+msgstr "Le molestan las críticas"
+
+msgctxt "field:gnuhealth.patient.cage,cage_c:"
+msgid "Hard to Cut down"
+msgstr "Difícil de Cortar"
+
+msgctxt "field:gnuhealth.patient.cage,cage_e:"
+msgid "Eye-opener"
+msgstr "Eye-opener"
+
+msgctxt "field:gnuhealth.patient.cage,cage_g:"
+msgid "Guilt"
+msgstr "Culpa"
+
+msgctxt "field:gnuhealth.patient.cage,cage_score:"
+msgid "CAGE Score"
+msgstr "Puntuación CAGE"
+
+msgctxt "field:gnuhealth.patient.cage,create_date:"
+msgid "Create Date"
+msgstr "Crear fecha"
+
+msgctxt "field:gnuhealth.patient.cage,create_uid:"
+msgid "Create User"
+msgstr "Crear usuario"
+
+msgctxt "field:gnuhealth.patient.cage,evaluation_date:"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "field:gnuhealth.patient.cage,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.patient.cage,name:"
+msgid "Patient"
+msgstr "Paciente"
+
+msgctxt "field:gnuhealth.patient.cage,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:gnuhealth.patient.cage,write_date:"
+msgid "Write Date"
+msgstr "Escriba la fecha"
+
+msgctxt "field:gnuhealth.patient.cage,write_uid:"
+msgid "Write User"
+msgstr "Escriba el usuario"
+
+msgctxt "field:gnuhealth.patient.recreational_drugs,create_date:"
+msgid "Create Date"
+msgstr "Crear fecha"
+
+msgctxt "field:gnuhealth.patient.recreational_drugs,create_uid:"
+msgid "Create User"
+msgstr "Crear usuario"
+
+msgctxt "field:gnuhealth.patient.recreational_drugs,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.patient.recreational_drugs,patient:"
+msgid "Patient"
+msgstr "Paciente"
+
+msgctxt "field:gnuhealth.patient.recreational_drugs,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:gnuhealth.patient.recreational_drugs,recreational_drug:"
+msgid "Recreational Drug"
+msgstr "Droga recreacional"
+
+msgctxt "field:gnuhealth.patient.recreational_drugs,write_date:"
+msgid "Write Date"
+msgstr "Escribir fecha"
+
+msgctxt "field:gnuhealth.patient.recreational_drugs,write_uid:"
+msgid "Write User"
+msgstr "Escribir usuario"
+
+msgctxt "help:gnuhealth.drugs_recreational,code:"
+msgid "Please use CAPITAL LETTERS and no spaces"
+msgstr "Por favor use LETRAS MAYUSCULA y sin espacios"
+
+msgctxt "help:gnuhealth.drugs_recreational,dea_schedule_i:"
+msgid ""
+"Schedule I and II drugs have a high potential for abuse. They require "
+"greater storage security and have a quota on manufacturing, among other "
+"restrictions. Schedule I drugs are available for research only and have no "
+"approved medical use; Schedule II drugs are available only by prescription "
+"(unrefillable) and require a form for ordering. Schedule III and IV drugs "
+"are available by prescription, may have five refills in 6 months, and may be"
+" ordered orally. Some Schedule V drugs are available over the counter"
+msgstr "Drogas de nivel I y II de la DEA tienen un alto potencial de abuso. Requieren mayores medidas de seguridad de almacenamiento y tienen una quota en su fabricación, entre otras restricciones. Nivel I están disponibles sólo para investigación, sólo por receta (sin recarga) y requieren un formulario para pedirlo. Nivel III y IV están disponible bajo receta, se pueden recargar cada 6 meses, y se pueden pedir sin formulario. Algunas drogas de nivel V están disponibles sin receta médica."
+
+msgctxt "help:gnuhealth.drugs_recreational,dea_schedule_ii:"
+msgid ""
+"Schedule I and II drugs have a high potential for abuse.They require greater"
+" storage security and have a quota onmanufacturing, among other "
+"restrictions. Schedule I drugs areavailable for research only and have no "
+"approved medical use; Schedule II drugs are available only by prescription "
+"(unrefillable) and require a form for ordering. Schedule III and IV drugs "
+"are available by prescription, may have fiverefills in 6 months, and may be "
+"ordered orally. Some Schedule V drugs are available over the counter"
+msgstr "Drogas de nivel I y II de la DEA tienen un alto potencial de abuso. Requieren mayores medidas de seguridad de almacenamiento y tienen una quota en su fabricación, entre otras restricciones. Nivel I están disponibles sólo para investigación, sólo por receta (sin recarga) y requieren un formulario para pedirlo. Nivel III y IV están disponible bajo receta, se pueden recargar cada 6 meses, y se pueden pedir sin formulario. Algunas drogas de nivel V están disponibles sin receta médica."
+
+msgctxt "help:gnuhealth.drugs_recreational,dea_schedule_iii:"
+msgid ""
+"Schedule I and II drugs have a high potential for abuse. They require "
+"greater storage security and have a quota on manufacturing, among other "
+"restrictions. Schedule I drugs are available for research only and have no "
+"approved medical use; Schedule II drugs are available only by prescription "
+"(unrefillable) and require a form for ordering. Schedule III and IV drugs "
+"are available by prescription, may have five refills in 6 months, and may be"
+" ordered orally. Some Schedule V drugs are available over the counter"
+msgstr "Drogas de nivel I y II de la DEA tienen un alto potencial de abuso. Requieren mayores medidas de seguridad de almacenamiento y tienen una quota en su fabricación, entre otras restricciones. Nivel I están disponibles sólo para investigación, sólo por receta (sin recarga) y requieren un formulario para pedirlo. Nivel III y IV están disponible bajo receta, se pueden recargar cada 6 meses, y se pueden pedir sin formulario. Algunas drogas de nivel V están disponibles sin receta médica."
+
+msgctxt "help:gnuhealth.drugs_recreational,dea_schedule_iv:"
+msgid ""
+"Schedule I and II drugs have a high potential for abuse. They require "
+"greater storage security and have a quota on manufacturing, among other "
+"restrictions. Schedule I drugs are available for research only and have no "
+"approved medical use; Schedule II drugs are available only by prescription "
+"(unrefillable) and require a form for ordering. Schedule III and IV drugs "
+"are available by prescription, may have five refills in 6 months, and may be"
+" ordered orally. Some Schedule V drugs are available over the counter"
+msgstr "Drogas de nivel I y II de la DEA tienen un alto potencial de abuso. Requieren mayores medidas de seguridad de almacenamiento y tienen una quota en su fabricación, entre otras restricciones. Nivel I están disponibles sólo para investigación, sólo por receta (sin recarga) y requieren un formulario para pedirlo. Nivel III y IV están disponible bajo receta, se pueden recargar cada 6 meses, y se pueden pedir sin formulario. Algunas drogas de nivel V están disponibles sin receta médica."
+
+msgctxt "help:gnuhealth.drugs_recreational,dea_schedule_v:"
+msgid ""
+"Schedule I and II drugs have a high potential for abuse. They require "
+"greater storage security and have a quota on manufacturing, among other "
+"restrictions. Schedule I drugs are available for research only and have no "
+"approved medical use; Schedule II drugs are available only by prescription "
+"(unrefillable) and require a form for ordering. Schedule III and IV drugs "
+"are available by prescription, may have five refills in 6 months, and may be"
+" ordered orally. Some Schedule V drugs are available over the counter"
+msgstr "Drogas de nivel I y II de la DEA tienen un alto potencial de abuso. Requieren mayores medidas de seguridad de almacenamiento y tienen una quota en su fabricación, entre otras restricciones. Nivel I están disponibles sólo para investigación, sólo por receta (sin recarga) y requieren un formulario para pedirlo. Nivel III y IV están disponible bajo receta, se pueden recargar cada 6 meses, y se pueden pedir sin formulario. Algunas drogas de nivel V están disponibles sin receta médica."
+
+msgctxt "help:gnuhealth.drugs_recreational,dependence_level:"
+msgid ""
+"How difficult it is for the user to quit, the relapse rate, the percentage of people who eventually become dependent, the rating users give their own need for the substance and the degree to which the substance will be used in the face of evidence that it causes harm.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr "Nivel de dificultad para abandonar la adicción, el grado recaida, el porcentaje de personas que se presentarán dependencia, el nivel que los usuarios dan a partir de la necesidad por la sustancia.\nEscala de Henningfield. 1=Máximo y 6=Mínimo"
+
+msgctxt "help:gnuhealth.drugs_recreational,intoxication_level:"
+msgid ""
+"the level of intoxication is associated with addiction and increases the personal and social damage a substance may do. \n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr "El Nivel de intoxicación está asociado a la adicción y aumenta el daño personal y social.\nEscala de Henningfield. 1=Máximo y 6=Mínimo"
+
+msgctxt "help:gnuhealth.drugs_recreational,name:"
+msgid "Name of the drug"
+msgstr "Nombre de la droga"
+
+msgctxt "help:gnuhealth.drugs_recreational,reinforcement_level:"
+msgid ""
+"A measure of the substance's ability to get users to take it  again and again, and in preference to other substances.\n"
+"Using  Henningfield rating. 1=highest and 6=lowest"
+msgstr "Forma de medir la acción de la sustancia para que los usuarios la tomen una y otra vez, con preferencia a otras sustancias :\nEscala de Henningfield 1=Máximo y 6=Mínimo"
+
+msgctxt "help:gnuhealth.drugs_recreational,route_inhaling:"
+msgid "Insufflation, excluding nasal"
+msgstr "Insuflación, excluyendo la nasal"
+
+msgctxt "help:gnuhealth.drugs_recreational,route_injection:"
+msgid "Injection - Intravenous, Intramuscular..."
+msgstr "Inyección - Intravenoso, Intramuscular..."
+
+msgctxt "help:gnuhealth.drugs_recreational,route_popping:"
+msgid "Subcutaneous or Intradermical administration"
+msgstr "Administración subcutánea o intradérmica"
+
+msgctxt "help:gnuhealth.drugs_recreational,route_sniffing:"
+msgid "Also called snorting - inhaling through the nares  "
+msgstr "También llamado snorting - inhalando por la nariz"
+
+msgctxt "help:gnuhealth.drugs_recreational,street_name:"
+msgid "Common name of the drug in street jargon"
+msgstr "Nombre común en la jerga de la calle"
+
+msgctxt "help:gnuhealth.drugs_recreational,tolerance_level:"
+msgid ""
+"How much of the substance is needed to satisfy increasing cravings for it, and the level of stable need that is eventually reached.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr "Cuanta cantidad es necesaria para satisfacer el deseo.\nNivel de Henningifield 1=Máximo y 6=Mínimo"
+
+msgctxt "help:gnuhealth.drugs_recreational,withdrawal_level:"
+msgid ""
+"Presence and severity of characteristic withdrawal symptoms.\n"
+"Using Henningfield rating. 1=highest and 6=lowest"
+msgstr "Presencia y severidad de síntoma característicos de la abstinencia\nEscala Henningfield. 1=Máximo y 6=Mínimo"
+
+msgctxt "help:gnuhealth.patient,age_quit_drinking:"
+msgid "Date to stop drinking"
+msgstr "Fecha que dejó la bebida alcohólica"
+
+msgctxt "help:gnuhealth.patient,age_quit_drugs:"
+msgid "Date of quitting drugs"
+msgstr "Fecha abandono de drogas"
+
+msgctxt "help:gnuhealth.patient,age_quit_smoking:"
+msgid "Age of quitting smoking"
+msgstr "Edad que dejó el cigarrillo"
+
+msgctxt "help:gnuhealth.patient,age_start_drinking:"
+msgid "Date to start drinking"
+msgstr "Fecha que inició a beber alcohol"
+
+msgctxt "help:gnuhealth.patient,age_start_drugs:"
+msgid "Age of start drugs"
+msgstr "Edad comienzo de drogas"
+
+msgctxt "help:gnuhealth.patient,car_child_safety:"
+msgid ""
+"Safety measures when driving : child seats, proper seat belting, not seating"
+" on the front seat, ...."
+msgstr "Medidas de seguridad cuando conduce : Cinturones de seguridad, asientos para niños, no sentar a los niños en el asiento delantero"
+
+msgctxt "help:gnuhealth.patient,car_revision:"
+msgid "Maintain the vehicle. Do periodical checks - tires,breaks ..."
+msgstr "Revisa el automóvil. Le hace mantenimientos períodicos a las ruedas, frenos..."
+
+msgctxt "help:gnuhealth.patient,car_seat_belt:"
+msgid "Safety measures when driving : safety belt"
+msgstr "Medicas de seguridad al conducir : Cinturón de seguridad"
+
+msgctxt "help:gnuhealth.patient,coffee_cups:"
+msgid "Number of cup of coffee a day"
+msgstr "Número de tazas de café al día"
+
+msgctxt "help:gnuhealth.patient,diet:"
+msgid "Check if the patient is currently on a diet"
+msgstr "Marcar si el paciente está a dieta"
+
+msgctxt "help:gnuhealth.patient,diet_info:"
+msgid "Short description on the diet"
+msgstr "Descripción breve de la dieta"
+
+msgctxt "help:gnuhealth.patient,drug_iv:"
+msgid "Check this option if the patient injects drugs"
+msgstr "Marcar si se inyecta drogas"
+
+msgctxt "help:gnuhealth.patient,eats_alone:"
+msgid "Check this box if the patient eats by him / herself."
+msgstr "Marcar si come sólo"
+
+msgctxt "help:gnuhealth.patient,exercise_minutes_day:"
+msgid "How many minutes a day the patient exercises"
+msgstr "Minutos de ejercicio al día"
+
+msgctxt "help:gnuhealth.patient,helmet:"
+msgid "The patient uses the proper motorcycle helmet"
+msgstr "Usa correctamente el casco de moto"
+
+msgctxt "help:gnuhealth.patient,home_safety:"
+msgid ""
+"Keep safety measures for kids in the kitchen, correct storage of chemicals, "
+"..."
+msgstr "Mantiene las medidas de seguridad en el hogar para los niños, en la cocina, guarda en lugar seguro los productos químicos..."
+
+msgctxt "help:gnuhealth.patient,motorcycle_rider:"
+msgid "The patient rides motorcycles"
+msgstr "Motociclista"
+
+msgctxt "help:gnuhealth.patient,prostitute:"
+msgid "Check if the patient (he or she) is a prostitute"
+msgstr "Marcar si ejerce la prostitución"
+
+msgctxt "help:gnuhealth.patient,salt:"
+msgid "Check if patient consumes salt with the food"
+msgstr "Marcar si el paciente usa sal en comidas"
+
+msgctxt "help:gnuhealth.patient,second_hand_smoker:"
+msgid "Check it the patient is a passive / second-hand smoker"
+msgstr "Marcar si el paciente es fumador pasivo"
+
+msgctxt "help:gnuhealth.patient,sex_with_prostitutes:"
+msgid "Check if the patient (he or she) has sex with prostitutes"
+msgstr "Marcar si tiene sexo con prostitutas"
+
+msgctxt "help:gnuhealth.patient,sleep_during_daytime:"
+msgid ""
+"Check if the patient sleep hours are during daylight rather than at night"
+msgstr "Marcar si duerme más durante el día que durante la noche"
+
+msgctxt "help:gnuhealth.patient,sleep_hours:"
+msgid "Average hours of sleep per day"
+msgstr "Número de horas de sueño al día"
+
+msgctxt "help:gnuhealth.patient,soft_drinks:"
+msgid "Check if the patient consumes soft drinks with sugar"
+msgstr "Macar si el paciente consume bebidas con alto nivel de azúcar"
+
+msgctxt "help:gnuhealth.patient,traffic_laws:"
+msgid "Check if the patient is a safe driver"
+msgstr "Marcar si conduce de forma segura"
+
+msgctxt "help:gnuhealth.patient.cage,cage_a:"
+msgid "Have people Annoyed you by criticizing your drinking ?"
+msgstr "¿Le ha molestado que la gente le critique tomar?"
+
+msgctxt "help:gnuhealth.patient.cage,cage_c:"
+msgid "Have you ever felt you needed to Cut down on your drinking ?"
+msgstr "¿Ha sentido que debería reducir su consumo de alcohol?"
+
+msgctxt "help:gnuhealth.patient.cage,cage_e:"
+msgid ""
+"Have you ever felt you needed a drink first thing in the morning (Eye-"
+"opener) to steady your nerves or to get rid of a hangover?"
+msgstr "¿Ha sentido necesidad de tomar apenas despierta (Eye-opener) para calmarse los nervios o salir de una resaca?"
+
+msgctxt "help:gnuhealth.patient.cage,cage_g:"
+msgid "Have you ever felt Guilty about drinking ?"
+msgstr "¿Se ha sentido culpable por beber?"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:"
+msgid "Recreational Drug"
+msgstr "Droga recreacional"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:amphetamine"
+msgid "Amphetamine"
+msgstr "Anfetamina"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:anabolic_steroids"
+msgid "Anabolic steroids"
+msgstr "Esteroides Anabólicos"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:barbiturates"
+msgid "Barbiturates"
+msgstr "Envenenamiento por Barbitúricos"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:benzodiazepines"
+msgid "Benzodiazepines"
+msgstr "Efectos adversos de benzodiazepinas"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:cocaine"
+msgid "Cocaine"
+msgstr "Envenenamiento por Cocaína"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:codeine"
+msgid "Codeine"
+msgstr "Codeína"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:dmx"
+msgid "Dextromethorphan - DMX"
+msgstr "Dextrometorfano - DXM"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:fentanyl"
+msgid "Fentanyl"
+msgstr "Fentanilo"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:flunitrazepam"
+msgid "Flunitrazepam"
+msgstr "Flunitrazepam"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:ghb"
+msgid "GHB"
+msgstr "Ácido γ-hidroxibutírico"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:hashish"
+msgid "Hashish"
+msgstr "Hachís"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:heroin"
+msgid "Heroin"
+msgstr "Envenenamiento por Heroína"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:hydrocodone_bitartrate"
+msgid "Hydrocodone bitartrate"
+msgstr "bitartrato de hidrocodona"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:inhalants"
+msgid "Inhalants"
+msgstr "Inhalantes"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:ketamine"
+msgid "Ketamine"
+msgstr "Ketamina"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:lsd"
+msgid "LSD"
+msgstr "LSD"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:marijuana"
+msgid "Marijuana"
+msgstr "Marihuana"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:mdma"
+msgid "MDMA methylenedioxy-methamphetamine"
+msgstr "MDMA metilendioxi-metanfetamina"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:mescaline"
+msgid "Mescaline"
+msgstr "Mescalina"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:methamphetamine"
+msgid "Methamphetamine"
+msgstr "Metanfetamina"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:methaqualone"
+msgid "Methaqualone"
+msgstr "Metacualona"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:methylphenidate"
+msgid "Methylphenidate"
+msgstr "Metilfenidato"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:morphine"
+msgid "Morphine"
+msgstr "Morfina"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:nicotine"
+msgid "Nicotine"
+msgstr "Nicotina"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:oxycodone_hcl"
+msgid "oxycodone HCL"
+msgstr "Oxicodona"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:pcp"
+msgid "PCP and analogs"
+msgstr "Fenciclidina (PCP) y similares"
+
+msgctxt "model:gnuhealth.drugs_recreational,name:psilocybin"
+msgid "Psilocybin"
+msgstr "Psilocibina"
+
+msgctxt "model:gnuhealth.patient.cage,name:"
+msgid "Patient CAGE Questionnaire"
+msgstr "Cuestionario CAGE del Paciente"
+
+msgctxt "model:gnuhealth.patient.recreational_drugs,name:"
+msgid "Patient use of Recreational Drugs"
+msgstr "Uso de Drogas Recreacionales"
+
+msgctxt "model:ir.action,name:gnuhealth_action_drugs_recreational"
+msgid "Recreational Drugs"
+msgstr "Drogas de ocio"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_conf_drugs_recreational"
+msgid "Recreational Drugs"
+msgstr "Drogas de ocio"
+
+msgctxt "model:res.group,name:group_health_lifestyle_admin"
+msgid "Health Lifestyle Administration"
+msgstr "Administración de Estilos de Vida de Health"
+
+msgctxt "selection:gnuhealth.drugs_recreational,addiction_level:"
+msgid "Extreme"
+msgstr "Extremo"
+
+msgctxt "selection:gnuhealth.drugs_recreational,addiction_level:"
+msgid "High"
+msgstr "Alta"
+
+msgctxt "selection:gnuhealth.drugs_recreational,addiction_level:"
+msgid "Low"
+msgstr "Bajo"
+
+msgctxt "selection:gnuhealth.drugs_recreational,addiction_level:"
+msgid "None"
+msgstr "Ninguno"
+
+msgctxt "selection:gnuhealth.drugs_recreational,category:"
+msgid "Cannabinoids"
+msgstr "Cannabinoides"
+
+msgctxt "selection:gnuhealth.drugs_recreational,category:"
+msgid "Depressants"
+msgstr "Depresivos"
+
+msgctxt "selection:gnuhealth.drugs_recreational,category:"
+msgid "Dissociative Anesthetics"
+msgstr "Anestésicos Disociativos"
+
+msgctxt "selection:gnuhealth.drugs_recreational,category:"
+msgid "Hallucinogens"
+msgstr "Alucinógenos"
+
+msgctxt "selection:gnuhealth.drugs_recreational,category:"
+msgid "Opioids"
+msgstr "Opiodes"
+
+msgctxt "selection:gnuhealth.drugs_recreational,category:"
+msgid "Others"
+msgstr "Otros"
+
+msgctxt "selection:gnuhealth.drugs_recreational,category:"
+msgid "Stimulants"
+msgstr "Estimulantes"
+
+msgctxt "selection:gnuhealth.drugs_recreational,legal_status:"
+msgid "Illegal"
+msgstr "Ilegal"
+
+msgctxt "selection:gnuhealth.drugs_recreational,legal_status:"
+msgid "Legal"
+msgstr "Legal"
+
+msgctxt "selection:gnuhealth.drugs_recreational,toxicity:"
+msgid "Extreme"
+msgstr "Extremo"
+
+msgctxt "selection:gnuhealth.drugs_recreational,toxicity:"
+msgid "High"
+msgstr "Alto"
+
+msgctxt "selection:gnuhealth.drugs_recreational,toxicity:"
+msgid "Low"
+msgstr "Bajo"
+
+msgctxt "selection:gnuhealth.drugs_recreational,toxicity:"
+msgid "None"
+msgstr "Ninguno"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Contraceptive injection"
+msgstr "Inyección contraconceptiva"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Female condom"
+msgstr "Condón Femenino"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Female sterilisation"
+msgstr "Esterilización femenina"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Fertility cycle awareness"
+msgstr "Conocimiento del ciclo menstrual"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Intra-uterine device"
+msgstr "Dispositivo Intra Uterino"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Male condom"
+msgstr "Condón Masculino"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "None"
+msgstr "Ninguno"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Pill / Minipill"
+msgstr "Píldora / Minipíldora"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Skin Patch"
+msgstr "Parche dérmico"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Vasectomy"
+msgstr "Vasectomía"
+
+msgctxt "selection:gnuhealth.patient,anticonceptive:"
+msgid "Withdrawal method"
+msgstr "Marcha atrás"
+
+msgctxt "selection:gnuhealth.patient,sex_anal:"
+msgid "Active"
+msgstr "Activo"
+
+msgctxt "selection:gnuhealth.patient,sex_anal:"
+msgid "Both"
+msgstr "Ambos"
+
+msgctxt "selection:gnuhealth.patient,sex_anal:"
+msgid "None"
+msgstr "Ninguno"
+
+msgctxt "selection:gnuhealth.patient,sex_anal:"
+msgid "Passive"
+msgstr "Pasivo"
+
+msgctxt "selection:gnuhealth.patient,sex_oral:"
+msgid "Active"
+msgstr "Activo"
+
+msgctxt "selection:gnuhealth.patient,sex_oral:"
+msgid "Both"
+msgstr "Ambos"
+
+msgctxt "selection:gnuhealth.patient,sex_oral:"
+msgid "None"
+msgstr "Ninguno"
+
+msgctxt "selection:gnuhealth.patient,sex_oral:"
+msgid "Passive"
+msgstr "Pasivo"
+
+msgctxt "selection:gnuhealth.patient,sexual_partners:"
+msgid "Monogamous"
+msgstr "Monógamo"
+
+msgctxt "selection:gnuhealth.patient,sexual_partners:"
+msgid "Polygamous"
+msgstr "Polígamo"
+
+msgctxt "selection:gnuhealth.patient,sexual_practices:"
+msgid "Risky / Unprotected sex"
+msgstr "Sexo riesgoso"
+
+msgctxt "selection:gnuhealth.patient,sexual_practices:"
+msgid "Safe / Protected sex"
+msgstr "Sexo Seguro"
+
+msgctxt "selection:gnuhealth.patient,sexual_preferences:"
+msgid "Bisexual"
+msgstr "Bisexual"
+
+msgctxt "selection:gnuhealth.patient,sexual_preferences:"
+msgid "Heterosexual"
+msgstr "Heterosexual"
+
+msgctxt "selection:gnuhealth.patient,sexual_preferences:"
+msgid "Homosexual"
+msgstr "Homosexual"
+
+msgctxt "selection:gnuhealth.patient,sexual_preferences:"
+msgid "Transexual"
+msgstr "Transexual"
+
+msgctxt "view:gnuhealth.drugs_recreational:"
+msgid "Additional Info and Effects"
+msgstr "Información Adicional y Efectos"
+
+msgctxt "view:gnuhealth.drugs_recreational:"
+msgid "Administration Routes"
+msgstr "Vias de Administración"
+
+msgctxt "view:gnuhealth.drugs_recreational:"
+msgid "DEA Schedule Level"
+msgstr "Nivel del Almacenamiento de DEA"
+
+msgctxt "view:gnuhealth.drugs_recreational:"
+msgid "General Information"
+msgstr "Información General"
+
+msgctxt "view:gnuhealth.drugs_recreational:"
+msgid "Henningfield Rating"
+msgstr "Score de Henningfield"
+
+msgctxt "view:gnuhealth.drugs_recreational:"
+msgid "Recreational Drugs"
+msgstr "Drogas Recreacionales"
+
+msgctxt "view:gnuhealth.patient.cage:"
+msgid "Patient CAGE Questionnaire"
+msgstr "Cuestionario CAGE del Paciente"
+
+msgctxt "view:gnuhealth.patient.cage:"
+msgid "Patient CAGE SCORE"
+msgstr "Puntaje CAGE del Paciente"
+
+msgctxt "view:gnuhealth.patient.recreational_drugs:"
+msgid "Patient Recreational Drugs"
+msgstr "Drogas recreacionales"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Addictions"
+msgstr "Adicciones"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Alcohol"
+msgstr "Alcohol"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Diet and Exersice"
+msgstr "Dieta y Ejercicio"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Drive and Home Safety"
+msgstr "Seguridad del hogar y vial"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Lifestyle"
+msgstr "Estilo de Vida"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Main"
+msgstr "Principal"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Physical Exercise"
+msgstr "Ejercicio Físico"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Recreational Drugs"
+msgstr "Drogas Recreacionales"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Safety"
+msgstr "Seguridad"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Sexual practices"
+msgstr "Prácticas Sexuales"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Sexuality"
+msgstr "Sexualidad"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Sleep"
+msgstr "Dormir"

@@ -1,0 +1,1537 @@
+# 
+# Translators:
+# Edgar Hagenbichler <edgar@hagenbichler.at>, 2015
+# Johannes <johannes.schulze@posteo.de>, 2013
+# Markster <hoeller@it-science-center.de>, 2011
+# Moini <marenhachmann@yahoo.com>, 2012
+# pantteri, 2013
+# rike, 2013
+# Sebastian Altenhuber <sebastian.altenhuber@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU Health\n"
+"Report-Msgid-Bugs-To: https://savannah.gnu.org/bugs/?group=health\n"
+"POT-Creation-Date: 2015-01-27 11:17+0000\n"
+"PO-Revision-Date: 2015-08-29 23:29+0000\n"
+"Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
+"Language-Team: German (Austria) (http://www.transifex.com/meanmicio/GNU_Health/language/de_AT/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_AT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "error:gnuhealth.patient.pregnancy:"
+msgid "Our records indicate that the patient is already pregnant !"
+msgstr "Unsere Aufzeichnungen deuten darauf hin, dass die Patientin bereits schwanger ist !"
+
+msgctxt "error:gnuhealth.patient.pregnancy:"
+msgid "The pregancy number must be unique for this patient !"
+msgstr "Die Nummer der Schwangerschaft muss für diese Patientin eindeutig sein !"
+
+msgctxt "field:gnuhealth.patient,abortions:"
+msgid "Abortions"
+msgstr "Abtreibungen"
+
+msgctxt "field:gnuhealth.patient,breast_self_examination:"
+msgid "Breast self-examination"
+msgstr "Selbstuntersuchung der Brust"
+
+msgctxt "field:gnuhealth.patient,colposcopy:"
+msgid "Colposcopy"
+msgstr "Kolposkopie"
+
+msgctxt "field:gnuhealth.patient,colposcopy_history:"
+msgid "Colposcopy History"
+msgstr "Kolposkopien Vorgeschichte"
+
+msgctxt "field:gnuhealth.patient,colposcopy_last:"
+msgid "Last colposcopy"
+msgstr "Letzte Kolposkopie"
+
+msgctxt "field:gnuhealth.patient,currently_pregnant:"
+msgid "Pregnant"
+msgstr "schwanger"
+
+msgctxt "field:gnuhealth.patient,fertile:"
+msgid "Fertile"
+msgstr "Fertil"
+
+msgctxt "field:gnuhealth.patient,full_term:"
+msgid "Full Term"
+msgstr "Normale Schwangerschaftsdauer"
+
+msgctxt "field:gnuhealth.patient,gravida:"
+msgid "Pregnancies"
+msgstr "Schwangerschaften"
+
+msgctxt "field:gnuhealth.patient,mammography:"
+msgid "Mammography"
+msgstr "Mammographie"
+
+msgctxt "field:gnuhealth.patient,mammography_history:"
+msgid "Mammography History"
+msgstr "Mammographie Verlauf"
+
+msgctxt "field:gnuhealth.patient,mammography_last:"
+msgid "Last mammography"
+msgstr "Letzte Mammographie"
+
+msgctxt "field:gnuhealth.patient,menarche:"
+msgid "Menarche age"
+msgstr "Zeitpunkt der Menarche"
+
+msgctxt "field:gnuhealth.patient,menopausal:"
+msgid "Menopausal"
+msgstr "Menopausal"
+
+msgctxt "field:gnuhealth.patient,menopause:"
+msgid "Menopause age"
+msgstr "Zeitpunkt der Menopause"
+
+msgctxt "field:gnuhealth.patient,menstrual_history:"
+msgid "Menstrual History"
+msgstr "Menstruation Vorgeschichte"
+
+msgctxt "field:gnuhealth.patient,pap_history:"
+msgid "PAP smear History"
+msgstr "PAP Abstrich Vorgeschichte"
+
+msgctxt "field:gnuhealth.patient,pap_test:"
+msgid "PAP test"
+msgstr "Pap-Test"
+
+msgctxt "field:gnuhealth.patient,pap_test_last:"
+msgid "Last PAP test"
+msgstr "Letzter Pap-Test"
+
+msgctxt "field:gnuhealth.patient,pregnancy_history:"
+msgid "Pregnancies"
+msgstr "Schwangerschaften"
+
+msgctxt "field:gnuhealth.patient,premature:"
+msgid "Premature"
+msgstr "Frühgeburt"
+
+msgctxt "field:gnuhealth.patient,stillbirths:"
+msgid "Stillbirths"
+msgstr "Totgeburten"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,comments:"
+msgid "Remarks"
+msgstr "Bemerkungen"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,evaluation:"
+msgid "Evaluation"
+msgstr "Analyse"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,evaluation_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,healthprof:"
+msgid "Reviewed"
+msgstr "überprüft"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,institution:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,last_colposcopy:"
+msgid "Previous"
+msgstr "vorige"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,name:"
+msgid "Patient"
+msgstr "Patient"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,result:"
+msgid "result"
+msgstr "Ergebnis"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.colposcopy_history,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.mammography_history,comments:"
+msgid "Remarks"
+msgstr "Bemerkungen"
+
+msgctxt "field:gnuhealth.patient.mammography_history,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.mammography_history,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.mammography_history,evaluation:"
+msgid "Evaluation"
+msgstr "Analyse"
+
+msgctxt "field:gnuhealth.patient.mammography_history,evaluation_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:gnuhealth.patient.mammography_history,healthprof:"
+msgid "Reviewed"
+msgstr "überprüft"
+
+msgctxt "field:gnuhealth.patient.mammography_history,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.patient.mammography_history,institution:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "field:gnuhealth.patient.mammography_history,last_mammography:"
+msgid "Previous"
+msgstr "vorige"
+
+msgctxt "field:gnuhealth.patient.mammography_history,name:"
+msgid "Patient"
+msgstr "Patient"
+
+msgctxt "field:gnuhealth.patient.mammography_history,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.patient.mammography_history,result:"
+msgid "result"
+msgstr "Ergebnis"
+
+msgctxt "field:gnuhealth.patient.mammography_history,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.mammography_history,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,dysmenorrhea:"
+msgid "Dysmenorrhea"
+msgstr "Dysmenorrhoe"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,evaluation:"
+msgid "Evaluation"
+msgstr "Analyse"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,evaluation_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,frequency:"
+msgid "frequency"
+msgstr "Frequenz"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,healthprof:"
+msgid "Reviewed"
+msgstr "überprüft"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,institution:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,is_regular:"
+msgid "Regular"
+msgstr "Regelmässig"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,lmp:"
+msgid "LMP"
+msgstr "LMP - Letzte Menstruationsperiode"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,lmp_length:"
+msgid "Length"
+msgstr "Körperlänge"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,name:"
+msgid "Patient"
+msgstr "Patient"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,volume:"
+msgid "volume"
+msgstr "Lautstärke"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.menstrual_history,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.pap_history,comments:"
+msgid "Remarks"
+msgstr "Bemerkungen"
+
+msgctxt "field:gnuhealth.patient.pap_history,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.pap_history,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.pap_history,evaluation:"
+msgid "Evaluation"
+msgstr "Analyse"
+
+msgctxt "field:gnuhealth.patient.pap_history,evaluation_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:gnuhealth.patient.pap_history,healthprof:"
+msgid "Reviewed"
+msgstr "überprüft"
+
+msgctxt "field:gnuhealth.patient.pap_history,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.patient.pap_history,institution:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "field:gnuhealth.patient.pap_history,last_pap:"
+msgid "Previous"
+msgstr "vorige"
+
+msgctxt "field:gnuhealth.patient.pap_history,name:"
+msgid "Patient"
+msgstr "Patient"
+
+msgctxt "field:gnuhealth.patient.pap_history,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.patient.pap_history,result:"
+msgid "result"
+msgstr "Ergebnis"
+
+msgctxt "field:gnuhealth.patient.pap_history,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.pap_history,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.pregnancy,bba:"
+msgid "BBA"
+msgstr "BBA - born before arrival"
+
+msgctxt "field:gnuhealth.patient.pregnancy,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.pregnancy,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.pregnancy,current_pregnancy:"
+msgid "Current Pregnancy"
+msgstr "Aktuelle Schwangerschaft"
+
+msgctxt "field:gnuhealth.patient.pregnancy,fetuses:"
+msgid "Fetuses"
+msgstr "Föten"
+
+msgctxt "field:gnuhealth.patient.pregnancy,gravida:"
+msgid "Pregnancy #"
+msgstr "Schwangerschaft #"
+
+msgctxt "field:gnuhealth.patient.pregnancy,healthprof:"
+msgid "Health Prof"
+msgstr "Behandler"
+
+msgctxt "field:gnuhealth.patient.pregnancy,home_birth:"
+msgid "Home Birth"
+msgstr "Hausgeburt"
+
+msgctxt "field:gnuhealth.patient.pregnancy,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.patient.pregnancy,institution:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "field:gnuhealth.patient.pregnancy,iugr:"
+msgid "IUGR"
+msgstr "IUGR - intrauterine Wachstumsverzögerung"
+
+msgctxt "field:gnuhealth.patient.pregnancy,lmp:"
+msgid "LMP"
+msgstr "LMP - Letzte Menstruationsperiode"
+
+msgctxt "field:gnuhealth.patient.pregnancy,monozygotic:"
+msgid "Monozygotic"
+msgstr "Monozygotisch"
+
+msgctxt "field:gnuhealth.patient.pregnancy,name:"
+msgid "Patient ID"
+msgstr "Patienten-ID"
+
+msgctxt "field:gnuhealth.patient.pregnancy,pdd:"
+msgid "Pregnancy Due Date"
+msgstr "Geburtstermin"
+
+msgctxt "field:gnuhealth.patient.pregnancy,perinatal:"
+msgid "Perinatal Info"
+msgstr "Perinatal-Informationen"
+
+msgctxt "field:gnuhealth.patient.pregnancy,pregnancy_end_age:"
+msgid "Weeks"
+msgstr "Wochen"
+
+msgctxt "field:gnuhealth.patient.pregnancy,pregnancy_end_date:"
+msgid "End of Pregnancy"
+msgstr "Ende der Schwangerschaft"
+
+msgctxt "field:gnuhealth.patient.pregnancy,pregnancy_end_result:"
+msgid "Result"
+msgstr "Ergebnis"
+
+msgctxt "field:gnuhealth.patient.pregnancy,prenatal_evaluations:"
+msgid "Prenatal Evaluations"
+msgstr "Pränatale Untersuchung"
+
+msgctxt "field:gnuhealth.patient.pregnancy,puerperium_monitor:"
+msgid "Puerperium monitor"
+msgstr "Wochenbettüberwachung"
+
+msgctxt "field:gnuhealth.patient.pregnancy,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.patient.pregnancy,reverse:"
+msgid "Reverse"
+msgstr "umgekehrt"
+
+msgctxt "field:gnuhealth.patient.pregnancy,reverse_weeks:"
+msgid "Pr. Weeks"
+msgstr "SSW"
+
+msgctxt "field:gnuhealth.patient.pregnancy,warning:"
+msgid "Warn"
+msgstr "Warnung"
+
+msgctxt "field:gnuhealth.patient.pregnancy,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.pregnancy,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,diabetes:"
+msgid "Diabetes"
+msgstr "Diabetes"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,efw:"
+msgid "EFW"
+msgstr "EFW - estimated fetal weight"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,evaluation:"
+msgid "Patient Evaluation"
+msgstr "Patient Befundung"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,evaluation_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,fetal_ac:"
+msgid "AC"
+msgstr "AC"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,fetal_bpd:"
+msgid "BPD"
+msgstr "BPD - biparietaler Diameter"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,fetal_fl:"
+msgid "FL"
+msgstr "FL - fork length"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,fetal_hc:"
+msgid "HC"
+msgstr "HC"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,fetus_heart_rate:"
+msgid "Fetus heart rate"
+msgstr "Fetale Herzfrequenz"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,fundal_height:"
+msgid "Fundal Height"
+msgstr "Fundusstand"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,gestational_days:"
+msgid "Gestational days"
+msgstr "Schwangerschaftstage"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,gestational_weeks:"
+msgid "Gestational Weeks"
+msgstr "Schwangerschaftswochen"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,healthprof:"
+msgid "Health Prof"
+msgstr "Behandler"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,hypertension:"
+msgid "Hypertension"
+msgstr "Bluthochdruck"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,institution:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,invasive_placentation:"
+msgid "Placentation"
+msgstr "Plazentation"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,iugr:"
+msgid "IUGR"
+msgstr "IUGR - intrauterine Wachstumsverzögerung"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,name:"
+msgid "Patient Pregnancy"
+msgstr "Patient Schwangerschaft"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,oligohydramnios:"
+msgid "Oligohydramnios"
+msgstr "Oligohydramnion"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,overweight:"
+msgid "Overweight"
+msgstr "Übergewicht"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,placenta_previa:"
+msgid "Placenta Previa"
+msgstr "Plazenta Prävia"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,polihydramnios:"
+msgid "Polihydramnios"
+msgstr "Polyhydramnios"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,preeclampsia:"
+msgid "Preeclampsia"
+msgstr "Präeklampsie"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,vasa_previa:"
+msgid "Vasa Previa"
+msgstr "Vasa Prävia"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.patient.prenatal.evaluation,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.perinatal,abortion:"
+msgid "Abortion"
+msgstr "Abort"
+
+msgctxt "field:gnuhealth.perinatal,abruptio_placentae:"
+msgid "Abruptio Placentae"
+msgstr "Abruptio Placentae"
+
+msgctxt "field:gnuhealth.perinatal,admission_code:"
+msgid "Code"
+msgstr "Code"
+
+msgctxt "field:gnuhealth.perinatal,admission_date:"
+msgid "Admission"
+msgstr "Aufnahme"
+
+msgctxt "field:gnuhealth.perinatal,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.perinatal,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.perinatal,dismissed:"
+msgid "Discharged"
+msgstr "Entlassen"
+
+msgctxt "field:gnuhealth.perinatal,dystocia:"
+msgid "Dystocia"
+msgstr "Dystokie"
+
+msgctxt "field:gnuhealth.perinatal,episiotomy:"
+msgid "Episiotomy"
+msgstr "Episiotomie"
+
+msgctxt "field:gnuhealth.perinatal,fetus_presentation:"
+msgid "Fetus Presentation"
+msgstr "Kindslage"
+
+msgctxt "field:gnuhealth.perinatal,forceps:"
+msgid "Forceps"
+msgstr "Forceps"
+
+msgctxt "field:gnuhealth.perinatal,gestational_days:"
+msgid "Days"
+msgstr "Tage"
+
+msgctxt "field:gnuhealth.perinatal,gestational_weeks:"
+msgid "Gestational wks"
+msgstr "Schwangerschaftswochen"
+
+msgctxt "field:gnuhealth.perinatal,gravida_number:"
+msgid "Gravida #"
+msgstr "Gravida #"
+
+msgctxt "field:gnuhealth.perinatal,healthprof:"
+msgid "Health Prof"
+msgstr "Behandler"
+
+msgctxt "field:gnuhealth.perinatal,hematoma:"
+msgid "Hematoma"
+msgstr "Hämatom"
+
+msgctxt "field:gnuhealth.perinatal,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.perinatal,institution:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "field:gnuhealth.perinatal,laceration:"
+msgid "Lacerations"
+msgstr "Lazerationen"
+
+msgctxt "field:gnuhealth.perinatal,medication:"
+msgid "Medication and anesthesics"
+msgstr "Medikamente und Anästhetika"
+
+msgctxt "field:gnuhealth.perinatal,monitoring:"
+msgid "Monitors"
+msgstr "Überwachung"
+
+msgctxt "field:gnuhealth.perinatal,mother_deceased:"
+msgid "Maternal death"
+msgstr "Ableben der Mutter"
+
+msgctxt "field:gnuhealth.perinatal,name:"
+msgid "Patient Pregnancy"
+msgstr "Patient Schwangerschaft "
+
+msgctxt "field:gnuhealth.perinatal,notes:"
+msgid "Notes"
+msgstr "Notiz"
+
+msgctxt "field:gnuhealth.perinatal,place_of_death:"
+msgid "Place of Death"
+msgstr "Sterbeort"
+
+msgctxt "field:gnuhealth.perinatal,placenta_incomplete:"
+msgid "Incomplete"
+msgstr "Unvollständig"
+
+msgctxt "field:gnuhealth.perinatal,placenta_retained:"
+msgid "Retained"
+msgstr "retiniert"
+
+msgctxt "field:gnuhealth.perinatal,prenatal_evaluations:"
+msgid "Prenatal evaluations"
+msgstr "Pränatale Untersuchungen"
+
+msgctxt "field:gnuhealth.perinatal,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.perinatal,start_labor_mode:"
+msgid "Delivery mode"
+msgstr "Geburtsmodus"
+
+msgctxt "field:gnuhealth.perinatal,stillbirth:"
+msgid "Stillbirth"
+msgstr "Totgeburt"
+
+msgctxt "field:gnuhealth.perinatal,vaginal_tearing:"
+msgid "Vaginal tearing"
+msgstr "Vaginalruptur"
+
+msgctxt "field:gnuhealth.perinatal,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.perinatal,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.perinatal.monitor,bleeding:"
+msgid "Bleeding"
+msgstr "Blutung"
+
+msgctxt "field:gnuhealth.perinatal.monitor,contractions:"
+msgid "Contractions"
+msgstr "Wehen"
+
+msgctxt "field:gnuhealth.perinatal.monitor,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.perinatal.monitor,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.perinatal.monitor,date:"
+msgid "Date and Time"
+msgstr "Datum und Uhrzeit"
+
+msgctxt "field:gnuhealth.perinatal.monitor,diastolic:"
+msgid "Diastolic Pressure"
+msgstr "Diastolischer Blutdruck"
+
+msgctxt "field:gnuhealth.perinatal.monitor,dilation:"
+msgid "Cervix dilation"
+msgstr "Weite des Muttermundes"
+
+msgctxt "field:gnuhealth.perinatal.monitor,f_frequency:"
+msgid "Fetus Heart Frequency"
+msgstr "Fetale Herzfrequenz"
+
+msgctxt "field:gnuhealth.perinatal.monitor,fetus_position:"
+msgid "Fetus Position"
+msgstr "Lage des Fötus"
+
+msgctxt "field:gnuhealth.perinatal.monitor,frequency:"
+msgid "Mother's Heart Frequency"
+msgstr "Herzfrequenz der Mutter"
+
+msgctxt "field:gnuhealth.perinatal.monitor,fundal_height:"
+msgid "Fundal Height"
+msgstr "Fundusstand"
+
+msgctxt "field:gnuhealth.perinatal.monitor,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.perinatal.monitor,meconium:"
+msgid "Meconium"
+msgstr "Mekonium"
+
+msgctxt "field:gnuhealth.perinatal.monitor,name:"
+msgid "Patient Perinatal Evaluation"
+msgstr "Patient Perinatale Untersuchung"
+
+msgctxt "field:gnuhealth.perinatal.monitor,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.perinatal.monitor,systolic:"
+msgid "Systolic Pressure"
+msgstr "Systolischer Blutdruck"
+
+msgctxt "field:gnuhealth.perinatal.monitor,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.perinatal.monitor,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.puerperium.monitor,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.puerperium.monitor,create_uid:"
+msgid "Create User"
+msgstr "Benutzer erstellen"
+
+msgctxt "field:gnuhealth.puerperium.monitor,date:"
+msgid "Date and Time"
+msgstr "Datum und Uhrzeit"
+
+msgctxt "field:gnuhealth.puerperium.monitor,diastolic:"
+msgid "Diastolic Pressure"
+msgstr "Diastolischer Blutdruck"
+
+msgctxt "field:gnuhealth.puerperium.monitor,frequency:"
+msgid "Heart Frequency"
+msgstr "Herzfrequenz"
+
+msgctxt "field:gnuhealth.puerperium.monitor,healthprof:"
+msgid "Health Prof"
+msgstr "Behandler"
+
+msgctxt "field:gnuhealth.puerperium.monitor,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.puerperium.monitor,institution:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "field:gnuhealth.puerperium.monitor,lochia_amount:"
+msgid "Lochia amount"
+msgstr "Menge der Lochien"
+
+msgctxt "field:gnuhealth.puerperium.monitor,lochia_color:"
+msgid "Lochia color"
+msgstr "Farbe der Lochien"
+
+msgctxt "field:gnuhealth.puerperium.monitor,lochia_odor:"
+msgid "Lochia odor"
+msgstr "Geruch der Lochien"
+
+msgctxt "field:gnuhealth.puerperium.monitor,name:"
+msgid "Patient Pregnancy"
+msgstr "Patient Schwangerschaft"
+
+msgctxt "field:gnuhealth.puerperium.monitor,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.puerperium.monitor,systolic:"
+msgid "Systolic Pressure"
+msgstr "Systolischer Blutdruck"
+
+msgctxt "field:gnuhealth.puerperium.monitor,temperature:"
+msgid "Temperature"
+msgstr "Temperatur"
+
+msgctxt "field:gnuhealth.puerperium.monitor,uterus_involution:"
+msgid "Fundal Height"
+msgstr "Fundusstand"
+
+msgctxt "field:gnuhealth.puerperium.monitor,write_date:"
+msgid "Write Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.puerperium.monitor,write_uid:"
+msgid "Write User"
+msgstr "Benutzer erstellen"
+
+msgctxt "help:gnuhealth.patient,breast_self_examination:"
+msgid "Check if patient does and knows how to self examine her breasts"
+msgstr "Ankreuzen, wenn die Patientin eine Selbstuntersuchung der Brust durchführen kann"
+
+msgctxt "help:gnuhealth.patient,colposcopy:"
+msgid "Check if the patient has done a colposcopy exam"
+msgstr "Ankreuzen, wenn eine Kolposkopie bei der Patientin gemacht wurde"
+
+msgctxt "help:gnuhealth.patient,colposcopy_last:"
+msgid "Enter the date of the last colposcopy"
+msgstr "Geben Sie das Datum der letzten Kolposkopie an"
+
+msgctxt "help:gnuhealth.patient,fertile:"
+msgid "Check if patient is in fertile age"
+msgstr "Ankreuzen, wenn die Patientin im Reproduktionsalter ist"
+
+msgctxt "help:gnuhealth.patient,full_term:"
+msgid "Full term pregnancies"
+msgstr "Schwangerschaften mit normaler Dauer"
+
+msgctxt "help:gnuhealth.patient,gravida:"
+msgid "Number of pregnancies, computed from Obstetric history"
+msgstr "Anzahl der Schwangerschaften, berechnet aus der geburtshilflichen Anamnese"
+
+msgctxt "help:gnuhealth.patient,mammography:"
+msgid "Check if the patient does periodic mammographys"
+msgstr "Ankreuzen, wenn die Patientin regelmäßig zur Mammographie geht"
+
+msgctxt "help:gnuhealth.patient,mammography_last:"
+msgid "Enter the date of the last mammography"
+msgstr "Geben Sie das Datum der letzten Mammographie ein"
+
+msgctxt "help:gnuhealth.patient,pap_test:"
+msgid "Check if patient does periodic cytologic pelvic smear screening"
+msgstr "Ankreuzen, wenn regelmäßig ein cytologischer Abstrich der Cervix gemacht wird"
+
+msgctxt "help:gnuhealth.patient,pap_test_last:"
+msgid "Enter the date of the last Papanicolau test"
+msgstr "Geben Sie das Datum des letzten Papanicolaou-Tests an"
+
+msgctxt "help:gnuhealth.patient,premature:"
+msgid "Preterm < 37 wks live births"
+msgstr "Frühgeburt < 37.SSW, lebend"
+
+msgctxt "help:gnuhealth.patient.colposcopy_history,evaluation_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "help:gnuhealth.patient.colposcopy_history,healthprof:"
+msgid "Health Professional who last reviewed the test"
+msgstr "Arzt der Untersuchung zuletzt geprüft hat"
+
+msgctxt "help:gnuhealth.patient.colposcopy_history,last_colposcopy:"
+msgid "Last colposcopy"
+msgstr "Letzte Kolposkopie"
+
+msgctxt "help:gnuhealth.patient.colposcopy_history,result:"
+msgid ""
+"Please check the lab test results if the module is             installed"
+msgstr "Bitte Laborergebnisse prüfen fall Modul installiert ist"
+
+msgctxt "help:gnuhealth.patient.mammography_history,evaluation_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "help:gnuhealth.patient.mammography_history,healthprof:"
+msgid "Health Professional who last reviewed the test"
+msgstr "Arzt der die Untersuchung zuletzt geprüft hat"
+
+msgctxt "help:gnuhealth.patient.mammography_history,last_mammography:"
+msgid "Last Mammography"
+msgstr "Letzte Mammographie"
+
+msgctxt "help:gnuhealth.patient.mammography_history,result:"
+msgid ""
+"Please check the lab test results if the module is             installed"
+msgstr "Bitte Laborergebnisse prüfen fall Modul installiert ist"
+
+msgctxt "help:gnuhealth.patient.menstrual_history,evaluation_date:"
+msgid "Evaluation Date"
+msgstr "Untersuchungsdatum"
+
+msgctxt "help:gnuhealth.patient.menstrual_history,healthprof:"
+msgid "Health Professional who reviewed the information"
+msgstr "Arzt der die Information geprüft hat"
+
+msgctxt "help:gnuhealth.patient.menstrual_history,lmp:"
+msgid "Last Menstrual Period"
+msgstr "Letzte Periode"
+
+msgctxt "help:gnuhealth.patient.pap_history,evaluation_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "help:gnuhealth.patient.pap_history,healthprof:"
+msgid "Health Professional who last reviewed the test"
+msgstr "Arzt der Untersuchung zuletzt geprüft hat"
+
+msgctxt "help:gnuhealth.patient.pap_history,last_pap:"
+msgid "Last Papanicolau"
+msgstr "letzter Papanicolau"
+
+msgctxt "help:gnuhealth.patient.pap_history,result:"
+msgid "Please check the lab results if the module is             installed"
+msgstr "Bitte Laborergebnisse prüfen falls Modul installiert ist"
+
+msgctxt "help:gnuhealth.patient.pregnancy,bba:"
+msgid "Born Before Arrival"
+msgstr "Geburt vor Ankunft"
+
+msgctxt "help:gnuhealth.patient.pregnancy,current_pregnancy:"
+msgid "This field marks the current pregnancy"
+msgstr "Dieses Feld bezeichnet die gegenwärtige Schwangerschaft"
+
+msgctxt "help:gnuhealth.patient.pregnancy,healthprof:"
+msgid "Health Professional who created this initial obstetric record"
+msgstr "Gesundheitsdienstleister der diesen initialen Datensatz angelegt hat"
+
+msgctxt "help:gnuhealth.patient.pregnancy,home_birth:"
+msgid "Home Birth"
+msgstr "Hausgeburt"
+
+msgctxt "help:gnuhealth.patient.pregnancy,institution:"
+msgid "Health center where this initial obstetric record was created"
+msgstr "Gesundheitseinrichtung in der dieser initiale Schwangerschaftsdatensatz angelegt wurde"
+
+msgctxt "help:gnuhealth.patient.pregnancy,lmp:"
+msgid "Last Menstrual Period"
+msgstr "Letzte Periode"
+
+msgctxt "help:gnuhealth.patient.pregnancy,pregnancy_end_age:"
+msgid "Weeks at the end of pregnancy"
+msgstr "Wochen am Ende der Schwangerschaft"
+
+msgctxt "help:gnuhealth.patient.pregnancy,reverse:"
+msgid ""
+"Use this method *only* when the         pregnancy information is referred by"
+" the patient, as a history taking         procedure. Please keep in mind "
+"that the reverse pregnancy data is         subjective"
+msgstr "Verwende die Methode *nur* wenn die Schwangerschaftsinformation durch die Patientin angegeben wurde, als Teil der Anamneseerhebung. Bitte seien Sie sich bewusst dass die Daten subjektiv sind."
+
+msgctxt "help:gnuhealth.patient.pregnancy,reverse_weeks:"
+msgid ""
+"Number of weeks at         the end of pregnancy. Used only with the reverse "
+"input method."
+msgstr "Anzahl der Wochen am Ende der Schwangerschaft. Verwendet nur mit der umgekehrten Input Methode."
+
+msgctxt "help:gnuhealth.patient.pregnancy,warning:"
+msgid "Check this box if this is pregancy is or was NOT normal"
+msgstr "Ankreuzen wenn die Schwangerschaft nicht normal verläuft oder verlaufen ist"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,diabetes:"
+msgid "Check this box if the mother has glucose intolerance or diabetes"
+msgstr "Ankreuzen wenn die Mutter Glukoseintoleranz oder Diabetes hat"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,efw:"
+msgid "Estimated Fetal Weight"
+msgstr "Geschätztes Fötalgewicht"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,fetal_ac:"
+msgid "Fetal Abdominal Circumference"
+msgstr "Fötaler Bauchumfang"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,fetal_bpd:"
+msgid "Fetal Biparietal Diameter"
+msgstr "Fötaler biparietaler Durchmesser"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,fetal_fl:"
+msgid "Fetal Femur Length"
+msgstr "Fötale Femurlänge"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,fetal_hc:"
+msgid "Fetal Head Circumference"
+msgstr "Fötaler Kopfumfang"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,fetus_heart_rate:"
+msgid "Fetus heart rate"
+msgstr "Fetale Herzfrequenz"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,fundal_height:"
+msgid ""
+"Distance between the symphysis pubis and the uterine fundus (S-FD) in cm"
+msgstr "Distanz zwischen der Symphyse und dem Fundus uteri in cm"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,healthprof:"
+msgid ""
+"Health Professional in charge, or that who entered the             "
+"information in the system"
+msgstr "Diensthabender Arzt, oder die Person welche die Information in das System eingegeben hat "
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,hypertension:"
+msgid "Check this box if the mother has hypertension"
+msgstr "Diese Box aktivieren, wenn die Mutter Bluthochdruck hat"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,iugr:"
+msgid "Intra Uterine Growth Restriction"
+msgstr "Intratuterine Wachstumsretention"
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,overweight:"
+msgid "Check this box if the mother is overweight or obesity"
+msgstr "Diese Box aktivieren, wenn die Mutter übergewichtig oder adipös ist."
+
+msgctxt "help:gnuhealth.patient.prenatal.evaluation,preeclampsia:"
+msgid "Check this box if the mother has pre-eclampsia"
+msgstr "Diese Box aktivieren, wenn die Mutter Präeklampsie hat"
+
+msgctxt "help:gnuhealth.perinatal,abruptio_placentae:"
+msgid "Abruptio Placentae"
+msgstr "Abruptio Placentae"
+
+msgctxt "help:gnuhealth.perinatal,admission_date:"
+msgid "Date when she was admitted to give birth"
+msgstr "Das Datum, an dem die Patientin zur Geburt aufgenommen wurde"
+
+msgctxt "help:gnuhealth.perinatal,healthprof:"
+msgid ""
+"Health Professional in charge, or that who entered the             "
+"information in the system"
+msgstr "Diensthabender Arzt, oder die Person welche die Information in das System eingegeben hat "
+
+msgctxt "help:gnuhealth.perinatal,mother_deceased:"
+msgid "Mother died in the process"
+msgstr "Mutter verstarb unter der Geburt"
+
+msgctxt "help:gnuhealth.perinatal,place_of_death:"
+msgid "Place where the mother died"
+msgstr "Ort, an dem die Mutter verstarb"
+
+msgctxt "help:gnuhealth.perinatal,placenta_incomplete:"
+msgid "Incomplete Placenta"
+msgstr "Plazenta unvollständig"
+
+msgctxt "help:gnuhealth.perinatal,placenta_retained:"
+msgid "Retained Placenta"
+msgstr "Plazentaretention"
+
+msgctxt "help:gnuhealth.perinatal,prenatal_evaluations:"
+msgid "Number of visits to the doctor during pregnancy"
+msgstr "Anzahl an Arztbesuchen während der Schwangerschaft"
+
+msgctxt "help:gnuhealth.puerperium.monitor,healthprof:"
+msgid ""
+"Health Professional in charge, or that who entered the             "
+"information in the system"
+msgstr "Diensthabender Arzt, oder die Person welche die Information in das System eingegeben hat "
+
+msgctxt "help:gnuhealth.puerperium.monitor,uterus_involution:"
+msgid ""
+"Distance between the symphysis pubis and the uterine fundus (S-FD) in cm"
+msgstr "Distanz zwischen der Symphyse und dem Fundus uteri in cm"
+
+msgctxt "model:gnuhealth.patient.colposcopy_history,name:"
+msgid "Colposcopy History"
+msgstr "Kolposcopie Vorgeschichte"
+
+msgctxt "model:gnuhealth.patient.mammography_history,name:"
+msgid "Mammography History"
+msgstr "Mammographie Verlauf"
+
+msgctxt "model:gnuhealth.patient.menstrual_history,name:"
+msgid "Menstrual History"
+msgstr "Menstruation Vorgeschichte"
+
+msgctxt "model:gnuhealth.patient.pap_history,name:"
+msgid "PAP Test History"
+msgstr "PAP-Test Vorgeschichte"
+
+msgctxt "model:gnuhealth.patient.pregnancy,name:"
+msgid "Patient Pregnancy"
+msgstr "Patient Schwangerschaft"
+
+msgctxt "model:gnuhealth.patient.prenatal.evaluation,name:"
+msgid "Prenatal and Antenatal Evaluations"
+msgstr "Pränatale und antenatale Untersuchungen"
+
+msgctxt "model:gnuhealth.perinatal,name:"
+msgid "Perinatal Information"
+msgstr "Perinatal-Informationen"
+
+msgctxt "model:gnuhealth.perinatal.monitor,name:"
+msgid "Perinatal Monitor"
+msgstr "Perinatales Monitoring"
+
+msgctxt "model:gnuhealth.puerperium.monitor,name:"
+msgid "Puerperium Monitor"
+msgstr "Wochenbett-Monitoring"
+
+msgctxt "model:ir.action,name:act_pregnancy_form1"
+msgid "Obstetric History"
+msgstr "Geburtshilfe Anamnese"
+
+msgctxt "model:res.group,name:group_health_gyneco_admin"
+msgid "Health Gynecology and Obstetrics Administration"
+msgstr "Health Gynäkologie und Geburtshilfe Administration"
+
+msgctxt "selection:gnuhealth.patient.colposcopy_history,result:"
+msgid "abnormal"
+msgstr "unnormal"
+
+msgctxt "selection:gnuhealth.patient.colposcopy_history,result:"
+msgid "normal"
+msgstr "Normal"
+
+msgctxt "selection:gnuhealth.patient.mammography_history,result:"
+msgid "abnormal"
+msgstr "unnormal"
+
+msgctxt "selection:gnuhealth.patient.mammography_history,result:"
+msgid "normal"
+msgstr "Normal"
+
+msgctxt "selection:gnuhealth.patient.menstrual_history,frequency:"
+msgid "amenorrhea"
+msgstr "Amenorrhoe"
+
+msgctxt "selection:gnuhealth.patient.menstrual_history,frequency:"
+msgid "eumenorrhea"
+msgstr "Eumenorrhoe"
+
+msgctxt "selection:gnuhealth.patient.menstrual_history,frequency:"
+msgid "oligomenorrhea"
+msgstr "Oligomenorrhoe"
+
+msgctxt "selection:gnuhealth.patient.menstrual_history,frequency:"
+msgid "polymenorrhea"
+msgstr "Polymenorrhoe"
+
+msgctxt "selection:gnuhealth.patient.menstrual_history,volume:"
+msgid "hypomenorrhea"
+msgstr "Hypomenorrhoe"
+
+msgctxt "selection:gnuhealth.patient.menstrual_history,volume:"
+msgid "menorrhagia"
+msgstr "menorrhagia"
+
+msgctxt "selection:gnuhealth.patient.menstrual_history,volume:"
+msgid "normal"
+msgstr "Normal"
+
+msgctxt "selection:gnuhealth.patient.pap_history,result:"
+msgid "AIS"
+msgstr "AIS"
+
+msgctxt "selection:gnuhealth.patient.pap_history,result:"
+msgid "ASC-H"
+msgstr "ASC-H"
+
+msgctxt "selection:gnuhealth.patient.pap_history,result:"
+msgid "ASC-US"
+msgstr "ASC-US"
+
+msgctxt "selection:gnuhealth.patient.pap_history,result:"
+msgid "ASG"
+msgstr "ASG"
+
+msgctxt "selection:gnuhealth.patient.pap_history,result:"
+msgid "HSIL"
+msgstr "HSIL"
+
+msgctxt "selection:gnuhealth.patient.pap_history,result:"
+msgid "LSIL"
+msgstr "LSIL"
+
+msgctxt "selection:gnuhealth.patient.pap_history,result:"
+msgid "Negative"
+msgstr "negativ"
+
+msgctxt "selection:gnuhealth.patient.pregnancy,iugr:"
+msgid "Assymetric"
+msgstr "Asymtrisch"
+
+msgctxt "selection:gnuhealth.patient.pregnancy,iugr:"
+msgid "Symmetric"
+msgstr "Symmetrisch"
+
+msgctxt "selection:gnuhealth.patient.pregnancy,pregnancy_end_result:"
+msgid "Abortion"
+msgstr "Abort"
+
+msgctxt "selection:gnuhealth.patient.pregnancy,pregnancy_end_result:"
+msgid "Live birth"
+msgstr "Lebendgeburt"
+
+msgctxt "selection:gnuhealth.patient.pregnancy,pregnancy_end_result:"
+msgid "Status unknown"
+msgstr "Status unbekannt"
+
+msgctxt "selection:gnuhealth.patient.pregnancy,pregnancy_end_result:"
+msgid "Stillbirth"
+msgstr "Totgeburt"
+
+msgctxt ""
+"selection:gnuhealth.patient.prenatal.evaluation,invasive_placentation:"
+msgid "Accreta"
+msgstr "Accreta"
+
+msgctxt ""
+"selection:gnuhealth.patient.prenatal.evaluation,invasive_placentation:"
+msgid "Increta"
+msgstr "Increta"
+
+msgctxt ""
+"selection:gnuhealth.patient.prenatal.evaluation,invasive_placentation:"
+msgid "Normal decidua"
+msgstr "Normale Dezidua"
+
+msgctxt ""
+"selection:gnuhealth.patient.prenatal.evaluation,invasive_placentation:"
+msgid "Percreta"
+msgstr "Percreta"
+
+msgctxt "selection:gnuhealth.perinatal,fetus_presentation:"
+msgid "Breech"
+msgstr "Gesäß"
+
+msgctxt "selection:gnuhealth.perinatal,fetus_presentation:"
+msgid "Cephalic"
+msgstr "Cephalic"
+
+msgctxt "selection:gnuhealth.perinatal,fetus_presentation:"
+msgid "Shoulder"
+msgstr "Schulter"
+
+msgctxt "selection:gnuhealth.perinatal,hematoma:"
+msgid "Retroperitoneal"
+msgstr "Retroperitoneal"
+
+msgctxt "selection:gnuhealth.perinatal,hematoma:"
+msgid "Vaginal"
+msgstr "Vaginal"
+
+msgctxt "selection:gnuhealth.perinatal,hematoma:"
+msgid "Vulvar"
+msgstr "Vulvar"
+
+msgctxt "selection:gnuhealth.perinatal,laceration:"
+msgid "Bladder"
+msgstr "Blase"
+
+msgctxt "selection:gnuhealth.perinatal,laceration:"
+msgid "Broad Ligament"
+msgstr "Breites Ligament"
+
+msgctxt "selection:gnuhealth.perinatal,laceration:"
+msgid "Cervical"
+msgstr "Cervical"
+
+msgctxt "selection:gnuhealth.perinatal,laceration:"
+msgid "Perineal"
+msgstr "Pernieal"
+
+msgctxt "selection:gnuhealth.perinatal,laceration:"
+msgid "Rectal"
+msgstr "Rectal"
+
+msgctxt "selection:gnuhealth.perinatal,laceration:"
+msgid "Urethral"
+msgstr "Urethral"
+
+msgctxt "selection:gnuhealth.perinatal,laceration:"
+msgid "Vaginal"
+msgstr "Vaginal"
+
+msgctxt "selection:gnuhealth.perinatal,laceration:"
+msgid "Vulvar"
+msgstr "Vulvar"
+
+msgctxt "selection:gnuhealth.perinatal,place_of_death:"
+msgid "At the delivery room"
+msgstr "Im Entbindungssaal"
+
+msgctxt "selection:gnuhealth.perinatal,place_of_death:"
+msgid "Being transferred to other hospital"
+msgstr "Während des Transportes in ein anderes Krankenhaus"
+
+msgctxt "selection:gnuhealth.perinatal,place_of_death:"
+msgid "Hospital"
+msgstr "Im Krankenhaus"
+
+msgctxt "selection:gnuhealth.perinatal,place_of_death:"
+msgid "in transit to the hospital"
+msgstr "Auf dem Transport ins Krankenhaus"
+
+msgctxt "selection:gnuhealth.perinatal,start_labor_mode:"
+msgid "C-section"
+msgstr "Kaiserschnitt"
+
+msgctxt "selection:gnuhealth.perinatal,start_labor_mode:"
+msgid "Vaginal - Forceps Extraction"
+msgstr "Vaginal - Forzeps Extraction"
+
+msgctxt "selection:gnuhealth.perinatal,start_labor_mode:"
+msgid "Vaginal - Spontaneous"
+msgstr "Vaginal - Spontan"
+
+msgctxt "selection:gnuhealth.perinatal,start_labor_mode:"
+msgid "Vaginal - Vacuum Extraction"
+msgstr "Vaginal - Vacuum Extraction"
+
+msgctxt "selection:gnuhealth.perinatal.monitor,fetus_position:"
+msgid "Complete Breech"
+msgstr "Vollkommene Steißlage"
+
+msgctxt "selection:gnuhealth.perinatal.monitor,fetus_position:"
+msgid "Footling Breech"
+msgstr "Fußlage"
+
+msgctxt "selection:gnuhealth.perinatal.monitor,fetus_position:"
+msgid "Frank Breech"
+msgstr "Reine Steißlage"
+
+msgctxt "selection:gnuhealth.perinatal.monitor,fetus_position:"
+msgid "Occiput / Cephalic Posterior"
+msgstr "Hintere Hinterhauptslage"
+
+msgctxt "selection:gnuhealth.puerperium.monitor,lochia_amount:"
+msgid "abundant"
+msgstr "Reichlich"
+
+msgctxt "selection:gnuhealth.puerperium.monitor,lochia_amount:"
+msgid "hemorrhage"
+msgstr "Hämorrhagie"
+
+msgctxt "selection:gnuhealth.puerperium.monitor,lochia_amount:"
+msgid "normal"
+msgstr "Normal"
+
+msgctxt "selection:gnuhealth.puerperium.monitor,lochia_color:"
+msgid "alba"
+msgstr "Alba"
+
+msgctxt "selection:gnuhealth.puerperium.monitor,lochia_color:"
+msgid "rubra"
+msgstr "Rubra"
+
+msgctxt "selection:gnuhealth.puerperium.monitor,lochia_color:"
+msgid "serosa"
+msgstr "Serosa"
+
+msgctxt "selection:gnuhealth.puerperium.monitor,lochia_odor:"
+msgid "normal"
+msgstr "Normal"
+
+msgctxt "selection:gnuhealth.puerperium.monitor,lochia_odor:"
+msgid "offensive"
+msgstr "Übelriechend"
+
+msgctxt "view:gnuhealth.patient.colposcopy_history:"
+msgid "Colposcopy Tests"
+msgstr "Colposcopie Untersuchungen"
+
+msgctxt "view:gnuhealth.patient.colposcopy_history:"
+msgid "Patient colposcopy History"
+msgstr "Patient Kolposkopie Vorgeschichte"
+
+msgctxt "view:gnuhealth.patient.mammography_history:"
+msgid "Mammography Tests"
+msgstr "Mammographieuntersuchungen"
+
+msgctxt "view:gnuhealth.patient.mammography_history:"
+msgid "Patient mammography History"
+msgstr "Patientin Mammographie Vorgeschichte"
+
+msgctxt "view:gnuhealth.patient.menstrual_history:"
+msgid "Menstrual History"
+msgstr "Menstruation Vorgeschichte"
+
+msgctxt "view:gnuhealth.patient.menstrual_history:"
+msgid "Patient Menstrual History"
+msgstr "Patientin Menstruationsanamnese"
+
+msgctxt "view:gnuhealth.patient.pap_history:"
+msgid "PAP Tests"
+msgstr "PAP Tests"
+
+msgctxt "view:gnuhealth.patient.pap_history:"
+msgid "Patient pap History"
+msgstr "Patientin PAP Vorgeschichte"
+
+msgctxt "view:gnuhealth.patient.pregnancy:"
+msgid "Pregnancies"
+msgstr "Schwangerschaften"
+
+msgctxt "view:gnuhealth.patient.prenatal.evaluation:"
+msgid "Fetal Biometry"
+msgstr "Fetale Biometrie"
+
+msgctxt "view:gnuhealth.patient.prenatal.evaluation:"
+msgid "Fetus Information"
+msgstr "Fetus Information"
+
+msgctxt "view:gnuhealth.patient.prenatal.evaluation:"
+msgid "Mother Information"
+msgstr "Mutter Information"
+
+msgctxt "view:gnuhealth.patient.prenatal.evaluation:"
+msgid "Placenta"
+msgstr "Plazenta"
+
+msgctxt "view:gnuhealth.patient.prenatal.evaluation:"
+msgid "Prenatal Evaluation"
+msgstr "Pränatale Untersuchung"
+
+msgctxt "view:gnuhealth.patient.prenatal.evaluation:"
+msgid "Prenatal Evaluations"
+msgstr "Pränatale Untersuchung"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "General"
+msgstr "Allgemein"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "OB summary"
+msgstr "Geburtshilfe Zusammenfassung"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "OB/GYN"
+msgstr "OB/GYN"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Screening"
+msgstr "Screening"
+
+msgctxt "view:gnuhealth.perinatal.monitor:"
+msgid "Complications"
+msgstr "Komplikationen"
+
+msgctxt "view:gnuhealth.perinatal.monitor:"
+msgid "Fetus"
+msgstr "Fötus"
+
+msgctxt "view:gnuhealth.perinatal.monitor:"
+msgid "Mother"
+msgstr "Mutter"
+
+msgctxt "view:gnuhealth.perinatal.monitor:"
+msgid "Perinatal Monitor"
+msgstr "Perinatales Monitoring"
+
+msgctxt "view:gnuhealth.perinatal:"
+msgid "Additional Info"
+msgstr "Zusatzinformation"
+
+msgctxt "view:gnuhealth.perinatal:"
+msgid "Main"
+msgstr "Hauptteil"
+
+msgctxt "view:gnuhealth.perinatal:"
+msgid "Notes"
+msgstr "Notiz"
+
+msgctxt "view:gnuhealth.perinatal:"
+msgid "Perinatal and Intrapartum Information"
+msgstr "Perinatale und Intrapartum Information"
+
+msgctxt "view:gnuhealth.perinatal:"
+msgid "Placenta anomalies"
+msgstr "Placentaanomalien"
+
+msgctxt "view:gnuhealth.puerperium.monitor:"
+msgid "Institution"
+msgstr "Einrichtung"
+
+msgctxt "view:gnuhealth.puerperium.monitor:"
+msgid "Lochia"
+msgstr "Lochien"
+
+msgctxt "view:gnuhealth.puerperium.monitor:"
+msgid "Main"
+msgstr "Hauptteil"
+
+msgctxt "view:gnuhealth.puerperium.monitor:"
+msgid "Puerperium Monitor"
+msgstr "Wochenbett-Monitoring"

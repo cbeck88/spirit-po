@@ -1,0 +1,381 @@
+# 
+# Translators:
+# Dhafer Ben Amor <dh.benamor@gmail.com>, 2014
+# Eric Vernichon <eric@vernichon.fr>, 2011, 2012
+# gestionRessources <klinik_mailinglist@gestion-ressources.com>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU Health\n"
+"Report-Msgid-Bugs-To: https://savannah.gnu.org/bugs/?group=health\n"
+"POT-Creation-Date: 2015-01-27 11:17+0000\n"
+"PO-Revision-Date: 2015-01-13 14:54+0000\n"
+"Last-Translator: Dhafer Ben Amor <dh.benamor@gmail.com>\n"
+"Language-Team: French (France) (http://www.transifex.com/meanmicio/GNU_Health/language/fr_FR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgctxt "field:gnuhealth.patient,domestic_violence:"
+msgid "Domestic violence"
+msgstr "Violence domestique"
+
+msgctxt "field:gnuhealth.patient,drug_addiction:"
+msgid "Drug addiction"
+msgstr "Toxicomanie"
+
+msgctxt "field:gnuhealth.patient,education:"
+msgid "Education Level"
+msgstr "Niveau d'éducation"
+
+msgctxt "field:gnuhealth.patient,fam_apgar_affection:"
+msgid "Family affection"
+msgstr "Affection familiale"
+
+msgctxt "field:gnuhealth.patient,fam_apgar_decisions:"
+msgid "Decision making"
+msgstr "Poids dans les décisions familiales"
+
+msgctxt "field:gnuhealth.patient,fam_apgar_discussion:"
+msgid "Problems discussion"
+msgstr "Discussion des problèmes"
+
+msgctxt "field:gnuhealth.patient,fam_apgar_help:"
+msgid "Help from family"
+msgstr "Soutien familial"
+
+msgctxt "field:gnuhealth.patient,fam_apgar_score:"
+msgid "Score"
+msgstr "Score"
+
+msgctxt "field:gnuhealth.patient,fam_apgar_timesharing:"
+msgid "Time sharing"
+msgstr "Partage de temps"
+
+msgctxt "field:gnuhealth.patient,hostile_area:"
+msgid "Hostile Area"
+msgstr "Zone hostile"
+
+msgctxt "field:gnuhealth.patient,hours_outside:"
+msgid "Hours outside home"
+msgstr "Heures à l'extérieur de la maison"
+
+msgctxt "field:gnuhealth.patient,housing:"
+msgid "Housing conditions"
+msgstr "Conditions d'habitat"
+
+msgctxt "field:gnuhealth.patient,income:"
+msgid "Income"
+msgstr "Revenu"
+
+msgctxt "field:gnuhealth.patient,occupation:"
+msgid "Occupation"
+msgstr "Profession"
+
+msgctxt "field:gnuhealth.patient,prison_current:"
+msgid "Is currently in prison"
+msgstr "Actuellement en prison"
+
+msgctxt "field:gnuhealth.patient,prison_past:"
+msgid "Has been in prison"
+msgstr "A été en prison"
+
+msgctxt "field:gnuhealth.patient,relative_in_prison:"
+msgid "Relative in prison"
+msgstr "Relative à la prison"
+
+msgctxt "field:gnuhealth.patient,school_withdrawal:"
+msgid "School withdrawal"
+msgstr "retrait de l'école"
+
+msgctxt "field:gnuhealth.patient,ses:"
+msgid "Socioeconomics"
+msgstr "Situation socio-économique"
+
+msgctxt "field:gnuhealth.patient,ses_notes:"
+msgid "Extra info"
+msgstr "Info supplémentaire"
+
+msgctxt "field:gnuhealth.patient,sexual_abuse:"
+msgid "Sexual abuse"
+msgstr "Abus sexuels"
+
+msgctxt "field:gnuhealth.patient,single_parent:"
+msgid "Single parent family"
+msgstr "Famille monoparentale"
+
+msgctxt "field:gnuhealth.patient,teenage_pregnancy:"
+msgid "Teenage pregnancy"
+msgstr "Grossesse pendant l'adolescence"
+
+msgctxt "field:gnuhealth.patient,working_children:"
+msgid "Working children"
+msgstr "Travail d'enfants"
+
+msgctxt "field:gnuhealth.patient,works_at_home:"
+msgid "Works at home"
+msgstr "Travaille à domicile"
+
+msgctxt "field:party.party,education:"
+msgid "Education Level"
+msgstr "Niveau éducatif"
+
+msgctxt "field:party.party,occupation:"
+msgid "Occupation"
+msgstr "Profession"
+
+msgctxt "help:gnuhealth.patient,education:"
+msgid "Education Level"
+msgstr "Niveau éducatif"
+
+msgctxt "help:gnuhealth.patient,fam_apgar_affection:"
+msgid ""
+"Is the patient satisfied with the level of affection coming from the family "
+"?"
+msgstr "Le patient est-il satisfait du niveau d'affection venant de la famille?"
+
+msgctxt "help:gnuhealth.patient,fam_apgar_decisions:"
+msgid ""
+"Is the patient satisfied with the level of making important decisions as a "
+"group ?"
+msgstr "Le patient est-il satisfait du niveau de la prise de décisions importantes au sein du groupe?"
+
+msgctxt "help:gnuhealth.patient,fam_apgar_discussion:"
+msgid ""
+"Is the patient satisfied with the level talking over the problems as family "
+"?"
+msgstr "Le patient est-il satisfait du niveau de discussion des problèmes de famille?"
+
+msgctxt "help:gnuhealth.patient,fam_apgar_help:"
+msgid ""
+"Is the patient satisfied with the level of help coming from the family when "
+"there is a problem ?"
+msgstr "Le patient est-il satisfait du niveau d'aide venant de la famille en cas de problème?"
+
+msgctxt "help:gnuhealth.patient,fam_apgar_score:"
+msgid ""
+"Total Family APGAR \n"
+"7 - 10 : Functional Family \n"
+"4 - 6  : Some level of disfunction \n"
+"0 - 3  : Severe disfunctional family \n"
+msgstr "Score d'APGAR Familial \n7 - 10: Famille fonctionnelle \n4 - 6: Présente un certain niveau de dysfonctionnement \n0 - 3: Sévère dysfonctionnement familial \n"
+
+msgctxt "help:gnuhealth.patient,fam_apgar_timesharing:"
+msgid ""
+"Is the patient satisfied with the level of time that they spend together ?"
+msgstr "Le patient est satisfait du niveau du temps qu'ils passent ensemble?"
+
+msgctxt "help:gnuhealth.patient,hostile_area:"
+msgid "Check if patient lives in a zone of high hostility (eg, war)"
+msgstr "Cocher si le patient vit dans une zone d'hostilité élevé (par exemple, pays en guerre)"
+
+msgctxt "help:gnuhealth.patient,hours_outside:"
+msgid "Number of hours a day the patient spend outside the house"
+msgstr "Nombre d'heures par jour que le patient passe en dehors de chez lui"
+
+msgctxt "help:gnuhealth.patient,housing:"
+msgid "Housing and sanitary living conditions"
+msgstr "Conditions de vie, d'habitat et sanitaires"
+
+msgctxt "help:gnuhealth.patient,relative_in_prison:"
+msgid ""
+"Check if someone from the nuclear family - parents / sibblings  is or has "
+"been in prison"
+msgstr "Cocher si quelqu'un de la famille nucléaire - parents / sibblings est ou a été en prison"
+
+msgctxt "help:gnuhealth.patient,ses:"
+msgid "SES - Socioeconomic Status"
+msgstr "Niveau socio-économique"
+
+msgctxt "help:gnuhealth.patient,works_at_home:"
+msgid "Check if the patient works at his / her house"
+msgstr "Cocher si le patient travaille chez soi"
+
+msgctxt "help:party.party,education:"
+msgid "Education Level"
+msgstr "Niveau éducatif"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "Incomplete Primary School"
+msgstr "École primaire non términée"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "Incomplete Secondary School"
+msgstr "École secondaire non términée"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "Primary School"
+msgstr "école primaire"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "Secondary School"
+msgstr "école secondaire"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "University"
+msgstr "Université"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_affection:"
+msgid "Moderately"
+msgstr "Modéré"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_affection:"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_affection:"
+msgid "Very much"
+msgstr "Bon"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_decisions:"
+msgid "Moderately"
+msgstr "Modéré"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_decisions:"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_decisions:"
+msgid "Very much"
+msgstr "Bon"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_discussion:"
+msgid "Moderately"
+msgstr "Modéré"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_discussion:"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_discussion:"
+msgid "Very much"
+msgstr "Bon"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_help:"
+msgid "Moderately"
+msgstr "Modéré"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_help:"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_help:"
+msgid "Very much"
+msgstr "Bon"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_timesharing:"
+msgid "Moderately"
+msgstr "Modéré"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_timesharing:"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "selection:gnuhealth.patient,fam_apgar_timesharing:"
+msgid "Very much"
+msgstr "Bon"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Comfortable and good sanitary conditions"
+msgstr "Confortable avec de bonnes conditions sanitaires"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Luxury and excellent sanitary conditions"
+msgstr "Luxe avec d'excellentes conditions sanitaires"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Roomy and excellent sanitary conditions"
+msgstr "Spacieux et d'excellentes conditions sanitaires"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Shanty, deficient sanitary conditions"
+msgstr "Conditions sanitaires déficientes"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Small, crowded but with good sanitary conditions"
+msgstr "Petit, mais avec de bonnes conditions sanitaires"
+
+msgctxt "selection:gnuhealth.patient,income:"
+msgid "High"
+msgstr "Elevé"
+
+msgctxt "selection:gnuhealth.patient,income:"
+msgid "Low"
+msgstr "Bas"
+
+msgctxt "selection:gnuhealth.patient,income:"
+msgid "Medium / Average"
+msgstr "Moyen"
+
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Higher"
+msgstr "Supérieur"
+
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Lower"
+msgstr "Basse"
+
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Lower-middle"
+msgstr "Moyen-inférieur"
+
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Middle"
+msgstr "Moyen"
+
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Middle-upper"
+msgstr "Moyen-supérieur"
+
+msgctxt "selection:party.party,education:"
+msgid "Incomplete Primary School"
+msgstr "École primaire non términée"
+
+msgctxt "selection:party.party,education:"
+msgid "Incomplete Secondary School"
+msgstr "École secondaire non términée"
+
+msgctxt "selection:party.party,education:"
+msgid "None"
+msgstr "Aucun"
+
+msgctxt "selection:party.party,education:"
+msgid "Primary School"
+msgstr "école primaire"
+
+msgctxt "selection:party.party,education:"
+msgid "Secondary School"
+msgstr "école secondaire"
+
+msgctxt "selection:party.party,education:"
+msgid "University"
+msgstr "Université"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Family"
+msgstr "Familial"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Family APGAR"
+msgstr "Familial"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Main"
+msgstr "Général"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Notes"
+msgstr "Notes"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Other Family Issues"
+msgstr "Autres problèmes familiaux"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Socioeconomics"
+msgstr "Situation socio-économique"
