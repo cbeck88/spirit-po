@@ -276,7 +276,7 @@ do { \
 \
   spirit_po::po_grammar<decltype(it)> grammar; \
 \
-  bool _check_parse = qi::parse(it, end, GRAM); \
+  bool _check_parse = boost::spirit::qi::parse(it, end, GRAM); \
   if (!_check_parse) { \
     std::cerr << "When testing po grammar terminal '" << #GRAM << "'\n"; \
     std::cerr << "Stopped parsing at:\n"; \
@@ -293,7 +293,7 @@ do { \
 \
   spirit_po::po_grammar<decltype(it)> grammar; \
 \
-  TEST(!qi::parse(it, end, GRAM)); \
+  TEST(!boost::spirit::qi::parse(it, end, GRAM)); \
 } while(0)
 
 #define CHECK_PARSE_STRING( GRAM, STR, EXPECTED ) \
@@ -306,7 +306,7 @@ do { \
 \
   spirit_po::po_grammar<decltype(_it)> grammar; \
 \
-  bool _check_parse = qi::parse(_it, _end, GRAM, _result_string); \
+  bool _check_parse = boost::spirit::qi::parse(_it, _end, GRAM, _result_string); \
   if (!_check_parse) { \
     std::cerr << "When testing po grammar terminal '" << #GRAM << "'\n"; \
     std::cerr << "Stopped parsing at:\n"; \
@@ -541,7 +541,7 @@ msgstr "jkl;"
     spirit_po::po_message msg;
 
     msg = {};
-    CHECK_EQ(true, qi::parse(it, end, grammar.message, msg));
+    CHECK_EQ(true, boost::spirit::qi::parse(it, end, grammar.message, msg));
 //    std::cerr << "msg = " << debug_string(msg) << std::endl;
     CHECK_EQ(msg.id, "asdf");
     CHECK_EQ(msg.strings().size(), 1u);
@@ -562,7 +562,7 @@ msgstr "jkl;"
     spirit_po::po_grammar<decltype(it)> grammar;
     spirit_po::po_message msg;
 
-    CHECK_EQ(true, qi::parse(it, end, grammar, msg));
+    CHECK_EQ(true, boost::spirit::qi::parse(it, end, grammar, msg));
 //    std::cerr << "msg = " << debug_string(msg) << std::endl;
     CHECK_EQ(msg.id, "asdf");
     CHECK_EQ(msg.strings().size(), 1u);

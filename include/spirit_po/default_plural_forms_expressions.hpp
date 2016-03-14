@@ -382,12 +382,14 @@ class stack_machine : public boost::static_visitor<uint> {
   uint n_value_;
 
 #ifdef SPIRIT_PO_DEBUG
+public:
   void debug_print_instructions() const {
     std::cerr << "Instruction sequence:\n";
     for (const auto & i : instruction_seq_) {
       std::cerr << debug_string(i) << std::endl;
     }
   }
+private:
 
 #define MACHINE_ASSERT(X)                       \
   do {                                          \

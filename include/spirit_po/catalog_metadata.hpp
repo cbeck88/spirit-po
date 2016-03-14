@@ -15,9 +15,9 @@
 #include <boost/fusion/include/std_pair.hpp>
 #include <string>
 
-namespace qi = boost::spirit::qi;
-
 namespace spirit_po {
+
+namespace qi = boost::spirit::qi;
 
 typedef unsigned int uint;
 typedef std::pair<uint, std::string> num_plurals_info;
