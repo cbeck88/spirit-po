@@ -391,14 +391,8 @@ public:
    * Catalog size
    */
   uint size() const {
-    uint result = hashmap_.size();
-#ifdef SPIRIT_PO_NOEXCEPT
-    if (result) { --result; } // exclude po header
-    return result;
-#else
-    // can't have empty hashmap_, we would have thrown an exception
-    return --result;
-#endif
+    // exclude po header from the count, this is how msgfmt reports size also
+    return hashmap_.size() - hashmap_.count("");
   }
 
   /***
