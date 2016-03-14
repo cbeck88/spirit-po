@@ -43,7 +43,12 @@ namespace default_plural_forms {
 // X Macro for repetitive binary ops declarations
 
 #define FOREACH_SPIRIT_PO_BINARY_OP(X_) \
- X_(and_op, &&) X_(or_op, ||) X_(eq_op, ==) X_(neq_op, !=) X_(ge_op, >=) X_(le_op, <=) X_(gt_op, >) X_(lt_op, <) X_(mod_op, %)
+ X_(eq_op, ==) X_(neq_op, !=) X_(ge_op, >=) X_(le_op, <=) X_(gt_op, >) X_(lt_op, <) X_(mod_op, %)
+
+// && and || are treated slightly differently from other binary ops
+
+#define FOREACH_SPIRIT_PO_CONJUNCTION(X_) \
+ X_(and_op, &&) X_(or_op, ||)
 
 /***
  * Declare / forward declare expr struct types
@@ -58,6 +63,7 @@ struct ternary_op;
 struct name ; \
 
 FOREACH_SPIRIT_PO_BINARY_OP(FWD_DECL_)
+FOREACH_SPIRIT_PO_CONJUNCTION(FWD_DECL_)
 
 #undef FWD_DECL_
 
@@ -69,6 +75,7 @@ FOREACH_SPIRIT_PO_BINARY_OP(FWD_DECL_)
 
 typedef boost::variant<constant, n_var, boost::recursive_wrapper<not_op>, 
 FOREACH_SPIRIT_PO_BINARY_OP(WRAP_)
+FOREACH_SPIRIT_PO_CONJUNCTION(WRAP_)
 boost::recursive_wrapper<ternary_op>> expr;
 
 #undef WRAP_
@@ -84,6 +91,7 @@ struct ternary_op { expr e1, e2, e3; };
 struct name { expr e1, e2; }; \
 
 FOREACH_SPIRIT_PO_BINARY_OP(DECL_)
+FOREACH_SPIRIT_PO_CONJUNCTION(DECL_)
 
 #undef DECL_
 
@@ -102,7 +110,7 @@ struct evaluator : public boost::static_visitor<uint> {
   uint operator()(const name & op) const { return (boost::apply_visitor(*this, op.e1)) OPERATOR (boost::apply_visitor(*this, op.e2)); } \
 
 FOREACH_SPIRIT_PO_BINARY_OP(EVAL_OP_)
-
+FOREACH_SPIRIT_PO_CONJUNCTION(EVAL_OP_)
 #undef EVAL_OP_
 
   uint operator()(const ternary_op & op) const { return boost::apply_visitor(*this, op.e1) ? boost::apply_visitor(*this, op.e2) : boost::apply_visitor(*this, op.e3); }
@@ -131,6 +139,7 @@ BOOST_FUSION_ADAPT_STRUCT(spirit_po::default_plural_forms:: name, \
   (spirit_po::default_plural_forms::expr, e2)) \
 
 FOREACH_SPIRIT_PO_BINARY_OP(ADAPT_STRUCT_)
+FOREACH_SPIRIT_PO_CONJUNCTION(ADAPT_STRUCT_)
 
 #undef ADAPT_STRUCT_
 
@@ -320,6 +329,26 @@ inline std::string debug_string(const instruction & i) {
 #endif // SPIRIT_PO_DEBUG
 
 /***
+ * Helper: Check if an expression obviously is zero-one valued
+ */
+struct is_boolean : public boost::static_visitor<bool> {
+  bool operator()(const and_op &) const { return true; }
+  bool operator()(const or_op &) const { return true; }
+  bool operator()(const not_op &) const { return true; }
+  bool operator()(const eq_op &) const { return true; }
+  bool operator()(const neq_op &) const { return true; }
+  bool operator()(const ge_op &) const { return true; }
+  bool operator()(const le_op &) const { return true; }
+  bool operator()(const gt_op &) const { return true; }
+  bool operator()(const lt_op &) const { return true; }
+  bool operator()(const n_var &) const { return false; }
+  bool operator()(const constant & c) const { return (c.value == 0 || c.value == 1); }
+  bool operator()(const mod_op & m) const { return boost::apply_visitor(*this, m.e1); }
+  bool operator()(const ternary_op & t) const { return boost::apply_visitor(*this, t.e2) && boost::apply_visitor(*this, t.e3); }
+};
+
+
+/***
  * Visitor that maps expressions to instruction sequences
  */
 struct emitter : public boost::static_visitor<std::vector<instruction>> {
@@ -350,6 +379,41 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
   /***
    * We make &&, ||, and ? shortcut
    */
+  std::vector<instruction> operator()(const and_op & o) const {
+    auto result = boost::apply_visitor(*this, o.e1);
+    auto second = boost::apply_visitor(*this, o.e2);
+    bool second_is_boolean = boost::apply_visitor(is_boolean{}, o.e2);
+
+    result.emplace_back(skip_if{2});
+    result.emplace_back(constant{0});
+    result.emplace_back(skip{second.size() + (second_is_boolean ? 0 : 2)});
+
+    std::move(second.begin(), second.end(), std::back_inserter(result));
+    if (!second_is_boolean) {
+      result.emplace_back(op_code::not_op);
+      result.emplace_back(op_code::not_op);
+    }
+
+    return result;
+  }
+
+  std::vector<instruction> operator()(const or_op & o) const {
+    auto result = boost::apply_visitor(*this, o.e1);
+    auto second = boost::apply_visitor(*this, o.e2);
+    bool second_is_boolean = boost::apply_visitor(is_boolean{}, o.e2);
+
+    result.emplace_back(skip_if_not{2});
+    result.emplace_back(constant{1});
+    result.emplace_back(skip{second.size() + (second_is_boolean ? 0 : 2)});
+
+    std::move(second.begin(), second.end(), std::back_inserter(result));
+    if (!second_is_boolean) {
+      result.emplace_back(op_code::not_op);
+      result.emplace_back(op_code::not_op);
+    }
+
+    return result;
+  }
 
   std::vector<instruction> operator()(const ternary_op & o) const {
     auto result = boost::apply_visitor(*this, o.e1);

@@ -19,20 +19,10 @@ void inspect_expression(const std::string & str) {
 
   if (qi::phrase_parse(it, end, grammar, qi::space, e) && it == end) {
     {
-      std::cerr << "Unoptimized:\n";
       stack_machine m(e);
       m.debug_print_instructions();
       std::cerr << "\n";
     }
-
-#if 0
-    {
-      std::cerr << "Optimized:\n";
-      default_plural_forms::stack_machine m(optimizer(std::move(e)));
-      m.debug_print_instructions();
-      std::cerr << "\n";
-    }
-#endif
   } else {
     std::cerr << ("Plural-Forms expression reader: Could not parse expression, stopped parsing at:\n" + string_iterator_context(str, it));
   }
