@@ -45,6 +45,24 @@ of parsing po files rather than mo files at run-time, is provided
   - `BOOST_NO_EXCEPTIONS` is defined
   - Boost version >= 1.55. (Fails below that due to a bug in `boost::variant`.)
 
+## Compatibility
+
+`spirit_po` is intended to be a drop-in replacement for the use of GNU `msgfmt` and GNU `libintl`.  
+It should parse any well-formed `.po` file that `msgfmt` would read and the interface should produce the
+same results.  
+
+It's not guaranteed to reject any po file that `msgfmt` would reject, or to emit warnings
+similar to `msgfmt` for common translator errors. Broadly speaking, the parser has been engineered with a fail-fast
+mentality, and there are several unit tests that check that major structural problems cause a parse error rather than
+silently being accepted. However, for best results you may wish to validate po files by running them through `msgfmt`
+just to see if it emits warnings, before deploying them, even if you use `spirit_po` in your application.  
+
+Similarly, there are certain cases that I am aware of in which `msgfmt` will drop a message from the catalog if
+it contains invalid C format specifiers. `spirit_po` doesn't do this, which is a minor discrepancy.
+
+If you are aware of any `.po` file which `msgfmt` parses, but `spirit_po` fails to parse, or, our emulation of the `libintl`
+interface doesn't yield expected results, please post a report on the issue tracker, with the po file included.
+
 ## Using it
 
 To use the library, you only need to include the `include` directory
@@ -160,20 +178,6 @@ you can specialize the catalog to use a different plural-forms function compiler
 The compiler is a function object that should be default constructible, and should take a string and return a
 function object of signature `unsigned int(unsigned int)`, representing the compiled function. See the default
 implementation for details.
-
-## Compatibility
-
-`spirit_po` is intended to be 100% compatible with GNU `msgfmt`, meaning that, it should parse any `.po` file
-that msgfmt would read, and read the exact same string map that msgfmt would produce.  
-
-It's not guaranteed to reject any po file that `msgfmt` would reject, or to emit warnings
-similar to `msgfmt` for common translator errors. Broadly speaking, the parser has been engineered with a fail-fast
-mentality, and there are several unit tests that check that major structural problems cause a parse error rather than
-silently being accepted. However, for best results you may wish to validate po files by running them through `msgfmt`
-just to see if it emits warnings, before deploying them, even if you use `spirit_po` in your application.  
-
-If you are aware of any po file which libintl parses, but `spirit_po` fails to parse, or, our emulation of the libintl
-interface doesn't yield equivalent results, please post a report on the issue tracker, with the po file included.  
 
 ## Acknowledgements
 
