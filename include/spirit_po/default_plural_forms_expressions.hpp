@@ -12,7 +12,7 @@
  * Boolean expressions return uint 0 or 1.
  *
  * The 'compiler' is a spirit grammar which parses a string into an expression
- * object.
+ * object. The expressions are evaluated by a simple stack machine.
  */
 
 #ifndef BOOST_SPIRIT_USE_PHOENIX_V3
@@ -20,6 +20,7 @@
 #endif
 
 #include <algorithm>
+#include <vector>
 #include <boost/spirit/include/qi.hpp>
 #include <boost/spirit/include/phoenix_core.hpp>
 #include <boost/spirit/include/phoenix_operator.hpp>
@@ -29,6 +30,7 @@
 
 #ifdef SPIRIT_PO_DEBUG
 #include <cassert>
+#include <string>
 #endif
 
 namespace spirit_po {
@@ -263,7 +265,7 @@ struct skip_if_not {
 typedef boost::variant<constant, skip, skip_if, skip_if_not, op_code> instruction;
 
 /***
- * Debug stirngs for instruction set
+ * Debug strings for instruction set
  */
 #ifdef SPIRIT_PO_DEBUG
 inline std::string op_code_string(op_code oc) {
@@ -355,7 +357,6 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
     auto fbranch = boost::apply_visitor(*this, o.e3);
 
     // We use jump if / jump if not in the way that will let us put the shorter branch first.
-    // Because, it is more likely to fit in the cache line.
     if (tbranch.size() > fbranch.size()) {
        // + 1 to size because we have to put a jump at end of this branch also
       result.emplace_back(skip_if{fbranch.size() + 1});
