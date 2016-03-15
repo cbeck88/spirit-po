@@ -552,6 +552,7 @@ FOREACH_SPIRIT_PO_BINARY_OP(STACK_MACHINE_CASE_)
 
 // X macros not used anymore
 #undef FOREACH_SPIRIT_PO_BINARY_OP
+#undef FOREACH_SPIRIT_PO_CONJUNCTION
 
 } // end namespace default_plural_forms
 
