@@ -55,7 +55,7 @@ namespace default_plural_forms {
  */
 
 struct constant { uint value; };
-struct n_var { n_var() = default; n_var(char) {}}; // work around a quirk in spirit
+struct n_var { n_var() = default; explicit n_var(char) {}}; // work around a quirk in spirit
 struct not_op;
 struct ternary_op;
 
@@ -100,7 +100,7 @@ FOREACH_SPIRIT_PO_CONJUNCTION(DECL_)
  */
 struct evaluator : public boost::static_visitor<uint> {
   uint n_value_;
-  evaluator(uint n) : n_value_(n) {}
+  explicit evaluator(uint n) : n_value_(n) {}
 
   uint operator()(const constant & c) const { return c.value; }
   uint operator()(n_var) const { return n_value_; }
@@ -259,7 +259,7 @@ struct skip {
   uint distance;
 };
 
-/// Instructions that conditionally causes us to skip upcoming instructions
+/// Instructions that conditionally cause us to skip upcoming instructions
 struct skip_if {
   uint distance;
 };
@@ -384,9 +384,12 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
     auto second = boost::apply_visitor(*this, o.e2);
     bool second_is_boolean = boost::apply_visitor(is_boolean{}, o.e2);
 
+    uint sec_size = static_cast<uint>(second.size());
+    if (!second_is_boolean) { sec_size += 2; }
+
     result.emplace_back(skip_if{2});
     result.emplace_back(constant{0});
-    result.emplace_back(skip{second.size() + (second_is_boolean ? 0 : 2)});
+    result.emplace_back(skip{sec_size});
 
     std::move(second.begin(), second.end(), std::back_inserter(result));
     if (!second_is_boolean) {
@@ -402,9 +405,12 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
     auto second = boost::apply_visitor(*this, o.e2);
     bool second_is_boolean = boost::apply_visitor(is_boolean{}, o.e2);
 
+    uint sec_size = static_cast<uint>(second.size());
+    if (!second_is_boolean) { sec_size += 2; }
+
     result.emplace_back(skip_if_not{2});
     result.emplace_back(constant{1});
-    result.emplace_back(skip{second.size() + (second_is_boolean ? 0 : 2)});
+    result.emplace_back(skip{sec_size});
 
     std::move(second.begin(), second.end(), std::back_inserter(result));
     if (!second_is_boolean) {
@@ -420,17 +426,20 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
     auto tbranch = boost::apply_visitor(*this, o.e2);
     auto fbranch = boost::apply_visitor(*this, o.e3);
 
+    uint tsize = static_cast<uint>(tbranch.size());
+    uint fsize = static_cast<uint>(fbranch.size());
+
     // We use jump if / jump if not in the way that will let us put the shorter branch first.
     if (tbranch.size() > fbranch.size()) {
        // + 1 to size because we have to put a jump at end of this branch also
-      result.emplace_back(skip_if{fbranch.size() + 1});
+      result.emplace_back(skip_if{fsize + 1});
       std::move(fbranch.begin(), fbranch.end(), std::back_inserter(result));
-      result.emplace_back(skip{tbranch.size()});
+      result.emplace_back(skip{tsize});
       std::move(tbranch.begin(), tbranch.end(), std::back_inserter(result));
     } else {
-      result.emplace_back(skip_if_not{tbranch.size() + 1});
+      result.emplace_back(skip_if_not{tsize + 1});
       std::move(tbranch.begin(), tbranch.end(), std::back_inserter(result));
-      result.emplace_back(skip{fbranch.size()});
+      result.emplace_back(skip{fsize});
       std::move(fbranch.begin(), fbranch.end(), std::back_inserter(result));
     }
     return result;
@@ -520,12 +529,17 @@ public:
         stack_.back() = !stack_.back();
         return 1;
       }
-#define STACK_MACHINE_CASE_(name, op)               \
-      case op_code::name: {                         \
-        MACHINE_ASSERT(stack_.size() >= 2);         \
-        uint parm2 = pop_one();                     \
-        stack_.back() = (stack_.back() op parm2);   \
-        return 1;                                   \
+#define STACK_MACHINE_CASE_(name, op)                                                                  \
+      case op_code::name: {                                                                            \
+        MACHINE_ASSERT(stack_.size() >= 2);                                                            \
+        uint parm2 = pop_one();                                                                        \
+                                                                                                       \
+        if (op_code::name == op_code::mod_op) {                                                        \
+          MACHINE_ASSERT(parm2 && "Division by zero when evaluating gettext plural form expression");  \
+        }                                                                                              \
+                                                                                                       \
+        stack_.back() = (stack_.back() op parm2);                                                      \
+        return 1;                                                                                      \
       }
 
 FOREACH_SPIRIT_PO_BINARY_OP(STACK_MACHINE_CASE_)
@@ -533,6 +547,7 @@ FOREACH_SPIRIT_PO_BINARY_OP(STACK_MACHINE_CASE_)
 #undef STACK_MACHINE_CASE_
     }
     MACHINE_ASSERT(false);
+    return 1;
   }
 
   uint compute(uint arg) {
