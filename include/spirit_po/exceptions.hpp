@@ -21,8 +21,13 @@ std::string iterator_context(Iterator & it, Iterator & end) {
   if (line_no != static_cast<std::size_t>(-1)) {
     result = "Line " + std::to_string(line_no) + ":\n";
   }
+
   uint count = 80;
-  while (it != end && count) { result += *it; ++it; --count; }
+  while (it != end && count) {
+    result += *it;
+    ++it;
+    --count;
+  }
   return result;
 }
 
@@ -45,10 +50,10 @@ std::string string_iterator_context(const std::string & str,
 
 #ifdef SPIRIT_PO_NOEXCEPT
 
-#define SPIRIT_PO_CATALOG_FAIL(Message) \
-do { \
-  error_message_ = (Message); \
-  return ; \
+#define SPIRIT_PO_CATALOG_FAIL(Message)                      \
+do {                                                         \
+  error_message_ = (Message);                                \
+  return ;                                                   \
 } while(0)
 
 #else
@@ -64,9 +69,9 @@ struct catalog_exception : std::runtime_error {
 
 } // end namespace spirit_po
 
-#define SPIRIT_PO_CATALOG_FAIL(Message) \
-do { \
-  throw spirit_po::catalog_exception( Message ); \
+#define SPIRIT_PO_CATALOG_FAIL(Message)                      \
+do {                                                         \
+  throw spirit_po::catalog_exception(( Message ));           \
 } while(0)
 
 
