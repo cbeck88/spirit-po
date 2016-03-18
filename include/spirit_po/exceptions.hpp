@@ -10,14 +10,12 @@
 
 namespace spirit_po {
 
-namespace spirit = boost::spirit;
-
 // Show the next 80 characters from some iterator position.
 // Intended to be used for parser error messages
 template <typename Iterator>
 std::string iterator_context(Iterator & it, Iterator & end) {
   std::string result;
-  std::size_t line_no = spirit::get_line(it);
+  std::size_t line_no = boost::spirit::get_line(it);
   if (line_no != static_cast<std::size_t>(-1)) {
     result = "Line " + std::to_string(line_no) + ":\n";
   }
