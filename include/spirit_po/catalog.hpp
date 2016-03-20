@@ -22,10 +22,6 @@
 #include <unordered_map>
 #include <vector>
 
-//#ifdef SPIRIT_PO_DEBUG
-//#include <iostream>
-//#endif
-
 namespace spirit_po {
 
 namespace spirit = boost::spirit;
@@ -154,10 +150,6 @@ public:
         int err_line = it.position();
         SPIRIT_PO_CATALOG_FAIL("Failed to parse po header, stopped at line " + std::to_string(err_line) + ": " + iterator_context(it, end));
       }
-
-//#ifdef SPIRIT_PO_DEBUG
-//      std::cerr << "PO HEADER MESSAGE: " << debug_string(msg) << std::endl;
-//#endif
 
       // first message must have empty MSGID (po format says so)
       if (msg.id.size()) {
