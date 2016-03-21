@@ -45,6 +45,9 @@ of parsing po files rather than mo files at run-time, is provided
   - `BOOST_NO_EXCEPTIONS` is defined
   - Boost version >= 1.55. (Fails below that due to a bug in `boost::variant`.)
 
+- You can expect a small speed-up if you compile it as C++14, due to heterogenous lookup in maps,
+  and to `std::string` having a no-throw move ctor.
+
 ## Compatibility
 
 `spirit_po` is intended to be a drop-in replacement for the use of GNU `msgfmt` and GNU `libintl`.  
