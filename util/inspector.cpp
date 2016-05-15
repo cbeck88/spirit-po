@@ -18,11 +18,9 @@ void inspect_expression(const std::string & str) {
   op_grammar<str_it> grammar;
 
   if (qi::phrase_parse(it, end, grammar, qi::space, e) && it == end) {
-    {
-      stack_machine m(e);
-      m.debug_print_instructions();
-      std::cerr << "\n";
-    }
+    stack_machine m(e);
+    m.debug_print_instructions();
+    std::cerr << "\n";
   } else {
     std::cerr << ("Plural-Forms expression reader: Could not parse expression, stopped parsing at:\n" + string_iterator_context(str, it));
   }
@@ -37,6 +35,5 @@ int main (int argc, char *argv[]) {
     std::cerr << "  where expr is a plural forms expression\n";
   } else {
     spirit_po::inspect_expression(argv[1]);
-    std::string str{argv[1]};
   }
 }
