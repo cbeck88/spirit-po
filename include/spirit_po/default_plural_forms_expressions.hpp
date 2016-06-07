@@ -474,11 +474,11 @@ private:
     }                                           \
   } while(0)
 
-#else
+#else // SPIRIT_PO_DEBUG
 
 #define MACHINE_ASSERT(...)  do {} while(0)
 
-#endif
+#endif // SPIRIT_PO_DEBUG
 
   uint pop_one() {
     MACHINE_ASSERT(stack_.size());
