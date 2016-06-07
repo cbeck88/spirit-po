@@ -3,7 +3,8 @@
 //  Distributed under the Boost Software License, Version 1.0. (See accompanying
 //  file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 
-#pragma once
+#ifndef SPIRIT_PO_DEFAULT_PLURAL_FORMS_COMPILER_HPP_INCLUDED
+#define SPIRIT_PO_DEFAULT_PLURAL_FORMS_COMPILER_HPP_INCLUDED
 
 /***
  * In GNU gettext, a language is permitted to define any number of 'plural forms'.
@@ -115,3 +116,5 @@ struct compiler {
 } // end namespace default_plura_forms
 
 } // end namespace spirit_po
+
+#endif // SPIRIT_PO_DEFAULT_PLURAL_FORMS_COMPILER_HPP_INCLUDED

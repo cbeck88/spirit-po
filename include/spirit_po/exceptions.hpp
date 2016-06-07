@@ -3,7 +3,8 @@
 //  Distributed under the Boost Software License, Version 1.0. (See accompanying
 //  file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 
-#pragma once
+#ifndef SPIRIT_PO_EXCEPTIONS_HPP_INCLUDED
+#define SPIRIT_PO_EXCEPTIONS_HPP_INCLUDED
 
 #include <boost/spirit/include/support_line_pos_iterator.hpp>
 #include <string>
@@ -74,3 +75,5 @@ do {                                                         \
 
 
 #endif // SPIRIT_PO_NOEXCEPT
+
+#endif // SPIRIT_PO_EXCEPTIONS_HPP_INCLUDED

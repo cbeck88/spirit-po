@@ -3,7 +3,8 @@
 //  Distributed under the Boost Software License, Version 1.0. (See accompanying
 //  file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 
-#pragma once
+#ifndef SPIRIT_PO_DEFAULT_PLURAL_FORMS_EXPRESSIONS_HPP_INCLUDED
+#define SPIRIT_PO_DEFAULT_PLURAL_FORMS_EXPRESSIONS_HPP_INCLUDED
 
 /***
  * The namespace default_plural_forms contains all the details to implement
@@ -572,3 +573,5 @@ FOREACH_SPIRIT_PO_BINARY_OP(STACK_MACHINE_CASE_)
 } // end namespace default_plural_forms
 
 } // end namespace spirit_po
+
+#endif // SPIRIT_PO_DEFAULT_PLURAL_FORMS_EXPRESSIONS_HPP_INCLUDED

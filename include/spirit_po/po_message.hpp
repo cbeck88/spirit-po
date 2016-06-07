@@ -3,7 +3,8 @@
 //  Distributed under the Boost Software License, Version 1.0. (See accompanying
 //  file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 
-#pragma once
+#ifndef SPIRIT_PO_PO_MESSAGE_HPP_INCLUDED
+#define SPIRIT_PO_PO_MESSAGE_HPP_INCLUDED
 
 #include <boost/optional/optional.hpp>
 #include <string>
@@ -57,3 +58,5 @@ std::string debug_string(const po_message & msg) {
 #endif // SPIRIT_PO_DEBUG
 
 } // end namespace spirit_po
+
+#endif // SPIRIT_PO_PO_MESSAGE_HPP_INCLUDED

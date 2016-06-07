@@ -3,7 +3,8 @@
 //  Distributed under the Boost Software License, Version 1.0. (See accompanying
 //  file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 
-#pragma once
+#ifndef SPIRIT_PO_PO_GRAMMAR_HPP_INCLUDED
+#define SPIRIT_PO_PO_GRAMMAR_HPP_INCLUDED
 
 #ifndef BOOST_SPIRIT_USE_PHOENIX_V3
 #define BOOST_SPIRIT_USE_PHOENIX_V3
@@ -123,3 +124,5 @@ struct po_grammar : qi::grammar<Iterator, po_message()> {
 };
 
 } // end namespace spirit_po
+
+#endif // SPIRIT_PO_PO_GRAMMAR_HPP_INCLUDED
