@@ -55,7 +55,7 @@ do {                                                         \
   return ;                                                   \
 } while(0)
 
-#else
+#else // SPIRIT_PO_NOEXCEPT
 
 #include <stdexcept>
 

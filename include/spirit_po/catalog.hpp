@@ -43,7 +43,7 @@ class catalog {
   boost::optional<std::string> error_message_;
   // if loading failed, error_message_ contains an error
   // (rather than throwing an exception)
-#endif
+#endif // SPIRIT_PO_NOEXCEPT
   warning_channel_type warning_channel_;
 
   hashmap_type hashmap_;
@@ -125,7 +125,7 @@ public:
   std::string error() const {
     return *error_message_; // UB if there there is not an error message
   }
-#endif
+#endif // SPIRIT_PO_NOEXCEPT
 
   /***
    * Ctors
@@ -231,7 +231,7 @@ public:
         SPIRIT_PO_CATALOG_FAIL(("Internal catalog error: found a message id with wrong number of strings, msgid='" + p.first + "' num msgstr = " + std::to_string(p.second.strings().size()) + ", catalog num_plural_forms = " + std::to_string(metadata_.num_plural_forms) + "\nWhole message: " + debug_string(p.second) ));
       }
     }
-#endif
+#endif // SPIRIT_PO_DEBUG
   }
 
   // Upgrade an iterator pair to spirit::line_pos_iterators
