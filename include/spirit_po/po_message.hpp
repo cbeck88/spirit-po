@@ -39,7 +39,7 @@ struct po_message {
  * Debug printer
  */
 #ifdef SPIRIT_PO_DEBUG
-std::string debug_string(const po_message & msg) {
+inline std::string debug_string(const po_message & msg) {
   std::string result = "{\n";
   if (msg.context) {
     result += "  context: \"" + *msg.context + "\"\n";

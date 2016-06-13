@@ -32,8 +32,8 @@ std::string iterator_context(Iterator & it, Iterator & end) {
 
 // When the thing being parsed is a short string, we can give
 // a better context report
-std::string string_iterator_context(const std::string & str,
-                                    std::string::const_iterator it) {
+inline std::string string_iterator_context(const std::string & str,
+                                           std::string::const_iterator it) {
   std::string result{str};
   result += "\n";
 
