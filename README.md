@@ -45,9 +45,6 @@ of parsing po files rather than mo files at run-time, is provided
   - `BOOST_NO_EXCEPTIONS` is defined
   - Boost version >= 1.55. (Fails below that due to a bug in `boost::variant`.)
 
-- You can expect a small speed-up if you compile it as C++14, due to heterogenous lookup in maps,
-  and to `std::string` having a no-throw move ctor.
-
 ## Compatibility
 
 `spirit_po` is intended to be a drop-in replacement for the use of GNU `msgfmt` and GNU `libintl`.  
@@ -87,10 +84,8 @@ Then you can build a catalog using one of three methods:
   - factory function `spirit_po::catalog<>::from_istream` which takes any
     given `istream` and builds a po catalog from it. Spirit reads incrementally,
     so this does not require reading the entire `istream` into a string first.
-  - `spirit_po::catalog` ctor, but you must construct `spirit::line_pos_iterators`
-    from your pair of iterators for this. (Usually you should use `from_iterators`
-    instead using of the ctor directly.)
 
+(You should use one of these rather than using the ctor directly.)
 If the po content is malformed, one of two things will happen (configurable):
   - A `spirit_po::catalog_exception` will be thrown. (This is the default.)
   - If a symbol is defined `SPIRIT_PO_NOEXCEPT` before including `spirit_po.hpp`,
@@ -112,7 +107,7 @@ specification:
 These implement, basic message lookup, plural-forms lookup, contextual lookup,
 and plural-forms-with-context lookup, respectively. See GNU gettext docs for details.
 
-As in GNU libintl, the string pointers which are returned are non-owning pointers.
+As in GNU `libintl`, the string pointers which are returned are non-owning pointers.
 When a translated form is found the catalog, the returned pointer points to a string owned by
 the catalog. When a translated form is not found, the returned pointer is one of the arguments.
 This is maximally efficient when using gettext with `_` macros and such, where the input parameters
