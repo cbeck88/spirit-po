@@ -85,7 +85,8 @@ Then you can build a catalog using one of three methods:
     given `istream` and builds a po catalog from it. Spirit reads incrementally,
     so this does not require reading the entire `istream` into a string first.
 
-(You should use one of these rather than using the ctor directly.)
+(You should use one of these rather than using the ctor directly.)  
+
 If the po content is malformed, one of two things will happen (configurable):
   - A `spirit_po::catalog_exception` will be thrown. (This is the default.)
   - If a symbol is defined `SPIRIT_PO_NOEXCEPT` before including `spirit_po.hpp`,
