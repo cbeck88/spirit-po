@@ -113,7 +113,7 @@ struct compiler {
   }
 };
 
-} // end namespace default_plura_forms
+} // end namespace default_plural_forms
 
 } // end namespace spirit_po
 
