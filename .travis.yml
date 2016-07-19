@@ -11,6 +11,7 @@ env:
 addons:
   apt:
     packages:
+      - gdb
       - g++-4.9 # This is needed only to get a >= 4.7 version of libstdc++,
                 # clang will fail to build without it
     sources:
