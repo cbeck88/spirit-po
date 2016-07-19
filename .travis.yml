@@ -27,9 +27,6 @@ matrix:
   exclude:
     - env: TRAVIS_EMPTY_JOB_WORKAROUND=true
 
-env: COMPILER=g++-4.9 BOOST_VER_NUM=48
-
-matrix:
   include:
     - env: GCC_VERSION=4.9.3 BOOST_VER_NUM=48
       compiler: gcc
