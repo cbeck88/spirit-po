@@ -39,11 +39,11 @@ matrix:
     - env: GCC_VERSION=4.9.3 BOOST_VER_NUM=60
       compiler: gcc
 
-    - env: GCC_VERSION=5.3.0 BOOST_VER_NUM=48
+    - env: GCC_VERSION=5.1.0 BOOST_VER_NUM=48
       compiler: gcc
-    - env: GCC_VERSION=5.3.0 BOOST_VER_NUM=51
+    - env: GCC_VERSION=5.2.0 BOOST_VER_NUM=51
       compiler: gcc
-    - env: GCC_VERSION=5.3.0 BOOST_VER_NUM=54
+    - env: GCC_VERSION=5.2.0 BOOST_VER_NUM=54
       compiler: gcc
     - env: GCC_VERSION=5.3.0 BOOST_VER_NUM=57
       compiler: gcc
@@ -56,9 +56,9 @@ matrix:
       compiler: clang
     - env: LLVM_VERSION=3.5.0 BOOST_VER_NUM=54
       compiler: clang
-    - env: LLVM_VERSION=3.5.0 BOOST_VER_NUM=57
+    - env: LLVM_VERSION=3.6.0 BOOST_VER_NUM=57
       compiler: clang
-    - env: LLVM_VERSION=3.5.0 BOOST_VER_NUM=60
+    - env: LLVM_VERSION=3.6.0 BOOST_VER_NUM=60
       compiler: clang
 
     - env: LLVM_VERSION=3.7.0 BOOST_VER_NUM=57
