@@ -80,7 +80,7 @@ before_install:
 install:
   - wget https://raw.githubusercontent.com/cbeck88/travis-cpp-assistant/master/install.sh
   - chmod +x install.sh
-  - source ./install.sh
+  - travis_wait 50 source ./install.sh
 
   - export CXX_FLAGS_BASE="-O3 -Wall -Werror"
   - CXX_FLAGS_BASE+="${CXXFLAGS}"
