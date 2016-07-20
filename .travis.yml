@@ -48,20 +48,20 @@ matrix:
     - env: GCC_VERSION=5.3.0 BOOST_VER_NUM=60
       compiler: gcc
 
-    - env: LLVM_VERSION=3.5.0 BOOST_VER_NUM=48
+    - env: LLVM_VERSION=3.5.2 BOOST_VER_NUM=48
       compiler: clang
-    - env: LLVM_VERSION=3.5.0 BOOST_VER_NUM=51
+    - env: LLVM_VERSION=3.5.2 BOOST_VER_NUM=51
       compiler: clang
-    - env: LLVM_VERSION=3.5.0 BOOST_VER_NUM=54
+    - env: LLVM_VERSION=3.5.2 BOOST_VER_NUM=54
       compiler: clang
-    - env: LLVM_VERSION=3.6.0 BOOST_VER_NUM=57
+    - env: LLVM_VERSION=3.6.2 BOOST_VER_NUM=57
       compiler: clang
-    - env: LLVM_VERSION=3.6.0 BOOST_VER_NUM=60
+    - env: LLVM_VERSION=3.6.2 BOOST_VER_NUM=60
       compiler: clang
 
-    - env: LLVM_VERSION=3.7.0 BOOST_VER_NUM=57
+    - env: LLVM_VERSION=3.7.1 BOOST_VER_NUM=57
       compiler: clang
-    - env: LLVM_VERSION=3.7.0 BOOST_VER_NUM=58
+    - env: LLVM_VERSION=3.7.1 BOOST_VER_NUM=58
       compiler: clang
     - env: LLVM_VERSION=3.8.0 BOOST_VER_NUM=59
       compiler: clang
@@ -82,7 +82,7 @@ install:
   - export CXX_FLAGS_NOEXCEPT="${CXX_FLAGS_BASE}"
   - if [ $BOOST_VER_NUM -ge 55 ]; then export CXX_FLAGS_NOEXCEPT+=" -fno-exceptions"; fi
 
-  - CMAKE_OPTIONS=" -DBOOST_ROOT=${BOOST_ROOT}"
+  - CMAKE_OPTIONS=" -DBOOST_ROOT=${BOOST_ROOT} -DCMAKE_EXE_LINKER_FLAGS=${LDFLAGS}"
   - cd ${TRAVIS_BUILD_DIR}
 
 script:
@@ -90,7 +90,7 @@ script:
 
   - echo "Unit Tests"
   - cd test
-  - ./test.sh BOOST_DIR=${BOOST_ROOT}
+  - ./test.sh BOOST_DIR=${BOOST_ROOT} CXXFLAGS=${CXX_FLAGS_BASE} LDFLAGS=${LDFLAGS}
 
   - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
   - cd ../test_libintl
