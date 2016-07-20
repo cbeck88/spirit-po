@@ -1,96 +1,134 @@
 sudo: false
 language: cpp
-
-env:
-  global:
-
-  # Workaround for https://github.com/travis-ci/travis-ci/issues/4681
-  matrix:
-    - TRAVIS_EMPTY_JOB_WORKAROUND=true
-
-addons:
+compiler:
+  - clang
+addons: &gcc49
   apt:
-    packages:
-      - gdb
-      - g++-4.9 # This is needed only to get a >= 4.7 version of libstdc++,
-                # clang will fail to build without it
     sources:
       - ubuntu-toolchain-r-test
-
-cache:
-  directories:
-    - ${TRAVIS_BUILD_DIR}/deps
+      - george-edison55-precise-backports
+    packages:
+      - gettext
+      - gdb
+      - cmake-data
+      - cmake
+      - g++-4.9
+env: COMPILER=g++-4.9 BOOST_VER_NUM=48
 
 matrix:
-  exclude:
-    - env: TRAVIS_EMPTY_JOB_WORKAROUND=true
-
   include:
-#    - env: GCC_VERSION=4.9.3 BOOST_VER_NUM=48
-#      compiler: gcc
-#    - env: GCC_VERSION=4.9.3 BOOST_VER_NUM=51
-#      compiler: gcc
-#    - env: GCC_VERSION=4.9.3 BOOST_VER_NUM=54
-#      compiler: gcc
-#    - env: GCC_VERSION=4.9.3 BOOST_VER_NUM=57
-#      compiler: gcc
-#    - env: GCC_VERSION=4.9.3 BOOST_VER_NUM=60
-#      compiler: gcc
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=51
+      addons: *gcc49
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=54
+      addons: *gcc49
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=57
+      addons: *gcc49
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=59
+      addons: *gcc49
 
-#    - env: GCC_VERSION=5.1.0 BOOST_VER_NUM=48
-#      compiler: gcc
-#    - env: GCC_VERSION=5.2.0 BOOST_VER_NUM=51
-#      compiler: gcc
-#    - env: GCC_VERSION=5.2.0 BOOST_VER_NUM=54
-#      compiler: gcc
-#    - env: GCC_VERSION=5.3.0 BOOST_VER_NUM=57
-#      compiler: gcc
-#    - env: GCC_VERSION=5.3.0 BOOST_VER_NUM=60
-#      compiler: gcc
+    - env: COMPILER=g++-5 BOOST_VER_NUM=54
+      addons: &gcc5
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - george-edison55-precise-backports
+          packages:
+            - gettext
+            - gdb
+            - cmake-data
+            - cmake
+            - g++-5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=57
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=58
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=59
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=60
+      addons: *gcc5
 
-    - env: LLVM_VERSION=3.5.2 BOOST_VER_NUM=48
-      compiler: clang
-    - env: LLVM_VERSION=3.5.2 BOOST_VER_NUM=51
-      compiler: clang
-    - env: LLVM_VERSION=3.5.2 BOOST_VER_NUM=54
-      compiler: clang
-    - env: LLVM_VERSION=3.6.2 BOOST_VER_NUM=57
-      compiler: clang
-    - env: LLVM_VERSION=3.6.2 BOOST_VER_NUM=60
-      compiler: clang
+#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=48
+#      addons: &clang35
+#        apt:
+#          sources:
+#            - ubuntu-toolchain-r-test
+#            - george-edison55-precise-backports
+#            - llvm-toolchain-precise-3.5
+#          packages:
+#            - gettext
+#            - gdb
+#            - cmake-data
+#            - cmake
+#            - clang-3.5
+#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=51
+#      addons: *clang35
+#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=54
+#      addons: *clang35
+#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=57
+#      addons: *clang35
+#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=59
+#      addons: *clang35
 
-    - env: LLVM_VERSION=3.7.1 BOOST_VER_NUM=57
-      compiler: clang
-    - env: LLVM_VERSION=3.7.1 BOOST_VER_NUM=58
-      compiler: clang
-    - env: LLVM_VERSION=3.8.0 BOOST_VER_NUM=59
-      compiler: clang
-    - env: LLVM_VERSION=3.8.0 BOOST_VER_NUM=60
-      compiler: clang
+#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=54
+#      addons: &clang37
+#        apt:
+#          sources:
+#            - ubuntu-toolchain-r-test
+#            - george-edison55-precise-backports
+#            - llvm-toolchain-precise-3.7
+#          packages:
+#            - gettext
+#            - gdb
+#            - cmake-data
+#            - cmake
+#            - clang-3.7
+#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=57
+#      addons: *clang37
+#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=58
+#      addons: *clang37
+#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
+#      addons: *clang37
+#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=60
+#      addons: *clang37
+
 
 
 before_install:
-  - export BOOST_VERSION=1.${BOOST_VER_NUM}.0
-
-install:
-  - wget https://raw.githubusercontent.com/cbeck88/travis-cpp-assistant/master/install.sh
-  - chmod +x install.sh
-  - source ./install.sh
-
+# set CXX variable
+  - export CXX=${COMPILER}
+  - echo ${CXX}
+# set CXX_FLAGS variable, if boost version is recent enough then use -fno-exceptions with SPIRIT_PO_NOEXCEPT builds
   - export CXX_FLAGS_BASE="-O3 -Wall -Werror"
-  - CXX_FLAGS_BASE+="${CXXFLAGS}"
   - export CXX_FLAGS_NOEXCEPT="${CXX_FLAGS_BASE}"
   - if [ $BOOST_VER_NUM -ge 55 ]; then export CXX_FLAGS_NOEXCEPT+=" -fno-exceptions"; fi
 
-  - CMAKE_OPTIONS=" -DBOOST_ROOT=${BOOST_ROOT} -DCMAKE_EXE_LINKER_FLAGS=${LDFLAGS}"
-  - cd ${TRAVIS_BUILD_DIR}
+# Make a 'deps' dir to hold installed stuff
+  - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
+  - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
 
+install:
+# Install Boost headers
+  - BOOST_DOT_VER_STRING=1.${BOOST_VER_NUM}.0
+  - BOOST_UNDERSCORE_VER_STRING=1_${BOOST_VER_NUM}_0
+
+  - BOOST_SUBDIR_NAME=boost_${BOOST_UNDERSCORE_VER_STRING}
+  - BOOST_TAR_NAME=${BOOST_SUBDIR_NAME}.tar.gz
+
+  - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_DOT_VER_STRING}/${BOOST_TAR_NAME}"
+  - travis_retry wget ${BOOST_URL}
+  - tar -xzf ${BOOST_TAR_NAME}
+
+  - BOOST_DIR_NAME=${DEPS_DIR}/${BOOST_SUBDIR_NAME}
+  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME}"
+
+# Back to root dir
+  - cd ${TRAVIS_BUILD_DIR}
 script:
   - $CXX --version
 
   - echo "Unit Tests"
   - cd test
-  - ./test.sh BOOST_DIR=${BOOST_ROOT} CXXFLAGS=${CXX_FLAGS_BASE} LDFLAGS=${LDFLAGS}
+  - ./test.sh BOOST_DIR=${BOOST_DIR_NAME}
 
   - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
   - cd ../test_libintl
