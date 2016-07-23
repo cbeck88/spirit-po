@@ -9,7 +9,7 @@ localization within the GNU gettext system, instead of using `libintl`.
 
 **spirit-po** has the advantage that it does not use mo files, so your
 program can use the simple, portable po files produced directly by
-translators rather than require a non-portable binary format which
+translators rather than require a binary format which
 requires special tools to create.
 
 **spirit-po** is very easy to use in your C++11 projects.
@@ -84,6 +84,9 @@ Then you can build a catalog using one of three methods:
   - factory function `spirit_po::catalog<>::from_istream` which takes any
     given `istream` and builds a po catalog from it. Spirit reads incrementally,
     so this does not require reading the entire `istream` into a string first.
+    (However, in the typical case of reading a po-file, that will usually be
+     faster. Recommendation is not to use `from_istream` with a `std::ifstream`
+     for best performance.)
 
 (You should use one of these rather than using the ctor directly.)  
 
