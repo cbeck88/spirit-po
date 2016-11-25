@@ -148,7 +148,7 @@ script:
 
   - echo "Unit Tests"
   - cd test
-  - ./test.sh --toolset=clang
+  - ./test.sh --toolset=clang -d+2
 
   - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
   - cd ../test_libintl
