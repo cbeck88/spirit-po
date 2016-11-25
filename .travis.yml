@@ -128,7 +128,8 @@ script:
 
   - echo "Unit Tests"
   - cd test
-  - ./test.sh BOOST_DIR=${BOOST_DIR_NAME}
+  - export BOOST_ROOT=${BOOST_DIR_NAME}
+  - ./test.sh
 
   - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
   - cd ../test_libintl

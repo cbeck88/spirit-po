@@ -7,3 +7,5 @@ main
 *.*~
 /find_and_replace.sh
 /util/inspector
+/test/bin
+/test/stage
