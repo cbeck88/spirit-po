@@ -16,6 +16,8 @@
 #include <string>
 #include <vector>
 
+using uint = unsigned int;
+
 /***
  * Utility functions
  */
