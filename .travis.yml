@@ -45,47 +45,47 @@ matrix:
     - env: COMPILER=g++-5 BOOST_VER_NUM=60
       addons: *gcc5
 
-#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=48
-#      addons: &clang35
-#        apt:
-#          sources:
-#            - ubuntu-toolchain-r-test
-#            - george-edison55-precise-backports
-#            - llvm-toolchain-precise-3.5
-#          packages:
-#            - gettext
-#            - gdb
-#            - cmake-data
-#            - cmake
-#            - clang-3.5
-#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=54
-#      addons: *clang35
-#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=57
-#      addons: *clang35
-#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=59
-#      addons: *clang35
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=48
+      addons: &clang35
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - george-edison55-precise-backports
+            - llvm-toolchain-precise-3.5
+          packages:
+            - gettext
+            - gdb
+            - cmake-data
+            - cmake
+            - clang-3.5
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=54
+      addons: *clang35
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=57
+      addons: *clang35
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=59
+      addons: *clang35
 
-#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=54
-#      addons: &clang37
-#        apt:
-#          sources:
-#            - ubuntu-toolchain-r-test
-#            - george-edison55-precise-backports
-#            - llvm-toolchain-precise-3.7
-#          packages:
-#            - gettext
-#            - gdb
-#            - cmake-data
-#            - cmake
-#            - clang-3.7
-#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=57
-#      addons: *clang37
-#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=58
-#      addons: *clang37
-#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
-#      addons: *clang37
-#    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=60
-#      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=54
+      addons: &clang37
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - george-edison55-precise-backports
+            - llvm-toolchain-precise-3.7
+          packages:
+            - gettext
+            - gdb
+            - cmake-data
+            - cmake
+            - clang-3.7
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=57
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=58
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=60
+      addons: *clang37
 
 
 

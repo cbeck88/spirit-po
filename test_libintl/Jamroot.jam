@@ -1,0 +1,28 @@
+project : default-build <optimization>speed release ;
+
+using gettext ;
+
+INSTALL_LOC = <location>stage/ ;
+
+### Boost directory
+
+import os ;
+
+local BOOST_ROOT = [ os.environ BOOST_ROOT ] ;
+if $(BOOST_ROOT) {
+  # echo "BOOST_ROOT = '" $(BOOST_ROOT) "'" ;
+  BOOST_INCLUDE_DIR = $(BOOST_ROOT) ;
+} else {
+  echo "BOOST_ROOT variable not set!" ;
+  BOOST_INCLUDE_DIR = "/usr/include" ;
+}
+
+# Try to find boost/version.hpp
+
+if [ GLOB $(BOOST_INCLUDE_DIR)/boost/ : version.hpp ] {
+  echo "Using BOOST_INCLUDE_DIR = '" $(BOOST_INCLUDE_DIR) "'" ;  
+} else {
+  echo "Could not find boost, skipping boost tests" ;
+  BOOST_INCLUDE_DIR = ;
+}
+
