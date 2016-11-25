@@ -538,7 +538,7 @@ msgstr "jkl;"
     auto it = s1.begin();
     auto end = s1.end();
     spirit_po::po_grammar<decltype(it)> grammar;
-    spirit_po::po_message msg{};
+    spirit_po::po_message msg;
 
     CHECK_EQ(true, boost::spirit::qi::parse(it, end, grammar.message, msg));
 //    std::cerr << "msg = " << debug_string(msg) << std::endl;
