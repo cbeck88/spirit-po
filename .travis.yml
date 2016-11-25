@@ -44,6 +44,8 @@ matrix:
       addons: *gcc5
     - env: COMPILER=g++-5 BOOST_VER_NUM=60
       addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=62
+      addons: *gcc5
 
     - env: COMPILER=clang++-3.5 BOOST_VER_NUM=48
       addons: &clang35
@@ -85,6 +87,8 @@ matrix:
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
       addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=60
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=62
       addons: *clang37
 
 
