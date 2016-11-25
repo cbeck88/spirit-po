@@ -120,7 +120,11 @@ install:
   - cat ${BOOST_TAR_NAME} | tar --strip-components=1 -xz -C boost
   - ls
 
-  - cd boost/tools/build && ls && ./bootstrap.sh && ./b2 install --prefix=${DEPS_DIR}/b2
+  - cd boost/tools/build 
+  - ls
+  - if [ $BOOST_VER_NUM -le 55 ]; then cd v2; ls; fi 
+  - ./bootstrap.sh
+  - ./b2 install --prefix=${DEPS_DIR}/b2
 
   - BOOST_DIR_NAME=${DEPS_DIR}/boost
   - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME}"
