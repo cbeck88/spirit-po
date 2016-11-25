@@ -29,22 +29,6 @@ An in-depth explanation of the rationale for this library as compared to
 of parsing po files rather than mo files at run-time, is provided
 [on the wiki](https://github.com/cbeck88/spirit-po/wiki/Rationale).
 
-## Licensing and Distribution
-
-**spirit-po** is open-source software available under the Boost software license.
-
-## Dependencies
-
-- **spirit-po** is only intended to work with UTF-8 encoded po files.
-- **spirit-po** has been tested with boost 1.60 and multiple versions >= 1.48.
-- **spirit-po** is known to work with gcc >= 4.9, clang >= 3.5.  
-  It is tested with multiple versions of these compilers. See `.travis.yml`.
-- **spirit-po** does not require C++ exceptions to be enabled.  
-  The tests run when compiled with `-fno-exceptions`, provided that
-  - `SPIRIT_PO_NOEXCEPT` is defined
-  - `BOOST_NO_EXCEPTIONS` is defined
-  - Boost version >= 1.55. (Fails below that due to a bug in `boost::variant`.)
-
 ## Compatibility
 
 `spirit_po` is intended to be a drop-in replacement for the use of GNU `msgfmt` and GNU `libintl`.  
@@ -180,6 +164,30 @@ you can specialize the catalog to use a different plural-forms function compiler
 The compiler is a function object that should be default constructible, and should take a string and return a
 function object of signature `unsigned int(unsigned int)`, representing the compiled function. See the default
 implementation for details.
+
+## Licensing and Distribution
+
+**spirit-po** is open-source software available under the Boost software license.
+
+## Dependencies
+
+- **spirit-po** is only intended to work with UTF-8 encoded po files.
+- **spirit-po** has been tested with boost 1.62 and multiple versions >= 1.48.
+- **spirit-po** does not require C++ exceptions to be enabled.  
+  The tests run when compiled with `-fno-exceptions`, provided that
+  - `SPIRIT_PO_NOEXCEPT` is defined
+  - `BOOST_NO_EXCEPTIONS` is defined
+  - Boost (headers-only) version >= 1.55. (Fails below that due to a bug in `boost::variant`.)
+
+## Compiler Support
+
+**spirit-po** has been tested with
+
+- `gcc` versions `4.9, 5.0, 5.4, 6.3`
+- `clang` versions `3.5, 3.7. 3.8, 4.0`
+- MSVC 2013 and 2015
+
+See `.travis.yml` and `appveyor.yml` for info about our CI.
 
 ## Acknowledgements
 
