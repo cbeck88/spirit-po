@@ -128,14 +128,23 @@ install:
   - export PATH=${DEPS_DIR}/b2/bin:${PATH}
   - export BOOST_ROOT=${DEPS_DIR}/boost 
 
-# Back to root dir
+# Make jamfile
   - cd ${TRAVIS_BUILD_DIR}
+
+  - $CC --version
+  - $CXX --version
+  - |-
+    JAM="using clang : : ${CXX} ;"
+
+  - touch project-config.jam
+  - echo "${JAM}" > project-config.jam
+
 script:
   - $CXX --version
 
   - echo "Unit Tests"
   - cd test
-  - ./test.sh
+  - ./test.sh --toolset=clang
 
   - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
   - cd ../test_libintl
