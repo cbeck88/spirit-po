@@ -1,5 +1,5 @@
-# project : default-build <optimization>off debug ;
-project : default-build <optimization>speed release ;
+project : default-build <optimization>off debug ;
+# project : default-build <optimization>speed release ;
 
 INSTALL_LOC = <location>stage/ ;
 
