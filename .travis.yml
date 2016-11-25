@@ -116,14 +116,14 @@ install:
 
   - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_DOT_VER_STRING}/${BOOST_TAR_NAME}"
   - travis_retry wget ${BOOST_URL}
-  - tar -xzf ${BOOST_TAR_NAME}
+  - tar  --strip-components=1 -C boost -xz ${BOOST_TAR_NAME}
   - ls
   - cd boost
   - ls
 
   - cd boost/tools/build && ./bootstrap.sh && ./b2 install --prefix=${DEPS_DIR}/b2
 
-  - BOOST_DIR_NAME=${DEPS_DIR}/${BOOST_SUBDIR_NAME}
+  - BOOST_DIR_NAME=${DEPS_DIR}/boost
   - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME}"
 
 # Back to root dir
