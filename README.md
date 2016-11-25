@@ -1,7 +1,7 @@
 # spirit-po
 
 [![Build Status](https://travis-ci.org/cbeck88/spirit-po.svg?branch=master)](http://travis-ci.org/cbeck88/spirit-po)
-[![Coverage Status](https://coveralls.io/repos/cbeck88/spirit-po/badge.svg?branch=master&service=github)](https://coveralls.io/github/cbeck88/spirit-po?branch=master)
+[![Appveyor status](https://ci.appveyor.com/api/projects/status/github/cbeck88/spirit_po?branch=master&svg=true)](https://ci.appveyor.com/project/cbeck88/spirit_po)
 [![Boost licensed](https://img.shields.io/badge/license-Boost-blue.svg)](./LICENSE)
 
 **spirit-po** is a header-only C++11 library that you can use for
