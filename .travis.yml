@@ -17,8 +17,6 @@ env: COMPILER=g++-4.9 BOOST_VER_NUM=48
 
 matrix:
   include:
-    - env: COMPILER=g++-4.9 BOOST_VER_NUM=51
-      addons: *gcc49
     - env: COMPILER=g++-4.9 BOOST_VER_NUM=54
       addons: *gcc49
     - env: COMPILER=g++-4.9 BOOST_VER_NUM=57
@@ -60,8 +58,6 @@ matrix:
 #            - cmake-data
 #            - cmake
 #            - clang-3.5
-#    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=51
-#      addons: *clang35
 #    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=54
 #      addons: *clang35
 #    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=57
@@ -139,7 +135,6 @@ install:
 # Make jamfile
   - cd ${TRAVIS_BUILD_DIR}
 
-  - $CC --version
   - $CXX --version
   - |-
     JAM="using clang : : ${CXX} ;"
