@@ -124,7 +124,9 @@ install:
 
   - BOOST_DIR_NAME=${DEPS_DIR}/boost
   - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME}"
-  - export BOOST_ROOT=${BOOST_DIR_NAME}
+
+  - export PATH=${DEPS_DIR}/b2/bin:${PATH}
+  - export BOOST_ROOT=${DEPS_DIR}/boost 
 
 # Back to root dir
   - cd ${TRAVIS_BUILD_DIR}
