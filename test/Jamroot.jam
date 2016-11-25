@@ -25,13 +25,13 @@ if [ GLOB $(BOOST_INCLUDE_DIR)/boost/ : version.hpp ] {
   BOOST_INCLUDE_DIR = ;
 }
 
-alias boost_headers : : : : <include>$(BOOST_INCLUDE_DIR) ;
-
 ### Test target
 
-alias spirit_po : boost_headers : : : <include>../include/ ;
+SYSFLAGS = -isystem../include -isystem$(BOOST_INCLUDE_DIR) ;
 
-GNU_FLAGS = "-Wall -Werror -Wextra -pedantic -std=c++11" ;
+alias spirit_po : : <toolset>gcc:<cxxflags>$(SYSFLAGS) <toolset>clang:<cxxflags>$(SYSFLAGS) : : <toolset>msvc:<include>$(BOOST_INCLUDE_DIR) <toolset>msvc:<include>../include/ ;
+
+GNU_FLAGS = "-Wall -Werror -Wextra -pedantic -std=c++11 " ;
 FLAGS = <toolset>gcc:<cxxflags>$(GNU_FLAGS) <toolset>clang:<cxxflags>$(GNU_FLAGS) <toolset>msvc:<warnings-as-errors>"off" ;
 
 exe main : main.cpp spirit_po  : $(FLAGS) <c++-template-depth>200 ;
