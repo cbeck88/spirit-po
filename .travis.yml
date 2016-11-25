@@ -120,10 +120,11 @@ install:
   - cat ${BOOST_TAR_NAME} | tar --strip-components=1 -xz -C boost
   - ls
 
-  - cd boost/tools/build && ./bootstrap.sh && ./b2 install --prefix=${DEPS_DIR}/b2
+  - cd boost/tools/build && ls && ./bootstrap.sh && ./b2 install --prefix=${DEPS_DIR}/b2
 
   - BOOST_DIR_NAME=${DEPS_DIR}/boost
   - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME}"
+  - export BOOST_ROOT=${BOOST_DIR_NAME}
 
 # Back to root dir
   - cd ${TRAVIS_BUILD_DIR}
@@ -132,7 +133,6 @@ script:
 
   - echo "Unit Tests"
   - cd test
-  - export BOOST_ROOT=${BOOST_DIR_NAME}
   - ./test.sh
 
   - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
