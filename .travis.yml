@@ -117,7 +117,7 @@ install:
   - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_DOT_VER_STRING}/${BOOST_TAR_NAME}"
   - travis_retry wget ${BOOST_URL}
   - mkdir boost
-  - cat ${BOOST_TAR_NAME} | tar --strip-components=1 -xj -C boost
+  - cat ${BOOST_TAR_NAME} | tar --strip-components=1 -xz -C boost
   - ls
 
   - cd boost/tools/build && ./bootstrap.sh && ./b2 install --prefix=${DEPS_DIR}/b2
