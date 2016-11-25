@@ -120,7 +120,11 @@ install:
   - cat ${BOOST_TAR_NAME} | tar --strip-components=1 -xz -C boost
   - ls
 
-  - cd boost/tools/build 
+  - cd boost
+  - ls
+  - cd tools
+  - ls
+  - cd build
   - ls
   - if [ $BOOST_VER_NUM -le 55 ]; then cd v2; ls; fi 
   - ./bootstrap.sh
