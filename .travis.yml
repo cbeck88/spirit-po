@@ -10,6 +10,7 @@ addons: &gcc49
     packages:
       - gettext
       - gdb
+      - libboost-tools-dev
       - cmake-data
       - cmake
       - g++-4.9
