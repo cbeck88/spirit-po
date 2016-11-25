@@ -1,0 +1,75 @@
+# Operating system (build VM template)
+os: Visual Studio 2015
+
+# build platform, i.e. Win32 (instead of x86), x64, Any CPU. This setting is optional.
+# platform: 
+# - Win32
+# - x64
+
+# scripts that are called at very beginning, before repo cloning
+init:
+  - git config --global core.autocrlf input
+
+# clone directory
+clone_folder: C:\projects\spirit_po
+
+# fetch repository as zip archive
+shallow_clone: true                 # default is "false"
+
+branches:
+  only: 
+   - master
+
+build: off
+
+environment:
+  BOOST_VER: "boost_1_61_0"
+  BOOST_URL: "https://sourceforge.net/projects/boost/files/boost/1.61.0/boost_1_61_0.zip"
+
+cache:
+  - C:\projects\boost_1_61_0.zip
+
+install:
+  - ps: >-
+      If($true) {
+        Add-Type -assembly "system.io.compression.filesystem"
+
+        $boost_path = "C:\projects\" + $env:BOOST_VER
+        $boost_zip = $boost_path + ".zip"
+
+        If(Test-Path $boost_zip) {
+          Write-Host "Found cached boost"
+        } Else {
+          Write-Host "Downloading boost..."
+          (new-object net.webclient).DownloadFile($env:BOOST_URL, $boost_zip)
+        }
+
+        Write-Host "Extracting boost..."
+        [io.compression.zipfile]::ExtractToDirectory($boost_zip, "C:\projects\")
+
+        Set-Location $boost_path
+        Write-Host "Bootstrapping..."
+        & ".\bootstrap.bat"
+
+        $env:BOOST_ROOT = $boost_path
+        $env:Path += ";" + $boost_path + ";"
+
+        Set-Location "C:\projects\spirit_po\test"
+        Write-Host "Building test executables"
+        & b2 --toolset=msvc
+      }
+
+test_script:
+  - ps: >-
+      If($true) {
+        $env:Path += ";C:\Program Files (x86)\Windows Kits\8.0\Debuggers\x86\;"
+        $env:Path += ";C:\Program Files (x86)\Windows Kits\8.0\Debuggers\x64\;"
+        $SymPath = "C:\projects\spirit_po\test\stage;SRV*c:\symbols*http://msdl.microsoft.com/download/symbols"
+        
+        cmd /r mkdir c:\symbols
+      
+        Write-Host "Running tests.."
+        
+        cdb -y $SymPath -c "|;g;kv;q" -o C:\projects\spirit_po\stage\main.exe
+        Write-Host "Exit code: " $lastExitCode
+      }
