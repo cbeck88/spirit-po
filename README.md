@@ -185,7 +185,10 @@ implementation for details.
 
 - `gcc` versions `4.9, 5.0, 5.4, 6.3`
 - `clang` versions `3.5, 3.7. 3.8, 4.0`
-- MSVC 2013 and 2015
+- MSVC 2015
+
+I am told that it works with MSVC 2013 if the `constexpr` declarations are
+properly dealt with, however I don't test that.
 
 See `.travis.yml` and `appveyor.yml` for info about our CI.
 
