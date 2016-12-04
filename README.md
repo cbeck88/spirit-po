@@ -116,14 +116,21 @@ They are otherwise equivalent.
    - `std::string npgettext_str(const std::string & msgctxt, const  std::string & msgid, const std::string & msgid_plural, uint plural)`
 
 We do not provide implementations of the `dcgettext` functions, which implement
-alternate textdomains.
+alternate textdomains. A catalog object **is** a single textdomain.
 
-One of the premises of the library is that you may not want to actually use textdomains as
-described by GNU gettext. If you want to have multiple catalogs loaded into the
+One of the premises of the library is that you may not want to actually use textdomains in
+exactly the manner described by GNU gettext, or at all. (Partly this stems from bad experiences of
+the author with `libintl` -- we had portability problems where `libintl` didn't work with UTF-8 paths
+when compiled with mingw, because it attempts to find all the textdomains itself, talking to the
+filesystem directly, and there was no workaround, no way to make it use different filesystem functions.)
+
+If you want to have multiple catalogs loaded into the
 program at once, you are recommended to throw together your own book-keeping mechanism for
 this -- it is straightforward to have a `std::unordered_map` of catalogs or similar, and
-then it is transparent to you without cluttering our catalog interface. On the other hand,
-you can also use the `merge` function of catalogs to merge multiple catalogs into one
+then it is transparent to you without cluttering our catalog interface. You can load them however you like,
+and you can make your own `dcgettext` if desired.
+
+On the other hand, you can also use the `merge` function of catalogs to merge multiple catalogs into one
 master catalog.
 
    - `void merge(spirit_po::catalog && other)`  
