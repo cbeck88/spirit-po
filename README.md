@@ -118,14 +118,15 @@ They are otherwise equivalent.
 We do not provide implementations of the `dcgettext` functions, which implement
 alternate textdomains. A catalog object **is** a single textdomain.
 
-One of the premises of the library is that you may not want to actually use textdomains in
+One of the premises of the library is that you may not want to use textdomains in
 exactly the manner described by GNU gettext, or at all. (Partly this stems from bad experiences of
 the author with `libintl` -- we had portability problems where `libintl` didn't work with UTF-8 paths
-when compiled with mingw, because it attempts to find all the textdomains itself, talking to the
-filesystem directly, and there was no workaround, no way to make it use different filesystem functions.)
+when compiled with mingw, because it attempts to find and load all the textdomains itself, talking to the
+filesystem directly, and there was no workaround, no way to make it use different filesystem functions
+if the built-in ones were defective.)
 
 If you want to have multiple catalogs loaded into the
-program at once, you are recommended to throw together your own book-keeping mechanism for
+program at once using **spirit_po**, you are recommended to throw together your own book-keeping mechanism for
 this -- it is straightforward to have a `std::unordered_map` of catalogs or similar, and
 then it is transparent to you without cluttering our catalog interface. You can load them however you like,
 and you can make your own `dcgettext` if desired.
