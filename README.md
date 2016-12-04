@@ -195,7 +195,7 @@ implementation for details.
 - MSVC 2015
 
 I am told that it works with MSVC 2013 if the `constexpr` declarations are
-properly dealt with, however I don't test that.
+properly dealt with, however I don't test that. Pull requests are welcome!
 
 See `.travis.yml` and `appveyor.yml` for info about our CI.
 
