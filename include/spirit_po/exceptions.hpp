@@ -62,8 +62,8 @@ do {                                                         \
 namespace spirit_po {
 
 struct catalog_exception : std::runtime_error {
-  catalog_exception(const char * what) : runtime_error(what) {}
-  catalog_exception(const std::string & what) : runtime_error(what) {}
+  explicit catalog_exception(const char * what) : runtime_error(what) {}
+  explicit catalog_exception(const std::string & what) : runtime_error(what) {}
 };
 
 } // end namespace spirit_po
