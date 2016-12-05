@@ -115,7 +115,7 @@ install:
   - BOOST_TAR_NAME=${BOOST_SUBDIR_NAME}.tar.gz
 
   - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_DOT_VER_STRING}/${BOOST_TAR_NAME}"
-  - travis_retry wget ${BOOST_URL}
+  - travis_retry wget --no-check-certificate ${BOOST_URL}
   - mkdir boost
   - cat ${BOOST_TAR_NAME} | tar --strip-components=1 -xz -C boost
   - ls
