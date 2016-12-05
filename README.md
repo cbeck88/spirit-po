@@ -52,7 +52,7 @@ interface doesn't yield expected results, please post a report on the issue trac
 To use the library, you only need to include the `include` directory
 in your C++ source files.
 
-    #include <spirit_po.hpp>
+    #include <spirit_po/spirit_po.hpp>
 
 (The `test/` folder contains the unit tests, built with a Makefile.
 The `test_libintl/` folder contains the validation tests against `libintl`, built

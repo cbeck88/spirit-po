@@ -18,7 +18,7 @@ namespace boost {
 #endif
 
 
-#include <spirit_po.hpp>
+#include <spirit_po/spirit_po.hpp>
 
 extern "C" {
 #include "gettext.h"

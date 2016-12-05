@@ -1,6 +1,6 @@
 
 #define SPIRIT_PO_DEBUG
-#include <spirit_po.hpp>
+#include <spirit_po/spirit_po.hpp>
 
 #include <iostream>
 
