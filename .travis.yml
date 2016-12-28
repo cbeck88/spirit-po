@@ -36,8 +36,6 @@ matrix:
             - cmake-data
             - cmake
             - g++-5
-    - env: COMPILER=g++-5 BOOST_VER_NUM=57
-      addons: *gcc5
     - env: COMPILER=g++-5 BOOST_VER_NUM=58
       addons: *gcc5
     - env: COMPILER=g++-5 BOOST_VER_NUM=59
@@ -45,6 +43,8 @@ matrix:
     - env: COMPILER=g++-5 BOOST_VER_NUM=60
       addons: *gcc5
     - env: COMPILER=g++-5 BOOST_VER_NUM=62
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=63
       addons: *gcc5
 
     - env: COMPILER=clang++-3.5 BOOST_VER_NUM=48
@@ -80,8 +80,6 @@ matrix:
             - cmake-data
             - cmake
             - clang-3.7
-    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=57
-      addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=58
       addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=59
@@ -89,6 +87,8 @@ matrix:
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=60
       addons: *clang37
     - env: COMPILER=clang++-3.7 BOOST_VER_NUM=62
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=63
       addons: *clang37
 
 
