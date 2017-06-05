@@ -126,10 +126,10 @@ filesystem directly, and there was no workaround, no way to make it use differen
 if the built-in ones were defective.)
 
 If you want to have multiple catalogs loaded into the
-program at once using **spirit_po**, you are recommended to throw together your own book-keeping mechanism for
-this -- it is straightforward to have a `std::unordered_map` of catalogs or similar, and
+program at once using **spirit_po**, I recommend that you throw together your own book-keeping mechanism for
+this. It is straightforward to have a `std::unordered_map` of catalogs or similar, and
 then it is transparent to you without cluttering our catalog interface. You can load them however you like,
-and you can make your own `dcgettext` if desired.
+and you can make your own `dcgettext` as appropriate for your project.
 
 On the other hand, you can also use the `merge` function of catalogs to merge multiple catalogs into one
 master catalog.
