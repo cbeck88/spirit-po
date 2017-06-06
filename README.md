@@ -180,7 +180,7 @@ implementation for details.
 ## Dependencies
 
 - **spirit-po** is only intended to work with UTF-8 encoded po files.
-- **spirit-po** has been tested with boost 1.62 and multiple versions >= 1.48.
+- **spirit-po** has been tested against many boost versions, ranging from 1.48 to 1.64.
 - **spirit-po** does not require C++ exceptions to be enabled.  
   The tests run when compiled with `-fno-exceptions`, provided that
   - `SPIRIT_PO_NOEXCEPT` is defined
