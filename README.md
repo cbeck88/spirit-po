@@ -47,20 +47,66 @@ it contains invalid C format specifiers. `spirit_po` doesn't do this, which is a
 If you are aware of any `.po` file which `msgfmt` parses, but `spirit_po` fails to parse, or, our emulation of the `libintl`
 interface doesn't yield expected results, please post a report on the issue tracker, with the po file included.
 
+## Quick Start
+
+To begin, first obtain some `.po` files. PO files are created by translators, they contain a dictionary of translated strings.
+
+For examples from various GNU projects, see our test folder: https://github.com/cbeck88/spirit-po/tree/master/test_libintl/po
+
+Then, load the file and construct a `spirit_po::catalog` from it.
+
+```c++
+
+#include <spirit_po/spirit_po.hpp>
+
+using default_catalog_t = spirit_po::catalog<>;
+
+int main() {
+  std::string po_file{ ... };
+  
+  default_catalog_t cat{default_catalog_t::from_range{po_file}};
+
+  std::cout << cat.gettext("Hello world!") << std::endl;
+  
+  std::cout << cat.gettext("Pick a number: ") << std::endl;
+  
+  int number = 6;
+  std::cin >> number;
+
+  std::cout << std::endl;
+
+  fprintf(cat.ngettext("Did I fire %d shots or was it only %d? Do you feel lucky, punk?", number), number, number - 1);
+}
+
+```
+
+The catalog object serves translation requests using the strings it loaded from the PO file. 
+
+In this line,
+
+```c++
+std::cout << cat.gettext("Hello world!") << std::endl;
+```
+
+the translated form of `"Hello world!"` will be displayed. The result will be a `const char *` pointing to
+a string owned by the catalog. (Or, if the translation misses becaues this string wasn't in the catalog, it will simply return the
+english text `"Hello world!"`, the same pointer it was passed in.)
+
+In this line,
+
+```c++
+fprintf(cat.ngettext("Did I fire %d shots or was it only %d? Do you feel lucky, punk?", number), number, number - 1);
+```
+
+the catalog object will look up the C-format string in the catalog, and search for the plural form corresponding to `number`. This ensures
+that `shots` will be pluralized correctly no matter what language is used. Then we use `fprintf` to substitute the numbers into the string.
+
+If you aren't familiar with gettext, have a look at their [documentation](https://www.gnu.org/software/gettext/).
+
 ## Using it
 
-To use the library, you only need to include the `include` directory
-in your C++ source files.
-
-    #include <spirit_po/spirit_po.hpp>
-
-(The `test/` folder contains the unit tests, built with a Makefile.
-The `test_libintl/` folder contains the validation tests against `libintl`, built
-using cmake. To add new validation test cases, just drop new `.po` files in the folder
-`test_libintl/po/`.)
-
-To make a catalog object in your C++ program, first obtain some po content.
-Then you can build a catalog using one of three methods:
+When you load translations with `spirit_po` the loading process is entirely in your hands and you can make it work however
+you like. A catalog can be constructed using  one of three methods:
   - factory function `spirit_po::catalog<>::from_iterators` which can take
     any pair of iterators which spirit can use.
   - factory function `spirit_po::catalog<>::from_range` which can take any
@@ -196,6 +242,14 @@ implementation for details.
 - MSVC 2013, 2015
 
 See `.travis.yml` and `appveyor.yml` for info about our CI.
+
+## Tests
+
+The `test/` folder contains the unit tests, built with a Makefile.
+The `test_libintl/` folder contains the validation tests against `libintl`, built
+using cmake. To add new validation test cases, just drop new `.po` files in the folder
+`test_libintl/po/`.
+
 
 ## Acknowledgements
 
