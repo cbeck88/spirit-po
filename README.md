@@ -59,14 +59,16 @@ Then, load the file and construct a `spirit_po::catalog` from it.
 
 #include <spirit_po/spirit_po.hpp>
 #include <fstream>
+#include <iostream>
+#include <string>
 
 using default_catalog_t = spirit_po::catalog<>;
 
 int main() {
   std::ifstream ifs("test.po");
-  std::string po_file{std::istreambuf_iterator<char>{ifs}, std::istreambuf_iterator()};
+  std::string po_file{std::istreambuf_iterator<char>{ifs}, std::istreambuf_iterator<char>()};
   
-  default_catalog_t cat{default_catalog_t::from_range{po_file}};
+  default_catalog_t cat{default_catalog_t::from_range(po_file)};
 
   std::cout << cat.gettext("Hello world!") << std::endl;
   
