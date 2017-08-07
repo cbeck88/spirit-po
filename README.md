@@ -250,6 +250,7 @@ See `.travis.yml` and `appveyor.yml` for info about our CI.
 ## Tests
 
 The `test/` folder contains the unit tests, built with a Makefile.
+
 The `test_libintl/` folder contains the validation tests against `libintl`, built
 using cmake. To add new validation test cases, just drop new `.po` files in the folder
 `test_libintl/po/`.
