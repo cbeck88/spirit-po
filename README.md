@@ -51,7 +51,7 @@ interface doesn't yield expected results, please post a report on the issue trac
 
 To begin, first obtain some `.po` files. PO files are created by translators, they contain a dictionary of translated strings.
 
-For examples from various GNU projects, see our test folder: https://github.com/cbeck88/spirit-po/tree/master/test_libintl/po
+For examples from various GNU projects, see [our test folder](https://github.com/cbeck88/spirit-po/tree/master/test_libintl/po).
 
 Then, load the file and construct a `spirit_po::catalog` from it.
 
