@@ -79,7 +79,11 @@ int main() {
 
   std::cout << std::endl;
 
-  fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?", "Did I fire %d shots or was it only %d? Do you feel lucky, punk?", number), number, number - 1);
+  fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?",
+                       "Did I fire %d shots or was it only %d? Do you feel lucky, punk?",
+                       number),
+          number,
+          number - 1);
 }
 
 ```
@@ -108,7 +112,11 @@ differently depending on context. The context string allows you to provide a hin
 In this line,
 
 ```c++
-fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?", "Did I fire %d shots or was it only %d? Do you feel lucky, punk?", number), number, number - 1);
+fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?",
+                     "Did I fire %d shots or was it only %d? Do you feel lucky, punk?",
+                     number),
+        number,
+        number - 1);
 ```
 
 the catalog object will look up the C-format string in the catalog, and search for the plural form corresponding to `number`. This ensures
