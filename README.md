@@ -72,14 +72,14 @@ int main() {
 
   std::cout << cat.gettext("Hello world!") << std::endl;
   
-  std::cout << cat.gettext("Pick a number: ") << std::endl;
+  std::cout << cat.pgettext("Pick a number: ", "prompt") << std::endl;
   
   int number = 6;
   std::cin >> number;
 
   std::cout << std::endl;
 
-  fprintf(cat.ngettext("Did I fire %d shots or was it only %d? Do you feel lucky, punk?", number), number, number - 1);
+  fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?", "Did I fire %d shots or was it only %d? Do you feel lucky, punk?", number), number, number - 1);
 }
 
 ```
@@ -99,15 +99,26 @@ english text `"Hello world!"`, the same pointer it was passed in.)
 In this line,
 
 ```c++
-fprintf(cat.ngettext("Did I fire %d shots or was it only %d? Do you feel lucky, punk?", number), number, number - 1);
+std::cout << cat.pgettext("Pick a number: ", "prompt") << std::endl;
+```
+
+a string is translated, and also marked with a context string. Sometimes the same english phrase or sentence appears in your program in multiple places, but should be translated
+differently depending on context. The context string allows you to provide a hint to the translator and allows the program to disambiguate the two usages. (This particular example is unfortunately a poor one.)
+
+In this line,
+
+```c++
+fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?", "Did I fire %d shots or was it only %d? Do you feel lucky, punk?", number), number, number - 1);
 ```
 
 the catalog object will look up the C-format string in the catalog, and search for the plural form corresponding to `number`. This ensures
-that `shots` will be pluralized correctly no matter what language is used. Then we use `fprintf` to substitute the numbers into the string.
+that `shots` will be pluralized correctly no matter what language is used. (In many languages, there are more than two plural forms and language-specific logic is needed to determine the appropriate form to use based on the number. The translator provides this logic in the po-file header.) Then we use `fprintf` to substitute the numbers into the string.
 
-If you aren't familiar with gettext, have a look at their [documentation](https://www.gnu.org/software/gettext/).
+These examples are actually all rehash from `gettext` -- the member functions `gettext, pgettext, ngettext` are all analogous to calls to the C library `libintl`.
 
-## Using it
+If you aren't already familiar with gettext, have a look at their [documentation](https://www.gnu.org/software/gettext/).
+
+## Usage
 
 When you load translations with `spirit_po` the loading process is entirely in your hands and you can make it work however
 you like. A catalog can be constructed using  one of three methods:
