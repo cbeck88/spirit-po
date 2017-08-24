@@ -120,9 +120,9 @@ fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, p
 ```
 
 the catalog object will look up the C-format string in the catalog, and search for the plural form corresponding to `number`. This ensures
-that `shots` will be pluralized correctly no matter what language is used. (In many languages, there are more than two plural forms and language-specific logic is needed to determine the appropriate form to use based on the number. The translator provides this logic in the po-file header.) Then we use `fprintf` to substitute the numbers into the string.
+that `"shots"` will be pluralized correctly no matter what language is used. (In many languages, there are more than two plural forms and language-specific logic is needed to determine the appropriate form to use based on the number. The translator provides this logic in the po-file header.) Then we use `fprintf` to substitute the numbers into the string.
 
-These examples are actually all rehash from `gettext` -- the member functions `gettext, pgettext, ngettext` are all analogous to calls to the C library `libintl`.
+These examples are actually all rehash from gettext documentation -- the member functions `gettext, pgettext, ngettext` are all analogous to calls to the C library `libintl`.
 
 If you aren't already familiar with gettext, have a look at their [documentation](https://www.gnu.org/software/gettext/).
 
@@ -195,7 +195,7 @@ filesystem directly, and there was no workaround, no way to make it use differen
 if the built-in ones were defective.)
 
 If you want to have multiple catalogs loaded into the
-program at once using **spirit_po**, I recommend that you throw together your own book-keeping mechanism for
+program at once using `spirit_po`, I recommend that you throw together your own book-keeping mechanism for
 this. It is straightforward to have a `std::unordered_map` of catalogs or similar, and
 then it is transparent to you without cluttering our catalog interface. You can load them however you like,
 and you can make your own `dcgettext` as appropriate for your project.
@@ -234,13 +234,12 @@ Some less commonly useful accessors
 if you like you can experiment with `boost::flat_map` or a flat unordered map,
 or one of the Loki hashmaps, etc.
 - Specify an alternate plural forms compiler.  
-  If instead of the pseudo-C
-language for plural-forms functions specified by GNU gettext, you would like
-to use a different programming language to specify the plural-forms index function,
-you can specialize the catalog to use a different plural-forms function compiler for your desired language.
-The compiler is a function object that should be default constructible, and should take a string and return a
-function object of signature `unsigned int(unsigned int)`, representing the compiled function. See the default
-implementation for details.
+  GNU Gettext specifies a psuedo-C expression language for plural forms functions.
+  If you want to use a different language, or a different C++ implementation of this language,
+  you can pass a custom plural forms "compiler" as the second template parameter to `spirit_po::catalog`.
+  The compiler is a function object that should be default constructible, and should take a string and return
+  a function object of signature `unsigned int(unsigned int)`, represnting the compiled plural forms function.
+  See the default implementation for details.
 
 ## Licensing and Distribution
 
@@ -262,7 +261,7 @@ implementation for details.
 
 - `gcc` versions `4.9, 5.0, 5.4, 6.3`
 - `clang` versions `3.5, 3.7. 3.8, 4.0`
-- MSVC 2013, 2015
+- MSVC 2013, 2015, 2017
 
 See `.travis.yml` and `appveyor.yml` for info about our CI.
 
