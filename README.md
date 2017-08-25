@@ -247,7 +247,7 @@ Some less commonly useful accessors
 
   To implement functions like `ngettext`, `spirit_po` needs to be able to read these pseudo-C expressions and
   evaluate them for different values of `n`. `spirit_po` contains a built-in facility to do this efficiently --
-  It converts such expressions to a sequence of op-codes that run on a simple stack machine.
+  it converts such expressions to a sequence of op-codes that run on a simple stack machine.
 
   If for some reason you want to use a different format for this, or a different C++ implementation of the standard format,
   you can pass a custom plural forms "compiler" type as the second template parameter to `spirit_po::catalog`.
