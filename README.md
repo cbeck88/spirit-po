@@ -231,14 +231,30 @@ Some less commonly useful accessors
 
 - Specify an alternate hashmap type.  
   The default is `std::unordered_map`, but
-if you like you can experiment with `boost::flat_map` or a flat unordered map,
-or one of the Loki hashmaps, etc.
+  if you like you can experiment with `boost::flat_map` or a flat unordered map,
+  or one of the Loki hashmaps, etc.
 - Specify an alternate plural forms compiler.  
-  GNU Gettext specifies a psuedo-C expression language for plural forms functions.
-  If you want to use a different language, or a different C++ implementation of this language,
-  you can pass a custom plural forms "compiler" as the second template parameter to `spirit_po::catalog`.
-  The compiler is a function object that should be default constructible, and should take a string and return
-  a function object of signature `unsigned int(unsigned int)`, represnting the compiled plural forms function.
+  GNU Gettext specifies a pseudo-C expression language for plural forms functions.
+  For example, in Polish there are three plural forms. There is a form for the singular,
+  one used when the number ends in 2, 3 or 4, and a third for all other cases.
+  This logic can be specified in the po-header like so:
+
+  ```
+Plural-Forms: nplurals=3; \
+    plural=n==1 ? 0 : \
+           n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;
+  ```
+
+  To implement functions like `ngettext`, `spirit_po` needs to be able to read these pseudo-C expressions and
+  evaluate them for different values of `n`. `spirit_po` contains a built-in facility to do this efficiently,
+  it converts such expressions to a sequence of op-codes that run on a simple stack machine.
+
+  If for some reason you want to use a different format for this, or a different C++ implementation of the standard format,
+  you can pass a custom plural forms "compiler" type as the second template parameter to `spirit_po::catalog`.
+
+  The compiler is a function object that should be default constructible, and should take a string (the part of the
+  above that starts after `plural=` and return
+  a function object of signature `unsigned int(unsigned int)`, representing the compiled plural forms function.
   See the default implementation for details.
 
 ## Licensing and Distribution
