@@ -239,11 +239,11 @@ Some less commonly useful accessors
   one used when the number ends in 2, 3 or 4, and a third for all other cases.
   This logic can be specified in the po-header like so:
 
-```
-Plural-Forms: nplurals=3; \
-    plural=n==1 ? 0 : \
-           n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;
-```
+  ```
+  Plural-Forms: nplurals=3; \
+      plural=n==1 ? 0 : \
+             n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;
+  ```
 
   To implement functions like `ngettext`, `spirit_po` needs to be able to read these pseudo-C expressions and
   evaluate them for different values of `n`. `spirit_po` contains a built-in facility to do this efficiently,
