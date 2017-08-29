@@ -199,9 +199,9 @@ from different components classified into different "textdomains". Then, there w
 If there are `m` textdomains and `n` languages, you would have `n * m` different `.po` files.
 
 In the traditional `libintl` `C`-interface, textdomains are, like locale, handled by a global variable. The `libintl` library
-manages the loading of catalogs and text domains, which is accessed by `gettext` and friends. At any time, a global function may be called to
+manages the loading of catalogs and textdomains, which is accessed by `gettext` and friends. At any time, a global function may be called to
 change the current locale or textdomain, which are stored in global variables. So, if for instance your program has a UI module and a UI textdomain,
-the UI code would set the text domain when it is entered, and then call `gettext` on each string it needs. Then when you enter another module,
+the UI code would set the textdomain when it is entered, and then call `gettext` on each string it needs. Then when you enter another module,
 you would bind a different textdomain, and then make `gettext` calls for those strings.
 
 There are various problems that I've experienced when writing programs that use this interface.
@@ -223,15 +223,15 @@ large number of strings, you can assign different textdomains to different trans
 already support having multiple textdomains for a project, and giving progress reports for each one. That is, I think this is primarily done for convenience of
 translators rather than programmers.)
 
-If you do need multiple textdomains, I recommend that you throw together your own mechanism for this. For instance, if you are already using textdomains and libintl
+If you do need multiple textdomains, I recommend that you throw together your own mechanism for this. For instance, if you are already using textdomains and `libintl`
 and want to switch to `spirit_po`, you can have a global `std::map<std::string, spirit_po::catalog>`. You can provide a function like `dcgettext` which dereferences this
-map at the correct text domain, or manage the current textdomain yourself. Coding this up is straightforward.
+map at the correct textdomain, or manage the textdomain in a global variable yourself, or both. Coding this up is straightforward.
 
 If your program has multiple threads, you can have one such map for each thread, and put it in thread-local storage. Or it may be that your main thread needs multiple
 textdomains, but the other threads each use at most one textdomain, which would make things simpler. You could then pass each one a catalog object when it starts up, or whatever.
 
 Basically, I don't want to make such architectural decisions for you. `spirit_po` is focused just on parsing po-files and handling the queries, I don't want to force
-you to use global variables or broken filesystem functions. So we don't completely reproduce the `libintl` interface.
+you to use global variables or broken filesystem functions. So, we don't completely reproduce the `libintl` interface.
 
 In the interest of being flexible, `spirit_po` also allows you to merge compatible catalogs together into one master catalog. This is an alternate approach -- if
 the translation team wants to have multiple textdomains for their convenience, it doesn't mean the programmers have to think about multiple textdomains all the time as
@@ -252,8 +252,7 @@ well.
 However, merging catalogs has its own pitfalls. What happens if two catalogs contain the same string? One of them gets discarded, but which one is essentially arbitrary.
 You can give the catalog object a "warning channel" where it can send warnings when that happens. But it's hard to actually handle the problem or fix it. Also, merging catalogs
 requires dropping the metadata of one of them, and some other features like getting the line number at which a string appeared in the `po` file no longer makes sense, because when we merge
-we don't keep track of which file a string came from. So, merging catalogs might be appropriate for some projects, but generally I would recommend avoiding multiple catalogs, or throwing together
-your own system for managing multiple distinct catalogs, as appropriate for your project.
+we don't keep track of which file a string came from. So, merging catalogs might be appropriate for some projects, but I certainly wouldn't recommend it for every project.
 
 #### Other functions
 
