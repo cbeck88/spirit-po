@@ -128,6 +128,8 @@ If you aren't already familiar with gettext, have a look at their [documentation
 
 ## Usage
 
+#### Loading and Construction
+
 When you load translations with `spirit_po` the loading process is entirely in your hands and you can make it work however
 you like. A catalog can be constructed using  one of three methods:
   - factory function `spirit_po::catalog<>::from_iterators` which can take
@@ -145,13 +147,15 @@ you like. A catalog can be constructed using  one of three methods:
 
 If the po content is malformed, one of two things will happen (configurable):
   - A `spirit_po::catalog_exception` will be thrown. (This is the default.)
-  - If a symbol is defined `SPIRIT_PO_NOEXCEPT` before including `spirit_po.hpp`,
+  - If preprocessor symbol is defined `SPIRIT_PO_NOEXCEPT` before including `spirit_po.hpp`,
     then the catalog constructor will not throw (and none of the other functions
     will either), and instead, the catalog will result with whatever strings it
     managed to load, an `explicit operator bool() const` function will be defined
     which returns false if the constructor would have thrown, and a method
-    `error()` is defined which returns the error string in case there was an
+    `std::string error() const` is defined which returns the error string in case there was an
     error.
+
+#### Looking Up Strings (Messages)
 
 The `spirit_po::catalog` object has 4 methods which are part of the gettext
 specification:
@@ -184,24 +188,51 @@ They are otherwise equivalent.
    - `std::string pgettext_str(const std::string & msgctxt, const std::string & msgid)`
    - `std::string npgettext_str(const std::string & msgctxt, const  std::string & msgid, const std::string & msgid_plural, uint plural)`
 
-We do not provide implementations of the `dcgettext` functions, which implement
-alternate textdomains. A catalog object **is** a single textdomain.
+#### Managing multiple catalogs
 
-One of the premises of the library is that you may not want to use textdomains in
-exactly the manner described by GNU gettext, or at all. (Partly this stems from bad experiences of
-the author with `libintl` -- we had portability problems where `libintl` didn't work with UTF-8 paths
-when compiled with mingw, because it attempts to find and load all the textdomains itself, talking to the
-filesystem directly, and there was no workaround, no way to make it use different filesystem functions
-if the built-in ones were defective.)
+In the simplest setup, you would have one application, and the set of all strings it needs to translate.
+If there are `m` languages you support, you might have one `.pot` file (po-template which you give to translators)
+and get back `m` different `.po` files. Your application would then load only one of them at a time based on the locale.
 
-If you want to have multiple catalogs loaded into the
-program at once using `spirit_po`, I recommend that you throw together your own book-keeping mechanism for
-this. It is straightforward to have a `std::unordered_map` of catalogs or similar, and
-then it is transparent to you without cluttering our catalog interface. You can load them however you like,
-and you can make your own `dcgettext` as appropriate for your project.
+In many GNU programs, the situation is more complicated. The application may be broken up into components, and the strings
+from different components classified into different "textdomains". Then, there would be one `.pot` file for each textdomain.
+If there are `m` textdomains and `n` languages, you would have `n * m` different `.po` files.
 
-On the other hand, you can also use the `merge` function of catalogs to merge multiple catalogs into one
-master catalog.
+In the traditional `libintl` `C`-interface, textdomains are, like locale, handled by a global variable. The `libintl` library
+manages the loading of catalogs and text domains, which is accessed by `gettext` and friends. At any time, a global function may be called to
+change the current locale or textdomain, which are stored in global variables. So, if for instance your program has a UI module and a UI textdomain,
+the UI code would set the text domain when it is entered, and then call `gettext` on each string it needs. Then when you enter another module,
+you would bind a different textdomain, and then make `gettext` calls for those strings.
+
+There are various problems that I've experienced when writing programs that use this interface.
+
+- The built-in C file functions do not support UTF-8 paths when compiling with mingw for windows.
+  `libintl` does not provide any way to work around this. (Some other libraries like SDL allow you to pass function pointers
+  to alternative filesystem functions, so that you can work around problems like this.)
+- If you have a multithreaded program and multiple threads that need to talk to `libintl`, you can create a datarace because
+  everything is clobbering the same global variables. This is always a problem with libc, and fortunately it's very unlikely to happen with changes to the
+  locale, because the locale rarely changes in typical programs. However, it's a big problem with textdomains, which are likely to change frequently,
+  and esp. that code in different threads will be using different textdomains.
+
+When using `spirit_po`, you should understand that, `spirit_po` is not attempting to emulate the entire `libintl` interface. A `spirit_po::catalog` is
+only a single catalog, corresponding to a single po file loaded into memory. It doesn't have `dcgettext` method like `libintl` does for instance, because
+a catalog only represents one textdomain.
+
+If you don't need multiple textdomains, I recommend that you avoid it. (The main advantage of having multiple textdomains AFAIK is that if you have a
+large number of strings, you can assign different textdomains to different translators, to divide up the work.)
+
+If you do need multiple textdomains, I recommend that you throw together your own mechanism for this. For instance, you can hold multiple catalogs in a `std::map`,
+and provide a function like `dcgettext` which dereferences it, or manage the current textdomain setting yourself. Coding this up is basically straightforward.
+
+If your program has multiple threads, you can have one such map for each thread, and put it in thread-local storage. Or it may be that your main thread needs multiple
+text domains, but each individual thread uses at most one textdomain, which would make things simpler.
+
+Basically, I don't want to make such architectural decisions for you. `spirit_po` is focused just on parsing po-files and handling the queries, I don't want to force
+you to use global variables or broken filesystem functions.
+
+In the interest of being flexible, `spirit_po` also allows you to merge compatible catalogs together into one master catalog. This is an alternate approach -- if
+the translation team wants to have multiple textdomains for their convenience, it doesn't mean the programmers have to think about multiple textdomains all the time as
+well.
 
    - `void merge(spirit_po::catalog && other)`  
      Check if the metadata of this catalog and given catalog shows they are compatible
@@ -215,14 +246,22 @@ master catalog.
      The warning channel object may also be passed to the constructor, if one is concerned
      about duplicated strings within a single po file. By default warnings are ignored.
 
+However, merging catalogs has its own pitfalls. What happens if two catalogs contain the same string? One of them gets discarded, but which one is essentially arbitrary.
+You can give the catalog object a "warning channel" where it can send warnings when that happens. But it's hard to actually handle the problem or fix it. Also, merging catalogs
+requires dropping the metadata of one of them, and some other features like getting the line number at which a string appeared in the `po` file no longer makes sense, because when we merge
+we don't keep track of which file a string came from. So, merging catalogs might be appropriate for some projects, but generally I would recommend avoiding multiple catalogs, or throwing together
+your own system for managing multiple distinct catalogs, as appropriate for your project.
+
+#### Other functions
+
 Some less commonly useful accessors
 
    - `const spirit_po::catalog_metadata & get_metadata() const`  
      Return the metadata structure that was parsed from the po header.
    - `std::size_t gettext_line_no(const std::string & msgid) const`  
-     Return the line number at which a given catalog message was read. 0 if it is not found.
+     Return the line number at which a given catalog message was read. `0` if it is not found.
    - `std::size_t pgettext_line_no(const std::string & msgctxt, const std::string & msgid) const`  
-     Return the line number at which a given catalog message (with context) was read. 0 if it is not found.
+     Return the line number at which a given catalog message (with context) was read. `0` if it is not found.
 
 
 ## Customization points
@@ -236,8 +275,8 @@ Some less commonly useful accessors
 - Specify an alternate plural forms compiler.  
   GNU Gettext specifies a pseudo-C expression language for plural forms functions.
   For example, in Polish there are three plural forms. There is a form for the singular,
-  one used when the number ends in 2, 3 or 4, and a third for all other cases.
-  This logic can be specified in the po-header like so:
+  a form used when the number ends in 12, 13 or 14, and a form for all other cases.
+  The appropriate logic is typically specified in the po-header like so:
 
   ```
   Plural-Forms: nplurals=3; \
