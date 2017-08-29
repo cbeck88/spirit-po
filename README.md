@@ -218,17 +218,20 @@ When using `spirit_po`, you should understand that, `spirit_po` is not attemptin
 only a single catalog, corresponding to a single po file loaded into memory. It doesn't have `dcgettext` method like `libintl` does for instance, because
 a catalog only represents one textdomain.
 
-If you don't need multiple textdomains, I recommend that you avoid it. (The main advantage of having multiple textdomains AFAIK is that if you have a
-large number of strings, you can assign different textdomains to different translators, to divide up the work.)
+If you don't need multiple textdomains, I recommend that you avoid it. (AFAIK the main advantage of having multiple textdomains is that if you have a
+large number of strings, you can assign different textdomains to different translators, to divide up the work. Many translators and translation management platforms
+already support having multiple textdomains for a project, and giving progress reports for each one. That is, I think this is primarily done for convenience of
+translators rather than programmers.)
 
-If you do need multiple textdomains, I recommend that you throw together your own mechanism for this. For instance, you can hold multiple catalogs in a `std::map`,
-and provide a function like `dcgettext` which dereferences it, or manage the current textdomain setting yourself. Coding this up is straightforward.
+If you do need multiple textdomains, I recommend that you throw together your own mechanism for this. For instance, if you are already using textdomains and libintl
+and want to switch to `spirit_po`, you can have a global `std::map<std::string, spirit_po::catalog>`. You can provide a function like `dcgettext` which dereferences this
+map at the correct text domain, or manage the current textdomain yourself. Coding this up is straightforward.
 
 If your program has multiple threads, you can have one such map for each thread, and put it in thread-local storage. Or it may be that your main thread needs multiple
-text domains, but each individual thread uses at most one textdomain, which would make things simpler.
+textdomains, but the other threads each use at most one textdomain, which would make things simpler. You could then pass each one a catalog object when it starts up, or whatever.
 
 Basically, I don't want to make such architectural decisions for you. `spirit_po` is focused just on parsing po-files and handling the queries, I don't want to force
-you to use global variables or broken filesystem functions.
+you to use global variables or broken filesystem functions. So we don't completely reproduce the `libintl` interface.
 
 In the interest of being flexible, `spirit_po` also allows you to merge compatible catalogs together into one master catalog. This is an alternate approach -- if
 the translation team wants to have multiple textdomains for their convenience, it doesn't mean the programmers have to think about multiple textdomains all the time as
