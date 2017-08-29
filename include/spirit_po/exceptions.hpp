@@ -47,7 +47,7 @@ inline std::string string_iterator_context(const std::string & str,
 } // end namespace spirit_po
 
 
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
 
 #define SPIRIT_PO_CATALOG_FAIL(Message)                      \
 do {                                                         \
@@ -55,7 +55,7 @@ do {                                                         \
   return ;                                                   \
 } while(0)
 
-#else // SPIRIT_PO_NOEXCEPT
+#else // SPIRIT_PO_NO_EXCEPTIONS
 
 #include <stdexcept>
 
@@ -74,6 +74,6 @@ do {                                                         \
 } while(0)
 
 
-#endif // SPIRIT_PO_NOEXCEPT
+#endif // SPIRIT_PO_NO_EXCEPTIONS
 
 #endif // SPIRIT_PO_EXCEPTIONS_HPP_INCLUDED

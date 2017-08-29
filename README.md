@@ -147,13 +147,13 @@ you like. A catalog can be constructed using  one of three methods:
 
 If the po content is malformed, one of two things will happen (configurable):
   - A `spirit_po::catalog_exception` will be thrown. (This is the default.)
-  - If preprocessor symbol is defined `SPIRIT_PO_NOEXCEPT` before including `spirit_po.hpp`,
+  - If preprocessor symbol is defined `SPIRIT_PO_NO_EXCEPTIONS` before including `spirit_po.hpp`,
     then the catalog constructor will not throw (and none of the other functions
     will either), and instead, the catalog will result with whatever strings it
     managed to load, an `explicit operator bool() const` function will be defined
     which returns false if the constructor would have thrown, and a method
     `std::string error() const` is defined which returns the error string in case there was an
-    error.
+    error. This option is here to support projects that compile with `-fno-exceptions`.
 
 #### Looking Up Strings (Messages)
 
@@ -306,7 +306,7 @@ Some less commonly useful accessors
 - **spirit-po** has been tested against many boost versions, ranging from 1.48 to 1.65.
 - **spirit-po** does not require C++ exceptions to be enabled.  
   The tests run when compiled with `-fno-exceptions`, provided that
-  - `SPIRIT_PO_NOEXCEPT` is defined
+  - `SPIRIT_PO_NO_EXCEPTIONS` is defined
   - `BOOST_NO_EXCEPTIONS` is defined
   - Boost (headers-only) version >= 1.55. (Fails below that due to a bug in `boost::variant`.)
 

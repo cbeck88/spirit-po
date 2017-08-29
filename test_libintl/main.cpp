@@ -5,7 +5,7 @@
 
 #define ENABLE_NLS
 
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
 #define BOOST_NO_EXCEPTIONS
 #include <iostream>
 #include <exception>
@@ -221,7 +221,7 @@ RESULT do_test(const std::string & po_stem) {
   std::cerr << ".";
   // Read po file
   auto cat = spirit_po::catalog<>::from_range(po_content, std::function<void(const std::string &)>{&warning_message});
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!cat) {
     std::cerr << "Could not read po file: '" << po_stem << ".po', error:\n" << cat.error() << std::endl;
     return RESULT::FAIL;
@@ -267,8 +267,8 @@ int main() {
   find_po_path();
 
   std::cout << "Boost version = " << BOOST_LIB_VERSION << std::endl;
-  std::cout << "SPIRIT_PO_NOEXCEPT = ";
-#ifdef SPIRIT_PO_NOEXCEPT
+  std::cout << "SPIRIT_PO_NO_EXCEPTIONS = ";
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
   std::cout << "1\n";
 #else
   std::cout << "0\n";

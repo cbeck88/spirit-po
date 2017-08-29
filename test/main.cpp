@@ -5,7 +5,7 @@
 
 #include <boost/version.hpp>
 
-#define SPIRIT_PO_NOEXCEPT
+#define SPIRIT_PO_NO_EXCEPTIONS
 #define SPIRIT_PO_DEBUG
 #include <spirit_po/spirit_po.hpp>
 
@@ -99,7 +99,7 @@ bool test_default_expr_grammar(const std::string & prog, const std::vector<std::
 }
 
 bool test_catalog_gettext(const spirit_po::catalog<> & cat, const std::vector<std::pair<std::string, std::string>> & vec) {
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!static_cast<bool>(cat)) {
 //    std::cerr << "Failed to load catalog:\n***\n" << po << "\n***\n"; 
     std::cerr << "Error:\n" << cat.error() << std::endl;
@@ -135,7 +135,7 @@ struct ngettext_test_case {
 bool test_catalog_ngettext(const std::string & po, const std::vector<ngettext_test_case> & vec) {
   auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
 
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!cat) {
     std::cerr << "Failed to load catalog:\n***\n" << po << "\n***\nError:\n" << cat.error() << std::endl;
     return false;
@@ -167,7 +167,7 @@ struct pgettext_test_case {
 bool test_catalog_pgettext(const std::string & po, const std::vector<pgettext_test_case> & vec) {
   auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
 
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!cat) {
     std::cerr << "Failed to load catalog:\n***\n" << po << "\n***\nError:\n" << cat.error() << std::endl;
     return false;
@@ -200,7 +200,7 @@ struct npgettext_test_case {
 bool test_catalog_npgettext(const std::string & po, const std::vector<npgettext_test_case> & vec) {
   auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
 
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!cat) {
     std::cerr << "Failed to load catalog:\n***\n" << po << "\n***\nError:\n" << cat.error() << std::endl;
     return false;
@@ -338,7 +338,7 @@ void check_catalog_keys(const std::string & po, const std::set<std::string> & ex
 void check_not_parse(const std::string & test_string, int line) {
   try {
     auto cat = spirit_po::catalog<>::from_range(test_string, WARNING_CHANNEL);
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
     test_condition(!cat, line);
 #else
     test_condition(false, line);
@@ -658,7 +658,7 @@ msgstr "jkl;"
     using file::test6po;
     TEST(test_catalog_gettext( test6po, {} ));
     auto cat = spirit_po::catalog<>::from_range(test6po);
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
     const auto & meta = cat.get_metadata();
@@ -670,7 +670,7 @@ msgstr "jkl;"
     using file::test7po;
     TEST(test_catalog_gettext( test7po, {} ));
     auto cat = spirit_po::catalog<>::from_range(test7po);
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
     const auto & meta = cat.get_metadata();
@@ -683,7 +683,7 @@ msgstr "jkl;"
     check_catalog_keys (test8po, { "", "asdf", "foobar" }, __LINE__ );
     TEST(test_catalog_gettext( test8po, {{"asdf", "jkl;"}, {"foobar", "baz"}}));
     auto cat = spirit_po::catalog<>::from_range(test8po);
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
     const auto & meta = cat.get_metadata();
@@ -708,7 +708,7 @@ msgstr "jkl;"
     check_catalog_keys (test11po, { "", "jaawa", "django", "jango", "regicide", "foobar" }, __LINE__ );
     TEST(test_catalog_gettext( test11po, {{"jaawa", "raja"}, {"django", "foobarbaz"}, {"jango", "bother"}, {"foobar", "baz"}}));
     auto cat = spirit_po::catalog<>::from_range(test11po);
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
     const auto & meta = cat.get_metadata();
@@ -721,7 +721,7 @@ msgstr "jkl;"
     check_catalog_keys (test12po, { "", "jaawa", "django", "regicide", "foobar" }, __LINE__ );
     TEST(test_catalog_gettext( test12po, {{"jaawa", "raja"}, {"django", "foobarbaz"}, {"foobar", "baz"}}));
     auto cat = spirit_po::catalog<>::from_range(test12po);
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
     const auto & meta = cat.get_metadata();
@@ -794,12 +794,12 @@ msgstr "jkl;"
     using file::test2po;
     auto cat1 = spirit_po::catalog<>::from_range(test1po);
     auto cat2 = spirit_po::catalog<>::from_range(test2po);
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat1));
     TEST(static_cast<bool>(cat2));
 #endif
     cat1.merge(std::move(cat2));
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat1));
 #endif
     check_catalog_keys(cat1, { "", "asdf", "foo", "tmnt", "a man\na plan\na canal", "he said \"she said.\"", "say what?" }, __LINE__);

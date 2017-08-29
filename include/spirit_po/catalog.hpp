@@ -6,8 +6,17 @@
 #ifndef SPIRIT_PO_CATALOG_HPP_INCLUDED
 #define SPIRIT_PO_CATALOG_HPP_INCLUDED
 
+// This isn't necessary after boost 1.57 I think but we'll leave it here for compat
+
 #ifndef BOOST_SPIRIT_USE_PHOENIX_V3
 #define BOOST_SPIRIT_USE_PHOENIX_V3
+#endif
+
+// SPIRIT_PO_NO_EXCEPTIONS used to be named SPIRIT_PO_NOEXCEPT, but we leave this
+// here to avoid breakage.
+
+#if (!defined SPIRIT_PO_NO_EXCEPTIONS) && (defined SPIRIT_PO_NOEXCEPT)
+#define SPIRIT_PO_NO_EXCEPTIONS
 #endif
 
 #include <spirit_po/catalog_metadata.hpp>
@@ -39,11 +48,11 @@ class catalog {
   typename pf_compiler::result_type pf_function_object_;
   uint singular_index_; // cached result of pf_function_object(1)
 
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
   boost::optional<std::string> error_message_;
   // if loading failed, error_message_ contains an error
   // (rather than throwing an exception)
-#endif // SPIRIT_PO_NOEXCEPT
+#endif // SPIRIT_PO_NO_EXCEPTIONS
   warning_channel_type warning_channel_;
 
   hashmap_type hashmap_;
@@ -114,7 +123,7 @@ private:
   }
 
 public:
-#ifdef SPIRIT_PO_NOEXCEPT
+#ifdef SPIRIT_PO_NO_EXCEPTIONS
   /***
    * Error checking (this is done so we don't have to throw exceptions from the ctor.
    */
@@ -125,7 +134,7 @@ public:
   std::string error() const {
     return *error_message_; // UB if there there is not an error message
   }
-#endif // SPIRIT_PO_NOEXCEPT
+#endif // SPIRIT_PO_NO_EXCEPTIONS
 
   /***
    * Ctors
