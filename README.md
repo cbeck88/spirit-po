@@ -208,11 +208,11 @@ There are various problems that I've experienced when writing programs that use 
 
 - The built-in C file functions do not support UTF-8 paths when compiling with mingw for windows.
   `libintl` does not provide any way to work around this. (Some other libraries like SDL allow you to pass function pointers
-  to alternative filesystem functions, so that you can work around problems like this.)
+  to alternative filesystem functions. Then you can have one cross-platform filesystem implementation, and make everything in your program use it.)
 - If you have a multithreaded program and multiple threads that need to talk to `libintl`, you can create a datarace because
   everything is clobbering the same global variables. This is always a problem with libc, and fortunately it's very unlikely to happen with changes to the
-  locale, because the locale rarely changes in typical programs. However, it's a big problem with textdomains, which are likely to change frequently,
-  and esp. that code in different threads will be using different textdomains.
+  locale, because the locale rarely changes in typical programs. However, it's a big problem with textdomains, which are likely to change frequently.
+  It's also quite likely that code in different threads will be using different textdomains.
 
 When using `spirit_po`, you should understand that, `spirit_po` is not attempting to emulate the entire `libintl` interface. A `spirit_po::catalog` is
 only a single catalog, corresponding to a single po file loaded into memory. It doesn't have `dcgettext` method like `libintl` does for instance, because
@@ -222,7 +222,7 @@ If you don't need multiple textdomains, I recommend that you avoid it. (The main
 large number of strings, you can assign different textdomains to different translators, to divide up the work.)
 
 If you do need multiple textdomains, I recommend that you throw together your own mechanism for this. For instance, you can hold multiple catalogs in a `std::map`,
-and provide a function like `dcgettext` which dereferences it, or manage the current textdomain setting yourself. Coding this up is basically straightforward.
+and provide a function like `dcgettext` which dereferences it, or manage the current textdomain setting yourself. Coding this up is straightforward.
 
 If your program has multiple threads, you can have one such map for each thread, and put it in thread-local storage. Or it may be that your main thread needs multiple
 text domains, but each individual thread uses at most one textdomain, which would make things simpler.
