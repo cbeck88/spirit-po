@@ -79,11 +79,11 @@ int main() {
 
   std::cout << std::endl;
 
-  fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?",
-                       "Did I fire %d shots or was it only %d? Do you feel lucky, punk?",
-                       number),
-          number,
-          number - 1);
+  printf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?",
+                      "Did I fire %d shots or was it only %d? Do you feel lucky, punk?",
+                      number),
+         number,
+         number - 1);
 }
 
 ```
@@ -112,19 +112,21 @@ differently depending on context. The context string allows you to provide a hin
 In this line,
 
 ```c++
-fprintf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?",
-                     "Did I fire %d shots or was it only %d? Do you feel lucky, punk?",
-                     number),
-        number,
-        number - 1);
+printf(cat.ngettext("Did I fire %d shot or was it only %d? Do you feel lucky, punk?",
+                    "Did I fire %d shots or was it only %d? Do you feel lucky, punk?",
+                    number),
+       number,
+       number - 1);
 ```
 
 the catalog object will look up the C-format string in the catalog, and search for the plural form corresponding to `number`. This ensures
-that `"shots"` will be pluralized correctly no matter what language is used. (In many languages, there are more than two plural forms and language-specific logic is needed to determine the appropriate form to use based on the number. The translator provides this logic in the po-file header.) Then we use `fprintf` to substitute the numbers into the string.
+that `"shots"` will be pluralized correctly no matter what language is used. (In many languages, there are more than two plural forms and language-specific logic is needed to determine the appropriate form to use based on the number. The translator provides this logic in the po-file header.) Then we use `printf` to substitute the numbers into the string.
 
 These examples are actually all rehash from gettext documentation -- the member functions `gettext, pgettext, ngettext` are all analogous to calls to the C library `libintl`.
 
 If you aren't already familiar with gettext, have a look at their [documentation](https://www.gnu.org/software/gettext/).
+
+**Note:** It is standard in gettext documentation examples to use functions like `printf` with translated strings, since it is a C library. However, if you are working in C++, you might be better off to use a type-safe alternative to `printf`. Otherwise, if the translator makes a mistake, or an adversary modifies the po files, you can get undefined behavior in your program with code like above. You might prefer to use something like [tinyformat](https://github.com/c42f/tinyformat) for instance.
 
 ## Usage
 
