@@ -85,6 +85,7 @@ private:
 
   const std::string & get(const po_message & msg, uint plural) const {
     uint idx = (plural == 1 ? singular_index_ : pf_function_object_(plural));
+    if (idx >= msg.strings().size()) { idx = 0; }
     return msg.strings()[idx];
   }
 
@@ -143,6 +144,7 @@ public:
   catalog(spirit::line_pos_iterator<Iterator> & it, spirit::line_pos_iterator<Iterator> & end, warning_channel_type warn_channel = warning_channel_type(), pf_compiler compiler = pf_compiler())
     : metadata_()
     , pf_function_object_()
+    , singular_index_(0)
     , warning_channel_(warn_channel)
     , hashmap_()
   {

@@ -84,7 +84,7 @@ class function_object {
 
 public:
   explicit function_object(const expr & _e) : machine_(_e), parse_error_() {}
-  explicit function_object(const std::string & s) : machine_(n_var()), parse_error_(s) {}
+  explicit function_object(const std::string & s) : machine_(constant{0}), parse_error_(s) {}
   function_object() : function_object(std::string{"uninitialized"}) {}
 
   uint operator()(uint n) const {
