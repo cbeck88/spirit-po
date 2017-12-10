@@ -98,7 +98,7 @@ bool test_default_expr_grammar(const std::string & prog, const std::vector<std::
   return true;
 }
 
-bool test_catalog_gettext(const spirit_po::catalog<> & cat, const std::vector<std::pair<std::string, std::string>> & vec) {
+bool test_catalog_gettext(const spirit_po::default_catalog & cat, const std::vector<std::pair<std::string, std::string>> & vec) {
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!static_cast<bool>(cat)) {
 //    std::cerr << "Failed to load catalog:\n***\n" << po << "\n***\n"; 
@@ -122,7 +122,7 @@ bool test_catalog_gettext(const spirit_po::catalog<> & cat, const std::vector<st
 }
 
 bool test_catalog_gettext(const std::string & po, const std::vector<std::pair<std::string, std::string>> & vec) {
-  return test_catalog_gettext(spirit_po::catalog<>::from_range(po), vec); 
+  return test_catalog_gettext(spirit_po::default_catalog::from_range(po), vec);
 }
 
 struct ngettext_test_case {
@@ -133,7 +133,7 @@ struct ngettext_test_case {
 };
 
 bool test_catalog_ngettext(const std::string & po, const std::vector<ngettext_test_case> & vec) {
-  auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
+  auto cat = spirit_po::default_catalog::from_range(po, WARNING_CHANNEL);
 
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!cat) {
@@ -165,7 +165,7 @@ struct pgettext_test_case {
 };
 
 bool test_catalog_pgettext(const std::string & po, const std::vector<pgettext_test_case> & vec) {
-  auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
+  auto cat = spirit_po::default_catalog::from_range(po, WARNING_CHANNEL);
 
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!cat) {
@@ -198,7 +198,7 @@ struct npgettext_test_case {
 };
 
 bool test_catalog_npgettext(const std::string & po, const std::vector<npgettext_test_case> & vec) {
-  auto cat = spirit_po::catalog<>::from_range(po, WARNING_CHANNEL);
+  auto cat = spirit_po::default_catalog::from_range(po, WARNING_CHANNEL);
 
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!cat) {
@@ -319,7 +319,7 @@ do { \
   CHECK_EQ( _result_string, EXPECTED ); \
 } while(0)
 
-void check_catalog_keys(const spirit_po::catalog<> & cat, const std::set<std::string> & expected, int line) {
+void check_catalog_keys(const spirit_po::default_catalog & cat, const std::set<std::string> & expected, int line) {
   CHECK_EQ_L(cat.size(), expected.size() - expected.count(""), line);
   auto _result = all_keys(cat.get_hashmap());
   if (_result != expected) {
@@ -332,12 +332,12 @@ void check_catalog_keys(const spirit_po::catalog<> & cat, const std::set<std::st
 }
 
 void check_catalog_keys(const std::string & po, const std::set<std::string> & expected, int line) {
-  check_catalog_keys(spirit_po::catalog<>::from_range( po ), expected, line);
+  check_catalog_keys(spirit_po::default_catalog::from_range( po ), expected, line);
 }
 
 void check_not_parse(const std::string & test_string, int line) {
   try {
-    auto cat = spirit_po::catalog<>::from_range(test_string, WARNING_CHANNEL);
+    auto cat = spirit_po::default_catalog::from_range(test_string, WARNING_CHANNEL);
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
     test_condition(!cat, line);
 #else
@@ -646,7 +646,7 @@ msgstr "jkl;"
   std::cout << "Testing test5.po..." << std::endl;
   {
     using file::test5po;
-    CHECK_EQ(3u, spirit_po::catalog<>::from_range(test5po).size());
+    CHECK_EQ(3u, spirit_po::default_catalog::from_range(test5po).size());
     TEST(test_catalog_gettext( test5po, {{"note", "nota"}, {"goat", "cabro"}}));
     TEST(test_catalog_ngettext( test5po, {{"note", "notes", 1, "nota"}, {"note", "notes", 2, "notas"}, {"goat", "goats", 1, "cabro"}, {"goat", "goats", 2, "cabros"}}));
     TEST(test_catalog_pgettext( test5po, {{"female", "goat", "cabra"}, {"female", "note", "note"}, {"nice", "photo", "photo"}}));
@@ -657,7 +657,7 @@ msgstr "jkl;"
   {
     using file::test6po;
     TEST(test_catalog_gettext( test6po, {} ));
-    auto cat = spirit_po::catalog<>::from_range(test6po);
+    auto cat = spirit_po::default_catalog::from_range(test6po);
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
@@ -669,7 +669,7 @@ msgstr "jkl;"
   {
     using file::test7po;
     TEST(test_catalog_gettext( test7po, {} ));
-    auto cat = spirit_po::catalog<>::from_range(test7po);
+    auto cat = spirit_po::default_catalog::from_range(test7po);
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
@@ -682,7 +682,7 @@ msgstr "jkl;"
     using file::test8po;
     check_catalog_keys (test8po, { "", "asdf", "foobar" }, __LINE__ );
     TEST(test_catalog_gettext( test8po, {{"asdf", "jkl;"}, {"foobar", "baz"}}));
-    auto cat = spirit_po::catalog<>::from_range(test8po);
+    auto cat = spirit_po::default_catalog::from_range(test8po);
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
@@ -707,7 +707,7 @@ msgstr "jkl;"
     using file::test11po;
     check_catalog_keys (test11po, { "", "jaawa", "django", "jango", "regicide", "foobar" }, __LINE__ );
     TEST(test_catalog_gettext( test11po, {{"jaawa", "raja"}, {"django", "foobarbaz"}, {"jango", "bother"}, {"foobar", "baz"}}));
-    auto cat = spirit_po::catalog<>::from_range(test11po);
+    auto cat = spirit_po::default_catalog::from_range(test11po);
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
@@ -720,7 +720,7 @@ msgstr "jkl;"
     using file::test12po;
     check_catalog_keys (test12po, { "", "jaawa", "django", "regicide", "foobar" }, __LINE__ );
     TEST(test_catalog_gettext( test12po, {{"jaawa", "raja"}, {"django", "foobarbaz"}, {"foobar", "baz"}}));
-    auto cat = spirit_po::catalog<>::from_range(test12po);
+    auto cat = spirit_po::default_catalog::from_range(test12po);
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat));
 #endif
@@ -792,8 +792,8 @@ msgstr "jkl;"
   {
     using file::test1po;
     using file::test2po;
-    auto cat1 = spirit_po::catalog<>::from_range(test1po);
-    auto cat2 = spirit_po::catalog<>::from_range(test2po);
+    auto cat1 = spirit_po::default_catalog::from_range(test1po);
+    auto cat2 = spirit_po::default_catalog::from_range(test2po);
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
     TEST(static_cast<bool>(cat1));
     TEST(static_cast<bool>(cat2));

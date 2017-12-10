@@ -136,7 +136,7 @@ std::vector<std::string> list_po_files() {
 /***
  * Test routines
  */
-bool check_result(const std::string & cat_result, const char * libintl_result, const spirit_po::catalog<> & cat, const std::string & msgid, const boost::optional<std::string> & msgctxt = boost::none) {
+bool check_result(const std::string & cat_result, const char * libintl_result, const spirit_po::default_catalog & cat, const std::string & msgid, const boost::optional<std::string> & msgctxt = boost::none) {
   bool check = libintl_result && (cat_result == libintl_result);
   if (!check) {
     std::cerr << "Error, mismatch on msgid = \"" << msgid << "\" line = ";
@@ -175,13 +175,13 @@ bool check_result(const std::string & cat_result, const char * libintl_result, c
   return check;
 }
 
-bool check_libintl_gettext(const spirit_po::catalog<> & cat, const std::string & msgid, const boost::optional<std::string> & msgctxt = boost::none) {
+bool check_libintl_gettext(const spirit_po::default_catalog & cat, const std::string & msgid, const boost::optional<std::string> & msgctxt = boost::none) {
   std::string cat_result = msgctxt ? cat.pgettext_str(*msgctxt, msgid) : cat.gettext_str(msgid);
   const char * libintl_result = msgctxt ? (pgettext_expr(msgctxt->c_str(), msgid.c_str())) : (gettext(msgid.c_str()));
   return check_result(cat_result, libintl_result, cat, msgid, msgctxt);
 }
 
-bool check_libintl_ngettext(const spirit_po::catalog<> & cat, const std::string & msgid, const std::string & msgid_plural, uint plural, const boost::optional<std::string> & msgctxt = boost::none) {
+bool check_libintl_ngettext(const spirit_po::default_catalog & cat, const std::string & msgid, const std::string & msgid_plural, uint plural, const boost::optional<std::string> & msgctxt = boost::none) {
   std::string cat_result = msgctxt ? cat.npgettext_str(*msgctxt, msgid, msgid_plural, plural) : cat.ngettext_str(msgid, msgid_plural, plural);
   const char * libintl_result = msgctxt ? (npgettext_expr(msgctxt->c_str(), msgid.c_str(), msgid_plural.c_str(), plural)) : (ngettext(msgid.c_str(), msgid_plural.c_str(), plural));
   return check_result(cat_result, libintl_result, cat, msgid, msgctxt);
@@ -220,7 +220,7 @@ RESULT do_test(const std::string & po_stem) {
 
   std::cerr << ".";
   // Read po file
-  auto cat = spirit_po::catalog<>::from_range(po_content, std::function<void(const std::string &)>{&warning_message});
+  auto cat = spirit_po::default_catalog::from_range(po_content, std::function<void(const std::string &)>{&warning_message});
 #ifdef SPIRIT_PO_NO_EXCEPTIONS
   if (!cat) {
     std::cerr << "Could not read po file: '" << po_stem << ".po', error:\n" << cat.error() << std::endl;

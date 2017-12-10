@@ -461,6 +461,9 @@ public:
   }
 };
 
+// Helper typedef, most people will use default_catalog type
+using default_catalog = catalog<>;
+
 } // end namespace spirit_po
 
 #endif // SPIRIT_PO_CATALOG_HPP_INCLUDED
