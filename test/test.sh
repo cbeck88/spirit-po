@@ -11,4 +11,5 @@ else
   exit 1
 fi
 
-gdb -return-child-result -batch -ex "run" -ex "thread apply all bt" -ex "quit" --args ./stage/main
+# gdb -return-child-result -batch -ex "run" -ex "thread apply all bt" -ex "quit" --args ./stage/main
+./stage/main
