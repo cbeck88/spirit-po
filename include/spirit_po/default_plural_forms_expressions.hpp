@@ -383,7 +383,7 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
   std::vector<instruction> operator()(const and_op & o) const {
     auto result = boost::apply_visitor(*this, o.e1);
     auto second = boost::apply_visitor(*this, o.e2);
-    bool second_is_boolean = boost::apply_visitor(is_boolean{}, o.e2);
+    bool second_is_boolean = boost::apply_visitor(is_boolean(), o.e2);
 
     uint sec_size = static_cast<uint>(second.size());
     if (!second_is_boolean) { sec_size += 2; }
@@ -404,7 +404,7 @@ FOREACH_SPIRIT_PO_BINARY_OP(EMIT_OP_)
   std::vector<instruction> operator()(const or_op & o) const {
     auto result = boost::apply_visitor(*this, o.e1);
     auto second = boost::apply_visitor(*this, o.e2);
-    bool second_is_boolean = boost::apply_visitor(is_boolean{}, o.e2);
+    bool second_is_boolean = boost::apply_visitor(is_boolean(), o.e2);
 
     uint sec_size = static_cast<uint>(second.size());
     if (!second_is_boolean) { sec_size += 2; }
@@ -491,7 +491,7 @@ private:
 
 public:
   explicit stack_machine(const expr & e)
-    : instruction_seq_(boost::apply_visitor(emitter{}, e))
+    : instruction_seq_(boost::apply_visitor(emitter(), e))
     , stack_()
     , n_value_()
   {}
