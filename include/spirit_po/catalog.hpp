@@ -245,6 +245,8 @@ public:
 #endif // SPIRIT_PO_DEBUG
   }
 
+  catalog() = default;
+
   // Upgrade an iterator pair to spirit::line_pos_iterators
   template <typename Iterator>
   static catalog from_iterators(Iterator & b, Iterator & e, warning_channel_type w = warning_channel_type()) {
