@@ -333,6 +333,9 @@ inline std::string debug_string(const instruction & i) {
  * Helper: Check if an expression obviously is zero-one valued
  */
 struct is_boolean : public boost::static_visitor<bool> {
+  // constructor is needed for boost::apply_visitor in C++17 (when using {} syntax) and C++20 (always)
+  is_boolean() = default;
+
   bool operator()(const and_op &) const { return true; }
   bool operator()(const or_op &) const { return true; }
   bool operator()(const not_op &) const { return true; }
@@ -353,6 +356,9 @@ struct is_boolean : public boost::static_visitor<bool> {
  * Visitor that maps expressions to instruction sequences
  */
 struct emitter : public boost::static_visitor<std::vector<instruction>> {
+  // constructor is needed for boost::apply_visitor in C++17 (when using {} syntax) and C++20 (always)
+  emitter() = default;
+
   std::vector<instruction> operator()(const constant & c) const {
     return std::vector<instruction>{instruction{c}};
   }
